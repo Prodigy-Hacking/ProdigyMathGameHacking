@@ -1,1 +1,1 @@
-PIXI.game.prodigy.player._isMember=PIXI.game.prodigy.player.isMember=true
+PIXI.game.prodigy.player.tt=true
