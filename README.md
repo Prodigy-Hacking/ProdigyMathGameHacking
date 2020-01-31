@@ -4,7 +4,21 @@ I'm making this repository to try to get the developers to change how Prodigy ha
 
 Basically any changes you make to PIXI.game.prodigy.player will save. Be warned, if you mess up the data TOO much, the server gets really confused, and your account is broken forever! Don't do this on your main account. I've already broken three accounts. ;)
 
+# Disclaimer
+THESE HACKS MAY OR MAY NOT BREAK YOUR ACCOUNT. DO NOT USE ANY OF THESE HACKS ON YOUR MAIN ACCOUNT, OR YOU MAY RISK YOUR ACCOUNT BECOMING IRREPERABLY BUGGED OUT, PREVENTING YOU FROM PLAYING THE GAME USING THAT ACCOUNT.
+You have been warned.
+
 ## Changelog
+### v1.2 (1/31/2020)
+I"m going to add a ton of hacks using `debugMisc`!
+
+Added the following:
+
+```
+debugMisc#getAllPets
+debugMisc#getAllPotions
+```
+
 ### v1.1 (1/26/2020)
 I just re-fixed the membership hacks, and just found a GOLD MINE!!!
 
