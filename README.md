@@ -29,5 +29,5 @@ Uploaded basic hacks, and fixed the new membership.
 
 ******************************************************************
 
-# Hi, this is Avn1114! I've covered a lot of a new hacks, located in the "Experimental" folder.
+# Hi, this is Avn1114, and I'm a new collaborator in the "ProdigyMathGameHacking" page! I've covered a few new hacks, located in the "Experimental" folder.
 Also working on hacks with `debugQuest`, such as unlocking the Academy...
