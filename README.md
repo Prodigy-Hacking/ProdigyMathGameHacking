@@ -26,3 +26,8 @@ You can expect lots of new and interesting hacks in the next week.
 
 ### v1
 Uploaded basic hacks, and fixed the new membership.
+
+******************************************************************
+
+# Hi, this is Avn1114! I've covered a lot of a new hacks, located in the "Experimental" folder.
+Also working on hacks with `debugQuest`, such as unlocking the Academy...
