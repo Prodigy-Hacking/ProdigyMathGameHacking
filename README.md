@@ -31,4 +31,6 @@ Uploaded basic hacks, and fixed the new membership.
 ******************************************************************
 
 # Hi, this is Avn1114, and I'm a new collaborator in the "ProdigyMathGameHacking" page. I've covered a few new hacks, located in various folders...
-Also working on hacks with `Object.keys(Object.getPrototypeOf(PIXI.game.prodigy.debugMisc)).join("\n")` debug functions, such as hacking the Dark Tower...
+Also working on hacks with `Object.keys(Object.getPrototypeOf(PIXI.game.prodigy.debugMisc)).join("\n")` debug functions, such as hacking the Dark Tower, gaining infinite conjure cubes, and altering your level.
+
+# Current work in progress: Attempting to alter the level of pets. (I'm utterly failing, but what the heck)
