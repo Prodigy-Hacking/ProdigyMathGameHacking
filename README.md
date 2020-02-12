@@ -27,7 +27,8 @@ You can expect lots of new and interesting hacks in the next week.
 ### v1
 Uploaded basic hacks, and fixed the new membership.
 
+# New collaborator
 ******************************************************************
 
-# Hi, this is Avn1114, and I'm a new collaborator in the "ProdigyMathGameHacking" page! I've covered a few new hacks, located in the "Experimental" folder.
+# Hi, this is Avn1114, and I'm a new collaborator in the "ProdigyMathGameHacking" page. I've covered a few new hacks, located in the "Experimental" folder.
 Also working on hacks with `debugQuest`, such as unlocking the Academy...
