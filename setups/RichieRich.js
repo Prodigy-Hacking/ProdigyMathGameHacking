@@ -1,4 +1,4 @@
-// Gives player 99 conjure cubes. (Any more causes the game to crash.)
+// These collective scripts boost your currencies, gold, items, Conjure Cubes, etc.
 PIXI.game.prodigy.debugMisc.getCubes(99)
 PIXI.game.prodigy.create.conjureCubeButton()
 //Sets the amount of all your currencies to 9 million.
