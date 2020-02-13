@@ -14,7 +14,7 @@ for (i in x) {
     x[i] = {"ID": x[i].ID, "N": 9000000}
 }
 PIXI.game.prodigy.player.tt=true
-//Gives you a large amount of assorted items...
+//Gives you a large amount of assorted gear...
 for (let i = 0; i < 5000; i++) {
  PIXI.game.prodigy.debugMisc.grabBag(50);
 }
