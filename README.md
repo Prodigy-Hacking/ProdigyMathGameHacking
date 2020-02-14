@@ -8,8 +8,17 @@ Basically any changes you make to PIXI.game.prodigy.player will save. Be warned,
 THESE HACKS MAY OR MAY NOT BREAK YOUR ACCOUNT. DO NOT USE ANY OF THESE HACKS ON YOUR MAIN ACCOUNT, OR YOU MAY RISK YOUR ACCOUNT BECOMING IRREPERABLY BUGGED OUT, PREVENTING YOU FROM PLAYING THE GAME USING THAT ACCOUNT.
 You have been warned.
 
-## Changelog
-### v1.2 (1/31/2020)
+## Updates
+### (2/14/2020)
+Recently, we've added a new collaborator, Avn1114. Avn1114's been very helpful, and has added many of their own hacks!
+I greatly appreciate this help.
+
+Another thing, we've recently surpassed 6969 views! Currently, we are at 7,665 views, with 578 unique visitors.
+Views and visitors don't actually change anything, but they give me a warm fuzzy feeling, and make me feel better.
+
+We're planning on looking into more features and hacks y'all have suggested. A few of you have emailed me about some features/hacks you'd like. Thank you all for your feedback! Know that while not everything is possible, I like hearing what y'all want.
+
+### (1/31/2020)
 I"m going to add a ton of hacks using `debugMisc`!
 
 Added the following:
@@ -19,12 +28,12 @@ debugMisc#getAllPets
 debugMisc#getAllPotions
 ```
 
-### v1.1 (1/26/2020)
+### (1/26/2020)
 I just re-fixed the membership hacks, and just found a GOLD MINE!!!
 
 You can expect lots of new and interesting hacks in the next week.
 
-### v1
+### Initial
 Uploaded basic hacks, and fixed the new membership.
 
 # New collaborator down here! ⇩
