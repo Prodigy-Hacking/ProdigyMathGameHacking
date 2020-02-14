@@ -1,3 +1,4 @@
-// Use this roght before you enter battle, and see what happens at the end!
-PIXI.game.prodigy.player.data.storedMemberStars=9999999999999999
-PIXI.game.prodigy.player.tt=true
+// Levels all pets to level 100.
+for (let PetLoopTest = 0; PetLoopTest < PIXI.game.prodigy.player.kennel.data.length; PetLoopTest++) { 
+     PIXI.game.prodigy.player.kennel.data[PetLoopTest].level=100
+    };
