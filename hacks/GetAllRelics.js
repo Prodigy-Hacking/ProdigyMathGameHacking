@@ -1,6 +1,6 @@
 // Gives player all relics.
-PIXI.game.prodigy.player.backpack.data.relic=[]
-x = PIXI.game.state.states.Boot._gameData.relic
+PIXI.game.prodigy.player.backpack.data.spellRelic=[]
+x = PIXI.game.state.states.Boot._gameData.spellRelic
 for (i in x) {
-    PIXI.game.prodigy.player.backpack.data.relic[i] = {"ID": x[i].ID, "N": 1}
+    PIXI.game.prodigy.player.backpack.data.spellRelic[i] = {"ID": x[i].ID, "N": 1}
 }
