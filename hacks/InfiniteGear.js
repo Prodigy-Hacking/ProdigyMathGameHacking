@@ -14,3 +14,8 @@ x = PIXI.game.state.states.Boot._gameData.boots
 for (i in x) {
     PIXI.game.prodigy.player.backpack.data.boots[i] = {"ID": x[i].ID, "N": 1}
 }
+PIXI.game.prodigy.player.backpack.data.weapon=[]
+x = PIXI.game.state.states.Boot._gameData.weapon
+for (i in x) {
+    PIXI.game.prodigy.player.backpack.data.weapon[i] = {"ID": x[i].ID, "N": 1}
+}
