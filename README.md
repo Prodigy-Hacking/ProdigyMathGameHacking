@@ -8,6 +8,10 @@ Basically any changes you make to PIXI.game.prodigy.player will save. Be warned,
 THESE HACKS MAY OR MAY NOT BREAK YOUR ACCOUNT. DO NOT USE ANY OF THESE HACKS ON YOUR MAIN ACCOUNT, OR YOU MAY RISK YOUR ACCOUNT BECOMING IRREPERABLY BUGGED OUT, PREVENTING YOU FROM PLAYING THE GAME USING THAT ACCOUNT.
 You have been warned.
 
+# How to use these hacks
+Use the command Control+Shift+I to access the console. Paste the code into the console. It's that simple.
+
+
 ## Updates
 ### (2/14/2020)
 Recently, we've added a new collaborator, Avn1114. Avn1114's been very helpful, and has added many of their own hacks!
@@ -43,7 +47,3 @@ Uploaded basic hacks, and fixed the new membership.
 Also working on hacks with `Object.keys(Object.getPrototypeOf(PIXI.game.prodigy.debugMisc)).join("\n")` debug functions, such as hacking the Dark Tower, gaining infinite conjure cubes, obtaining limited-edition gear, and altering the level of yourself and your pets.
 
 # Current WIP: `gameConstants` thingies. (See "issues")
-
-
-# How to use these hacks
-Use the command Control+Shift+I to access the console. Paste the code into the console. It's that simple.
