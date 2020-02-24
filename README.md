@@ -8,8 +8,8 @@ Basically any changes you make to PIXI.game.prodigy.player will save. Be warned,
 THESE HACKS MAY OR MAY NOT BREAK YOUR ACCOUNT. DO NOT USE ANY OF THESE HACKS ON YOUR MAIN ACCOUNT, OR YOU MAY RISK YOUR ACCOUNT BECOMING IRREPERABLY BUGGED OUT, PREVENTING YOU FROM PLAYING THE GAME USING THAT ACCOUNT.
 You have been warned.
 
-# How to use these hacks 
-## For those who do not know
+# For those who do not know
+## How to use these hacks
 Use the command Control+Shift+I to access the console. Paste the code into the console. It's that simple.
 
 
