@@ -43,3 +43,7 @@ Uploaded basic hacks, and fixed the new membership.
 Also working on hacks with `Object.keys(Object.getPrototypeOf(PIXI.game.prodigy.debugMisc)).join("\n")` debug functions, such as hacking the Dark Tower, gaining infinite conjure cubes, obtaining limited-edition gear, and altering the level of yourself and your pets.
 
 # Current WIP: `gameConstants` thingies. (See "issues")
+
+*
+# How to use these hacks
+Use the command Control+Shift+I to access the console. Paste the code into the console. It's that simple.
