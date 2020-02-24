@@ -42,4 +42,4 @@ Uploaded basic hacks, and fixed the new membership.
 # Hi, this is Avn1114, and I'm a new collaborator in the "ProdigyMathGameHacking" page. I've covered a few new hacks, located in various folders...
 Also working on hacks with `Object.keys(Object.getPrototypeOf(PIXI.game.prodigy.debugMisc)).join("\n")` debug functions, such as hacking the Dark Tower, gaining infinite conjure cubes, obtaining limited-edition gear, and altering the level of yourself and your pets.
 
-# Current WIP: Creating hacks with the value of `Infinity`
+# Current WIP: `gameConstants` thingies. (See "issues")
