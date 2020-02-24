@@ -44,6 +44,6 @@ Also working on hacks with `Object.keys(Object.getPrototypeOf(PIXI.game.prodigy.
 
 # Current WIP: `gameConstants` thingies. (See "issues")
 
-*
+
 # How to use these hacks
 Use the command Control+Shift+I to access the console. Paste the code into the console. It's that simple.
