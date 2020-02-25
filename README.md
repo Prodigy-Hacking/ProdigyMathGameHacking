@@ -11,6 +11,7 @@ You have been warned.
 # For those who do not know
 ## How to use these hacks
 Use the command Control+Shift+I to access the console. Paste the code into the console. It's that simple.
+### Any questions? Click this link: https://github.com/PatheticMustan/ProdigyMathGameHacking/issues/20
 
 
 ## Updates
