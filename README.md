@@ -1,3 +1,7 @@
+# !! Important Notice !!
+## It has come to our attention that a function we had, CustomChat.js, has been used irresponibly. We are reporting it to Prodigy, and this will now be patched. I see no reason why anybody needed to do this. See https://github.com/PatheticMustan/ProdigyMathGameHacking/issues/19 for more details.
+
+
 # Hacking Prodigy, the Math Game
 
 I'm making this repository to try to get the developers to change how Prodigy handles player game data. Instead of handling everything server side, a lot of the heavy lifting is done on the player side. The server just manages multiplayer battles, and hosts data, messages, and events.
