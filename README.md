@@ -1,4 +1,4 @@
-# !! Important Notice !!
+#                                                 *!! Important Notice !!*
 ## It has come to our attention that a function we had, CustomChat.js, has been used irresponibly. We are reporting it to Prodigy, and this will now be patched. I see no reason why anybody needed to do this. See https://github.com/PatheticMustan/ProdigyMathGameHacking/issues/19 for more details.
 
 
