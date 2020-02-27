@@ -10,7 +10,7 @@
 ## See https://github.com/PatheticMustan/ProdigyMathGameHacking/issues/25 for more details.
 
 
-
+# (Goals and basic stuff below)
 
 # Hacking Prodigy, the Math Game
 
