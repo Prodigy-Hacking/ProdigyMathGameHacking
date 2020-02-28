@@ -39,7 +39,7 @@ Views and visitors don't actually change anything, but they give me a warm fuzzy
 We're planning on looking into more features and hacks y'all have suggested. A few of you have emailed me about some features/hacks you'd like. Thank you all for your feedback! Know that while not everything is possible, I like hearing what y'all want.
 
 ### (1/31/2020)
-I"m going to add a ton of hacks using `debugMisc`!
+I'm going to add a ton of hacks using `debugMisc`!
 
 Added the following:
 
