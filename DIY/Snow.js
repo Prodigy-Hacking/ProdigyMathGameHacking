@@ -1,3 +1,2 @@
-# Created by @Magmischief.
-// Creates snow.
+// Creates snow, created/found by @Magmischief.
 PIXI.game.prodigy.debugMisc.snow()
