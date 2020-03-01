@@ -13,9 +13,16 @@
 # DIY!
 ## See https://github.com/PatheticMustan/ProdigyMathGameHacking/issues/25 for more details.
 
+
+
 #### Shoutout to @Magmischief for finding a lot of hacks in the DIY folder!
 
-# (Goals and basic stuff below)
+
+
+
+# (Goals and other stuff below)
+
+
 
 # Hacking Prodigy, the Math Game
 
