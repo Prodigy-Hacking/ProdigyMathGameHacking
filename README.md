@@ -72,5 +72,5 @@ Uploaded basic hacks, and fixed the new membership.
 
 # Current works in progress:
 ### -accessing `gameConstants`, which basically holds a load of thingies that makes you godly, like disabling questions.
-### - Looking into `adminLogin`, which is kinda self-explanatory
+### - Looking into gaining arena points, which is kinda self-explanatory
 ### - Editing and growing our wiki!
