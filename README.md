@@ -18,6 +18,8 @@
 #### Shoutout to @Magmischief for finding a lot of hacks in the DIY folder!
 
 
+# We have a Discord server! 
+###### Go to https://discord.gg/9cKMgMv
 
 
 # (Goals and other stuff below)
