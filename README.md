@@ -4,7 +4,7 @@
 ## It has come to our attention that a function we had, CustomChat.js, has been used irresponibly. We are reporting it to Prodigy, and this will now be patched. I see no reason why anybody needed to do this. See https://github.com/PatheticMustan/ProdigyMathGameHacking/issues/19 for more details.
 ### (Also, I can't control this, but everyone delete bookmarklets of this script as soon as possible!)
 
--
+
 
 # Go to our wiki to find more detailed descriptions of hacks, WIPS, and to make suggestions! https://github.com/PatheticMustan/ProdigyMathGameHacking/wiki
 
@@ -13,6 +13,7 @@
 # DIY!
 ## See https://github.com/PatheticMustan/ProdigyMathGameHacking/issues/25 for more details.
 
+#### Shoutout to @Magmischief for finding a lot of hacks in the DIY folder!
 
 # (Goals and basic stuff below)
 
