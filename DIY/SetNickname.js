@@ -1,4 +1,4 @@
-// Gives you a nickname out of any Prodigy has made. Found by @Marshadow, and other nicknames found by @Magmischief.
+// Gives you a nickname out of any Prodigy has made. Found by @Marshadow29, and other nicknames found by @Magmischief.
 PIXI.game.prodigy.player.appearance._name.nickname=
 // Put a number one through 55. The associations are as follows:
 ///1.Buccaneer
