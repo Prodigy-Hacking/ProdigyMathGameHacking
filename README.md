@@ -68,10 +68,9 @@ You can expect lots of new and interesting hacks in the next week.
 ### Initial
 Uploaded basic hacks, and fixed the new membership.
 
-# New collaborator down here! ⇩
-******************************************************************
 
-# Hi, this is Avn1114, and I'm a new collaborator in the "ProdigyMathGameHacking" page. I've covered a few new hacks, located in various folders...
-Also working on hacks with `Object.keys(Object.getPrototypeOf(PIXI.game.prodigy.debugMisc)).join("\n")` debug functions, such as hacking the Dark Tower, gaining infinite conjure cubes, obtaining limited-edition gear, and altering the level of yourself and your pets.
 
-# Current WIP: `gameConstants` thingies. (See "issues")
+# Current works in progress:
+### -accessing `gameConstants`, which basically holds a load of thingies that makes you godly, like disabling questions.
+### - Looking into `adminLogin`, which is kinda self-explanatory
+### - Editing and growing our wiki!
