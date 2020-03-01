@@ -5,6 +5,9 @@
 ### (Also, I can't control this, but everyone delete bookmarklets of this script as soon as possible!)
 
 
+# Go to our wiki to find more detailed descriptions of hacks, WIPS, and to make suggestions! https://github.com/PatheticMustan/ProdigyMathGameHacking/wiki
+
+
 
 # DIY!
 ## See https://github.com/PatheticMustan/ProdigyMathGameHacking/issues/25 for more details.
