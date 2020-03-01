@@ -19,7 +19,7 @@
 
 
 # We have a Discord server! 
-###### Go to https://discord.gg/9cKMgMv
+### Go to https://discord.gg/9cKMgMv
 
 
 # (Goals and other stuff below)
