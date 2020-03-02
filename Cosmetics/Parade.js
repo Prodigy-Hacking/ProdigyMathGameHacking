@@ -1,2 +1,2 @@
-//Makes a parade of monsters come onto the screen!
+// Makes a parade of monsters come onto the screen!
 PIXI.game.prodigy.debugMisc.parade()
