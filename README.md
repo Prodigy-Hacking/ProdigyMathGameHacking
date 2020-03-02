@@ -1,11 +1,4 @@
-# Announcements
-
-## We have a Discord server! 
-Go to https://discord.gg/9cKMgMv
-
-
-##                                                 _*!! Important Notice !!*_
-It has come to our attention that a function we had, CustomChat.js, has been used irresponibly. We are reporting it to Prodigy, and this will now be patched. I see no reason why anybody needed to do this. See [#19](https://github.com/PatheticMustan/ProdigyMathGameHacking/issues/19) for more details.
+# Prodigy Math Game Hacks
 
 # Links
 * **[Wiki](https://github.com/PatheticMustan/ProdigyMathGameHacking/wiki)**
@@ -15,9 +8,7 @@ It has come to our attention that a function we had, CustomChat.js, has been use
 * [PatheticMustan](https://github.com/PatheticMustan)
 * [Avn1114](https://github.com/Avn1114)
 
-
 # Hacking Prodigy, the Math Game
-
 I'm making this repository to try to get the developers to change how Prodigy handles player game data. Instead of handling everything server side, a lot of the heavy lifting is done on the player side. The server just manages multiplayer battles, and hosts data, messages, and events.
 
 Basically any changes you make to PIXI.game.prodigy.player will save. Be warned, if you mess up the data TOO much, the server gets really confused, and your account is broken forever! Don't do this on your main account. I've already broken three accounts. ;)
@@ -25,8 +16,6 @@ Basically any changes you make to PIXI.game.prodigy.player will save. Be warned,
 # Disclaimer
 THESE HACKS MAY OR MAY NOT BREAK YOUR ACCOUNT. DO NOT USE ANY OF THESE HACKS ON YOUR MAIN ACCOUNT, OR YOU MAY RISK YOUR ACCOUNT BECOMING IRREPERABLY BUGGED OUT, PREVENTING YOU FROM PLAYING THE GAME USING THAT ACCOUNT.
 You have been warned.
-
-
 
 # Usage
 Use the command Control+Shift+I to access the console. Paste the code into the console. It's that simple.
