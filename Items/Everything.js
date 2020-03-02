@@ -21,8 +21,9 @@ for (i in x) {
     PIXI.game.prodigy.player.backpack.data.follow[i] = {"ID": x[i].ID}
 }
 
-// TODO: Improve Items
-x = PIXI.game.prodigy.player.backpack.data.item
+// Gives player all items.
+PIXI.game.prodigy.player.backpack.data.item=[]
+x = PIXI.game.state.states.Boot._gameData.item
 for (i in x) {
-    x[i] = {"ID": x[i].ID, "N": 99999999}
+    PIXI.game.prodigy.player.backpack.data.item[i] = {"ID": x[i].ID, "N": 99999999}
 }
