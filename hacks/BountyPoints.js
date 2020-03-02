@@ -1,2 +1,2 @@
-//Gives the player infinity bounty points
-PIXI.game.prodigy.player.data.bountyScore=Infinity
+// Gives the player the max amount of bounty points.
+PIXI.game.prodigy.player.data.bountyScore=100
