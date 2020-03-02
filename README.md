@@ -8,6 +8,7 @@
 ## Collaborators
 * [PatheticMustan](https://github.com/PatheticMustan)
 * [Avn1114](https://github.com/Avn1114)
+* [Magmischief](https://github.com/Magmischief)
 
 # Hacking Prodigy, the Math Game
 I'm making this repository to try to get the developers to change how Prodigy handles player game data. Instead of handling everything server side, a lot of the heavy lifting is done on the player side. The server just manages multiplayer battles, and hosts data, messages, and events.
