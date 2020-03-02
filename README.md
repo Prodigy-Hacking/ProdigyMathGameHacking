@@ -71,7 +71,6 @@ You can expect lots of new and interesting hacks in the next week.
 Uploaded basic hacks, and fixed the new membership.
 
 
-
 # Current works in progress:
 ### -accessing `gameConstants`, which basically holds a load of thingies that makes you godly, like disabling questions.
 ### - Looking into gaining arena points, which is kinda self-explanatory
