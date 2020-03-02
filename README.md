@@ -1,5 +1,9 @@
 # Announcements
 
+# We have a Discord server! 
+### Go to https://discord.gg/9cKMgMv
+
+
 #                                                 _*!! Important Notice !!*_
 ## It has come to our attention that a function we had, CustomChat.js, has been used irresponibly. We are reporting it to Prodigy, and this will now be patched. I see no reason why anybody needed to do this. See https://github.com/PatheticMustan/ProdigyMathGameHacking/issues/19 for more details.
 ### (Also, I can't control this, but everyone delete bookmarklets of this script as soon as possible!)
@@ -16,10 +20,6 @@
 
 
 #### Shoutout to @Magmischief for finding a lot of hacks in the DIY folder!
-
-
-# We have a Discord server! 
-### Go to https://discord.gg/9cKMgMv
 
 
 # (Goals and other stuff below)
