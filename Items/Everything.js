@@ -2,9 +2,9 @@
 a=["outfit", "hat", "boots", "weapon"]
 for (u in a) {
     PIXI.game.prodigy.player.backpack.data[u]=[]
-    x = PIXI.game.state.states.Boot._gameData.[u]
+    x = PIXI.game.state.states.Boot._gameData[u]
     for (i in x) {
-        PIXI.game.prodigy.player.backpack.data.[u][i] = {"ID": x[i].ID, "N": 1}
+        PIXI.game.prodigy.player.backpack.data[u][i] = {"ID": x[i].ID, "N": 1}
     }
 }
 
