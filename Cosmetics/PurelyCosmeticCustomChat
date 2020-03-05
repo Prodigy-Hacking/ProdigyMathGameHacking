@@ -1,0 +1,2 @@
+//This is purely cosmetic
+PIXI.game.prodigy.chat.phrases[0] = "your message here"
