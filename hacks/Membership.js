@@ -1,1 +1,1 @@
-PIXI.game.prodigy.player.tt=true
+PIXI.game.prodigy.player.it=true
