@@ -13,6 +13,3 @@ PIXI.game.prodigy.player.healTeam(9999999)
 
 // It seems like there are a lot of debug functions left in here by the developers...
 PIXI.game.prodigy.debugMisc.prototype
-
-//Possible change of grade? Still looking into it...
-PIXI.game.prodigy.player.grade=
