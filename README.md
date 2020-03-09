@@ -22,4 +22,6 @@ You have been warned.
 # Usage
 Use the command Control+Shift+I to access the console. Paste the code into the console. It's that simple.
 
+Or you can use the bookmarklet way by going to https://caiorss.github.io/bookmarklet-maker/ and covert the script into a bookmarklet and save it as a bookmark then go to prodigy and excute the script by clicking the bookmark.
+
 Any questions? Join our [Discord](https://discord.gg/9cKMgMv)!
