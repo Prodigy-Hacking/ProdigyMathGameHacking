@@ -5,5 +5,5 @@ PIXI.game.prodigy.player.modifiers.barrier=true; // This dosent really help, but
 PIXI.game.prodigy.player.modifiers.maxHearts=1000; // Damage modifiers dont work for wizard battles but health does!
 PIXI.game.prodigy.player.heal(Infinity); // Completly heals your player!
 
-//Bookmarklet:
+// Bookmarklet:
 javascript:PIXI.game.prodigy.debugMisc.setBattleEnergy(10)%3BPIXI.game.prodigy.debugMisc.easyMode()%3BPIXI.game.prodigy.player.modifiers.barrier%3D!0%3BPIXI.game.prodigy.player.modifiers.maxHearts%3D1E3%3BPIXI.game.prodigy.player.heal(Infinity)%3Bvoid+0
