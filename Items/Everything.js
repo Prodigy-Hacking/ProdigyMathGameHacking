@@ -1,5 +1,5 @@
 //Unlocks all equipment.
-a=["outfit", "hat", "boots", "weapon"];
+a=["outfit", "hat", "boots", "weapon", "spellRelic", "fossil"];
 for (u of a) {
     PIXI.game.prodigy.player.backpack.data[u]=[];
     x = PIXI.game.state.states.Boot._gameData[u];
