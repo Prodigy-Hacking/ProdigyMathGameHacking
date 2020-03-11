@@ -26,7 +26,7 @@ If you see someone who is making an extra effort to ensure our community is welc
 
 * No NSFW
 * Be respectful to other users.
-*No racism, sexism, etc.
+*No racism, sexism, etc
 *No messages with exessive length.
 
 # Thank you for honoring our wishes!
