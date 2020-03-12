@@ -14,7 +14,7 @@
 ## Let's try and expand our wiki! Feel free to contribute!
 **[Click here!](https://github.com/PatheticMustan/ProdigyMathGameHacking/wiki)**
 
-# We have surpassed 100k views!
+## We have surpassed 100k views!
 Thank all of you for making this happen.
 
 
