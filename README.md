@@ -10,6 +10,13 @@
 * [Avn1114](https://github.com/Avn1114)
 * [Magmischief](https://github.com/Magmischief)
 
+# Announcements
+## Let's try and expand our wiki! Feel free to contribute!
+**[Click here!](https://github.com/PatheticMustan/ProdigyMathGameHacking/wiki)**
+
+
+
+
 # Hacking Prodigy, the Math Game
 I'm making this repository to try to get the developers to change how Prodigy handles player game data. Instead of handling everything server side, a lot of the heavy lifting is done on the player side. The server just manages multiplayer battles, and hosts data, messages, and events.
 
