@@ -9,6 +9,7 @@
 * [PatheticMustan](https://github.com/PatheticMustan)
 * [Avn1114](https://github.com/Avn1114)
 * [Magmischief](https://github.com/Magmischief)
+* [RubberDuck55](https://github.com/RubberDuck55)
 
 # Announcements
 ## Let's try and expand our wiki! Feel free to contribute!
