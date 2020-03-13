@@ -1,5 +1,4 @@
-//This Script Gets You ALMOST Everthing
-
+// This script gets you almost every house item.
 for(var i = 1; i < 148; i++){
   PIXI.game.prodigy.player.house.data.items[i] = {A: Array(0), N: 1000};
 }
