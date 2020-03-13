@@ -4,6 +4,7 @@
 * **[Wiki](https://github.com/PatheticMustan/ProdigyMathGameHacking/wiki)**
 * **[DIY!](https://github.com/PatheticMustan/ProdigyMathGameHacking/issues/25)**
 * **[Discord](https://discord.gg/9cKMgMv)**
+* **[Instructional Video](https://drive.google.com/file/d/1QZ1659V_8OJvdySRTmKjfJxbI-zukEib/view?usp=sharing)**
 
 ## Collaborators
 * [PatheticMustan](https://github.com/PatheticMustan)
