@@ -280,8 +280,8 @@ function mon(){
 }
 
 function petlevel(){
-  for (let i=0; i<x.length; i++) {
-    PIXI.game.prodigy.player.kennel.data;[i].level=100;
+  for (let i=0; i<PIXI.game.prodigy.player.kennel.data.length; i++) {
+    PIXI.game.prodigy.player.kennel.data[i].level=100;
   };
 }
 
