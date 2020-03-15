@@ -268,7 +268,7 @@ document.getElementById('zones').addEventListener("click", zones);
 document.getElementById('hype').addEventListener("click", hype);
 document.getElementById('furnosh').addEventListener("click", furnosh);
 document.getElementById('petlevel').addEventListener("click", petlevel);
-document.getElementById('mon').addEventListener("click", mon)
+document.getElementById('mon').addEventListener("click", mon);
 document.getElementById('tryme').addEventListener("click", tryme);
 
 function tryme(){
