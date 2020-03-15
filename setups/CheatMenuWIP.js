@@ -21,7 +21,7 @@ id.value = 'submenu';
 div1.setAttributeNode(id);
 
 id = document.createAttribute("style");
-id.value = 'dysplay:none; position: absolute; left: 8.5%; z-index: 10; background-color: white;';
+id.value = 'dysplay:none; position: absolute; left: 8.55%; z-index: 10; background-color: white;';
 div1.setAttributeNode(id);
 id = document.createAttribute("class");
 id.value = 'hide';
@@ -33,7 +33,7 @@ id.innerHTML = 'Teleport';
 var idea = document.createAttribute('id');
 idea.value = 'tele';
 id.setAttributeNode(idea);
-var idea = document.createAttribute('titlealt');
+var idea = document.createAttribute('title');
 idea.value = 'Teleports to mouse on keypress';
 id.setAttributeNode(idea);
 div.appendChild(document.createElement('br'));
@@ -188,6 +188,26 @@ id.setAttributeNode(idea);
 var idea = document.createAttribute('title');
 idea.value = 'Gives you all furniture';
 id.setAttributeNode(idea);
+div.appendChild(id);
+
+id = document.createElement("p");
+id.innerHTML = 'All Pets Level 100';
+var idea = document.createAttribute('id');
+idea.value = 'petlevel';
+id.setAttributeNode(idea);
+var idea = document.createAttribute('title');
+idea.value = 'Makes all your pets level 100. use with get all pets to have every single level 100 pet';
+id.setAttributeNode(idea);
+div.appendChild(id);
+
+id = document.createElement("p");
+id.innerHTML = 'Monsters Level One';
+var idea = document.createAttribute('id');
+idea.value = 'mon';
+id.setAttributeNode(idea);
+var idea = document.createAttribute('title');
+idea.value = 'Makes Monsters All Level One';
+id.setAttributeNode(idea);
 div1.appendChild(id);
 
 var e = document.createElement("input");
@@ -237,6 +257,18 @@ document.getElementById('pets').addEventListener("click", pets);
 document.getElementById('zones').addEventListener("click", zones);
 document.getElementById('hype').addEventListener("click", hype);
 document.getElementById('furnosh').addEventListener("click", furnosh);
+document.getElementById('petlevel').addEventListener("click", petlevel);
+document.getElementById('mon').addEventListener("click", mon);
+
+function mon(){
+  PIXI.game.prodigy.battle.constructor.MOD_DEFAULTS.level = 1;
+}
+
+function petlevel(){
+  for (let i=0; i<x.length; i++) {
+    PIXI.game.prodigy.player.kennel.data;[i].level=100;
+  };
+}
 
 function furnosh(){
   for(var i = 1; i < 148; i++){
@@ -315,7 +347,7 @@ function tut(){
 }
 
 function level(){
-  PIXI.game.prodigy.debugMisc.setLevel(100);
+  PIXI.game.prodigy.player.data.level=100;
 }
 
 function member(){
