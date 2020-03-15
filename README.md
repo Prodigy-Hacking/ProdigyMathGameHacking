@@ -16,7 +16,8 @@
 ## Let's try and expand our wiki! Feel free to contribute!
 **[Click here!](https://github.com/PatheticMustan/ProdigyMathGameHacking/wiki)**
 
-Y'all, no deleting ANY part of the wiki without permission from the admins!
+## Notice: Someone has been deleting wiki pages if this continues to happen we will not keep the wiki and open wiki.
+You can ONLY delete pages with PERMISSION from an admin.
 
 ## We have surpassed 100k views!
 Thank all of you for making this happen.
