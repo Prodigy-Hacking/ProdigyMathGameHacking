@@ -20,7 +20,7 @@
 You can ONLY delete pages with PERMISSION from an admin.
 
 #### Notice: Someone by the name Void-Hacks stole work from this Repo.
-This was not a simple code like most things here it was a script that I [RubberDuck55] worked very hard on. This would not be such a big deal if they contacted us or gave credit. Please do not steal from anyone anywhere.
+This was not a simple code like most things here it was a script that I ([RubberDuck55](https://github.com/RubberDuck55)) worked very hard on. This would not be such a big deal if they contacted us or gave credit. Please do not steal from anyone anywhere. Also please do not spread hate for this person or anyone
 
 ## We have surpassed 100k views!
 Thank all of you for making this happen.
