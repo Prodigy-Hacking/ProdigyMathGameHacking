@@ -25,7 +25,7 @@ id.value = 'dysplay:none; position: absolute; left: 8.55%; z-index: 10; backgrou
 div1.setAttributeNode(id);
 id = document.createAttribute("class");
 id.value = 'hide';
-div1.setAttributeNode(id);''
+div1.setAttributeNode(id);
 document.body.insertBefore(div1,document.getElementById('game-wrapper'));
 
 id = document.createElement("p");
@@ -210,6 +210,16 @@ idea.value = 'Makes Monsters All Level One';
 id.setAttributeNode(idea);
 div1.appendChild(id);
 
+id = document.createElement("p");
+id.innerHTML = 'Invincible';
+var idea = document.createAttribute('id');
+idea.value = 'tryme';
+id.setAttributeNode(idea);
+var idea = document.createAttribute('title');
+idea.value = 'Makes You Invincible';
+id.setAttributeNode(idea);
+div1.appendChild(id);
+
 var e = document.createElement("input");
 var a = document.createTextNode("Cheat Menu");
 var body = document.getElementsByTagName("body");
@@ -258,7 +268,12 @@ document.getElementById('zones').addEventListener("click", zones);
 document.getElementById('hype').addEventListener("click", hype);
 document.getElementById('furnosh').addEventListener("click", furnosh);
 document.getElementById('petlevel').addEventListener("click", petlevel);
-document.getElementById('mon').addEventListener("click", mon);
+document.getElementById('mon').addEventListener("click", mon)
+document.getElementById('tryme').addEventListener("click", tryme);
+
+function tryme(){
+  PIXI.game.prodigy.battle.constructor.MOD_DEFAULTS.invincible=true;
+}
 
 function mon(){
   PIXI.game.prodigy.battle.constructor.MOD_DEFAULTS.level = 1;
