@@ -16,9 +16,6 @@
 ## Let's try and expand our wiki! Feel free to contribute!
 **[Click here!](https://github.com/PatheticMustan/ProdigyMathGameHacking/wiki)**
 
-#### Notice: Someone has been deleting wiki pages if this continues to happen we will not keep the wiki as a open wiki.
-You can ONLY delete pages with PERMISSION from an admin.
-
 #### Notice: Someone by the name Void-Hacks stole work from this Repo.
 This was not a simple code like most things here it was a script that I ([RubberDuck55](https://github.com/RubberDuck55)) worked very hard on. This would not be such a big deal if they contacted us or gave credit. Please do not steal from anyone anywhere. Also please do not spread hate for this person or anyone.
 
