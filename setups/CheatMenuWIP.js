@@ -220,6 +220,16 @@ idea.value = 'Makes You Invincible';
 id.setAttributeNode(idea);
 div1.appendChild(id);
 
+id = document.createElement("p");
+id.innerHTML = 'Grade Change';
+var idea = document.createAttribute('id');
+idea.value = 'grade';
+id.setAttributeNode(idea);
+var idea = document.createAttribute('title');
+idea.value = 'Changes your grade, reload to take affect';
+id.setAttributeNode(idea);
+div1.appendChild(id);
+
 var e = document.createElement("input");
 var a = document.createTextNode("Cheat Menu");
 var body = document.getElementsByTagName("body");
@@ -270,6 +280,12 @@ document.getElementById('furnosh').addEventListener("click", furnosh);
 document.getElementById('petlevel').addEventListener("click", petlevel);
 document.getElementById('mon').addEventListener("click", mon);
 document.getElementById('tryme').addEventListener("click", tryme);
+document.getElementById('grade').addEventListener("click", grade);
+
+function grade(){
+  var g = prompt("What grade would you like to change to? (1-8)");
+  PIXI.game.prodigy.player.grade = g;
+}
 
 function tryme(){
   PIXI.game.prodigy.battle.constructor.MOD_DEFAULTS.invincible=true;
