@@ -1,3 +1,5 @@
+//Please Dont Steal this I can Find you
+
 var style = document.createElement('style');
 style.innerHTML = '.hide {display: none;}';
 document.head.appendChild(style);
