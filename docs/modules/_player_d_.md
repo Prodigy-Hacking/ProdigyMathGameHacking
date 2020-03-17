@@ -1,4 +1,4 @@
-[undefined](../README.md) › [Globals](../globals.md) › ["player.d"](_player_d_.md)
+[ProdigyMathGameHackingTypings](../README.md) › [Globals](../globals.md) › ["player.d"](_player_d_.md)
 
 # Module: "player.d"
 
