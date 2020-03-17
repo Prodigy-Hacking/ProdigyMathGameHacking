@@ -15,6 +15,13 @@ for (i in x) {
     PIXI.game.prodigy.player.backpack.data.currency[i] = {"ID": x[i].ID, "N": 99999999};
 }
 
+// furniture
+PIXI.game.prodigy.player.house.data.items = []
+x = PIXI.game.state.states.Boot._gameData.dorm
+for (i in x) {
+    PIXI.game.prodigy.player.house.data.items[x[i]["ID"]] = {A: [], N: 999}
+}
+
 PIXI.game.prodigy.player.backpack.data.follow=[];
 x = PIXI.game.state.states.Boot._gameData.follow;
 for (i in x) {
