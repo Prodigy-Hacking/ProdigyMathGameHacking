@@ -1,4 +1,4 @@
-[undefined](../README.md) › [Globals](../globals.md) › ["pixi.d"](_pixi_d_.md)
+[ProdigyMathGameHackingTypings](../README.md) › [Globals](../globals.md) › ["pixi.d"](_pixi_d_.md)
 
 # Module: "pixi.d"
 

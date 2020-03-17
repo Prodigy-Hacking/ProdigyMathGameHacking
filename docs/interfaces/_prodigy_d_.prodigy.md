@@ -1,4 +1,4 @@
-[undefined](../README.md) › [Globals](../globals.md) › ["prodigy.d"](../modules/_prodigy_d_.md) › [Prodigy](_prodigy_d_.prodigy.md)
+[ProdigyMathGameHackingTypings](../README.md) › [Globals](../globals.md) › ["prodigy.d"](../modules/_prodigy_d_.md) › [Prodigy](_prodigy_d_.prodigy.md)
 
 # Interface: Prodigy
 
