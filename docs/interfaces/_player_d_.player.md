@@ -1,4 +1,4 @@
-[undefined](../README.md) › [Globals](../globals.md) › ["player.d"](../modules/_player_d_.md) › [Player](_player_d_.player.md)
+[ProdigyMathGameHackingTypings](../README.md) › [Globals](../globals.md) › ["player.d"](../modules/_player_d_.md) › [Player](_player_d_.player.md)
 
 # Interface: Player
 
