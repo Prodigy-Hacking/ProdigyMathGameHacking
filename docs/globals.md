@@ -1,6 +1,6 @@
-[undefined](README.md) › [Globals](globals.md)
+[ProdigyMathGameHackingTypings](README.md) › [Globals](globals.md)
 
-# undefined
+# ProdigyMathGameHackingTypings
 
 ## Index
 

@@ -1,4 +1,4 @@
-[undefined](../README.md) › [Globals](../globals.md) › ["pixi.d"](../modules/_pixi_d_.md) › [PIXI](_pixi_d_.pixi.md)
+[ProdigyMathGameHackingTypings](../README.md) › [Globals](../globals.md) › ["pixi.d"](../modules/_pixi_d_.md) › [PIXI](_pixi_d_.pixi.md)
 
 # Interface: PIXI
 
