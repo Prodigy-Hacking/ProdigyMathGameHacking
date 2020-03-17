@@ -47,4 +47,4 @@ You can also use the bookmarklet way by going to https://caiorss.github.io/bookm
 
 Any questions? Join our [Discord](https://discord.gg/9cKMgMv)!
 
-Documentation: [Docs](./docs/globals)
+Documentation: [Docs](./docs/globals.md)
