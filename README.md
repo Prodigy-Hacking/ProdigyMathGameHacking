@@ -24,6 +24,10 @@
 
 This was not a simple code like most things here it was a script that I ([RubberDuck55](https://github.com/RubberDuck55)) worked very hard on. This would not be such a big deal if they contacted us or gave credit. Please do not steal from anyone anywhere. Also please do not spread hate for this person or anyone.
 
+#### Notice: We are NOT trying to ruin Prodigy Math Game.
+
+This may look like we're trying to ruin the game, but we're helping make it better. By finding exploits, we help the developers find that there is an exploit, and the developers fix it, overall helping the game. Anyone who claims that we are 'malicious' or 'ruining the game', are wrong. Please don't spread misinformation.
+
 ## We have surpassed 100k views and over 4.5k unique viewers!
 
 Thank all of you for making this happen.
@@ -47,4 +51,4 @@ You can also use the bookmarklet way by going to https://caiorss.github.io/bookm
 
 Any questions? Join our [Discord](https://discord.gg/9cKMgMv)!
 
-Documentation: [Docs](./docs/globals.md)
+Documentation: [Docs](./docs/interfaces/_pixi_d_.pixi.md)

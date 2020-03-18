@@ -19,7 +19,7 @@
 
 • **id**: *number*
 
-Defined in game.d.ts:5
+*Defined in [game.d.ts:5](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/06c3369/typings/game.d.ts#L5)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **prodigy**: *[Prodigy](_prodigy_d_.prodigy.md)*
 
-Defined in game.d.ts:4
+*Defined in [game.d.ts:4](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/06c3369/typings/game.d.ts#L4)*
