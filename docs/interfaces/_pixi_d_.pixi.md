@@ -17,5 +17,3 @@
 ###  game
 
 • **game**: *[Game](_game_d_.game.md)*
-
-*Defined in [pixi.d.ts:4](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/pixi.d.ts#L4)*

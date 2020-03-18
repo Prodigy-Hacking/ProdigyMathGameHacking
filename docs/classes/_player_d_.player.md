@@ -224,8 +224,6 @@
 
 \+ **new Player**(`prop0`: unknown): *[Player](_player_d_.player.md)*
 
-*Defined in [player.d.ts:146](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L146)*
-
 **Parameters:**
 
 Name | Type |
@@ -240,15 +238,11 @@ Name | Type |
 
 • **MAX_HEARTS**: *number*
 
-*Defined in [player.d.ts:36](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L36)*
-
 ___
 
 ###  _isFocusModeEnabled
 
 • **_isFocusModeEnabled**: *false*
-
-*Defined in [player.d.ts:126](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L126)*
 
 ___
 
@@ -256,15 +250,11 @@ ___
 
 • **_remoteLogger**: *[TODO](../modules/_util_d_.md#todo)*
 
-*Defined in [player.d.ts:49](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L49)*
-
 ___
 
 ###  _saveEnabled
 
 • **_saveEnabled**: *true*
-
-*Defined in [player.d.ts:127](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L127)*
 
 ___
 
@@ -272,15 +262,11 @@ ___
 
 • **achievements**: *[TODO](../modules/_util_d_.md#todo)*
 
-*Defined in [player.d.ts:37](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L37)*
-
 ___
 
 ###  appearance
 
 • **appearance**: *[TODO](../modules/_util_d_.md#todo)*
-
-*Defined in [player.d.ts:38](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L38)*
 
 ___
 
@@ -288,15 +274,11 @@ ___
 
 • **appearanceChanged**: *boolean*
 
-*Defined in [player.d.ts:57](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L57)*
-
 ___
 
 ###  backpack
 
 • **backpack**: *[TODO](../modules/_util_d_.md#todo)*
-
-*Defined in [player.d.ts:39](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L39)*
 
 ___
 
@@ -304,15 +286,11 @@ ___
 
 • **broadcastId**: *number*
 
-*Defined in [player.d.ts:58](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L58)*
-
 ___
 
 ###  catchAttempt
 
 • **catchAttempt**: *number*
-
-*Defined in [player.d.ts:59](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L59)*
 
 ___
 
@@ -320,15 +298,11 @@ ___
 
 • **chatID**: *number*
 
-*Defined in [player.d.ts:60](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L60)*
-
 ___
 
 ###  classIDs
 
 • **classIDs**: *number[]*
-
-*Defined in [player.d.ts:61](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L61)*
 
 ___
 
@@ -336,15 +310,11 @@ ___
 
 • **coOpTeam**? : *unknown*
 
-*Defined in [player.d.ts:62](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L62)*
-
 ___
 
 ### `Optional` currentVideoSkillId
 
 • **currentVideoSkillId**? : *unknown*
-
-*Defined in [player.d.ts:63](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L63)*
 
 ___
 
@@ -352,15 +322,11 @@ ___
 
 • **curriculumTreeID**: *number*
 
-*Defined in [player.d.ts:64](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L64)*
-
 ___
 
 ###  daily
 
 • **daily**: *[TODO](../modules/_util_d_.md#todo)*
-
-*Defined in [player.d.ts:40](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L40)*
 
 ___
 
@@ -368,15 +334,11 @@ ___
 
 • **dailyQuestions**: *[TODO](../modules/_util_d_.md#todo)*
 
-*Defined in [player.d.ts:41](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L41)*
-
 ___
 
 ### `Optional` danceID
 
 • **danceID**? : *unknown*
-
-*Defined in [player.d.ts:55](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L55)*
 
 ___
 
@@ -384,15 +346,11 @@ ___
 
 • **data**: *[PlayerData](_player_d_.playerdata.md)*
 
-*Defined in [player.d.ts:111](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L111)*
-
 ___
 
 ###  earlyBirdLastChance
 
 • **earlyBirdLastChance**: *boolean*
-
-*Defined in [player.d.ts:65](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L65)*
 
 ___
 
@@ -400,15 +358,11 @@ ___
 
 • **emoteID**? : *unknown*
 
-*Defined in [player.d.ts:56](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L56)*
-
 ___
 
 ###  encounters
 
 • **encounters**: *[TODO](../modules/_util_d_.md#todo)*
-
-*Defined in [player.d.ts:42](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L42)*
 
 ___
 
@@ -416,15 +370,11 @@ ___
 
 • **equipment**: *[TODO](../modules/_util_d_.md#todo)*
 
-*Defined in [player.d.ts:43](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L43)*
-
 ___
 
 ###  game
 
 • **game**: *[Game](../interfaces/_game_d_.game.md)*
-
-*Defined in [player.d.ts:50](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L50)*
 
 ___
 
@@ -432,15 +382,11 @@ ___
 
 • **grade**: *number*
 
-*Defined in [player.d.ts:66](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L66)*
-
 ___
 
 ###  hasUsedTicket
 
 • **hasUsedTicket**: *boolean*
-
-*Defined in [player.d.ts:68](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L68)*
 
 ___
 
@@ -448,15 +394,11 @@ ___
 
 • **house**: *[TODO](../modules/_util_d_.md#todo)*
 
-*Defined in [player.d.ts:44](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L44)*
-
 ___
 
 ###  immortal
 
 • **immortal**: *boolean*
-
-*Defined in [player.d.ts:51](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L51)*
 
 ___
 
@@ -464,15 +406,11 @@ ___
 
 • **inPVP**: *boolean*
 
-*Defined in [player.d.ts:52](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L52)*
-
 ___
 
 ###  isClassCodeAttached
 
 • **isClassCodeAttached**: *boolean*
-
-*Defined in [player.d.ts:53](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L53)*
 
 ___
 
@@ -480,23 +418,17 @@ ___
 
 • **isFocusModeEnabled**: *boolean*
 
-*Defined in [player.d.ts:54](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L54)*
-
 ___
 
 ###  isOpponent
 
 • **isOpponent**: *boolean*
 
-*Defined in [player.d.ts:67](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L67)*
-
 ___
 
 ###  it
 
 • **it**: *boolean*
-
-*Defined in [player.d.ts:70](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L70)*
 
 Membership
 
@@ -506,23 +438,17 @@ ___
 
 • **justLeveled**: *boolean*
 
-*Defined in [player.d.ts:71](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L71)*
-
 ___
 
 ###  kennel
 
 • **kennel**: *[TODO](../modules/_util_d_.md#todo)*
 
-*Defined in [player.d.ts:45](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L45)*
-
 ___
 
 ###  lastVisited
 
 • **lastVisited**: *string*
-
-*Defined in [player.d.ts:73](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L73)*
 
 A date ISOString
 
@@ -532,15 +458,11 @@ ___
 
 • **locationSelectionType**: *string*
 
-*Defined in [player.d.ts:74](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L74)*
-
 ___
 
 ### `Optional` memberEndDate
 
 • **memberEndDate**? : *unknown*
-
-*Defined in [player.d.ts:75](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L75)*
 
 ___
 
@@ -548,23 +470,17 @@ ___
 
 • **memberPrompt**: *boolean*
 
-*Defined in [player.d.ts:76](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L76)*
-
 ___
 
 ### `Optional` memberShareDate
 
 • **memberShareDate**? : *unknown*
 
-*Defined in [player.d.ts:77](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L77)*
-
 ___
 
 ### `Optional` memberStartDate
 
 • **memberStartDate**? : *string*
-
-*Defined in [player.d.ts:79](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L79)*
 
 A date ISOString
 
@@ -573,8 +489,6 @@ ___
 ###  modifiers
 
 • **modifiers**: *object*
-
-*Defined in [player.d.ts:80](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L80)*
 
 #### Type declaration:
 
@@ -594,15 +508,11 @@ ___
 
 • **name**: *[PlayerName](../interfaces/_player_d_.playername.md)*
 
-*Defined in [player.d.ts:128](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L128)*
-
 ___
 
 ###  onHPChange
 
 • **onHPChange**: *[TODO](../modules/_util_d_.md#todo)*
-
-*Defined in [player.d.ts:46](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L46)*
 
 ___
 
@@ -610,15 +520,11 @@ ___
 
 • **overrideClassSelect**: *boolean*
 
-*Defined in [player.d.ts:87](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L87)*
-
 ___
 
 ###  owners
 
 • **owners**: *object[]*
-
-*Defined in [player.d.ts:88](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L88)*
 
 ___
 
@@ -626,15 +532,11 @@ ___
 
 • **parentEmail**: *string*
 
-*Defined in [player.d.ts:93](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L93)*
-
 ___
 
 ###  parentalLink
 
 • **parentalLink**: *boolean*
-
-*Defined in [player.d.ts:94](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L94)*
 
 ___
 
@@ -642,15 +544,11 @@ ___
 
 • **password**: *string*
 
-*Defined in [player.d.ts:95](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L95)*
-
 ___
 
 ###  playerParents
 
 • **playerParents**: *unknown[]*
-
-*Defined in [player.d.ts:96](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L96)*
 
 ___
 
@@ -658,15 +556,11 @@ ___
 
 • **playerTeachers**: *object[]*
 
-*Defined in [player.d.ts:97](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L97)*
-
 ___
 
 ###  pvpHP
 
 • **pvpHP**: *number*
-
-*Defined in [player.d.ts:102](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L102)*
 
 ___
 
@@ -674,15 +568,11 @@ ___
 
 • **quests**: *[TODO](../modules/_util_d_.md#todo)*
 
-*Defined in [player.d.ts:47](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L47)*
-
 ___
 
 ###  registerDate
 
 • **registerDate**: *Date*
-
-*Defined in [player.d.ts:103](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L103)*
 
 ___
 
@@ -690,15 +580,11 @@ ___
 
 • **saveEnabled**: *boolean*
 
-*Defined in [player.d.ts:104](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L104)*
-
 ___
 
 ### `Optional` source
 
 • **source**? : *unknown*
-
-*Defined in [player.d.ts:105](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L105)*
 
 ___
 
@@ -706,15 +592,11 @@ ___
 
 • **spellStreak**: *number*
 
-*Defined in [player.d.ts:106](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L106)*
-
 ___
 
 ###  starsEarned
 
 • **starsEarned**: *number*
-
-*Defined in [player.d.ts:107](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L107)*
 
 ___
 
@@ -722,15 +604,11 @@ ___
 
 • **starsReward**: *number*
 
-*Defined in [player.d.ts:108](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L108)*
-
 ___
 
 ###  starsRewardBase
 
 • **starsRewardBase**: *number*
-
-*Defined in [player.d.ts:109](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L109)*
 
 ___
 
@@ -738,15 +616,11 @@ ___
 
 • **starsToProcess**: *number*
 
-*Defined in [player.d.ts:110](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L110)*
-
 ___
 
 ###  state
 
 • **state**: *[TODO](../modules/_util_d_.md#todo)*
-
-*Defined in [player.d.ts:48](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L48)*
 
 ___
 
@@ -754,15 +628,11 @@ ___
 
 • **team**? : *unknown*
 
-*Defined in [player.d.ts:112](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L112)*
-
 ___
 
 ### `Optional` transformID
 
 • **transformID**? : *unknown*
-
-*Defined in [player.d.ts:113](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L113)*
 
 ___
 
@@ -770,15 +640,11 @@ ___
 
 • **tutorialCompletedThisSession**: *boolean*
 
-*Defined in [player.d.ts:114](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L114)*
-
 ___
 
 ###  type
 
 • **type**: *string*
-
-*Defined in [player.d.ts:115](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L115)*
 
 ___
 
@@ -786,15 +652,11 @@ ___
 
 • **updated**: *boolean*
 
-*Defined in [player.d.ts:116](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L116)*
-
 ___
 
 ###  userID
 
 • **userID**: *number*
-
-*Defined in [player.d.ts:117](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L117)*
 
 ___
 
@@ -802,15 +664,11 @@ ___
 
 • **username**: *string*
 
-*Defined in [player.d.ts:118](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L118)*
-
 ___
 
 ###  world
 
 • **world**: *object*
-
-*Defined in [player.d.ts:119](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L119)*
 
 #### Type declaration:
 
@@ -830,15 +688,11 @@ ___
 
 ▪ **ACCOUNT_RESET_ZONE_KEEPERS**: *[Zones](../modules/_player_d_.md#zones)[]*
 
-*Defined in [player.d.ts:13](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L13)*
-
 ___
 
 ### `Static` HP_BONUS
 
 ▪ **HP_BONUS**: *object*
-
-*Defined in [player.d.ts:14](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L14)*
 
 #### Type declaration:
 
@@ -866,15 +720,11 @@ ___
 
 ▪ **LEVEL_CURVE**: *object[]*
 
-*Defined in [player.d.ts:25](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L25)*
-
 ## Methods
 
 ###  addAsset
 
 ▸ **addAsset**(`asset`: unknown): *void*
-
-*Defined in [player.d.ts:129](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L129)*
 
 **Parameters:**
 
@@ -890,8 +740,6 @@ ___
 
 ▸ **addBattle**(): *void*
 
-*Defined in [player.d.ts:130](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L130)*
-
 **Returns:** *void*
 
 ___
@@ -899,8 +747,6 @@ ___
 ###  addBountyScore
 
 ▸ **addBountyScore**(`bountyScore`: number): *void*
-
-*Defined in [player.d.ts:131](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L131)*
 
 **Parameters:**
 
@@ -916,8 +762,6 @@ ___
 
 ▸ **addLoss**(): *void*
 
-*Defined in [player.d.ts:132](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L132)*
-
 **Returns:** *void*
 
 ___
@@ -925,8 +769,6 @@ ___
 ###  addSpell
 
 ▸ **addSpell**(`spell`: number): *void*
-
-*Defined in [player.d.ts:133](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L133)*
 
 **Parameters:**
 
@@ -941,8 +783,6 @@ ___
 ###  addStars
 
 ▸ **addStars**(`stars`: number, `prop1`: boolean, `prop2`: boolean): *boolean*
-
-*Defined in [player.d.ts:134](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L134)*
 
 **Parameters:**
 
@@ -960,8 +800,6 @@ ___
 
 ▸ **addWin**(): *void*
 
-*Defined in [player.d.ts:135](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L135)*
-
 **Returns:** *void*
 
 ___
@@ -969,8 +807,6 @@ ___
 ###  anyPetsAboveLevel
 
 ▸ **anyPetsAboveLevel**(`level`: number): *boolean*
-
-*Defined in [player.d.ts:136](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L136)*
 
 **Parameters:**
 
@@ -986,8 +822,6 @@ ___
 
 ▸ **canCatch**(): *boolean*
 
-*Defined in [player.d.ts:137](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L137)*
-
 **Returns:** *boolean*
 
 ___
@@ -996,8 +830,6 @@ ___
 
 ▸ **canSpin**(): *boolean*
 
-*Defined in [player.d.ts:138](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L138)*
-
 **Returns:** *boolean*
 
 ___
@@ -1005,8 +837,6 @@ ___
 ###  castSpell
 
 ▸ **castSpell**(`prop0`: boolean): *void*
-
-*Defined in [player.d.ts:139](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L139)*
 
 **Parameters:**
 
@@ -1021,8 +851,6 @@ ___
 ###  changeCurrentHearts
 
 ▸ **changeCurrentHearts**(`prop0`: number, `prop1`: number): *void*
-
-*Defined in [player.d.ts:140](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L140)*
 
 **Parameters:**
 
@@ -1039,8 +867,6 @@ ___
 
 ▸ **changeCurrentHeartsPercent**(`percent`: number): *void*
 
-*Defined in [player.d.ts:141](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L141)*
-
 **Parameters:**
 
 Name | Type |
@@ -1055,8 +881,6 @@ ___
 
 ▸ **changeEnergy**(`energy`: number): *void*
 
-*Defined in [player.d.ts:142](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L142)*
-
 **Parameters:**
 
 Name | Type |
@@ -1070,8 +894,6 @@ ___
 ###  changeGold
 
 ▸ **changeGold**(`gold`: number, `prop1`: boolean): *void*
-
-*Defined in [player.d.ts:143](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L143)*
 
 **Parameters:**
 
@@ -1088,8 +910,6 @@ ___
 
 ▸ **checkVersion**(): *void*
 
-*Defined in [player.d.ts:144](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L144)*
-
 **Returns:** *void*
 
 ___
@@ -1097,8 +917,6 @@ ___
 ###  completeDaily
 
 ▸ **completeDaily**(`daily`: keyof PlayerData, `completed`: boolean): *void*
-
-*Defined in [player.d.ts:145](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L145)*
 
 **Parameters:**
 
@@ -1115,8 +933,6 @@ ___
 
 ▸ **completeTower**(`tower`: number): *void*
 
-*Defined in [player.d.ts:146](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L146)*
-
 **Parameters:**
 
 Name | Type |
@@ -1131,8 +947,6 @@ ___
 
 ▸ **createDataClone**(): *[Player](_player_d_.player.md)*
 
-*Defined in [player.d.ts:148](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L148)*
-
 **Returns:** *[Player](_player_d_.player.md)*
 
 ___
@@ -1141,8 +955,6 @@ ___
 
 ▸ **createRandom**(): *void*
 
-*Defined in [player.d.ts:149](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L149)*
-
 **Returns:** *void*
 
 ___
@@ -1150,8 +962,6 @@ ___
 ###  diffAttackSlots
 
 ▸ **diffAttackSlots**(`level`: number): *void*
-
-*Defined in [player.d.ts:150](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L150)*
 
 **Parameters:**
 
@@ -1166,8 +976,6 @@ ___
 ###  equip
 
 ▸ **equip**(`id`: number, `type`: [ItemType](../modules/_player_d_.md#itemtype)): *boolean*
-
-*Defined in [player.d.ts:151](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L151)*
 
 **Parameters:**
 
@@ -1184,8 +992,6 @@ ___
 
 ▸ **evolve**(`unused0`: never, `unused1`: never): *never*
 
-*Defined in [player.d.ts:152](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L152)*
-
 **Parameters:**
 
 Name | Type |
@@ -1201,8 +1007,6 @@ ___
 
 ▸ **forceSaveCharacter**(): *void*
 
-*Defined in [player.d.ts:153](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L153)*
-
 **Returns:** *void*
 
 ___
@@ -1210,8 +1014,6 @@ ___
 ###  getAllAttacks
 
 ▸ **getAllAttacks**(): *number[]*
-
-*Defined in [player.d.ts:154](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L154)*
 
 **Returns:** *number[]*
 
@@ -1221,8 +1023,6 @@ ___
 
 ▸ **getAllowsHouseVisitors**(): *boolean*
 
-*Defined in [player.d.ts:155](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L155)*
-
 **Returns:** *boolean*
 
 ___
@@ -1230,8 +1030,6 @@ ___
 ###  getArenaPoints
 
 ▸ **getArenaPoints**(): *number*
-
-*Defined in [player.d.ts:156](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L156)*
 
 **Returns:** *number*
 
@@ -1241,8 +1039,6 @@ ___
 
 ▸ **getAttacks**(): *number[]*
 
-*Defined in [player.d.ts:157](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L157)*
-
 **Returns:** *number[]*
 
 ___
@@ -1250,8 +1046,6 @@ ___
 ###  getAvailableEvolutions
 
 ▸ **getAvailableEvolutions**(): *unknown[]*
-
-*Defined in [player.d.ts:158](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L158)*
 
 **Returns:** *unknown[]*
 
@@ -1261,8 +1055,6 @@ ___
 
 ▸ **getBaseMaxHearts**(): *number*
 
-*Defined in [player.d.ts:159](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L159)*
-
 **Returns:** *number*
 
 ___
@@ -1270,8 +1062,6 @@ ___
 ###  getBattles
 
 ▸ **getBattles**(): *number*
-
-*Defined in [player.d.ts:160](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L160)*
 
 **Returns:** *number*
 
@@ -1281,8 +1071,6 @@ ___
 
 ▸ **getBountyScore**(): *number*
 
-*Defined in [player.d.ts:161](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L161)*
-
 **Returns:** *number*
 
 ___
@@ -1290,8 +1078,6 @@ ___
 ###  getColiseum
 
 ▸ **getColiseum**(): *number*
-
-*Defined in [player.d.ts:162](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L162)*
 
 **Returns:** *number*
 
@@ -1301,8 +1087,6 @@ ___
 
 ▸ **getCurrentBamSpells**(): *number[]*
 
-*Defined in [player.d.ts:163](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L163)*
-
 **Returns:** *number[]*
 
 ___
@@ -1310,8 +1094,6 @@ ___
 ###  getCurrentHearts
 
 ▸ **getCurrentHearts**(): *number*
-
-*Defined in [player.d.ts:164](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L164)*
 
 **Returns:** *number*
 
@@ -1321,8 +1103,6 @@ ___
 
 ▸ **getDailyQuestions**(): *Player["dailyQuestions"]*
 
-*Defined in [player.d.ts:165](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L165)*
-
 **Returns:** *Player["dailyQuestions"]*
 
 ___
@@ -1330,8 +1110,6 @@ ___
 ###  getDamageBonus
 
 ▸ **getDamageBonus**(): *ReturnType‹Player["equipment"]["getDamageBonuses"]›*
-
-*Defined in [player.d.ts:166](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L166)*
 
 **Returns:** *ReturnType‹Player["equipment"]["getDamageBonuses"]›*
 
@@ -1341,8 +1119,6 @@ ___
 
 ▸ **getDataAndClear**(): *Partial‹[Player](_player_d_.player.md)›*
 
-*Defined in [player.d.ts:167](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L167)*
-
 **Returns:** *Partial‹[Player](_player_d_.player.md)›*
 
 ___
@@ -1350,8 +1126,6 @@ ___
 ###  getElement
 
 ▸ **getElement**(): *"wizard"*
-
-*Defined in [player.d.ts:168](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L168)*
 
 **Returns:** *"wizard"*
 
@@ -1361,8 +1135,6 @@ ___
 
 ▸ **getEnergy**(): *number*
 
-*Defined in [player.d.ts:169](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L169)*
-
 **Returns:** *number*
 
 ___
@@ -1370,8 +1142,6 @@ ___
 ###  getEquipmentSpell
 
 ▸ **getEquipmentSpell**(): *object*
-
-*Defined in [player.d.ts:170](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L170)*
 
 **Returns:** *object*
 
@@ -1387,8 +1157,6 @@ ___
 
 ▸ **getFirstName**(): *string*
 
-*Defined in [player.d.ts:171](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L171)*
-
 **Returns:** *string*
 
 ___
@@ -1396,8 +1164,6 @@ ___
 ###  getGold
 
 ▸ **getGold**(): *number*
-
-*Defined in [player.d.ts:172](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L172)*
 
 **Returns:** *number*
 
@@ -1407,8 +1173,6 @@ ___
 
 ▸ **getHeartBonus**(): *number*
 
-*Defined in [player.d.ts:173](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L173)*
-
 **Returns:** *number*
 
 ___
@@ -1416,8 +1180,6 @@ ___
 ###  getID
 
 ▸ **getID**(): *Player["userID"]*
-
-*Defined in [player.d.ts:174](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L174)*
 
 **Returns:** *Player["userID"]*
 
@@ -1427,8 +1189,6 @@ ___
 
 ▸ **getLatestClassIDLegacy**(): *number*
 
-*Defined in [player.d.ts:175](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L175)*
-
 **Returns:** *number*
 
 ___
@@ -1437,8 +1197,6 @@ ___
 
 ▸ **getLevel**(): *number*
 
-*Defined in [player.d.ts:176](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L176)*
-
 **Returns:** *number*
 
 ___
@@ -1446,8 +1204,6 @@ ___
 ###  getLevelingCurve
 
 ▸ **getLevelingCurve**(`level`: number): *unknown[]*
-
-*Defined in [player.d.ts:177](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L177)*
 
 **Parameters:**
 
@@ -1463,8 +1219,6 @@ ___
 
 ▸ **getLosses**(): *number*
 
-*Defined in [player.d.ts:178](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L178)*
-
 **Returns:** *number*
 
 ___
@@ -1472,8 +1226,6 @@ ___
 ###  getMaxHearts
 
 ▸ **getMaxHearts**(`level`: number): *number*
-
-*Defined in [player.d.ts:179](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L179)*
 
 **Parameters:**
 
@@ -1489,8 +1241,6 @@ ___
 
 ▸ **getMaxTimeForCurrentMorphMarbleEffect**(): *number*
 
-*Defined in [player.d.ts:180](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L180)*
-
 **Returns:** *number*
 
 ___
@@ -1498,8 +1248,6 @@ ___
 ###  getName
 
 ▸ **getName**(): *string*
-
-*Defined in [player.d.ts:181](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L181)*
 
 **Returns:** *string*
 
@@ -1509,8 +1257,6 @@ ___
 
 ▸ **getNameWithoutNickname**(): *string*
 
-*Defined in [player.d.ts:182](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L182)*
-
 **Returns:** *string*
 
 ___
@@ -1518,8 +1264,6 @@ ___
 ###  getNativeSpell
 
 ▸ **getNativeSpell**(`prop0`: unknown, `prop1`: unknown[], `prop2`: unknown, `prop3`: unknown): *unknown*
-
-*Defined in [player.d.ts:183](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L183)*
 
 **Parameters:**
 
@@ -1538,8 +1282,6 @@ ___
 
 ▸ **getNumAttacks**(): *number*
 
-*Defined in [player.d.ts:189](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L189)*
-
 **Returns:** *number*
 
 ___
@@ -1547,8 +1289,6 @@ ___
 ###  getNumRelics
 
 ▸ **getNumRelics**(): *number*
-
-*Defined in [player.d.ts:190](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L190)*
 
 **Returns:** *number*
 
@@ -1558,8 +1298,6 @@ ___
 
 ▸ **getPercentToLevel**(): *number*
 
-*Defined in [player.d.ts:191](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L191)*
-
 **Returns:** *number*
 
 ___
@@ -1567,8 +1305,6 @@ ___
 ###  getPlayerClass
 
 ▸ **getPlayerClass**(): *string*
-
-*Defined in [player.d.ts:192](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L192)*
 
 **Returns:** *string*
 
@@ -1578,8 +1314,6 @@ ___
 
 ▸ **getPlayerData**(): *[PlayerData](_player_d_.playerdata.md)*
 
-*Defined in [player.d.ts:193](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L193)*
-
 **Returns:** *[PlayerData](_player_d_.playerdata.md)*
 
 ___
@@ -1587,8 +1321,6 @@ ___
 ###  getRegisterDate
 
 ▸ **getRegisterDate**(): *Date | null*
-
-*Defined in [player.d.ts:194](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L194)*
 
 **Returns:** *Date | null*
 
@@ -1598,8 +1330,6 @@ ___
 
 ▸ **getSettings**(): *PlayerData["settings"]*
 
-*Defined in [player.d.ts:195](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L195)*
-
 **Returns:** *PlayerData["settings"]*
 
 ___
@@ -1607,8 +1337,6 @@ ___
 ###  getSpellAssets
 
 ▸ **getSpellAssets**(): *unknown[]*
-
-*Defined in [player.d.ts:196](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L196)*
 
 **Returns:** *unknown[]*
 
@@ -1618,8 +1346,6 @@ ___
 
 ▸ **getSpellStreak**(): *Player["spellStreak"]*
 
-*Defined in [player.d.ts:197](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L197)*
-
 **Returns:** *Player["spellStreak"]*
 
 ___
@@ -1628,8 +1354,6 @@ ___
 
 ▸ **getStarReward**(): *number*
 
-*Defined in [player.d.ts:198](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L198)*
-
 **Returns:** *number*
 
 ___
@@ -1637,8 +1361,6 @@ ___
 ###  getStarRewardByDamage
 
 ▸ **getStarRewardByDamage**(`damage`: number): *number*
-
-*Defined in [player.d.ts:199](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L199)*
 
 **Parameters:**
 
@@ -1654,8 +1376,6 @@ ___
 
 ▸ **getStars**(): *number | null*
 
-*Defined in [player.d.ts:200](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L200)*
-
 **Returns:** *number | null*
 
 ___
@@ -1663,8 +1383,6 @@ ___
 ###  getStarsToLevel
 
 ▸ **getStarsToLevel**(): *number*
-
-*Defined in [player.d.ts:201](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L201)*
 
 **Returns:** *number*
 
@@ -1674,8 +1392,6 @@ ___
 
 ▸ **getStatHealth**(): *number*
 
-*Defined in [player.d.ts:202](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L202)*
-
 **Returns:** *number*
 
 ___
@@ -1683,8 +1399,6 @@ ___
 ###  getStatPower
 
 ▸ **getStatPower**(): *number*
-
-*Defined in [player.d.ts:203](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L203)*
 
 **Returns:** *number*
 
@@ -1694,8 +1408,6 @@ ___
 
 ▸ **getTeamScore**(): *number*
 
-*Defined in [player.d.ts:204](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L204)*
-
 **Returns:** *number*
 
 ___
@@ -1704,8 +1416,6 @@ ___
 
 ▸ **getTowerProgress**(): *number*
 
-*Defined in [player.d.ts:205](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L205)*
-
 **Returns:** *number*
 
 ___
@@ -1713,8 +1423,6 @@ ___
 ###  getUpdatedData
 
 ▸ **getUpdatedData**(`prop0`: unknown, `prop1`: unknown): *unknown*
-
-*Defined in [player.d.ts:206](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L206)*
 
 **Parameters:**
 
@@ -1731,8 +1439,6 @@ ___
 
 ▸ **getWins**(): *number*
 
-*Defined in [player.d.ts:207](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L207)*
-
 **Returns:** *number*
 
 ___
@@ -1740,8 +1446,6 @@ ___
 ###  hasCompletedTowerTownTutorial
 
 ▸ **hasCompletedTowerTownTutorial**(): *boolean*
-
-*Defined in [player.d.ts:208](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L208)*
 
 **Returns:** *boolean*
 
@@ -1751,8 +1455,6 @@ ___
 
 ▸ **hasCompletedTutorial**(): *boolean*
 
-*Defined in [player.d.ts:209](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L209)*
-
 **Returns:** *boolean*
 
 ___
@@ -1760,8 +1462,6 @@ ___
 ###  hasHouseItem
 
 ▸ **hasHouseItem**(`item`: [Item](../modules/_item_d_.md#item)): *boolean*
-
-*Defined in [player.d.ts:210](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L210)*
 
 **Parameters:**
 
@@ -1776,8 +1476,6 @@ ___
 ###  hasMaxQuantityOfItem
 
 ▸ **hasMaxQuantityOfItem**(`type`: unknown, `item`: unknown): *boolean*
-
-*Defined in [player.d.ts:211](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L211)*
 
 **Parameters:**
 
@@ -1794,8 +1492,6 @@ ___
 
 ▸ **hasMembership**(): *Player["it"]*
 
-*Defined in [player.d.ts:212](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L212)*
-
 **Returns:** *Player["it"]*
 
 ___
@@ -1803,8 +1499,6 @@ ___
 ###  hasValidatedParentEmail
 
 ▸ **hasValidatedParentEmail**(): *boolean*
-
-*Defined in [player.d.ts:213](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L213)*
 
 **Returns:** *boolean*
 
@@ -1814,8 +1508,6 @@ ___
 
 ▸ **hasValidatedTeacherEmail**(): *boolean*
 
-*Defined in [player.d.ts:214](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L214)*
-
 **Returns:** *boolean*
 
 ___
@@ -1824,8 +1516,6 @@ ___
 
 ▸ **heal**(): *void*
 
-*Defined in [player.d.ts:215](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L215)*
-
 **Returns:** *void*
 
 ___
@@ -1833,8 +1523,6 @@ ___
 ###  healTeam
 
 ▸ **healTeam**(`hearts`: number): *void*
-
-*Defined in [player.d.ts:216](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L216)*
 
 **Parameters:**
 
@@ -1849,8 +1537,6 @@ ___
 ###  healTeamMember
 
 ▸ **healTeamMember**(`hearts`: number, `prop1`: unknown, `prop2`: unknown): *void*
-
-*Defined in [player.d.ts:217](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L217)*
 
 **Parameters:**
 
@@ -1868,8 +1554,6 @@ ___
 
 ▸ **init**(`prop0`: unknown): *unknown*
 
-*Defined in [player.d.ts:218](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L218)*
-
 **Parameters:**
 
 Name | Type |
@@ -1883,8 +1567,6 @@ ___
 ###  initFromProtobuf
 
 ▸ **initFromProtobuf**(`prop0`: unknown): *void*
-
-*Defined in [player.d.ts:219](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L219)*
 
 **Parameters:**
 
@@ -1900,8 +1582,6 @@ ___
 
 ▸ **isBlockedByDarkTowerMemberGate**(): *boolean*
 
-*Defined in [player.d.ts:220](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L220)*
-
 **Returns:** *boolean*
 
 ___
@@ -1909,8 +1589,6 @@ ___
 ###  isItemOwned
 
 ▸ **isItemOwned**(`item`: [Item](../modules/_item_d_.md#item)): *boolean*
-
-*Defined in [player.d.ts:221](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L221)*
 
 **Parameters:**
 
@@ -1926,8 +1604,6 @@ ___
 
 ▸ **isKnockedOut**(): *boolean*
 
-*Defined in [player.d.ts:222](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L222)*
-
 **Returns:** *boolean*
 
 ___
@@ -1935,8 +1611,6 @@ ___
 ###  isPlayerTransformed
 
 ▸ **isPlayerTransformed**(): *boolean*
-
-*Defined in [player.d.ts:223](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L223)*
 
 **Returns:** *boolean*
 
@@ -1946,8 +1620,6 @@ ___
 
 ▸ **onTutorialComplete**(): *void*
 
-*Defined in [player.d.ts:224](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L224)*
-
 **Returns:** *void*
 
 ___
@@ -1955,8 +1627,6 @@ ___
 ###  processDeserter
 
 ▸ **processDeserter**(): *void*
-
-*Defined in [player.d.ts:225](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L225)*
 
 **Returns:** *void*
 
@@ -1966,8 +1636,6 @@ ___
 
 ▸ **processStars**(): *void*
 
-*Defined in [player.d.ts:226](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L226)*
-
 **Returns:** *void*
 
 ___
@@ -1975,8 +1643,6 @@ ___
 ###  processTrialMembership
 
 ▸ **processTrialMembership**(): *void*
-
-*Defined in [player.d.ts:227](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L227)*
 
 **Returns:** *void*
 
@@ -1986,8 +1652,6 @@ ___
 
 ▸ **resetAccount**(): *void*
 
-*Defined in [player.d.ts:228](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L228)*
-
 **Returns:** *void*
 
 ___
@@ -1996,8 +1660,6 @@ ___
 
 ▸ **resetModifiers**(): *void*
 
-*Defined in [player.d.ts:229](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L229)*
-
 **Returns:** *void*
 
 ___
@@ -2005,8 +1667,6 @@ ___
 ###  rewardMembershipPrizes
 
 ▸ **rewardMembershipPrizes**(`prop0`: unknown): *void*
-
-*Defined in [player.d.ts:230](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L230)*
 
 **Parameters:**
 
@@ -2022,8 +1682,6 @@ ___
 
 ▸ **setAllowsHouseVisitors**(`allow`: boolean): *void*
 
-*Defined in [player.d.ts:231](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L231)*
-
 **Parameters:**
 
 Name | Type |
@@ -2037,8 +1695,6 @@ ___
 ###  setBGMVolume
 
 ▸ **setBGMVolume**(`volume`: number): *void*
-
-*Defined in [player.d.ts:232](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L232)*
 
 **Parameters:**
 
@@ -2054,8 +1710,6 @@ ___
 
 ▸ **setColiseum**(`coliseum`: number): *void*
 
-*Defined in [player.d.ts:233](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L233)*
-
 **Parameters:**
 
 Name | Type |
@@ -2069,8 +1723,6 @@ ___
 ###  setData
 
 ▸ **setData**(`data`: [PlayerData](_player_d_.playerdata.md)): *void*
-
-*Defined in [player.d.ts:234](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L234)*
 
 **Parameters:**
 
@@ -2086,8 +1738,6 @@ ___
 
 ▸ **setDefault**(`gender`: "male" | "female"): *void*
 
-*Defined in [player.d.ts:235](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L235)*
-
 **Parameters:**
 
 Name | Type |
@@ -2101,8 +1751,6 @@ ___
 ###  setEnergy
 
 ▸ **setEnergy**(`energy`: number): *void*
-
-*Defined in [player.d.ts:236](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L236)*
 
 **Parameters:**
 
@@ -2118,8 +1766,6 @@ ___
 
 ▸ **setMemberDebug**(): *void*
 
-*Defined in [player.d.ts:237](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L237)*
-
 **Returns:** *void*
 
 ___
@@ -2127,8 +1773,6 @@ ___
 ###  setMembership
 
 ▸ **setMembership**(`player`: [Player](_player_d_.player.md), `member`: boolean): *void*
-
-*Defined in [player.d.ts:238](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L238)*
 
 **Parameters:**
 
@@ -2145,8 +1789,6 @@ ___
 
 ▸ **setParentEmail**(`email`: string): *void*
 
-*Defined in [player.d.ts:239](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L239)*
-
 **Parameters:**
 
 Name | Type |
@@ -2160,8 +1802,6 @@ ___
 ###  setPlayerClass
 
 ▸ **setPlayerClass**(`playerClass`: unknown): *void*
-
-*Defined in [player.d.ts:240](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L240)*
 
 **Parameters:**
 
@@ -2177,8 +1817,6 @@ ___
 
 ▸ **setSFXVolume**(`volume`: number): *void*
 
-*Defined in [player.d.ts:241](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L241)*
-
 **Parameters:**
 
 Name | Type |
@@ -2192,8 +1830,6 @@ ___
 ###  setSpinDate
 
 ▸ **setSpinDate**(`date`: Date): *void*
-
-*Defined in [player.d.ts:242](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L242)*
 
 **Parameters:**
 
@@ -2209,8 +1845,6 @@ ___
 
 ▸ **setVoiceVolume**(`volume`: number): *void*
 
-*Defined in [player.d.ts:243](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L243)*
-
 **Parameters:**
 
 Name | Type |
@@ -2224,8 +1858,6 @@ ___
 ###  setZone
 
 ▸ **setZone**(`zone`: unknown): *void*
-
-*Defined in [player.d.ts:244](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L244)*
 
 **Parameters:**
 
@@ -2241,8 +1873,6 @@ ___
 
 ▸ **spinWheel**(`wheel`: 1 | 2): *void*
 
-*Defined in [player.d.ts:245](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L245)*
-
 **Parameters:**
 
 Name | Type |
@@ -2256,8 +1886,6 @@ ___
 ###  swapSpells
 
 ▸ **swapSpells**(`prop0`: unknown, `prop1`: unknown): *unknown*
-
-*Defined in [player.d.ts:246](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L246)*
 
 **Parameters:**
 
@@ -2273,8 +1901,6 @@ ___
 ###  transformPlayer
 
 ▸ **transformPlayer**(`prop0`: unknown, `prop1`: unknown, `prop2`: number): *void*
-
-*Defined in [player.d.ts:247](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L247)*
 
 **Parameters:**
 
@@ -2292,8 +1918,6 @@ ___
 
 ▸ **unequip**(`type`: [ItemType](../modules/_player_d_.md#itemtype)): *boolean*
 
-*Defined in [player.d.ts:248](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L248)*
-
 **Parameters:**
 
 Name | Type |
@@ -2308,8 +1932,6 @@ ___
 
 ▸ **updateMembershipVideoAdData**(): *void*
 
-*Defined in [player.d.ts:249](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L249)*
-
 **Returns:** *void*
 
 ___
@@ -2317,8 +1939,6 @@ ___
 ###  updateModifier
 
 ▸ **updateModifier**(`type`: "potion" | "barrier", `modifier`: number): *void*
-
-*Defined in [player.d.ts:250](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L250)*
 
 **Parameters:**
 
@@ -2335,8 +1955,6 @@ ___
 
 ▸ **validateLevel**(): *void*
 
-*Defined in [player.d.ts:251](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L251)*
-
 **Returns:** *void*
 
 ___
@@ -2344,8 +1962,6 @@ ___
 ### `Static` enemiesPerLevel
 
 ▸ **enemiesPerLevel**(`level`: number): *number*
-
-*Defined in [player.d.ts:26](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L26)*
 
 **Parameters:**
 
@@ -2361,8 +1977,6 @@ ___
 
 ▸ **getAoeEvolutions**(): *number[]*
 
-*Defined in [player.d.ts:27](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L27)*
-
 **Returns:** *number[]*
 
 ___
@@ -2370,8 +1984,6 @@ ___
 ### `Static` getAttacksFromCurve
 
 ▸ **getAttacksFromCurve**(`prop0`: unknown[], `prop1`: number, `prop2`: number): *unknown[]*
-
-*Defined in [player.d.ts:28](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L28)*
 
 **Parameters:**
 
@@ -2389,8 +2001,6 @@ ___
 
 ▸ **getAttacksOfType**(`prop0`: unknown, `prop1`: unknown): *unknown[]*
 
-*Defined in [player.d.ts:29](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L29)*
-
 **Parameters:**
 
 Name | Type |
@@ -2405,8 +2015,6 @@ ___
 ### `Static` getEvolutionsFromCurve
 
 ▸ **getEvolutionsFromCurve**(`prop0`: unknown[], `prop1`: number, `prop2`: number): *unknown[]*
-
-*Defined in [player.d.ts:30](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L30)*
 
 **Parameters:**
 
@@ -2424,8 +2032,6 @@ ___
 
 ▸ **getHeartsFromCurve**(`prop0`: unknown[], `prop1`: number, `prop2`: number): *number*
 
-*Defined in [player.d.ts:31](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L31)*
-
 **Parameters:**
 
 Name | Type |
@@ -2442,8 +2048,6 @@ ___
 
 ▸ **getLevelPercent**(`stars`: number): *number*
 
-*Defined in [player.d.ts:32](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L32)*
-
 **Parameters:**
 
 Name | Type |
@@ -2458,8 +2062,6 @@ ___
 
 ▸ **getSingleShotEvolutions**(): *number[]*
 
-*Defined in [player.d.ts:33](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L33)*
-
 **Returns:** *number[]*
 
 ___
@@ -2467,8 +2069,6 @@ ___
 ### `Static` levelFromStars
 
 ▸ **levelFromStars**(`stars`: number): *number*
-
-*Defined in [player.d.ts:34](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L34)*
 
 **Parameters:**
 
@@ -2483,8 +2083,6 @@ ___
 ### `Static` starsToLevel
 
 ▸ **starsToLevel**(`stars`: number): *number*
-
-*Defined in [player.d.ts:35](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L35)*
 
 **Parameters:**
 
