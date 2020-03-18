@@ -1,4 +1,4 @@
-import type { Prodigy } from "./prodigy";
+import { Prodigy } from "./prodigy";
 
 export declare interface Game {
 	prodigy: Prodigy;
