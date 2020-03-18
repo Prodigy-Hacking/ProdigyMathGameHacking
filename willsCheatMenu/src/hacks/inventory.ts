@@ -1,6 +1,6 @@
 import { Hack, category } from "../index";
 import { Swal, Input, Toast } from "../utils/swal";
-import { gameData, VERY_LARGE_NUMBER } from "../utils/util";
+import { gameData, VERY_LARGE_NUMBER, savePlayer } from "../utils/util";
 import { Item } from "../../../typings/item";
 import { BackpackItemType } from "../../../typings/backpack";
 const itemify = (item: Item[]) =>
@@ -20,7 +20,7 @@ const inventoryHack = (
 			`All ${lowercase} have been added to your inventory!`,
 			"success"
 		);
-		PIXI.game.prodigy.player.updated = true;
+		savePlayer();
 	});
 };
 inventoryHack("Boots", "boots");
