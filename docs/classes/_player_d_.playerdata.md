@@ -52,7 +52,7 @@
 
 • **allowsHouseVisitors**: *boolean*
 
-*Defined in [player.d.ts:264](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L264)*
+*Defined in [player.d.ts:264](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L264)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 • **arena**: *number*
 
-*Defined in [player.d.ts:265](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L265)*
+*Defined in [player.d.ts:265](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L265)*
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 • **atHomeTimestamp**: *number*
 
-*Defined in [player.d.ts:266](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L266)*
+*Defined in [player.d.ts:266](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L266)*
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 • **atSchoolTimestamp**: *number*
 
-*Defined in [player.d.ts:267](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L267)*
+*Defined in [player.d.ts:267](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L267)*
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 • **battleCounter**: *number*
 
-*Defined in [player.d.ts:268](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L268)*
+*Defined in [player.d.ts:268](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L268)*
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 • **bountyScore**: *number*
 
-*Defined in [player.d.ts:269](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L269)*
+*Defined in [player.d.ts:269](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L269)*
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 • **daily**: *object*
 
-*Defined in [player.d.ts:270](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L270)*
+*Defined in [player.d.ts:270](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L270)*
 
 #### Type declaration:
 
@@ -120,7 +120,7 @@ ___
 
 • **deserter**: *number*
 
-*Defined in [player.d.ts:277](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L277)*
+*Defined in [player.d.ts:277](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L277)*
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 • **dungeonRunsTimeStamps**: *object[]*
 
-*Defined in [player.d.ts:278](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L278)*
+*Defined in [player.d.ts:278](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L278)*
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 • **energy**: *number*
 
-*Defined in [player.d.ts:282](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L282)*
+*Defined in [player.d.ts:282](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L282)*
 
 ___
 
@@ -144,7 +144,7 @@ ___
 
 • **gold**: *number*
 
-*Defined in [player.d.ts:283](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L283)*
+*Defined in [player.d.ts:283](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L283)*
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 • **hp**: *number*
 
-*Defined in [player.d.ts:284](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L284)*
+*Defined in [player.d.ts:284](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L284)*
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 • **lastArchiveRun**: *number*
 
-*Defined in [player.d.ts:285](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L285)*
+*Defined in [player.d.ts:285](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L285)*
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 • **level**: *number*
 
-*Defined in [player.d.ts:286](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L286)*
+*Defined in [player.d.ts:286](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L286)*
 
 ___
 
@@ -176,7 +176,7 @@ ___
 
 • **memberStarsExpirationDate**: *number*
 
-*Defined in [player.d.ts:287](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L287)*
+*Defined in [player.d.ts:287](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L287)*
 
 ___
 
@@ -184,7 +184,7 @@ ___
 
 • **nm**: *number*
 
-*Defined in [player.d.ts:288](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L288)*
+*Defined in [player.d.ts:288](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L288)*
 
 ___
 
@@ -192,7 +192,7 @@ ___
 
 • **numSpins1**: *number*
 
-*Defined in [player.d.ts:289](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L289)*
+*Defined in [player.d.ts:289](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L289)*
 
 ___
 
@@ -200,7 +200,7 @@ ___
 
 • **numSpins2**: *number*
 
-*Defined in [player.d.ts:290](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L290)*
+*Defined in [player.d.ts:290](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L290)*
 
 ___
 
@@ -208,7 +208,7 @@ ___
 
 • **school**: *string*
 
-*Defined in [player.d.ts:291](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L291)*
+*Defined in [player.d.ts:291](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L291)*
 
 ___
 
@@ -216,7 +216,7 @@ ___
 
 • **settings**: *object*
 
-*Defined in [player.d.ts:292](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L292)*
+*Defined in [player.d.ts:292](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L292)*
 
 #### Type declaration:
 
@@ -232,7 +232,7 @@ ___
 
 • **spellbook**: *number[]*
 
-*Defined in [player.d.ts:297](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L297)*
+*Defined in [player.d.ts:297](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L297)*
 
 ___
 
@@ -240,7 +240,7 @@ ___
 
 • **spells**: *number[]*
 
-*Defined in [player.d.ts:298](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L298)*
+*Defined in [player.d.ts:298](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L298)*
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 • **spinDate1**: *number*
 
-*Defined in [player.d.ts:299](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L299)*
+*Defined in [player.d.ts:299](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L299)*
 
 ___
 
@@ -256,7 +256,7 @@ ___
 
 • **spinDate2**: *number*
 
-*Defined in [player.d.ts:300](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L300)*
+*Defined in [player.d.ts:300](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L300)*
 
 ___
 
@@ -264,7 +264,7 @@ ___
 
 • **stars**: *number*
 
-*Defined in [player.d.ts:301](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L301)*
+*Defined in [player.d.ts:301](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L301)*
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 • **startDate**: *number*
 
-*Defined in [player.d.ts:302](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L302)*
+*Defined in [player.d.ts:302](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L302)*
 
 ___
 
@@ -280,7 +280,7 @@ ___
 
 • **storedMemberStars**: *number*
 
-*Defined in [player.d.ts:303](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L303)*
+*Defined in [player.d.ts:303](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L303)*
 
 ___
 
@@ -288,7 +288,7 @@ ___
 
 • **team**: *number*
 
-*Defined in [player.d.ts:304](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L304)*
+*Defined in [player.d.ts:304](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L304)*
 
 ___
 
@@ -296,7 +296,7 @@ ___
 
 • **titanID**: *number*
 
-*Defined in [player.d.ts:305](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L305)*
+*Defined in [player.d.ts:305](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L305)*
 
 ___
 
@@ -304,7 +304,7 @@ ___
 
 • **tower**: *number*
 
-*Defined in [player.d.ts:306](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L306)*
+*Defined in [player.d.ts:306](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L306)*
 
 ___
 
@@ -312,7 +312,7 @@ ___
 
 • **trialSkipAvailable**: *boolean*
 
-*Defined in [player.d.ts:307](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L307)*
+*Defined in [player.d.ts:307](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L307)*
 
 ___
 
@@ -320,7 +320,7 @@ ___
 
 • **trialStartDate**: *string*
 
-*Defined in [player.d.ts:308](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L308)*
+*Defined in [player.d.ts:308](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L308)*
 
 ___
 
@@ -328,7 +328,7 @@ ___
 
 • **versionID**: *number*
 
-*Defined in [player.d.ts:309](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L309)*
+*Defined in [player.d.ts:309](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L309)*
 
 ___
 
@@ -336,7 +336,7 @@ ___
 
 • **win**: *number*
 
-*Defined in [player.d.ts:310](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L310)*
+*Defined in [player.d.ts:310](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L310)*
 
 ___
 
@@ -344,4 +344,4 @@ ___
 
 • **zone**: *string*
 
-*Defined in [player.d.ts:311](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L311)*
+*Defined in [player.d.ts:311](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L311)*
