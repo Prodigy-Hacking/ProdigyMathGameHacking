@@ -1,7 +1,11 @@
 const path = require("path");
 const glob = require("glob");
+const autoprefixer = require("autoprefixer");
 module.exports = {
-	entry: ["./src/index.ts", ...glob.sync(path.join(__dirname, "src/@(hacks|utils)/**/*.ts"))],
+	entry: [
+		"./src/index.ts",
+		...glob.sync(path.join(__dirname, "src/@(hacks|utils)/**/*.ts")),
+	],
 	module: {
 		rules: [
 			{
@@ -19,6 +23,12 @@ module.exports = {
 					"style-loader",
 					// Translates CSS into CommonJS
 					"css-loader",
+					{
+						loader: "postcss-loader",
+						options: {
+							plugins: () => [autoprefixer()],
+						},
+					},
 					// Compiles Sass to CSS
 					"sass-loader",
 				],
@@ -26,11 +36,11 @@ module.exports = {
 			{
 				test: /\.(png|jpe?g|gif|[to]tf)$/i,
 				use: [
-				  {
-					loader: 'file-loader',
-				  },
+					{
+						loader: "file-loader",
+					},
 				],
-			  }
+			},
 		],
 	},
 	resolve: {
