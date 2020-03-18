@@ -19,12 +19,8 @@
 
 • **id**: *number*
 
-*Defined in [game.d.ts:5](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/game.d.ts#L5)*
-
 ___
 
 ###  prodigy
 
 • **prodigy**: *[Prodigy](_prodigy_d_.prodigy.md)*
-
-*Defined in [game.d.ts:4](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/game.d.ts#L4)*

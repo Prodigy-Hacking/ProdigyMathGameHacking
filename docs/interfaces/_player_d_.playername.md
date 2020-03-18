@@ -20,8 +20,6 @@
 
 • **data**: *object*
 
-*Defined in [player.d.ts:254](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L254)*
-
 #### Type declaration:
 
 * **firstName**: *number*
@@ -38,15 +36,11 @@ ___
 
 • **gender**: *"male" | "female"*
 
-*Defined in [player.d.ts:260](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L260)*
-
 ___
 
 ###  localizer
 
 • **localizer**: *object*
-
-*Defined in [player.d.ts:261](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L261)*
 
 #### Type declaration:
 
