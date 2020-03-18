@@ -20,7 +20,7 @@
 
 • **game**: *[Game](_game_d_.game.md)*
 
-*Defined in [prodigy.d.ts:6](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/06c3369/typings/prodigy.d.ts#L6)*
+*Defined in [prodigy.d.ts:6](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/prodigy.d.ts#L6)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **player**: *[Player](../classes/_player_d_.player.md)*
 
-*Defined in [prodigy.d.ts:7](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/06c3369/typings/prodigy.d.ts#L7)*
+*Defined in [prodigy.d.ts:7](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/prodigy.d.ts#L7)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **version**: *string*
 
-*Defined in [prodigy.d.ts:5](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/06c3369/typings/prodigy.d.ts#L5)*
+*Defined in [prodigy.d.ts:5](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/prodigy.d.ts#L5)*
