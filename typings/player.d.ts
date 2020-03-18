@@ -1,14 +1,15 @@
 import { TODO } from "./util";
 import { Game } from "./game";
 import { Item } from "./item";
-export type ItemType =
+import { Backpack } from "./backpack";
+export declare type ItemType =
 	| "follow"
 	| "hat"
 	| "outfit"
 	| "spellRelic"
 	| "weapon"
 	| "boots";
-export type Zones = "tower_town";
+export declare type Zones = "tower_town";
 export declare class Player {
 	static ACCOUNT_RESET_ZONE_KEEPERS: Zones[];
 	static HP_BONUS: {
@@ -33,10 +34,10 @@ export declare class Player {
 	static getSingleShotEvolutions(): number[];
 	static levelFromStars(stars: number): number;
 	static starsToLevel(stars: number): number
-	MAX_HEARTS: number
+	static MAX_HEARTS: number
 	achievements: TODO;
 	appearance: TODO;
-	backpack: TODO;
+	backpack: Backpack;
 	daily: TODO;
 	dailyQuestions: TODO;
 	encounters: TODO;

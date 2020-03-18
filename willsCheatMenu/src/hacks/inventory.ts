@@ -1,0 +1,39 @@
+import { Hack, category } from "../index";
+import { Swal, Input, Toast } from "../utils/swal";
+import { gameData, VERY_LARGE_NUMBER } from "../utils/util";
+import { Item } from "../../../typings/item";
+import { BackpackItemType } from "../../../typings/backpack";
+const itemify = (item: Item[]) =>
+	item.map(x => ({
+		ID: x.ID,
+		N: VERY_LARGE_NUMBER,
+	}));
+const inventoryHack = (
+	name: string,
+	id: BackpackItemType,
+	lowercase: string = name.toLowerCase()
+) => {
+	new Hack(category.inventory, `Obtain All ${name}`).setClick(async () => {
+		PIXI.game.prodigy.player.backpack.data[id] = itemify(gameData[id]);
+		await Toast.fire(
+			`${name} Added!`,
+			`All ${lowercase} have been added to your inventory!`,
+			"success"
+		);
+		PIXI.game.prodigy.player.updated = true;
+	});
+};
+inventoryHack("Boots", "boots");
+inventoryHack("Currency", "currency", "currencies");
+inventoryHack("Buddies", "follow");
+inventoryHack("Fossils", "fossil");
+inventoryHack("Hats", "hat")
+inventoryHack("Items", "item");
+inventoryHack("Key Items", "key");
+inventoryHack("Math Town Frames", "mathTownFrame")
+inventoryHack("Math Town Interiors", "mathTownInterior")
+inventoryHack("Mounts", "mount");
+inventoryHack("Outfits", "outfit");
+inventoryHack("Relics", "relic");
+inventoryHack("Spell Relics", "spellRelic");
+inventoryHack("Weapons", "weapon");

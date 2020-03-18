@@ -23,6 +23,7 @@
 		"docs": "npx typedoc --excludeExternals --disableSources --exclude **/node_modules/** **/test.ts --includeDeclarations --plugin typedoc-plugin-markdown --out docs typings"
 	},
 	"dependencies": {
+		"@types/pixi.js": "^5.0.0",
 		"glob": "^7.1.6",
 		"sweetalert2": "^9.10.2"
 	}

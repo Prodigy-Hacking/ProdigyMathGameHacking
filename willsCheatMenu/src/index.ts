@@ -1,5 +1,6 @@
 import "./style.scss";
 import { PIXI } from "../../typings/pixi";
+export * from "./utils/util";
 export const menu = document.createElement("div");
 export const wrapper = document.getElementById("game-wrapper");
 document.getElementById("cheat-menu")?.remove();
@@ -21,10 +22,16 @@ toggler.onclick = () => {
 	}
 	visible = !visible;
 };
+const menuleft = document.createElement("DIV");
+menuleft.classList.add("menu-left");
+menu.append(menuleft);
+const menuright = document.createElement("DIV");
+menuright.classList.add("menu-right");
+menu.append(menuright);
 export const addArea = (title: string) => {
 	const area = document.createElement("div");
 	area.classList.add("menu-area");
-	menu.append(area);
+	menuleft.append(area);
 	const header = document.createElement("h1");
 	header.innerHTML = title;
 	area.append(header);
@@ -32,8 +39,8 @@ export const addArea = (title: string) => {
 };
 const title = document.createElement("h1");
 title.classList.add("menu-title");
-title.innerHTML = "Prodigy Cheat Menu"
-menu.append(title)
+title.innerHTML = "Prodigy Cheat Menu";
+menuleft.append(title);
 export class Hack {
 	public element: HTMLButtonElement;
 	constructor(public parent: HTMLDivElement, name?: string) {
@@ -52,5 +59,6 @@ export class Hack {
 	}
 }
 export const category = {
-	player: addArea("Player Hacks")
+	player: addArea("Player Hacks"),
+	inventory: addArea("Inventory Hacks"),
 };
