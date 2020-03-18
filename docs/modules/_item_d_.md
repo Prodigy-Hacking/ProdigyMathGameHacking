@@ -14,4 +14,4 @@
 
 Ƭ **Item**: *[TODO](_util_d_.md#todo)*
 
-*Defined in [item.d.ts:3](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/item.d.ts#L3)*
+*Defined in [item.d.ts:3](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/item.d.ts#L3)*

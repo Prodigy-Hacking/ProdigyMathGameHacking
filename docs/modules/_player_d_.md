@@ -24,7 +24,7 @@
 
 Ƭ **ItemType**: *"follow" | "hat" | "outfit" | "spellRelic" | "weapon" | "boots"*
 
-*Defined in [player.d.ts:4](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L4)*
+*Defined in [player.d.ts:4](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L4)*
 
 ___
 
@@ -32,4 +32,4 @@ ___
 
 Ƭ **Zones**: *"tower_town"*
 
-*Defined in [player.d.ts:11](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L11)*
+*Defined in [player.d.ts:11](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L11)*

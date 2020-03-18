@@ -14,4 +14,4 @@
 
 Ƭ **TODO**: *any*
 
-*Defined in [util.d.ts:1](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/util.d.ts#L1)*
+*Defined in [util.d.ts:1](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/util.d.ts#L1)*
