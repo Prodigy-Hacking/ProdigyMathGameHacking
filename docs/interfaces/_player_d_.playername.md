@@ -20,7 +20,7 @@
 
 • **data**: *object*
 
-*Defined in [player.d.ts:254](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L254)*
+*Defined in [player.d.ts:254](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L254)*
 
 #### Type declaration:
 
@@ -38,7 +38,7 @@ ___
 
 • **gender**: *"male" | "female"*
 
-*Defined in [player.d.ts:260](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L260)*
+*Defined in [player.d.ts:260](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L260)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **localizer**: *object*
 
-*Defined in [player.d.ts:261](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/1e42e89/typings/player.d.ts#L261)*
+*Defined in [player.d.ts:261](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/bda5213/typings/player.d.ts#L261)*
 
 #### Type declaration:
 
