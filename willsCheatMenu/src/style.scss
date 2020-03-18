@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo:400,700|Sen:400,700,800&display=swap&subset=latin-ext");
+#game-wrapper {
+	font-family: "Sen", sans-serif;
+	#cheat-menu {
+		width: 100%;
+		background-color: #eeea;
+		padding: 2px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 62vh;
+		transition: top 0.35s;
+		padding: 10px;
+	}
+	#menu-toggler {
+		z-index: 1;
+		position: absolute;
+		background-color: #fffb;
+		transition: background-color 0.15s;
+		&:hover {
+			background-color: #dddb;
+		}
+		&:active {
+			background-color: #bbbb;
+		}
+	}
+	.menu-area {
+		h1 {
+			font-family: "Sen", sans-serif;
+			font-size: 30px;
+			font-weight: 700;
+			color: #111;
+		}
+		button {
+			border: #999 3px solid;
+			background-color: #eee;
+			transition: all 0.15s;
+			transition-property: border-color, background-color;
+			&:hover {
+				border-color: #777d;
+				background-color: #ddd;
+			}
+			&:active {
+				border-color: #555;
+				background-color: #bbb;
+			}
+		}
+	}
+	.menu-title {
+		font-family: "Arvo", sans-serif;
+		font-size: 35px;
+		font-weight: 900;
+	}
+}

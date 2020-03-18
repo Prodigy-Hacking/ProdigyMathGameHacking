@@ -4,8 +4,11 @@
 
 ## Index
 
+### Classes
+
+* [Player](../classes/_player_d_.player.md)
+* [PlayerData](../classes/_player_d_.playerdata.md)
+
 ### Interfaces
 
-* [Player](../interfaces/_player_d_.player.md)
-* [PlayerData](../interfaces/_player_d_.playerdata.md)
 * [PlayerName](../interfaces/_player_d_.playername.md)

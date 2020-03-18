@@ -1,7 +1,8 @@
-import type { TODO } from "./util";
-import type { Game } from "./game";
+import { TODO } from "./util";
+import { Game } from "./game";
+import { Item } from "./item";
 
-export declare interface Player {
+export declare class Player {
 	achievements: TODO;
 	appearance: TODO;
 	backpack: TODO;
@@ -94,6 +95,90 @@ export declare interface Player {
 	_isFocusModeEnabled: false;
 	_saveEnabled: true;
 	name: PlayerName;
+	addAsset(asset: unknown): void;
+	addBattle(): void;
+	addBountyScore(bountyScore: number): void;
+	addLoss(): void;
+	addSpell(spell: number): void;
+	addStars(stars: number, prop1: boolean, prop2: boolean): boolean;
+	addWin(): void;
+	anyPetsAboveLevel(level: number): boolean;
+	canCatch(): boolean;
+	canSpin(): boolean;
+	castSpell(prop0: boolean): void;
+	changeCurrentHearts(prop0: number, prop1: number): void;
+	changeCurrentHeartsPercent(percent: number): void;
+	changeEnergy(energy: number): void;
+	changeGold(gold: number, prop1: boolean): void;
+	checkVersion(): void;
+	completeDaily(daily: keyof PlayerData, completed: boolean): void;
+	completeTower(tower: number): void;
+	constructor(prop0: unknown);
+	createDataClone(): Player;
+	createRandom(): void;
+	diffAttackSlots(level: number): void;
+	equip(
+		id: number,
+		type: "follow" | "hat" | "outfit" | "spellRelic" | "weapon" | "boots"
+	): boolean;
+	evolve(unused0: never, unused1: never): never;
+	forceSaveCharacter(): void;
+	getAllAttacks(): number[];
+	getAllowsHouseVisitors(): boolean;
+	getArenaPoints(): number;
+	getAttacks(): number[];
+	getAvailableEvolutions(): unknown[]; // What does this return?
+	getBaseMaxHearts(): number;
+	getBattles(): number;
+	getBountyScore(): number;
+	getColiseum(): number;
+	getCurrentBamSpells(): number[];
+	getCurrentHearts(): number;
+	getDailyQuestions(): Player["dailyQuestions"];
+	getDamageBonus(): ReturnType<Player["equipment"]["getDamageBonuses"]>;
+	getDataAndClear(): Partial<Player>;
+	getElement(): "wizard";
+	getEnergy(): number;
+	getEquipmentSpell(): { ID: number, type: unknown, locked: boolean };
+	getFirstName(): string;
+	getGold(): number;
+	getHeartBonus(): number;
+	getID(): Player["userID"];
+	getLatestClassIDLegacy(): number;
+	getLevel(): number;
+	getLevelingCurve(level: number): unknown[];
+	getLosses(): number;
+	getMaxHearts(level: number): number;
+	getMaxTimeForCurrentMorphMarbleEffect(): number;
+	getName(): string;
+	getNameWithoutNickname(): string;
+	getNativeSpell(prop0: unknown, prop1: unknown[], prop2: unknown, prop3: unknown): unknown;
+	getNumAttacks(): number;
+	getNumRelics(): number;
+	getPercentToLevel(): number;
+	getPlayerClass(): string;
+	getPlayerData(): PlayerData;
+	getRegisterDate(): Date | null;
+	getSettings(): PlayerData["settings"];
+	getSpellAssets(): unknown[];
+	getSpellStreak(): Player["spellStreak"];
+	getStarReward(): number;
+	getStarRewardByDamage(damage: number): number;
+	getStars(): number | null;
+	getStarsToLevel(): number;
+	getStatHealth(): number;
+	getStatPower(): number;
+	getTeamScore(): number;
+	getTowerProgress(): number;
+	getUpdatedData(prop0: unknown, prop1: unknown): unknown;
+	getWins(): number;
+	hasCompletedTowerTownTutorial(): boolean;
+	hasCompletedTutorial(): boolean;
+	hasHouseItem(item: Item): boolean;
+	hasMaxQuantityOfItem(type: unknown, item: unknown): boolean;
+	hasMembership(): Player["it"];
+	hasValidatedParentEmail(): boolean;
+	hasValidatedTeacherEmail(): boolean;
 }
 export declare interface PlayerName {
 	data: {
@@ -101,11 +186,58 @@ export declare interface PlayerName {
 		lastName: number;
 		middleName: number;
 		nickname: unknown;
-	},
+	};
 	gender: "male" | "female";
-	localizer: { dataSource: TODO; };
+	localizer: { dataSource: TODO };
 }
-export declare interface PlayerData {
-	// TODO
+export declare class PlayerData {
+	allowsHouseVisitors: boolean;
+	arena: number;
+	atHomeTimestamp: number;
+	atSchoolTimestamp: number;
+	battleCounter: number;
+	bountyScore: number;
+	daily: {
+		festivalName: string;
+		isComplete: boolean;
+		lastStarted: number;
+		location: string;
+		monsterID: number;
+	};
+	deserter: number;
+	dungeonRunsTimeStamps: {
+		dungeonName: string;
+		lastRunTimeStamp: number;
+	}[];
+	energy: number;
+	gold: number;
+	hp: number;
+	lastArchiveRun: number;
+	level: number;
+	memberStarsExpirationDate: number;
+	nm: number;
+	numSpins1: number;
+	numSpins2: number;
+	school: string;
+	settings: {
+		bgmVolume: number;
+		voiceVolume: number;
+		sfxVolume: number;
+	};
+	spellbook: number[];
+	spells: number[];
+	spinDate1: number;
+	spinDate2: number;
+	stars: number;
+	startDate: number;
+	storedMemberStars: number;
+	team: number;
+	titanID: number;
+	tower: number;
+	trialSkipAvailable: boolean;
+	trialStartDate: string;
+	versionID: number;
+	win: number;
+	zone: string;
 }
 // TODO: Get types for unknowns.

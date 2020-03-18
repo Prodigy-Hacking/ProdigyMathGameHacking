@@ -1,5 +1,5 @@
-import type { Game } from "./game";
-import type { Player } from "./player";
+import { Game } from "./game";
+import { Player } from "./player";
 
 export declare interface Prodigy {
 	version: string;
