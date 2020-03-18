@@ -1,6 +1,6 @@
 import { Swal, Toast, NumberInput } from "../utils/swal";
 import { Hack, category } from "../index";
-import { getItem } from "../utils/util";
+import { getItem, VERY_LARGE_NUMBER, savePlayer } from "../utils/util";
 new Hack(category.player, "Set Gold").setClick(async () => {
 	const gold = await NumberInput.fire(
 		"Gold Amount",
@@ -9,7 +9,7 @@ new Hack(category.player, "Set Gold").setClick(async () => {
 	);
 	if (gold.value === undefined) return;
 	PIXI.game.prodigy.player.data.gold = +gold.value;
-	PIXI.game.prodigy.player.updated = true;
+	savePlayer();
 	await Toast.fire("Success!", "The gold amount has been set.", "success");
 });
 new Hack(category.player, "Set Level").setClick(async () => {
@@ -20,7 +20,7 @@ new Hack(category.player, "Set Level").setClick(async () => {
 	);
 	if (level.value === undefined) return;
 	PIXI.game.prodigy.player.data.level = +level.value;
-	PIXI.game.prodigy.player.updated = true;
+	savePlayer();
 	await Toast.fire(
 		"Success!",
 		"The level of your player has been set.",
@@ -36,7 +36,7 @@ new Hack(category.player, "Set Bounty Points").setClick(async () => {
 	);
 	if (points.value === undefined) return;
 	PIXI.game.prodigy.player.data.bountyScore = +points.value;
-	PIXI.game.prodigy.player.updated = true;
+	savePlayer();
 	await Toast.fire("Success!", "The bounty points has been set.", "success");
 });
 
@@ -52,11 +52,20 @@ new Hack(category.player, "Obtain Conjure Cubes").setClick(async () => {
 			null,
 			getItem("giftBox", 1)
 		);
-	PIXI.game.prodigy.player.updated = true;
-	await Toast.fire("Success!", "You have obtained the requested conjure cubes.", "success");
+	savePlayer();
+	await Toast.fire(
+		"Success!",
+		"You have obtained the requested conjure cubes.",
+		"success"
+	);
 });
-new Hack(category.player, "Membership").setClick(async() => {
+new Hack(category.player, "Membership").setClick(async () => {
 	PIXI.game.prodigy.player.it = true;
-	PIXI.game.prodigy.player.updated = true;
+	savePlayer();
 	await Toast.fire("Success!", "Membership is now enabled!", "success");
-})
+});
+new Hack(category.player, "Instant Kill").setClick(async () => {
+	PIXI.game.prodigy.player.modifiers.damage = VERY_LARGE_NUMBER;
+	savePlayer();
+	await Toast.fire("Success!", "Membership is now enabled!", "success");
+});
