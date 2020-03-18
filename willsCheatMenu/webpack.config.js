@@ -2,6 +2,8 @@ const path = require("path");
 const glob = require("glob");
 const autoprefixer = require("autoprefixer");
 module.exports = {
+	mode: "production",
+	devtool: "inline-source-map",
 	entry: [
 		"./src/index.ts",
 		...glob.sync(path.join(__dirname, "src/@(hacks|utils)/**/*.ts")),
