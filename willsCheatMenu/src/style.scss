@@ -11,6 +11,16 @@
 		height: 62vh;
 		transition: top 0.35s;
 		padding: 10px;
+		border: #fffa 2px solid;
+		overflow-y: scroll;
+	}
+	#menu-left {
+		width: 70%;
+		height: 100%;
+	}
+	#menu-right {
+		width: 30%;
+		height: 100%;
 	}
 	#menu-toggler {
 		z-index: 1;
@@ -30,11 +40,13 @@
 			font-size: 30px;
 			font-weight: 700;
 			color: #111;
+			margin: 10px;
 		}
 		button {
 			border: #999 3px solid;
 			background-color: #eee;
 			transition: all 0.15s;
+			margin: 5px 5px;
 			transition-property: border-color, background-color;
 			&:hover {
 				border-color: #777d;
