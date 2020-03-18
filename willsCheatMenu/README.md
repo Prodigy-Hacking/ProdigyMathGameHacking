@@ -5,3 +5,4 @@ This is a cheat menu, that looks good.
 Follow the code of conduct, or I will eat you.
 
 Go copy and paste the bundle.js, and if you're lucky it's compiled.
+Run `webpack --build` in this folder to compile it.
