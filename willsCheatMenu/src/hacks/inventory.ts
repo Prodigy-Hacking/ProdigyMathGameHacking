@@ -27,13 +27,29 @@ inventoryHack("Boots", "boots");
 inventoryHack("Currency", "currency", "currencies");
 inventoryHack("Buddies", "follow");
 inventoryHack("Fossils", "fossil");
-inventoryHack("Hats", "hat")
+inventoryHack("Hats", "hat");
 inventoryHack("Items", "item");
 inventoryHack("Key Items", "key");
-inventoryHack("Math Town Frames", "mathTownFrame")
-inventoryHack("Math Town Interiors", "mathTownInterior")
+inventoryHack("Math Town Frames", "mathTownFrame");
+inventoryHack("Math Town Interiors", "mathTownInterior");
 inventoryHack("Mounts", "mount");
 inventoryHack("Outfits", "outfit");
 inventoryHack("Relics", "relic");
 inventoryHack("Spell Relics", "spellRelic");
 inventoryHack("Weapons", "weapon");
+new Hack(category.inventory, `Obtain All Furniture`).setClick(async () => {
+	gameData.dorm.map(
+		x =>
+			(PIXI.game.prodigy.player.house.data.items[x.ID] = {
+				A: [],
+				N: VERY_LARGE_NUMBER,
+			})
+	);
+	await Toast.fire(
+		`Furniture Added!`,
+
+		`All furniture have been added to your inventory!`,
+		"success"
+	);
+	savePlayer();
+});
