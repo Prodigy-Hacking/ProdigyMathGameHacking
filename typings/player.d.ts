@@ -1,8 +1,39 @@
 import { TODO } from "./util";
 import { Game } from "./game";
 import { Item } from "./item";
-
+export type ItemType =
+	| "follow"
+	| "hat"
+	| "outfit"
+	| "spellRelic"
+	| "weapon"
+	| "boots";
+export type Zones = "tower_town";
 export declare class Player {
+	static ACCOUNT_RESET_ZONE_KEEPERS: Zones[];
+	static HP_BONUS: {
+		A: number;
+		"A+": number;
+		"A-": number;
+		B: number;
+		"B+": number;
+		"B-": number;
+		C: number;
+		"C+": number;
+		"C-": number;
+	};
+	static LEVEL_CURVE: { lvl: number, a: number }[]
+	static enemiesPerLevel(level: number): number;
+	static getAoeEvolutions(): number[];
+	static getAttacksFromCurve(prop0: unknown[], prop1: number, prop2: number): unknown[]
+	static getAttacksOfType(prop0: unknown, prop1: unknown): unknown[];
+	static getEvolutionsFromCurve(prop0: unknown[], prop1: number, prop2: number): unknown[]
+	static getHeartsFromCurve(prop0: unknown[], prop1: number, prop2: number): number
+	static getLevelPercent(stars: number): number;
+	static getSingleShotEvolutions(): number[];
+	static levelFromStars(stars: number): number;
+	static starsToLevel(stars: number): number
+	MAX_HEARTS: number
 	achievements: TODO;
 	appearance: TODO;
 	backpack: TODO;
@@ -117,10 +148,7 @@ export declare class Player {
 	createDataClone(): Player;
 	createRandom(): void;
 	diffAttackSlots(level: number): void;
-	equip(
-		id: number,
-		type: "follow" | "hat" | "outfit" | "spellRelic" | "weapon" | "boots"
-	): boolean;
+	equip(id: number, type: ItemType): boolean;
 	evolve(unused0: never, unused1: never): never;
 	forceSaveCharacter(): void;
 	getAllAttacks(): number[];
@@ -139,7 +167,7 @@ export declare class Player {
 	getDataAndClear(): Partial<Player>;
 	getElement(): "wizard";
 	getEnergy(): number;
-	getEquipmentSpell(): { ID: number, type: unknown, locked: boolean };
+	getEquipmentSpell(): { ID: number; type: unknown; locked: boolean };
 	getFirstName(): string;
 	getGold(): number;
 	getHeartBonus(): number;
@@ -152,7 +180,12 @@ export declare class Player {
 	getMaxTimeForCurrentMorphMarbleEffect(): number;
 	getName(): string;
 	getNameWithoutNickname(): string;
-	getNativeSpell(prop0: unknown, prop1: unknown[], prop2: unknown, prop3: unknown): unknown;
+	getNativeSpell(
+		prop0: unknown,
+		prop1: unknown[],
+		prop2: unknown,
+		prop3: unknown
+	): unknown;
 	getNumAttacks(): number;
 	getNumRelics(): number;
 	getPercentToLevel(): number;
@@ -179,6 +212,43 @@ export declare class Player {
 	hasMembership(): Player["it"];
 	hasValidatedParentEmail(): boolean;
 	hasValidatedTeacherEmail(): boolean;
+	heal(): void;
+	healTeam(hearts: number): void;
+	healTeamMember(hearts: number, prop1: unknown, prop2: unknown): void;
+	init(prop0: unknown): unknown;
+	initFromProtobuf(prop0: unknown): void;
+	isBlockedByDarkTowerMemberGate(): boolean;
+	isItemOwned(item: Item): boolean;
+	isKnockedOut(): boolean;
+	isPlayerTransformed(): boolean;
+	onTutorialComplete(): void;
+	processDeserter(): void;
+	processStars(): void;
+	processTrialMembership(): void;
+	resetAccount(): void;
+	resetModifiers(): void;
+	rewardMembershipPrizes(prop0: unknown): void;
+	setAllowsHouseVisitors(allow: boolean): void;
+	setBGMVolume(volume: number): void;
+	setColiseum(coliseum: number): void;
+	setData(data: PlayerData): void;
+	setDefault(gender: "male" | "female"): void;
+	setEnergy(energy: number): void;
+	setMemberDebug(): void;
+	setMembership(player: Player, member: boolean): void;
+	setParentEmail(email: string): void;
+	setPlayerClass(playerClass: unknown): void;
+	setSFXVolume(volume: number): void;
+	setSpinDate(date: Date): void;
+	setVoiceVolume(volume: number): void;
+	setZone(zone: unknown): void;
+	spinWheel(wheel: 1 | 2): void;
+	swapSpells(prop0: unknown, prop1: unknown): unknown;
+	transformPlayer(prop0: unknown, prop1: unknown, prop2: number): void;
+	unequip(type: ItemType): boolean;
+	updateMembershipVideoAdData(): void;
+	updateModifier(type: "potion" | "barrier", modifier: number): void;
+	validateLevel(): void;
 }
 export declare interface PlayerName {
 	data: {
