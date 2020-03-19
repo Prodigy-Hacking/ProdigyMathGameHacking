@@ -56,4 +56,5 @@ export declare interface Open {
 	/** Softlocks the game. */
 	coOpModal(prop0: unknown): unknown;
 	gotItem(item: PartialItem[], prop1: unknown, prop2: unknown, prop3: unknown, prop4: unknown): unknown;
+	menus: TODO[];
 }
