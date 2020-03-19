@@ -3,7 +3,7 @@ const glob = require("glob");
 const autoprefixer = require("autoprefixer");
 module.exports = {
 	mode: "production",
-	devtool: "inline-source-map",
+	//devtool: "inline-source-map",
 	entry: [
 		"./src/index.ts",
 		...glob.sync(path.join(__dirname, "src/@(hacks|utils)/**/*.ts")),
@@ -36,10 +36,12 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.(png|jpe?g|gif|[to]tf)$/i,
+				test: /\.(png|jpe?g|gif)$/i,
 				use: [
 					{
-						loader: "file-loader",
+						loader: "url-loader",
+						options: {
+						},
 					},
 				],
 			},
