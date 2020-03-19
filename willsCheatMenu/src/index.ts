@@ -62,4 +62,5 @@ export const category = {
 	player: addArea("Player Hacks"),
 	inventory: addArea("Inventory Hacks"),
 	location: addArea("Location Hacks"),
+	misc: addArea("Miscellaneous Hacks")
 };
