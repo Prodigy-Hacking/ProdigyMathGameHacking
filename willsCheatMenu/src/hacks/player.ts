@@ -67,5 +67,5 @@ new Hack(category.player, "Membership").setClick(async () => {
 new Hack(category.player, "Instant Kill").setClick(async () => {
 	PIXI.game.prodigy.player.modifiers.damage = VERY_LARGE_NUMBER;
 	savePlayer();
-	await Toast.fire("Success!", "Membership is now enabled!", "success");
+	await Toast.fire("Success!", "Instant kill is now enabled!", "success");
 });
