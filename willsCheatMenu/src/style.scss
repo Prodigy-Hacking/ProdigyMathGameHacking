@@ -3,7 +3,7 @@
 	font-family: "Sen", sans-serif;
 	#cheat-menu {
 		width: 100%;
-		background-color: #eeea;
+		background-color: #eeeb;
 		padding: 2px;
 		position: absolute;
 		top: 0px;
@@ -14,11 +14,11 @@
 		border: #fffa 2px solid;
 		overflow-y: scroll;
 	}
-	#menu-left {
+	.menu-left {
 		width: 70%;
 		height: 100%;
 	}
-	#menu-right {
+	.menu-right {
 		width: 30%;
 		height: 100%;
 	}
