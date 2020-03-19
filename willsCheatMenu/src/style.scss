@@ -62,5 +62,13 @@
 		font-family: "Arvo", sans-serif;
 		font-size: 35px;
 		font-weight: 900;
+		&::before {
+			content: "Will's";
+		}
+		color: #111;
+		font-size: 20px;
+		top: 13px;
+		position: absolute;
+		left: 40px;
 	}
 }
