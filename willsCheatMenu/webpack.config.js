@@ -35,7 +35,7 @@ module.exports = {
 					"sass-loader",
 				],
 			},
-			{
+			/*{
 				test: /\.(png|jpe?g|gif)$/i,
 				use: [
 					{
@@ -44,7 +44,7 @@ module.exports = {
 						},
 					},
 				],
-			},
+			},*/
 		],
 	},
 	resolve: {
