@@ -1,6 +1,11 @@
 import { Swal, Toast, NumberInput } from "../utils/swal";
 import { Hack, category } from "../index";
-import { getItem, VERY_LARGE_NUMBER, savePlayer } from "../utils/util";
+import {
+	getItem,
+	VERY_LARGE_NUMBER,
+	savePlayer,
+	gameData,
+} from "../utils/util";
 new Hack(category.player, "Set Gold").setClick(async () => {
 	const gold = await NumberInput.fire(
 		"Gold Amount",
@@ -68,4 +73,30 @@ new Hack(category.player, "Instant Kill").setClick(async () => {
 	PIXI.game.prodigy.player.modifiers.damage = VERY_LARGE_NUMBER;
 	savePlayer();
 	await Toast.fire("Success!", "Instant kill is now enabled!", "success");
+});
+const randomSpell = () =>
+	gameData.spell[Math.floor(Math.random() * gameData.spell.length)].ID;
+	const toPets = (ID: number) => ({
+		ID,
+		catchDate: Date.now(),
+		foreignSpells: [randomSpell(), randomSpell()],
+		level: VERY_LARGE_NUMBER,
+		levelCaught: 1,
+		stars: VERY_LARGE_NUMBER,
+	})
+new Hack(category.player, "Get All Pets").setClick(async () => {
+	const pets = gameData.pet.map(x => toPets(x.ID));
+	PIXI.game.prodigy.player.kennel.data.splice(-1, 0, ...pets);
+	await Toast.fire("Success!", "All pets have been added!", "success");
+});
+
+new Hack(category.player, "Get All Epics").setClick(async () => {
+	const epics = [125, 126, 127, 128, 129, 130, 131, 132, 133];
+	PIXI.game.prodigy.player.kennel.data.splice(-1, 0, ...epics.map(toPets));
+	await Toast.fire("Success!", "All epics have been added!", "success");
+});
+
+new Hack(category.player, "Clear Pets").setClick(async () => {
+	PIXI.game.prodigy.player.kennel.data.length = 0;
+	await Toast.fire("Success!", "Your pets have been cleared!", "success");
 });
