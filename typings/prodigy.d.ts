@@ -12,4 +12,7 @@ export declare interface Prodigy {
 	world: TODO;
 	giftBoxController: TODO;
 	open: Open;
+	debugQuests: TODO;
+	user: TODO;
+	
 }
