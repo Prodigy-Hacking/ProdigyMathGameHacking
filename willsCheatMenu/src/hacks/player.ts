@@ -100,3 +100,9 @@ new Hack(category.player, "Clear Pets").setClick(async () => {
 	PIXI.game.prodigy.player.kennel.data.length = 0;
 	await Toast.fire("Success!", "Your pets have been cleared!", "success");
 });
+
+new Hack(category.player, "PVP Health").setClick(async () => {
+	PIXI.game.prodigy.player.pvpHP = VERY_LARGE_NUMBER;
+	PIXI.game.prodigy.player.getMaxHearts = () => VERY_LARGE_NUMBER;
+	await Toast.fire("Success!", "You now have lots of health!", "success");
+});
