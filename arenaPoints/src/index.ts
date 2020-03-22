@@ -97,8 +97,9 @@ const users: { [index: string]: { token: string; userID: number } } = {};
 			}
 		);
 		console.log("Leaderboard loaded.");
+		const char = await fetchJson("https://api.prodigygame.com/leaderboard-api/user/"+user.userID+"/init?userID="+user.userID)
+		console.log(char)
 		console.log(`Hack starting for user ${account.username}.${user.level === 69 ? "" : `level ${user.level}`}`);
-		console.log(user)
 		const hackify = async () =>
 			console.log(
 				`${`[${account.username}]`.padEnd(14)} ${await hack(
