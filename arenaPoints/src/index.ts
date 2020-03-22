@@ -38,7 +38,15 @@ const users: { [index: string]: { token: string; userID: number } } = {};
 			console.log(`[${username} Token Regenerated.`);
 			return hack(seasonID, username);
 		}
-		return `${winJson.points} Points (+100)`;
+		const rank: { rank: number } = await fetchJson(
+			`https://api.prodigygame.com/leaderboard-api/season/${seasonID}/user/${user.userID}/rank?userID=${user.userID}`,
+			{
+				headers: {
+					authorization: `Bearer ${user.token}`,
+				},
+			}
+		);
+		return `${winJson.points} Points (+100) - Rank: ${rank}`;
 	};
 	for (const account of data) {
 		const login = await fetch(
@@ -63,7 +71,7 @@ const users: { [index: string]: { token: string; userID: number } } = {};
 		}
 		const user: { token: string; userID: number } = await login.json();
 		users[account.username] = user;
-		console.log("Logged in.")
+		console.log("Logged in.");
 		const lb: { seasonID: number } = await fetchJson(
 			`https://api.prodigygame.com/leaderboard-api/user/${user.userID}/init?userID=${user.userID}`,
 			{
@@ -75,16 +83,13 @@ const users: { [index: string]: { token: string; userID: number } } = {};
 		console.log("Leaderboard loaded.");
 		console.log(`Hack starting for user ${account.username}.`);
 		const hackify = async () =>
-		console.log(
-			`[${account.username}] ${await hack(
-				lb.seasonID,
-				account.username
-			)}`
-		)
-		hackify()
-		setInterval(
-			hackify,
-			60500
-		);
+			console.log(
+				`[${account.username}] ${await hack(
+					lb.seasonID,
+					account.username
+				)}`
+			);
+		hackify();
+		setInterval(hackify, 60500);
 	}
 })();
