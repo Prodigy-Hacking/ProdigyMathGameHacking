@@ -36,20 +36,22 @@ const users: { [index: string]: { token: string; userID: number } } = {};
 			| { code: string; points: undefined }
 			| { points: number; code: undefined } = JSON.parse(win);
 		if (winJson.code === "ForbiddenError") {
-			const login = await (await fetch(
-				"https://api.prodigygame.com/game-auth-api/v1/login",
-				{
-					method: "POST",
-					headers: {
-						"Content-type": "application/json",
-					},
-					body: JSON.stringify({
-						username: username,
-						password: password,
-						clientVersion: gameStatus.data.gameClientVersion,
-					}),
-				}
-			)).json();
+			const login = await (
+				await fetch(
+					"https://api.prodigygame.com/game-auth-api/v1/login",
+					{
+						method: "POST",
+						headers: {
+							"Content-type": "application/json",
+						},
+						body: JSON.stringify({
+							username: username,
+							password: password,
+							clientVersion: gameStatus.data.gameClientVersion,
+						}),
+					}
+				)
+			).json();
 			users[username] = login;
 			console.log(`[${username} Token Regenerated.`);
 			return hack(seasonID, username, password);
@@ -62,7 +64,9 @@ const users: { [index: string]: { token: string; userID: number } } = {};
 				},
 			}
 		);
-		return `${`${winJson.points} Points (+100)`.padEnd(20)} - Rank: ${rank.rank}`;
+		return `${`${winJson.points} Points (+100)`.padEnd(20)} - Rank: ${
+			rank.rank
+		}`;
 	};
 	for (const account of data) {
 		const login = await fetch(
@@ -85,7 +89,11 @@ const users: { [index: string]: { token: string; userID: number } } = {};
 			);
 			break;
 		}
-		const user: { token: string; userID: number, level: number } = await login.json();
+		const user: {
+			token: string;
+			userID: number;
+			level: number;
+		} = await login.json();
 		users[account.username] = user;
 		console.log("Logged in.");
 		const lb: { seasonID: number } = await fetchJson(
@@ -97,9 +105,23 @@ const users: { [index: string]: { token: string; userID: number } } = {};
 			}
 		);
 		console.log("Leaderboard loaded.");
-		const char = await fetchJson("https://api.prodigygame.com/leaderboard-api/user/"+user.userID+"/init?userID="+user.userID)
-		console.log(char)
-		console.log(`Hack starting for user ${account.username}.${user.level === 69 ? "" : `level ${user.level}`}`);
+		const char = await fetchJson(
+			"https://api.prodigygame.com/leaderboard-api/user/" +
+				user.userID +
+				"/init?userID=" +
+				user.userID,
+			{
+				headers: {
+					authorization: `Bearer ${user.token}`,
+				},
+			}
+		);
+		console.log(char);
+		console.log(
+			`Hack starting for user ${account.username}.${
+				user.level === 69 ? "" : `level ${user.level}`
+			}`
+		);
 		const hackify = async () =>
 			console.log(
 				`${`[${account.username}]`.padEnd(14)} ${await hack(
