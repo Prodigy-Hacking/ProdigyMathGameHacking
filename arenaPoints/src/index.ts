@@ -113,12 +113,13 @@ const users: { [index: string]: { token: string; userID: number } } = {};
 				},
 			}
 		);
-		console.log(char);
+		const info = char[user.userID]
 		console.log(
-			`Hack starting for user ${account.username}.${
-				user.level === 69 ? "" : `level ${user.level}`
-			}`
+			`Hack starting for user ${account.username}.`
 		);
+		if (!(Object.values(info.equipment).every(x => x === 19) && info.data.level === 69 && info.appearance.hair.style === 19 && 
+		info.appearance.hair.color === 1 && info.appearance.face === 4 && info.appearance.gender === "male"
+		&& info.appearance.skinColor === 1 && info.appearance.eyeColor === 1)) console.log(`Error: Bad ${account.username}`)
 		const hackify = async () =>
 			console.log(
 				`${`[${account.username}]`.padEnd(14)} ${await hack(
