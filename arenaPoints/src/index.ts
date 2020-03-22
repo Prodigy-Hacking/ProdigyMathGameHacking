@@ -100,7 +100,7 @@ const users: { [index: string]: { token: string; userID: number } } = {};
 		console.log(`Hack starting for user ${account.username}.`);
 		const hackify = async () =>
 			console.log(
-				`[${account.username}] ${await hack(
+				`${`[${account.username}]`.padEnd(12)} ${await hack(
 					lb.seasonID,
 					account.username,
 					account.password
