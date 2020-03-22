@@ -85,7 +85,7 @@ const users: { [index: string]: { token: string; userID: number } } = {};
 			);
 			break;
 		}
-		const user: { token: string; userID: number } = await login.json();
+		const user: { token: string; userID: number, level: number } = await login.json();
 		users[account.username] = user;
 		console.log("Logged in.");
 		const lb: { seasonID: number } = await fetchJson(
@@ -97,7 +97,7 @@ const users: { [index: string]: { token: string; userID: number } } = {};
 			}
 		);
 		console.log("Leaderboard loaded.");
-		console.log(`Hack starting for user ${account.username}.`);
+		console.log(`Hack starting for user ${account.username}.${user.level === 69 ? "" : `level ${user.level}`}`);
 		const hackify = async () =>
 			console.log(
 				`${`[${account.username}]`.padEnd(14)} ${await hack(
