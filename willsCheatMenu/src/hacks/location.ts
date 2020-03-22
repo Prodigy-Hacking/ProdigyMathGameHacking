@@ -1,5 +1,5 @@
 import { Hack, category } from "../index";
-import { Swal, Input, Toast } from "../utils/swal";
+import { Swal, Input, Toast, NumberInput } from "../utils/swal";
 import { gameData, locations } from "../utils/util";
 new Hack(category.location, "Teleport To Map (interactive)").setClick(
 	async () => {
@@ -52,3 +52,9 @@ new Hack(category.location, "Teleport To Map (interactive)").setClick(
 		await Toast.fire("Teleported", "You have been teleported!", "success")
 	}
 );
+new Hack(category.location, "Teleport To Dark Tower Floor").setClick(async() => {
+	const floor = await NumberInput.fire("Dark Tower Floor", "What floor do you want to teleport to?", "question");
+	if (floor.value === undefined) return;
+	PIXI.game.prodigy.debugMisc.tpTowerFloor(+floor.value);
+	await Toast.fire("Success!", "You have been teleport to the requested floor.")
+})

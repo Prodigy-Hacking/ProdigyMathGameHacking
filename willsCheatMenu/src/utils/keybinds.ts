@@ -3,6 +3,7 @@ window.addEventListener("keydown", event => {
 		PIXI.game.prodigy.user.x = PIXI.game.input.mousePointer.position.x;
 		PIXI.game.prodigy.user.y = PIXI.game.input.mousePointer.position.y;
 	}
+	return;
 	if (event.code === "Escape") {
 		PIXI.game.prodigy.open.menus.map(x => x.close());
 	}
