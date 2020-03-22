@@ -106,10 +106,7 @@ const users: { [index: string]: { token: string; userID: number } } = {};
 		);
 		console.log("Leaderboard loaded.");
 		const char = await fetchJson(
-			"https://api.prodigygame.com/leaderboard-api/user/" +
-				user.userID +
-				"/init?userID=" +
-				user.userID,
+			`https://api.prodigygame.com/game-api/v2/characters/${user.userID}`,
 			{
 				headers: {
 					authorization: `Bearer ${user.token}`,
