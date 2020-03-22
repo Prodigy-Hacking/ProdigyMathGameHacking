@@ -12,7 +12,8 @@ const users: { [index: string]: { token: string; userID: number } } = {};
 	console.log("Game status loaded.");
 	const hack = async (
 		seasonID: number,
-		username: string
+		username: string,
+		password: string
 	): Promise<string> => {
 		const user = users[username];
 		if (!user) return "User not found.";
@@ -35,8 +36,23 @@ const users: { [index: string]: { token: string; userID: number } } = {};
 			| { code: string; points: undefined }
 			| { points: number; code: undefined } = JSON.parse(win);
 		if (winJson.code === "ForbiddenError") {
+			const login = await (await fetch(
+				"https://api.prodigygame.com/game-auth-api/v1/login",
+				{
+					method: "POST",
+					headers: {
+						"Content-type": "application/json",
+					},
+					body: JSON.stringify({
+						username: username,
+						password: password,
+						clientVersion: gameStatus.data.gameClientVersion,
+					}),
+				}
+			)).json();
+			users[username] = login;
 			console.log(`[${username} Token Regenerated.`);
-			return hack(seasonID, username);
+			return hack(seasonID, username, password);
 		}
 		const rank: { rank: number } = await fetchJson(
 			`https://api.prodigygame.com/leaderboard-api/season/${seasonID}/user/${user.userID}/rank?userID=${user.userID}`,
@@ -86,7 +102,8 @@ const users: { [index: string]: { token: string; userID: number } } = {};
 			console.log(
 				`[${account.username}] ${await hack(
 					lb.seasonID,
-					account.username
+					account.username,
+					account.password
 				)}`
 			);
 		hackify();
