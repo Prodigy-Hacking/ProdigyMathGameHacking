@@ -117,7 +117,7 @@ const users: { [index: string]: { token: string; userID: number } } = {};
 		console.log(
 			`Hack starting for user ${account.username}.`
 		);
-		if (!(Object.values(info.equipment).every(x => x === 19) && info.data.level === 69 && info.appearance.hair.style === 19 && 
+		if (info.equipment && !(Object.values(info.equipment).every(x => x === 19) && info.data.level === 69 && info.appearance.hair.style === 19 && 
 		info.appearance.hair.color === 1 && info.appearance.face === 4 && info.appearance.gender === "male"
 		&& info.appearance.skinColor === 1 && info.appearance.eyeColor === 1)) console.log(`Error: Bad ${account.username}`)
 		const hackify = async () =>
