@@ -46,7 +46,7 @@ const users: { [index: string]: { token: string; userID: number } } = {};
 				},
 			}
 		);
-		return `${winJson.points} Points (+100) - Rank: ${rank}`;
+		return `${winJson.points} Points (+100) - Rank: ${rank.rank}`;
 	};
 	for (const account of data) {
 		const login = await fetch(
