@@ -76,14 +76,14 @@ new Hack(category.player, "Instant Kill").setClick(async () => {
 });
 const randomSpell = () =>
 	gameData.spell[Math.floor(Math.random() * gameData.spell.length)].ID;
-	const toPets = (ID: number) => ({
-		ID,
-		catchDate: Date.now(),
-		foreignSpells: [randomSpell(), randomSpell()],
-		level: VERY_LARGE_NUMBER,
-		levelCaught: 1,
-		stars: VERY_LARGE_NUMBER,
-	})
+const toPets = (ID: number) => ({
+	ID,
+	catchDate: Date.now(),
+	foreignSpells: [randomSpell(), randomSpell()],
+	level: VERY_LARGE_NUMBER,
+	levelCaught: 1,
+	stars: VERY_LARGE_NUMBER,
+});
 new Hack(category.player, "Get All Pets").setClick(async () => {
 	const pets = gameData.pet.map(x => toPets(x.ID));
 	PIXI.game.prodigy.player.kennel.data.splice(-1, 0, ...pets);
@@ -105,4 +105,43 @@ new Hack(category.player, "PVP Health").setClick(async () => {
 	PIXI.game.prodigy.player.pvpHP = VERY_LARGE_NUMBER;
 	PIXI.game.prodigy.player.getMaxHearts = () => VERY_LARGE_NUMBER;
 	await Toast.fire("Success!", "You now have lots of health!", "success");
+});
+
+let interval: unknown | null = null;
+
+new Hack(category.player, "Arena Point Increaser").setClick(async () => {
+	if (interval)
+		return Swal.fire(
+			"Already Enabled",
+			"Arena Point Increaser is already enabled.",
+			"error"
+		);
+	interval = setInterval(async () => {
+		const data = await (
+			await fetch(
+				`https://api.prodigygame.com/leaderboard-api/season/${PIXI.game.prodigy.pvpNetworkHandler.seasonID}/user/${PIXI.game.prodigy.player.userID}/pvp?userID=${PIXI.game.prodigy.player.userID}`,
+				{
+					headers: {
+						authorization: `Bearer ${PIXI.game.prodigy.network.jwtAuthProvider.getToken()}`,
+						"content-type":
+							"application/x-www-form-urlencoded; charset=UTF-8",
+					},
+					body: `seasonID=${PIXI.game.prodigy.pvpNetworkHandler.seasonID}&action=win`,
+					method: "POST",
+					mode: "cors",
+				}
+			)
+		).text();
+		if (data !== "") {
+			const jsoned: {
+				points: number;
+				weeklyPoints: number;
+				modifiedDate: string;
+				seasonID: number;
+				numMatches: number;
+			} = JSON.parse(data);
+			console.log(`[API] ${jsoned.points} Points (+100)`);
+		} else console.log(`[API] Failed to add points.`);
+	}, 60500);
+	await Swal.fire("Enabled", "Arena Point Increaser has been enabled.", "success");
 });
