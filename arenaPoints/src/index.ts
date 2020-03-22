@@ -1,5 +1,6 @@
 import fetch from "node-fetch";
 import data from "../config.json";
+import chalk from "chalk";
 const users: { [index: string]: { token: string; userID: number } } = {};
 (async () => {
 	const fetchJson = async (url: string, opts?: RequestInit | undefined) =>
@@ -119,10 +120,10 @@ const users: { [index: string]: { token: string; userID: number } } = {};
 		);
 		if (info.equipment && !(Object.values(info.equipment).every(x => x === 19) && info.data.level === 69 && info.appearance.hair.style === 19 && 
 		info.appearance.hair.color === 1 && info.appearance.face === 4 && info.appearance.gender === "male"
-		&& info.appearance.skinColor === 1 && info.appearance.eyeColor === 1)) console.log(`Error: Bad ${account.username}`)
+		&& info.appearance.skinColor === 1 && info.appearance.eyeColor === 1)) console.log(chalk.bgRed(`Error: Bad ${account.username}`))
 		const hackify = async () =>
 			console.log(
-				`${`[${account.username}]`.padEnd(14)} ${await hack(
+				`${`[${account.username}]`.padEnd(22)} ${await hack(
 					lb.seasonID,
 					account.username,
 					account.password
