@@ -14,5 +14,6 @@ export declare interface Prodigy {
 	open: Open;
 	debugQuests: TODO;
 	user: TODO;
-	
+	pvpNetworkHandler: TODO;
+	network: TODO;
 }

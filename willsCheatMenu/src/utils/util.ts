@@ -14,3 +14,4 @@ export const locations = {
 	shiverchill: joinAsset("shiverchill.png"),
 	skywatch: joinAsset("skywatch.png"),
 }
+export const pickRandom = <T>(arr: T[]): T => arr[Math.floor(Math.random() * arr.length)];
