@@ -36,6 +36,13 @@ new Hack(category.battle, "Win Battle", "Instantly win a monster battle.").setCl
 			"success"
 		);
 });
+let maxHearts = Phaser.GAMES[0]
+new Hack(category.battle, "Set PVP Hearts", "Sets your hearts in PVP. Automatically raises max hearts.")
+	.setClick(async() => {
+		const hp = await NumberInput.fire("Health Amount", "How much HP do you want?", "question");
+		Phaser.GAMES[0].prodigy.player.pvpHP = 
+	})
+new Hack(category.battle, "Fill Battle Energy", "Fills up your battle energy.")
 new Toggler(category.battle, "test", "test")
 	.setEnabled(() => console.log(1))
 	.setDisabled(() => console.log(0));
