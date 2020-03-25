@@ -1,7 +1,8 @@
 # Prodigy Math Game Hacks
 
-# **YOU MUST READ THIS**
-`PIXI.game`is now gone. The new script is Phaser.GAMES[0]. We have fortunately changed everything for your convenience.
+# **Important Announcement**
+
+`PIXI.game` has been removed, and it is replaced by `Phaser.GAMES[0]`. We have changed everything for your convenience.
 
 # Links
 
