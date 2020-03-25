@@ -74,4 +74,5 @@ new Hack(
 	"Unlocks all the zones that are locked in school."
 ).setClick(async () => {
 	Phaser.GAMES[0].prodigy.classModeController.lockedZones = 0;
+	await Toast.fire("Success!", "All zones are now unlocked that were locked in school.", "success")
 });

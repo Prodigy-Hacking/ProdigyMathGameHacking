@@ -62,3 +62,9 @@ new Hack(
 	Phaser.GAMES[0].prodigy.player.forceSaveCharacter();
 	await Toast.fire("Bobbified!", "You are now Bobby Fancywoman.", "success");
 });
+let snowball: number[] = [];
+new Toggler(category.misc, "Snowball Crasher", "Crash everyone's game near you with snowballs.").setEnabled(
+	async() => {
+		
+	}
+)
