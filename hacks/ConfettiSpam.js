@@ -9,5 +9,5 @@ setInterval(()=>PIXI.game.prodigy.network.emitMessage({"action":"fx","data":{"ty
 
 
 /*CREDIT*/
-/**/DaChickenKing | Did research on the SocketInterface in the Discord Server
-/**/TNTHacker2015 | Made script
+/*DaChickenKing | Did research on the SocketInterface in the Discord Server
+TNTHacker2015 | Made script*/
