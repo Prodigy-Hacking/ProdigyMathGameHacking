@@ -29,3 +29,15 @@ new Hack(category.pets, "Clear Pets").setClick(async () => {
 	Phaser.GAMES[0].prodigy.player.kennel.data.length = 0;
 	await Toast.fire("Success!", "Your pets have been cleared!", "success");
 });
+
+new Hack(category.pets, "Add Pet", "Adds a pet from a list.").setClick(async () => {
+	const pet = await Swal.fire({
+		input: "select",
+		inputOptions: new Map(gameData.pet.map(x => [x.ID.toString(), `${x.ID}: ${x.data.name}`])),
+		title: "Choose Pet",
+		text: "Which pet do you want to obtain?"
+	});
+	if (pet.value === undefined) return;
+	Phaser.GAMES[0].prodigy.player.kennel.addPet(pet.value);
+	await Toast.fire("Success!", "Your chosen pet has been added to your pets!", "success");
+});
