@@ -1,7 +1,7 @@
 import { Swal, Toast, NumberInput } from "../utils/swal";
 import { Hack, category, Toggler } from "../index";
 import { VERY_LARGE_NUMBER, gameData, pickRandom } from "../utils/util";
-new Hack(category.misc, "Escape Battle").setClick(async () => {
+new Hack(category.battle, "Escape Battle", "Escape any battle!").setClick(async () => {
 	const currentState = Phaser.GAMES[0].state.current;
 	if (currentState === "PVP") Phaser.GAMES[0].state.states.PVP.endPVP();
 	else if (currentState === "CoOp")
@@ -14,7 +14,7 @@ new Hack(category.misc, "Escape Battle").setClick(async () => {
 	);
 });
 
-new Hack(category.misc, "Win Battle").setClick(async () => {
+new Hack(category.battle, "Win Battle", "Instantly win a monster battle.").setClick(async () => {
 	const currentState = Phaser.GAMES[0].state.current;
 	if (currentState === "PVP" || currentState === "CoOp")
 		return Toast.fire(
@@ -36,4 +36,6 @@ new Hack(category.misc, "Win Battle").setClick(async () => {
 			"success"
 		);
 });
-new Toggler(category.battle, "test");
+new Toggler(category.battle, "test", "test")
+	.setEnabled(() => console.log(1))
+	.setDisabled(() => console.log(0));
