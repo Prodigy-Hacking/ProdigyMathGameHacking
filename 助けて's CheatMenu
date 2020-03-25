@@ -6,144 +6,144 @@ prodigydiv.remove()
 }
 setTimeout("closeit", 2000);
 function FreeMembership(){
-PIXI.game.prodigy.player.it=true
+Phaser.GAMES[0].prodigy.player.it=true
 }
 function FreeAtSchool(){
-PIXI.game.prodigy.classModeController.lockedZones=0
+Phaser.GAMES[0].prodigy.classModeController.lockedZones=0
 }
 function TrialmastersGear() {
-PIXI.game.prodigy.player.backpack.data.outfit.push({"N":999999,"ID":24});
-PIXI.game.prodigy.player.backpack.data.boots.push({"N":999999,"ID":18});
-PIXI.game.prodigy.player.backpack.data.hat.push({"N":999999,"ID":23});
-PIXI.game.prodigy.player.backpack.data.weapon.push({"N":1,"ID":47});
+Phaser.GAMES[0].prodigy.player.backpack.data.outfit.push({"N":999999,"ID":24});
+Phaser.GAMES[0].prodigy.player.backpack.data.boots.push({"N":999999,"ID":18});
+Phaser.GAMES[0].prodigy.player.backpack.data.hat.push({"N":999999,"ID":23});
+Phaser.GAMES[0].prodigy.player.backpack.data.weapon.push({"N":1,"ID":47});
 }
 function TeleportPlayer() {
 window.addEventListener('keydown', (event) => {
-    PIXI.game.prodigy.user.x=PIXI.game.input.mousePointer.position.x;
-PIXI.game.prodigy.user.y=PIXI.game.input.mousePointer.position.y;
+    Phaser.GAMES[0].prodigy.user.x=Phaser.GAMES[0].input.mousePointer.position.x;
+Phaser.GAMES[0].prodigy.user.y=Phaser.GAMES[0].input.mousePointer.position.y;
 });
 }
 function DontHelpPlayer() {
-  PIXI.game.prodigy.player.data.level = 1
+  Phaser.GAMES[0].prodigy.player.data.level = 1
    };
 function HelpPlayer() {
-  PIXI.game.prodigy.player.getLevel = () => PIXI.game.prodigy.player.data.level;
-PIXI.game.prodigy.player.data.level = 9e999
+  Phaser.GAMES[0].prodigy.player.getLevel = () => Phaser.GAMES[0].prodigy.player.data.level;
+Phaser.GAMES[0].prodigy.player.data.level = 9e999
    };
 function levelUpPets() {
-    for (let PetLoopTest = 0; PetLoopTest < PIXI.game.prodigy.player.kennel.data.length; PetLoopTest++) {
-     PIXI.game.prodigy.player.kennel.data[PetLoopTest].level=200
+    for (let PetLoopTest = 0; PetLoopTest < Phaser.GAMES[0].prodigy.player.kennel.data.length; PetLoopTest++) {
+     Phaser.GAMES[0].prodigy.player.kennel.data[PetLoopTest].level=200
     };
 }
 function levelDownPets() {
-    for (let PetLoopTest = 0; PetLoopTest < PIXI.game.prodigy.player.kennel.data.length; PetLoopTest++) {
-     PIXI.game.prodigy.player.kennel.data[PetLoopTest].level=1
+    for (let PetLoopTest = 0; PetLoopTest < Phaser.GAMES[0].prodigy.player.kennel.data.length; PetLoopTest++) {
+     Phaser.GAMES[0].prodigy.player.kennel.data[PetLoopTest].level=1
     };
 }
  function getAllCurrency() {
-x = PIXI.game.state.states.Boot._gameData.currency
+x = Phaser.GAMES[0].state.states.Boot._gameData.currency
 for (i in x) {
-    PIXI.game.prodigy.player.backpack.data.currency[i] = {"ID": x[i].ID, "N": Infinity}
+    Phaser.GAMES[0].prodigy.player.backpack.data.currency[i] = {"ID": x[i].ID, "N": Infinity}
 }
 }
  function getAllItems() {
-x = PIXI.game.state.states.Boot._gameData.item
+x = Phaser.GAMES[0].state.states.Boot._gameData.item
 for (i in x) {
-    PIXI.game.prodigy.player.backpack.data.item[i] = {"ID": x[i].ID, "N": Infinity}
+    Phaser.GAMES[0].prodigy.player.backpack.data.item[i] = {"ID": x[i].ID, "N": Infinity}
 }
 }
  function getAllOutfits() {
-x = PIXI.game.state.states.Boot._gameData.outfit
+x = Phaser.GAMES[0].state.states.Boot._gameData.outfit
 for (i in x) {
-    PIXI.game.prodigy.player.backpack.data.outfit[i] = {"ID": x[i].ID, "N": Infinity}
+    Phaser.GAMES[0].prodigy.player.backpack.data.outfit[i] = {"ID": x[i].ID, "N": Infinity}
 }
 }
  function getAllBoots() {
-x = PIXI.game.state.states.Boot._gameData.boots
+x = Phaser.GAMES[0].state.states.Boot._gameData.boots
 for (i in x) {
-    PIXI.game.prodigy.player.backpack.data.boots[i] = {"ID": x[i].ID, "N": Infinity}
+    Phaser.GAMES[0].prodigy.player.backpack.data.boots[i] = {"ID": x[i].ID, "N": Infinity}
 }
 }
  function getAllHats() {
-x = PIXI.game.state.states.Boot._gameData.hat
+x = Phaser.GAMES[0].state.states.Boot._gameData.hat
 for (i in x) {
-    PIXI.game.prodigy.player.backpack.data.hat[i] = {"ID": x[i].ID, "N": Infinity}
+    Phaser.GAMES[0].prodigy.player.backpack.data.hat[i] = {"ID": x[i].ID, "N": Infinity}
 }
 }
  function getAllWeapons() {
-x = PIXI.game.state.states.Boot._gameData.weapon
+x = Phaser.GAMES[0].state.states.Boot._gameData.weapon
 for (i in x) {
-    PIXI.game.prodigy.player.backpack.data.weapon[i] = {"ID": x[i].ID, "N": Infinity}
+    Phaser.GAMES[0].prodigy.player.backpack.data.weapon[i] = {"ID": x[i].ID, "N": Infinity}
 }
 }
 function flipTime() {
-PIXI.game.prodigy.user.width=PIXI.game.prodigy.user.width*-1;
-PIXI.game.prodigy.user.nameText.gameObject.scale=-1;
+Phaser.GAMES[0].prodigy.user.width=Phaser.GAMES[0].prodigy.user.width*-1;
+Phaser.GAMES[0].prodigy.user.nameText.gameObject.scale=-1;
 }
 function setLocation() {
-  PIXI.game.prodigy.player.locationSelectionType = prompt("What will your location string be?", "your kitchen making a sandwich");
+  Phaser.GAMES[0].prodigy.player.locationSelectionType = prompt("What will your location string be?", "your kitchen making a sandwich");
 }
 function setNickname() {
-  PIXI.game.state.states.Boot._gameData.nickname[PIXI.game.prodigy.player.name.nickname] = prompt("Set your clientside nickname (nobody else can see it but you) here.", "{first} {last}, but you can call me Einstein");
+  Phaser.GAMES[0].state.states.Boot._gameData.nickname[Phaser.GAMES[0].prodigy.player.name.nickname] = prompt("Set your clientside nickname (nobody else can see it but you) here.", "{first} {last}, but you can call me Einstein");
 }
 function fakeFriend() {
-PIXI.game.prodigy.debugMisc.addFakeFriend()
+Phaser.GAMES[0].prodigy.debugMisc.addFakeFriend()
 }
 function getMonster() {
-PIXI.game.prodigy.player.kennel.addPet=152
+Phaser.GAMES[0].prodigy.player.kennel.addPet=152
 }
 function getallItem() {
-PIXI.game.prodigy.player.backpack.data.item=[]
-x = PIXI.game.state.states.Boot._gameData.item
+Phaser.GAMES[0].prodigy.player.backpack.data.item=[]
+x = Phaser.GAMES[0].state.states.Boot._gameData.item
 for (i in x) {
-    PIXI.game.prodigy.player.backpack.data.item[i] = {"ID": x[i].ID, "N": Infinity}
+    Phaser.GAMES[0].prodigy.player.backpack.data.item[i] = {"ID": x[i].ID, "N": Infinity}
 }
 }
 function getMaxDamage() {
-PIXI.game.prodigy.player.modifiers.damage = 99999999999
+Phaser.GAMES[0].prodigy.player.modifiers.damage = 99999999999
 }
 function battleTime() {
-PIXI.game.prodigy.debugMisc.startBattle()
+Phaser.GAMES[0].prodigy.debugMisc.startBattle()
 }
 function fontSize() {
-PIXI.game.prodigy.user.chatText.FontSize = 100
+Phaser.GAMES[0].prodigy.user.chatText.FontSize = 100
 }
 function getMaxHearts() {
-PIXI.game.prodigy.player.modifiers.maxHearts = 99999999999
+Phaser.GAMES[0].prodigy.player.modifiers.maxHearts = 99999999999
 }
 function escape() {
-PIXI.game.prodigy.debugMisc.escapeBattle()
+Phaser.GAMES[0].prodigy.debugMisc.escapeBattle()
 }
 function getAllKeystones() {
-PIXI.game.prodigy.debugMisc.getKeyItems()
+Phaser.GAMES[0].prodigy.debugMisc.getKeyItems()
 }
 function breakGame() {
-PIXI.game.prodigy.debugMisc.setFPS(1)
+Phaser.GAMES[0].prodigy.debugMisc.setFPS(1)
 }
 function fixLag() {
-PIXI.game.prodigy.debugMisc.setFPS(60)
+Phaser.GAMES[0].prodigy.debugMisc.setFPS(60)
 }
 function getMaxWins() {
-PIXI.game.prodigy.player.data.win = 999999999
+Phaser.GAMES[0].prodigy.player.data.win = 999999999
 }
 function getallCurrency() {
-PIXI.game.prodigy.player.backpack.data.currency=[]
-x = PIXI.game.state.states.Boot._gameData.currency
+Phaser.GAMES[0].prodigy.player.backpack.data.currency=[]
+x = Phaser.GAMES[0].state.states.Boot._gameData.currency
 for (i in x) {
-    PIXI.game.prodigy.player.backpack.data.currency[i] = {"ID": x[i].ID, "N": Infinity}
+    Phaser.GAMES[0].prodigy.player.backpack.data.currency[i] = {"ID": x[i].ID, "N": Infinity}
 }
 }
 function topFloor() {
-PIXI.game.prodigy.debugMisc.tpTowerFloor(100);
+Phaser.GAMES[0].prodigy.debugMisc.tpTowerFloor(100);
 }
 function changeTextFont1() {
-PIXI.game.prodigy.user.chatText.Font="'Ultra'"
+Phaser.GAMES[0].prodigy.user.chatText.Font="'Ultra'"
 }
 function getallFollow() {
-PIXI.game.prodigy.player.backpack.data.follow=[]
-x = PIXI.game.state.states.Boot._gameData.follow
+Phaser.GAMES[0].prodigy.player.backpack.data.follow=[]
+x = Phaser.GAMES[0].state.states.Boot._gameData.follow
 for (i in x) {
-    PIXI.game.prodigy.player.backpack.data.follow[i] = {"ID": x[i].ID, "N": Infinity}
+    Phaser.GAMES[0].prodigy.player.backpack.data.follow[i] = {"ID": x[i].ID, "N": Infinity}
 }
 }
 var prodigydiv = document.createElement("prodigydiv");
@@ -153,6 +153,6 @@ prodigydiv.style.background = "green";
 prodigydiv.style.color = "green";
 document.body.style.align = "bottom";
 document.body.style.backgroundColor = "black";
-prodigydiv.innerHTML = '<button type="button" onclick="{prodigydiv.remove();}">Close</button><button type="button" onclick="{getMonster();}">Get Crystal Monster</button><button type="button" onclick="{FreeMembership();}">Free Membership</button> <button type="button" onclick="{PIXI.game.prodigy.debugMisc.smallLoan(1e153);}">Get Max Coins</button> <button type="button" onclick="{PIXI.game.prodigy.debugMisc.getAllPets();}">Get All Pets</button> <button type="button" onclick="{PIXI.game.prodigy.player.backpack.data.item.push({"N":Infinity,"ID":130});}">Infinite Wheel Spins</button><button type="button" onclick="{PIXI.game.prodigy.debugMisc.easyMode(1)}">Easy Mode</button><button type="button" onclick="{TeleportPlayer()}">Enable Player Teleport With Mouse Pointer (click key to begin)</button><button type="button" onclick="{FreeAtSchool()}">Unlock Zones at School</button> <button type="button" onclick="{TrialmastersGear()}">Trialmaster Gear</button><button type="button" onclick="{DontHelpPlayer()}">Level Down Player</button><button type="button" onclick="{HelpPlayer()}">Level Up Player Infinite</button><button type="button" onclick="{levelUpPets()}">Level Up Pets</button><button type="button" onclick="{levelDownPets()}">Level Down Pets</button><button type="button" onclick="{getAllCurrency()}">Get All Currency</button><button type="button" onclick="{getAllItems()}">Get All Items</button><button type="button" onclick="{getAllOutfits()}">Get All Outfits</button><button type="button" onclick="{getAllBoots()}">Get All Boots</button><button type="button" onclick="{getAllHats()}">Get All Hats</button><button type="button" onclick="{getAllWeapons()}">Get All Weapons</button><button type="button" onclick="{setLocation()}">Set Location</button><button type="button" onclick="{setNickname()}">Set Nickname</button><button type="button" onclick="{PIXI.game.prodigy.player.appearance._name.nickname=7}">W12-4RD Nickname</button><button type="button" onclick="{getallFollow()}">Get All Buddies</button><button type="button" onclick="{getallItem()}">Get All Items</button><button type="button" onclick="{getMaxHearts()}">Get Max Hearts</button><button type="button" onclick="{getMaxDamage()}">Get Max Damage</button><button type="button" onclick="{getMaxWins()}">Get Max Wins</button> <button type="button" onclick="{breakGame()}">Get Super Laggy</button><button type="button" onclick="{fixLag()}">Fix Lag</button><button type="button" onclick="{getAllKeystones()}">Get All Keystones</button><button type="button" onclick="{fakeFreind()}">Get A Fake Friend</button><button type="button" onclick="{battleTime()}">Battle LV5 Peeko</button><button type="button" onclick="{fontSize()}">Giant Text</button><button type="button" onclick="{escape()}">Escape Battle</button><button type="button" onclick="{flipTime()}">Flip Character Backwards</button><button type="button" onclick="{topFloor()}">Go To Top Floor Of Dark Tower</button><button type="button" onclick="{changeTextFont1()}">Change Text Font</button><p> Made by 助けて</p>';
+prodigydiv.innerHTML = '<button type="button" onclick="{prodigydiv.remove();}">Close</button><button type="button" onclick="{getMonster();}">Get Crystal Monster</button><button type="button" onclick="{FreeMembership();}">Free Membership</button> <button type="button" onclick="{Phaser.GAMES[0].prodigy.debugMisc.smallLoan(1e153);}">Get Max Coins</button> <button type="button" onclick="{Phaser.GAMES[0].prodigy.debugMisc.getAllPets();}">Get All Pets</button> <button type="button" onclick="{Phaser.GAMES[0].prodigy.player.backpack.data.item.push({"N":Infinity,"ID":130});}">Infinite Wheel Spins</button><button type="button" onclick="{Phaser.GAMES[0].prodigy.debugMisc.easyMode(1)}">Easy Mode</button><button type="button" onclick="{TeleportPlayer()}">Enable Player Teleport With Mouse Pointer (click key to begin)</button><button type="button" onclick="{FreeAtSchool()}">Unlock Zones at School</button> <button type="button" onclick="{TrialmastersGear()}">Trialmaster Gear</button><button type="button" onclick="{DontHelpPlayer()}">Level Down Player</button><button type="button" onclick="{HelpPlayer()}">Level Up Player Infinite</button><button type="button" onclick="{levelUpPets()}">Level Up Pets</button><button type="button" onclick="{levelDownPets()}">Level Down Pets</button><button type="button" onclick="{getAllCurrency()}">Get All Currency</button><button type="button" onclick="{getAllItems()}">Get All Items</button><button type="button" onclick="{getAllOutfits()}">Get All Outfits</button><button type="button" onclick="{getAllBoots()}">Get All Boots</button><button type="button" onclick="{getAllHats()}">Get All Hats</button><button type="button" onclick="{getAllWeapons()}">Get All Weapons</button><button type="button" onclick="{setLocation()}">Set Location</button><button type="button" onclick="{setNickname()}">Set Nickname</button><button type="button" onclick="{Phaser.GAMES[0].prodigy.player.appearance._name.nickname=7}">W12-4RD Nickname</button><button type="button" onclick="{getallFollow()}">Get All Buddies</button><button type="button" onclick="{getallItem()}">Get All Items</button><button type="button" onclick="{getMaxHearts()}">Get Max Hearts</button><button type="button" onclick="{getMaxDamage()}">Get Max Damage</button><button type="button" onclick="{getMaxWins()}">Get Max Wins</button> <button type="button" onclick="{breakGame()}">Get Super Laggy</button><button type="button" onclick="{fixLag()}">Fix Lag</button><button type="button" onclick="{getAllKeystones()}">Get All Keystones</button><button type="button" onclick="{fakeFreind()}">Get A Fake Friend</button><button type="button" onclick="{battleTime()}">Battle LV5 Peeko</button><button type="button" onclick="{fontSize()}">Giant Text</button><button type="button" onclick="{escape()}">Escape Battle</button><button type="button" onclick="{flipTime()}">Flip Character Backwards</button><button type="button" onclick="{topFloor()}">Go To Top Floor Of Dark Tower</button><button type="button" onclick="{changeTextFont1()}">Change Text Font</button><p> Made by 助けて</p>';
  
 document.body.insertBefore(prodigydiv, document.body.firstChild);

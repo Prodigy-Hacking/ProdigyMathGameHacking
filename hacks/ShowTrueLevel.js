@@ -1,4 +1,4 @@
-PIXI.game.prodigy.player.getLevel = () => PIXI.game.prodigy.player.data.level;
+Phaser.GAMES[0].prodigy.player.getLevel = () => Phaser.GAMES[0].prodigy.player.data.level;
 
 // bookmarklet
-javascript:PIXI.game.prodigy.player.getLevel=()=>PIXI.game.prodigy.player.data.level;
+// javascript:Phaser.GAMES[0].prodigy.player.getLevel=()=>Phaser.GAMES[0].prodigy.player.data.level;

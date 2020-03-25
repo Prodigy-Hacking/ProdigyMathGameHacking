@@ -56,6 +56,18 @@
 				border-color: #555;
 				background-color: #bbb;
 			}
+			&[status="true"] {
+				border-color: #5a5d;
+				background-color: #9bee9b;
+				&:hover {
+					border-color: #939b90dd;
+					background-color: #afeeaf;
+				}
+				&:active {
+					border-color: #4e5c50;
+					background-color: #24be6a;
+				}
+			}
 		}
 	}
 	.menu-title {

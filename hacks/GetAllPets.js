@@ -1,4 +1,4 @@
-PIXI.game.prodigy.debugMisc.getAllPets();
+Phaser.GAMES[0].prodigy.debugMisc.getAllPets();
 
 // Bookmarklet:
-javascript:PIXI.game.prodigy.debugMisc.getAllPets()%3Bvoid+0
+// javascript:Phaser.GAMES[0].prodigy.debugMisc.getAllPets()%3Bvoid+0

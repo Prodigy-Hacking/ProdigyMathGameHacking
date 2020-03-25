@@ -10,6 +10,8 @@ export declare interface Game {
 }
 export declare interface GameState {
 	states: GameStates;
+	current: string;
+	callbackContext: { runAwayCallback(): void };
 }
 export declare interface GameStates {
 	Boot: BootState;
@@ -17,8 +19,8 @@ export declare interface GameStates {
 	PVPLoading: GameStatesState;
 	TileScreen: GameStatesState;
 	Login: GameStatesState;
-	Battle: GameStatesState;
-	PVP: GameStatesState;
+	Battle: BattleState;
+	PVP: PVPState;
 	Faint: GameStatesState;
 	CharSelect: GameStatesState;
 	CharCreate: GameStatesState;
@@ -37,4 +39,12 @@ export declare interface GameStatesState {
 export declare interface BootState extends GameStatesState {
 	key: "Boot";
 	_gameData: GameData;
+}
+export declare interface PVPState extends GameStatesState {
+	key: "PVP";
+	endPVP(): void;
+}
+export declare interface BattleState extends GameStatesState {
+	key: "Battle";
+	startVictory(): void;
 }

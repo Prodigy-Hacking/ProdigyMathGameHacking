@@ -13,7 +13,7 @@ new Hack(category.player, "Set Gold").setClick(async () => {
 		"question"
 	);
 	if (gold.value === undefined) return;
-	PIXI.game.prodigy.player.data.gold = +gold.value;
+	Phaser.GAMES[0].prodigy.player.data.gold = +gold.value;
 	savePlayer();
 	await Toast.fire("Success!", "The gold amount has been set.", "success");
 });
@@ -24,7 +24,7 @@ new Hack(category.player, "Set Level").setClick(async () => {
 		"question"
 	);
 	if (level.value === undefined) return;
-	PIXI.game.prodigy.player.data.level = +level.value;
+	Phaser.GAMES[0].prodigy.player.data.level = +level.value;
 	savePlayer();
 	await Toast.fire(
 		"Success!",
@@ -40,7 +40,7 @@ new Hack(category.player, "Set Bounty Points").setClick(async () => {
 		"question"
 	);
 	if (points.value === undefined) return;
-	PIXI.game.prodigy.player.data.bountyScore = +points.value;
+	Phaser.GAMES[0].prodigy.player.data.bountyScore = +points.value;
 	savePlayer();
 	await Toast.fire("Success!", "The bounty points has been set.", "success");
 });
@@ -53,7 +53,7 @@ new Hack(category.player, "Obtain Conjure Cubes").setClick(async () => {
 	);
 	if (cubes.value === undefined) return;
 	for (let i = 0; i < Math.min(99, +cubes.value); i++)
-		PIXI.game.prodigy.giftBoxController.receiveGiftBox(
+		Phaser.GAMES[0].prodigy.giftBoxController.receiveGiftBox(
 			null,
 			getItem("giftBox", 1)
 		);
@@ -65,47 +65,22 @@ new Hack(category.player, "Obtain Conjure Cubes").setClick(async () => {
 	);
 });
 new Hack(category.player, "Membership").setClick(async () => {
-	PIXI.game.prodigy.player.it = true;
+	Phaser.GAMES[0].prodigy.player.it = true;
 	savePlayer();
 	await Toast.fire("Success!", "Membership is now enabled!", "success");
 });
 new Hack(category.player, "Instant Kill").setClick(async () => {
-	PIXI.game.prodigy.player.modifiers.damage = VERY_LARGE_NUMBER;
+	Phaser.GAMES[0].prodigy.player.modifiers.damage = VERY_LARGE_NUMBER;
 	savePlayer();
 	await Toast.fire("Success!", "Instant kill is now enabled!", "success");
 });
-const randomSpell = () =>
-	gameData.spell[Math.floor(Math.random() * gameData.spell.length)].ID;
-const toPets = (ID: number) => ({
-	ID,
-	catchDate: Date.now(),
-	foreignSpells: [randomSpell(), randomSpell()],
-	level: VERY_LARGE_NUMBER,
-	levelCaught: 1,
-	stars: VERY_LARGE_NUMBER,
-});
-new Hack(category.player, "Get All Pets").setClick(async () => {
-	const pets = gameData.pet.map(x => toPets(x.ID));
-	PIXI.game.prodigy.player.kennel.data.splice(-1, 0, ...pets);
-	await Toast.fire("Success!", "All pets have been added!", "success");
-});
-
-new Hack(category.player, "Get All Epics").setClick(async () => {
-	const epics = [125, 126, 127, 128, 129, 130, 131, 132, 133];
-	PIXI.game.prodigy.player.kennel.data.splice(-1, 0, ...epics.map(toPets));
-	await Toast.fire("Success!", "All epics have been added!", "success");
-});
-
-new Hack(category.player, "Clear Pets").setClick(async () => {
-	PIXI.game.prodigy.player.kennel.data.length = 0;
-	await Toast.fire("Success!", "Your pets have been cleared!", "success");
-});
 
 new Hack(category.player, "PVP Health").setClick(async () => {
-	PIXI.game.prodigy.player.pvpHP = VERY_LARGE_NUMBER;
-	PIXI.game.prodigy.player.getMaxHearts = () => VERY_LARGE_NUMBER;
+	Phaser.GAMES[0].prodigy.player.pvpHP = VERY_LARGE_NUMBER;
+	Phaser.GAMES[0].prodigy.player.getMaxHearts = () => VERY_LARGE_NUMBER;
 	await Toast.fire("Success!", "You now have lots of health!", "success");
 });
+/*
 
 let interval: unknown | null = null;
 
@@ -119,14 +94,14 @@ new Hack(category.player, "Arena Point Increaser").setClick(async () => {
 	interval = setInterval(async () => {
 		const data = await (
 			await fetch(
-				`https://api.prodigygame.com/leaderboard-api/season/${PIXI.game.prodigy.pvpNetworkHandler.seasonID}/user/${PIXI.game.prodigy.player.userID}/pvp?userID=${PIXI.game.prodigy.player.userID}`,
+				`https://api.prodigygame.com/leaderboard-api/season/${Phaser.GAMES[0].prodigy.pvpNetworkHandler.seasonID}/user/${Phaser.GAMES[0].prodigy.player.userID}/pvp?userID=${Phaser.GAMES[0].prodigy.player.userID}`,
 				{
 					headers: {
-						authorization: `Bearer ${PIXI.game.prodigy.network.jwtAuthProvider.getToken()}`,
+						authorization: `Bearer ${Phaser.GAMES[0].prodigy.network.jwtAuthProvider.getToken()}`,
 						"content-type":
 							"application/x-www-form-urlencoded; charset=UTF-8",
 					},
-					body: `seasonID=${PIXI.game.prodigy.pvpNetworkHandler.seasonID}&action=win`,
+					body: `seasonID=${Phaser.GAMES[0].prodigy.pvpNetworkHandler.seasonID}&action=win`,
 					method: "POST",
 					mode: "cors",
 				}
@@ -145,3 +120,4 @@ new Hack(category.player, "Arena Point Increaser").setClick(async () => {
 	}, 60500);
 	await Swal.fire("Enabled", "Arena Point Increaser has been enabled.", "success");
 });
+*/
