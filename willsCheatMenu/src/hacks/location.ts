@@ -45,16 +45,33 @@ new Hack(category.location, "Teleport To Map (interactive)").setClick(
 			input: "select",
 			inputOptions: Object.fromEntries(mapList.map(x => [x, x])),
 			title: "Map",
-			text: "Which map in the zone do you want to teleport to?"
+			text: "Which map in the zone do you want to teleport to?",
 		});
 		if (!area.value) return;
 		Phaser.GAMES[0].prodigy.world.$(`${zone.value}-${area.value}`);
-		await Toast.fire("Teleported", "You have been teleported!", "success")
+		await Toast.fire("Teleported", "You have been teleported!", "success");
 	}
 );
-new Hack(category.location, "Teleport To Dark Tower Floor").setClick(async() => {
-	const floor = await NumberInput.fire("Dark Tower Floor", "What floor do you want to teleport to?", "question");
-	if (floor.value === undefined) return;
-	Phaser.GAMES[0].prodigy.debugMisc.tpTowerFloor(+floor.value);
-	await Toast.fire("Success!", "You have been teleport to the requested floor.")
-})
+new Hack(category.location, "Teleport To Dark Tower Floor").setClick(
+	async () => {
+		const floor = await NumberInput.fire(
+			"Dark Tower Floor",
+			"What floor do you want to teleport to?",
+			"question"
+		);
+		if (floor.value === undefined) return;
+		Phaser.GAMES[0].prodigy.debugMisc.tpTowerFloor(+floor.value);
+		await Toast.fire(
+			"Success!",
+			"You have been teleport to the requested floor."
+		);
+	}
+);
+
+new Hack(
+	category.location,
+	"Unlock All Zones (school)",
+	"Unlocks all the zones that are locked in school."
+).setClick(async () => {
+	Phaser.GAMES[0].prodigy.classModeController.lockedZones = 0;
+});
