@@ -1,6 +1,7 @@
 import { Swal, Toast, NumberInput } from "../utils/swal";
 import { Hack, category, Toggler } from "../index";
 import { VERY_LARGE_NUMBER, gameData, pickRandom } from "../utils/util";
+import { BattleState } from "../../../typings/game";
 new Hack(category.battle, "Escape Battle", "Escape any battle!").setClick(async () => {
 	const currentState = Phaser.GAMES[0].state.current;
 	if (currentState === "PVP") Phaser.GAMES[0].state.states.PVP.endPVP();
@@ -37,12 +38,22 @@ new Hack(category.battle, "Win Battle", "Instantly win a monster battle.").setCl
 		);
 });
 let maxHearts = Phaser.GAMES[0]
-new Hack(category.battle, "Set PVP Hearts", "Sets your hearts in PVP. Automatically raises max hearts.")
+new Hack(category.battle, "Set Battle Hearts", "Sets your hearts in battle. Automatically raises max hearts.")
 	.setClick(async() => {
 		const hp = await NumberInput.fire("Health Amount", "How much HP do you want?", "question");
-		Phaser.GAMES[0].prodigy.player.pvpHP = 
+		if (hp.value === undefined) return;
+		Phaser.GAMES[0].prodigy.player.getMaxHearts = () => +hp;
+		Phaser.GAMES[0].prodigy.player.pvpHP = +hp;
+		Phaser.GAMES[0].prodigy.player.data.hp = +hp;
+		await Toast.fire("Success!", "Your hearts have been set.", "success");
 	})
 new Hack(category.battle, "Fill Battle Energy", "Fills up your battle energy.")
+	.setClick(async() => {
+		const state  = Phaser.GAMES[0].state.getCurrentState();
+		if (!("teams" in state)) return Toast.fire("Error", "You are currently not in a battle.", "error");
+		state.teams[0].setEnergy(99);
+		await Toast.fire("Success!", "Your battle energy has been filled.", "success");
+	})
 new Toggler(category.battle, "test", "test")
 	.setEnabled(() => console.log(1))
 	.setDisabled(() => console.log(0));
