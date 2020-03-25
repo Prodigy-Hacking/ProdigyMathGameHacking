@@ -1,5 +1,5 @@
 // Sets game FPS. Found by @BOOM-BOOM-THE-GREAT.
-PIXI.game.prodigy.debugMisc.SetFPS();
+Phaser.GAMES[0].prodigy.debugMisc.SetFPS();
 
 // Bookmarklet:
-javascript:PIXI.game.prodigy.debugMisc.SetFPS()%3Bvoid+0
+// javascript:Phaser.GAMES[0].prodigy.debugMisc.SetFPS()%3Bvoid+0

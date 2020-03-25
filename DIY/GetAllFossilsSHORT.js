@@ -1,5 +1,5 @@
 // Simplified version of getting all fossils. Found by @Magmischief.
-PIXI.game.prodigy.debugMisc.drDino();
+Phaser.GAMES[0].prodigy.debugMisc.drDino();
 
 // Bookmarklet:
-javascript:PIXI.game.prodigy.debugMisc.drDino()%3Bvoid+0
+// javascript:Phaser.GAMES[0].prodigy.debugMisc.drDino()%3Bvoid+0

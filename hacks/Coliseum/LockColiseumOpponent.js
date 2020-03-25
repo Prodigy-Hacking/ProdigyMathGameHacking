@@ -1,5 +1,5 @@
 // Use this to counteract UnlockColiseumOpponent.js
-PIXI.game.prodigy.debugMisc.lockColiseumOpponent();
+Phaser.GAMES[0].prodigy.debugMisc.lockColiseumOpponent();
 
 // Bookmarklet:
-javascript:PIXI.game.prodigy.debugMisc.lockColiseumOpponent()%3Bvoid+0
+// javascript:Phaser.GAMES[0].prodigy.debugMisc.lockColiseumOpponent()%3Bvoid+0

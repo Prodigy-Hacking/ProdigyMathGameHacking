@@ -1,6 +1,6 @@
 // Gives player 99 conjure cubes. (Any more causes the game to crash.)
-PIXI.game.prodigy.debugMisc.getCubes(99);
-PIXI.game.prodigy.create.conjureCubeButton();
+Phaser.GAMES[0].prodigy.debugMisc.getCubes(99);
+Phaser.GAMES[0].prodigy.create.conjureCubeButton();
 
 // Bookmarklet:
-javascript:PIXI.game.prodigy.debugMisc.getCubes(99)%3BPIXI.game.prodigy.create.conjureCubeButton()%3Bvoid+0
+// javascript:Phaser.GAMES[0].prodigy.debugMisc.getCubes(99)%3BPhaser.GAMES[0].prodigy.create.conjureCubeButton()%3Bvoid+0

@@ -1,5 +1,5 @@
 // Makes a parade of monsters come onto the screen!
-PIXI.game.prodigy.debugMisc.parade();
+Phaser.GAMES[0].prodigy.debugMisc.parade();
 
 // Bookmarklet:
-javascript:PIXI.game.prodigy.debugMisc.parade()%3Bvoid+0
+// javascript:Phaser.GAMES[0].prodigy.debugMisc.parade()%3Bvoid+0

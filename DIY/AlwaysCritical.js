@@ -1,5 +1,5 @@
 // Always gives you a critical hit. Found by @Magmischief.
-PIXI.game.prodigy.debugMisc.setCritChance(Infinity);
+Phaser.GAMES[0].prodigy.debugMisc.setCritChance(Infinity);
 
 // Bookmarklet:
-javascript:PIXI.game.prodigy.debugMisc.setCritChance(Infinity)%3Bvoid+0
+// javascript:Phaser.GAMES[0].prodigy.debugMisc.setCritChance(Infinity)%3Bvoid+0

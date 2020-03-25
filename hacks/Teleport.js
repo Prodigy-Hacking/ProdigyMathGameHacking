@@ -1,8 +1,8 @@
 // Press any key after using this script for your player to teleport to your mouse pointer.
 window.addEventListener('keydown', (event) => {
-    PIXI.game.prodigy.user.x=PIXI.game.input.mousePointer.position.x;
-PIXI.game.prodigy.user.y=PIXI.game.input.mousePointer.position.y;
+    Phaser.GAMES[0].prodigy.user.x=Phaser.GAMES[0].input.mousePointer.position.x;
+Phaser.GAMES[0].prodigy.user.y=Phaser.GAMES[0].input.mousePointer.position.y;
 });
 
 // Bookmarklet:
-javascript:window.addEventListener(%22keydown%22%2Cfunction(a)%7BPIXI.game.prodigy.user.x%3DPIXI.game.input.mousePointer.position.x%3BPIXI.game.prodigy.user.y%3DPIXI.game.input.mousePointer.position.y%7D)%3Bvoid+0
+// javascript:window.addEventListener(%22keydown%22%2Cfunction(a)%7BPhaser.GAMES[0].prodigy.user.x%3DPhaser.GAMES[0].input.mousePointer.position.x%3BPhaser.GAMES[0].prodigy.user.y%3DPhaser.GAMES[0].input.mousePointer.position.y%7D)%3Bvoid+0
