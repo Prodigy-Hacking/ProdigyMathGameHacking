@@ -1,4 +1,5 @@
 {
+	"license": "MPL-2.0",
 	"devDependencies": {
 		"@babel/core": "^7.8.7",
 		"@babel/plugin-proposal-optional-chaining": "^7.8.3",
