@@ -42,9 +42,9 @@ new Hack(category.battle, "Set Battle Hearts", "Sets your hearts in battle. Auto
 	.setClick(async() => {
 		const hp = await NumberInput.fire("Health Amount", "How much HP do you want?", "question");
 		if (hp.value === undefined) return;
-		Phaser.GAMES[0].prodigy.player.getMaxHearts = () => +hp;
-		Phaser.GAMES[0].prodigy.player.pvpHP = +hp;
-		Phaser.GAMES[0].prodigy.player.data.hp = +hp;
+		Phaser.GAMES[0].prodigy.player.getMaxHearts = () => +hp.value;
+		Phaser.GAMES[0].prodigy.player.pvpHP = +hp.value;
+		Phaser.GAMES[0].prodigy.player.data.hp = +hp.value;
 		await Toast.fire("Success!", "Your hearts have been set.", "success");
 	})
 new Hack(category.battle, "Fill Battle Energy", "Fills up your battle energy.")
