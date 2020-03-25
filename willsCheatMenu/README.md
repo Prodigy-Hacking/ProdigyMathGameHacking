@@ -4,7 +4,7 @@ This is a cheat menu, that looks good.
 
 Follow the code of conduct, or I will eat you.
 
-Run `webpack --build` in this folder to compile it.
+Run `webpack` in this folder to compile it.
 
 Copy and paste `loader.js` instead, not bundle.
 
