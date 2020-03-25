@@ -25,6 +25,7 @@ new Hack(category.player, "Set Level").setClick(async () => {
 	);
 	if (level.value === undefined) return;
 	Phaser.GAMES[0].prodigy.player.data.level = +level.value;
+	Phaser.GAMES[0].prodigy.player.getLevel =() => Phaser.GAMES[0].prodigy.player.data.level
 	savePlayer();
 	await Toast.fire(
 		"Success!",
