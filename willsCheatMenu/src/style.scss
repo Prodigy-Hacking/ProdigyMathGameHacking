@@ -60,12 +60,24 @@
 				border-color: #5a5d;
 				background-color: #9bee9b;
 				&:hover {
-					border-color: #939b90dd;
-					background-color: #afeeaf;
+					border-color: #b3bbb0dd;
+					background-color: #bffebf;
 				}
 				&:active {
 					border-color: #4e5c50;
 					background-color: #24be6a;
+				}
+			}
+			&[status="false"] {
+				border-color: #766d;
+				background-color: #9b9b9b;
+				&:hover {
+					border-color: #858585dd;
+					background-color: #bfbfbf;
+				}
+				&:active {
+					border-color: #4c3e40;
+					background-color: #be246a;
 				}
 			}
 		}
