@@ -1,5 +1,5 @@
-// PIXI.game.prodigy.network.emitMessage
-// e = PIXI.game.prodigy.network.emitMessage;PIXI.game.prodigy.network.emitMessage = function(a){console.log(a);return e.bind(PIXI.game.prodigy.network)(a)}
+// Phaser.GAMES[0].prodigy.network.emitMessage
+// e = Phaser.GAMES[0].prodigy.network.emitMessage;Phaser.GAMES[0].prodigy.network.emitMessage = function(a){console.log(a);return e.bind(Phaser.GAMES[0].prodigy.network)(a)}
 (async () => {
 	const fetchJson = async (url: string, opts?: RequestInit | undefined) =>
 		await (await fetch(url, opts as any)).json();

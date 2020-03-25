@@ -286,115 +286,115 @@ document.getElementById('grade').addEventListener("click", grade);
 
 function grade(){
   var g = prompt("What grade would you like to change to? (1-8)");
-  PIXI.game.prodigy.player.grade = g;
+  Phaser.GAMES[0].prodigy.player.grade = g;
 }
 
 function tryme(){
-  PIXI.game.prodigy.battle.constructor.MOD_DEFAULTS.invincible=true;
+  Phaser.GAMES[0].prodigy.battle.constructor.MOD_DEFAULTS.invincible=true;
 }
 
 function mon(){
-  PIXI.game.prodigy.battle.constructor.MOD_DEFAULTS.level = 1;
+  Phaser.GAMES[0].prodigy.battle.constructor.MOD_DEFAULTS.level = 1;
 }
 
 function petlevel(){
-  for (let i=0; i<PIXI.game.prodigy.player.kennel.data.length; i++) {
-    PIXI.game.prodigy.player.kennel.data[i].level=100;
+  for (let i=0; i<Phaser.GAMES[0].prodigy.player.kennel.data.length; i++) {
+    Phaser.GAMES[0].prodigy.player.kennel.data[i].level=100;
   };
 }
 
 function furnosh(){
   for(var i = 1; i < 148; i++){
-PIXI.game.prodigy.player.house.data.items[i] = {A: Array(0), N: 1000};
+Phaser.GAMES[0].prodigy.player.house.data.items[i] = {A: Array(0), N: 1000};
 }
  }
 
 function hype(){
-    PIXI.game.prodigy.debugMisc.setBattleEnergy(Infinity);
+    Phaser.GAMES[0].prodigy.debugMisc.setBattleEnergy(Infinity);
 }
 
 function zones(){
-    PIXI.game.prodigy.classModeController.lockedZones=0;
+    Phaser.GAMES[0].prodigy.classModeController.lockedZones=0;
 }
 
 function pets(){
-    PIXI.game.prodigy.debugMisc.getAllPets();
+    Phaser.GAMES[0].prodigy.debugMisc.getAllPets();
 }
 
 function instakill(){
-    PIXI.game.prodigy.player.modifiers.damage=Infinity;
+    Phaser.GAMES[0].prodigy.player.modifiers.damage=Infinity;
 }
 
 function sped(){
-    PIXI.game.prodigy.debugMisc.setGameSpeed(10);
+    Phaser.GAMES[0].prodigy.debugMisc.setGameSpeed(10);
 }
 
 function notsped(){
-    PIXI.game.prodigy.debugMisc.setGameSpeed(1);
+    Phaser.GAMES[0].prodigy.debugMisc.setGameSpeed(1);
 }
 
 function item(){
 a=["outfit", "hat", "boots", "weapon", "spellRelic", "fossil"];
 for (u of a) {
-    PIXI.game.prodigy.player.backpack.data[u]=[];
-    x = PIXI.game.state.states.Boot._gameData[u];
+    Phaser.GAMES[0].prodigy.player.backpack.data[u]=[];
+    x = Phaser.GAMES[0].state.states.Boot._gameData[u];
     for (i in x) {
-        PIXI.game.prodigy.player.backpack.data[u][i] = {"ID": x[i].ID, "N": 1};
+        Phaser.GAMES[0].prodigy.player.backpack.data[u][i] = {"ID": x[i].ID, "N": 1};
     }
 }
-PIXI.game.prodigy.player.backpack.data.currency=[];
-x = PIXI.game.state.states.Boot._gameData.currency;
+Phaser.GAMES[0].prodigy.player.backpack.data.currency=[];
+x = Phaser.GAMES[0].state.states.Boot._gameData.currency;
 for (i in x) {
-    PIXI.game.prodigy.player.backpack.data.currency[i] = {"ID": x[i].ID, "N": 99999999};
+    Phaser.GAMES[0].prodigy.player.backpack.data.currency[i] = {"ID": x[i].ID, "N": 99999999};
 }
 
-PIXI.game.prodigy.player.backpack.data.follow=[];
-x = PIXI.game.state.states.Boot._gameData.follow;
+Phaser.GAMES[0].prodigy.player.backpack.data.follow=[];
+x = Phaser.GAMES[0].state.states.Boot._gameData.follow;
 for (i in x) {
-    PIXI.game.prodigy.player.backpack.data.follow[i] = {"ID": x[i].ID};
+    Phaser.GAMES[0].prodigy.player.backpack.data.follow[i] = {"ID": x[i].ID};
 }
-PIXI.game.prodigy.player.backpack.data.item=[];
-x = PIXI.game.state.states.Boot._gameData.item;
+Phaser.GAMES[0].prodigy.player.backpack.data.item=[];
+x = Phaser.GAMES[0].state.states.Boot._gameData.item;
 for (i in x) {
-    PIXI.game.prodigy.player.backpack.data.item[i] = {"ID": x[i].ID, "N": 99999999};
+    Phaser.GAMES[0].prodigy.player.backpack.data.item[i] = {"ID": x[i].ID, "N": 99999999};
 }
 
-PIXI.game.prodigy.player.backpack.data.item=[];
-x = PIXI.game.state.states.Boot._gameData.item;
+Phaser.GAMES[0].prodigy.player.backpack.data.item=[];
+x = Phaser.GAMES[0].state.states.Boot._gameData.item;
 for (i in x) {
-    PIXI.game.prodigy.player.backpack.data.item[i] = {"ID": x[i].ID, "N": 99999999};
+    Phaser.GAMES[0].prodigy.player.backpack.data.item[i] = {"ID": x[i].ID, "N": 99999999};
 }
 }
 
 function conjure(){
-    PIXI.game.prodigy.debugMisc.getCubes(99);
-    PIXI.game.prodigy.create.conjureCubeButton();
+    Phaser.GAMES[0].prodigy.debugMisc.getCubes(99);
+    Phaser.GAMES[0].prodigy.create.conjureCubeButton();
 }
 
 function greed(){
-    PIXI.game.prodigy.game.prodigy.debugMisc.getGold(Infinity);
+    Phaser.GAMES[0].prodigy.game.prodigy.debugMisc.getGold(Infinity);
 }
 
 function tut(){
-    PIXI.game.prodigy.debugQuests.completeTutorial();
+    Phaser.GAMES[0].prodigy.debugQuests.completeTutorial();
 }
 
 function level(){
-  PIXI.game.prodigy.player.data.level=100;
+  Phaser.GAMES[0].prodigy.player.data.level=100;
 }
 
 function member(){
-  PIXI.game.prodigy.player.it=true;
+  Phaser.GAMES[0].prodigy.player.it=true;
 }
 
 function escape(){
-  PIXI.game.prodigy.debugMisc.escapeBattle();
+  Phaser.GAMES[0].prodigy.debugMisc.escapeBattle();
 }
 
 function teleport(){
 window.addEventListener('keydown', (event) => {
-PIXI.game.prodigy.user.x=PIXI.game.input.mousePointer.position.x;
-PIXI.game.prodigy.user.y=PIXI.game.input.mousePointer.position.y;
+Phaser.GAMES[0].prodigy.user.x=Phaser.GAMES[0].input.mousePointer.position.x;
+Phaser.GAMES[0].prodigy.user.y=Phaser.GAMES[0].input.mousePointer.position.y;
 });
 }
 

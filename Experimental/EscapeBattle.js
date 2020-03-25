@@ -1,5 +1,5 @@
 // Use this during combat to instantly escape!
-PIXI.game.prodigy.debugMisc.escapeBattle();
+Phaser.GAMES[0].prodigy.debugMisc.escapeBattle();
 
 // Bookmarklet:
-javascript:PIXI.game.prodigy.debugMisc.escapeBattle()%3Bvoid+0
+// javascript:Phaser.GAMES[0].prodigy.debugMisc.escapeBattle()%3Bvoid+0

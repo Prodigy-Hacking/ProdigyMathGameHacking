@@ -1,1 +1,1 @@
-javascript:(function()%7B(async()%20%3D%3E%20%7Beval(await%20(await%20fetch(%22https%3A%2F%2Fraw.githubusercontent.com%2FPatheticMustan%2FProdigyMathGameHacking%2FHEAD%2FwillsCheatMenu%2Fdist%2Fbundle.js%22)).text())%7D)()%7D)()
+// javascript:(function()%7B(async()%20%3D%3E%20%7Beval(await%20(await%20fetch(%22https%3A%2F%2Fraw.githubusercontent.com%2FPatheticMustan%2FProdigyMathGameHacking%2FHEAD%2FwillsCheatMenu%2Fdist%2Fbundle.js%22)).text())%7D)()%7D)()

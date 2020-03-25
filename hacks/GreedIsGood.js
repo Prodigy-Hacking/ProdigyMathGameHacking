@@ -1,4 +1,4 @@
-PIXI.game.prodigy.debugMisc.greedIsGood();
+Phaser.GAMES[0].prodigy.debugMisc.greedIsGood();
 
 // Bookmarklet:
-javascript:PIXI.game.prodigy.debugMisc.greedIsGood()%3Bvoid+0
+// javascript:Phaser.GAMES[0].prodigy.debugMisc.greedIsGood()%3Bvoid+0

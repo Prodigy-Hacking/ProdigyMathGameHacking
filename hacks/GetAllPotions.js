@@ -1,4 +1,4 @@
-PIXI.game.prodigy.debugMisc.getAllPotions();
+Phaser.GAMES[0].prodigy.debugMisc.getAllPotions();
 
 // Bookmarklet:
-javascript:PIXI.game.prodigy.debugMisc.getAllPotions()%3Bvoid+0
+// javascript:Phaser.GAMES[0].prodigy.debugMisc.getAllPotions()%3Bvoid+0

@@ -1,4 +1,4 @@
 // Thanks to @Avn1114 for finding this hack!
-PIXI.game.prodigy.debugMisc.escapeBattle();
+Phaser.GAMES[0].prodigy.debugMisc.escapeBattle();
 
-javascript:PIXI.game.prodigy.debugMisc.escapeBattle();
+// javascript:Phaser.GAMES[0].prodigy.debugMisc.escapeBattle();

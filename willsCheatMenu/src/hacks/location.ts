@@ -14,7 +14,7 @@ new Hack(category.location, "Teleport To Map (interactive)").setClick(
 		});
 		const container = document.createElement("div");
 		container.classList.add("radioContainer");
-		for (const zone of Object.keys(PIXI.game.prodigy.world.zones)) {
+		for (const zone of Object.keys(Phaser.GAMES[0].prodigy.world.zones)) {
 			const radio = document.createElement("DIV");
 			radio.classList.add("radioDiv");
 			radio.setAttribute("zone", zone);
@@ -39,7 +39,7 @@ new Hack(category.location, "Teleport To Map (interactive)").setClick(
 		});
 		if (!zone.value) return;
 		const mapList = Object.keys(
-			PIXI.game.prodigy.world.zones[zone.value].maps
+			Phaser.GAMES[0].prodigy.world.zones[zone.value].maps
 		);
 		const area = await Swal.fire({
 			input: "select",
@@ -48,13 +48,13 @@ new Hack(category.location, "Teleport To Map (interactive)").setClick(
 			text: "Which map in the zone do you want to teleport to?"
 		});
 		if (!area.value) return;
-		PIXI.game.prodigy.world.$(`${zone.value}-${area.value}`);
+		Phaser.GAMES[0].prodigy.world.$(`${zone.value}-${area.value}`);
 		await Toast.fire("Teleported", "You have been teleported!", "success")
 	}
 );
 new Hack(category.location, "Teleport To Dark Tower Floor").setClick(async() => {
 	const floor = await NumberInput.fire("Dark Tower Floor", "What floor do you want to teleport to?", "question");
 	if (floor.value === undefined) return;
-	PIXI.game.prodigy.debugMisc.tpTowerFloor(+floor.value);
+	Phaser.GAMES[0].prodigy.debugMisc.tpTowerFloor(+floor.value);
 	await Toast.fire("Success!", "You have been teleport to the requested floor.")
 })
