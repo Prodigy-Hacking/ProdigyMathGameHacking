@@ -10,8 +10,9 @@ export declare interface Game {
 }
 export declare interface GameState {
 	states: GameStates;
-	current: string;
+	current: GameStates[keyof GameStates]["key"];
 	callbackContext: { runAwayCallback(): void };
+	getCurrentState(): GameStates[keyof GameStates];
 }
 export declare interface GameStates {
 	Boot: BootState;
@@ -30,6 +31,7 @@ export declare interface GameStates {
 	CoOp: GameStatesState;
 	TestScreen: GameStatesState;
 	PrefabScene: GameStatesState;
+	Battle: BattleState;
 }
 export declare interface GameStatesState {
 	key: string;
@@ -47,4 +49,5 @@ export declare interface PVPState extends GameStatesState {
 export declare interface BattleState extends GameStatesState {
 	key: "Battle";
 	startVictory(): void;
+	teams: TODO[];
 }
