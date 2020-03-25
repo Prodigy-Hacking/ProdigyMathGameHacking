@@ -16,4 +16,5 @@ export declare interface Prodigy {
 	user: TODO;
 	pvpNetworkHandler: TODO;
 	network: TODO;
+	classModeController: TODO;
 }
