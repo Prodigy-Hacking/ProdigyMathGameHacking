@@ -69,7 +69,7 @@ new Toggler(
 		for (let i = 0; i < 10000; i++)
 			snowball.push(
 				setInterval(() =>
-					Phaser.GAMES[0].state.states.Login._gameObj.network.emitMessage(
+					prodigy.network.emitMessage(
 						{
 							action: "fx",
 							data: {
@@ -84,5 +84,6 @@ new Toggler(
 					)
 				)
 			);
+			console.log(snowball)
 	})
 	.setDisabled(async () => snowball.map(clearInterval));
