@@ -54,5 +54,5 @@ export declare interface BattleState extends GameStatesState {
 }
 export declare interface LoginState extends GameStatesState {
 	key: "Login";
-	_gameObj: Game;
+	_gameObj: Prodigy;
 }
