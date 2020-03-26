@@ -19,7 +19,7 @@ export declare interface GameStates {
 	Loading: GameStatesState;
 	PVPLoading: GameStatesState;
 	TileScreen: GameStatesState;
-	Login: GameStatesState;
+	Login: LoginState;
 	Battle: BattleState;
 	PVP: PVPState;
 	Faint: GameStatesState;
