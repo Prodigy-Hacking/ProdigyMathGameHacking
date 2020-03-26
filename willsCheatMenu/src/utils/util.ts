@@ -15,3 +15,4 @@ export const locations = {
 	skywatch: joinAsset("skywatch.png"),
 }
 export const pickRandom = <T>(arr: T[]): T => arr[Math.floor(Math.random() * arr.length)];
+export const game = Phaser.GAMES[0].state.states.Login._gameObj;
