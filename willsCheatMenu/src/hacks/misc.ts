@@ -2,12 +2,14 @@ import { Swal, Toast, NumberInput, Confirm } from "../utils/swal";
 import { Hack, category, Toggler } from "../index";
 import { VERY_LARGE_NUMBER, gameData, pickRandom } from "../utils/util";
 import { prodigy, game } from "../utils/util";
+/*
 new Hack(category.misc, "Skip Tutorial").setClick(async () => {
 	prodigy.debugQuests.completeTutorial();
 });
 new Hack(category.misc, "Disable Timeout Dialog").setClick(async () => {
 	prodigy.debugMisc.disableTimeoutDialogue();
 });
+*/
 let viber: number | null = null;
 new Toggler(category.misc, "Clothing Vibe")
 	.setEnabled(async () => {
@@ -17,7 +19,7 @@ new Toggler(category.misc, "Clothing Vibe")
 			prodigy.player.equipment.setOutfit(rand(gameData.outfit));
 			prodigy.player.equipment.setBoots(rand(gameData.boots));
 			prodigy.player.equipment.setHat(rand(gameData.hat));
-			prodigy.user.reload();
+			// prodigy.user.reload();
 		}, 1000);
 	})
 	.setDisabled(() => {
@@ -38,7 +40,7 @@ new Hack(
 		).value
 	)
 		return;
-	prodigy.debugQuests.completeTutorial();
+	// prodigy.debugQuests.completeTutorial();
 	prodigy.player.name.data.nickname = null;
 	prodigy.player.name.data.firstName = 44;
 	prodigy.player.name.data.middleName = 754;
@@ -58,7 +60,7 @@ new Hack(
 	prodigy.player.equipment.setWeapon(19);
 	prodigy.player.forceSaveCharacter();
 	await Toast.fire("Bobbified!", "You are now Bobby Fancywoman.", "success");
-});
+});/*
 let snowball: number[] = [];
 new Toggler(
 	category.misc,
@@ -69,7 +71,7 @@ new Toggler(
 		for (let i = 0; i < 10000; i++)
 			snowball.push(
 				setInterval(() =>
-					Phaser.GAMES[0].state.states.Login._gameObj.network.emitMessage(
+					prodigy.network.emitMessage(
 						{
 							action: "fx",
 							data: {
@@ -84,5 +86,7 @@ new Toggler(
 					)
 				)
 			);
+			console.log(snowball)
 	})
 	.setDisabled(async () => snowball.map(clearInterval));
+*/
