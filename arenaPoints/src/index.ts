@@ -1,6 +1,7 @@
 import fetch from "node-fetch";
 import data from "../config.json";
 import chalk from "chalk";
+import { RequestInit } from "node-fetch"
 const main = async () => {
 	foo:
 	for (const _ in [2]) {
@@ -100,22 +101,7 @@ const main = async () => {
 					},
 				}
 			);
-			const info = char[user.userID];
 			console.log(`Hack starting for user ${account.username}.`);
-			if (
-				info.equipment &&
-				!(
-					Object.values(info.equipment).every(x => x === 19) &&
-					info.data.level === 69 &&
-					info.appearance.hair.style === 19 &&
-					info.appearance.hair.color === 1 &&
-					info.appearance.face === 4 &&
-					info.appearance.gender === "male" &&
-					info.appearance.skinColor === 1 &&
-					info.appearance.eyeColor === 1
-				)
-			)
-				console.log(chalk.bgRed(`Error: Bad ${account.username}`));
 			const hackify = async () =>
 				console.log(
 					`${`[${account.username}]`.padEnd(22)} ${await hack(
