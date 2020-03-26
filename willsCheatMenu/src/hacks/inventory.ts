@@ -3,6 +3,7 @@ import { Swal, Input, Toast } from "../utils/swal";
 import { gameData, VERY_LARGE_NUMBER, savePlayer } from "../utils/util";
 import { Item } from "../../../typings/item";
 import { BackpackItemType } from "../../../typings/backpack";
+import { prodigy, game } from "../utils/util";
 const itemify = (item: Item[]) =>
 	item.map(x => ({
 		ID: x.ID,
@@ -14,7 +15,7 @@ const inventoryHack = (
 	lowercase: string = name.toLowerCase()
 ) => {
 	new Hack(category.inventory, `Obtain All ${name}`).setClick(async () => {
-		Phaser.GAMES[0].state.states.Login._gameObj.player.backpack.data[id] = itemify(gameData[id]);
+		prodigy.player.backpack.data[id] = itemify(gameData[id]);
 		await Toast.fire(
 			`${name} Added!`,
 			`All ${lowercase} have been added to your inventory!`,
@@ -40,7 +41,7 @@ inventoryHack("Weapons", "weapon");
 new Hack(category.inventory, `Obtain All Furniture`).setClick(async () => {
 	gameData.dorm.map(
 		x =>
-			(Phaser.GAMES[0].state.states.Login._gameObj.player.house.data.items[x.ID] = {
+			(prodigy.player.house.data.items[x.ID] = {
 				A: [],
 				N: VERY_LARGE_NUMBER,
 			})
