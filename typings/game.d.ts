@@ -7,6 +7,7 @@ export declare interface Game {
 	id: number; // Not sure what this does. Seems to be 0.
 	state: GameState;
 	input: TODO;
+	spriteBatch: TODO;
 }
 export declare interface GameState {
 	states: GameStates;
@@ -25,7 +26,7 @@ export declare interface GameStates {
 	Faint: GameStatesState;
 	CharSelect: GameStatesState;
 	CharCreate: GameStatesState;
-	Museum: GameStatesState;
+	Museum: GameStatesState & any;
 	DinoDig: GameStatesState;
 	DanceDance: GameStatesState;
 	CoOp: GameStatesState;
@@ -42,6 +43,7 @@ export declare interface GameStatesState {
 export declare interface BootState extends GameStatesState {
 	key: "Boot";
 	_gameData: GameData;
+	_metricsManager: TODO;
 }
 export declare interface PVPState extends GameStatesState {
 	key: "PVP";
