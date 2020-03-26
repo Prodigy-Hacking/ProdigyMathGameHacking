@@ -17,6 +17,8 @@
 -   [Avn1114](https://github.com/Avn1114)
 -   [Magmischief](https://github.com/Magmischief)
 -   [RubberDuck55](https://github.com/RubberDuck55)
+-   [TNThacker2015 (will)](https://github.com/TNThacker2015)
+-   [LeoTheW12-4RD](https://github.com/LeoTheW12-4RD)
 
 # Announcements
 
@@ -37,6 +39,15 @@ Thank all of you for making this happen.
 I'm making this repository to try to get the developers to change how Prodigy handles player game data. Instead of handling everything server side, a lot of the heavy lifting is done on the player side. The server just manages multiplayer battles, and hosts data, messages, and events.
 
 Basically any changes you make to Phaser.GAMES[0].prodigy.player will save. Be warned, if you mess up the data TOO much, the server gets really confused, and your account is broken forever! Don't do this on your main account. I've already broken three accounts. ;)
+
+## All Hacks In This Github Repository Is Licensed With Mozilla Public License v2
+
+We are **NOT** liable for **_any_** damages.
+
+> 7. Limitation of Liability
+>    Under no circumstances and under no legal theory, whether tort (including negligence), contract, or otherwise, shall any Contributor, or anyone who distributes Covered Software as permitted above, be liable to You for any direct, indirect, special, incidental, or consequential damages of any character including, without limitation, damages for lost profits, loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses, even if such party shall have been informed of the possibility of such damages. This limitation of liability shall not apply to liability for death or personal injury resulting from such party’s negligence to the extent applicable law prohibits such limitation. Some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so this exclusion and limitation may not apply to You.
+
+-   Mozilla Public License v2
 
 # Disclaimer
 
