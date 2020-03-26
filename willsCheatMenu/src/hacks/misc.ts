@@ -14,12 +14,8 @@ new Toggler(category.misc, "Clothing Vibe")
 		viber = window.setInterval(() => {
 			const rand = <T extends { ID: number }>(arr: T[]) =>
 				pickRandom(arr).ID;
-			prodigy.player.equipment.setOutfit(
-				rand(gameData.outfit)
-			);
-			prodigy.player.equipment.setBoots(
-				rand(gameData.boots)
-			);
+			prodigy.player.equipment.setOutfit(rand(gameData.outfit));
+			prodigy.player.equipment.setBoots(rand(gameData.boots));
 			prodigy.player.equipment.setHat(rand(gameData.hat));
 			prodigy.user.reload();
 		}, 1000);
@@ -64,8 +60,29 @@ new Hack(
 	await Toast.fire("Bobbified!", "You are now Bobby Fancywoman.", "success");
 });
 let snowball: number[] = [];
-new Toggler(category.misc, "Snowball Crasher", "Crash everyone's game near you with snowballs.").setEnabled(
-	async() => {
-		
-	}
+new Toggler(
+	category.misc,
+	"Snowball Crasher",
+	"Crash everyone's game near you with snowballs."
 )
+	.setEnabled(async () => {
+		for (let i = 0; i < 10000; i++)
+			snowball.push(
+				setInterval(() =>
+					Phaser.GAMES[0].state.states.Login._gameObj.network.emitMessage(
+						{
+							action: "fx",
+							data: {
+								type: 3 + i % 2,
+								userID:
+									Phaser.GAMES[0].state.states.Login._gameObj
+										.player.userID,
+								x: Math.floor(Math.random() * 1280),
+								y: Math.floor(Math.random() * 720),
+							},
+						}
+					)
+				)
+			);
+	})
+	.setDisabled(async () => snowball.map(clearInterval));
