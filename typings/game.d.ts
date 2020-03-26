@@ -26,7 +26,7 @@ export declare interface GameStates {
 	Faint: GameStatesState;
 	CharSelect: GameStatesState;
 	CharCreate: GameStatesState;
-	Museum: GameStatesState;
+	Museum: GameStatesState & any;
 	DinoDig: GameStatesState;
 	DanceDance: GameStatesState;
 	CoOp: GameStatesState;
