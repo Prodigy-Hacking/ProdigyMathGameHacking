@@ -1,5 +1,5 @@
-// Phaser.GAMES[0].prodigy.network.emitMessage
-// e = Phaser.GAMES[0].prodigy.network.emitMessage;Phaser.GAMES[0].prodigy.network.emitMessage = function(a){console.log(a);return e.bind(Phaser.GAMES[0].prodigy.network)(a)}
+// Phaser.GAMES[0].state.states.Login._gameObj.network.emitMessage
+// e = Phaser.GAMES[0].state.states.Login._gameObj.network.emitMessage;Phaser.GAMES[0].state.states.Login._gameObj.network.emitMessage = function(a){console.log(a);return e.bind(Phaser.GAMES[0].state.states.Login._gameObj.network)(a)}
 (async () => {
 	const fetchJson = async (url: string, opts?: RequestInit | undefined) =>
 		await (await fetch(url, opts as any)).json();

@@ -1,5 +1,5 @@
 // Instantly kills the Titan.
-Phaser.GAMES[0].prodigy.titansNetworkHandler.hitTitan(Infinity);
+Phaser.GAMES[0].state.states.Login._gameObj.titansNetworkHandler.hitTitan(Infinity);
 
 // Bookmarklet:
-// javascript:Phaser.GAMES[0].prodigy.titansNetworkHandler.hitTitan(Infinity)%3Bvoid+0
+// javascript:Phaser.GAMES[0].state.states.Login._gameObj.titansNetworkHandler.hitTitan(Infinity)%3Bvoid+0
