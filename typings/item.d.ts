@@ -13,6 +13,8 @@ export declare interface ItemData {
 	name: string;
 	questions: number;
 	filename: string;
+	element: string;
+	damage: number;
 }
 export declare interface ItemMetadata {
 	vIcon: number;
