@@ -1,5 +1,9 @@
 # Prodigy Math Game Hacks
 
+# Attention
+## Prodigy, as we hoped, is now fighting back. They have created more anti-cheats. Most hacks may not be accessible. Any questions can be answered at our [Discord](https://discord.gg/9cKMgMv)
+
+
 # **Important Announcement**
 
 `PIXI.game` has been removed, and it is replaced by `Phaser.GAMES[0]`. We have changed everything for your convenience.
