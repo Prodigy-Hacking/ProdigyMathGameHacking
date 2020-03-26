@@ -9,8 +9,7 @@ export const prodigy: { world: TODO; player: Player } = {
 			.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer
 			._player,
 	world:
-		Phaser.GAMES[0].spriteBatch.renderSession.renderer.game.input.mouseWheel
-			.callbackContext.state.states.Museum._world,
+		Phaser.GAMES[0].state.states.Museum._world,
 };
 export const gameData = game.state.states.Boot._gameData;
 export const getItem = <T extends GameItemKey>(
