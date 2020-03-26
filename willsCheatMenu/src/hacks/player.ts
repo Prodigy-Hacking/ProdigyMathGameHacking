@@ -6,6 +6,7 @@ import {
 	savePlayer,
 	gameData,
 } from "../utils/util";
+import { prodigy, game } from "../utils/util";
 new Hack(category.player, "Set Gold").setClick(async () => {
 	const gold = await NumberInput.fire(
 		"Gold Amount",
@@ -13,7 +14,7 @@ new Hack(category.player, "Set Gold").setClick(async () => {
 		"question"
 	);
 	if (gold.value === undefined) return;
-	Phaser.GAMES[0].state.states.Login._gameObj.player.data.gold = +gold.value;
+	prodigy.player.data.gold = +gold.value;
 	savePlayer();
 	await Toast.fire("Success!", "The gold amount has been set.", "success");
 });
@@ -24,8 +25,8 @@ new Hack(category.player, "Set Level").setClick(async () => {
 		"question"
 	);
 	if (level.value === undefined) return;
-	Phaser.GAMES[0].state.states.Login._gameObj.player.data.level = +level.value;
-	Phaser.GAMES[0].state.states.Login._gameObj.player.getLevel =() => Phaser.GAMES[0].state.states.Login._gameObj.player.data.level
+	prodigy.player.data.level = +level.value;
+	prodigy.player.getLevel =() => prodigy.player.data.level
 	savePlayer();
 	await Toast.fire(
 		"Success!",
@@ -41,7 +42,7 @@ new Hack(category.player, "Set Bounty Points").setClick(async () => {
 		"question"
 	);
 	if (points.value === undefined) return;
-	Phaser.GAMES[0].state.states.Login._gameObj.player.data.bountyScore = +points.value;
+	prodigy.player.data.bountyScore = +points.value;
 	savePlayer();
 	await Toast.fire("Success!", "The bounty points has been set.", "success");
 });
@@ -54,7 +55,7 @@ new Hack(category.player, "Obtain Conjure Cubes").setClick(async () => {
 	);
 	if (cubes.value === undefined) return;
 	for (let i = 0; i < Math.min(99, +cubes.value); i++)
-		Phaser.GAMES[0].state.states.Login._gameObj.giftBoxController.receiveGiftBox(
+		prodigy.giftBoxController.receiveGiftBox(
 			null,
 			getItem("giftBox", 1)
 		);
@@ -66,19 +67,19 @@ new Hack(category.player, "Obtain Conjure Cubes").setClick(async () => {
 	);
 });
 new Hack(category.player, "Membership").setClick(async () => {
-	Phaser.GAMES[0].state.states.Login._gameObj.player.it = true;
+	prodigy.player.it = true;
 	savePlayer();
 	await Toast.fire("Success!", "Membership is now enabled!", "success");
 });
 new Hack(category.player, "Instant Kill").setClick(async () => {
-	Phaser.GAMES[0].state.states.Login._gameObj.player.modifiers.damage = VERY_LARGE_NUMBER;
+	prodigy.player.modifiers.damage = VERY_LARGE_NUMBER;
 	savePlayer();
 	await Toast.fire("Success!", "Instant kill is now enabled!", "success");
 });
 
 new Hack(category.player, "PVP Health").setClick(async () => {
-	Phaser.GAMES[0].state.states.Login._gameObj.player.pvpHP = VERY_LARGE_NUMBER;
-	Phaser.GAMES[0].state.states.Login._gameObj.player.getMaxHearts = () => VERY_LARGE_NUMBER;
+	prodigy.player.pvpHP = VERY_LARGE_NUMBER;
+	prodigy.player.getMaxHearts = () => VERY_LARGE_NUMBER;
 	await Toast.fire("Success!", "You now have lots of health!", "success");
 });
 /*
@@ -95,14 +96,14 @@ new Hack(category.player, "Arena Point Increaser").setClick(async () => {
 	interval = setInterval(async () => {
 		const data = await (
 			await fetch(
-				`https://api.prodigygame.com/leaderboard-api/season/${Phaser.GAMES[0].state.states.Login._gameObj.pvpNetworkHandler.seasonID}/user/${Phaser.GAMES[0].state.states.Login._gameObj.player.userID}/pvp?userID=${Phaser.GAMES[0].state.states.Login._gameObj.player.userID}`,
+				`https://api.prodigygame.com/leaderboard-api/season/${prodigy.pvpNetworkHandler.seasonID}/user/${prodigy.player.userID}/pvp?userID=${prodigy.player.userID}`,
 				{
 					headers: {
-						authorization: `Bearer ${Phaser.GAMES[0].state.states.Login._gameObj.network.jwtAuthProvider.getToken()}`,
+						authorization: `Bearer ${prodigy.network.jwtAuthProvider.getToken()}`,
 						"content-type":
 							"application/x-www-form-urlencoded; charset=UTF-8",
 					},
-					body: `seasonID=${Phaser.GAMES[0].state.states.Login._gameObj.pvpNetworkHandler.seasonID}&action=win`,
+					body: `seasonID=${prodigy.pvpNetworkHandler.seasonID}&action=win`,
 					method: "POST",
 					mode: "cors",
 				}
