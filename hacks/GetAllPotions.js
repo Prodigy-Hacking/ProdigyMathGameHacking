@@ -1,4 +1,4 @@
-Phaser.GAMES[0].prodigy.debugMisc.getAllPotions();
+Phaser.GAMES[0].state.states.Login._gameObj.debugMisc.getAllPotions();
 
 // Bookmarklet:
-// javascript:Phaser.GAMES[0].prodigy.debugMisc.getAllPotions()%3Bvoid+0
+// javascript:Phaser.GAMES[0].state.states.Login._gameObj.debugMisc.getAllPotions()%3Bvoid+0

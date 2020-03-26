@@ -2,8 +2,8 @@ import { GameItemKey } from "../../../typings/gameData";
 import { Item } from "../../../typings/item";
 export const gameData = Phaser.GAMES[0].state.states.Boot._gameData;
 export const getItem = <T extends GameItemKey>(type: T, id: number): Item<T> | null => gameData[type].find(x => x.ID === id) as null | Item<any> ?? null;
-export const VERY_LARGE_NUMBER = 1e143;
-export const savePlayer = () => Phaser.GAMES[0].prodigy.player.forceSaveCharacter();
+export const VERY_LARGE_NUMBER = 1e69;
+export const savePlayer = () => Phaser.GAMES[0].state.states.Login._gameObj.player.forceSaveCharacter();
 export const assetURL = "https://raw.githubusercontent.com/PatheticMustan/ProdigyMathGameHacking/HEAD/willsCheatMenu/src/assets/"
 export const joinAsset = (asset: string) => `${assetURL}${asset}`;
 export const locations = {

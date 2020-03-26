@@ -1,4 +1,4 @@
-Phaser.GAMES[0].prodigy.debugMisc.getAllPets();
+Phaser.GAMES[0].state.states.Login._gameObj.debugMisc.getAllPets();
 
 // Bookmarklet:
-// javascript:Phaser.GAMES[0].prodigy.debugMisc.getAllPets()%3Bvoid+0
+// javascript:Phaser.GAMES[0].state.states.Login._gameObj.debugMisc.getAllPets()%3Bvoid+0
