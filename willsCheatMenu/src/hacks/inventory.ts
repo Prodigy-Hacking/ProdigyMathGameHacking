@@ -14,7 +14,7 @@ const inventoryHack = (
 	lowercase: string = name.toLowerCase()
 ) => {
 	new Hack(category.inventory, `Obtain All ${name}`).setClick(async () => {
-		Phaser.GAMES[0].prodigy.player.backpack.data[id] = itemify(gameData[id]);
+		Phaser.GAMES[0].state.states.Login._gameObj.player.backpack.data[id] = itemify(gameData[id]);
 		await Toast.fire(
 			`${name} Added!`,
 			`All ${lowercase} have been added to your inventory!`,
@@ -40,7 +40,7 @@ inventoryHack("Weapons", "weapon");
 new Hack(category.inventory, `Obtain All Furniture`).setClick(async () => {
 	gameData.dorm.map(
 		x =>
-			(Phaser.GAMES[0].prodigy.player.house.data.items[x.ID] = {
+			(Phaser.GAMES[0].state.states.Login._gameObj.player.house.data.items[x.ID] = {
 				A: [],
 				N: VERY_LARGE_NUMBER,
 			})

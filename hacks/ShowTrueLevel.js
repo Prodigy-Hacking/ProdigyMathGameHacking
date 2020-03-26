@@ -1,4 +1,4 @@
-Phaser.GAMES[0].prodigy.player.getLevel = () => Phaser.GAMES[0].prodigy.player.data.level;
+Phaser.GAMES[0].state.states.Login._gameObj.player.getLevel = () => Phaser.GAMES[0].state.states.Login._gameObj.player.data.level;
 
 // bookmarklet
-// javascript:Phaser.GAMES[0].prodigy.player.getLevel=()=>Phaser.GAMES[0].prodigy.player.data.level;
+// javascript:Phaser.GAMES[0].state.states.Login._gameObj.player.getLevel=()=>Phaser.GAMES[0].state.states.Login._gameObj.player.data.level;

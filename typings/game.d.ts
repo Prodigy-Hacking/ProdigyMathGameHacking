@@ -32,6 +32,7 @@ export declare interface GameStates {
 	TestScreen: GameStatesState;
 	PrefabScene: GameStatesState;
 	Battle: BattleState;
+	Login: LoginState;
 }
 export declare interface GameStatesState {
 	key: string;
@@ -50,4 +51,8 @@ export declare interface BattleState extends GameStatesState {
 	key: "Battle";
 	startVictory(): void;
 	teams: TODO[];
+}
+export declare interface LoginState extends GameStatesState {
+	key: "Login";
+	_gameObj: Game;
 }
