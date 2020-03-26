@@ -3,8 +3,9 @@ import { PIXI } from "../../typings/pixi";
 export * from "./utils/util";
 export const menu = document.createElement("div");
 export const wrapper = document.getElementById("game-wrapper");
+import { prodigy, game } from "./utils/util";
 if (!("game" in PIXI)) Object.defineProperty(PIXI, "game", { get() { alert("You're fucking stupid for using PIXI.game instead of Phaser.GAMES[0].") } })
-Phaser.GAMES[0].state.states.Login._gameObj = (Phaser.GAMES[0].state.states.Login as any)._gameObj;
+
 document.getElementById("cheat-menu")?.remove();
 document.getElementById("menu-toggler")?.remove();
 menu.id = "cheat-menu";

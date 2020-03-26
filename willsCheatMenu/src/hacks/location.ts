@@ -1,6 +1,7 @@
 import { Hack, category } from "../index";
 import { Swal, Input, Toast, NumberInput } from "../utils/swal";
 import { gameData, locations } from "../utils/util";
+import { prodigy, game } from "../utils/util";
 new Hack(category.location, "Teleport To Map (interactive)").setClick(
 	async () => {
 		const radioPopup = Swal.mixin({
@@ -14,7 +15,7 @@ new Hack(category.location, "Teleport To Map (interactive)").setClick(
 		});
 		const container = document.createElement("div");
 		container.classList.add("radioContainer");
-		for (const zone of Object.keys(Phaser.GAMES[0].state.states.Login._gameObj.world.zones)) {
+		for (const zone of Object.keys(prodigy.world.zones)) {
 			const radio = document.createElement("DIV");
 			radio.classList.add("radioDiv");
 			radio.setAttribute("zone", zone);
@@ -39,7 +40,7 @@ new Hack(category.location, "Teleport To Map (interactive)").setClick(
 		});
 		if (!zone.value) return;
 		const mapList = Object.keys(
-			Phaser.GAMES[0].state.states.Login._gameObj.world.zones[zone.value].maps
+			prodigy.world.zones[zone.value].maps
 		);
 		const area = await Swal.fire({
 			input: "select",
@@ -48,7 +49,7 @@ new Hack(category.location, "Teleport To Map (interactive)").setClick(
 			text: "Which map in the zone do you want to teleport to?",
 		});
 		if (!area.value) return;
-		Phaser.GAMES[0].state.states.Login._gameObj.world.$(`${zone.value}-${area.value}`);
+		prodigy.world.$(`${zone.value}-${area.value}`);
 		await Toast.fire("Teleported", "You have been teleported!", "success");
 	}
 );
@@ -60,7 +61,7 @@ new Hack(category.location, "Teleport To Dark Tower Floor").setClick(
 			"question"
 		);
 		if (floor.value === undefined) return;
-		Phaser.GAMES[0].state.states.Login._gameObj.debugMisc.tpTowerFloor(+floor.value);
+		prodigy.debugMisc.tpTowerFloor(+floor.value);
 		await Toast.fire(
 			"Success!",
 			"You have been teleport to the requested floor."
@@ -73,6 +74,6 @@ new Hack(
 	"Unlock All Zones (school)",
 	"Unlocks all the zones that are locked in school."
 ).setClick(async () => {
-	Phaser.GAMES[0].state.states.Login._gameObj.classModeController.lockedZones = 0;
+	prodigy.classModeController.lockedZones = 0;
 	await Toast.fire("Success!", "All zones are now unlocked that were locked in school.", "success")
 });
