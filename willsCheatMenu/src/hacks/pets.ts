@@ -2,6 +2,7 @@ import { Swal, Toast, NumberInput } from "../utils/swal";
 import { Hack, category } from "../index";
 import { VERY_LARGE_NUMBER, gameData, pickRandom } from "../utils/util";
 import { TODO } from "../../../typings/util";
+import { prodigy, game } from "../utils/util";
 
 const randomSpell = () =>
 	gameData.spell[Math.floor(Math.random() * gameData.spell.length)].ID;
@@ -15,13 +16,13 @@ const toPets = (ID: number) => ({
 });
 new Hack(category.pets, "Get All Pets").setClick(async () => {
 	const pets = gameData.pet.map(x => toPets(x.ID));
-	Phaser.GAMES[0].state.states.Login._gameObj.player.kennel.data.splice(-1, 0, ...pets);
+	prodigy.player.kennel.data.splice(-1, 0, ...pets);
 	await Toast.fire("Success!", "All pets have been added!", "success");
 });
 
 new Hack(category.pets, "Get All Epics").setClick(async () => {
 	const epics = [125, 126, 127, 128, 129, 130, 131, 132, 133];
-	Phaser.GAMES[0].state.states.Login._gameObj.player.kennel.data.splice(
+	prodigy.player.kennel.data.splice(
 		-1,
 		0,
 		...epics.map(toPets)
@@ -30,7 +31,7 @@ new Hack(category.pets, "Get All Epics").setClick(async () => {
 });
 
 new Hack(category.pets, "Clear Pets").setClick(async () => {
-	Phaser.GAMES[0].state.states.Login._gameObj.player.kennel.data.length = 0;
+	prodigy.player.kennel.data.length = 0;
 	await Toast.fire("Success!", "Your pets have been cleared!", "success");
 });
 
@@ -48,7 +49,7 @@ new Hack(category.pets, "Add Pet", "Adds a pet from a list.").setClick(
 			text: "Which pet do you want to obtain?",
 		});
 		if (pet.value === undefined) return;
-		Phaser.GAMES[0].state.states.Login._gameObj.player.kennel.addPet(pet.value);
+		prodigy.player.kennel.addPet(pet.value);
 		await Toast.fire(
 			"Success!",
 			"Your chosen pet has been added to your pets!",
@@ -61,7 +62,7 @@ new Hack(category.pets, "Edit Pet", "Edit a pet.").setClick(async () => {
 	const pet = await Swal.fire({
 		input: "select",
 		inputOptions: new Map(
-			Phaser.GAMES[0].state.states.Login._gameObj.player.kennel.data.map(
+			prodigy.player.kennel.data.map(
 				(x: TODO, i: number) => [
 					i.toString(),
 					`Level ${x.level} - ${
@@ -74,7 +75,7 @@ new Hack(category.pets, "Edit Pet", "Edit a pet.").setClick(async () => {
 		text: "Which pet do you want to set the level of?",
 	});
 	if (pet.value === undefined) return;
-	const selected = Phaser.GAMES[0].state.states.Login._gameObj.player.kennel.data[pet.value];
+	const selected = prodigy.player.kennel.data[pet.value];
 	const opt = await Swal.fire({
 		input: "select",
 		inputOptions: { level: "Level", attacks: "Attacks" },
