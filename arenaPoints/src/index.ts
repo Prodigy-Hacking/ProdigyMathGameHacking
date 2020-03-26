@@ -2,7 +2,8 @@ import fetch from "node-fetch";
 import data from "../config.json";
 import chalk from "chalk";
 const main = async () => {
-	foo: for (const _ in [2]) {
+	foo:
+	for (const _ in [2]) {
 		const users: {
 			[index: string]: { token: string; userID: number };
 		} = {};
@@ -10,7 +11,9 @@ const main = async () => {
 			await (await fetch(url, opts as any)).json();
 		if (!data.every(x => x.username && x.password))
 			return console.log("Malformed config.json.");
-		const gameStatus = { gameClientVersion: "2-97-4" };
+		const gameStatus: {
+			data: { gameClientVersion: string };
+		} = await fetchJson("https://api.prodigygame.com/game-api/status");
 		console.log("Game status loaded.");
 		const hack = async (
 			seasonID: number,
@@ -63,7 +66,7 @@ const main = async () => {
 					body: JSON.stringify({
 						username: account.username,
 						password: account.password,
-						clientVersion: gameStatus.gameClientVersion,
+						clientVersion: gameStatus.data.gameClientVersion,
 					}),
 				}
 			);

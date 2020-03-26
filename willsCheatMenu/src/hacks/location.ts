@@ -43,7 +43,7 @@ new Hack(category.location, "Teleport To Map (interactive)").setClick(
 		);
 		const area = await Swal.fire({
 			input: "select",
-			inputOptions: Object.fromEntries(mapList.map(x => [x, x])),
+			inputOptions: new Map(mapList.map(x => [x, x])),
 			title: "Map",
 			text: "Which map in the zone do you want to teleport to?",
 		});
