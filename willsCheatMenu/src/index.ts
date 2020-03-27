@@ -42,8 +42,15 @@ export const addArea = (title: string) => {
 };
 const title = document.createElement("h1");
 title.classList.add("menu-title");
-title.innerHTML = "Prodigy Cheat Menu";
+title.innerText = "Prodigy Cheat Menu";
 menuleft.append(title);
+const chatTitle = document.createElement("h1");
+chatTitle.id = "chat-title";
+chatTitle.innerText = "Live Chat";
+menuright.append(chatTitle);
+export const chat = document.createElement("div");
+chat.id = "chat-content";
+menuright.append(chat);
 export class Hack {
 	public element: HTMLButtonElement;
 	constructor(

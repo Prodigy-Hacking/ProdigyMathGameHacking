@@ -66,7 +66,7 @@ new Hack(category.pets, "Edit Pet", "Edit a pet.").setClick(async () => {
 				(x: TODO, i: number) => [
 					i.toString(),
 					`Level ${x.level} - ${
-						gameData.pet.find(y => y.ID === x.ID)?.name ?? "Crystal Monster"
+						gameData.pet.find(y => y.ID === x.ID)?.name ?? "Unknown"
 					}`,
 				]
 			) as [string, string][]
