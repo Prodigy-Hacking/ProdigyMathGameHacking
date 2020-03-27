@@ -11,4 +11,4 @@ Phaser.GAMES[0].state.states.Boot._metricsManager.gameCompleteDataFactory.gameEv
 
 
 // Bookmarklet:
-// javascript:Phaser.GAMES[0].state.states.Login._gameObj.debugMisc.setBattleEnergy(10)%3BPhaser.GAMES[0].state.states.Login._gameObj.debugMisc.easyMode()%3BPhaser.GAMES[0].state.states.Login._gameObj.player.modifiers.barrier%3D!0%3BPhaser.GAMES[0].state.states.Login._gameObj.player.modifiers.maxHearts%3D1E3%3BPhaser.GAMES[0].state.states.Login._gameObj.player.heal(Infinity)%3Bvoid+0
+// javascript:Phaser.GAMES[0].state.states.Login._gameObj.debugMisc.setBattleEnergy(10)%3BPhaser.GAMES[0].state.states.Login._gameObj.debugMisc.easyMode()%3BPhaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.modifiers.barrier%3D!0%3BPhaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.modifiers.maxHearts%3D1E3%3BPhaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.heal(Infinity)%3Bvoid+0
