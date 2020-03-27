@@ -15,6 +15,7 @@ export declare interface ItemData {
 	filename: string;
 	element: string;
 	damage: number;
+	type: number;
 }
 export declare interface ItemMetadata {
 	vIcon: number;

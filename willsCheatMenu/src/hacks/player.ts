@@ -26,7 +26,7 @@ new Hack(category.player, "Set Level").setClick(async () => {
 	);
 	if (level.value === undefined) return;
 	prodigy.player.data.level = +level.value;
-	prodigy.player.getLevel =() => prodigy.player.data.level
+	prodigy.player.getLevel = () => prodigy.player.data.level;
 	savePlayer();
 	await Toast.fire(
 		"Success!",
@@ -123,3 +123,72 @@ new Hack(category.player, "Arena Point Increaser").setClick(async () => {
 	await Swal.fire("Enabled", "Arena Point Increaser has been enabled.", "success");
 });
 */
+new Hack(
+	category.player,
+	"Change Name",
+	"Change the name of your wizard."
+).setClick(async () => {
+	const names = gameData.name;
+	const div = document.createElement("div");
+	const createSelect = (
+		arr: Map<string, string>,
+		func: (str: string) => boolean
+	) => {
+		const select = document.createElement("select");
+		select.classList.add("selectName");
+		for (const opt of arr.entries()) {
+			const optt = document.createElement("option");
+			optt.value = opt[0];
+			optt.innerText = opt[1];
+			if (func(optt.value)) optt.selected = true;
+			select.options.add(optt);
+		}
+		return select;
+	};
+	const nameSelect = (type: number, func: (num: number) => boolean) =>
+		createSelect(
+			new Map(
+				names
+					.filter(x => x.data.type === type)
+					.map(x => [x.ID.toString(), x.name])
+			),
+			val => func(+val)
+		);
+	div.append(nameSelect(0, x => x === prodigy.player.name.data.firstName));
+	div.append(nameSelect(1, x => x === prodigy.player.name.data.middleName));
+	div.append(nameSelect(2, x => x === prodigy.player.name.data.lastName));
+	div.append(
+		createSelect(
+			new Map(
+				[["null", "[none]"]].concat(
+					gameData.nickname.map(x => [x.ID.toString(), x.name])
+				) as [string, string][]
+			),
+			x =>
+				+x === prodigy.player.name.data.nickname ||
+				String(prodigy.player.name.data.nickname) === x
+		)
+	);
+	const name = await Swal.fire({
+		title: "Set Player Name",
+		focusConfirm: false,
+		showCancelButton: true,
+		html: div,
+		preConfirm: () => {
+			return Array.prototype.slice
+				.call(document.querySelectorAll(`.selectName`))
+				.map(
+					(x: HTMLSelectElement) => x.options[x.selectedIndex].value
+				);
+		},
+	});
+	if (name.value === undefined) return;
+	if (name.value[3] === "null") name.value[3] = null;
+	[
+		prodigy.player.name.data.firstName,
+		prodigy.player.name.data.middleName,
+		prodigy.player.name.data.lastName,
+		prodigy.player.name.data.nickname,
+	] = (name.value as string[]).map(x => x as unknown as number && +x);
+	await Toast.fire("Name Changed!", "Your name was successfully changed.", "success")
+});

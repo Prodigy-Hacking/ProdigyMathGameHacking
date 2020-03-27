@@ -25,6 +25,7 @@
 		"docs": "npx typedoc --excludeExternals --disableSources --exclude **/node_modules/** **/test.ts --includeDeclarations --plugin typedoc-plugin-markdown --out docs typings"
 	},
 	"dependencies": {
+		"@types/express": "^4.17.3",
 		"@types/node-fetch": "^2.5.5",
 		"@types/pixi.js": "^5.0.0",
 		"glob": "^7.1.6",
