@@ -1,5 +1,5 @@
 // Allows your player to level with the addStars function
-Phaser.GAMES[0].state.states.Login._gameObj.player.addStars();
+Phaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.addStars();
 
 // Bookmarklet:
-// javascript:Phaser.GAMES[0].state.states.Login._gameObj.player.addStars()%3Bvoid+0
+// javascript:Phaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.addStars()%3Bvoid+0

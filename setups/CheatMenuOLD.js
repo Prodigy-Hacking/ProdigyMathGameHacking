@@ -286,7 +286,7 @@ document.getElementById('grade').addEventListener("click", grade);
 
 function grade(){
   var g = prompt("What grade would you like to change to? (1-8)");
-  Phaser.GAMES[0].state.states.Login._gameObj.player.grade = g;
+  Phaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.grade = g;
 }
 
 function tryme(){
@@ -298,14 +298,14 @@ function mon(){
 }
 
 function petlevel(){
-  for (let i=0; i<Phaser.GAMES[0].state.states.Login._gameObj.player.kennel.data.length; i++) {
-    Phaser.GAMES[0].state.states.Login._gameObj.player.kennel.data[i].level=100;
+  for (let i=0; i<Phaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.kennel.data.length; i++) {
+    Phaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.kennel.data[i].level=100;
   };
 }
 
 function furnosh(){
   for(var i = 1; i < 148; i++){
-Phaser.GAMES[0].state.states.Login._gameObj.player.house.data.items[i] = {A: Array(0), N: 1000};
+Phaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.house.data.items[i] = {A: Array(0), N: 1000};
 }
  }
 
@@ -322,7 +322,7 @@ function pets(){
 }
 
 function instakill(){
-    Phaser.GAMES[0].state.states.Login._gameObj.player.modifiers.damage=Infinity;
+    Phaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.modifiers.damage=Infinity;
 }
 
 function sped(){
@@ -336,33 +336,33 @@ function notsped(){
 function item(){
 a=["outfit", "hat", "boots", "weapon", "spellRelic", "fossil"];
 for (u of a) {
-    Phaser.GAMES[0].state.states.Login._gameObj.player.backpack.data[u]=[];
+    Phaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.backpack.data[u]=[];
     x = Phaser.GAMES[0].state.states.Boot._gameData[u];
     for (i in x) {
-        Phaser.GAMES[0].state.states.Login._gameObj.player.backpack.data[u][i] = {"ID": x[i].ID, "N": 1};
+        Phaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.backpack.data[u][i] = {"ID": x[i].ID, "N": 1};
     }
 }
-Phaser.GAMES[0].state.states.Login._gameObj.player.backpack.data.currency=[];
+Phaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.backpack.data.currency=[];
 x = Phaser.GAMES[0].state.states.Boot._gameData.currency;
 for (i in x) {
-    Phaser.GAMES[0].state.states.Login._gameObj.player.backpack.data.currency[i] = {"ID": x[i].ID, "N": 99999999};
+    Phaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.backpack.data.currency[i] = {"ID": x[i].ID, "N": 99999999};
 }
 
-Phaser.GAMES[0].state.states.Login._gameObj.player.backpack.data.follow=[];
+Phaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.backpack.data.follow=[];
 x = Phaser.GAMES[0].state.states.Boot._gameData.follow;
 for (i in x) {
-    Phaser.GAMES[0].state.states.Login._gameObj.player.backpack.data.follow[i] = {"ID": x[i].ID};
+    Phaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.backpack.data.follow[i] = {"ID": x[i].ID};
 }
-Phaser.GAMES[0].state.states.Login._gameObj.player.backpack.data.item=[];
+Phaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.backpack.data.item=[];
 x = Phaser.GAMES[0].state.states.Boot._gameData.item;
 for (i in x) {
-    Phaser.GAMES[0].state.states.Login._gameObj.player.backpack.data.item[i] = {"ID": x[i].ID, "N": 99999999};
+    Phaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.backpack.data.item[i] = {"ID": x[i].ID, "N": 99999999};
 }
 
-Phaser.GAMES[0].state.states.Login._gameObj.player.backpack.data.item=[];
+Phaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.backpack.data.item=[];
 x = Phaser.GAMES[0].state.states.Boot._gameData.item;
 for (i in x) {
-    Phaser.GAMES[0].state.states.Login._gameObj.player.backpack.data.item[i] = {"ID": x[i].ID, "N": 99999999};
+    Phaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.backpack.data.item[i] = {"ID": x[i].ID, "N": 99999999};
 }
 }
 
@@ -380,11 +380,11 @@ function tut(){
 }
 
 function level(){
-  Phaser.GAMES[0].state.states.Login._gameObj.player.data.level=100;
+  Phaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.data.level=100;
 }
 
 function member(){
-  Phaser.GAMES[0].state.states.Login._gameObj.player.it=true;
+  Phaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.it=true;
 }
 
 function escape(){
