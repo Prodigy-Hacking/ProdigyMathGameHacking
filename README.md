@@ -6,7 +6,7 @@
 
 # **Important Announcement**
 
-`PIXI.game` has been removed, and it is replaced by `Phaser.GAMES[0]`. We have changed everything for your convenience.
+`Phaser.GAMES` has been patched, and it is being replaced by `[0] Phaser.CanvasPool.pool[0]` for your convenience.
 
 # Links
 
