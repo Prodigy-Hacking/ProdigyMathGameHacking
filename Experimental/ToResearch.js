@@ -9,7 +9,7 @@ Phaser.GAMES[0].state.states.Login._gameObj.debugMisc.getKeyItems()
 Phaser.GAMES[0].state.states.Login._gameObj.debugMisc.getBounty(100)
 
 // Heals team. (EXPERIMENTAL)
-Phaser.GAMES[0].state.states.Login._gameObj.player.healTeam(9999999)
+Phaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.healTeam(9999999)
 
 // It seems like there are a lot of debug functions left in here by the developers...
 Phaser.GAMES[0].state.states.Login._gameObj.debugMisc.prototype
