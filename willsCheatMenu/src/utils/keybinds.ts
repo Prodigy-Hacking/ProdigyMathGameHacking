@@ -1,5 +1,5 @@
 window.addEventListener("keydown", event => {
-	return;
+	/*
 	if (event.code === "KeyL") {
 		Phaser.GAMES[0].state.states.Login._gameObj.user.x = Phaser.GAMES[0].input.mousePointer.position.x;
 		Phaser.GAMES[0].state.states.Login._gameObj.user.y = Phaser.GAMES[0].input.mousePointer.position.y;
@@ -15,4 +15,5 @@ window.addEventListener("keydown", event => {
 			Phaser.GAMES[0].state.states.Login._gameObj.open.chat();
 		}
 	}
+	*/
 });

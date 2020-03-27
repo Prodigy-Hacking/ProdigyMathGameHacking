@@ -2,14 +2,14 @@ import { GameItemKey } from "../../../typings/gameData";
 import { Item } from "../../../typings/item";
 import { Player } from "../../../typings/player";
 import { TODO } from "../../../typings/util";
-export const game = Phaser.GAMES[0];
+export const game = Phaser.CanvasPool.pool[0].parent.game;
 export const prodigy: { world: TODO; player: Player } = {
 	player:
-		Phaser.GAMES[0].state.states.Boot._metricsManager
+		game.state.states.Boot._metricsManager
 			.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer
 			._player,
 	world:
-		Phaser.GAMES[0].state.states.Museum._world,
+		game.state.states.Museum._world,
 };
 export const gameData = game.state.states.Boot._gameData;
 export const getItem = <T extends GameItemKey>(
