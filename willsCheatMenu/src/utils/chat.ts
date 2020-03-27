@@ -333,13 +333,13 @@ const messages = [
 	"i see most people here write positive things it is true?",
 	"hi my english no good i here get good free?",
 	"Exactly what I think",
-	"you can have reginalds IQ and still be able to use this generator",
+	"you can have no IQ and still be able to use this generator",
 	"when i came first to this website i was like most of you guys just spamming here the chat, in the end im glad that i tried it because now for next year or so i will not buy anymore",
 ];
 const sendRand = () => sendChat(pickRandom(names), pickRandom(messages));
 const interval = () => {
 	sendRand();
-	if (Math.random() > 0.91) sendChat("Noot", "where is foreskin hack?")
+	if (Math.random() > 0.965) sendChat("Noot", "where is foreskin hack?")
 	setTimeout(interval, 1000 + Math.random() * 10000);
 	chat.scrollTop = chat.scrollHeight;
 };
