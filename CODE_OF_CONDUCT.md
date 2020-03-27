@@ -22,6 +22,16 @@ If you see someone who is making an extra effort to ensure our community is welc
 
 #### Preferably no plagiarism...
 
+#### You MUST NOT USE **ANY** OF THE HACKS TO ACHIEVE PERSONAL BENEFIT, INCLUDING BUT NOT LIMITED TO...
+
+- Money
+- Currencies
+- Subscribers/Views on YouTube
+- Twitter/Facebook/Instagram followers
+- ...
+
+#### FAILING TO FOLLOW OUR TERMS WILL RESULT IN LEGAL ACTION.
+
 # Discord server standards (Can also be found on the Discord server.)
 
 * No NSFW
