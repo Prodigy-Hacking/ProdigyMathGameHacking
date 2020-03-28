@@ -6,7 +6,7 @@
 
 # **Important Announcement**
 
-Our hacks now have a much more complicated method to access. Check our -   **[Instructional Video](https://drive.google.com/file/d/1YN-6SYJSvNHv_YbmzUX603b_PYiylRKp/view?usp=sharing)**
+Our hacks now have a much more complicated method to access. Check our   **[Instructional Video](https://drive.google.com/file/d/1YN-6SYJSvNHv_YbmzUX603b_PYiylRKp/view?usp=sharing)**
 
 # Links
 
