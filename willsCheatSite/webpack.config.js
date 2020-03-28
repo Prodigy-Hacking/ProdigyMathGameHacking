@@ -1,12 +1,13 @@
 const path = require("path");
 const glob = require("glob");
 const autoprefixer = require("autoprefixer");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
 	mode: "production",
 	//devtool: "inline-source-map",
 	entry: [
 		"./src/index.ts",
-		...glob.sync(path.join(__dirname, "src/@(hacks|utils)/**/*.ts"))
+		...glob.sync(path.join(__dirname, "src/@(hacks|utils)/**/*.ts")),
 	],
 	module: {
 		rules: [
@@ -35,16 +36,15 @@ module.exports = {
 					"sass-loader",
 				],
 			},
-			/*{
-				test: /\.(png|jpe?g|gif)$/i,
+			{
+				test: /\.(png|jpe?g|gif|ttf)$/i,
 				use: [
 					{
-						loader: "url-loader",
-						options: {
-						},
+						loader: "file-loader",
+						options: {},
 					},
 				],
-			},*/
+			},
 		],
 	},
 	resolve: {
@@ -54,4 +54,11 @@ module.exports = {
 		filename: "bundle.js",
 		path: path.resolve(__dirname, "dist"),
 	},
+	plugins: [
+		new HtmlWebpackPlugin({
+			filename: "index.html",
+			//favicon: "favicon.ico",
+			template: "src/index.html",
+		}),
+	],
 };

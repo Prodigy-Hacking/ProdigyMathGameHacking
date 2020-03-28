@@ -1,9 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+@font-face {
+	font-family: "Berlin Sans";
+	src: url("./assets/BerlinSans.ttf");
+}
 body {
-	margin: 0;
+	margin: 16px;
 	font-family: "Open Sans";
 }
 #title {
-	font-size: 20px;
+	font-size: 35px;
 	font-weight: 700;
+	font-family: "Berlin Sans";
+	#prodigy {
+		color: #55b9a7;
+	}
 }
