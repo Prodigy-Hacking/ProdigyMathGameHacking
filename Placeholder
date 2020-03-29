@@ -1,5 +1,8 @@
-This is a BAD prodigy GUI hack. When using it, copy and pase THE WHOLE THING, not including this,and you will get it.
+This is still here so we can use it if ever needed, however this does not work anymore, so dont try to use it.
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is a BAD prodigy GUI hack. When using it, copy and pase THE WHOLE THING, not including this,and you will get it.
 
 function closeit(){
 prodigydiv.remove()
