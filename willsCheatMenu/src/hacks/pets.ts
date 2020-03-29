@@ -66,13 +66,13 @@ new Hack(category.pets, "Edit Pet", "Edit a pet.").setClick(async () => {
 				(x: TODO, i: number) => [
 					i.toString(),
 					`Level ${x.level} - ${
-						gameData.pet.find(y => y.ID === x.ID)?.name ?? "Unknown"
+						gameData.pet.find(y => +y.ID === +x.ID)?.data.name ?? "Unknown"
 					}`,
 				]
 			) as [string, string][]
 		),
 		title: "Choose Pet",
-		text: "Which pet do you want to set the level of?",
+		text: "Which pet do you want to edit?",
 	});
 	if (pet.value === undefined) return;
 	const selected = prodigy.player.kennel.data[pet.value];

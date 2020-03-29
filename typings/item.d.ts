@@ -16,6 +16,7 @@ export declare interface ItemData {
 	element: string;
 	damage: number;
 	type: number;
+	foreignSpellPools: number[][]
 }
 export declare interface ItemMetadata {
 	vIcon: number;
