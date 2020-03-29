@@ -2,13 +2,11 @@ const path = require("path");
 const glob = require("glob");
 const autoprefixer = require("autoprefixer");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
 module.exports = {
 	mode: "production",
 	//devtool: "inline-source-map",
-	entry: [
-		"./src/index.ts",
-		...glob.sync(path.join(__dirname, "src/@(hacks|utils)/**/*.ts")),
-	],
+	entry: ["./src/index.ts", "./src/initiate.ts", ...glob.sync(path.join(__dirname, "src/@(hacks|utils)/**/*.ts"))],
 	module: {
 		rules: [
 			{
@@ -60,5 +58,5 @@ module.exports = {
 			//favicon: "favicon.ico",
 			template: "src/index.html",
 		}),
-	],
+	]
 };
