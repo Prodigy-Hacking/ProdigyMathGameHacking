@@ -124,7 +124,9 @@ interface BigData {
 		allowsHouseVisitors: boolean;
 		atHomeTimestamp: number;
 		bountyScore: number;
+		battleCounter: number;
 		daily: { lastStarted: number; isComplete: boolean };
+		deserter: number;
 		energy: number;
 		gold: number;
 		hp: number;
@@ -135,6 +137,7 @@ interface BigData {
 		startDate: number;
 		storedMemberStars: number;
 		team: number;
+		tower: number | string;
 		trialStartDate: string;
 		zone: string;
 	};
@@ -154,7 +157,7 @@ interface BigData {
 		face: number;
 		gender: string;
 		hair: { color: number; style: number };
-		name: { last: number; first: number; middle: number };
+		name: { last: number; first: number; middle: number; nick: number | null };
 		skinColor: number;
 	};
 	equipment: {
@@ -241,5 +244,9 @@ export const updateUser = async (data: DeepPartial<BigData>) => {
 	});
 	return fetched.ok || null;
 };
-const getGameData = async (): Promise<GameData> =>
-	await (await fetch("https://cdn.prodigygame.com/game/data/dev/data.json")).json();
+let gameDataCache: GameData | null = null;
+export const getGameData = async (): Promise<GameData> =>
+	gameDataCache
+		? gameDataCache
+		: (gameDataCache = await (await fetch("https://cdn.prodigygame.com/game/data/dev/data.json")).json());
+export const VERY_LARGE_NUMBER = 1e69;
