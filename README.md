@@ -3,6 +3,7 @@
 # Attention
 ## Prodigy, as we hoped, is now fighting back. They have created more anti-cheats. Some hacks may not be accessible. Any questions can be answered at our [Discord](https://discord.gg/9cKMgMv).
 
+# Everyone! Stop freaking out about Prodigy patching our hacks! In the new instructional video (Link below) we have a way to bypass Prodigy's patches! Any questions, again, can be answered at the Discord server. If you are under 13, contact us in the issues section or via email.
 
 # **Important Announcement**
 
