@@ -7,20 +7,27 @@
 		"start": "node -r esm -r ts-node/register server.ts"
 	},
 	"dependencies": {
+		"@types/lodash": "^4.14.149",
 		"@types/webpack": "^4.41.8",
+		"@types/webpack-hot-middleware": "^2.25.0",
 		"esm": "^3.2.25",
 		"express": "^4.17.1",
 		"glob": "^7.1.6",
+		"lodash": "^4.17.15",
 		"sweetalert2": "^9.10.6",
 		"ts-node": "^8.8.1"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.9.0",
 		"@babel/plugin-proposal-optional-chaining": "^7.9.0",
+		"@babel/plugin-transform-runtime": "^7.9.0",
 		"@babel/preset-env": "^7.9.0",
+		"@babel/runtime": "^7.9.2",
 		"@types/webpack-dev-middleware": "^3.7.0",
 		"autoprefixer": "^9.7.5",
 		"babel-loader": "^8.1.0",
+		"babel-preset-latest": "^6.24.1",
+		"babel-runtime": "^6.26.0",
 		"css-loader": "^3.4.2",
 		"file-loader": "^6.0.0",
 		"html-loader": "^1.0.0",
@@ -35,6 +42,7 @@
 		"url-loader": "^4.0.0",
 		"webpack": "^4.42.1",
 		"webpack-cli": "^3.3.11",
-		"webpack-dev-middleware": "^3.7.2"
+		"webpack-dev-middleware": "^3.7.2",
+		"webpack-hot-middleware": "^2.25.0"
 	}
 }
