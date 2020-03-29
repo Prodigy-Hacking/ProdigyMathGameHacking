@@ -1,0 +1,80 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Stephen\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @babel/preset-latest -D
+
+PATH: 
+  C:\ActiveTcl\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Users\Stephen\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\PuTTY\;C:\Users\Stephen\AppData\Local\Yarn\bin\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\JXcore;C:\Program Files\Microsoft\Web Platform Installer\;C:\Users\Stephen\.windows-build-tools\python27\;C:\Python3.7\Scripts\;C:\Python3.7\;C:\Users\Stephen\Desktop\Scripts\;C:\Users\Stephen\Desktop\;C:\Python36\Scripts\;C:\Python36\;C:\Users\Stephen\AppData\Local\Microsoft\WindowsApps;C:\Users\Stephen\AppData\Local\GitHubDesktop\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Users\Stephen\AppData\Roaming\npm;C:\tools\dart-sdk\bin;C:\Users\Stephen\AppData\Roaming\Pub\Cache\bin;C:\Users\Stephen\AppData\Local\Microsoft\WindowsApps
+
+Yarn version: 
+  1.19.1
+
+Node version: 
+  13.2.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@babel%2fpreset-latest: Not found
+      at Request.params.callback [as _callback] (C:\Users\Stephen\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66926:18)
+      at Request.self.callback (C:\Users\Stephen\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140564:22)
+      at Request.emit (events.js:210:5)
+      at Request.<anonymous> (C:\Users\Stephen\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141536:10)
+      at Request.emit (events.js:210:5)
+      at IncomingMessage.<anonymous> (C:\Users\Stephen\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141458:12)
+      at Object.onceWrapper (events.js:299:28)
+      at IncomingMessage.emit (events.js:215:7)
+      at endReadableNT (_stream_readable.js:1200:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+  	"name": "wills-cheat-site",
+  	"version": "1.0.0",
+  	"main": "index.js",
+  	"license": "MIT",
+  	"scripts": {
+  		"start": "node -r esm -r ts-node/register server.ts"
+  	},
+  	"dependencies": {
+  		"@babel/plugin-transform-runtime": "^7.9.0",
+  		"@babel/runtime": "^7.9.2",
+  		"@types/webpack": "^4.41.8",
+  		"@types/webpack-hot-middleware": "^2.25.0",
+  		"esm": "^3.2.25",
+  		"express": "^4.17.1",
+  		"glob": "^7.1.6",
+  		"sweetalert2": "^9.10.6",
+  		"ts-node": "^8.8.1"
+  	},
+  	"devDependencies": {
+  		"@babel/core": "^7.9.0",
+  		"@babel/plugin-proposal-optional-chaining": "^7.9.0",
+  		"@babel/preset-env": "^7.9.0",
+  		"@types/webpack-dev-middleware": "^3.7.0",
+  		"autoprefixer": "^9.7.5",
+  		"babel-loader": "^8.1.0",
+  		"babel-runtime": "^6.26.0",
+  		"css-loader": "^3.4.2",
+  		"file-loader": "^6.0.0",
+  		"html-loader": "^1.0.0",
+  		"html-webpack-plugin": "^4.0.2",
+  		"node-sass": "^4.13.1",
+  		"postcss-loader": "^3.0.0",
+  		"raw-loader": "^4.0.0",
+  		"sass-loader": "^8.0.2",
+  		"style-loader": "^1.1.3",
+  		"ts-loader": "^6.2.2",
+  		"typescript": "^3.8.3",
+  		"url-loader": "^4.0.0",
+  		"webpack": "^4.42.1",
+  		"webpack-cli": "^3.3.11",
+  		"webpack-dev-middleware": "^3.7.2",
+  		"webpack-hot-middleware": "^2.25.0"
+  	}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
