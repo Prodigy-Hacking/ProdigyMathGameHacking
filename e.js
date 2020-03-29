@@ -1,1 +1,1 @@
-process.stdin.resume();
+setInterval(() => {}, 1 << 30);
