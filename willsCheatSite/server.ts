@@ -5,6 +5,6 @@ const PORT = 0xbeef;
 app.use(express.json());
 app.use(express.static("dist"));
 app.get("/", (req, res) => res.redirect("/index.html"));
-app.listen(PORT, async () => {
+app.listen(process.env.PORT || PORT, async () => {
 	console.log(`Site started on :${PORT}.`);
 });
