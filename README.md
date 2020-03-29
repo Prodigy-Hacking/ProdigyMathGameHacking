@@ -3,17 +3,18 @@
 # Attention
 ## Prodigy, as we hoped, is now fighting back. They have created more anti-cheats. Some hacks may not be accessible. Any questions can be answered at our [Discord](https://discord.gg/9cKMgMv).
 
+# Everyone! Stop freaking out about Prodigy patching our hacks! In the new instructional video (Link below) we have a way to bypass Prodigy's patches! Any questions, again, can be answered at the Discord server. If you are under 13, contact us in the issues section or via email.
 
 # **Important Announcement**
 
-`Phaser.GAMES` has been patched, and it is being replaced by `[0] Phaser.CanvasPool.pool[0]` for your convenience.
+Our hacks now have a much more complicated method to access. Check our   **[Instructional Video](https://drive.google.com/file/d/1YN-6SYJSvNHv_YbmzUX603b_PYiylRKp/view?usp=sharing)**
 
 # Links
 
 -   **[Wiki](https://github.com/PatheticMustan/ProdigyMathGameHacking/wiki)**
 -   **[DIY!](https://github.com/PatheticMustan/ProdigyMathGameHacking/issues/25)**
 -   **[Discord](https://discord.gg/9cKMgMv)**
--   **[Instructional Video](https://drive.google.com/file/d/1QZ1659V_8OJvdySRTmKjfJxbI-zukEib/view?usp=sharing)**
+-   **[Instructional Video](https://drive.google.com/file/d/1YN-6SYJSvNHv_YbmzUX603b_PYiylRKp/view?usp=sharing)**
 
 ## Collaborators
 
