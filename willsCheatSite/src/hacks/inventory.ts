@@ -56,4 +56,17 @@ import { BackpackItemType } from "../../../typings/backpack";
 			"success"
 		);
 	});
+	new Hack(category.inventory, `Clear Furniture`).setClick(async () => {
+		await updateUser({
+			house: {
+				items: {},
+			},
+		});
+		await Toast.fire(
+			`Furniture Added!`,
+
+			`All furniture have been added to your inventory!`,
+			"success"
+		);
+	});
 })();
