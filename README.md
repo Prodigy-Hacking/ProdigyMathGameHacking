@@ -9,6 +9,8 @@
 -   **[Wiki](https://github.com/PatheticMustan/ProdigyMathGameHacking/wiki)**
 -   **[DIY!](https://github.com/PatheticMustan/ProdigyMathGameHacking/issues/25)**
 -   **[Discord](https://discord.gg/9cKMgMv)**
+-   **[Cheat Dashboard](https://prodigy-cheat-dashboard.herokuapp.com/)**
+
 ## Collaborators
 
 -   [PatheticMustan](https://github.com/PatheticMustan)
