@@ -250,3 +250,5 @@ export const getGameData = async (): Promise<GameData> =>
 		? gameDataCache
 		: (gameDataCache = await (await fetch("https://cdn.prodigygame.com/game/data/dev/data.json")).json());
 export const VERY_LARGE_NUMBER = 1e69;
+
+export const LARGE_NUMBER = 1e9;
