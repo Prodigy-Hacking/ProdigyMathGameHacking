@@ -1,6 +1,6 @@
 import { Input } from "./swal";
 import Swal from "sweetalert2";
-import { LOGIN, GET_USER, USER_UPDATE } from "./urls";
+import { LOGIN, GET_USER, USER_UPDATE, PROD_GAMEDATA } from "./urls";
 import _ from "lodash";
 import { DeepPartial } from "../../declarations";
 import { BackpackData } from "../../../typings/backpack";
@@ -28,7 +28,9 @@ export interface Status {
 		gameLibPath: string;
 		maintenance: boolean;
 		maintenanceMessage: boolean;
-		prodigyGameFlags: unknown; // im too lazy to add all of them
+		prodigyGameFlags: {
+			gameDataVersion: number
+		}; // im too lazy to add all of them
 	};
 	status: "success";
 }
@@ -231,7 +233,7 @@ export const updateUser = async (data: DeepPartial<BigData>) => {
 	const account = await getAccount();
 	const bigData = await getBigData();
 	if (!(bigData && account)) return null;
-	const merged = _.mergeWith(bigData, data, (t, o) => (_.isArray(t) ? o : undefined));
+	const merged = _.mergeWith(bigData, data, (t, o) => (_.isArray(t) ? o : JSON.stringify(o) === "{}" ? o : undefined));
 	const fetched = await fetchWithAuth(USER_UPDATE(account.userID), {
 		headers: {
 			"content-type": "application/json",
@@ -248,7 +250,7 @@ let gameDataCache: GameData | null = null;
 export const getGameData = async (): Promise<GameData> =>
 	gameDataCache
 		? gameDataCache
-		: (gameDataCache = await (await fetch("https://cdn.prodigygame.com/game/data/dev/data.json")).json());
+		: (gameDataCache = await (await fetch(PROD_GAMEDATA((await getStatus()).data.prodigyGameFlags.gameDataVersion))).json());
 export const VERY_LARGE_NUMBER = 1e69;
 
 export const LARGE_NUMBER = 1e9;
