@@ -7,7 +7,7 @@ import { prodigy, game } from "../utils/util";
 const itemify = (item: Item[]) =>
 	item.map(x => ({
 		ID: x.ID,
-		N: 900000000,
+		N:  VERY_LARGE_NUMBER,
 	}));
 const inventoryHack = (
 	name: string,
