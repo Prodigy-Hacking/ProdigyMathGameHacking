@@ -1,5 +1,8 @@
 # Prodigy Math Game Hacks
 
+# Hacks are not accessible for now. Please remain patient.
+
+
 # Attention
 ## Prodigy, as we hoped, is now fighting back. They have created more anti-cheats. Some hacks may not be accessible. Any questions can be answered at our [Discord](https://discord.gg/9cKMgMv).
 
