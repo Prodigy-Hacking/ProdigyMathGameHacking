@@ -1,4 +1,3 @@
-// Thanks to @Avn1114 for finding this hack!
-Phaser.GAMES[0].state.states.Login._gameObj.debugMisc.escapeBattle();
-
-// javascript:Phaser.GAMES[0].state.states.Login._gameObj.debugMisc.escapeBattle();
+// Allows you to escape battles.
+(async()=>{e=await(await fetch("https://api.prodigygame.com/game-api/status")).json(),CryptoJS.MD5=(()=>({toString:()=>e.data.prodigyGameFlags.debugPassword})),enableDebug("",!0)})();
+setTimeout(() => {escapeBattle()()}, 100);
