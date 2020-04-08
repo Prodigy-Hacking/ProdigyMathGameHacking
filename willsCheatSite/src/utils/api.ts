@@ -29,7 +29,7 @@ export interface Status {
 		maintenance: boolean;
 		maintenanceMessage: boolean;
 		prodigyGameFlags: {
-			gameDataVersion: number
+			gameDataVersion: number;
 		}; // im too lazy to add all of them
 	};
 	status: "success";
@@ -121,7 +121,7 @@ export const getUser = async <T extends number[]>(...users: T): Promise<{ [i in 
 	if (!response.ok) return null;
 	return response.json();
 };
-interface BigData {
+export interface BigData {
 	data: {
 		allowsHouseVisitors: boolean;
 		atHomeTimestamp: number;
@@ -233,7 +233,9 @@ export const updateUser = async (data: DeepPartial<BigData>) => {
 	const account = await getAccount();
 	const bigData = await getBigData();
 	if (!(bigData && account)) return null;
-	const merged = _.mergeWith(bigData, data, (t, o) => (_.isArray(t) ? o : JSON.stringify(o) === "{}" ? o : undefined));
+	const merged = _.mergeWith(bigData, data, (t, o) =>
+		_.isArray(t) ? o : JSON.stringify(o) === "{}" ? o : undefined
+	);
 	const fetched = await fetchWithAuth(USER_UPDATE(account.userID), {
 		headers: {
 			"content-type": "application/json",
@@ -250,7 +252,9 @@ let gameDataCache: GameData | null = null;
 export const getGameData = async (): Promise<GameData> =>
 	gameDataCache
 		? gameDataCache
-		: (gameDataCache = await (await fetch(PROD_GAMEDATA((await getStatus()).data.prodigyGameFlags.gameDataVersion))).json());
+		: (gameDataCache = await (
+				await fetch(PROD_GAMEDATA((await getStatus()).data.prodigyGameFlags.gameDataVersion))
+		  ).json());
 export const VERY_LARGE_NUMBER = 1e69;
 
 export const LARGE_NUMBER = 1e9;
