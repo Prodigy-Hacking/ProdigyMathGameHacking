@@ -22,10 +22,6 @@
 
 # Announcements
 
-## Let's try and expand our wiki! Feel free to contribute!
-
-**[Click here!](https://github.com/PatheticMustan/ProdigyMathGameHacking/wiki)**
-
 #### Notice: We are NOT trying to ruin Prodigy Math Game.
 
 This may look like we're trying to ruin the game, but we're helping make it better. By finding exploits, we help the developers find that there is an exploit, and the developers fix it, overall helping the game. Anyone who claims that we are 'malicious' or 'ruining the game', are wrong. Please don't spread misinformation.
