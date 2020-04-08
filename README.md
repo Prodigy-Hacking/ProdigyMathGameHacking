@@ -1,6 +1,7 @@
 # Prodigy Math Game Hacks
 
 # All hacks are accessible again! 🥳 Files will be changed soon!
+### Join the Discord to see our progress!
 
 
 # Links
