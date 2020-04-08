@@ -1,8 +1,6 @@
 # Prodigy Math Game Hacks
 
-# All hacks are accessible again! 🥳 Files will be changed soon!
-### Join the Discord to see our progress!
-
+# Hacks are patched for the, like 30th time.
 
 # Links
 
@@ -22,7 +20,6 @@
 
 # Announcements
 
-# We've made a large breakthrough! Easy mode, which makes it so you don't have to answer questions! Check in the hacks folder.
 
 #### Notice: We are NOT trying to ruin Prodigy Math Game.
 
