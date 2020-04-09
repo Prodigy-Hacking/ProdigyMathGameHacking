@@ -1,5 +1,7 @@
 //Please Dont Steal this I can Find you
 
+console=0
+
 var style = document.createElement('style');
 style.innerHTML = '.hide {display: none;}';
 document.head.appendChild(style);
