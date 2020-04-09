@@ -1,6 +1,6 @@
 # Prodigy Math Game Hacks
 
-# Hacks are patched for the, like 30th time.
+# Hacks are patched for the, like 30th time. Only Bobby Fancywomen can help us now.
 
 # Links
 
