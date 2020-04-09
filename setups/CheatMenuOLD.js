@@ -2,6 +2,9 @@
 
 console=0
 
+e=await (await fetch("https://api.prodigygame.com/game-api/status")).json();CryptoJS.MD5 = () => ({ toString: () => e.data.prodigyGameFlags.debugPassword });enableDebug('',!0)
+//Thanks to will for that
+
 var style = document.createElement('style');
 style.innerHTML = '.hide {display: none;}';
 document.head.appendChild(style);
