@@ -6,10 +6,10 @@
 https://drive.google.com/file/d/1qlqIlB9URPvUMq40gf9c8s0zDS2a8MTY/view?usp=sharing
 
 Finally, an instructional video!
--First script: `with(console){log=dir=clear=()=>{}}` (Remember, it’s the bookmarklet.)
--Second script: `{f:sprintf}`
--Third and final script: `temp1.object.n.c[0].exports.a.instance.prodigy`
--Bookmarklet website: https://caiorss.github.io/bookmarklet-maker/
+* First script: `with(console){log=dir=clear=()=>{}}` (Remember, it’s the bookmarklet.)
+* Second script: `{f:sprintf}`
+* Third and final script: `temp1.object.n.c[0].exports.a.instance.prodigy`  
+* Bookmarklet website: https://caiorss.github.io/bookmarklet-maker/
 
 Ok, that’s done. Exploits:
 ```
