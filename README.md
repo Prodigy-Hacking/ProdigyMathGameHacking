@@ -1,7 +1,23 @@
 # Prodigy Math Game Hacks
 
-# Hacks are patched for the, like 30th time.
+# We've found a method to hack, again! Make an issue or join the Discord for any questions.
+# Here is an instructional video, and a description you'll need.
 
+https://drive.google.com/file/d/1qlqIlB9URPvUMq40gf9c8s0zDS2a8MTY/view?usp=sharing
+Finally, an instructional video!
+First script: `with(console){log=dir=clear=()=>{}}` (Remember, it’s the bookmarklet.)
+Second script: `{f:sprintf}`
+Third and final script: `temp1.object.n.c[0].exports.a.instance.prodigy`
+
+Ok, that’s done. Exploits:
+```
+temp2.debugMisc.getAllPets() - Gives player all pets
+temp2.player.it=true - Free membership
+temp2.debugMisc.tpTowerFloor(100) - Teleports you to the last floor of the dark tower.
+temp2.debugMisc.setLevel(100) - Sets your level to 100.
+temp2.debugMisc.smallLoan(1000000000) - Gives you 1B gold.
+```
+More to come!
 # Links
 
 -   **[Wiki](https://github.com/PatheticMustan/ProdigyMathGameHacking/wiki)**
