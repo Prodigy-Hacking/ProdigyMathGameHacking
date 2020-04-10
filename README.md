@@ -18,6 +18,9 @@ temp2.player.it=true - Free membership
 temp2.debugMisc.tpTowerFloor(100) - Teleports you to the last floor of the dark tower.
 temp2.debugMisc.setLevel(100) - Sets your level to 100.
 temp2.debugMisc.smallLoan(1000000000) - Gives you 1B gold.
+
+for (let PetLoopTest = 0; PetLoopTest < temp2.player.kennel.data.length; PetLoopTest++) { temp2.player.kennel.data[PetLoopTest].level=100 };
+// Levels all pets to Level 100.
 ```
 ### Remeber to only use these AFTER you have completed the procedure in the video!
 More to come!
