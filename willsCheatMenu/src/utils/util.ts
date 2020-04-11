@@ -4,8 +4,9 @@ import { Player } from "../../../typings/player";
 import { TODO } from "../../../typings/util";
 import { Prodigy } from "../../../typings/prodigy";
 import { Game } from "../../../typings/game";
-export const game: Game = (window as any).temp1.object.c.a.instance.game;
-export const prodigy: Prodigy = (window as any).temp1.object.c.a.instance.prodigy;
+const base = (window as any).temp1.object.n.c[0].exports.a.instance;
+export const game: Game = base.game;
+export const prodigy: Prodigy = base.prodigy;
 export const gameData = game.state.states.Boot._gameData;
 export const getItem = <T extends GameItemKey>(
 	type: T,
