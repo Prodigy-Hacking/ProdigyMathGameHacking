@@ -65,7 +65,7 @@ import { BackpackItemType } from "../../../typings/backpack";
 		await Toast.fire(
 			`Furniture Added!`,
 
-			`All furniture have been added to your inventory!`,
+			`All furniture has been removed!`,
 			"success"
 		);
 	});
