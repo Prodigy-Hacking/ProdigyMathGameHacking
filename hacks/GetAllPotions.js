@@ -1,4 +1,2 @@
-Phaser.GAMES[0].state.states.Login._gameObj.debugMisc.getAllPotions();
-
-// Bookmarklet:
-// javascript:Phaser.GAMES[0].state.states.Login._gameObj.debugMisc.getAllPotions()%3Bvoid+0
+e=await (await fetch("https://api.prodigygame.com/game-api/status")).json();CryptoJS.MD5 = () => ({ toString: () => e.data.prodigyGameFlags.debugPassword });enableDebug('',!0)
+getAllPotions()
