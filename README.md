@@ -2,7 +2,7 @@
 
 # We've found a method to hack, again! Make an issue or join the Discord for any questions.
 # Here is an instructional video, and a description you'll need.
-# Just press the freaking play button and stop requesting edit access!
+# If you are using a school email, you may not be able to have access to the video. If you can't access it, please make a new email, and access it with that.
 https://drive.google.com/file/d/1qlqIlB9URPvUMq40gf9c8s0zDS2a8MTY/view?usp=sharing
 
 Finally, an instructional video!
