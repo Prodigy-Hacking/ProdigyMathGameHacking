@@ -7,7 +7,7 @@ Phaser.GAMES[0].state.states.Login._gameObj.debugMisc.easyMode(); // You dont ha
 
 Phaser.GAMES[0].state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.modifiers.barrier=true; // This dosent really help, but makes you look cool whenever you get atacked!
 Phaser.GAMES[0].state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.modifiers.maxHearts=1000; // Damage modifiers dont work for wizard battles but health does!
-Phaser.GAMES[0].state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.heal(Infinity); // Completly heals your player!
+temp2.player.heal(Infinity); // Completly heals your player!
 
 
 // Bookmarklet:
