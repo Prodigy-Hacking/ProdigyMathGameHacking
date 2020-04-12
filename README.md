@@ -1,9 +1,7 @@
 # Prodigy Math Game Hacks
 
-# We've found a method to hack, again! Make an issue or join the Discord for any questions.
-# Here is an instructional video, and a description you'll need.
-# If you are using a school email, you may not be able to have access to the video. If you can't access it, please make a new email, and access it with that.
-https://drive.google.com/file/d/1qlqIlB9URPvUMq40gf9c8s0zDS2a8MTY/view?usp=sharing
+## How to bypass anti-cheat (as of 4/12/2020)
+***https://drive.google.com/file/d/1qlqIlB9URPvUMq40gf9c8s0zDS2a8MTY/view?usp=sharing***
 
 Finally, an instructional video!
 * First script: `with(console){log=dir=clear=()=>{}}` (Remember, it’s the bookmarklet.)
