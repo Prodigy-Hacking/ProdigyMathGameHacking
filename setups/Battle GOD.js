@@ -5,10 +5,10 @@ Phaser.GAMES[0].state.states.Login._gameObj.debugMisc.easyMode(); // You dont ha
 */
 
 
-Phaser.GAMES[0].state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.modifiers.barrier=true; // This dosent really help, but makes you look cool whenever you get atacked!
+temp2.player.modifiers.barrier=true; // This dosent really help, but makes you look cool whenever you get atacked!
 temp2.player.modifiers.maxHearts=10000 // Damage modifiers dont work for wizard battles but health does!
 temp2.player.heal(Infinity); // Completly heals your player!
 
 
 // Bookmarklet:
-// javascript:Phaser.GAMES[0].state.states.Login._gameObj.debugMisc.setBattleEnergy(10)%3BPhaser.GAMES[0].state.states.Login._gameObj.debugMisc.easyMode()%3BPhaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.modifiers.barrier%3D!0%3BPhaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.modifiers.maxHearts%3D1E3%3BPhaser.CanvasPool.pool[0].parent.game.state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.heal(Infinity)%3Bvoid+0
+// javascript:(function()%7Btemp2.player.modifiers.barrier%3Dtrue%3B%0Atemp2.player.modifiers.maxHearts%3D10000%3B%0Atemp2.player.heal(Infinity)%3B%7D)()%3B
