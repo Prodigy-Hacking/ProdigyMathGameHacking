@@ -40,7 +40,9 @@ More to come!
 -   [LeoTheW12-4RD](https://github.com/LeoTheW12-4RD)
 
 # Announcements
+#### Some people have been stealing our hacks.
 
+There are some groups that steal our code, and pass it off as their own. If you actually want the most updated hacks, just join our Discord!
 
 #### Notice: We are NOT trying to ruin Prodigy Math Game.
 
