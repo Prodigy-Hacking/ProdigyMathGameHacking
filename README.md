@@ -1,28 +1,6 @@
 # Prodigy Math Game Hacks
+# Hacks have been patched for now. Please remain patient while we look into this...
 
-## How to bypass anti-cheat (as of 4/12/2020)
-***https://drive.google.com/file/d/1qlqIlB9URPvUMq40gf9c8s0zDS2a8MTY/view?usp=sharing***
-
-Finally, an instructional video!
-* First script: `with(console){log=dir=clear=()=>{}}` (Remember, it’s the bookmarklet.)
-* Second script: `{sprintf}`
-* Third and final script: `temp1.object.n.c[0].exports.a.instance.prodigy`  
-* Bookmarklet website: https://caiorss.github.io/bookmarklet-maker/
-
-Ok, that’s done. Exploits:
-```
-temp2.debugMisc.getAllPets() - Gives player all pets
-temp2.player.it=true - Free membership
-temp2.debugMisc.tpTowerFloor(100) - Teleports you to the last floor of the dark tower.
-temp2.debugMisc.setLevel(100) - Sets your level to 100.
-temp2.debugMisc.smallLoan(1000000000) - Gives you 1B gold.
-temp2.debugMisc.setBattleEnergy(10) - Fills your energy in battle (ONLY USABLE IN BATTLE)
-
-for (let PetLoopTest = 0; PetLoopTest < temp2.player.kennel.data.length; PetLoopTest++) { temp2.player.kennel.data[PetLoopTest].level=100 };
-// Levels all pets to Level 100.
-```
-### Remeber to only use these AFTER you have completed the procedure in the video!
-More to come!
 # Links
 
 -   **[Wiki](https://github.com/PatheticMustan/ProdigyMathGameHacking/wiki)**
