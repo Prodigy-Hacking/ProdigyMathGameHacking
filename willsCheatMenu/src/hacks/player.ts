@@ -46,7 +46,7 @@ new Hack(category.player, "Set Bounty Points").setClick(async () => {
 	savePlayer();
 	await Toast.fire("Success!", "The bounty points has been set.", "success");
 });
-/*
+
 new Hack(category.player, "Obtain Conjure Cubes").setClick(async () => {
 	const cubes = await NumberInput.fire(
 		"Conjure Cubes",
@@ -65,7 +65,7 @@ new Hack(category.player, "Obtain Conjure Cubes").setClick(async () => {
 		"You have obtained the requested conjure cubes.",
 		"success"
 	);
-});*/
+});
 new Hack(category.player, "Membership").setClick(async () => {
 	prodigy.player.it = true;
 	savePlayer();
