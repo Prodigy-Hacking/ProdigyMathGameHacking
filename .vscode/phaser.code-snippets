@@ -1,9 +1,0 @@
-{
-	"Phaser": {
-		"prefix": "phaseg",
-		"body": [
-			"Phaser.GAMES[0]"
-		],
-		"description": "Phaser"
-	}
-}

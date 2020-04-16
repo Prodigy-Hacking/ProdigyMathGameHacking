@@ -1,8 +1,11 @@
 (() => {
-    // every time prodigy patches, update these variables to fix the hack.
-    const bootData = temp1.object.n.c[0].exports.a.instance.game.state.states.Boot._gameData;
-    const backpackData = temp1.object.n.c[0].exports.a.instance.prodigy.player.backpack.data;
-    const playerObject = temp1.object.n.c[0].exports.a.instance.prodigy.player;
+    // every time prodigy patches, update scopeObj.
+    const scopeObj = temp1.object.a.a.instance;
+    
+    // do not modify.
+    const bootData = scopeObj.game.state.states.Boot._gameData;
+    const backpackData = scopeObj.prodigy.player.backpack.data;
+    const playerObject = scopeObj.prodigy.player;
 
     // all equipment
     let a = ["outfit", "hat", "boots", "weapon", "spellRelic", "fossil", "follow"];
