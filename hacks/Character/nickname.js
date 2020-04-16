@@ -1,16 +1,16 @@
-//gives you a cool nickname
-hack.instance.prodigy.player.appearance._name.nickname = 7; 
+// Sets your nickname.
+hack.instance.prodigy.player.name.data.nickname = 7; 
 
 /* Put a number one through 55.  The associations are as follows:
-1. Buccaneer
-2. Captain
-3. First-Mate
-4. Beard the Pirate
-5. Treasure Hunter
-6. Robo
-7. The W12  - 4R D
-8. Dancemaster
-9. Bot 30 00 
+1.  Buccaneer
+2.  Captain
+3.  First-Mate
+4.  Beard the Pirate
+5.  Treasure Hunter
+6.  Robo
+7.  The W12  - 4R D
+8.  Dancemaster
+9.  Bot 30 00 
 10. The Machinist
 11. The Digger
 12. Surveyor
