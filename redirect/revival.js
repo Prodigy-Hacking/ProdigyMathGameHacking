@@ -13,15 +13,6 @@ hack.functions.completeTutorial = () => {
 	hack.instance.prodigy.player.backpack.addKeyItem(13, 0);
 	hack.instance.prodigy.player.tutorial.setMenuValue(Cr.WORLD_MAP.INTRO, 1);
 	hack.instance.prodigy.player.tutorial.setMenuValue(Cr.BESTIARY.INTRO, 1);
-	hack.instance.prodigy.open.map(true, [
-		"WORLD_DYNO_DIG_OASIS",
-		"WORLD_EPICS_SUBSPACE",
-		"WORLD_DARK_TOWER",
-		"WORLD_LAMPLIGHT_TOWN",
-		"WORLD_THE_ACADEMY",
-		"WORLD_LOST_ISLAND",
-		"WORLD_YOUR_HOUSE",
-		"DISABLE_TITAN",
-	]);
+	hack.instance.prodigy.open.map(true, []);
 	hack.instance.prodigy.player.onTutorialComplete();
 };
