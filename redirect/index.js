@@ -38,24 +38,27 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = __importDefault(require("express"));
 var node_fetch_1 = __importDefault(require("node-fetch"));
 var app = express_1.default();
 app.get("/", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
-    var status, gameMinJS;
-    return __generator(this, function (_a) {
-        switch (_a.label) {
+    var status, version, gameMinJS;
+    var _a;
+    return __generator(this, function (_b) {
+        switch (_b.label) {
             case 0: return [4 /*yield*/, node_fetch_1.default("https://api.prodigygame.com/game-api/status")];
-            case 1: return [4 /*yield*/, (_a.sent()).json()];
+            case 1: return [4 /*yield*/, (_b.sent()).json()];
             case 2:
-                status = _a.sent();
-                if (status.status !== "success")
-                    return [2 /*return*/, res.send(JSON.stringify(status))];
-                return [4 /*yield*/, node_fetch_1.default("https://code.prodigygame.com/code/" + status.data.gameClientVersion + "/game.min.js?v=" + status.data.gameClientVersion)];
-            case 3: return [4 /*yield*/, (_a.sent()).text()];
+                status = _b.sent();
+                version = (_a = status === null || status === void 0 ? void 0 : status.data) === null || _a === void 0 ? void 0 : _a.gameClientVersion;
+                if (status.status !== "success" || !version)
+                    return [2 /*return*/, res.sendStatus(503)];
+                return [4 /*yield*/, node_fetch_1.default("https://code.prodigygame.com/code/" + version + "/game.min.js?v=" + version)];
+            case 3: return [4 /*yield*/, (_b.sent()).text()];
             case 4:
-                gameMinJS = _a.sent();
+                gameMinJS = _b.sent();
                 res.type(".js");
                 return [2 /*return*/, res.send(("window.hack={};\n" + gameMinJS)
                         .split("return this._game")
@@ -65,4 +68,4 @@ app.get("/", function (req, res) { return __awaiter(void 0, void 0, void 0, func
         }
     });
 }); });
-app.listen(1337, function () { return console.log("Started!"); });
+app.listen((_a = process.env.PORT) !== null && _a !== void 0 ? _a : 1337, function () { return console.log("Started!"); });
