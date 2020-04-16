@@ -18,7 +18,7 @@ export declare interface GameStates {
 	Boot: BootState;
 	Loading: GameStatesState;
 	PVPLoading: GameStatesState;
-	TileScreen: GameStatesState;
+	TileScreen: TileScreenState;
 	Login: LoginState;
 	Battle: BattleState;
 	PVP: PVPState;
@@ -56,4 +56,8 @@ export declare interface BattleState extends GameStatesState {
 export declare interface LoginState extends GameStatesState {
 	key: "Login";
 	_gameObj: Prodigy;
+}
+export declare interface TileScreenState extends GameStatesState {
+	key: "TileScreen";
+	process(): void;
 }

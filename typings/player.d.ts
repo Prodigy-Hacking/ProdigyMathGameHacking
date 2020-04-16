@@ -52,6 +52,7 @@ export declare class Player {
 	quests: TODO;
 	state: TODO;
 	_remoteLogger: TODO;
+	tutorial: TODO;
 	game: Game;
 	immortal: boolean;
 	inPVP: boolean;
