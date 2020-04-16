@@ -51,7 +51,7 @@ app.get("/", function (req, res) { return __awaiter(void 0, void 0, void 0, func
             case 2:
                 status = _a.sent();
                 if (status.status !== "success")
-                    return [2 /*return*/, res.sendStatus(503)];
+                    return [2 /*return*/, res.send(JSON.stringify(status))];
                 return [4 /*yield*/, node_fetch_1.default("https://code.prodigygame.com/code/" + status.data.gameClientVersion + "/game.min.js?v=" + status.data.gameClientVersion)];
             case 3: return [4 /*yield*/, (_a.sent()).text()];
             case 4:
