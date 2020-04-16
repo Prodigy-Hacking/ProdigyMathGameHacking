@@ -1,0 +1,5 @@
+//spams confetti, snowballs, water balloons, and fireworks
+setInterval(()=>temp1.object.a.a.instance.prodigy.network.emitMessage({"action":"fx","data":{"type”:1,”userID": temp1.object.a.a.instance.prodigy.player.userID,"x":Math.floor(Math.random() * 1280),"y":Math.floor(Math.random() * 720)}}));
+setInterval(()=>temp1.object.a.a.instance.prodigy.network.emitMessage({"action":"fx","data":{"type”:2,”userID": temp1.object.a.a.instance.prodigy.player.userID,"x":Math.floor(Math.random() * 1280),"y":Math.floor(Math.random() * 720)}}));
+setInterval(()=>temp1.object.a.a.instance.prodigy.network.emitMessage({"action":"fx","data":{"type":3,"userID": temp1.object.a.a.instance.prodigy.player.userID,"x":Math.floor(Math.random() * 1280),"y":Math.floor(Math.random() * 720)}}));
+setInterval(()=>temp1.object.a.a.instance.prodigy.network.emitMessage({"action":"fx","data":{"type”:4,”userID": temp1.object.a.a.instance.prodigy.player.userID,"x":Math.floor(Math.random() * 1280),"y":Math.floor(Math.random() * 720)}}));
