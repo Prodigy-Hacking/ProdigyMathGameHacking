@@ -13,4 +13,4 @@ app.get("/", async(req, res) => {
 		.join("hack.constants=t,t.constants=Object")
 		)
 })
-app.listen(1337, () => console.log("Started!"))
+app.listen(process.env.PORT ?? 1337, () => console.log("Started!"))
