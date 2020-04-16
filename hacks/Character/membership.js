@@ -1,2 +1,2 @@
-//a non-permanent membership
+// A non-permanent membership.
 hack.instance.prodigy.player.it = true;

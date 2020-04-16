@@ -1,2 +1,2 @@
-//a controlled way of managing your level
-hack.instance.prodigy.player.data.level=100;
+// Sets your level to 100.
+hack.instance.prodigy.player.data.level = 100;

@@ -1,2 +1,2 @@
-//gives you every pet
-hack.instance.prodigy.debugMisc.getAllPets(); 
+// Adds all pets into your kennel.
+hack.functions.getAllPets();
