@@ -5,7 +5,7 @@ const setQuest = (t, i, n, e) => {
 	} catch {}
 };
 
-hack.functions = {};
+hack.functions = Object.create(null);
 hack.functions.completeTutorial = () => {
 	setQuest("house", 2);
 	setQuest("academy", 2);
