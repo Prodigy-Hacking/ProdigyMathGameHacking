@@ -1,7 +1,7 @@
 import { Swal, Toast, NumberInput } from "../utils/swal";
 import { Hack, category } from "../index";
 import { VERY_LARGE_NUMBER, gameData, pickRandom } from "../utils/util";
-import { TODO } from "../../../typings/util";
+import { TODO } from "../../../../typings/util";
 import { prodigy, game } from "../utils/util";
 
 const randomSpell = () =>

@@ -1,4 +1,4 @@
-import { version } from "webpack";
+import { version } from "./webpack";
 
 export const LOGIN = "https://api.prodigygame.com/game-auth-api/v1/login";
 export const USER_UPDATE = (userID: number) => `https://api.prodigygame.com/game-api/v3/characters/${userID}`
