@@ -1,0 +1,40 @@
+{
+    "createdBy": "Redirector v3.5.3",
+    "createdAt": "2020-04-16T16:48:31.247Z",
+    "redirects": [
+        {
+            "description": "gamemin",
+            "exampleUrl": "https://code.prodigygame.com/code/2-97-6/game.min.js?v=2-97-6",
+            "exampleResult": "https://prodigy-cheat-dashboard.herokuapp.com/",
+            "error": null,
+            "includePattern": "https://code.prodigygame.com/code/*/game.min.js?v=*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://prodigy-cheat-dashboard.herokuapp.com/",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "script"
+            ]
+        },
+        {
+            "description": "publicgamemin",
+            "exampleUrl": "https://play.prodigygame.com/public/js/public-game.min.js",
+            "exampleResult": "https://prodigy-cheat-dashboard.herokuapp.com/public-game.min.js",
+            "error": null,
+            "includePattern": "https://play.prodigygame.com/public/js/public-game.min.js",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://prodigy-cheat-dashboard.herokuapp.com/public-game.min.js",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "script"
+            ]
+        }
+    ]
+}
