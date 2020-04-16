@@ -16,30 +16,30 @@ Communities mirror the societies in which they exist and positive action is esse
 
 If you see someone who is making an extra effort to ensure our community is welcoming, friendly, and encourages all participants to contribute to the fullest extent, we want to know.
 
-# Hacking code of conduct (Please read this)
+## Hacking code of conduct (Please read this)
 
-## Under NO circumstances should ANYBODY be using these hacks to cicumvent privacy of other users, use explicits within the game, phish, or gain access to other accounts without autorization from the original account user.
+### Under NO circumstances should ANYBODY be using these hacks to cicumvent privacy of other users, use explicits within the game, phish, or gain access to other accounts without autorization from the original account user.
 
-#### Preferably no plagiarism...
+#### Preferably no plagiarism
 
-#### You MUST NOT USE **ANY** OF THE HACKS TO ACHIEVE PERSONAL BENEFIT, INCLUDING BUT NOT LIMITED TO...
+#### You MUST NOT USE **ANY** OF THE HACKS TO ACHIEVE PERSONAL BENEFIT, INCLUDING BUT NOT LIMITED TO
 
 - Money
 - Currencies
 - Subscribers/Views on YouTube
 - Twitter/Facebook/Instagram followers
-- ...
+- etc.
 
-#### FAILING TO FOLLOW OUR TERMS WILL RESULT IN LEGAL ACTION.
+#### FAILING TO FOLLOW OUR TERMS WILL RESULT IN LEGAL ACTION
 
-# Discord server standards (Can also be found on the Discord server.)
+## Discord server standards (Can also be found on the Discord server.)
 
-* No NSFW
+- No NSFW
 
-* Be respectful to other users.
+- Be respectful to other users.
 
-* No racism, sexism, etc.
+- No racism, sexism, etc.
 
-* No messages with exessive length.
+- No messages with exessive length.
 
-# Thank you for honoring our wishes!
+## Thank you for honoring our wishes!
