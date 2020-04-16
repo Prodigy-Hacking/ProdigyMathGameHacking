@@ -4,7 +4,7 @@ import { Player } from "../../../typings/player";
 import { TODO } from "../../../typings/util";
 import { Prodigy } from "../../../typings/prodigy";
 import { Game } from "../../../typings/game";
-const base = (window as any).temp1.object.a.a;
+const base = (window as any).temp1.object.a.a.instance;
 export const game: Game = base.game;
 export const prodigy: Prodigy = base.prodigy;
 export const gameData = game.state.states.Boot._gameData;

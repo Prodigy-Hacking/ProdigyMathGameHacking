@@ -29,6 +29,7 @@
 		"@types/express": "^4.17.3",
 		"@types/node-fetch": "^2.5.5",
 		"@types/pixi.js": "^5.0.0",
+		"express": "^4.17.1",
 		"glob": "^7.1.6",
 		"node-fetch": "^2.6.0",
 		"sweetalert2": "^9.10.2"
