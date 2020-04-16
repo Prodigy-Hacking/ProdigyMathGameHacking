@@ -43,6 +43,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = __importDefault(require("express"));
 var node_fetch_1 = __importDefault(require("node-fetch"));
 var app = express_1.default();
+var VERSION = "A-0.0.2";
 app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
     var status, version, gameMinJS, replacements;
     var _a;
@@ -65,7 +66,7 @@ app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, v
                     ["t.constants=Object", "hack.constants=t,t.constants=Object"],
                     ["window,function(t){var i={};", "window,function(t){var i={};hack.modules=i;"]
                 ];
-                return [2 /*return*/, res.send(replacements.reduce(function (l, c) { return l.split(c[0]).join(c[1]); }, "window.hack={};\n" + gameMinJS))];
+                return [2 /*return*/, res.send(replacements.reduce(function (l, c) { return l.split(c[0]).join(c[1]); }, "window.hack={};\n" + gameMinJS + "\n\tconsole.log(\"%cWill's Cheat Replacer\", \"font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;\");\n\tconsole.log(\"%cVersion " + VERSION + "\", \"font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;\");\n\tconsole.log('The variable \"hack\" contains the hacked variables.')\n"))];
         }
     });
 }); });
