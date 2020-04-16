@@ -6,4 +6,5 @@ export declare interface Pet {
 	levelCaught?: number;
 	stars: number;
 	team?: number;
+	nickname?: string;
 }

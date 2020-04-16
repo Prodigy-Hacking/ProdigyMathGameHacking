@@ -19,7 +19,7 @@ new Toggler(category.misc, "Clothing Vibe")
 			prodigy.player.equipment.setOutfit(rand(gameData.outfit));
 			prodigy.player.equipment.setBoots(rand(gameData.boots));
 			prodigy.player.equipment.setHat(rand(gameData.hat));
-			// prodigy.user.reload();
+			prodigy.user.reload();
 		}, 1000);
 	})
 	.setDisabled(() => {
@@ -60,7 +60,7 @@ new Hack(
 	prodigy.player.equipment.setWeapon(19);
 	prodigy.player.forceSaveCharacter();
 	await Toast.fire("Bobbified!", "You are now Bobby Fancywoman.", "success");
-});/*
+});
 let snowball: number[] = [];
 new Toggler(
 	category.misc,
@@ -77,8 +77,7 @@ new Toggler(
 							data: {
 								type: 3 + i % 2,
 								userID:
-									Phaser.GAMES[0].state.states.Login._gameObj
-										.player.userID,
+									prodigy.player.userID,
 								x: Math.floor(Math.random() * 1280),
 								y: Math.floor(Math.random() * 720),
 							},
@@ -89,4 +88,3 @@ new Toggler(
 			console.log(snowball)
 	})
 	.setDisabled(async () => snowball.map(clearInterval));
-*/

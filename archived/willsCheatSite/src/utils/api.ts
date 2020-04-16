@@ -1,7 +1,7 @@
 import { Input } from "./swal";
 import Swal from "sweetalert2";
 import { LOGIN, GET_USER, USER_UPDATE, PROD_GAMEDATA } from "./urls";
-import _ from "./lodash";
+import _ from "lodash";
 import { DeepPartial } from "../../declarations";
 import { BackpackData } from "../../../../typings/backpack";
 import { GameData } from "../../../../typings/gameData";

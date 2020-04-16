@@ -1,6 +1,6 @@
 import { Swal, Toast, NumberInput, Confirm } from "../utils/swal";
 import { Hack, category, Toggler } from "../index";
-import _ from "./lodash";
+import _ from "lodash";
 import { getBigData, updateUser, getGameData } from "../utils/api";
 (async () => {
 	const gameData = await getGameData();
