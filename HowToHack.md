@@ -8,10 +8,10 @@
 
 ***no video yet***
 
-1) Bookmark: `javascript:with(console){log=dir=clear=()=>{}}` (Remember, it’s the bookmarklet.)
+1) Convert this to a bookmarklet: `with(console){log=dir=clear=()=>{}}` (Remember, it’s the bookmarklet.)
 
-Make a bookmark, and copy paste the javascript into the "URL" field. Now press the bookmarklet to run the code. You should now be able to
-open console.
+Make a bookmarklet, and then click it to run the Javascript within. Doing this should allow you to open the Developer Console.
+
 
 2) Second script: `{Boot}`
 
@@ -24,6 +24,7 @@ open console.
     2d) Click on `Store as global variable`
     
     It should now say "Closure", and "temp1". Make sure you follow these steps EXACTLY, or the hacks won't work!
+Use the [Bookmarklet maker](https://caiorss.github.io/bookmarklet-maker/) to make bookmarklets.
 
 Now that you've done this, you can now run the rest of the prodigy hacks! Currently only a select few of our hacks has been updated.
 If you want hacks, just ask us!
