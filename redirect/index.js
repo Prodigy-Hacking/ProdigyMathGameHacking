@@ -43,7 +43,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = __importDefault(require("express"));
 var node_fetch_1 = __importDefault(require("node-fetch"));
 var app = express_1.default();
-app.get("/", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
     var status, version, gameMinJS;
     var _a;
     return __generator(this, function (_b) {
@@ -65,6 +65,20 @@ app.get("/", function (req, res) { return __awaiter(void 0, void 0, void 0, func
                         .join("hack.instance=this;return this._game")
                         .split("t.constants=Object")
                         .join("hack.constants=t,t.constants=Object"))];
+        }
+    });
+}); });
+app.get("/", function (req, res) { return res.redirect("/game.min.js"); });
+app.get("/public-game.min.js", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+    var publicGame;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, node_fetch_1.default("https://play.prodigygame.com/public/js/public-game.min.js")];
+            case 1: return [4 /*yield*/, (_a.sent()).text()];
+            case 2:
+                publicGame = _a.sent();
+                res.type(".js");
+                return [2 /*return*/, res.send(publicGame.replace(/console\..+?\(.*?\)/g, "(()=>{})()"))];
         }
     });
 }); });
