@@ -67,7 +67,7 @@ app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, v
                     ["return this._game", "hack.instance=this;return this._game"],
                     ["t.constants=Object", "hack.constants=t,t.constants=Object"],
                     ["window,function(t){var i={};", "window,function(t){var i={};hack.modules=i;"],
-                    ["return t.BAM=", ";(()=>{hack.variables.loc=Ar;hack.variables.menuTxt=Kr})();return hack.variables.menuObj = t.BAM="]
+                    ["return t.BAM=", ";hack.variables.loc=Ar;hack.variables.menuTxt=Kr;hack.variables.menuObj=t;return t.BAM="]
                 ];
                 return [2 /*return*/, res.send(replacements.reduce(function (l, c) { return l.split(c[0]).join(c[1]); }, "window.hack=Object.create(null);hack.variables=Object.create(null);\n" + gameMinJS + "\n\t" + fs_1.default.readFileSync(path_1.default.join(__dirname, "./revival.js"), { encoding: "utf8" }) + "\n\tconsole.log(\"%cWill's Cheat Replacer\", \"font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;\");\n\tconsole.log(\"%cVersion " + VERSION + "\", \"font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;\");\n\tconsole.log('The variable \"hack\" contains the hacked variables.')\n"))];
         }
