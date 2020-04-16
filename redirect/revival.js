@@ -1,3 +1,4 @@
+import "../typings/pixi";
 const setQuest = (t, i, n, e) => {
 	hack.instance.prodigy.world.getZone(t).testQuest(i, n, e);
 	try {
@@ -16,3 +17,4 @@ hack.functions.completeTutorial = () => {
 	hack.instance.prodigy.open.map(true, []);
 	hack.instance.prodigy.player.onTutorialComplete();
 };
+Object.defineProperty(hack, "gameData", { get: () => hack.instance.game.state.states.Boot._gameData })

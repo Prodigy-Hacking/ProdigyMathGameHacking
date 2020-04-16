@@ -17,7 +17,7 @@ app.get("/game.min.js", async(req, res) => {
 		["return t.BAM=", ";hack.variables.loc=Ar;hack.variables.menuTxt=Kr;hack.variables.menuObj=t;return t.BAM="]
 	]
 	return res.send(replacements.reduce((l, c) => l.split(c[0]).join(c[1]) ,`window.hack=Object.create(null);hack.variables=Object.create(null);\n${gameMinJS}
-	${fs.readFileSync(path.join(__dirname, "./revival.js"), { encoding: "utf8" })}
+	${fs.readFileSync(path.join(__dirname, "./revival.js"), { encoding: "utf8" }).split("\n").slice(1).join("\n")}
 	console.log("%cWill's Cheat Replacer", "font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;");
 	console.log("%cVersion ${VERSION}", "font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;");
 	console.log('The variable "hack" contains the hacked variables.')
