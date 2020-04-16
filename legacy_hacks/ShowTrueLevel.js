@@ -1,0 +1,1 @@
+Phaser.GAMES[0].state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.getLevel = function(){ return Phaser.GAMES[0].state.states.Boot._metricsManager.gameCompleteDataFactory.gameEventDataBuilder.loggedInPlayer._player.data.level };
