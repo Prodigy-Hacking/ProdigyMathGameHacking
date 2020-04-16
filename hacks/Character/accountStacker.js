@@ -1,3 +1,4 @@
+// Gives your account everything.
 (() => {
 	const { instance } = hack;
 	const { game, prodigy } = instance;

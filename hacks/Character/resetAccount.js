@@ -1,2 +1,2 @@
-//resets everything EXCEPT your house
-hack.instance.prodigy.player.resetAccount()
+// Resets everything except your house.
+hack.instance.prodigy.player.resetAccount();
