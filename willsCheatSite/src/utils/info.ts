@@ -1,5 +1,5 @@
 import { getAccount, BigData, Account, getGameData, getBigData } from "./api";
-import { GameData } from "../../../../typings/gameData";
+import { GameData } from "../../../typings/gameData";
 
 const info = document.getElementById("info");
 const stats: [string, (data: BigData, gd: GameData, acc: Account) => string][] = [
