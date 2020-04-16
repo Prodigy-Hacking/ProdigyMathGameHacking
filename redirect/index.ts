@@ -14,7 +14,7 @@ app.get("/game.min.js", async(req, res) => {
 		["return this._game", "hack.instance=this;return this._game"],
 		["t.constants=Object", "hack.constants=t,t.constants=Object"],
 		["window,function(t){var i={};", "window,function(t){var i={};hack.modules=i;"],
-		["return t.BAM=", ";(()=>{hack.variables.loc=Ar;hack.variables.menuTxt=Kr})();return hack.variables.menuObj = t.BAM="]
+		["return t.BAM=", ";hack.variables.loc=Ar;hack.variables.menuTxt=Kr;hack.variables.menuObj=t;return t.BAM="]
 	]
 	return res.send(replacements.reduce((l, c) => l.split(c[0]).join(c[1]) ,`window.hack=Object.create(null);hack.variables=Object.create(null);\n${gameMinJS}
 	${fs.readFileSync(path.join(__dirname, "./revival.js"), { encoding: "utf8" })}
