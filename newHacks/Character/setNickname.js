@@ -1,5 +1,5 @@
 //gives you a cool nickname
-temp1.object.n.c[0].exports.a.instance.prodigy.player.appearance._name.nickname=7;
+temp1.object.a.a.instance.prodigy.player.appearance._name.nickname=7;
 
 // Put a number one through 55. The associations are as follows:
 ///1.Buccaneer
