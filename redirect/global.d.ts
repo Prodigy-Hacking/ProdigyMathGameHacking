@@ -1,4 +1,4 @@
-import {} from "../typings/pixi";
+import { PIXI } from "../typings/pixi";
 export declare interface HackFunctions {
 	completeTutorial(): void;
 }
