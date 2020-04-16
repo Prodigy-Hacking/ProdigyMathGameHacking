@@ -1,5 +1,6 @@
 # Prodigy Math Game Hacks
-# Hacks have been patched for now. Please remain patient while we look into this...
+
+## We've hacked the game again! [Instructions](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/master/HowToHack.md)
 
 # Links
 
