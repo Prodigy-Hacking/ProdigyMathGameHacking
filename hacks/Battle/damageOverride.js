@@ -1,2 +1,2 @@
 //damage override
-temp1.object.a.a.instance.prodigy.player.modifiers.damage=99999999999999;
+hack.instance.prodigy.player.modifiers.damage=99999999999999;
