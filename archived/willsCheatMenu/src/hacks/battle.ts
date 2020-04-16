@@ -1,7 +1,7 @@
 import { Swal, Toast, NumberInput } from "../utils/swal";
 import { Hack, category, Toggler } from "../index";
 import { VERY_LARGE_NUMBER, gameData, pickRandom } from "../utils/util";
-import { BattleState } from "../../../typings/game";
+import { BattleState } from "../../../../typings/game";
 import { prodigy, game } from "../utils/util";
 new Hack(category.battle, "Escape Battle", "Escape any battle!").setClick(async () => {
 	const currentState = game.state.current;
