@@ -2,6 +2,7 @@ import express from "express";
 import fetch from "node-fetch";
 import fs from "fs";
 import path from "path";
+import { transpile } from "typescript"
 const app = express();
 const VERSION = "A-0.0.2"
 app.get("/game.min.js", async(req, res) => {
@@ -16,8 +17,11 @@ app.get("/game.min.js", async(req, res) => {
 		["window,function(t){var i={};", "window,function(t){var i={};hack.modules=i;"],
 		["return t.BAM=", ";hack.variables.loc=Ar;hack.variables.menuTxt=Kr;hack.variables.menuObj=t;return t.BAM="]
 	]
-	return res.send(replacements.reduce((l, c) => l.split(c[0]).join(c[1]) ,`window.hack=Object.create(null);hack.variables=Object.create(null);\n${gameMinJS}
-	${fs.readFileSync(path.join(__dirname, "./revival.js"), { encoding: "utf8" }).split("\n").slice(1).join("\n")}
+	return res.send(replacements.reduce((l, c) => l.split(c[0]).join(c[1]) ,`
+	exports = {};window.hack=Object.create(null);hack.variables=Object.create(null);
+	Object.defineProperty(hack, "gameData", { get: () => hack.instance.game.state.states.Boot._gameData });
+	\n${gameMinJS}
+	${transpile(fs.readFileSync(path.join(__dirname, "./revival.ts"), { encoding: "utf8" }))}
 	console.log("%cWill's Cheat Replacer", "font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;");
 	console.log("%cVersion ${VERSION}", "font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;");
 	console.log('The variable "hack" contains the hacked variables.')
