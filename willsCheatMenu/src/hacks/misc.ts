@@ -2,10 +2,10 @@ import { Swal, Toast, NumberInput, Confirm } from "../utils/swal";
 import { Hack, category, Toggler } from "../index";
 import { VERY_LARGE_NUMBER, gameData, pickRandom } from "../utils/util";
 import { prodigy, game } from "../utils/util";
-/*
 new Hack(category.misc, "Skip Tutorial").setClick(async () => {
-	prodigy.debugQuests.completeTutorial();
+	hack.functions.completeTutorial();
 });
+/*
 new Hack(category.misc, "Disable Timeout Dialog").setClick(async () => {
 	prodigy.debugMisc.disableTimeoutDialogue();
 });
