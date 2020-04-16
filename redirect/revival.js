@@ -11,8 +11,8 @@ hack.functions.completeTutorial = () => {
 	setQuest("academy", 2);
 	hack.instance.prodigy.player.state.set("tutorial-0", 4);
 	hack.instance.prodigy.player.backpack.addKeyItem(13, 0);
-	hack.instance.prodigy.player.tutorial.setMenuValue(Cr.WORLD_MAP.INTRO, 1);
-	hack.instance.prodigy.player.tutorial.setMenuValue(Cr.BESTIARY.INTRO, 1);
+	hack.instance.prodigy.player.tutorial.setMenuValue(hack.variables.menuObj.WORLD_MAP.INTRO, 1);
+	hack.instance.prodigy.player.tutorial.setMenuValue(hack.variables.menuObj.BESTIARY.INTRO, 1);
 	hack.instance.prodigy.open.map(true, []);
 	hack.instance.prodigy.player.onTutorialComplete();
 };
