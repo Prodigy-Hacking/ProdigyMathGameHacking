@@ -3,7 +3,7 @@ import { Hack, category } from "../index";
 import { TODO } from "../../../../typings/util";
 import { getGameData, VERY_LARGE_NUMBER, getBigData, updateUser } from "../utils/api";
 import { Pet } from "../../../../typings/pet";
-import _ from "./lodash";
+import _ from "lodash";
 (async () => {
 	const gameData = await getGameData();
 	const randomSpell = () => gameData.spell[Math.floor(Math.random() * gameData.spell.length)].ID;

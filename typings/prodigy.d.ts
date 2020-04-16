@@ -8,11 +8,11 @@ export declare interface Prodigy {
 	version: string;
 	game: Game;
 	player: Player;
-	debugMisc: DebugMisc;
+	// debugMisc: DebugMisc;
 	world: TODO;
 	giftBoxController: TODO;
 	open: Open;
-	debugQuests: TODO;
+	// debugQuests: TODO;
 	user: TODO;
 	pvpNetworkHandler: TODO;
 	network: TODO;
