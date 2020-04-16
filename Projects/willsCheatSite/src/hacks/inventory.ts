@@ -1,8 +1,8 @@
 import { Hack, category } from "../index";
 import { Swal, Input, Toast } from "../utils/swal";
 import { getGameData, VERY_LARGE_NUMBER, updateUser, LARGE_NUMBER, getBigData } from "../utils/api";
-import { Item } from "../../../typings/item";
-import { BackpackItemType } from "../../../typings/backpack";
+import { Item } from "../../../../typings/item";
+import { BackpackItemType } from "../../../../typings/backpack";
 (async () => {
 	const gameData = await getGameData();
 	const itemify = (item: Item[], overrideNum = VERY_LARGE_NUMBER) =>

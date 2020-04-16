@@ -1,8 +1,8 @@
 import { Hack, category } from "../index";
 import { Swal, Input, Toast } from "../utils/swal";
 import { gameData, VERY_LARGE_NUMBER, savePlayer } from "../utils/util";
-import { Item } from "../../../typings/item";
-import { BackpackItemType } from "../../../typings/backpack";
+import { Item } from "../../../../typings/item";
+import { BackpackItemType } from "../../../../typings/backpack";
 import { prodigy, game } from "../utils/util";
 const itemify = (item: Item[]) =>
 	item.map(x => ({
