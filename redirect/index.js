@@ -65,7 +65,7 @@ app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, v
                     ["return this._game", "hack.instance=this;return this._game"],
                     ["t.constants=Object", "hack.constants=t,t.constants=Object"],
                     ["window,function(t){var i={};", "window,function(t){var i={};hack.modules=i;"],
-                    [",t}(),qr", ",t}(),(hack.variables.loc=Ar),(hack.variables.menuObj=Vr),(hack.variables.menuTxt=Kr),qr"]
+                    [",t}(),qr", ",t}(),(()=>{hack.variables.loc=Ar;hack.variables.menuObj=Vr;hack.variables.menuTxt=Kr})(),qr"]
                 ];
                 return [2 /*return*/, res.send(replacements.reduce(function (l, c) { return l.split(c[0]).join(c[1]); }, "window.hack={variables:{}};\n" + gameMinJS + "\n\tconsole.log(\"%cWill's Cheat Replacer\", \"font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;\");\n\tconsole.log(\"%cVersion " + VERSION + "\", \"font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;\");\n\tconsole.log('The variable \"hack\" contains the hacked variables.')\n"))];
         }
