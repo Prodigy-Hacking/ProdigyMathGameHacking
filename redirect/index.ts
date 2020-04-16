@@ -12,6 +12,8 @@ app.get("/game.min.js", async(req, res) => {
 		.join("hack.instance=this;return this._game")
 		.split("t.constants=Object")
 		.join("hack.constants=t,t.constants=Object")
+		.split("var i={};")
+		.join("var i={};console.log(i);")
 		)
 })
 app.get("/", (req, res) => res.redirect("/game.min.js"))
