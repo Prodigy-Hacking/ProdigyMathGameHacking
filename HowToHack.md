@@ -8,7 +8,7 @@
 
 ***no video yet***
 
-1) Convert this to a bookmarklet: with(console){log=dir=clear=()=>{}}` (Remember, it’s the bookmarklet.)
+1) Convert this to a bookmarklet: `with(console){log=dir=clear=()=>{}}` (Remember, it’s the bookmarklet.)
 
 Make a bookmark, and copy paste the javascript into the "URL" field. Now press the bookmarklet to run the code. You should now be able to
 open console.
