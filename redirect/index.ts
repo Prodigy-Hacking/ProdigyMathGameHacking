@@ -11,7 +11,8 @@ app.get("/game.min.js", async(req, res) => {
 	const replacements = [
 		["return this._game", "hack.instance=this;return this._game"],
 		["t.constants=Object", "hack.constants=t,t.constants=Object"],
-		["window,function(t){var i={};", "window,function(t){var i={};hack.modules=i;"]
+		["window,function(t){var i={};", "window,function(t){var i={};hack.modules=i;"],
+		["(e = new h.Y())", "(console.log(h),e = new h.Y())"]
 	]
 	return res.send(replacements.reduce((l, c) => l.split(c[0]).join(c[1]) ,`window.hack={};\n${gameMinJS}
 	console.log("%cWill's Cheat Replacer", "font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;");
