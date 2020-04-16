@@ -2,6 +2,7 @@ import { TODO } from "./util";
 import { Game } from "./game";
 import { Item } from "./item";
 import { Backpack } from "./backpack";
+import { Pet } from "./pet";
 export declare type ItemType =
 	| "follow"
 	| "hat"
@@ -43,7 +44,10 @@ export declare class Player {
 	encounters: TODO;
 	equipment: TODO;
 	house: TODO;
-	kennel: TODO;
+	kennel: {
+		addPet(id: number): unknown
+		data: Pet[]
+	};
 	onHPChange: TODO;
 	quests: TODO;
 	state: TODO;

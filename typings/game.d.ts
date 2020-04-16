@@ -3,7 +3,6 @@ import { TODO } from "./util";
 import { GameData } from "./gameData";
 
 export declare interface Game {
-	prodigy: Prodigy;
 	id: number; // Not sure what this does. Seems to be 0.
 	state: GameState;
 	input: TODO;
