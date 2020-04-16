@@ -1,38 +1,21 @@
 import { Swal, Toast, NumberInput } from "../utils/swal";
 import { Hack, category } from "../index";
-import {
-	getItem,
-	VERY_LARGE_NUMBER,
-	savePlayer,
-	gameData,
-} from "../utils/util";
+import { getItem, VERY_LARGE_NUMBER, savePlayer, gameData } from "../utils/util";
 import { prodigy, game } from "../utils/util";
 new Hack(category.player, "Set Gold").setClick(async () => {
-	const gold = await NumberInput.fire(
-		"Gold Amount",
-		"What number do you want to set your gold to?",
-		"question"
-	);
+	const gold = await NumberInput.fire("Gold Amount", "What number do you want to set your gold to?", "question");
 	if (gold.value === undefined) return;
 	prodigy.player.data.gold = +gold.value;
 	savePlayer();
 	await Toast.fire("Success!", "The gold amount has been set.", "success");
 });
 new Hack(category.player, "Set Level").setClick(async () => {
-	const level = await NumberInput.fire(
-		"Level",
-		"What number do you want to set your level to?",
-		"question"
-	);
+	const level = await NumberInput.fire("Level", "What number do you want to set your level to?", "question");
 	if (level.value === undefined) return;
 	prodigy.player.data.level = +level.value;
 	prodigy.player.getLevel = () => prodigy.player.data.level;
 	savePlayer();
-	await Toast.fire(
-		"Success!",
-		"The level of your player has been set.",
-		"success"
-	);
+	await Toast.fire("Success!", "The level of your player has been set.", "success");
 });
 
 new Hack(category.player, "Set Bounty Points").setClick(async () => {
@@ -48,23 +31,12 @@ new Hack(category.player, "Set Bounty Points").setClick(async () => {
 });
 
 new Hack(category.player, "Obtain Conjure Cubes").setClick(async () => {
-	const cubes = await NumberInput.fire(
-		"Conjure Cubes",
-		"How many conjure cubes do you want to get?",
-		"question"
-	);
+	const cubes = await NumberInput.fire("Conjure Cubes", "How many conjure cubes do you want to get?", "question");
 	if (cubes.value === undefined) return;
 	for (let i = 0; i < Math.min(99, +cubes.value); i++)
-		prodigy.giftBoxController.receiveGiftBox(
-			null,
-			getItem("giftBox", 1)
-		);
+		prodigy.giftBoxController.receiveGiftBox(null, getItem("giftBox", 1));
 	savePlayer();
-	await Toast.fire(
-		"Success!",
-		"You have obtained the requested conjure cubes.",
-		"success"
-	);
+	await Toast.fire("Success!", "You have obtained the requested conjure cubes.", "success");
 });
 new Hack(category.player, "Membership").setClick(async () => {
 	prodigy.player.it = true;
@@ -123,17 +95,10 @@ new Hack(category.player, "Arena Point Increaser").setClick(async () => {
 	await Swal.fire("Enabled", "Arena Point Increaser has been enabled.", "success");
 });
 */
-new Hack(
-	category.player,
-	"Change Name",
-	"Change the name of your wizard."
-).setClick(async () => {
+new Hack(category.player, "Change Name", "Change the name of your wizard.").setClick(async () => {
 	const names = gameData.name;
 	const div = document.createElement("div");
-	const createSelect = (
-		arr: Map<string, string>,
-		func: (str: string) => boolean
-	) => {
+	const createSelect = (arr: Map<string, string>, func: (str: string) => boolean) => {
 		const select = document.createElement("select");
 		select.classList.add("selectName");
 		for (const opt of arr.entries()) {
@@ -146,13 +111,8 @@ new Hack(
 		return select;
 	};
 	const nameSelect = (type: number, func: (num: number) => boolean) =>
-		createSelect(
-			new Map(
-				names
-					.filter(x => x.data.type === type)
-					.map(x => [x.ID.toString(), x.name])
-			),
-			val => func(+val)
+		createSelect(new Map(names.filter(x => x.data.type === type).map(x => [x.ID.toString(), x.name])), val =>
+			func(+val)
 		);
 	div.append(nameSelect(0, x => x === prodigy.player.name.data.firstName));
 	div.append(nameSelect(1, x => x === prodigy.player.name.data.middleName));
@@ -160,13 +120,12 @@ new Hack(
 	div.append(
 		createSelect(
 			new Map(
-				[["null", "[none]"]].concat(
-					gameData.nickname.map(x => [x.ID.toString(), x.name])
-				) as [string, string][]
+				[["null", "[none]"]].concat(gameData.nickname.map(x => [x.ID.toString(), x.name])) as [
+					string,
+					string
+				][]
 			),
-			x =>
-				+x === prodigy.player.name.data.nickname ||
-				String(prodigy.player.name.data.nickname) === x
+			x => +x === prodigy.player.name.data.nickname || String(prodigy.player.name.data.nickname) === x
 		)
 	);
 	const name = await Swal.fire({
@@ -177,9 +136,7 @@ new Hack(
 		preConfirm: () => {
 			return Array.prototype.slice
 				.call(document.querySelectorAll(`.selectName`))
-				.map(
-					(x: HTMLSelectElement) => x.options[x.selectedIndex].value
-				);
+				.map((x: HTMLSelectElement) => x.options[x.selectedIndex].value);
 		},
 	});
 	if (name.value === undefined) return;
@@ -189,6 +146,6 @@ new Hack(
 		prodigy.player.name.data.middleName,
 		prodigy.player.name.data.lastName,
 		prodigy.player.name.data.nickname,
-	] = (name.value as string[]).map(x => x as unknown as number && +x);
-	await Toast.fire("Name Changed!", "Your name was successfully changed.", "success")
+	] = (name.value as string[]).map(x => ((x as unknown) as number) && +x);
+	await Toast.fire("Name Changed!", "Your name was successfully changed.", "success");
 });
