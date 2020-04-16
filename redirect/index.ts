@@ -2,6 +2,7 @@ import express from "express";
 import fetch from "node-fetch";
 const app = express();
 app.get("/", async(req, res) => {
+	return res.send("eee")
 	const status: { status: string, data: { gameClientVersion: string } } = await (await fetch("https://api.prodigygame.com/game-api/status")).json();
 	if (status.status !== "success") return res.send(JSON.stringify(status));
 	const gameMinJS = await (await fetch(`https://code.prodigygame.com/code/${status.data.gameClientVersion}/game.min.js?v=${status.data.gameClientVersion}`)).text();
