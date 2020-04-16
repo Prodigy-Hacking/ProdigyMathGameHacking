@@ -10,8 +10,8 @@
 
 1) Convert this to a bookmarklet: `with(console){log=dir=clear=()=>{}}` (Remember, it’s the bookmarklet.)
 
-Make a bookmark, and copy paste the javascript into the "URL" field. Now press the bookmarklet to run the code. You should now be able to
-open console.
+Make a bookmarklet, and then click it to run the Javascript within. Doing this should allow you to open the Developer Console.
+
 
 2) Second script: `{Boot}`
 
