@@ -44,7 +44,7 @@ var express_1 = __importDefault(require("express"));
 var node_fetch_1 = __importDefault(require("node-fetch"));
 var app = express_1.default();
 app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
-    var status, version, gameMinJS;
+    var status, version, gameMinJS, replacements;
     var _a;
     return __generator(this, function (_b) {
         switch (_b.label) {
@@ -60,13 +60,12 @@ app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, v
             case 4:
                 gameMinJS = _b.sent();
                 res.type(".js");
-                return [2 /*return*/, res.send(("window.hack={};\n" + gameMinJS)
-                        .split("return this._game")
-                        .join("hack.instance=this;return this._game")
-                        .split("t.constants=Object")
-                        .join("hack.constants=t,t.constants=Object")
-                        .split("var i={};")
-                        .join("var i={};console.log(i);"))];
+                replacements = [
+                    ["return this._game", "hack.instance=this;return this._game"],
+                    ["t.constants=Object", "hack.constants=t,t.constants=Object"],
+                    ["window,function(t){var i={};", "window,function(t){var i={};hack.modules=i;"]
+                ];
+                return [2 /*return*/, res.send(replacements.reduce(function (l, c) { return l.split(c[0]).join(c[1]); }, "window.hack={};\n" + gameMinJS))];
         }
     });
 }); });
