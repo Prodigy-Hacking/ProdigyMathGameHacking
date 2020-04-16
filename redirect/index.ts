@@ -7,14 +7,12 @@ app.get("/game.min.js", async(req, res) => {
 	if (status.status !== "success" || !version) return res.sendStatus(503);
 	const gameMinJS = await (await fetch(`https://code.prodigygame.com/code/${version}/game.min.js?v=${version}`)).text();
 	res.type(".js");
-	return res.send(`window.hack={};\n${gameMinJS}`
-		.split("return this._game")
-		.join("hack.instance=this;return this._game")
-		.split("t.constants=Object")
-		.join("hack.constants=t,t.constants=Object")
-		.split("var i={};")
-		.join("var i={};console.log(i);")
-		)
+	const replacements = [
+		["return this._game", "hack.instance=this;return this._game"],
+		["t.constants=Object", "hack.constants=t,t.constants=Object"],
+		["window,function(t){var i={};", "window,function(t){var i={};hack.modules=i;"]
+	]
+	return res.send(replacements.reduce((l, c) => l.split(c[0]).join(c[1]) ,`window.hack={};\n${gameMinJS}`))
 })
 app.get("/", (req, res) => res.redirect("/game.min.js"))
 app.get("/public-game.min.js", async(req, res) => {
