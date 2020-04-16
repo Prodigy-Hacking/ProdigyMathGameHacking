@@ -1,6 +1,6 @@
 (() => {
     // every time prodigy patches, update scopeObj.
-    const scopeObj = temp1.object.a.a.instance;
+    const scopeObj = hack.instance;
     
     // do not modify.
     const bootData = scopeObj.game.state.states.Boot._gameData;
