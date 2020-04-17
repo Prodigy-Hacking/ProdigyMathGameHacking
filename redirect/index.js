@@ -88,4 +88,18 @@ app.get("/public-game.min.js", function (req, res) { return __awaiter(void 0, vo
         }
     });
 }); });
+app.get("/download", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+    var file;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, node_fetch_1.default("https://raw.githubusercontent.com/PatheticMustan/ProdigyMathGameHacking/master/redirect/Redirector.json")];
+            case 1: return [4 /*yield*/, (_a.sent()).text()];
+            case 2:
+                file = _a.sent();
+                res.type(".json");
+                res.header("Content-Disposition", "attachment; filename=\"Redirector.json\"");
+                return [2 /*return*/, res.send(file)];
+        }
+    });
+}); });
 app.listen((_a = process.env.PORT) !== null && _a !== void 0 ? _a : 1337, function () { return console.log("Started!"); });
