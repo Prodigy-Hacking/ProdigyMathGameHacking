@@ -2,25 +2,25 @@
 
 ## We've hacked the game again!
 
-Method 1: ***[{Boot}](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/master/archived/HowToHack.md)***
+Instructions: **_[Redirector](https://github.com/PatheticMustan/ProdigyMathGameHacking/wiki/Redirect-Hack)_**
 
-Method 2: ***[Redirector](https://github.com/PatheticMustan/ProdigyMathGameHacking/wiki/Redirect-Hack)***
+Alternate Method (legacy): **_[{Boot}](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/master/archived/HowToHack.md)_**
 
 ## Links
 
-- **[Wiki](https://github.com/PatheticMustan/ProdigyMathGameHacking/wiki)**
-- **[DIY!](https://github.com/PatheticMustan/ProdigyMathGameHacking/issues/25)**
-- **[Discord](https://discord.gg/9cKMgMv)**
-- **[Cheat Dashboard](https://prodigy-cheat-dashboard.herokuapp.com/)**
+-   **[Wiki](https://github.com/PatheticMustan/ProdigyMathGameHacking/wiki)**
+-   **[DIY!](https://github.com/PatheticMustan/ProdigyMathGameHacking/issues/25)**
+-   **[Discord](https://discord.gg/9cKMgMv)**
+-   **[Cheat Dashboard](https://prodigy-cheat-dashboard.herokuapp.com/)**
 
 ## Collaborators
 
-- [PatheticMustan](https://github.com/PatheticMustan)
-- [Avn1114](https://github.com/Avn1114)
-- [Exoticc (Magmischief)](https://github.com/Exoticc)
-- [RubberDuck55](https://github.com/RubberDuck55)
-- [TNThacker2015 (will)](https://github.com/TNThacker2015)
-- [LeoTheW12-4RD](https://github.com/LeoTheW12-4RD)
+-   [PatheticMustan](https://github.com/PatheticMustan)
+-   [Avn1114](https://github.com/Avn1114)
+-   [Exoticc (Magmischief)](https://github.com/Exoticc)
+-   [RubberDuck55](https://github.com/RubberDuck55)
+-   [TNThacker2015 (will)](https://github.com/TNThacker2015)
+-   [LeoTheW12-4RD](https://github.com/LeoTheW12-4RD)
 
 ## Announcements
 
@@ -51,7 +51,7 @@ We are **NOT** liable for **_any_** damages.
 > 7. Limitation of Liability
 >    Under no circumstances and under no legal theory, whether tort (including negligence), contract, or otherwise, shall any Contributor, or anyone who distributes Covered Software as permitted above, be liable to You for any direct, indirect, special, incidental, or consequential damages of any character including, without limitation, damages for lost profits, loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses, even if such party shall have been informed of the possibility of such damages. This limitation of liability shall not apply to liability for death or personal injury resulting from such party’s negligence to the extent applicable law prohibits such limitation. Some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so this exclusion and limitation may not apply to You.
 
-- Mozilla Public License v2
+-   Mozilla Public License v2
 
 ## Disclaimer
 
@@ -60,7 +60,7 @@ You have been warned.
 
 ## Usage
 
-You can read on how to hack the game in the ***[Instructions](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/master/HowToHack.md)***.
+You can read on how to hack the game in the **_[Instructions](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/master/HowToHack.md)_**.
 
 Any questions? Join our [Discord](https://discord.gg/9cKMgMv)!
 
