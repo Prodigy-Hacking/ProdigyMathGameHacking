@@ -2,7 +2,7 @@
 
 ## We've hacked the game again!
 
-***[Instructions](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/master/HowToHack.md)***
+***[Instructions](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/master/archived/HowToHack.md)***
 
 ## Links
 
