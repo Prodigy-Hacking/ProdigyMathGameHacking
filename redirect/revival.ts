@@ -41,3 +41,10 @@ hack.functions.getAllItemsInCategory = category =>
 		1e69,
 		...hack.gameData[category].map(x => ({ ID: x.ID, N: 1e69 }))
 	);
+hack.functions.escapeBattle = () => {
+	const currentState = hack.instance.game.state.current;
+	if (currentState === "PVP") hack.instance.game.state.states.PVP.endPVP();
+	else if (currentState === "CoOp")
+	hack.instance.prodigy.world.$(hack.instance.prodigy.player.data.zone);
+	else hack.instance.game.state.callbackContext.runAwayCallback();
+}

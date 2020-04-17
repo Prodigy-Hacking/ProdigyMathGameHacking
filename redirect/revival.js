@@ -44,3 +44,12 @@ hack.functions.getAllItemsInCategory = function (category) {
     return (_a = hack.instance.prodigy.player.backpack.data[category]).splice.apply(_a, __spreadArrays([0,
         1e69], hack.gameData[category].map(function (x) { return ({ ID: x.ID, N: 1e69 }); })));
 };
+hack.functions.escapeBattle = function () {
+    var currentState = hack.instance.game.state.current;
+    if (currentState === "PVP")
+        hack.instance.game.state.states.PVP.endPVP();
+    else if (currentState === "CoOp")
+        hack.instance.prodigy.world.$(hack.instance.prodigy.player.data.zone);
+    else
+        hack.instance.game.state.callbackContext.runAwayCallback();
+};
