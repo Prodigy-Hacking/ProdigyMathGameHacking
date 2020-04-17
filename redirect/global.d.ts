@@ -4,6 +4,7 @@ export declare interface HackFunctions {
 	completeTutorial(): void;
 	getAllPets(): void;
 	getAllItemsInCategory(category: keyof BackpackData): void;
+	escapeBattle(): void;
 }
 export declare interface HackVariables {
 	loc: { [index: string]: number; [index: number]: string };
