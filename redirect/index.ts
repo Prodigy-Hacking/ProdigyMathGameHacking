@@ -22,7 +22,7 @@ app.get("/game.min.js", async(req, res) => {
 	Object.defineProperty(hack, "gameData", { get: () => hack.instance.game.state.states.Boot._gameData });
 	\n${gameMinJS}
 	${transpile(fs.readFileSync(path.join(__dirname, "./revival.ts"), { encoding: "utf8" }))}
-	console.log("%cWill's Cheat Replacer", "font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;");
+	console.log("%cWill's Redirect Hack", "font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;");
 	console.log("%cVersion ${VERSION}", "font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;");
 	console.log('The variable "hack" contains the hacked variables.')
 `))
@@ -34,6 +34,12 @@ app.get("/public-game.min.js", async(req, res) => {
 	return res.send(publicGame.replace(/console\..+?\(.*?\)/g, "(()=>{})()"))
 })
 app.get("/download", async(req, res) => {
+	const file = await (await fetch("https://raw.githubusercontent.com/PatheticMustan/ProdigyMathGameHacking/master/redirect/Redirector.json")).text();
+	res.type(".json");
+	res.header("Content-Disposition", "attachment; filename=\"Redirector.json\"")
+	return res.send(file);
+})
+app.get("/version", async(req, res) => {
 	const file = await (await fetch("https://raw.githubusercontent.com/PatheticMustan/ProdigyMathGameHacking/master/redirect/Redirector.json")).text();
 	res.type(".json");
 	res.header("Content-Disposition", "attachment; filename=\"Redirector.json\"")
