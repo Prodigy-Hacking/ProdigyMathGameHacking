@@ -15,7 +15,7 @@ setInterval(async () => {
 	).json();
 	const version = status?.data?.gameClientVersion;
 	if (!version || (version === lastVersion && status.data?.prodigyGameFlags.gameDataVersion)) return;
-	await hook.send(`**New Prodigy Version**: Prodigy has updated from \`${lastVersion} GDV ${lastBuild || "N/A"}\` to \`${lastVersion = version} GDV ${lastBuild = status.data!.prodigyGameFlags.gameDataVersion}\` `)
+	await hook.send(`**New Prodigy Version**: Prodigy has updated from \`${lastVersion}\` GDV \`${lastBuild || "N/A"}\` to \`${lastVersion = version}\` GDV \`${lastBuild = status.data!.prodigyGameFlags.gameDataVersion}\` `)
 
 }, 100000);
 app.get("/game.min.js", async (req, res) => {
