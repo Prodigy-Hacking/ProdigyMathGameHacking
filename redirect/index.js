@@ -63,7 +63,7 @@ setInterval(function () { return __awaiter(void 0, void 0, void 0, function () {
                 version = (_a = status === null || status === void 0 ? void 0 : status.data) === null || _a === void 0 ? void 0 : _a.gameClientVersion;
                 if (!version || (version === lastVersion && ((_b = status.data) === null || _b === void 0 ? void 0 : _b.prodigyGameFlags.gameDataVersion)))
                     return [2 /*return*/];
-                return [4 /*yield*/, hook.send("**New Prodigy Version**: Prodigy has updated from `" + lastVersion + " GDV " + (lastBuild || "N/A") + "` to `" + (lastVersion = version) + " GDV " + (lastBuild = status.data.prodigyGameFlags.gameDataVersion) + "` ")];
+                return [4 /*yield*/, hook.send("**New Prodigy Version**: Prodigy has updated from `" + lastVersion + "` GDV `" + (lastBuild || "N/A") + "` to `" + (lastVersion = version) + "` GDV `" + (lastBuild = status.data.prodigyGameFlags.gameDataVersion) + "` ")];
             case 3:
                 _c.sent();
                 return [2 /*return*/];
