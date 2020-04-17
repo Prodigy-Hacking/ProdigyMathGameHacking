@@ -9,6 +9,7 @@ const itemify = (item: Item[]) =>
 		ID: x.ID,
 		N:  VERY_LARGE_NUMBER,
 	}));
+
 const inventoryHack = (
 	name: string,
 	id: BackpackItemType,
