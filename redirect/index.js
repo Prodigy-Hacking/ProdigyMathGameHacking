@@ -45,8 +45,31 @@ var node_fetch_1 = __importDefault(require("node-fetch"));
 var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
 var typescript_1 = require("typescript");
+var discord_js_1 = __importDefault(require("discord.js"));
 var app = express_1.default();
-var VERSION = "A-0.0.2";
+var VERSION = "A-0.0.3";
+var lastVersion = "None";
+var lastBuild = 0;
+var hook = new discord_js_1.default.WebhookClient("700774406963724328", "g3X1Kv3vV8uAeNnHBrBnRM-UzCAfsXCbJ-OzP27aqTnW9tkRc3i9tCbGFL8Of5vbRKOV");
+setInterval(function () { return __awaiter(void 0, void 0, void 0, function () {
+    var status, version;
+    var _a, _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0: return [4 /*yield*/, node_fetch_1.default("https://api.prodigygame.com/game-api/status")];
+            case 1: return [4 /*yield*/, (_c.sent()).json()];
+            case 2:
+                status = _c.sent();
+                version = (_a = status === null || status === void 0 ? void 0 : status.data) === null || _a === void 0 ? void 0 : _a.gameClientVersion;
+                if (!version || (version === lastVersion && ((_b = status.data) === null || _b === void 0 ? void 0 : _b.prodigyGameFlags.gameDataVersion)))
+                    return [2 /*return*/];
+                return [4 /*yield*/, hook.send("**New Prodigy Version**: Prodigy has updated from `" + lastVersion + " GDV " + (lastBuild || "N/A") + "` to `" + (lastVersion = version) + " GDV " + (lastBuild = status.data.prodigyGameFlags.gameDataVersion) + "` ")];
+            case 3:
+                _c.sent();
+                return [2 /*return*/];
+        }
+    });
+}); }, 100000);
 app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
     var status, version, gameMinJS, replacements;
     var _a;
@@ -68,9 +91,9 @@ app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, v
                     ["return this._game", "hack.instance=this;return this._game"],
                     ["t.constants=Object", "hack.constants=t,t.constants=Object"],
                     ["window,function(t){var i={};", "window,function(t){var i={};hack.modules=i;"],
-                    ["return t.BAM=", ";hack.variables.loc=Ar;hack.variables.menuTxt=Kr;hack.variables.menuObj=t;return t.BAM="]
+                    ["return t.BAM=", ";hack.variables.loc=Ar;hack.variables.menuTxt=Kr;hack.variables.menuObj=t;return t.BAM="],
                 ];
-                return [2 /*return*/, res.send(replacements.reduce(function (l, c) { return l.split(c[0]).join(c[1]); }, "\n\texports = {};window.hack=Object.create(null);hack.variables=Object.create(null);\n\tObject.defineProperty(hack, \"gameData\", { get: () => hack.instance.game.state.states.Boot._gameData });\n\t\n" + gameMinJS + "\n\t" + typescript_1.transpile(fs_1.default.readFileSync(path_1.default.join(__dirname, "./revival.ts"), { encoding: "utf8" })) + "\n\tconsole.log(\"%cWill's Cheat Replacer\", \"font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;\");\n\tconsole.log(\"%cVersion " + VERSION + "\", \"font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;\");\n\tconsole.log('The variable \"hack\" contains the hacked variables.')\n"))];
+                return [2 /*return*/, res.send(replacements.reduce(function (l, c) { return l.split(c[0]).join(c[1]); }, "\n\texports = {};window.hack=Object.create(null);hack.variables=Object.create(null);\n\tObject.defineProperty(hack, \"gameData\", { get: () => hack.instance.game.state.states.Boot._gameData });\n\t\n" + gameMinJS + "\n\t" + typescript_1.transpile(fs_1.default.readFileSync(path_1.default.join(__dirname, "./revival.ts"), { encoding: "utf8" })) + "\n\tconsole.log(\"%cWill's Redirect Hack\", \"font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;\");\n\tconsole.log(\"%cVersion " + VERSION + "\", \"font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;\");\n\tconsole.log('The variable \"hack\" contains the hacked variables.')\n"))];
         }
     });
 }); });
@@ -97,7 +120,21 @@ app.get("/download", function (req, res) { return __awaiter(void 0, void 0, void
             case 2:
                 file = _a.sent();
                 res.type(".json");
-                res.header("Content-Disposition", "attachment; filename=\"Redirector.json\"");
+                res.header("Content-Disposition", 'attachment; filename="Redirector.json"');
+                return [2 /*return*/, res.send(file)];
+        }
+    });
+}); });
+app.get("/version", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+    var file;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, node_fetch_1.default("https://raw.githubusercontent.com/PatheticMustan/ProdigyMathGameHacking/master/redirect/Redirector.json")];
+            case 1: return [4 /*yield*/, (_a.sent()).text()];
+            case 2:
+                file = _a.sent();
+                res.type(".json");
+                res.header("Content-Disposition", 'attachment; filename="Redirector.json"');
                 return [2 /*return*/, res.send(file)];
         }
     });
