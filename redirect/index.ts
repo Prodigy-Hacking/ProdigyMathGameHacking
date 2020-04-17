@@ -33,4 +33,10 @@ app.get("/public-game.min.js", async(req, res) => {
 	res.type(".js");
 	return res.send(publicGame.replace(/console\..+?\(.*?\)/g, "(()=>{})()"))
 })
+app.get("/download", async(req, res) => {
+	const file = await (await fetch("https://raw.githubusercontent.com/PatheticMustan/ProdigyMathGameHacking/master/redirect/Redirector.json")).text();
+	res.type(".json");
+	res.header("Content-Disposition", "attachment; filename=\"Redirector.json\"")
+	return res.send(file);
+})
 app.listen(process.env.PORT ?? 1337, () => console.log("Started!"))
