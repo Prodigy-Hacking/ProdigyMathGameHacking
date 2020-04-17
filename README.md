@@ -2,14 +2,14 @@
 
 ## We've hacked the game again!
 
-Instructions: **_[Redirector](https://github.com/PatheticMustan/ProdigyMathGameHacking/wiki/Redirect-Hack)_**
+Instructions: **_[Redirector](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)_**
 
-Alternate Method (legacy): **_[{Boot}](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/master/archived/HowToHack.md)_**
+Alternate Method (legacy): **_[{Boot}](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/archived/HowToHack.md)_**
 
 ## Links
 
--   **[Wiki](https://github.com/PatheticMustan/ProdigyMathGameHacking/wiki)**
--   **[DIY!](https://github.com/PatheticMustan/ProdigyMathGameHacking/issues/25)**
+-   **[Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki)**
+-   **[DIY!](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/issues/25)**
 -   **[Discord](https://discord.gg/9cKMgMv)**
 -   **[Cheat Dashboard](https://prodigy-cheat-dashboard.herokuapp.com/)**
 
@@ -60,7 +60,7 @@ You have been warned.
 
 ## Usage
 
-You can read on how to hack the game in the **_[Instructions](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/master/HowToHack.md)_**.
+You can read on how to hack the game in the **_[Instructions](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/HowToHack.md)_**.
 
 Any questions? Join our [Discord](https://discord.gg/9cKMgMv)!
 
