@@ -88,12 +88,12 @@ app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, v
                 gameMinJS = _b.sent();
                 res.type(".js");
                 replacements = [
-                    ["return this._game", "hack.instance=this;return this._game"],
+                    ["s),this._game=i}", "s),this._game=i};hack.instance=t.instance;"],
                     ["t.constants=Object", "hack.constants=t,t.constants=Object"],
                     ["window,function(t){var i={};", "window,function(t){var i={};hack.modules=i;"],
                     ["return t.BAM=", ";hack.variables.loc=Ar;hack.variables.menuTxt=Kr;hack.variables.menuObj=t;return t.BAM="],
                 ];
-                return [2 /*return*/, res.send(replacements.reduce(function (l, c) { return l.split(c[0]).join(c[1]); }, "\n\texports = {};window.hack=Object.create(null);hack.variables=Object.create(null);\n\tObject.defineProperty(hack, \"gameData\", { get: () => hack.instance.game.state.states.Boot._gameData });\n\t\n" + gameMinJS + "\n\t" + typescript_1.transpile(fs_1.default.readFileSync(path_1.default.join(__dirname, "./revival.ts"), { encoding: "utf8" })) + "\n\tconsole.log(\"%cWill's Redirect Hack\", \"font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;\");\n\tconsole.log(\"%cVersion " + VERSION + "\", \"font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;\");\n\tconsole.log('The variable \"hack\" contains the hacked variables.')\n"))];
+                return [2 /*return*/, res.send(replacements.reduce(function (l, c) { return l.split(c[0]).join(c[1]); }, "\n\texports = {};window.hack=Object.create(null);hack.variables=Object.create(null);\n\t\n" + gameMinJS + "\n\t" + typescript_1.transpile(fs_1.default.readFileSync(path_1.default.join(__dirname, "./revival.ts"), { encoding: "utf8" })) + "\n\tconsole.log(\"%cWill's Redirect Hack\", \"font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;\");\n\tconsole.log(\"%cVersion " + VERSION + "\", \"font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;\");\n\tconsole.log('The variable \"hack\" contains the hacked variables.')\n"))];
         }
     });
 }); });
