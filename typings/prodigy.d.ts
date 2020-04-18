@@ -3,6 +3,7 @@ import { Player } from "./player";
 import { DebugMisc } from "./debugMisc";
 import { TODO } from "./util";
 import { Open } from "./open";
+import { GameContainer } from "./gameContainer";
 
 export declare interface Prodigy {
 	version: string;
@@ -17,5 +18,8 @@ export declare interface Prodigy {
 	pvpNetworkHandler: TODO;
 	network: TODO;
 	classModeController: TODO;
-	gameContainer: TODO;
+	gameContainer: GameContainer;
+	dialogue: TODO;
+	notifications: TODO;
+	battle: TODO;
 }

@@ -16,6 +16,7 @@ interface GameStatus {
 	status: string;
 	data?: { gameClientVersion?: string; prodigyGameFlags: { gameDataVersion: number } };
 }
+
 setInterval(async () => {
 	const status: GameStatus = await (await fetch("https://api.prodigygame.com/game-api/status")).json();
 	const version = status?.data?.gameClientVersion;
