@@ -47,7 +47,6 @@ app.get("/game.min.js", async (req, res) => {
 			(l, c) => l.split(c[0]).join(c[1]),
 			`
 	exports = {};window.hack=Object.create(null);hack.variables=Object.create(null);
-	Object.defineProperty(hack, "gameData", { get: () => hack.instance.game.state.states.Boot._gameData });
 	\n${gameMinJS}
 	${transpile(fs.readFileSync(path.join(__dirname, "./revival.ts"), { encoding: "utf8" }))}
 	console.log("%cWill's Redirect Hack", "font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;");
