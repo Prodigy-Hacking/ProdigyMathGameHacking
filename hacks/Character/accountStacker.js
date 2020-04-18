@@ -1,6 +1,6 @@
 // Gives your account everything.
 (() => {
-	const { instance } = hack;
+	const { instance } = /..hack;
 	const { game, prodigy } = instance;
 	const { player } = prodigy;
 	const gameData = game.state.states.Boot._gameData;
