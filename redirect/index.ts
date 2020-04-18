@@ -7,19 +7,27 @@ import Discord from "discord.js";
 const app = express();
 const VERSION = "A-0.0.3";
 let lastVersion = "None";
-let lastBuild: number = 0
-const hook = new Discord.WebhookClient("700774406963724328", "g3X1Kv3vV8uAeNnHBrBnRM-UzCAfsXCbJ-OzP27aqTnW9tkRc3i9tCbGFL8Of5vbRKOV")
+let lastBuild: number = 0;
+const hook = new Discord.WebhookClient(
+	"700774406963724328",
+	"g3X1Kv3vV8uAeNnHBrBnRM-UzCAfsXCbJ-OzP27aqTnW9tkRc3i9tCbGFL8Of5vbRKOV"
+);
+interface GameStatus {
+	status: string;
+	data?: { gameClientVersion?: string; prodigyGameFlags: { gameDataVersion: number } };
+}
 setInterval(async () => {
-	const status: { status: string; data?: { gameClientVersion?: string, prodigyGameFlags: { gameDataVersion: number } } } = await (
-		await fetch("https://api.prodigygame.com/game-api/status")
-	).json();
+	const status: GameStatus = await (await fetch("https://api.prodigygame.com/game-api/status")).json();
 	const version = status?.data?.gameClientVersion;
 	if (!version || (version === lastVersion && status.data?.prodigyGameFlags.gameDataVersion)) return;
-	await hook.send(`**New Prodigy Version**: Prodigy has updated from \`${lastVersion}\` GDV \`${lastBuild || "N/A"}\` to \`${lastVersion = version}\` GDV \`${lastBuild = status.data!.prodigyGameFlags.gameDataVersion}\` `)
-
+	await hook.send(
+		`**New Prodigy Version**: Prodigy has updated from \`${lastVersion}\` GDV \`${
+			lastBuild || "N/A"
+		}\` to \`${(lastVersion = version)}\` GDV \`${(lastBuild = status.data!.prodigyGameFlags.gameDataVersion)}\` `
+	);
 }, 100000);
 app.get("/game.min.js", async (req, res) => {
-	const status: { status: string; data?: { gameClientVersion?: string } } = await (
+	const status: GameStatus = await (
 		await fetch("https://api.prodigygame.com/game-api/status")
 	).json();
 	const version = status?.data?.gameClientVersion;
@@ -45,8 +53,7 @@ app.get("/game.min.js", async (req, res) => {
 	console.log("%cWill's Redirect Hack", "font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;");
 	console.log("%cVersion ${VERSION}", "font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;");
 	console.log('The variable "hack" contains the hacked variables.')
-`
-		)
+`)
 	);
 });
 app.get("/", (req, res) => res.redirect("/game.min.js"));
