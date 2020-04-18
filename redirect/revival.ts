@@ -44,9 +44,50 @@ hack.functions.getAllItemsInCategory = category =>
 hack.functions.escapeBattle = () => {
 	const currentState = hack.instance.game.state.current;
 	if (currentState === "PVP") hack.instance.game.state.states.PVP.endPVP();
-	else if (currentState === "CoOp")
-	hack.instance.prodigy.world.$(hack.instance.prodigy.player.data.zone);
+	else if (currentState === "CoOp") hack.instance.prodigy.world.$(hack.instance.prodigy.player.data.zone);
 	else hack.instance.game.state.callbackContext.runAwayCallback();
-}
+};
+/*
+hack.functions.customChat = (text: string) => {
+	const dialogue = hack.instance.prodigy.dialogue.create();
+	dialogue.setText(10);
+	const key = "noot";
+	dialogue.eventQueue[0].dialogueData = dialogue.dataProvider.getLegacy(
+		key,
+		dialogue.eventQueue[0].legacyData.index
+	);
+	dialogue.eventQueue[0] = Object.assign(
+		{
+			type: undefined,
+			windowPosition: undefined,
+			blockInput: !undefined,
+		},
+		dialogue.eventQueue[0]
+	);
+	dialogue.eventQueue[0] = (window as any)._.pickBy(dialogue.eventQueue[0], x => x !== undefined);
+	dialogue.closeDialogue(false);
+	dialogue.onClose = () => {};
+	hack.instance.prodigy.notifications.setPaused(true);
+	const next = () => {
+		dialogue.current = dialogue.eventQueue.splice(0, dialogue.skipCounter + 1)[dialogue.skipCounter];
+		dialogue.skipCounter = 0;
+		if (Object.keys(dialogue.current ?? {}).length > 0) {
+			const item = [dialogue.current.dialogueData.avatar.atlas];
+			if (dialogue.currentDialogue?.game) {
+				dialogue.currentDialogue.updateSchema(dialogue.current, item);
+			} else {
+				dialogue.currentDialogue = hack.instance.prodigy.open.characterDialogue(
+					dialogue.current,
+					next.bind(dialogue),
+					item
+				);
+			}
+		}
+	};
+	next();
+};
+*/
 Object.defineProperty(hack, "gameData", { get: () => hack.instance.game.state.states.Boot._gameData });
-Object.defineProperty(hack, "localizer", { get: () => hack.instance.prodigy.gameContainer.get("LocalizationService") });
+Object.defineProperty(hack, "localizer", {
+	get: () => hack.instance.prodigy.gameContainer.get("LocalizationService"),
+});

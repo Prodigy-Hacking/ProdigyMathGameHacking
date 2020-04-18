@@ -257,11 +257,12 @@ export declare class Player {
 	validateLevel(): void;
 }
 export declare interface PlayerName {
+	generateRandomName(): void;
 	data: {
-		firstName: number;
-		lastName: number;
-		middleName: number;
-		nickname: unknown;
+		firstName: number | null;
+		lastName: number | null;
+		middleName: number | null;
+		nickname: number | null;
 	};
 	gender: "male" | "female";
 	localizer: { dataSource: TODO };

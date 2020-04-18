@@ -1,5 +1,5 @@
 // Spams your surroundings with snowballs.
-for (i = 0; i < 10000; i++)
+for (let i = 0; i < 10000; i++)
 	setInterval(() =>
 		hack.instance.prodigy.network.emitMessage({
 			action: "fx",

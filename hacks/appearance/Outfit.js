@@ -1,2 +1,2 @@
-// selects a specific outfit 
-hack.instance.prodigy.player.equipment.outfit=()
+// selects a specific outfit
+hack.instance.prodigy.player.equipment.outfit = 2;
