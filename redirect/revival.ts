@@ -48,3 +48,5 @@ hack.functions.escapeBattle = () => {
 	hack.instance.prodigy.world.$(hack.instance.prodigy.player.data.zone);
 	else hack.instance.game.state.callbackContext.runAwayCallback();
 }
+Object.defineProperty(hack, "gameData", { get: () => hack.instance.game.state.states.Boot._gameData });
+Object.defineProperty(hack, "localizer", { get: () => hack.instance.prodigy.gameContainer.get("LocalizationService") });

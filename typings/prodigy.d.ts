@@ -17,4 +17,5 @@ export declare interface Prodigy {
 	pvpNetworkHandler: TODO;
 	network: TODO;
 	classModeController: TODO;
+	gameContainer: TODO;
 }
