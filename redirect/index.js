@@ -61,6 +61,8 @@ setInterval(function () { return __awaiter(void 0, void 0, void 0, function () {
             case 2:
                 status = _c.sent();
                 version = (_a = status === null || status === void 0 ? void 0 : status.data) === null || _a === void 0 ? void 0 : _a.gameClientVersion;
+                if (lastVersion === "None")
+                    return [2 /*return*/, ((lastVersion = version), (lastBuild = status.data.prodigyGameFlags.gameDataVersion))];
                 if (!version || (version === lastVersion && ((_b = status.data) === null || _b === void 0 ? void 0 : _b.prodigyGameFlags.gameDataVersion)))
                     return [2 /*return*/];
                 return [4 /*yield*/, hook.send("**New Prodigy Version**: Prodigy has updated from `" + lastVersion + "` GDV `" + (lastBuild || "N/A") + "` to `" + (lastVersion = version) + "` GDV `" + (lastBuild = status.data.prodigyGameFlags.gameDataVersion) + "` ")];
@@ -88,7 +90,7 @@ app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, v
                 gameMinJS = _b.sent();
                 res.type(".js");
                 replacements = [
-                    ["s),this._game=i}", "s),this._game=i};hack.instance=t.instance;"],
+                    ["s),this._game=i}", "s),this._game=i};Object.defineProperty(hack, \"instance\", { get: () => t.instance });"],
                     ["t.constants=Object", "hack.constants=t,t.constants=Object"],
                     ["window,function(t){var i={};", "window,function(t){var i={};hack.modules=i;"],
                     ["return t.BAM=", ";hack.variables.loc=Ar;hack.variables.menuTxt=Kr;hack.variables.menuObj=t;return t.BAM="],
