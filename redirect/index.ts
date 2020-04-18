@@ -19,6 +19,8 @@ interface GameStatus {
 setInterval(async () => {
 	const status: GameStatus = await (await fetch("https://api.prodigygame.com/game-api/status")).json();
 	const version = status?.data?.gameClientVersion;
+	if (lastVersion === "None")
+		return (lastVersion = version!), (lastBuild = status.data!.prodigyGameFlags.gameDataVersion);
 	if (!version || (version === lastVersion && status.data?.prodigyGameFlags.gameDataVersion)) return;
 	await hook.send(
 		`**New Prodigy Version**: Prodigy has updated from \`${lastVersion}\` GDV \`${
@@ -27,9 +29,7 @@ setInterval(async () => {
 	);
 }, 100000);
 app.get("/game.min.js", async (req, res) => {
-	const status: GameStatus = await (
-		await fetch("https://api.prodigygame.com/game-api/status")
-	).json();
+	const status: GameStatus = await (await fetch("https://api.prodigygame.com/game-api/status")).json();
 	const version = status?.data?.gameClientVersion;
 	if (status.status !== "success" || !version) return res.sendStatus(503);
 	const gameMinJS = await (
@@ -37,7 +37,7 @@ app.get("/game.min.js", async (req, res) => {
 	).text();
 	res.type(".js");
 	const replacements = [
-		["return this._game", "hack.instance=this;return this._game"],
+		["s),this._game=i}", `s),this._game=i};Object.defineProperty(hack, "instance", { get: () => t.instance });`],
 		["t.constants=Object", "hack.constants=t,t.constants=Object"],
 		["window,function(t){var i={};", "window,function(t){var i={};hack.modules=i;"],
 		["return t.BAM=", ";hack.variables.loc=Ar;hack.variables.menuTxt=Kr;hack.variables.menuObj=t;return t.BAM="],
@@ -52,7 +52,8 @@ app.get("/game.min.js", async (req, res) => {
 	console.log("%cWill's Redirect Hack", "font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;");
 	console.log("%cVersion ${VERSION}", "font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;");
 	console.log('The variable "hack" contains the hacked variables.')
-`)
+`
+		)
 	);
 });
 app.get("/", (req, res) => res.redirect("/game.min.js"));
