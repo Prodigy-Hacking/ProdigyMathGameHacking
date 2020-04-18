@@ -1,1 +1,9 @@
-git add -A && git commit -am "%*" && git pull && git push
+@echo off
+git add -A
+echo Added files.
+git commit -am "%*"
+echo Committed.
+git pull
+echo Pulled.
+git push
+echo Pushed.
