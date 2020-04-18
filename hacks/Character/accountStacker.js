@@ -1,10 +1,10 @@
 // Gives your account everything.
 (() => {
-	const { instance } = /..hack;
+	const { instance } = hack;
 	const { game, prodigy } = instance;
 	const { player } = prodigy;
 	const gameData = game.state.states.Boot._gameData;
-	["gold", "stars", "bountyScore", "level"].forEach(x => (player.data[x] = 1e69));
+	player.data.gold = player.data.stars = player.data.bountyScore = player.data.level = 1e69;
 	if (confirm("Do you want pets?"))
 		player.kennel.data.splice(
 			0,
@@ -20,6 +20,7 @@
 		);
 	player.kennel.data.forEach(x => (x.level = 1e69));
 	Object.entries(player.backpack.data).forEach(([x, y]) =>
+		// @ts-ignore
 		y.splice(0, 1e69, ...gameData[x].map(z => ({ ID: z.ID, N: 1e69 })))
 	);
 	player.house.data.items = [];

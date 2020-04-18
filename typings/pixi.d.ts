@@ -15,5 +15,6 @@ declare global {
 		variables: HackVariables;
 		gameData: GameData;
 		localizer: TODO;
+		dialogue: TODO;
 	};
 }
