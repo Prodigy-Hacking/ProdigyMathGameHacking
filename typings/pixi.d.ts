@@ -14,5 +14,6 @@ declare global {
 		functions: HackFunctions;
 		variables: HackVariables;
 		gameData: GameData;
+		localizer: TODO;
 	};
 }
