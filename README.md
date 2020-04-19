@@ -59,6 +59,6 @@ You have been warned.
 
 You can read the methods on how to hack the game in the **_[Hack Methods](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/HowToHack.md)_**.
 
-Any questions? Join our [Discord](https://discord.gg/9cKMgMv)!
+Any questions? Go [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/issues/20)!
 
 Documentation: [Docs](./docs/interfaces/_pixi_d_.pixi.md)
