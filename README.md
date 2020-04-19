@@ -21,7 +21,7 @@ Alternate Method (legacy): **_[{Boot}](https://github.com/Prodigy-Hacking/Prodig
 -   [RubberDuck55](https://github.com/RubberDuck55)
 -   [TNThacker2015 (will)](https://github.com/TNThacker2015)
 -   [LeoTheW12-4RD](https://github.com/LeoTheW12-4RD)
--   [gothboymike]  (https://github.com/gothboymike_
+-   [gothboymike](https://github.com/gothboymike)
 
 ## Announcements
 
