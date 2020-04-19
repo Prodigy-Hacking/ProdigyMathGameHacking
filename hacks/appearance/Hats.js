@@ -1,2 +1,2 @@
 // selects a specific hat
-hack.instance.prodigy.player.equipment.hat = 2;
+hack.instance.prodigy.player.equipment.hat=()
