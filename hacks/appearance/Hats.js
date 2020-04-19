@@ -1,2 +1,2 @@
-// selects a specific hat also (delete "insertnumberandgetridofthistext" and insert a number there
-hack.instance.prodigy.player.equipment.hat=(insertnumberandgetridofthistext)
+// selects a specific hat. replace 2 with a number
+hack.instance.prodigy.player.equipment.hat = 2;
