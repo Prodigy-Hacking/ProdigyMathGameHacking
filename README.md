@@ -24,6 +24,7 @@ Alternate Method (legacy): **_[{Boot}](https://github.com/Prodigy-Hacking/Prodig
 -   [gothboymike](https://github.com/gothboymike)
 
 ## Announcements
+## Now, with the redirector hack, we can achieve permanent membership!
 
 ### Some people have been stealing our hacks.
 
