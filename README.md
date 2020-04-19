@@ -21,9 +21,10 @@ Alternate Method (legacy): **_[{Boot}](https://github.com/Prodigy-Hacking/Prodig
 -   [RubberDuck55](https://github.com/RubberDuck55)
 -   [TNThacker2015 (will)](https://github.com/TNThacker2015)
 -   [LeoTheW12-4RD](https://github.com/LeoTheW12-4RD)
--   [gothboymike]  (https://github.com/gothboymike_
+-   [gothboymike](https://github.com/gothboymike)
 
 ## Announcements
+## Now, with the redirector hack, we can achieve permanent membership!
 
 ### Some people have been stealing our hacks.
 
@@ -59,6 +60,6 @@ You have been warned.
 
 You can read the methods on how to hack the game in the **_[Hack Methods](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/HowToHack.md)_**.
 
-Any questions? Join our [Discord](https://discord.gg/9cKMgMv)!
+Any questions? Go [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/issues/20)!
 
 Documentation: [Docs](./docs/interfaces/_pixi_d_.pixi.md)
