@@ -56,7 +56,7 @@ You have been warned.
 
 ## Usage
 
-You can read the methods on how to hack the game in the **_[Instructions](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/HowToHack.md)_**.
+You can read the methods on how to hack the game in the **_[Hack Methods](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/HowToHack.md)_**.
 
 Any questions? Join our [Discord](https://discord.gg/9cKMgMv)!
 
