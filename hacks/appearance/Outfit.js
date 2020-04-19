@@ -1,2 +1,2 @@
-// selects a specific outfit (delete "insertnumberandgetridofthistext" and insert a number there
+// selects a specific outfit 
 hack.instance.prodigy.player.equipment.outfit = 2;
