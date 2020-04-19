@@ -32,10 +32,6 @@ There are some groups that steal our code, and pass it off as their own. If you 
 
 This may look like we're trying to ruin the game, but we're helping make it better. By finding exploits, we help the developers find that there is an exploit, and the developers fix it, overall helping the game. Anyone who claims that we are 'malicious' or 'ruining the game', are wrong. Please don't spread misinformation.
 
-### We have surpassed 100k views and over 6.4k unique viewers!
-
-Thank all of you for making this happen.
-
 ## The purpose of Hacking Prodigy, the Math Game
 
 I'm making this repository to try to get the developers to change how Prodigy handles player game data. Instead of handling everything server side, a lot of the heavy lifting is done on the player side. The server just manages multiplayer battles, and hosts data, messages, and events.
