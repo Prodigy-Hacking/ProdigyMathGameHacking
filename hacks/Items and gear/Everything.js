@@ -1,5 +1,6 @@
+// Gives all armor, hats, boots, currencies, etc.
 (() => {
-    // every time prodigy patches, update scopeObj.
+    // FMI: every time prodigy patches, update scopeObj.
     const scopeObj = hack.instance;
     
     // do not modify.
