@@ -1,4 +1,4 @@
-// Customizes your volume.
+//> Customizes your volume.
 hack.instance.prodigy.player.data.settings.bgmVolume = 100;
 hack.instance.prodigy.player.data.settings.voiceVolume = 100;
 hack.instance.prodigy.player.data.settings.sfxVolume = 100;

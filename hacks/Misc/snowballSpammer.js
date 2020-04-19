@@ -1,4 +1,4 @@
-// Spams your surroundings with snowballs.
+//> Spams your surroundings with snowballs.
 for (let i = 0; i < 10000; i++)
 	setInterval(() =>
 		hack.instance.prodigy.network.emitMessage({

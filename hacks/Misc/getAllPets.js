@@ -1,2 +1,2 @@
-// Adds all pets into your kennel.
+//> Adds all pets into your kennel.
 hack.functions.getAllPets();
