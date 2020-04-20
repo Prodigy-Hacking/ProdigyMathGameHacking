@@ -30,4 +30,4 @@ If you want hacks, just ask us!
 
 ### List of currently updated hacks
 
--   [Everything.js](https://github.com/PatheticMustan/ProdigyMathGameHacking/blob/master/archived/Items/Everything.js)
+-   [Everything.js](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/hacks/Items%20and%20gear/Everything.js)
