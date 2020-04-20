@@ -10,7 +10,6 @@ menu.id = "cheat-menu";
 wrapper?.prepend(menu);
 export const toggler = document.createElement("button");
 toggler.id = "menu-toggler";
-toggler.innerText = "▲";
 let visible = true;
 wrapper?.prepend(toggler);
 toggler.onclick = () => {
@@ -23,6 +22,7 @@ toggler.onclick = () => {
 	}
 	visible = !visible;
 };
+toggler.onclick({} as any);
 const menuleft = document.createElement("DIV");
 menuleft.classList.add("menu-left");
 menu.append(menuleft);
