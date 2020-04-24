@@ -6,7 +6,7 @@ Instructions: **_[Redirector](https://github.com/Prodigy-Hacking/ProdigyMathGame
 
 Alternate Method (legacy): **_[{Boot}](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/archived/HowToHack.md)_**
 
-# Come check out our [Official Website](https://trip7663.wixsite.com/prodigyhackingweb)!
+# Come check out our [Website](https://trip7663.wixsite.com/prodigyhackingweb)!
 
 ## Links
 
