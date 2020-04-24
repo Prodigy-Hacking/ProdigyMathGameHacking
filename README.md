@@ -6,12 +6,15 @@ Instructions: **_[Redirector](https://github.com/Prodigy-Hacking/ProdigyMathGame
 
 Alternate Method (legacy): **_[{Boot}](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/archived/HowToHack.md)_**
 
+# Come check out our [Official Website](https://trip7663.wixsite.com/prodigyhackingweb)!
+
 ## Links
 
 -   **[Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki)**
 -   **[DIY!](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/issues/25)**
 -   **[Discord](https://discord.gg/9cKMgMv)**
 -   **[Cheat Dashboard](https://prodigy-cheat-dashboard.herokuapp.com/)**
+-   **[Official Website](https://trip7663.wixsite.com/prodigyhackingweb)**
 
 ## Collaborators
 
