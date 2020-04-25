@@ -1,2 +1,3 @@
 hack.constants.constants["GameConstants.Debug.SCALE_ENCOUNTER_DISTANCE"]=0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001
-//////allows you to walk past monsters like your invisible!
+//////allows you to walk past monsters like you're invisible!
+//////// just change that number to "1" and Prodigy is normal again!
