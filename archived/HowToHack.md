@@ -1,8 +1,17 @@
-# How to bypass Anti-Cheat (as of 4/15/2020)
+# How to bypass Anti-Cheat (as of 4/24/2020)
 
 ## YOU CANNOT HACK ON MOBILE DEVICES.
 
 ### Note: Only tested with GOOGLE CHROME on PC. We cannot promise the steps to hack will be the same on any other setup.
+
+---
+
+### This method is SEVERELY OUTDATED, and does not have any hacks made for this method.
+
+You should only use this method if you have to. There are no hacks made for this method, but it shouldn't be too hard to modify hacks.
+
+In most instances, in all the hacks you see, replace `hack.instance` with `temp1.object.a.a.instance`.
+Anything else is unsupported. 
 
 ---
 
@@ -30,4 +39,13 @@ If you want hacks, just ask us!
 
 ### List of currently updated hacks
 
--   [Everything.js](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/hacks/Items%20and%20gear/Everything.js)
+None. I'll give you one last bit of help, then you're on your own, cowboy.
+
+```javascript
+temp1.object.a.a.instance.prodigy //contains the prodigy object
+
+temp1.object.a.a.instance.prodigy.player.it //membership boolean
+
+temp1.object.a.a.instance.prodigy.player.data //data object
+```
+
