@@ -5,7 +5,7 @@ import { TODO } from "../../../typings/util";
 import { prodigy, game } from "../utils/util";
 import { Pet } from "../../../typings/pet";
 
-const randomSpell = () => gameData.spell[Math.floor(Math.random() * gameData.spell.length)].ID;
+const randomSpell = () => gameData.spell.filter(x => +x.ID !== 90)[Math.floor(Math.random() * gameData.spell.length)].ID;
 const toPets = (ID: number) => ({
 	ID,
 	catchDate: Date.now(),
@@ -24,6 +24,11 @@ new Hack(category.pets, "Get All Epics").setClick(async () => {
 	const epics = [125, 126, 127, 128, 129, 130, 131, 132, 133];
 	prodigy.player.kennel.data.splice(-1, 0, ...epics.map(toPets));
 	await Toast.fire("Success!", "All epics have been added!", "success");
+});
+
+new Hack(category.pets, "Fix Battle Crash").setClick(async () => {
+	prodigy.player.kennel.data.map(x => x.foreignSpells.splice(0, 1e69, ...x.foreignSpells.map(x => x === 90 ? randomSpell() : x)));
+	await Toast.fire("Success!", "Fixed kennel attack bug!", "success");
 });
 
 new Hack(category.pets, "Clear Pets").setClick(async () => {
