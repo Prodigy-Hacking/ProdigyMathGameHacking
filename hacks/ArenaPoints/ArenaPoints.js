@@ -1,4 +1,4 @@
-// Gives you 100 arena points. READ ARENAPOINTS.MD FIRST!
+// Gives you 100 arena points. READ README.MD FIRST!
 await (
     await fetch(
         `https://api.prodigygame.com/leaderboard-api/season/${hack.instance.prodigy.gameContainer.get("PVPNetworkHandler").seasonID}/user/${hack.instance.prodigy.player.userID}/pvp?userID=${hack.instance.prodigy.player.userID}`,
