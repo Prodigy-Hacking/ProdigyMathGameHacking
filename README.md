@@ -12,7 +12,7 @@ Alternate Method (legacy): **_[{Boot}](https://github.com/Prodigy-Hacking/Prodig
 
 -   **[Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki)**
 -   **[DIY!](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/issues/25)**
--   **[Discord](https://discord.gg/9cKMgMv)**
+-   **[Discord](https://discord.gg/MCSkQWV)**
 -   **[Cheat Dashboard](https://prodigy-cheat-dashboard.herokuapp.com/)**
 -   **[Official Website](https://trip7663.wixsite.com/prodigyhackingweb)**
 
