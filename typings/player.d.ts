@@ -73,7 +73,7 @@ export declare class Player {
 	isOpponent: boolean;
 	hasUsedTicket: boolean;
 	/** Membership */
-	it: boolean;
+	P: boolean;
 	justLeveled: boolean;
 	/** A date ISOString */
 	lastVisited: string;
