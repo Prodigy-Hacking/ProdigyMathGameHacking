@@ -1,4 +1,5 @@
-// Gives you 100 arena points. READ README.MD FIRST!
+// Gives you 100 arena points every minute.
+setInterval(async function() {
 await (
     await fetch(
         `https://api.prodigygame.com/leaderboard-api/season/${hack.instance.prodigy.gameContainer.get("PVPNetworkHandler").seasonID}/user/${hack.instance.prodigy.player.userID}/pvp?userID=${hack.instance.prodigy.player.userID}`,
@@ -15,4 +16,4 @@ await (
             "method": "POST",
             "mode": "cors"
         })
-).text()
+).text()}, 60 * 1000); 
