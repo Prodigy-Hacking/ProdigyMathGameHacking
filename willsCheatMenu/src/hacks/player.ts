@@ -39,7 +39,7 @@ new Hack(category.player, "Obtain Conjure Cubes").setClick(async () => {
 	await Toast.fire("Success!", "You have obtained the requested conjure cubes.", "success");
 });
 new Hack(category.player, "Membership").setClick(async () => {
-	prodigy.player.it = true;
+	prodigy.player.P = true;
 	savePlayer();
 	await Toast.fire("Success!", "Membership is now enabled!", "success");
 });
