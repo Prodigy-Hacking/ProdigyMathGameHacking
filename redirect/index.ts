@@ -41,7 +41,7 @@ app.get("/game.min.js", async (req, res) => {
 		["s),this._game=i}", `s),this._game=i};Object.defineProperty(hack, "instance", { get: () => t.instance });`],
 		["t.constants=Object", "hack.constants=t,t.constants=Object"],
 		["window,function(t){var i={};", "window,function(t){var i={};hack.modules=i;"],
-		["return t.BAM=", ";hack.variables.loc=Ar;hack.variables.menuTxt=Kr;hack.variables.menuObj=t;return t.BAM="],
+		// ["return t.BAM=", ";hack.variables.loc=Ar;hack.variables.menuTxt=Kr;hack.variables.menuObj=t;return t.BAM="],
 	];
 	return res.send(
 		replacements.reduce(

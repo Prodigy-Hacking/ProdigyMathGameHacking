@@ -93,7 +93,6 @@ app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, v
                     ["s),this._game=i}", "s),this._game=i};Object.defineProperty(hack, \"instance\", { get: () => t.instance });"],
                     ["t.constants=Object", "hack.constants=t,t.constants=Object"],
                     ["window,function(t){var i={};", "window,function(t){var i={};hack.modules=i;"],
-                    ["return t.BAM=", ";hack.variables.loc=Ar;hack.variables.menuTxt=Kr;hack.variables.menuObj=t;return t.BAM="],
                 ];
                 _b = (_a = res).send;
                 _d = (_c = replacements).reduce;
