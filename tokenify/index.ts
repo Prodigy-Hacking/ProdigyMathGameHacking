@@ -13,8 +13,8 @@ import { URLSearchParams } from "url";
 	const loginParams = new URLSearchParams();
 	loginParams.set("utf8", "✓");
 	loginParams.set("authenticity_token", authenticity);
-	loginParams.set("unauthenticated_game_login_form[username]", "WILLIAMY703");
-	loginParams.set("unauthenticated_game_login_form[password]", "spoon63");
+	loginParams.set("unauthenticated_game_login_form[username]", "e");
+	loginParams.set("unauthenticated_game_login_form[password]", "e");
 	loginParams.set("button", "");
 	const login = await fetch("https://sso.prodigygame.com/game/login", {
 		headers: {
