@@ -53,7 +53,10 @@ app.get("/game.min.js", async (req, res) => {
 	console.log("%cWill's Redirect Hack", "font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;");
 	console.log("%cVersion ${VERSION}", "font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;");
 	console.log('The variable "hack" contains the hacked variables.');
-	${await (await fetch("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/willsCheatMenu/loader.js")).text()}
+	setTimeout(() => {
+		${await (await fetch("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/willsCheatMenu/loader.js")).text()}
+
+	}, 10000)
 `
 		)
 	);
