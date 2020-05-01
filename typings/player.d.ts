@@ -46,7 +46,8 @@ export declare class Player {
 	house: TODO;
 	kennel: {
 		addPet(id: number): unknown
-		data: Pet[]
+		data: Pet[];
+		petTeam: Pet[];
 	};
 	onHPChange: TODO;
 	quests: TODO;
