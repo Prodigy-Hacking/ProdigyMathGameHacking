@@ -1,1 +1,1 @@
-hack.instance.prodigy.player.kennel._petTeam.forEach(o => o.assignRandomSpells())
+hack.instance.prodigy.player.kennel.petTeam.forEach(v => {if (v && v.assignRandomSpells) v.assignRandomSpells()})
