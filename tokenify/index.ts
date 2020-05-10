@@ -1,9 +1,13 @@
 import JSDOM from "jsdom";
 import fetch from "node-fetch";
 import { URLSearchParams } from "url";
+const USERNAME = "redacted";
+const PASSWORD = "raeacted";
 (async () => {
 	console.log("Fetching login route...");
-	const site = await (await fetch("https://sso.prodigygame.com/game/login")).text();
+	const formSite = await fetch("https://sso.prodigygame.com/game/login");
+	const site = await formSite.text();
+	
 	const dom = new JSDOM.JSDOM(site);
 	console.log("Successfully fetched.");
 	const { document } = dom.window;
@@ -13,8 +17,8 @@ import { URLSearchParams } from "url";
 	const loginParams = new URLSearchParams();
 	loginParams.set("utf8", "✓");
 	loginParams.set("authenticity_token", authenticity);
-	loginParams.set("unauthenticated_game_login_form[username]", "e");
-	loginParams.set("unauthenticated_game_login_form[password]", "e");
+	loginParams.set("unauthenticated_game_login_form[username]", USERNAME);
+	loginParams.set("unauthenticated_game_login_form[password]", PASSWORD);
 	loginParams.set("button", "");
 	const login = await fetch("https://sso.prodigygame.com/game/login", {
 		headers: {
@@ -28,10 +32,15 @@ import { URLSearchParams } from "url";
 			"sec-fetch-site": "same-origin",
 			"sec-fetch-user": "?1",
 			"upgrade-insecure-requests": "1",
+			"cookie": formSite.headers.get("set-cookie")!
 		},
 		body: loginParams.toString(),
 		method: "POST",
+		redirect: "manual"
 	});
+	// if (!login.ok) console.error("Failed to login.")
+	console.log(`Logged in with status ${login.status}.`);
+	console.log(await login.text())
 	console.log(Object.fromEntries(login.headers.entries()))
 	console.log(login.redirected)
 })();
