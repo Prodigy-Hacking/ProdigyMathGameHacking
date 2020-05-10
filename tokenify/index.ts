@@ -9,7 +9,7 @@ const PASSWORD = "raeacted";
 	const site = await formSite.text();
 	
 	const dom = new JSDOM.JSDOM(site);
-	console.log("Successfully fetched.");
+	console.log("Successfully fe`tched.");
 	const { document } = dom.window;
 	const authenticity = document.querySelector("input[name=authenticity_token]")?.getAttribute("value");
 	if (!authenticity) return console.error("[FATAL] Authenticity token failed.");
