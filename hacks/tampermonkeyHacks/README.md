@@ -1,4 +1,4 @@
-**#INSTRUCTIONS:**
+#**INSTRUCTIONS:**
 - Download [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)
 - Create a new script
 - Copy and paste the script above into that new file
