@@ -49,6 +49,7 @@ new Hack(category.inventory, "Currency").setClick(async () => {
 	await Toast.fire(
 		`Currency Added!`,
 
+		
 		`All currencies have been added to your inventory!`,
 		"success"
 	);
