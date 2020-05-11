@@ -16,6 +16,10 @@
         hack.instance.prodigy.game.state.setEnergy=99;
         hack.instance.prodigy.player.modifiers.maxHearts=9999999999999999999999999999999999999999999999999;
         hack.constants.constants["GameConstants.Battle.ATTACK_DAMAGE_OVERRIDE"]=Infinity
-        setInterval(function(){hack.instance.prodigy.game.state.states.Battle.startVictory()}, 2);
+        
+        let inBattle = false;
+        setInterval(function(){
+        if(hack.instance.prodigy.game.state.current === "Battle" && inBattle == false){inBattle = true; hack.instance.prodigy.game.state.states.Battle.startVictory(); setTimeout(function(){inBattle = false}, 30000); }
+        }, 2);
     }
 })();
