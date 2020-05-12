@@ -1,3 +1,3 @@
 // Allows player to escape battles.
-hack.functions.escapeBattle()
+hack.functions.escapeBattle();
 // Only works in battle (Obviously)
