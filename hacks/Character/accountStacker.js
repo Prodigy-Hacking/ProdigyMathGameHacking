@@ -5,7 +5,7 @@
 	const { player } = prodigy;
 	const gameData = game.state.states.Boot._gameData;
 	player.data.gold = player.data.stars = player.data.bountyScore = player.data.level = 1e69;
-	if (confirm("Do you want pets?"))
+	if (confirm("Do you want pets?")) {
 		player.kennel.data.splice(
 			0,
 			1e69,
@@ -18,6 +18,7 @@
 				stars: 1e69,
 			}))
 		);
+	}
 	player.kennel.data.forEach(x => (x.level = 1e69));
 	Object.entries(player.backpack.data).forEach(([x, y]) =>
 		// @ts-ignore
@@ -25,5 +26,4 @@
 	);
 	player.house.data.items = [];
 	gameData.dorm.map(x => (player.house.data.items[x.ID] = { A: [], N: 1e69 }));
-	player.it = true;
 })();
