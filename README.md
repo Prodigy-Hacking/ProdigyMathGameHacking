@@ -31,7 +31,7 @@ Alternate Method (legacy): **_[{Boot}](https://github.com/Prodigy-Hacking/Prodig
 
 ### Some people have been stealing our hacks.
 
-There are some groups that steal our code, and pass it off as their own. If you actually want the most updated hacks, just join our Discord!
+There are some groups that steal our code, and pass it off as their own. If you actually want the most updated hacks, this is the place. Some WIP hacks can be found on our Discord.
 
 ### Notice: We are NOT trying to ruin Prodigy Math Game.
 
