@@ -1,3 +1,2 @@
-//> Bounty Score
-//>> Sets your bounty score to a very high number.
-hack.instance.prodigy.player.data.bountyScore = 1e69;
+// Sets your bounty score to 100.
+hack.instance.prodigy.player.data.bountyScore = 100;
