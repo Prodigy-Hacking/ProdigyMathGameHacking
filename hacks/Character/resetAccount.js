@@ -1,2 +1,2 @@
-// Resets everything except your house.
+// Resets your account.
 hack.instance.prodigy.player.resetAccount();
