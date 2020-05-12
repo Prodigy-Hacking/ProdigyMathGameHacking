@@ -1,2 +1,2 @@
-//skips tutorial 
+// Skips tutorial.
 hack.functions.completeTutorial();
