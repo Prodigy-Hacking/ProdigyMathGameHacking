@@ -26,7 +26,6 @@ const inventoryHack = (
 	});
 };
 inventoryHack("Boots", "boots");
-inventoryHack("Currency", "currency", "currencies");
 inventoryHack("Buddies", "follow");
 inventoryHack("Fossils", "fossil");
 inventoryHack("Hats", "hat");
@@ -39,6 +38,23 @@ inventoryHack("Outfits", "outfit");
 inventoryHack("Relics", "relic");
 inventoryHack("Spell Relics", "spellRelic");
 inventoryHack("Weapons", "weapon");
+new Hack(category.inventory, "Currency").setClick(async () => {
+	gameData.currency.map(
+		x =>
+			(prodigy.player.backpack.data.currency[x.ID] = {
+				ID: x.ID,
+				N: VERY_LARGE_NUMBER,
+			})
+	);
+	await Toast.fire(
+		`Currency Added!`,
+
+		
+		`All currencies have been added to your inventory!`,
+		"success"
+	);
+	savePlayer();
+})
 new Hack(category.inventory, `Obtain All Furniture`).setClick(async () => {
 	gameData.dorm.map(
 		x =>

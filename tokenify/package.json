@@ -1,0 +1,18 @@
+{
+	"type": "module",
+	"name": "tokenify",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"dependencies": {
+		"@types/jsdom": "^16.2.1",
+		"@types/node-fetch": "^2.5.7",
+		"request": "^2.81.0",
+		"url": "^0.11.0",
+		"jsdom": "^16.2.2",
+		"node-fetch": "^2.6.0"
+	},
+	"scripts": {
+		"start": "tsc && node index"
+	}
+}

@@ -41,7 +41,7 @@ app.get("/game.min.js", async (req, res) => {
 		["s),this._game=i}", `s),this._game=i};Object.defineProperty(hack, "instance", { get: () => t.instance });`],
 		["t.constants=Object", "hack.constants=t,t.constants=Object"],
 		["window,function(t){var i={};", "window,function(t){var i={};hack.modules=i;"],
-		["return t.BAM=", ";hack.variables.loc=Ar;hack.variables.menuTxt=Kr;hack.variables.menuObj=t;return t.BAM="],
+		// ["return t.BAM=", ";hack.variables.loc=Ar;hack.variables.menuTxt=Kr;hack.variables.menuObj=t;return t.BAM="],
 	];
 	return res.send(
 		replacements.reduce(
@@ -53,7 +53,10 @@ app.get("/game.min.js", async (req, res) => {
 	console.log("%cWill's Redirect Hack", "font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;");
 	console.log("%cVersion ${VERSION}", "font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;");
 	console.log('The variable "hack" contains the hacked variables.');
-	${await (await fetch("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/willsCheatMenu/loader.js")).text()}
+	setTimeout(() => {
+		${await (await fetch("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/willsCheatMenu/loader.js")).text()}
+
+	}, 10000)
 `
 		)
 	);

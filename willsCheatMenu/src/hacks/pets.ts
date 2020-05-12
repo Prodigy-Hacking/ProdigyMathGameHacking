@@ -5,7 +5,8 @@ import { TODO } from "../../../typings/util";
 import { prodigy, game } from "../utils/util";
 import { Pet } from "../../../typings/pet";
 
-const randomSpell = () => gameData.spell[Math.floor(Math.random() * gameData.spell.length)].ID;
+const randomSpell = () =>
+	gameData.spell.filter(x => +x.ID !== 90)[Math.floor(Math.random() * gameData.spell.length)].ID;
 const toPets = (ID: number) => ({
 	ID,
 	catchDate: Date.now(),
@@ -24,6 +25,13 @@ new Hack(category.pets, "Get All Epics").setClick(async () => {
 	const epics = [125, 126, 127, 128, 129, 130, 131, 132, 133];
 	prodigy.player.kennel.data.splice(-1, 0, ...epics.map(toPets));
 	await Toast.fire("Success!", "All epics have been added!", "success");
+});
+
+new Hack(category.pets, "Fix Battle Crash").setClick(async () => {
+	hack.instance.prodigy.player.kennel.petTeam.forEach(v => {
+		if (v && (v as any).assignRandomSpells) (v as any).assignRandomSpells();
+	});
+	await Toast.fire("Success!", "Fixed kennel attack bug!", "success");
 });
 
 new Hack(category.pets, "Clear Pets").setClick(async () => {
@@ -107,13 +115,12 @@ new Hack(category.pets, "Edit Pet", "Edit a pet.").setClick(async () => {
 		const name = await Input.fire("Input Name", "What do you want to name the pet?", "question");
 		if (name.value === undefined) return;
 		selected.nickname = name.value;
-		await Swal.fire("Successfully renamed!", "The name of the pet has been changed.", "success")
+		await Swal.fire("Successfully renamed!", "The name of the pet has been changed.", "success");
 	}
 });
-new Hack(category.pets, "Delete Pet", "Delete a pet.")
-	.setClick(async() => {
-		const pet = await getPet("Which pet do you wish to delete?");
-		if (pet === undefined) return;
-		prodigy.player.kennel.data.splice(pet, 1);
-		await Swal.fire("Successfully deleted!", "The selected pet was deleted successfully.", "success")
-	})
+new Hack(category.pets, "Delete Pet", "Delete a pet.").setClick(async () => {
+	const pet = await getPet("Which pet do you wish to delete?");
+	if (pet === undefined) return;
+	prodigy.player.kennel.data.splice(pet, 1);
+	await Swal.fire("Successfully deleted!", "The selected pet was deleted successfully.", "success");
+});
