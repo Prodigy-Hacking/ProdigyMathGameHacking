@@ -8,12 +8,15 @@
     const backpackData = scopeObj.prodigy.player.backpack.data;
     const playerObject = scopeObj.prodigy.player;
 
+    hack.instance.prodigy.player.data.gold = 1e69;
+
     // all equipment
-    let a = ["outfit", "hat", "boots", "weapon", "spellRelic", "fossil", "follow"];
-    for (let u of a) {
-        backpackData[u] = [];
-        for (let i in bootData[u]) {
-            backpackData[u][i] = {"ID": bootData[u][i].ID};
+    let categories = ["outfit", "hat", "boots", "weapon", "spellRelic", "fossil", "follow"];
+    for (let category of categories) {
+        backpackData[category] = [];
+
+        for (let item in bootData[category]) {
+            backpackData[category][item] = {"ID": bootData[category][item].ID};
         }
     }
 
@@ -32,7 +35,7 @@
 
     // furniture
     playerObject.house.data.items = []
-    for (i in bootData.dorm) {
+    for (let i in bootData.dorm) {
         playerObject.house.data.items[bootData.dorm[i]["ID"]] = {A: [], N: 999}
     }
 })()
