@@ -1,43 +1,15 @@
-//>  Effect Spammer
-//>> Spams confetti, snowballs, water balloons, and fireworks.
-setInterval(() =>
-	hack.instance.prodigy.network.emitMessage({
-		action: "fx",
-		data: {
-			"type”:1,”userID": hack.instance.prodigy.player.userID,
-			x: Math.floor(Math.random() * 1280),
-			y: Math.floor(Math.random() * 720),
-		},
-	})
-);
-setInterval(() =>
-	hack.instance.prodigy.network.emitMessage({
-		action: "fx",
-		data: {
-			"type”:2,”userID": hack.instance.prodigy.player.userID,
-			x: Math.floor(Math.random() * 1280),
-			y: Math.floor(Math.random() * 720),
-		},
-	})
-);
-setInterval(() =>
-	hack.instance.prodigy.network.emitMessage({
-		action: "fx",
-		data: {
-			type: 3,
-			userID: hack.instance.prodigy.player.userID,
-			x: Math.floor(Math.random() * 1280),
-			y: Math.floor(Math.random() * 720),
-		},
-	})
-);
-setInterval(() =>
-	hack.instance.prodigy.network.emitMessage({
-		action: "fx",
-		data: {
-			"type”:4,”userID": hack.instance.prodigy.player.userID,
-			x: Math.floor(Math.random() * 1280),
-			y: Math.floor(Math.random() * 720),
-		},
-	})
-);
+// Effect Spammer
+// Spams confetti, snowballs, water balloons, and fireworks.
+setInterval(_ => {
+	for (let i of [1, 2, 3, 4]) {
+		hack.instance.prodigy.network.emitMessage({
+			action: "fx",
+			data: {
+				type: i,
+				userID: hack.instance.prodigy.player.userID,
+				x: Math.floor(Math.random() * 1280),
+				y: Math.floor(Math.random() * 720),
+			},
+		});
+	}
+});
