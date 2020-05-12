@@ -36,6 +36,6 @@
     // furniture
     playerObject.house.data.items = []
     for (let i in bootData.dorm) {
-        playerObject.house.data.items[bootData.dorm[i]["ID"]] = {A: [], N: 999}
+        playerObject.house.data.items[bootData.dorm[i]["ID"]] = {A: [], N: 999};
     }
-})()
+})();
