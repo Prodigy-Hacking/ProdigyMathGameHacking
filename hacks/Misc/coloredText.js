@@ -31,3 +31,8 @@ hack.instance.prodigy.user.chatText.FillColor = "#A52A2A";
 // Blue 
 hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
 hack.instance.prodigy.user.chatText.FillColor = "#0000FF";
+
+// Purple
+hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+hack.instance.prodigy.user.chatText.FillColor = "#C203F3";
+
