@@ -15,7 +15,7 @@ Alternate Method (legacy): **_[{Boot}](https://github.com/Prodigy-Hacking/Prodig
 -   **[Discord](https://discord.gg/MCSkQWV)**
 -   **[Cheat Dashboard](https://prodigy-cheat-dashboard.herokuapp.com/)**
 -   **[Official Website](https://trip7663.wixsite.com/prodigyhackingweb)**
-
+-   **[Twitter](https://twitter.com/prodigycheats)
 ## Collaborators
 
 -   [PatheticMustan](https://github.com/PatheticMustan)
