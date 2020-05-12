@@ -1,3 +1,3 @@
-// Makes you fast
-hack.instance.prodigy.game.state.states.DinoDig.walkSpeed = 100;   ~ (When You Are In The Dino Dig Area Searching For The Items)
+// Literally makes you fast
+hack.instance.prodigy.game.state.states.DinoDig.walkSpeed = 100;
 hack.instance.prodigy.user.walkSpeed = 10;
