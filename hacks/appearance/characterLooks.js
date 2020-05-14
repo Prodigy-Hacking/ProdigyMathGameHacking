@@ -26,7 +26,7 @@ hack.instance.prodigy.player.appearance.hairStyle = 1;
 hack.instance.prodigy.player.appearance.hairColor = 1;
 // Eye color
 hack.instance.prodigy.player.appearance.eyeColor = 1;
-// skin color
+// Skin color
 hack.instance.prodigy.player.appearance.skinColor = 1;
-// face
+// Face
 hack.instance.prodigy.player.appearance.face = 1;
