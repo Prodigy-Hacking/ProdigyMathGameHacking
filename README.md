@@ -6,6 +6,8 @@ Instructions: **_[Redirector](https://github.com/Prodigy-Hacking/ProdigyMathGame
 
 Alternate Method (legacy): **_[{Boot}](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/archived/HowToHack.md)_**
 
+Hack List: **[Hack List Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Hack-List)**
+
 # Come check out our [Website](https://trip7663.wixsite.com/prodigyhackingweb)!
 
 ## Links
@@ -61,8 +63,6 @@ You have been warned.
 
 ## Usage
 
-You can read the methods on how to hack the game in the **_[Hack Methods](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/HowToHack.md)_**.
-
-Any questions? Go [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/issues/20)!
+Any questions? Ask on [our Discord](https://discord.gg/MCSkQWV)!
 
 Documentation: [Docs](./docs/interfaces/_pixi_d_.pixi.md)
