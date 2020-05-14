@@ -16,7 +16,7 @@ hack.instance.prodigy.player.equipment.follow = 1;
 
 
 
-// appearance
+// Appearance
 
 // gender (only "male"/"female")
 hack.instance.prodigy.player.appearance = "male"
