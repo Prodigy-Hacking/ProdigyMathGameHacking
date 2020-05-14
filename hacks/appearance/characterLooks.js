@@ -3,7 +3,7 @@
 
 // Hat
 hack.instance.prodigy.player.equipment.hat = 1;
-// outfit
+// Outfit
 hack.instance.prodigy.player.equipment.outfit = 1;
 // spell relic
 hack.instance.prodigy.player.equipment.spellRelic = 1;
