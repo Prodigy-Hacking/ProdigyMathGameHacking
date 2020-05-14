@@ -7,9 +7,9 @@ hack.instance.prodigy.player.equipment.hat = 1;
 hack.instance.prodigy.player.equipment.outfit = 1;
 // Spell Relic
 hack.instance.prodigy.player.equipment.spellRelic = 1;
-//boots
+//Boots
 hack.instance.prodigy.player.equipment.boots = 1;
-// cloud mount (only 1)
+// Cloud mount (Only 1)
 hack.instance.prodigy.player.equipment.mount = 1
 // follow
 hack.instance.prodigy.player.equipment.follow = 1;
@@ -18,13 +18,13 @@ hack.instance.prodigy.player.equipment.follow = 1;
 
 // Appearance
 
-// gender (only "male"/"female")
+// Gender (only "Male"/"Female")
 hack.instance.prodigy.player.appearance = "male"
-// hair style
+// Hair style
 hack.instance.prodigy.player.appearance.hairStyle = 1;
-// hair color
+// Hair color
 hack.instance.prodigy.player.appearance.hairColor = 1;
-// eye color
+// Eye color
 hack.instance.prodigy.player.appearance.eyeColor = 1;
 // skin color
 hack.instance.prodigy.player.appearance.skinColor = 1;
