@@ -1,5 +1,5 @@
 // Change the number 1 to whatever item you need.
-// equipment
+// Equipment
 
 // hat
 hack.instance.prodigy.player.equipment.hat = 1;
