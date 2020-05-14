@@ -1,4 +1,4 @@
-// change the number 1 to whatever item you need.
+// Change the number 1 to whatever item you need.
 // equipment
 
 // hat
