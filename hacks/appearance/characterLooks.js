@@ -11,7 +11,7 @@ hack.instance.prodigy.player.equipment.spellRelic = 1;
 hack.instance.prodigy.player.equipment.boots = 1;
 // Cloud mount (Only 1)
 hack.instance.prodigy.player.equipment.mount = 1
-// follow
+// Follow
 hack.instance.prodigy.player.equipment.follow = 1;
 
 
