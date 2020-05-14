@@ -5,7 +5,7 @@
 hack.instance.prodigy.player.equipment.hat = 1;
 // Outfit
 hack.instance.prodigy.player.equipment.outfit = 1;
-// spell relic
+// Spell Relic
 hack.instance.prodigy.player.equipment.spellRelic = 1;
 //boots
 hack.instance.prodigy.player.equipment.boots = 1;
