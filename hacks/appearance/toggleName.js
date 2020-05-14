@@ -1,4 +1,4 @@
-// hides your name
+// Hides your name
 hack.instance.prodigy.user.hideName();
 
 // shows your name
