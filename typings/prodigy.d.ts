@@ -16,7 +16,7 @@ export declare interface Prodigy {
 	// debugQuests: TODO;
 	user: TODO;
 	pvpNetworkHandler: TODO;
-	network: TODO;
+	// network: TODO;
 	classModeController: TODO;
 	gameContainer: GameContainer;
 	dialogue: TODO;
