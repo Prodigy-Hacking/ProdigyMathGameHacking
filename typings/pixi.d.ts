@@ -16,5 +16,6 @@ declare global {
 		gameData: GameData;
 		localizer: TODO;
 		dialogue: TODO;
+		network: TODO;
 	};
 }
