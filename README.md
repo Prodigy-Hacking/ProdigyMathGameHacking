@@ -11,8 +11,8 @@ Hack List: **[Hack List Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGame
 # Come check out our [Website](https://trip7663.wixsite.com/prodigyhackingweb)!
 
 # Help us beta test our Discord bot, Reviewer!
- **[Github](https://github.com/Prodigy-Hacking/Reviewer)**
-**[Discord](https://discord.gg/ce6gQ6K)**
+-**[Github](https://github.com/Prodigy-Hacking/Reviewer)**
+-**[Discord](https://discord.gg/ce6gQ6K)**
 ## Links
 
 -   **[Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki)**
