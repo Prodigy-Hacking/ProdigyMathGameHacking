@@ -91,7 +91,9 @@ Object.defineProperty(hack, "gameData", { get: () => hack.instance.game.state.st
 Object.defineProperty(hack, "localizer", {
 	get: () => hack.instance.prodigy.gameContainer.get("LocalizationService"),
 });
-
 Object.defineProperty(hack, "network", {
 	get: () => hack.instance.prodigy.gameContainer.get("NetworkManager"),
+});
+Object.defineProperty(hack, "hack", {
+	get: () => hack,
 });
