@@ -19,6 +19,49 @@ hack.functions.completeTutorial = () => {
 	hack.instance.prodigy.open.map(true, []);
 	hack.instance.prodigy.player.onTutorialComplete();
 };
+hack.functions.generateCharacterCode = () =>{
+    console.log(
+        [
+            hack.instance.prodigy.player.name.data.nickname,
+            hack.instance.prodigy.player.name.data.firstName,
+            hack.instance.prodigy.player.name.data.middleName,
+            hack.instance.prodigy.player.name.data.lastName,
+            hack.instance.prodigy.player.data.level,
+            hack.instance.prodigy.player.appearance.gender,
+            hack.instance.prodigy.player.appearance.eyeColor,
+            hack.instance.prodigy.player.appearance.face,
+            hack.instance.prodigy.player.appearance.hairColor,
+            hack.instance.prodigy.player.appearance.hairStyle,
+            hack.instance.prodigy.player.appearance.skinColor,
+            hack.instance.prodigy.player.equipment.follow,
+            hack.instance.prodigy.player.equipment.hat,
+            hack.instance.prodigy.player.equipment.boots,
+            hack.instance.prodigy.player.equipment.outfit,
+            hack.instance.prodigy.player.equipment.weapon
+        ].map(v => v ?? 0).join("-");
+    )
+};
+hack.functions.loadCharacterCode = (code) =>{
+    let all = code.split("-")
+    let [setNickname, setFirstName, setMiddleName, setLastName, setLevel, setGender, setEyeColor, setFace, setHairColor, setHairStyle, setSkinColor, setFollow, setHat, setBoots, setOutfit, setWeapon] = all
+    let setHair = setHairStyle + setHairColor;
+    hack.instance.prodigy.player.name.data.setNickname= setNickname
+    hack.instance.prodigy.player.name.data.setFirstName=setFirstName
+    hack.instance.prodigy.player.name.data.setMiddleName=setMiddleName
+    hack.instance.prodigy.player.name.data.setLastName=setLastName
+    hack.instance.prodigy.player.data.setLevel=setLevel
+    hack.instance.prodigy.player.appearance.setGender(setGender)
+    hack.instance.prodigy.player.appearance.setEyeColor(setEyeColor)
+    hack.instance.prodigy.player.appearance.setFace(setFace)
+    hack.instance.prodigy.player.appearance.setHair(setHair)
+    hack.instance.prodigy.player.appearance.setSkinColor(setSkinColor) 
+    hack.instance.prodigy.player.equipment.setFollow(setFollow)
+    hack.instance.prodigy.player.equipment.setHat(setHat)
+    hack.instance.prodigy.player.equipment.setBoots(setBoots)
+    hack.instance.prodigy.player.equipment.setOutfit(setOutfit)
+    hack.instance.prodigy.player.equipment.setWeapon(setWeapon)
+    console.log('Success! Your character has been changed. Move to another area to see the changes.')
+}
 hack.functions.getAllPets = () =>
 	hack.instance.prodigy.player.kennel.data.splice(
 		0,
