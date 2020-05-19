@@ -21,5 +21,6 @@ export declare interface Hack {
 	localizer: TODO;
 	dialogue: TODO;
 	network: TODO;
-	hack: Hack
+	hack: Hack;
+	hackMainframe(): void;
 }
