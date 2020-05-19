@@ -1,0 +1,76 @@
+{
+	"createdBy": "Redirector v3.5.3",
+	"createdAt": "2020-04-17T18:18:42.307Z",
+	"redirects": [
+		{
+			"description": "gamemin",
+			"exampleUrl": "https://code.prodigygame.com/code/2-97-6/game.min.js?v=2-97-6",
+			"exampleResult": "https://prodigy-cheat-dashboard.herokuapp.com/",
+			"error": null,
+			"includePattern": "https://code.prodigygame.com/code/*/game.min.js?v=*",
+			"excludePattern": "",
+			"patternDesc": "",
+			"redirectUrl": "https://prodigy-cheat-dashboard.herokuapp.com/",
+			"patternType": "W",
+			"processMatches": "noProcessing",
+			"disabled": false,
+			"grouped": false,
+			"appliesTo": ["script"]
+		},
+		{
+			"description": "publicgamemin",
+			"exampleUrl": "https://play.prodigygame.com/public/js/public-game.min.js",
+			"exampleResult": "https://prodigy-cheat-dashboard.herokuapp.com/public-game.min.js",
+			"error": null,
+			"includePattern": "https://play.prodigygame.com/public/js/public-game.min.js",
+			"excludePattern": "",
+			"patternDesc": "",
+			"redirectUrl": "https://prodigy-cheat-dashboard.herokuapp.com/public-game.min.js",
+			"patternType": "W",
+			"processMatches": "noProcessing",
+			"disabled": false,
+			"grouped": false,
+			"appliesTo": ["script"]
+		},
+		{
+			"description": "test",
+			"exampleUrl": "https://code.prodigygame.com/code/*/game.min.js?v=*",
+			"exampleResult": "http://localhost:1337/game.min.js",
+			"error": null,
+			"includePattern": "https://code.prodigygame.com/code/*/game.min.js?v=*",
+			"excludePattern": "",
+			"patternDesc": "",
+			"redirectUrl": "http://localhost:1337/game.min.js",
+			"patternType": "W",
+			"processMatches": "noProcessing",
+			"disabled": true,
+			"grouped": false,
+			"appliesTo": ["script"]
+		},
+		{
+			"description": "memberhack",
+			"exampleUrl": "https://api.prodigygame.com/game-api/v1/character/62557673?isMember=0&userID=62557673",
+			"exampleResult": "https://api.prodigygame.com/game-api/v1/character/62557673?isMember=1&userID=62557673",
+			"error": null,
+			"includePattern": "https://api.prodigygame.com/game-api/v1/character/(.+)\\?isMember=0&userID=(.+)",
+			"excludePattern": "",
+			"patternDesc": "",
+			"redirectUrl": "https://api.prodigygame.com/game-api/v1/character/$1?isMember=1&userID=$2",
+			"patternType": "R",
+			"processMatches": "noProcessing",
+			"disabled": false,
+			"grouped": false,
+			"appliesTo": [
+				"sub_frame",
+				"stylesheet",
+				"script",
+				"image",
+				"imageset",
+				"object",
+				"xmlhttprequest",
+				"history",
+				"other"
+			]
+		}
+	]
+}
