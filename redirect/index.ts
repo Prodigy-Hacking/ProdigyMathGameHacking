@@ -63,7 +63,7 @@ app.get("/game.min.js", async (req, res) => {
 });
 app.get("/", (req, res) => res.redirect("/game.min.js"));
 app.get("/public-game.min.js", async (req, res) => {
-	const publicGame = await (await fetch("https://play.prodigygame.com/public/js/public-game.min.js")).text();
+	const publicGame = await (await fetch("https://code.prodigygame.com/js/public-game-4000720517.min.js")).text();
 	res.type(".js");
 	return res.send(publicGame.replace(/console\..+?\(.*?\)/g, "(()=>{})()"));
 });
