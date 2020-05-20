@@ -1,16 +1,16 @@
 {
 	"createdBy": "Redirector v3.5.3",
-	"createdAt": "2020-04-17T18:18:42.307Z",
+	"createdAt": "2020-05-20T00:08:00.781Z",
 	"redirects": [
 		{
-			"description": "gamemin",
+			"description": "game.min.js",
 			"exampleUrl": "https://code.prodigygame.com/code/2-97-6/game.min.js?v=2-97-6",
-			"exampleResult": "https://prodigy-cheat-dashboard.herokuapp.com/",
+			"exampleResult": "https://prodigy-cheat-dashboard.herokuapp.com/game.min.js",
 			"error": null,
 			"includePattern": "https://code.prodigygame.com/code/*/game.min.js?v=*",
 			"excludePattern": "",
 			"patternDesc": "",
-			"redirectUrl": "https://prodigy-cheat-dashboard.herokuapp.com/",
+			"redirectUrl": "https://prodigy-cheat-dashboard.herokuapp.com/game.min.js",
 			"patternType": "W",
 			"processMatches": "noProcessing",
 			"disabled": false,
@@ -18,22 +18,7 @@
 			"appliesTo": ["script"]
 		},
 		{
-			"description": "publicgamemin",
-			"exampleUrl": "https://play.prodigygame.com/public/js/public-game.min.js",
-			"exampleResult": "https://prodigy-cheat-dashboard.herokuapp.com/public-game.min.js",
-			"error": null,
-			"includePattern": "https://play.prodigygame.com/public/js/public-game.min.js",
-			"excludePattern": "",
-			"patternDesc": "",
-			"redirectUrl": "https://prodigy-cheat-dashboard.herokuapp.com/public-game.min.js",
-			"patternType": "W",
-			"processMatches": "noProcessing",
-			"disabled": false,
-			"grouped": false,
-			"appliesTo": ["script"]
-		},
-		{
-			"description": "test",
+			"description": "Debugging - DO NOT ENABLE",
 			"exampleUrl": "https://code.prodigygame.com/code/*/game.min.js?v=*",
 			"exampleResult": "http://localhost:1337/game.min.js",
 			"error": null,
@@ -48,7 +33,22 @@
 			"appliesTo": ["script"]
 		},
 		{
-			"description": "memberhack",
+			"description": "public-game.min.js",
+			"exampleUrl": "https://code.prodigygame.com/js/public-game-4000720517.min.js",
+			"exampleResult": "https://prodigy-cheat-dashboard.herokuapp.com/public-game.min.js",
+			"error": null,
+			"includePattern": "https://code.prodigygame.com/js/public-game-*.min.js",
+			"excludePattern": "",
+			"patternDesc": "",
+			"redirectUrl": "https://prodigy-cheat-dashboard.herokuapp.com/public-game.min.js",
+			"patternType": "W",
+			"processMatches": "noProcessing",
+			"disabled": false,
+			"grouped": false,
+			"appliesTo": ["script"]
+		},
+		{
+			"description": "Member Hack",
 			"exampleUrl": "https://api.prodigygame.com/game-api/v1/character/62557673?isMember=0&userID=62557673",
 			"exampleResult": "https://api.prodigygame.com/game-api/v1/character/62557673?isMember=1&userID=62557673",
 			"error": null,
