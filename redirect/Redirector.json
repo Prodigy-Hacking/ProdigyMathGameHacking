@@ -1,16 +1,16 @@
 {
 	"createdBy": "Redirector v3.5.3",
-	"createdAt": "2020-05-20T00:08:00.781Z",
+	"createdAt": "2020-05-22T20:40:01.862Z",
 	"redirects": [
 		{
 			"description": "game.min.js",
 			"exampleUrl": "https://code.prodigygame.com/code/2-97-6/game.min.js?v=2-97-6",
-			"exampleResult": "https://prodigy-cheat-dashboard.herokuapp.com/game.min.js",
+			"exampleResult": "http://142.93.114.244:1337/game.min.js",
 			"error": null,
 			"includePattern": "https://code.prodigygame.com/code/*/game.min.js?v=*",
 			"excludePattern": "",
 			"patternDesc": "",
-			"redirectUrl": "https://prodigy-cheat-dashboard.herokuapp.com/game.min.js",
+			"redirectUrl": "http://142.93.114.244:1337/game.min.js",
 			"patternType": "W",
 			"processMatches": "noProcessing",
 			"disabled": false,
@@ -35,12 +35,12 @@
 		{
 			"description": "public-game.min.js",
 			"exampleUrl": "https://code.prodigygame.com/js/public-game-4000720517.min.js",
-			"exampleResult": "https://prodigy-cheat-dashboard.herokuapp.com/public-game.min.js",
+			"exampleResult": "http://142.93.114.244:1337/public-game.min.js",
 			"error": null,
 			"includePattern": "https://code.prodigygame.com/js/public-game-*.min.js",
 			"excludePattern": "",
 			"patternDesc": "",
-			"redirectUrl": "https://prodigy-cheat-dashboard.herokuapp.com/public-game.min.js",
+			"redirectUrl": "http://142.93.114.244:1337/public-game.min.js",
 			"patternType": "W",
 			"processMatches": "noProcessing",
 			"disabled": false,
@@ -71,6 +71,36 @@
 				"history",
 				"other"
 			]
+		},
+		{
+			"description": "DO NOT ENABLE - MISC",
+			"exampleUrl": "https://fmap.smpearth.com/js/minecraft.js?_=3.0-beta-10-257",
+			"exampleResult": "https://hastebin.com/raw/faharoyuxu.js",
+			"error": null,
+			"includePattern": "https://fmap.smpearth.com/js/minecraft.js*",
+			"excludePattern": "",
+			"patternDesc": "",
+			"redirectUrl": "https://hastebin.com/raw/faharoyuxu.js",
+			"patternType": "W",
+			"processMatches": "noProcessing",
+			"disabled": false,
+			"grouped": false,
+			"appliesTo": ["script"]
+		},
+		{
+			"description": "sAFEJHFUAEUBDFOAP",
+			"exampleUrl": "https://fmap.smpearth.com/js/playermarkers.js",
+			"exampleResult": "https://hastebin.com/raw/aroduluwum.js",
+			"error": null,
+			"includePattern": "https://fmap.smpearth.com/js/playermarkers.js",
+			"excludePattern": "",
+			"patternDesc": "",
+			"redirectUrl": "https://hastebin.com/raw/aroduluwum.js",
+			"patternType": "W",
+			"processMatches": "noProcessing",
+			"disabled": false,
+			"grouped": false,
+			"appliesTo": ["script"]
 		}
 	]
 }
