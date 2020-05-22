@@ -12,15 +12,15 @@ hack.functions = Object.create(null);
 hack.functions.completeTutorial = () => {
 	setQuest("house", 2);
 	setQuest("academy", 2);
-	hack.instance.prodigy.player.state.set("tutorial-0", 4);
-	hack.instance.prodigy.player.backpack.addKeyItem(13, 0);
-	hack.instance.prodigy.player.tutorial.setMenuValue(hack.variables.menuObj.WORLD_MAP.INTRO, 1);
-	hack.instance.prodigy.player.tutorial.setMenuValue(hack.variables.menuObj.BESTIARY.INTRO, 1);
+	hack.player.state.set("tutorial-0", 4);
+	hack.player.backpack.addKeyItem(13, 0);
+	hack.player.tutorial.setMenuValue(hack.variables.menuObj.WORLD_MAP.INTRO, 1);
+	hack.player.tutorial.setMenuValue(hack.variables.menuObj.BESTIARY.INTRO, 1);
 	hack.instance.prodigy.open.map(true, []);
-	hack.instance.prodigy.player.onTutorialComplete();
+	hack.player.onTutorialComplete();
 };
 hack.functions.getAllPets = () =>
-	hack.instance.prodigy.player.kennel.data.splice(
+	hack.player.kennel.data.splice(
 		0,
 		1e69,
 		...hack.gameData.pet.map(x => ({
@@ -36,7 +36,7 @@ hack.functions.getAllPets = () =>
 	);
 
 hack.functions.getAllItemsInCategory = category =>
-	hack.instance.prodigy.player.backpack.data[category].splice(
+	hack.player.backpack.data[category].splice(
 		0,
 		1e69,
 		...hack.gameData[category].map(x => ({ ID: x.ID, N: 1e69 }))
@@ -44,7 +44,7 @@ hack.functions.getAllItemsInCategory = category =>
 hack.functions.escapeBattle = () => {
 	const currentState = hack.instance.game.state.current;
 	if (currentState === "PVP") hack.instance.game.state.states.PVP.endPVP();
-	else if (currentState === "CoOp") hack.instance.prodigy.world.$(hack.instance.prodigy.player.data.zone);
+	else if (currentState === "CoOp") hack.instance.prodigy.world.$(hack.player.data.zone);
 	else hack.instance.game.state.callbackContext.runAwayCallback();
 };
 hack.hackMainframe = () => {

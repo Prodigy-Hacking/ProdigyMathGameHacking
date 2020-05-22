@@ -1,2 +1,2 @@
 // Randomizes your name.
-hack.instance.prodigy.player.name.generateRandomName();
+hack.player.name.generateRandomName();
