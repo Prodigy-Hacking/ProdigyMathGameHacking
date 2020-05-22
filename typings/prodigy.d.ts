@@ -8,7 +8,6 @@ import { GameContainer } from "./gameContainer";
 export declare interface Prodigy {
 	version: string;
 	game: Game;
-	player: Player;
 	// debugMisc: DebugMisc;
 	world: TODO;
 	giftBoxController: TODO;

@@ -125,3 +125,6 @@ Object.defineProperty(hack, "network", {
 Object.defineProperty(hack, "hack", {
 	get: () => hack,
 });
+Object.defineProperty(hack, "player", {
+	get: () => hack.instance.prodigy.gameContainer.get("LoggedInPlayer").player,
+});
