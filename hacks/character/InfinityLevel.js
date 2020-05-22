@@ -1,2 +1,2 @@
 // Level Infinity (Client side only).
-hack.instance.prodigy.player.getLevel = () => hack.instance.prodigy.player.data.level = Infinity;
+hack.player.getLevel = () => hack.player.data.level = Infinity;

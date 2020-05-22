@@ -1,5 +1,5 @@
 // Sets your nickname.
-hack.instance.prodigy.player.name.data.nickname = 7; 
+hack.player.name.data.nickname = 7; 
 
 /* Put a number one through 55.  The associations are as follows:
  * 1.  Buccaneer
