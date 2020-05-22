@@ -5,9 +5,9 @@ setInterval(_ => {
             "https://api.prodigygame.com/leaderboard-api/season/" + 
             hack.instance.prodigy.gameContainer.get("PVPNetworkHandler").seasonID +
             "/user/" + 
-            hack.instance.prodigy.player.userID + 
+            hack.player.userID + 
             "/pvp?userID=" + 
-            hack.instance.prodigy.player.userID
+            hack.player.userID
         ),
         
         {

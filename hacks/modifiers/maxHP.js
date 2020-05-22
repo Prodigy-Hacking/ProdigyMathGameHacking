@@ -1,2 +1,2 @@
 // Infinite HP.
-hack.instance.prodigy.player.modifiers.maxHearts = Infinity;
+hack.player.modifiers.maxHearts = Infinity;
