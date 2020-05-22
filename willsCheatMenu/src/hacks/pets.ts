@@ -28,7 +28,7 @@ new Hack(category.pets, "Get All Epics").setClick(async () => {
 });
 
 new Hack(category.pets, "Fix Battle Crash").setClick(async () => {
-	hack.instance.prodigy.player.kennel.petTeam.forEach(v => {
+	hack.player.kennel.petTeam.forEach(v => {
 		if (v && (v as any).assignRandomSpells) (v as any).assignRandomSpells();
 	});
 	await Toast.fire("Success!", "Fixed kennel attack bug!", "success");

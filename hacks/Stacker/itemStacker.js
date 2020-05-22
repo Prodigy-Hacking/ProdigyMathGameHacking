@@ -5,10 +5,10 @@
     
     // do not modify.
     const bootData = scopeObj.game.state.states.Boot._gameData;
-    const backpackData = scopeObj.prodigy.player.backpack.data;
-    const playerObject = scopeObj.prodigy.player;
+    const backpackData = scopeObj.player.backpack.data;
+    const playerObject = scopeObj.player;
 
-    hack.instance.prodigy.player.data.gold = 1e69;
+    hack.player.data.gold = 1e69;
 
     // all equipment
     let categories = ["outfit", "hat", "boots", "weapon", "spellRelic", "fossil", "follow"];

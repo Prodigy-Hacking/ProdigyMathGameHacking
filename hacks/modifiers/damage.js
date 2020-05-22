@@ -1,2 +1,2 @@
 // Infinite damage.
-hack.instance.prodigy.player.modifiers.damage = Infinity;
+hack.player.modifiers.damage = Infinity;

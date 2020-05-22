@@ -1,2 +1,2 @@
 // Sets your name to "Apprentice"
-hack.instance.prodigy.player.name.data.lastName = hack.instance.prodigy.player.name.data.firstName = null;
+hack.player.name.data.lastName = hack.player.name.data.firstName = null;
