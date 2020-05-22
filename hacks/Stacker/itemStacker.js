@@ -2,17 +2,18 @@
 (() => {
     // FMI: every time prodigy patches, update scopeObj.
     const scopeObj = hack.instance;
+    const playerObject = hack.player;
     
     // do not modify.
     const bootData = scopeObj.game.state.states.Boot._gameData;
     const backpackData = hack.player.backpack.data;
-    const playerObject = hack.player;
 
     hack.player.data.gold = 1e69;
 
     // all equipment
-    let categories = ["outfit", "hat", "boots", "weapon", "spellRelic", "fossil", "follow"];
+    let categories = ["boots", "follow", "fossil", "hat", "key", "mathTownFrame", "mathTownInterior", "outfit", "relic", "spellRelic", "weapon"];
     for (let category of categories) {
+		
         backpackData[category] = [];
 
         for (let item in bootData[category]) {
@@ -38,4 +39,8 @@
     for (let i in bootData.dorm) {
         playerObject.house.data.items[bootData.dorm[i]["ID"]] = {A: [], N: 999};
     }
+    
+    // Remove bounty notes (#229)
+    let bountyIndex = _ => hack.player.backpack.data.item.findIndex(v => v.ID === 84 || v.ID === 85 || v.ID === 86)
+    while (bountyIndex() > -1) hack.player.backpack.data.item.splice(bountyIndex(), 1)
 })();
