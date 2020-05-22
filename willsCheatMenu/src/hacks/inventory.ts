@@ -16,7 +16,7 @@ const inventoryHack = (
 	lowercase: string = name.toLowerCase()
 ) => {
 	new Hack(category.inventory, `Obtain All ${name}`).setClick(async () => {
-		prodigy.player.backpack.data[id] = itemify(gameData[id]);
+		hack.player.backpack.data[id] = itemify(gameData[id]);
 		await Toast.fire(
 			`${name} Added!`,
 			`All ${lowercase} have been added to your inventory!`,
@@ -41,7 +41,7 @@ inventoryHack("Weapons", "weapon");
 new Hack(category.inventory, "Currency").setClick(async () => {
 	gameData.currency.map(
 		x =>
-			(prodigy.player.backpack.data.currency[x.ID] = {
+			(hack.player.backpack.data.currency[x.ID] = {
 				ID: x.ID,
 				N: VERY_LARGE_NUMBER,
 			})
@@ -58,7 +58,7 @@ new Hack(category.inventory, "Currency").setClick(async () => {
 new Hack(category.inventory, `Obtain All Furniture`).setClick(async () => {
 	gameData.dorm.map(
 		x =>
-			(prodigy.player.house.data.items[x.ID] = {
+			(hack.player.house.data.items[x.ID] = {
 				A: [],
 				N: VERY_LARGE_NUMBER,
 			})
