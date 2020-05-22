@@ -6,6 +6,7 @@
 
 ---
 
+# THIS METHOD IS BROKEN AS OF 5/22/2020.
 ### This method is SEVERELY OUTDATED, and does not have any hacks made for this method.
 
 You should only use this method if you have to. There are no hacks made for this method, but it shouldn't be too hard to modify hacks.
