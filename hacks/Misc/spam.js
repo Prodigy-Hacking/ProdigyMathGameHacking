@@ -6,7 +6,7 @@ setInterval(_ => {
 			action: "fx",
 			data: {
 				type: i,
-				userID: hack.instance.prodigy.player.userID,
+				userID: hack.player.userID,
 				x: Math.floor(Math.random() * 1280),
 				y: Math.floor(Math.random() * 720),
 			},

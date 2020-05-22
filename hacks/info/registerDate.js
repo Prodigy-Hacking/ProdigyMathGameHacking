@@ -1,2 +1,2 @@
 // Finds out when you made your account
-hack.instance.prodigy.player.registerDate
+hack.player.registerDate
