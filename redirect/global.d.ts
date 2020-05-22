@@ -1,5 +1,6 @@
 import { PIXI } from "../typings/pixi";
 import { BackpackData } from "../typings/backpack";
+import { Player } from "../typings/player"
 export declare interface HackFunctions {
 	completeTutorial(): void;
 	getAllPets(): void;
@@ -22,5 +23,6 @@ export declare interface Hack {
 	dialogue: TODO;
 	network: TODO;
 	hack: Hack;
+	player: Player;
 	hackMainframe(): void;
 }
