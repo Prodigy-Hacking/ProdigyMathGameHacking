@@ -16,9 +16,9 @@ new Toggler(category.misc, "Clothing Vibe")
 		viber = window.setInterval(() => {
 			const rand = <T extends { ID: number }>(arr: T[]) =>
 				pickRandom(arr).ID;
-			prodigy.player.equipment.setOutfit(rand(gameData.outfit));
-			prodigy.player.equipment.setBoots(rand(gameData.boots));
-			prodigy.player.equipment.setHat(rand(gameData.hat));
+			hack.player.equipment.setOutfit(rand(gameData.outfit));
+			hack.player.equipment.setBoots(rand(gameData.boots));
+			hack.player.equipment.setHat(rand(gameData.hat));
 			prodigy.user.reload();
 		}, 1000);
 	})
@@ -41,24 +41,24 @@ new Hack(
 	)
 		return;
 	// prodigy.debugQuests.completeTutorial();
-	prodigy.player.name.data.nickname = null;
-	prodigy.player.name.data.firstName = 44;
-	prodigy.player.name.data.middleName = 754;
-	prodigy.player.name.data.lastName = 882;
-	prodigy.player.data.stars = -1e22;
-	prodigy.player.data.level = 69;
-	prodigy.player.forceSaveCharacter();
-	prodigy.player.appearance.setGender("male");
-	prodigy.player.appearance.setEyeColor(1);
-	prodigy.player.appearance.setFace(4);
-	prodigy.player.appearance.setHair(19, 1);
-	prodigy.player.appearance.setSkinColor(1);
-	prodigy.player.equipment.setFollow(19);
-	prodigy.player.equipment.setHat(19);
-	prodigy.player.equipment.setBoots(19);
-	prodigy.player.equipment.setOutfit(19);
-	prodigy.player.equipment.setWeapon(19);
-	prodigy.player.forceSaveCharacter();
+	hack.player.name.data.nickname = null;
+	hack.player.name.data.firstName = 44;
+	hack.player.name.data.middleName = 754;
+	hack.player.name.data.lastName = 882;
+	hack.player.data.stars = -1e22;
+	hack.player.data.level = 69;
+	hack.player.forceSaveCharacter();
+	hack.player.appearance.setGender("male");
+	hack.player.appearance.setEyeColor(1);
+	hack.player.appearance.setFace(4);
+	hack.player.appearance.setHair(19, 1);
+	hack.player.appearance.setSkinColor(1);
+	hack.player.equipment.setFollow(19);
+	hack.player.equipment.setHat(19);
+	hack.player.equipment.setBoots(19);
+	hack.player.equipment.setOutfit(19);
+	hack.player.equipment.setWeapon(19);
+	hack.player.forceSaveCharacter();
 	await Toast.fire("Bobbified!", "You are now Bobby Fancywoman.", "success");
 });
 let snowball: number[] = [];
@@ -71,13 +71,13 @@ new Toggler(
 		for (let i = 0; i < 10000; i++)
 			snowball.push(
 				setInterval(() =>
-					prodigy.network.emitMessage(
+					hack.network.emitMessage(
 						{
 							action: "fx",
 							data: {
 								type: 3 + i % 2,
 								userID:
-									prodigy.player.userID,
+									hack.player.userID,
 								x: Math.floor(Math.random() * 1280),
 								y: Math.floor(Math.random() * 720),
 							},
