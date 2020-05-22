@@ -17,13 +17,13 @@ const toPets = (ID: number) => ({
 });
 new Hack(category.pets, "Get All Pets").setClick(async () => {
 	const pets = gameData.pet.map(x => toPets(x.ID));
-	prodigy.player.kennel.data.splice(-1, 0, ...pets);
+	hack.player.kennel.data.splice(-1, 0, ...pets);
 	await Toast.fire("Success!", "All pets have been added!", "success");
 });
 
 new Hack(category.pets, "Get All Epics").setClick(async () => {
 	const epics = [125, 126, 127, 128, 129, 130, 131, 132, 133];
-	prodigy.player.kennel.data.splice(-1, 0, ...epics.map(toPets));
+	hack.player.kennel.data.splice(-1, 0, ...epics.map(toPets));
 	await Toast.fire("Success!", "All epics have been added!", "success");
 });
 
@@ -35,7 +35,7 @@ new Hack(category.pets, "Fix Battle Crash").setClick(async () => {
 });
 
 new Hack(category.pets, "Clear Pets").setClick(async () => {
-	prodigy.player.kennel.data.length = 0;
+	hack.player.kennel.data.length = 0;
 	await Toast.fire("Success!", "Your pets have been cleared!", "success");
 });
 
@@ -47,14 +47,14 @@ new Hack(category.pets, "Add Pet", "Adds a pet from a list.").setClick(async () 
 		text: "Which pet do you want to obtain?",
 	});
 	if (pet.value === undefined) return;
-	prodigy.player.kennel.addPet(pet.value);
+	hack.player.kennel.addPet(pet.value);
 	await Toast.fire("Success!", "Your chosen pet has been added to your pets!", "success");
 });
 const getPet = async (text: string): Promise<number | undefined> => {
 	const pet = await Swal.fire({
 		input: "select",
 		inputOptions: new Map(
-			prodigy.player.kennel.data.map((x: TODO, i: number) => [
+			hack.player.kennel.data.map((x: TODO, i: number) => [
 				i.toString(),
 				`Level ${x.level} - ${x.nickname ?? gameData.pet.find(y => +y.ID === +x.ID)?.data.name ?? "Unknown"}`,
 			]) as [string, string][]
@@ -67,7 +67,7 @@ const getPet = async (text: string): Promise<number | undefined> => {
 new Hack(category.pets, "Edit Pet", "Edit a pet.").setClick(async () => {
 	const pet = await getPet("Choose the pet to edit.");
 	if (pet === undefined) return;
-	const selected = prodigy.player.kennel.data[pet];
+	const selected = hack.player.kennel.data[pet];
 	const opt = await Swal.fire({
 		input: "select",
 		inputOptions: { level: "Level", attacks: "Attacks", name: "Name" },
@@ -121,6 +121,6 @@ new Hack(category.pets, "Edit Pet", "Edit a pet.").setClick(async () => {
 new Hack(category.pets, "Delete Pet", "Delete a pet.").setClick(async () => {
 	const pet = await getPet("Which pet do you wish to delete?");
 	if (pet === undefined) return;
-	prodigy.player.kennel.data.splice(pet, 1);
+	hack.player.kennel.data.splice(pet, 1);
 	await Swal.fire("Successfully deleted!", "The selected pet was deleted successfully.", "success");
 });
