@@ -7,7 +7,7 @@ new Hack(category.battle, "Escape Battle", "Escape any battle!").setClick(async 
 	const currentState = game.state.current;
 	if (currentState === "PVP") game.state.states.PVP.endPVP();
 	else if (currentState === "CoOp")
-		prodigy.world.$(prodigy.player.data.zone);
+		prodigy.world.$(hack.player.data.zone);
 	else game.state.callbackContext.runAwayCallback();
 	await Toast.fire(
 		"Escaped!",
@@ -43,9 +43,9 @@ new Hack(category.battle, "Set Battle Hearts", "Sets your hearts in battle. Auto
 	.setClick(async() => {
 		const hp = await NumberInput.fire("Health Amount", "How much HP do you want?", "question");
 		if (hp.value === undefined) return;
-		prodigy.player.getMaxHearts = () => +hp.value;
-		prodigy.player.pvpHP = +hp.value;
-		prodigy.player.data.hp = +hp.value;
+		hack.player.getMaxHearts = () => +hp.value;
+		hack.player.pvpHP = +hp.value;
+		hack.player.data.hp = +hp.value;
 		await Toast.fire("Success!", "Your hearts have been set.", "success");
 	})
 new Hack(category.battle, "Fill Battle Energy", "Fills up your battle energy.")

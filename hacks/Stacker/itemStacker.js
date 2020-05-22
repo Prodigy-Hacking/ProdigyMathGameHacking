@@ -5,8 +5,8 @@
     
     // do not modify.
     const bootData = scopeObj.game.state.states.Boot._gameData;
-    const backpackData = scopeObj.player.backpack.data;
-    const playerObject = scopeObj.player;
+    const backpackData = hack.player.backpack.data;
+    const playerObject = hack.player;
 
     hack.player.data.gold = 1e69;
 
