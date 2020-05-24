@@ -14,3 +14,6 @@ hack.constants.constants["GameConstants." + "ReplaceWithBossName" + ".DIFFICULTY
 // ShadowGerald
 // StormyStorm
 // Cebollini
+
+//bookmarklet, replace "ReplaceWithBossName" with a boss name.
+javascript:(function()%7Bhack.constants.constants%5B%22GameConstants.%22%20%2B%20%22ReplaceWithBossName%22%20%2B%20%22.DIFFICULTY%22%5D%20%3D%200%3B%7D)()%3B
