@@ -7,6 +7,7 @@ Instructions: **_[Redirector](https://github.com/Prodigy-Hacking/ProdigyMathGame
 Alternate Method (legacy): **_[{Boot}](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/archived/HowToHack.md)_**
 
 ## **_Quick Note: These hacks are not in working order. They will be updated and fixed no later than 6/1/20. Thanks for your understanding!_**
+# For now, use the **_[{Boot}](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/archived/HowToHack.md)_** option.
 
 Hack List: **[Hack List Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Hack-List)**
 
