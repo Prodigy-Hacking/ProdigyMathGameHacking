@@ -1,5 +1,7 @@
 hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
 hack.instance.prodigy.user.chatText.FillColor = "#FFFFFF";
+hack.instance.prodigy.user.chatText.FontSize= "15"
+
 
 
 // Other chat colors:
