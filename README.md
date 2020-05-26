@@ -1,6 +1,6 @@
 # Prodigy Math Game Hacks
 
-## We've hacked the game again!
+## Redirector will be fixed 6/1/2020, until then hacks are broken.
 
 Instructions: **_[Redirector](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)_** (Recommended)
 
