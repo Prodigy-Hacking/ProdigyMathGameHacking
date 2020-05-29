@@ -2,18 +2,16 @@
 
 ## Redirector will be fixed 6/1/2020, until then hacks are broken.
 
-Instructions: **_[Redirector](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)_** (Recommended)
-
-Redirector JSON: **_[Redirector JSON](https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/redirect/Redirector.json)_**
-
-Hack List: **[Hack List Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Hack-List)**
-
-# Come check out our [Website](https://trip7663.wixsite.com/prodigyhackingweb)!
+Redirector Instructions:
+- **[Redirector](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)** (Recommended)
+- **[Locally Host Redirector](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/redirect/README.md)** (Advanced)
+  - Redirector JSON: **[Redirector JSON](https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/redirect/Redirector.json)**
 
 ## Links
 
--   **[Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki)**
 -   **[Discord](https://discord.gg/MCSkQWV)**
+-   **[Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki)**
+-   **[Hack List](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Hack-List)**
 -   **[Official Website](https://trip7663.wixsite.com/prodigyhackingweb)**
 
 ## Collaborators
