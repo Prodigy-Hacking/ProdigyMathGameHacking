@@ -9,7 +9,7 @@ Redirector Instructions:
 
 ## Links
 
--   **[Discord](https://discord.gg/MCSkQWV)**
+-   **[Discord](https://discord.gg/PgPa5T5)**
 -   **[Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki)**
 -   **[Hack List](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Hack-List)**
 -   **[Official Website](https://trip7663.wixsite.com/prodigyhackingweb)**
@@ -60,6 +60,6 @@ You have been warned.
 
 ## Usage
 
-Any questions? Ask on [our Discord](https://discord.gg/MCSkQWV)!
+Any questions? Ask on [our Discord](https://discord.gg/PgPa5T5)!
 
 Documentation: [Docs](./docs/interfaces/_pixi_d_.pixi.md)
