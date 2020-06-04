@@ -2,26 +2,18 @@
 
 ## Redirector will be fixed 6/1/2020, until then hacks are broken.
 
-Instructions: **_[Redirector](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)_** (Recommended)
+Redirector Instructions:
+- **[Redirector](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)** (Recommended)
+- **[Locally Host Redirector](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/redirect/README.md)** (Advanced)
+  - Redirector JSON: **[Redirector JSON](https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/redirect/Redirector.json)**
 
-Alternate Method (legacy): **_[{Boot}](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/archived/HowToHack.md)_**
-
-Hack List: **[Hack List Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Hack-List)**
-
-# Come check out our [Website](https://trip7663.wixsite.com/prodigyhackingweb)!
-
-# Help us beta test our Discord bot, Reviewer!
-**[Github](https://github.com/Prodigy-Hacking/Reviewer)**
-
-**[Discord](https://discord.gg/ce6gQ6K)**
 ## Links
 
--   **[Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki)**
--   **[DIY!](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/issues/25)**
 -   **[Discord](https://discord.gg/MCSkQWV)**
--   **[Cheat Dashboard](https://prodigy-cheat-dashboard.herokuapp.com/)**
+-   **[Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki)**
+-   **[Hack List](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Hack-List)**
 -   **[Official Website](https://trip7663.wixsite.com/prodigyhackingweb)**
--   **[Twitter](https://twitter.com/prodigycheats)**
+
 ## Collaborators
 
 -   [PatheticMustan](https://github.com/PatheticMustan)
@@ -33,7 +25,8 @@ Hack List: **[Hack List Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGame
 -   [gothboymike](https://github.com/gothboymike)
 
 ## Announcements
-## Now, with the redirector hack, we can achieve permanent membership!
+
+### Now, with the redirector hack, we can achieve permanent membership!
 
 ### Some people have been stealing our hacks.
 
