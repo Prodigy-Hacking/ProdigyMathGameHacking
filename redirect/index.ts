@@ -63,7 +63,8 @@ app.get("/game.min.js", async (req, res) => {
 });
 app.get("/", (req, res) => res.redirect("/game.min.js"));
 app.get("/public-game.min.js", async (req, res) => {
-	const publicGame = await (await fetch("https://code.prodigygame.com/js/public-game-4000720517.min.js")).text();
+	if (!req.query.hash) return res.send("alert('OUTDATED REDIRECTOR CONFIG')")
+	const publicGame = await (await fetch(`https://code.prodigygame.com/js/public-game-${req.query.hash}.min.js`)).text();
 	res.type(".js");
 	return res.send(publicGame.replace(/console\..+?\(.*?\)/g, "(()=>{})()"));
 });
