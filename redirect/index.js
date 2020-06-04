@@ -109,7 +109,10 @@ app.get("/public-game.min.js", function (req, res) { return __awaiter(void 0, vo
     var publicGame;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, node_fetch_1.default("https://code.prodigygame.com/js/public-game-4000720517.min.js")];
+            case 0:
+                if (!req.query.hash)
+                    return [2 /*return*/, res.send("alert('OUTDATED REDIRECTOR CONFIG')")];
+                return [4 /*yield*/, node_fetch_1.default("https://code.prodigygame.com/js/public-game-" + req.query.hash + ".min.js")];
             case 1: return [4 /*yield*/, (_a.sent()).text()];
             case 2:
                 publicGame = _a.sent();
