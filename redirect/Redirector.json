@@ -1,91 +1,76 @@
 {
-    "createdBy": "Redirector v3.5.3",
-    "createdAt": "2020-05-28T16:28:07.522Z",
-    "redirects": [
-        {
-            "description": "game.min.js",
-            "exampleUrl": "https://code.prodigygame.com/code/2-97-6/game.min.js?v=2-97-6",
-            "exampleResult": "https://prodigy-cheat-dashboard.herokuapp.com/game.min.js",
-            "error": null,
-            "includePattern": "https://code.prodigygame.com/code/*/game.min.js?v=*",
-            "excludePattern": "",
-            "patternDesc": "",
-            "redirectUrl": "https://prodigy-cheat-dashboard.herokuapp.com/game.min.js",
-            "patternType": "W",
-            "processMatches": "noProcessing",
-            "disabled": false,
-            "grouped": false,
-            "appliesTo": [
-                "script"
-            ]
-        },
-        {
-            "description": "public-game.min.js",
-            "exampleUrl": "https://code.prodigygame.com/js/public-game-4000720517.min.js",
-            "exampleResult": "https://prodigy-cheat-dashboard.herokuapp.com/public-game.min.js",
-            "error": null,
-            "includePattern": "https://code.prodigygame.com/js/public-game-*.min.js",
-            "excludePattern": "",
-            "patternDesc": "",
-            "redirectUrl": "https://prodigy-cheat-dashboard.herokuapp.com/public-game.min.js",
-            "patternType": "W",
-            "processMatches": "noProcessing",
-            "disabled": false,
-            "grouped": false,
-            "appliesTo": [
-                "script"
-            ]
-        },
-        {
-            "description": "Localhost game.min.js",
-            "exampleUrl": "https://code.prodigygame.com/code/*/game.min.js?v=*",
-            "exampleResult": "http://localhost:1337/game.min.js",
-            "error": null,
-            "includePattern": "https://code.prodigygame.com/code/*/game.min.js?v=*",
-            "excludePattern": "",
-            "patternDesc": "",
-            "redirectUrl": "http://localhost:1337/game.min.js",
-            "patternType": "W",
-            "processMatches": "noProcessing",
-            "disabled": true,
-            "grouped": false,
-            "appliesTo": [
-                "script"
-            ]
-        },
-        {
-            "description": "Localhost public.game.min.js",
-            "exampleUrl": "https://code.prodigygame.com/js/public-game-4000720517.min.js",
-            "exampleResult": "http://localhost:1337/public-game.min.js",
-            "error": null,
-            "includePattern": "https://code.prodigygame.com/js/public-game-*.min.js",
-            "excludePattern": "",
-            "patternDesc": "",
-            "redirectUrl": "http://localhost:1337/public-game.min.js",
-            "patternType": "W",
-            "processMatches": "noProcessing",
-            "disabled": true,
-            "grouped": false,
-            "appliesTo": [
-                "script"
-            ]
-        },
-        {
-            "description": "Member Hack",
-            "exampleUrl": "https://api.prodigygame.com/game-api/v1/character/62557673?isMember=0&userID=62557673",
-            "exampleResult": "https://api.prodigygame.com/game-api/v1/character/62557673?isMember=1&userID=62557673",
-            "error": null,
-            "includePattern": "https://api.prodigygame.com/game-api/v1/character/(.+)\\?isMember=0&userID=(.+)",
-            "excludePattern": "",
-            "patternDesc": "",
-            "redirectUrl": "https://api.prodigygame.com/game-api/v1/character/$1?isMember=1&userID=$2",
-            "patternType": "R",
-            "processMatches": "noProcessing",
-            "disabled": false,
-            "grouped": false,
-            "appliesTo": [
-                "xmlhttprequest"
-            ]
-        }
-    ]
+	"createdBy": "Redirector v3.5.3",
+	"createdAt": "2020-06-04T19:08:44.799Z",
+	"redirects": [
+		{
+			"description": "game.min.js",
+			"exampleUrl": "https://code.prodigygame.com/code/2-97-6/game.min.js?v=2-97-6",
+			"exampleResult": "https://prodigy-cheat-dashboard.herokuapp.com/game.min.js",
+			"error": null,
+			"includePattern": "https://code.prodigygame.com/code/*/game.min.js?v=*",
+			"excludePattern": "",
+			"patternDesc": "",
+			"redirectUrl": "https://prodigy-cheat-dashboard.herokuapp.com/game.min.js",
+			"patternType": "W",
+			"processMatches": "noProcessing",
+			"disabled": false,
+			"grouped": false,
+			"appliesTo": ["script"]
+		},
+		{
+			"description": "Debugging - DO NOT ENABLE",
+			"exampleUrl": "https://code.prodigygame.com/code/*/game.min.js?v=*",
+			"exampleResult": "http://localhost:1337/game.min.js",
+			"error": null,
+			"includePattern": "https://code.prodigygame.com/code/*/game.min.js?v=*",
+			"excludePattern": "",
+			"patternDesc": "",
+			"redirectUrl": "http://localhost:1337/game.min.js",
+			"patternType": "W",
+			"processMatches": "noProcessing",
+			"disabled": true,
+			"grouped": false,
+			"appliesTo": ["script"]
+		},
+		{
+			"description": "public-game.min.js",
+			"exampleUrl": "https://code.prodigygame.com/js/public-game-4000720517.min.js",
+			"exampleResult": "https://prodigy-cheat-dashboard.herokuapp.com/public-game.min.js?hash=4000720517",
+			"error": null,
+			"includePattern": "https://code.prodigygame.com/js/public-game-(.+?).min.js",
+			"excludePattern": "",
+			"patternDesc": "",
+			"redirectUrl": "https://prodigy-cheat-dashboard.herokuapp.com/public-game.min.js?hash=$1",
+			"patternType": "R",
+			"processMatches": "noProcessing",
+			"disabled": false,
+			"grouped": false,
+			"appliesTo": ["script"]
+		},
+		{
+			"description": "Member Hack",
+			"exampleUrl": "https://api.prodigygame.com/game-api/v1/character/62557673?isMember=0&userID=62557673",
+			"exampleResult": "https://api.prodigygame.com/game-api/v1/character/62557673?isMember=1&userID=62557673",
+			"error": null,
+			"includePattern": "https://api.prodigygame.com/game-api/v1/character/(.+)\\?isMember=0&userID=(.+)",
+			"excludePattern": "",
+			"patternDesc": "",
+			"redirectUrl": "https://api.prodigygame.com/game-api/v1/character/$1?isMember=1&userID=$2",
+			"patternType": "R",
+			"processMatches": "noProcessing",
+			"disabled": false,
+			"grouped": false,
+			"appliesTo": [
+				"sub_frame",
+				"stylesheet",
+				"script",
+				"image",
+				"imageset",
+				"object",
+				"xmlhttprequest",
+				"history",
+				"other"
+			]
+		}
+	]
 }
