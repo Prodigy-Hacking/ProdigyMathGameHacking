@@ -1,5 +1,7 @@
 # Prodigy Math Game Hacks
 
+# To make a video on our hacks, please give credit in the form provided [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/videocredit.md).
+
 ## Redirector hacks are fixed!
 
 Redirector Instructions:
