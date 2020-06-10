@@ -12,11 +12,11 @@ Here's a [simple guide](https://github.com/Prodigy-Hacking/ProdigyMathGameHackin
 
 ## Using Redirector Locally (Advanced)
 
-If for some reason redirector is down, instead of relying on our heroku for modified game files, you can host it locally!
+If for some reason redirector is down, instead of relying on our hosting for modified game files, you can host it locally!
 
-1) Install Node.js, Git is optional.
+1. Install Node.js, Git is optional.
 
-2) Download the repository.
+2. Download the repository.
 
     ```bash
     git clone https://github.com/Prodigy-Hacking/ProdigyMathGameHacking.git
@@ -24,24 +24,24 @@ If for some reason redirector is down, instead of relying on our heroku for modi
 
     You can also download it [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/archive/master.zip) as a zip file.
 
-3) Go into ProdigyMathGameHacking/redirect.
+3. Go into ProdigyMathGameHacking/redirect.
 
     ```bash
     cd ProdigyMathGameHacking/redirect
     ```
 
-4) Install the needed packages and dependencies.
+4. Install the needed packages and dependencies.
 
     ```bash
     npm install
     ```
 
-5) Run `index.js` with Node.
+5. Run `index.js` with Node.
 
     ```bash
-    node index.js
+    node index
     ```
 
-6) Go to the Redirector Plugin > Edit Redirects. Disable `game.min.js`, and `public-game.min.js`. Enable `Localhost game.min.js`, and `Localhost public.game.min.js`.
+6. Go to the Redirector Plugin > Edit Redirects. Disable `game.min.js`, and `public-game.min.js`. Enable `Localhost game.min.js`, and `Localhost public.game.min.js`.
 
-7) Profit! Redirector should now be pulling files from `localhost:1337`.
+7. Profit! Redirector should now be pulling files from `localhost:1337`.
