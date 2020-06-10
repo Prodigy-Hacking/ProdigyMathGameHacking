@@ -36,7 +36,7 @@ If for some reason redirector is down, instead of relying on our hosting for mod
     npm install
     ```
 
-5. Run `index.js` with Node.
+5. Run `index` with Node.
 
     ```bash
     node index
