@@ -135,6 +135,9 @@ function changebwins() {
 function resetacc() {
 // Reset account //
 }
+function changeblosses() {
+// Change battle losses //
+}
 function gradechange() {
 // Changes grade //
 }
@@ -157,6 +160,6 @@ prodigydiv.style.background = "green";
 prodigydiv.style.color = "green";
 document.body.style.backgroundcolor = "black";
 document.body.style.align = "bottom";
-prodigydiv.innerHTML = '<button type="button" onclick="{prodigydiv.remove();}">Close</button> <button type="button" onclick="{lotodamage();}">Lots Of Damage</button> <button type="button" onclick="{realspeed();}">Run Fast</button> <button type="button" onclick="{leveltime();}">Best Level</button><button type="button" onclick="{arenapoints();}">Get Arena Points</button><button type="button" onclick="{resetacc();}">Reset Account</button><button type="button" onclick="{infinitewspins();}">Infinite Wheel Spins</button><button type="button" onclick="{textsize();}">Change Text Size</button><button type="button" onclick="{textcolor();}">Change Text Color</button><button type="button" onclick="{gradechange();}">Change Grade Level</button><p> Made by Yama</p>';
+prodigydiv.innerHTML = '<button type="button" onclick="{prodigydiv.remove();}">Close</button> <button type="button" onclick="{lotodamage();}">Lots Of Damage</button> <button type="button" onclick="{realspeed();}">Run Fast</button> <button type="button" onclick="{setbpoints();}">Set Battle Points</button><button type="button" onclick="{getcocubes();}">Get Conjure Cubes</button><button type="button" onclick="{membership();}">Get Free Membership</button><button type="button" onclick="{instakill();}">Instant Kill</button><button type="button" onclick="{pvphp();}">Change PVP HP</button><button type="button" onclick="{changeblosses();}">Change Battle Losses</button><button type="button" onclick="{leveltime();}">Best Level</button><button type="button" onclick="{changename();}">Change Name</button><button type="button" onclick="{changebwins();}">Change Battle Wins</button><button type="button" onclick="{arenapoints();}">Get Arena Points</button><button type="button" onclick="{resetacc();}">Reset Account</button><button type="button" onclick="{infinitewspins();}">Infinite Wheel Spins</button><button type="button" onclick="{textsize();}">Change Text Size</button><button type="button" onclick="{textcolor();}">Change Text Color</button><button type="button" onclick="{gradechange();}">Change Grade Level</button><p> Made by Yama</p>';
 }
 document.body.insertBefore(prodigydiv, document.body.firstChild);
