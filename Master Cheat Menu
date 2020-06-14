@@ -1,0 +1,162 @@
+A cheat menu with all hacks possibel on it. Currently in the proccess of base. 
+To use just copy and paste into console, with Wills cheat menu turned off.
+
+
+
+function closeit(){
+prodigydiv.remove
+}
+setTimeout("closeit", 2000);
+function TeleportPlayer() {
+// Teleport on mouse clicker //
+}
+function lotodamage() {
+// Damage hack //
+}
+function realspeed() {
+// Speed hack //
+}
+function setlevel() {
+// Level up //
+function getallhats() {
+// Get all hats //
+}
+function getalloutfits() {
+// Get all outfits //
+}
+function getallboots() {
+// Get all boots //
+}
+function getallbuddies() {
+// Get all buddies //
+}
+function getallfossils() {
+// Get all fossils //
+}
+function getallitems() {
+// Get all items //
+}
+function getallkeyitems() {
+// Get all key items //
+}
+function getallmathtownf() {
+// Get all math town frames //
+}
+function getallmathtowni() {
+// Get all math town interiors //
+}
+function getallmounts() {
+// Get all mounts //
+}
+function getallrelics() {
+// Get all relics //
+}
+function getallsrelics() {
+// Get all spell relics //
+}
+function getallweapons() {
+// Get all weapons //
+}
+function getallcurrency() {
+// Get all currency //
+}
+function getallfurniture() {
+// Get all furniture //
+}
+function teleportmap() {
+// Teleport to places on map //
+}
+function getallpets() {
+// Get all pets //
+}
+function getallepics() {
+// Get all epics //
+}
+function clearpets() {
+// Clear all pets //
+}
+function addpet() {
+// Select pet to add //
+}
+function editpet() {
+// Select pet to edit //
+}
+function delpet() {
+// Select pet to delete //
+}
+function escapebattle() {
+// Escape battle //
+}
+function winbattle() {
+// Win battle //
+}
+function setbattlehp() {
+// Set battle hearts //
+}
+function fillbenergy() {
+// Fill battle energy //
+}
+function skipt() {
+// Skip tutorial //
+}
+function clothvibes() {
+// Enables clothing vibe //
+}
+function bobbify() {
+// Bobbifys player //
+}
+function snowballcrash() {
+// Enables snowball crasher //
+}
+function setgold() {
+// Set amount of gold //
+}
+function setbpoints() {
+// Set bounty points //
+}
+function getcocubes() {
+// Get conjure cubes //
+}
+function membership() {
+// Gives membership //
+}
+function instakill() {
+// Instant kill with player //
+}
+function pvphp() {
+// Gives a lot of pvp hp //
+}
+function changename() {
+// Change name //
+}
+function changebwins() {
+// Set battle wins //
+}
+function resetacc() {
+// Reset account //
+}
+function gradechange() {
+// Changes grade //
+}
+function textcolor() {
+// Set text color //
+}
+function textsize() {
+// Set text size //
+}
+function infinitewspins() {
+// Unlimited wheel spins //
+}
+function arenapoints() {
+// Get arena points //
+}
+prodigydiv = document.createElement("prodigydiv");
+prodigydiv.style.width = "100px";
+prodigydiv.style.height = "100px";
+prodigydiv.style.background = "green";
+prodigydiv.style.color = "green";
+document.body.style.backgroundcolor = "black";
+document.body.style.align = "bottom";
+prodigydiv.innerHTML = '<button type="button" onclick="{prodigydiv.remove();}">Close</button> <button type="button" onclick="{lotodamage();}">Lots Of Damage</button> <button type="button" onclick="{realspeed();}">Run Fast</button> <button type="button" onclick="{leveltime();}">Best Level</button><button type="button" onclick="{arenapoints();}">Get Arena Points</button><button type="button" onclick="{infinitewspins();}">Infinite Wheel Spins</button><p> Made by Yama</p>';
+}
+document.body.insertBefore(prodigydiv, document.body.firstChild);
