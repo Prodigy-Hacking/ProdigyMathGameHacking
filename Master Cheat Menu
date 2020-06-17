@@ -123,7 +123,7 @@ function instakill() {
 // Instant kill with player //
 }
 function pvphp() {
-// Gives a lot of pvp hp //
+// Gives a lot of Pvp Hp //
 }
 function changename() {
 // Change name //
