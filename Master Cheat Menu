@@ -152,7 +152,7 @@ function infinitewspins() {
 function arenapoints() {
 // Get arena points //
 }
-prodigydiv = document.createElement("prodigydiv");
+var prodigydiv = document.createElement("div");
 prodigydiv.style.width = "100px";
 prodigydiv.style.height = "100px";
 prodigydiv.style.background = "green";
