@@ -1,11 +1,3 @@
-// This is just a crappy cheat menu with all hacks ever made that I, Yama, wanted to make in my free time.
-// Contact me @ Yama#5821 on discord to tell me any problems, or suggestions... but it might take a while to add them!
-// Copy and paste into console with Wills Cheat Menu off!
-// DONT copy and paste the parts with 2 slashes in front of it.
-// Enjoy the Cheat Menu!
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 function closeit(){
 prodigydiv.remove
 }
