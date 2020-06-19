@@ -3,7 +3,9 @@
 // Copy and paste into console with Wills Cheat Menu off!
 // DONT copy and paste the parts with 2 slashes in front of it.
 // Enjoy the Cheat Menu!
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 function closeit(){
 prodigydiv.remove
 }
