@@ -40,11 +40,11 @@ This may look like we're trying to ruin the game, but we're helping make it bett
 
 ## The purpose of Hacking Prodigy, the Math Game
 
-I'm making this repository to try to get the developers to change how Prodigy handles player game data. Instead of handling everything server side, a lot of the heavy lifting is done on the player side. The server just manages multiplayer battles, and hosts data, messages, and events.
+We're making this repository to try to get the developers to change how Prodigy handles player game data. Instead of handling everything server side, a lot of the heavy lifting is done on the player side. The server just manages multiplayer battles, and hosts data, messages, and events.
 
 Currently, this has not been fixed. There have been many patches hiding the prodigy/game object, anti-cheats, and updates, but the way they handle the player object is still insecure.
 
-Basically any changes you make to the player object will save. Be warned, if you mess up the data TOO much, the server gets really confused, and your account is broken forever! Don't do this on your main account. I've already broken three accounts. ;)
+Basically any changes you make to the player object will save. Be warned, if you mess up the data TOO much, the server gets really confused, and your account is broken forever! Don't do this on your main account.
 
 ## All Hacks In This Github Repository Is Licensed With Mozilla Public License v2
 
