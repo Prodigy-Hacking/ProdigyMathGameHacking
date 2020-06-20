@@ -62,6 +62,6 @@ You have been warned.
 
 ## Usage
 
-Any questions? Ask on [our Discord](https://discord.gg/XQDfbfq)!
+Any questions? Ask on [our Discord](https://discord.gg/qKjpWDV)!
 
 Documentation: [Docs](./docs/interfaces/_pixi_d_.pixi.md)
