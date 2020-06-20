@@ -208,7 +208,7 @@ function notimeout() {
 // Makes it so you cant timeout //
 }
 function earrape() {
-// Makesd sound go up to 1000% //
+// Makes sound go up to 1000% //
 }
 var prodigydiv = document.createElement("div");
 prodigydiv.style.width = "100px";
