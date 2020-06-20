@@ -11,7 +11,7 @@ Redirector Instructions:
 
 ## Links
 
--   **[Discord](https://discord.gg/qKjpWDV)**
+-   **[Discord](https://discord.gg/XQDfbfq)**
 -   **[Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki)**
 -   **[Hack List](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Hack-List)**
 -   **[Official Website](https://trip7663.wixsite.com/prodigyhackingweb)**
@@ -62,6 +62,6 @@ You have been warned.
 
 ## Usage
 
-Any questions? Ask on [our Discord](https://discord.gg/qKjpWDV)!
+Any questions? Ask on [our Discord](https://discord.gg/XQDfbfq)!
 
 Documentation: [Docs](./docs/interfaces/_pixi_d_.pixi.md)
