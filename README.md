@@ -19,6 +19,7 @@ Redirector Instructions:
 -   **[Official Website](https://trip7663.wixsite.com/prodigyhackingweb)**
 -   **[Youtube Channel](https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A)**
 -   **[Patreon (non profit)](https://www.patreon.com/PMGHacking)**
+-  **[Official Twitter](https://twitter.com/ProdigyCheats)**
 
 ## Collaborators
 
@@ -27,8 +28,8 @@ Redirector Instructions:
 -   [Exoticc](https://github.com/Exoticc)
 -   [RubberDuck55](https://github.com/RubberDuck55)
 -   [TNThacker2015 (will)](https://github.com/TNThacker2015)
--   [LeoTheW12-4RD](https://github.com/LeoTheW12-4RD)
 -   [gothboymike](https://github.com/gothboymike)
+-   [LeoTheW12-4RD](https://github.com/LeoTheW12-4RD)
 
 ## Announcements
 
@@ -58,7 +59,8 @@ We are **NOT** liable for **_any_** damages.
 >    Under no circumstances and under no legal theory, whether tort (including negligence), contract, or otherwise, shall any Contributor, or anyone who distributes Covered Software as permitted above, be liable to You for any direct, indirect, special, incidental, or consequential damages of any character including, without limitation, damages for lost profits, loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses, even if such party shall have been informed of the possibility of such damages. This limitation of liability shall not apply to liability for death or personal injury resulting from such party’s negligence to the extent applicable law prohibits such limitation. Some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so this exclusion and limitation may not apply to You.
 
 -   Mozilla Public License v2
-
+##
+Public: Thank you for everyone that has supported us by using our exploits/hacks. However, our goal isn't to ruin prodigy, It's to patch these hacks. But we need your help! If anyone can go on Prodigy's Twitter, and instagram and ask them to patch this chrome extension from allowing them to change their files it would be great! (https://chrome.google.com/webstore/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd?hl=en)
 ## Disclaimer
 
 THESE HACKS MAY OR MAY NOT BREAK YOUR ACCOUNT. DO NOT USE ANY OF THESE HACKS ON YOUR MAIN ACCOUNT, OR YOU MAY RISK YOUR ACCOUNT BECOMING IRREPERABLY BUGGED OUT, PREVENTING YOU FROM PLAYING THE GAME USING THAT ACCOUNT. DO NOT USE THESE HACKS FOR FINACIAL BENEFITS.
