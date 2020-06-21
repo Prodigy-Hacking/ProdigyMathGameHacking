@@ -6,14 +6,14 @@ function TeleportPlayer() {
 // Teleport on mouse clicker 
 }
 function lotodamage() {
-// Damage hack //
+// Damage hack 
 }
 function realspeed() {
 // Speed hack //
 }
 function setlevel() {
 // Sets level to 100 //
-hack.player.data.level = 100
+     hack.player.data.level = 100
 function getallhats() {
 // Get All Hats //
 }
