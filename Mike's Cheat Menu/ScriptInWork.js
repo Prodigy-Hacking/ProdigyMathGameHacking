@@ -5,3 +5,4 @@ document.head.appendChild(style);
 
 var div = document.createElement('div');
 var id = document.createAttribute("id");
+id.value = 'menu';
