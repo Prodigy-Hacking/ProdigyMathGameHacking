@@ -14,3 +14,4 @@ div.setAttributeNode(id);
 id = document.createAttribute("class");
 id.value = 'hide';
 div.setAttributeNode(id);
+document.body.insertBefore(div,document.getElementById('game-wrapper'));
