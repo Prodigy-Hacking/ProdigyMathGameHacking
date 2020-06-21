@@ -7,3 +7,5 @@ var div = document.createElement('div');
 var id = document.createAttribute("id");
 id.value = 'menu';
 div.setAttributeNode(id);
+
+id = document.createAttribute("style");
