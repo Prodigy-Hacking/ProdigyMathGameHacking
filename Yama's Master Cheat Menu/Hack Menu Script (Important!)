@@ -133,7 +133,7 @@ function pvphp() {
 // Gives a lot of Pvp Hp 
 }
 function changename() {
-// Change name //
+// Change name 
 }
 function changebwins() {
 // Set battle wins //
