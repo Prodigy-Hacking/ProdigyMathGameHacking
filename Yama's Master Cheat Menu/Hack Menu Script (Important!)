@@ -56,7 +56,7 @@ function getallrelics() {
 // Get all relics 
 }
 function getallsrelics() {
-// Get all spell relics //
+// Get all spell relics 
 }
 function getallweapons() {
 // Get all weapons //
