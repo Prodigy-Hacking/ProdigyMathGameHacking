@@ -29,7 +29,10 @@ function getallfossils() {
 // Get all fossils //
 }
 function getallitems() {
-// Get all items //
+    backpackData.item=[];
+    for (let i in bootData.item) {
+        backpackData.item[i] = {"ID": bootData.item[i].ID, "N": 99999999};
+    }
 }
 function getallkeyitems() {
 // Get all key items //
