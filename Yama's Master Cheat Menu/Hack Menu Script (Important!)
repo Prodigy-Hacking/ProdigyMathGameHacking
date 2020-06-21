@@ -44,7 +44,7 @@ function getallkeyitems() {
 // Get all key items 
 }
 function getallmathtownf() {
-// Get all math town frames //
+// Get all math town frames 
 }
 function getallmathtowni() {
 // Get all math town interiors //
