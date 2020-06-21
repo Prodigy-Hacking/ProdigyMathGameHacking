@@ -80,7 +80,7 @@ function clearpets() {
 // Clear all pets 
 }
 function addpet() {
-// Select pet to add //
+// Select pet to add 
 }
 function editpet() {
 // Select pet to edit //
