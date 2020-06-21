@@ -87,10 +87,11 @@ function winbattle() {
 // Win battle 
 }
 function setbattlehp() {
-hack.player.data.hp=1e153
+// Get really high hp 
+     hack.player.data.hp=1e153
 }
 function fillbenergy() {
-// Fill battle energy //
+// Fill battle energy 
 }
 function skipt() {
 // Skip tutorial //
