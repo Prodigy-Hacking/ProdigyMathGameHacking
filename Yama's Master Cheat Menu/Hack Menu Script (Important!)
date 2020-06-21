@@ -121,7 +121,7 @@ function setbpoints() {
      hack.player.data.bountyScore=100
 }
 function getcocubes() {
-// Get conjure cubes //
+// Get conjure cubes 
 }
 function membership() {
 // Gives membership //
