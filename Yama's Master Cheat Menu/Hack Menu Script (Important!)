@@ -127,7 +127,7 @@ function membership() {
 // Gives membership 
 }
 function instakill() {
-// Instant kill with player //
+// Instant kill with player 
 }
 function pvphp() {
 // Gives a lot of Pvp Hp //
