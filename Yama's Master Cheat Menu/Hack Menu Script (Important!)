@@ -142,7 +142,7 @@ function resetacc() {
 // Reset account 
 }
 function changeblosses() {
-// Change battle losses //
+// Change battle losses 
 }
 function gradechange() {
 // Changes grade //
