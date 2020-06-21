@@ -18,3 +18,4 @@ document.body.insertBefore(div,document.getElementById('game-wrapper'));
 
 var div1 = document.createElement('div');
 var id = document.createAttribute("id");
+id.value = 'submenu';
