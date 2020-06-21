@@ -136,7 +136,7 @@ function changename() {
 // Change name 
 }
 function changebwins() {
-// Set battle wins //
+// Set battle wins 
 }
 function resetacc() {
 // Reset account //
