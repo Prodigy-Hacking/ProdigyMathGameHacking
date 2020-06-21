@@ -52,17 +52,9 @@ function getallweapons() {
 // Get all weapons //
 }
 function getallcurrency() {
-    backpackData.currency = [];
-    for (let i in bootData.currency) {
-        backpackData.currency[i] = {"ID": bootData.currency[i].ID, "N": 99999999};
-    }
-}
+// Get all currency //
 function getallfurniture() {
-    playerObject.house.data.items = []
-    for (let i in bootData.dorm) {
-        playerObject.house.data.items[bootData.dorm[i]["ID"]] = {A: [], N: 999};
-    }
-}
+// Get all furniture //
 function teleportmap() {
 // Teleport to places on map //
 }
