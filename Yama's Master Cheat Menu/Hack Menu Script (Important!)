@@ -42,7 +42,7 @@ function getallmathtowni() {
 // Get all math town interiors 
 }
 function getallmounts() {
-// Get all mounts //
+// Get all mounts 
 }
 function getallrelics() {
 // Get all relics //
