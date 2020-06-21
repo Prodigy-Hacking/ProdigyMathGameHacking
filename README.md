@@ -15,6 +15,7 @@ Redirector Instructions:
 -   **[Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki)**
 -   **[Hack List](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Hack-List)**
 -   **[Official Website](https://trip7663.wixsite.com/prodigyhackingweb)**
+-   **[Youtube Channel](https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A)**
 
 ## Collaborators
 
