@@ -59,7 +59,7 @@ function getallsrelics() {
 // Get all spell relics 
 }
 function getallweapons() {
-// Get all weapons //
+// Get all weapons 
 }
 function getallcurrency() {
 // Get all currency //
