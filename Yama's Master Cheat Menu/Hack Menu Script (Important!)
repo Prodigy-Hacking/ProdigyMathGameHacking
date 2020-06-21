@@ -124,7 +124,7 @@ function getcocubes() {
 // Get conjure cubes 
 }
 function membership() {
-// Gives membership //
+// Gives membership 
 }
 function instakill() {
 // Instant kill with player //
