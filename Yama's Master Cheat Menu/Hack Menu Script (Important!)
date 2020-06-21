@@ -21,7 +21,7 @@ function getalloutfits() {
 // Get all outfits 
 }
 function getallboots() {
-// Get all boots //
+// Get all boots 
 }
 function getallbuddies() {
 // Get all buddies //
