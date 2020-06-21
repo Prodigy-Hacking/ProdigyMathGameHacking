@@ -91,7 +91,7 @@ function winbattle() {
 // Win battle //
 }
 function setbattlehp() {
-// Set battle hearts //
+hack.player.data.hp=1e153
 }
 function fillbenergy() {
 // Fill battle energy //
