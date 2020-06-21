@@ -78,7 +78,7 @@ function editpet() {
 // Select pet to edit 
 }
 function delpet() {
-// Select pet to delete //
+// Select pet to delete 
 }
 function escapebattle() {
 // Escape battle //
