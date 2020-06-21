@@ -102,7 +102,7 @@ function fillbenergy() {
 // Fill battle energy 
 }
 function skipt() {
-// Skip tutorial //
+// Skip tutorial 
 }
 function clothvibes() {
 // Enables clothing vibe //
