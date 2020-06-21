@@ -12,7 +12,7 @@ function realspeed() {
 // Speed hack //
 }
 function setlevel() {
-// Level up //
+hack.player.data.level = 100
 function getallhats() {
 // Get All Hats //
 }
