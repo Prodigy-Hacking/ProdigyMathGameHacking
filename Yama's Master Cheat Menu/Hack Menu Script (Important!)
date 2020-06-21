@@ -148,7 +148,7 @@ function gradechange() {
 // Changes grade 
 }
 function textcolor() {
-// Set text color //
+// Set text color 
 }
 function textsize() {
 // Set text size //
