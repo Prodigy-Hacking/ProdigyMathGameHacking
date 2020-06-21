@@ -112,7 +112,7 @@ function snowballcrash() {
 // Enables snowball crasher //
 }
 function setgold() {
-// Set amount of gold //
+hack.player.data.gold=1e153
 }
 function setbpoints() {
 // Set bounty points //
