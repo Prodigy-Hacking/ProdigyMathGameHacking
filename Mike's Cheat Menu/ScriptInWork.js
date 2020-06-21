@@ -4,3 +4,4 @@ style.innerHTML = '.hide {display: none;}';
 document.head.appendChild(style);
 
 var div = document.createElement('div');
+var id = document.createAttribute("id");
