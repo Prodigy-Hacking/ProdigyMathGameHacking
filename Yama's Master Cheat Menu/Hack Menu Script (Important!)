@@ -104,7 +104,7 @@ function setgold() {
 hack.player.data.gold=1e153
 }
 function setbpoints() {
-player.data.bountyScore=100
+hack.player.data.bountyScore=100
 }
 function getcocubes() {
 // Get conjure cubes //
