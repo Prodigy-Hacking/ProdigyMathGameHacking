@@ -1,4 +1,4 @@
-# Prodigy Math Game Hacks
+# ProdigyMathGameHacking
 
 # Check out our [YouTube Channel!](https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A)
 
