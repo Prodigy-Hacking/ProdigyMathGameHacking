@@ -13,3 +13,4 @@ id.value = 'dysplay:none; position: absolute; left: 12.7%; z-index: 10; backgrou
 div.setAttributeNode(id);
 id = document.createAttribute("class");
 id.value = 'hide';
+div.setAttributeNode(id);
