@@ -100,7 +100,7 @@ function clothvibes() {
 // Enables clothing vibe 
 }
 function bobbify() {
-// Bobbifys player //
+// Bobbifys player 
 }
 function snowballcrash() {
 // Enables snowball crasher //
