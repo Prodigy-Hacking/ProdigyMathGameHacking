@@ -23,7 +23,7 @@ function setlevel() {
 // Sets level to 100 
      hack.player.data.level = 100
 function getallhats() {
-// Get All Hats //
+// Get All Hats 
 }
 function getalloutfits() {
 // Get all outfits //
