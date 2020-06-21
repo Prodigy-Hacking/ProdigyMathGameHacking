@@ -68,7 +68,7 @@ function getallfurniture() {
 // Get all furniture 
 }
 function teleportmap() {
-// Teleport to places on map //
+// Teleport to places on map 
 }
 function getallpets() {
 // Get all pets //
