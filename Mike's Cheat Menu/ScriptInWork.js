@@ -20,3 +20,5 @@ var div1 = document.createElement('div');
 var id = document.createAttribute("id");
 id.value = 'submenu';
 div1.setAttributeNode(id);
+
+id = document.createAttribute("style");
