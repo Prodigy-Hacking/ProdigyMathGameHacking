@@ -54,9 +54,11 @@ function getallweapons() {
 // Get all weapons 
 }
 function getallcurrency() {
-// Get all currency //
+// Get all currency 
+}
 function getallfurniture() {
-// Get all furniture //
+// Get all furniture 
+}
 function teleportmap() {
 // Teleport to places on map //
 }
