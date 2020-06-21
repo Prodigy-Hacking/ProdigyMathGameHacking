@@ -56,7 +56,10 @@ function getallweapons() {
 // Get all weapons //
 }
 function getallcurrency() {
-// Get all currency //
+    backpackData.currency = [];
+    for (let i in bootData.currency) {
+        backpackData.currency[i] = {"ID": bootData.currency[i].ID, "N": 99999999};
+    }
 }
 function getallfurniture() {
     playerObject.house.data.items = []
