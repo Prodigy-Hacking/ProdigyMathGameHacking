@@ -30,7 +30,8 @@ function getallfossils() {
 // Get all fossils 
 }
 function getallitems() {
-// Get all items //
+// Get all items 
+}
 function getallkeyitems() {
 // Get all key items //
 }
