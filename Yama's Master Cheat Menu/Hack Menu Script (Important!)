@@ -137,7 +137,7 @@ function changeblosses() {
 // Change battle losses 
 }
 function gradechange() {
-// Changes grade //
+// Changes grade 
 }
 function textcolor() {
 // Set text color //
