@@ -92,7 +92,7 @@ function escapebattle() {
 // Escape battle 
 }
 function winbattle() {
-// Win battle //
+// Win battle 
 }
 function setbattlehp() {
 hack.player.data.hp=1e153
