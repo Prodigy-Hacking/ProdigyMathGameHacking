@@ -66,7 +66,7 @@ function getallpets() {
 // Get all pets 
 }
 function getallepics() {
-// Get all epics //
+// Get all epics 
 }
 function clearpets() {
 // Clear all pets 
