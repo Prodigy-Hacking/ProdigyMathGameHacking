@@ -77,7 +77,7 @@ function getallepics() {
 // Get all epics //
 }
 function clearpets() {
-// Clear all pets //
+// Clear all pets 
 }
 function addpet() {
 // Select pet to add //
