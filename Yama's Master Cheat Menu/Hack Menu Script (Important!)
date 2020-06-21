@@ -45,7 +45,7 @@ function getallmounts() {
 // Get all mounts 
 }
 function getallrelics() {
-// Get all relics //
+// Get all relics 
 }
 function getallsrelics() {
 // Get all spell relics //
