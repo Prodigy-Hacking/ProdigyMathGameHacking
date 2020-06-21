@@ -83,7 +83,7 @@ function addpet() {
 // Select pet to add 
 }
 function editpet() {
-// Select pet to edit //
+// Select pet to edit 
 }
 function delpet() {
 // Select pet to delete //
