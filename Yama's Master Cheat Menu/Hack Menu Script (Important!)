@@ -131,7 +131,7 @@ function changebwins() {
 // Set battle wins 
 }
 function resetacc() {
-// Reset account //
+// Reset account 
 }
 function changeblosses() {
 // Change battle losses //
