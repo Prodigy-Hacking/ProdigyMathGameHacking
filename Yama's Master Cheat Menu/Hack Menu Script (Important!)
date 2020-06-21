@@ -11,7 +11,7 @@ prodigydiv.remove
 }
 setTimeout("closeit", 2000);
 function TeleportPlayer() {
-// Teleport on mouse clicker //
+// Teleport on mouse clicker 
 }
 function lotodamage() {
 // Damage hack //
