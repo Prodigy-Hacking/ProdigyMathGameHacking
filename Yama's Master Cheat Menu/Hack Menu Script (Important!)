@@ -71,7 +71,7 @@ function teleportmap() {
 // Teleport to places on map 
 }
 function getallpets() {
-// Get all pets //
+// Get all pets 
 }
 function getallepics() {
 // Get all epics //
