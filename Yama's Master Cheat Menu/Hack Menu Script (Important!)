@@ -24,7 +24,7 @@ function getallboots() {
 // Get all boots 
 }
 function getallbuddies() {
-// Get all buddies //
+// Get all buddies 
 }
 function getallfossils() {
 // Get all fossils //
