@@ -81,7 +81,7 @@ function delpet() {
 // Select pet to delete 
 }
 function escapebattle() {
-// Escape battle //
+// Escape battle 
 }
 function winbattle() {
 // Win battle //
