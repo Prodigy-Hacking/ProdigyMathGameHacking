@@ -178,7 +178,7 @@ function textfont() {
 // Sets text font 
 }
 function randomhack() {
-// Does a random hack //
+// Does a random hack 
 }
 function stackacc() {
 // Insta stack account //
