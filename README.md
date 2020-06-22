@@ -5,6 +5,7 @@
 ## To make a video on our hacks, please give credit in the form provided [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/videocredit.md).
 
 # Another extension is now required to use the hacks. Download [here](https://chrome.google.com/webstore/detail/always-disable-content-se/ffelghdomoehpceihalcnbmnodohkibj/).
+# If that extension doesn't work, try [this one](https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe?hl=en-US)
 
 Redirector Instructions:
 - **[Redirector](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)** (Recommended)
@@ -29,7 +30,7 @@ Redirector Instructions:
 -   [RubberDuck55](https://github.com/RubberDuck55)
 -   [TNThacker2015 (will)](https://github.com/TNThacker2015)
 -   [gothboymike](https://github.com/gothboymike)
--   [LeoTheW12-4RD](https://github.com/LeoTheW12-4RD)
+-   [YamaHacks](https://github.com/YamaHacks)
 
 ## Announcements
 
