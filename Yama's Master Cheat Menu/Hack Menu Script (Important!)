@@ -221,7 +221,7 @@ function moonwalk() {
 // Flips player backwards
 }
 function setnickname() {
-// Sets nickname //
+// Sets nickname 
 }
 function fakefriend() {
 // Add a fake friend //
