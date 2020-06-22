@@ -193,7 +193,7 @@ function randomtp() {
 // Tps someplace random 
 }
 function spinnytime() {
-// Spins wheel //
+// Spins wheel 
 }
 function unlimitedspins() {
 // Unlimited spins //
