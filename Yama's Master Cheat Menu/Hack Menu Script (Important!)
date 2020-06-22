@@ -215,7 +215,7 @@ function battletime() {
 // Puts you in a battle with a level 5 peeko right where you are 
 }
 function trialmastergear() {
-// Gives trial master gear //
+// Gives trial master gear 
 }
 function moonwalk() {
 // Flips player backwards
