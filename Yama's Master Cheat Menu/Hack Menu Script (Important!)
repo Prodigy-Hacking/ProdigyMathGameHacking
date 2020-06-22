@@ -175,7 +175,7 @@ function parade() {
 // Make a parade 
 }
 function textfont() {
-// Sets text font //
+// Sets text font 
 }
 function randomhack() {
 // Does a random hack //
