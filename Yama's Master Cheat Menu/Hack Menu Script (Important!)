@@ -152,7 +152,7 @@ function arenapoints() {
 // Get arena points 
 }
 function danceyboi() {
-// Makes character go small big small big //
+// Makes character go small big small big 
 }
 function breakgame() {
 // Sets fps to 1 //
