@@ -2,23 +2,23 @@
 
 -   **PIXI Ages**: `9/21/19 - 3/25/20`
 -   -   During these times, `PIXI.game` was a thing. However, prodigy hacks were not well known.
--   Phaser Day: `3/25/20 - 3/26/20`
+-   **Phaser Day**: `3/25/20 - 3/26/20`
 -   -   On this day, we used `Phaser.GAMES[0]`, only for it to be patched the day after.
--   Login.gameObj Day: `3/26/20 - 3/27/20`
+-   **Login.gameObj** Day: `3/26/20 - 3/27/20`
 -   -   An alternative method was found. However, it only supported the player object. It was also patched after a day.
--   CanvasPool Days: `3/27/20 - 3/30/20`
+-   **CanvasPool Days**: `3/27/20 - 3/30/20`
 -   -   This method worked for longer. However, it was also quickly patched.
--   Cheat Dashboard Day: `3/30/20 - 3/30/20`
+-   **Cheat Dashboard Day**: `3/30/20 - 3/30/20`
 -   -   A cheat dashboard was developed. However, it was not very good, which caused it to be unsupported the day after.
--   Dark Ages: `4/01 - 4/07`
+-   **Dark Ages**: `4/01 - 4/07`
 -   -   The first week of April was a sad week for prodigy hacking. All known hacking methods were patched.
--   EnableDebug Breakthrough: `4/07 - 4/09`
+-   **EnableDebug Breakthrough**: `4/07 - 4/09`
 -   -   A way to enable debug mode was found, and worked for two days. However, debug was removed by Prodigy quickly after.
--   Prodigy Console Prevention: `4/10`
+-   **Prodigy Console Prevention**: `4/10`
 -   -   On this day, prodigy added the devtool disabler, which would cause a 404 on devtool open.
--   Debugger Scope Ages: `4/12 - 4/15`
+-   **Debugger Scope Ages**: `4/12 - 4/15`
 -   -   On these days, multiple variables were used to obtain the prodigy's scopes, and access the `instance` objects.
--   Redirector Ages: `4/15 - CURRENT`
+-   **Redirector Ages**: `4/15 - CURRENT`
 -   -   After many days, the redirector hack was created, which would use a modified version of prodigy's game files. This would not be patched for a very long time. It is still working well.
--   Content Security Patch: `6/10`
+-   **Content Security Patch**: `6/10`
 -   -   On June 10th, Prodigy added content security headers. This caused the addition of another extension to help with hacks.
