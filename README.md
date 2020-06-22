@@ -1,10 +1,10 @@
 # ProdigyMathGameHacking
 
-# Check out our [YouTube Channel!](https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A)
+## Check out our [YouTube Channel!](https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A)
 
-# To make a video on our hacks, please give credit in the form provided [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/videocredit.md).
+## To make a video on our hacks, please give credit in the form provided [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/videocredit.md).
 
-## Another extension is now required to use the hacks. Download [here](https://chrome.google.com/webstore/detail/always-disable-content-se/ffelghdomoehpceihalcnbmnodohkibj/).
+# Another extension is now required to use the hacks. Download [here](https://chrome.google.com/webstore/detail/always-disable-content-se/ffelghdomoehpceihalcnbmnodohkibj/).
 
 Redirector Instructions:
 - **[Redirector](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)** (Recommended)
