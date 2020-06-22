@@ -220,7 +220,7 @@ function praybitch() {
 // Sets hp to 1 
 }
 function battletime() {
-// Puts you in a battle with a level 5 peeko right where you are //
+// Puts you in a battle with a level 5 peeko right where you are 
 }
 function trialmastergear() {
 // Gives trial master gear //
