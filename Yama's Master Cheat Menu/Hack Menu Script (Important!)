@@ -199,7 +199,7 @@ function unlimitedspins() {
 // Unlimited spins 
 }
 function randomcloth() {
-// Sets a random outfit, hat, etc //
+// Sets a random outfit, hat, etc 
 }
 function monsterspawner() {
 // Spawns in a monmster of your choice //
