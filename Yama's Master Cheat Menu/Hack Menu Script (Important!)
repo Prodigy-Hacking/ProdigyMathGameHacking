@@ -146,7 +146,7 @@ function textsize() {
 // Set text size 
 }
 function infinitewspins() {
-// Unlimited wheel spins //
+// Unlimited wheel spins 
 }
 function arenapoints() {
 // Get arena points //
