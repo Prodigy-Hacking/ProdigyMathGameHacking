@@ -169,7 +169,7 @@ function fixgame() {
 // Sets fps to 60 
 }
 function makeitsnow() {
-// Makes it snow //
+// Makes it snow 
 }
 function parade() {
 // Make a parade //
