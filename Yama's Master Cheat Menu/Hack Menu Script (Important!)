@@ -196,7 +196,7 @@ function spinnytime() {
 // Spins wheel 
 }
 function unlimitedspins() {
-// Unlimited spins //
+// Unlimited spins 
 }
 function randomcloth() {
 // Sets a random outfit, hat, etc //
