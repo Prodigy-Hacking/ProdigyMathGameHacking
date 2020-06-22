@@ -209,7 +209,7 @@ function killme() {
 // Makes everything go to hell 
 }
 function praybitch() {
-// Sets hp to 1 //
+// Sets hp to 1 
 }
 function battletime() {
 // Puts you in a battle with a level 5 peeko right where you are //
