@@ -181,7 +181,7 @@ function randomhack() {
 // Does a random hack 
 }
 function stackacc() {
-// Insta stack account //
+// Insta stack account 
 }
 function getpass() {
 // Get password //
