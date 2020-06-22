@@ -227,7 +227,7 @@ function fakefriend() {
 // Add a fake friend 
 }
 function getallkeystones() {
-// Get all keystones //
+// Get all keystones 
 }
 var prodigydiv = document.createElement("prodigydiv");
 prodigydiv.style.width = "100px";
