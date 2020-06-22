@@ -202,7 +202,7 @@ function randomcloth() {
 // Sets a random outfit, hat, etc 
 }
 function monsterspawner() {
-// Spawns in a monmster of your choice //
+// Spawns in a monmster of your choice 
 }
 function customcurrency() {
 // Set a currency to get //
