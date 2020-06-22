@@ -182,7 +182,7 @@ function endall() {
 // Tps to lamplight town 1A 
 }
 function randomtp() {
-// Tps someplace random //
+// Tps someplace random 
 }
 function spinnytime() {
 // Spins wheel //
