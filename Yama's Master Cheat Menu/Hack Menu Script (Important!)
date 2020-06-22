@@ -230,7 +230,6 @@ function fakefriend() {
 function getallkeystones() {
 // Get all keystones 
 }
-
 var prodigydiv = document.createElement("prodigydiv");
 prodigydiv.style.width = "100px";
 prodigydiv.style.height = "100px";
