@@ -200,7 +200,7 @@ function customcurrency() {
 // Set a currency to get 
 }
 function notimeout() {
-// Makes it so you cant timeout //
+// Makes it so you cant timeout 
 }
 function earrape() {
 // Makesd sound go up to 1000% //
