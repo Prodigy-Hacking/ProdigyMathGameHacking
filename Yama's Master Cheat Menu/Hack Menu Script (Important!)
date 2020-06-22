@@ -197,7 +197,7 @@ function monsterspawner() {
 // Spawns in a monmster of your choice 
 }
 function customcurrency() {
-// Set a currency to get //
+// Set a currency to get 
 }
 function notimeout() {
 // Makes it so you cant timeout //
