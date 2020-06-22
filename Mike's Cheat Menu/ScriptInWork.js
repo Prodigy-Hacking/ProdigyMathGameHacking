@@ -9,7 +9,7 @@ id.value = 'menu';
 div.setAttributeNode(id);
 
 id = document.createAttribute("style");
-id.value = 'dysplay:none; position: absolute; left: 12.7%; z-index: 10; background-color: purple;';
+id.value = 'dysplay:none; position: absolute; left: 12.7%; z-index: 10; background-color: blue;';
 div.setAttributeNode(id);
 id = document.createAttribute("class");
 id.value = 'hide';
