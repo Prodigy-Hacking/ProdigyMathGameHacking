@@ -22,5 +22,5 @@ id.value = 'submenu';
 div1.setAttributeNode(id);
 
 id = document.createAttribute("style");
-
 id.value = 'dysplay:none; position: absolute; left: 12.7%; z-index: 10; background-color: blue;';
+div1.setAttributeNode(id);
