@@ -211,7 +211,7 @@ function notimeout() {
 // Makes it so you cant timeout 
 }
 function earrape() {
-// Makesd sound go up to 1000% //
+// Makes sound go up to 1000% //
 }
 function killme() {
 // Makes everything go to hell //
