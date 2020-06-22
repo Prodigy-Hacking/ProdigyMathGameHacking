@@ -232,7 +232,7 @@ function setnickname() {
 // Sets nickname 
 }
 function fakefriend() {
-// Add a fake friend //
+// Add a fake friend 
 }
 function getallkeystones() {
 // Get all keystones //
