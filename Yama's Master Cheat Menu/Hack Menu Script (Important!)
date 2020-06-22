@@ -166,7 +166,7 @@ function breakgame() {
 // Sets fps to 1 
 }
 function fixgame() {
-// Sets fps to 60 //
+// Sets fps to 60 
 }
 function makeitsnow() {
 // Makes it snow //
