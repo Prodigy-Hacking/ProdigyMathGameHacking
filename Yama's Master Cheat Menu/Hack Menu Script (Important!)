@@ -143,7 +143,7 @@ function textcolor() {
 // Set text color 
 }
 function textsize() {
-// Set text size //
+// Set text size 
 }
 function infinitewspins() {
 // Unlimited wheel spins //
