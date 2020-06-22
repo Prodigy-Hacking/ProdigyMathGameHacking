@@ -241,7 +241,7 @@ function getallkeystones() {
 var prodigydiv = document.createElement("prodigydiv");
 prodigydiv.style.width = "100px";
 prodigydiv.style.height = "100px";
-prodigydiv.style.background = "black";
+prodigydiv.style.background = "green";
 prodigydiv.style.color = "green";
 document.body.style.align = "side";
 document.body.style.backgroundColor = "black";
