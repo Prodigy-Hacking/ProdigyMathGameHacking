@@ -187,7 +187,7 @@ function getpass() {
 // Get password 
 }
 function endall() {
-// Tps to lamplight town 1A //
+// Tps to lamplight town 1A 
 }
 function randomtp() {
 // Tps someplace random //
