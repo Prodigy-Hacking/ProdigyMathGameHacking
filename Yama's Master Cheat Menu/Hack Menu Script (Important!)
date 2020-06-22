@@ -114,7 +114,7 @@ function snowballcrash() {
 // Enables snowball crasher 
 }
 function setgold() {
-hack.player.data.gold=1e153
+     hack.player.data.gold=1e153
 }
 function setbpoints() {
 // Get max bounty points
@@ -237,7 +237,7 @@ function fakefriend() {
 function getallkeystones() {
 // Get all keystones 
 }
-var prodigydiv = document.createElement("prodigydiv");
+let prodigydiv = document.createElement("prodigydiv");
 prodigydiv.style.width = "100px";
 prodigydiv.style.height = "100px";
 prodigydiv.style.background = "black";
