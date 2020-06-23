@@ -6,7 +6,8 @@ function TeleportPlayer() {
   // Teleport on mouse clicker 
 }
 function lotodamage() {
-  // Damage hack 
+  // Instakill 
+     hack.constants.constants["GameConstants.Battle.ATTACK_DAMAGE_OVERRIDE"] = Infinity;
 }
 function realspeed() {
   // Speed hack 
