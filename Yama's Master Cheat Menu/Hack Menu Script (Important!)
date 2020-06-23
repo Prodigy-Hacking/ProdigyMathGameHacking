@@ -129,13 +129,15 @@ function changename() {
 // Change name 
 }
 function changebwins() {
-// Set battle wins 
+// Set battle wins to 987453
+hack.player.data.win = 987453;
 }
 function resetacc() {
 // Reset account 
 }
 function changeblosses() {
-// Change battle losses 
+// Change battle losses to 0
+hack.player.data.loss = 0;
 }
 function gradechange() {
 // Changes grade 
