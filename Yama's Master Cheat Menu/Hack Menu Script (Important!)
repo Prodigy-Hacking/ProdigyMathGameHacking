@@ -258,6 +258,10 @@ function grade7() {
 function grade8() {
 	// Set grade level to 8
 }
+function randomnick() {
+	// Get random nickname
+		 hack.player.name.generateRandomName();
+}
 var prodigydiv = document.createElement("prodigydiv");
 prodigydiv.style.width = "100px";
 prodigydiv.style.height = "100px";
