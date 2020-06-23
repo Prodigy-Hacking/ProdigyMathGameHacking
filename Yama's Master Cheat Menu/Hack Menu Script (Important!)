@@ -3,234 +3,236 @@ prodigydiv.remove
 }
 setTimeout("closeit", 2000);
 function TeleportPlayer() {
-// Teleport on mouse clicker 
+  // Teleport on mouse clicker 
 }
 function lotodamage() {
-// Damage hack 
+  // Damage hack 
 }
 function realspeed() {
-// Speed hack 
+  // Speed hack 
 }
 function setlevel() {
-// Sets level to 100 
+  // Sets level to 100 
      hack.player.data.level = 100
 }
 function getallhats() {
-// Get All Hats 
+  // Get All Hats 
 }
 function getalloutfits() {
-// Get all outfits 
+  // Get all outfits 
 }
 function getallboots() {
-// Get all boots 
+  // Get all boots 
 }
 function getallbuddies() {
-// Get all buddies 
+  // Get all buddies 
 }
 function getallfossils() {
-// Get all fossils 
+  // Get all fossils 
 }
 function getallitems() {
-// Get all items 
+  // Get all items 
 }
 function getallkeyitems() {
-// Get all key items 
+  // Get all key items 
 }
 function getallmathtownf() {
-// Get all math town frames 
+  // Get all math town frames 
 }
 function getallmathtowni() {
-// Get all math town interiors 
+  // Get all math town interiors 
 }
 function getallmounts() {
-// Get all mounts 
+  // Get all mounts 
 }
 function getallrelics() {
-// Get all relics 
+  // Get all relics 
 }
 function getallsrelics() {
-// Get all spell relics 
+  // Get all spell relics 
 }
 function getallweapons() {
-// Get all weapons 
+  // Get all weapons 
 }
 function getallcurrency() {
-// Get all currency 
+  // Get all currency 
 }
 function getallfurniture() {
-// Get all furniture 
+  // Get all furniture 
 }
 function teleportmap() {
-// Teleport to places on map 
+  // Teleport to places on map 
 }
 function getallpets() {
-// Get all pets 
+  // Get all pets 
 }
 function getallepics() {
-// Get all epics 
+  // Get all epics 
 }
 function clearpets() {
-// Clear all pets 
+  // Clear all pets 
 }
 function addpet() {
-// Select pet to add 
+  // Select pet to add 
 }
 function editpet() {
-// Select pet to edit 
+  // Select pet to edit 
 }
 function delpet() {
-// Select pet to delete 
+  // Select pet to delete 
 }
 function escapebattle() {
-// Escape battle 
+  // Escape battle 
 }
 function winbattle() {
-// Win battle 
+  // Win battle 
+     hack.instance.prodigy.game.state.states.Battle.startVictory();
 }
 function setbattlehp() {
-// Get really high hp 
+  // Get really high hp 
      hack.player.data.hp=1e153
 }
 function fillbenergy() {
-// Fill battle energy 
+  // Fill battle energy 
 }
 function skipt() {
-// Skip tutorial 
+  // Skip tutorial 
 }
 function clothvibes() {
-// Enables clothing vibe 
+  // Enables clothing vibe 
 }
 function bobbify() {
-// Bobbifys player 
+  // Bobbifys player 
 }
 function snowballcrash() {
-// Enables snowball crasher 
+  // Enables snowball crasher 
 }
 function setgold() {
-hack.player.data.gold=1e153
+  // Get a lot of gold
+     hack.player.data.gold=1e153
 }
 function setbpoints() {
-// Get max bounty points
+  // Get max bounty points
      hack.player.data.bountyScore=100
 }
 function getcocubes() {
-// Get conjure cubes 
+  // Get conjure cubes 
 }
 function membership() {
-// Gives membership 
+  // Gives membership 
 }
 function instakill() {
-// Instant kill with player 
+  // Instant kill with player 
 }
 function pvphp() {
-// Gives a lot of Pvp Hp 
+  // Gives a lot of Pvp Hp 
 }
 function changename() {
-// Change name 
+  // Change name 
 }
 function changebwins() {
-// Set battle wins to 987453
-hack.player.data.win = 987453;
+  // Set battle wins to 987453
+     hack.player.data.win = 987453;
 }
 function resetacc() {
-// Reset account 
+  // Reset account 
 }
 function changeblosses() {
-// Change battle losses to 0
-hack.player.data.loss = 0;
+  // Change battle losses to 0
+     hack.player.data.loss = 0;
 }
 function gradechange() {
-// Changes grade 
+  // Changes grade 
 }
 function textcolor() {
-// Set text color 
+  // Set text color 
 }
 function textsize() {
-// Set text size 
+  // Set text size 
 }
 function infinitewspins() {
-// Unlimited wheel spins 
+  // Unlimited wheel spins 
 }
 function arenapoints() {
-// Get arena points 
+  // Get arena points 
 }
 function danceyboi() {
-// Makes character go small big small big 
+  // Makes character go small big small big 
 }
 function breakgame() {
-// Sets fps to 1 
+  // Sets fps to 1 
 }
 function fixgame() {
-// Sets fps to 60 
+  // Sets fps to 60 
 }
 function makeitsnow() {
-// Makes it snow 
+  // Makes it snow 
 }
 function parade() {
-// Make a parade 
+  // Make a parade 
 }
 function textfont() {
-// Sets text font 
+  // Sets text font 
 }
 function randomhack() {
-// Does a random hack 
+  // Does a random hack 
 }
 function stackacc() {
-// Insta stack account 
+  // Insta stack account 
 }
 function getpass() {
-// Get password 
+  // Get password 
 }
 function endall() {
-// Tps to lamplight town 1A 
+  // Tps to lamplight town 1A 
 }
 function randomtp() {
-// Tps someplace random 
+  // Tps someplace random 
 }
 function spinnytime() {
-// Spins wheel 
+  // Spins wheel 
 }
 function unlimitedspins() {
-// Unlimited spins 
+  // Unlimited spins 
 }
 function randomcloth() {
-// Sets a random outfit, hat, etc 
+  // Sets a random outfit, hat, etc 
 }
 function monsterspawner() {
-// Spawns in a monmster of your choice 
+  // Spawns in a monmster of your choice 
 }
 function customcurrency() {
 // Set a currency to get 
 }
 function notimeout() {
-// Makes it so you cant timeout 
+  // Makes it so you cant timeout 
 }
 function earrape() {
-// Makes sound go up to 1000% 
+  // Makes sound go up to 1000% 
 }
 function killme() {
-// Makes everything go to hell 
+  // Makes everything go to hell 
 }
 function praybitch() {
-// Sets hp to 1 
+  // Sets hp to 1 
 }
 function battletime() {
-// Puts you in a battle with a level 5 peeko right where you are 
+  // Puts you in a battle with a level 5 peeko right where you are 
 }
 function trialmastergear() {
-// Gives trial master gear 
+  // Gives trial master gear 
 }
 function moonwalk() {
-// Flips player backwards
+  // Flips player backwards
 }
 function setnickname() {
-// Sets nickname 
+  // Sets nickname 
 }
 function fakefriend() {
-// Add a fake friend 
+  // Add a fake friend 
 }
 function getallkeystones() {
-// Get all keystones 
+  // Get all keystones 
 }
 var prodigydiv = document.createElement("prodigydiv");
 prodigydiv.style.width = "100px";
