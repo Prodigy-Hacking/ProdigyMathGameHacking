@@ -84,6 +84,7 @@ function delpet() {
 }
 function escapebattle() {
   // Escape battle 
+     hack.functions.escapeBattle();
 }
 function winbattle() {
   // Win battle 
