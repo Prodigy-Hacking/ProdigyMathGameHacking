@@ -144,7 +144,8 @@ function changeblosses() {
      hack.player.data.loss = 0;
 }
 function gradechange() {
-  // Changes grade 
+  // Set grade to 1
+     hack.player.grade = 1;
 }
 function textcolor() {
   // Set text color 
