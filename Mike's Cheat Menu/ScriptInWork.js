@@ -27,3 +27,4 @@ div1.setAttributeNode(id);
 document.body.insertBefore(div1,document.getElementById('game-wrapper'));
 
 id = document.createElement("p");
+id.innerHTML = 'Avoid Monsters';
