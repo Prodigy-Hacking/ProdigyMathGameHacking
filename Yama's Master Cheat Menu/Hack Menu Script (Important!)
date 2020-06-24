@@ -300,28 +300,44 @@ function invislol() {
 		 hack.constants.constants["GameConstants.Debug.SCALE_ENCOUNTER_DISTANCE"] = 0;
 }
 function colorred() {
-   // Set text color red
+    // Set text color red
+		 hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+		 	hack.instance.prodigy.user.chatText.FillColor = "#FF0000";
 }
 function colorsilver() {
-	// Set text color red
+	// Set text color silver
+		 hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+			hack.instance.prodigy.user.chatText.FillColor = "#C0C0C0";
 }
 function colorgray() {
-	// Set text color red
+	// Set text color gray
+		 hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+			hack.instance.prodigy.user.chatText.FillColor = "#808080";
 }
 function colorblack() {
-	// Set text color red
+	// Set text color black
+		 hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+			hack.instance.prodigy.user.chatText.FillColor = "#000000";
 }
 function colorgreen() {
-	// Set text color red
+	// Set text color green
+		 hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+			hack.instance.prodigy.user.chatText.FillColor = "#008000";
 }
 function colorbrown() {
-	// Set text color red
+	// Set text color brown
+		 hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+			hack.instance.prodigy.user.chatText.FillColor = "#A52A2A";
 }
 function colorblue() {
-	// Set text color red
+	// Set text color blue
+		 hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+			hack.instance.prodigy.user.chatText.FillColor = "#0000FF";
 }
 function colorpurple() {
-	// Set text color red
+	// Set text color purple
+		 hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+			hack.instance.prodigy.user.chatText.FillColor = "#C203F3";
 }
 var prodigydiv = document.createElement("prodigydiv");
 prodigydiv.style.width = "100px";
