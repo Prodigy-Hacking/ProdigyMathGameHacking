@@ -31,9 +31,3 @@ id.innerHTML = 'Avoid Monsters';
 var idea = document.createAttribute('id');
 idea.value = 'tele';
 id.setAttributeNode(idea);
-div.appendChild(document.createElement('br'));
-div.appendChild(document.createElement('br'));
-div.appendChild(id);
-
-id = document.createElement("p");
-id.innerHTML = 'Big Damage';
