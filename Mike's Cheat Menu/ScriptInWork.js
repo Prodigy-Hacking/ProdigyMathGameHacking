@@ -51,3 +51,4 @@ id = document.createElement("p");
 id.innerHTML = 'Skip Tutorial';
 var idea = document.createAttribute('id');
 idea.value = 'skip';
+id.setAttributeNode(idea);
