@@ -29,7 +29,7 @@ Redirector Instructions:
 -   [Exoticc](https://github.com/Exoticc)
 -   [RubberDuck55](https://github.com/RubberDuck55)
 -   [TNThacker2015 (will)](https://github.com/TNThacker2015)
--   [gothboymike](https://github.com/gothboymike)
+-   [MikeTheSkid](https://github.com/MikeTheSkid)
 -   [YamaHacks](https://github.com/YamaHacks)
 
 ## Announcements
