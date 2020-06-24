@@ -277,25 +277,32 @@ function grade1() {
 		 hack.player.grade = 1;
 }
 function grade2() {
-  // Set grade level to 2
+    // Set grade level to 2
+		 hack.player.grade = 2;
 }
 function grade3() {
-	// Set grade level to 3
+    // Set grade level to 3
+		 hack.player.grade = 3;
 }
 function grade4() {
 	// Set grade level to 4
+		 hack.player.grade = 4;
 }
 function grade5() {
 	// Set grade level to 5
+		 hack.player.grade = 5;
 }
 function grade6() {
 	// Set grade level to 6
+		 hack.player.grade = 6;
 }
 function grade7() {
 	// Set grade level to 7
+		 hack.player.grade = 7;
 }
 function grade8() {
 	// Set grade level to 8
+		 hack.player.grade = 8;
 }
 function randomnick() {
 	// Get random nickname
