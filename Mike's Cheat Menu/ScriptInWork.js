@@ -36,3 +36,4 @@ div.appendChild(document.createElement('br'));
 div.appendChild(id);
 
 id = document.createElement("p");
+id.innerHTML = 'Big Damage';
