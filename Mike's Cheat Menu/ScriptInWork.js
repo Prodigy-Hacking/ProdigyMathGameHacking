@@ -37,3 +37,6 @@ div.appendChild(id);
 
 id = document.createElement("p");
 id.innerHTML = 'Big Damage';
+var idea = document.createAttribute('id');
+idea.value = 'damage';
+id.setAttributeNode(idea);
