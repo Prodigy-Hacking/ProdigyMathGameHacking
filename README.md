@@ -11,7 +11,10 @@ Redirector Instructions:
 - **[Redirector](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)** (Recommended)
 - **[Locally Host Redirector](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/redirect/README.md)** (Advanced)
   - Redirector JSON: **[Redirector JSON](https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/redirect/Redirector.json)**
-
+## WARNING  
+   **_THESE HACKS MAY OR MAY NOT BREAK YOUR ACCOUNT. DO NOT USE ANY OF THESE HACKS ON YOUR MAIN ACCOUNT, OR YOU MAY RISK YOUR ACCOUNT BECOMING IRREPERABLY BUGGED OUT, 
+   PREVENTING YOU FROM PLAYING THE GAME USING THAT ACCOUNT. DO NOT USE THESE HACKS FOR FINACIAL BENEFITS.You have been warned._**
+   
 ## Links
 
 -   **[Discord](https://discord.gg/XQDfbfq)**
@@ -20,7 +23,7 @@ Redirector Instructions:
 -   **[Official Website](https://trip7663.wixsite.com/prodigyhackingweb)**
 -   **[Youtube Channel](https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A)**
 -   **[Patreon (non profit)](https://www.patreon.com/PMGHacking)**
--  **[Official Twitter](https://twitter.com/ProdigyCheats)**
+-   **[Official Twitter](https://twitter.com/ProdigyCheats)**
 
 ## Collaborators
 
@@ -61,14 +64,12 @@ We are **NOT** liable for **_any_** damages.
 
 -   Mozilla Public License v2
 ##
-Public: Thank you for everyone that has supported us by using our exploits/hacks. However, our goal isn't to ruin prodigy, It's to patch these hacks. But we need your help! If anyone can go on Prodigy's Twitter, and instagram and ask them to patch this chrome extension from allowing them to change their files it would be great! (https://chrome.google.com/webstore/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd?hl=en)
+Public: We need your help! If anyone can go on Prodigy's Twitter, and instagram and ask them to patch this chrome extension from allowing them to change their files it would be great! (https://chrome.google.com/webstore/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd?hl=en)
 ## Disclaimer
 
-THESE HACKS MAY OR MAY NOT BREAK YOUR ACCOUNT. DO NOT USE ANY OF THESE HACKS ON YOUR MAIN ACCOUNT, OR YOU MAY RISK YOUR ACCOUNT BECOMING IRREPERABLY BUGGED OUT, PREVENTING YOU FROM PLAYING THE GAME USING THAT ACCOUNT. DO NOT USE THESE HACKS FOR FINACIAL BENEFITS.
-You have been warned.
 
 ## Usage
 
 Any questions? Ask on [our Discord](https://discord.gg/qKjpWDV)!
 
-Documentation: [Docs](./docs/interfaces/_pixi_d_.pixi.md)
+Documentation: [Docs](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki)
