@@ -45,3 +45,4 @@ id.innerHTML = 'Level Infinity';
 var idea = document.createAttribute('id');
 idea.value = 'levelinf';
 id.setAttributeNode(idea);
+div.appendChild(id);
