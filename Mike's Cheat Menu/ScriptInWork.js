@@ -48,3 +48,4 @@ id.setAttributeNode(idea);
 div.appendChild(id);
 
 id = document.createElement("p");
+id.innerHTML = 'Skip Tutorial';
