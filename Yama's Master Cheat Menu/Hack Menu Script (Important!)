@@ -219,7 +219,7 @@ function earrape() {
 }
 function killme() {
 	// Makes everything go to hell 
-		 setInterval(_ => hack.instance.prodigy.effects.shake("", 100, 100))
+		 setInterval(_ => hack.instance.prodigy.effects.shake("", 1000, 1000))
 			hack.instance.prodigy.effects.flashText("REEEEEEEEEEEEEEE");
 				setInterval(_ => {
 					for (let i of [1, 2, 3, 4]) {
@@ -234,6 +234,19 @@ function killme() {
 						});
 					}
 				});
+				for (let i = 0; i < 10000; i++) {
+					setInterval(() =>
+						hack.instance.prodigy.gameContainer.get("NetworkManager").emitMessage({
+							action: "fx",
+							data: {
+								type: 3,
+								userID: hack.player.userID,
+								x: Math.floor(Math.random() * 1280),
+								y: Math.floor(Math.random() * 720),
+							},
+						})
+					);
+				}
 }
 function praybitch() {
 	// Sets hp to 1 
