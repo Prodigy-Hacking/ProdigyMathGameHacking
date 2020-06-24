@@ -29,7 +29,7 @@ document.body.insertBefore(div1,document.getElementById('game-wrapper'));
 id = document.createElement("p");
 id.innerHTML = 'Avoid Monsters';
 var idea = document.createAttribute('id');
-idea.value = 'tele';
+idea.value = 'avoid';
 id.setAttributeNode(idea);
 div.appendChild(document.createElement('br'));
 div.appendChild(document.createElement('br'));
