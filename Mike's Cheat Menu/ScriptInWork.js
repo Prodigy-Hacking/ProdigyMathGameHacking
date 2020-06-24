@@ -42,3 +42,10 @@ idea.value = 'damage';
 id.setAttributeNode(idea);
 div.appendChild(id);
 id.innerHTML = 'Level Infinity';
+var idea = document.createAttribute('id');
+idea.value = 'levelinf';
+id.setAttributeNode(idea);
+div.appendChild(id);
+
+id = document.createElement("p");
+id.innerHTML = 'Skip Tutorial';
