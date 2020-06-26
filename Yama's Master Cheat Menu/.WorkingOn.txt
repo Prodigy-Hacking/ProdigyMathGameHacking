@@ -3,4 +3,4 @@ Working On:
 Putting in hacks,
 Making background black,
 Fixing Bookmarklet,
-Delting useless hacks
+Adding more hacks.
