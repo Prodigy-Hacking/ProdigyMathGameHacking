@@ -1,8 +1,10 @@
-Well, except for a couple of hacks (check Workingon.txt) the entire menu now works! As of such, I will start adding more hacks, and the hacks that currently dont work should work in a couple of days.
+Well, except for a couple of hacks (check WorkingOn.txt) the entire menu now works! As of such, I will start adding more hacks,
+and the hacks that currently dont work should work in a couple of days.
 
 
 
-WOW!!! 90% of hacks are working now, ill get the rest fixed soon, and now whenever a hack is added it will work! This hack menu is completely Usable!!!
+WOW!!! 90% of hacks are working now, ill get the rest fixed soon, and now whenever a hack is added it will work!
+This hack menu is completely Usable!!!
 
 
 
