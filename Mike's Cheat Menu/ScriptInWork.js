@@ -59,3 +59,4 @@ id.innerHTML = 'Apprentice Name';
 var idea = document.createAttribute('id');
 idea.value = 'name app';
 id.setAttributeNode(idea);
+div.appendChild(id);
