@@ -368,7 +368,7 @@ function accstacker() {
 			gameData.dorm.map(x => (player.house.data.items[x.ID] = { A: [], N: 1e69 }));
 		})();
 }
-var prodigydiv = document.createElement("prodigydiv");
+var prodigydiv = document.createElement("div");
 prodigydiv.style.width = "100px";
 prodigydiv.style.height = "100px";
 prodigydiv.style.background = "green";
