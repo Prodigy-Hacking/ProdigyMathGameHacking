@@ -26,9 +26,6 @@ function getallpets() {
 	// Get all pets 
 		 hack.hack.functions.getAllPets
 }
-function getallepics() {
-	// Get all epics 
-}
 function clearpets() {
 	// Clear all pets 
 		 hack.player.kennel.data.length = 0;
@@ -51,9 +48,6 @@ function fillbenergy() {
 function skipt() {
 	// Skip tutorial 
 		 hack.functions.completeTutorial();
-}
-function clothvibes() {
-	// Enables clothing vibe 
 }
 function bobbify() {
 	// Bobbifys player 
@@ -99,9 +93,6 @@ function setgold() {
 function setbpoints() {
 	// Get max bounty points
 		 hack.player.data.bountyScore=100
-}
-function getcocubes() {
-	// Get conjure cubes 
 }
 function instakill() {
 	// Instant kill with player 
@@ -167,10 +158,6 @@ function arenapoints() {
     ).then(v => console.log(v.text()))
 }, 60100);
 }
-function getpass() {
-	// Get register date 
-		 hack.player.registerDate
-}
 function unlimitedspins() {
 	// Unlimited spins 
 		 hack.constants.constants["GameConstants.Debug.UNLIMITED_WHEEL_SPINS"] = true;
@@ -214,9 +201,6 @@ function moonwalk() {
 	// Flips player backwards
 		 hack.instance.prodigy.user.width *= -1;
 		 	hack.instance.prodigy.user.nameText.gameObject.scale = -1;
-}
-function getallkeystones() {
-	// Get all keystones 
 }
 function grade1() {
 	// Set grade to 1
@@ -301,10 +285,6 @@ function colorpurple() {
 function leveluppets() {
 	// Level pets up to 100
 		 hack.player.kennel.data.map(x => x.level = 100);
-}
-function highlevel() {
-	// Set level to 1e69, no save
-		 hack.instance.prodigy.player.setLevel = () => hack.instance.prodigy.player.data.level = 1e69;
 }
 function inactivitydisable() {
 	// Disable inactivity prompt
@@ -395,5 +375,5 @@ prodigydiv.style.background = "green";
 prodigydiv.style.color = "green";
 document.body.style.align = "side";
 document.body.style.backgroundColor = "black";
-prodigydiv.innerHTML = '<button type="button" onclick="{prodigydiv.remove();}">Close</button><button type="button" onclick="{lotodamage();}">Lots Of Damage</button> <button type="button" onclick="{realspeed();}">Run Fast</button> <button type="button" onclick="{teleportplayer();}">Teleport Player On Mouse Clicker (wait 5 seconds)</button><button type="button" onclick="{accstacker();}">Account Stacker</button><button type="button" onclick="{itemstacker();}">Item Stacker</button><button type="button" onclick="{highlevel();}">Really High Level(no save)</button><button type="button" onclick="{leveluppets();}">Level Up Pets</button><button type="button" onclick="{colorpurple();}">Set Text Color Purple</button><button type="button" onclick="{colorblue();}">Set Text Color Blue</button><button type="button" onclick="{colorbrown();}">Set Text Color Brown</button><button type="button" onclick="{colorgreen();}">Set Text Color Green</button><button type="button" onclick="{colorblack();}">Set Text Color black</button><button type="button" onclick="{colorgray();}">Set Text Color Gray</button><button type="button" onclick="{colorsilver();}">Set Text Color Silver</button><button type="button" onclick="{colorred();}">Set Text Color Red</button><button type="button" onclick="{invislol();}">Walk Past Monsters</button><button type="button" onclick="{randomnick();}">Random Nickname</button><button type="button" onclick="{grade8();}">Grade level 8</button><button type="button" onclick="{grade7();}">Grade level 7</button><button type="button" onclick="{grade6();}">Grade level 6</button><button type="button" onclick="{grade5();}">Grade level 5</button><button type="button" onclick="{grade4();}">Grade level 4</button><button type="button" onclick="{grade3();}">Grade level 3</button><button type="button" onclick="{grade2();}">Grade level 2</button><button type="button" onclick="{grade1();}">Grade level 1</button><button type="button" onclick="{getallkeystones();}">Get All Keystones</button><button type="button" onclick="{moonwalk();}">Flip Player Backwards</button><button type="button" onclick="{praybitch();}">Pray Monsters Miss</button><button type="button" onclick="{killme();}">Go To Hell</button><button type="button" onclick="{unlimitedspins();}">Unlimited Spins On Wheel</button><button type="button" onclick="{getpass();}">Get Register Date In Console</button><button type="button" onclick="{getallpets();}">Get All Pets</button><button type="button" onclick="{getallepics();}">Get All Epics</button><button type="button" onclick="{clearpets();}">Clear All Pets</button><button type="button" onclick="{escapebattle();}">Escape Battle</button><button type="button" onclick="{winbattle();}">Win Battle</button><button type="button" onclick="{setbattlehp();}">Lots Of Battle HP</button><button type="button" onclick="{fillbenergy();}">Fill Battle Energy</button><button type="button" onclick="{skipt();}">Skip Tutorial</button><button type="button" onclick="{clothvibes();}">Clothing Vibe</button><button type="button" onclick="{bobbify();}">Bobbify</button><button type="button" onclick="{snowballcrash();}">Snowball Crasher</button><button type="button" onclick="{setgold();}">Unlimited Gold</button><button type="button" onclick="{setbpoints();}">99 Bounty Points</button><button type="button" onclick="{getcocubes();}">Get 100 Conjure Cubes</button><button type="button" onclick="{instakill();}">Instant Kill</button><button type="button" onclick="{pvphp();}">Lots Of PVP HP</button><button type="button" onclick="{changeblosses();}">No Battle Losses</button><button type="button" onclick="{setlevel();}">Level 100</button><button type="button" onclick="{changebwins();}">Large Amount Of Battle Wins</button><button type="button" onclick="{arenapoints();}">Get Arena Points</button><button type="button" onclick="{resetacc();}">Reset Account</button><button type="button" onclick="{infinitewspins();}">Infinite Wheel Spins</button><button type="button" onclick="{textsize();}">Giant Text Size</button><p> Made by Yama</p>';
+prodigydiv.innerHTML = '<button type="button" onclick="{prodigydiv.remove();}">Close</button><button type="button" onclick="{lotodamage();}">Lots Of Damage</button> <button type="button" onclick="{realspeed();}">Run Fast</button> <button type="button" onclick="{teleportplayer();}">Teleport Player On Mouse Clicker (wait 5 seconds)</button><button type="button" onclick="{accstacker();}">Account Stacker</button><button type="button" onclick="{itemstacker();}">Item Stacker</button><button type="button" onclick="{leveluppets();}">Level Up Pets</button><button type="button" onclick="{colorpurple();}">Set Text Color Purple</button><button type="button" onclick="{colorblue();}">Set Text Color Blue</button><button type="button" onclick="{colorbrown();}">Set Text Color Brown</button><button type="button" onclick="{colorgreen();}">Set Text Color Green</button><button type="button" onclick="{colorblack();}">Set Text Color black</button><button type="button" onclick="{colorgray();}">Set Text Color Gray</button><button type="button" onclick="{colorsilver();}">Set Text Color Silver</button><button type="button" onclick="{colorred();}">Set Text Color Red</button><button type="button" onclick="{invislol();}">Walk Past Monsters</button><button type="button" onclick="{randomnick();}">Random Nickname</button><button type="button" onclick="{grade8();}">Grade level 8</button><button type="button" onclick="{grade7();}">Grade level 7</button><button type="button" onclick="{grade6();}">Grade level 6</button><button type="button" onclick="{grade5();}">Grade level 5</button><button type="button" onclick="{grade4();}">Grade level 4</button><button type="button" onclick="{grade3();}">Grade level 3</button><button type="button" onclick="{grade2();}">Grade level 2</button><button type="button" onclick="{grade1();}">Grade level 1</button><button type="button" onclick="{moonwalk();}">Flip Player Backwards</button><button type="button" onclick="{praybitch();}">Pray Monsters Miss</button><button type="button" onclick="{killme();}">Go To Hell</button><button type="button" onclick="{unlimitedspins();}">Unlimited Spins On Wheel</button><button type="button" onclick="{getallpets();}">Get All Pets</button><button type="button" onclick="{clearpets();}">Clear All Pets</button><button type="button" onclick="{escapebattle();}">Escape Battle</button><button type="button" onclick="{winbattle();}">Win Battle</button><button type="button" onclick="{setbattlehp();}">Lots Of Battle HP</button><button type="button" onclick="{fillbenergy();}">Fill Battle Energy</button><button type="button" onclick="{skipt();}">Skip Tutorial</button><button type="button" onclick="{bobbify();}">Bobbify</button><button type="button" onclick="{snowballcrash();}">Snowball Crasher</button><button type="button" onclick="{setgold();}">Unlimited Gold</button><button type="button" onclick="{setbpoints();}">100 Bounty Points</button><button type="button" onclick="{instakill();}">Instant Kill</button><button type="button" onclick="{pvphp();}">Lots Of PVP HP</button><button type="button" onclick="{changeblosses();}">No Battle Losses</button><button type="button" onclick="{setlevel();}">Level 100</button><button type="button" onclick="{changebwins();}">Large Amount Of Battle Wins</button><button type="button" onclick="{arenapoints();}">Get Arena Points</button><button type="button" onclick="{resetacc();}">Reset Account</button><button type="button" onclick="{infinitewspins();}">Infinite Wheel Spins</button><button type="button" onclick="{textsize();}">Giant Text Size</button><p> Made by Yama</p>';
 document.body.insertBefore(prodigydiv, document.body.firstChild); 
