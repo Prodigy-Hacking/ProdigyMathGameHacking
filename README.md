@@ -39,9 +39,6 @@ Redirector Instructions:
 
 ### Now, with the redirector hack, we can achieve permanent membership!
 
-### Some people have been stealing our hacks.
-
-There are some groups that steal our code, and pass it off as their own. If you actually want the most updated hacks, this is the place. Some WIP hacks can be found on our Discord.
 
 ### Notice: We are NOT trying to ruin Prodigy Math Game.
 
