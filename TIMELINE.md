@@ -20,5 +20,5 @@
 -   -   On these days, multiple variables were used to obtain the prodigy's scopes, and access the `instance` objects.
 -   **Redirector Ages**: `4/15 - CURRENT`
 -   -   After many days, the redirector hack was created, which would use a modified version of prodigy's game files. This would not be patched for a very long time. It is still working well.
--   **Content Security Patch**: `6/10`
+-   **Content Security Patch**: `6/10 - CURRENT`
 -   -   On June 10th, Prodigy added content security headers. This caused the addition of another extension to help with hacks.
