@@ -2,7 +2,7 @@
  * @type any
  */
 var targetVal = 2;
-var set = new WeakSet();
+var set = new WeakMap();
 /**
  * @type string[][]
  */
@@ -34,12 +34,12 @@ var getTree = (root = window, branch = "window", path = []) => {
 		if (el === targetVal) {
 			result.push(path.concat(key))
 		};
-		if (set.has(el)) continue;
+		if (set.get(el) === 2) continue;
 		if (
 			(typeof el === "object" || typeof el === "function") &&
 			el !== null
 		) {
-			set.add(el);
+			set.set(el, set.get(el) ? 1 : 2)
 			getTree(elem, key, path.concat(key));
 		}
 	}
