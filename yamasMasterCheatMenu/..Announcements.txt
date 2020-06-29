@@ -3,15 +3,9 @@ Ima not update the hack menu for a bit, but dont worry im not stopping! All but 
 
 
 
-
-
-
-
-
-
-
 Well, except for a couple of hacks (check WorkingOn.txt) the entire menu now works! As of such, I will start adding more hacks,
 and the hacks that currently dont work should work in a couple of days.
+
 
 
 
@@ -20,9 +14,11 @@ This hack menu is completely Usable!!!
 
 
 
+
 Tomorrow I will be reomving unneeded hacks and hacks that wont ever work, so after that ill finish adding the hcaks and it should be done!
 Estimated done date: JUNE 28TH, 2020.
 Oh ye also by done i mean completely useable. I will be updating this for a while. dont worry.
+
 
 
 
@@ -34,6 +30,7 @@ Forgot to put in the hacks today, will do tomorrow.
 
 
 
+
 Something weird happened and now according to GitHub there have been over 560 commits... wow...
 
 
@@ -42,7 +39,9 @@ Holy crap guys 300 commits on this is the most time ive ever spent on something 
 
 
 
+
 Bookmarklet Time!!! Yay!!!
+
 
 
 
@@ -50,7 +49,9 @@ Today I will be adding some more hacks in, so stay tuned!
 
 
 
+
 FIXED REFERENCE ERROR! Thanks Mustan!
+
 
 
 
@@ -58,7 +59,9 @@ I'm now working on putting in the hacks!
 
 
 
+
 Wow over 200 commits on this lol
+
 
 
 
@@ -66,7 +69,9 @@ This takes a while guys, dont rush me pls :(
 
 
 
+
 Woo! We just hit 100 commits on this!
+
 
 
 
@@ -74,7 +79,9 @@ Due to Will making a rewrite, I will be trying to complete this menu a little so
 
 
 
+
 Do you guys have any hack suggestions? I could use them!
+
 
 
 
