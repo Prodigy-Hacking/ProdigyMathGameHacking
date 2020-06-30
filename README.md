@@ -39,6 +39,8 @@ Redirector Instructions:
 
 ### Now, with the redirector hack, we can achieve permanent membership!
 
+### Public: We need your help! If anyone can go on Prodigy's Twitter, and instagram and ask them to patch this chrome extension from allowing them to change their files it would be great! (https://chrome.google.com/webstore/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd?hl=en)
+
 
 ### Notice: We are NOT trying to ruin Prodigy Math Game.
 
@@ -60,10 +62,6 @@ We are **NOT** liable for **_any_** damages.
 >    Under no circumstances and under no legal theory, whether tort (including negligence), contract, or otherwise, shall any Contributor, or anyone who distributes Covered Software as permitted above, be liable to You for any direct, indirect, special, incidental, or consequential damages of any character including, without limitation, damages for lost profits, loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses, even if such party shall have been informed of the possibility of such damages. This limitation of liability shall not apply to liability for death or personal injury resulting from such party’s negligence to the extent applicable law prohibits such limitation. Some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so this exclusion and limitation may not apply to You.
 
 -   Mozilla Public License v2
-##
-Public: We need your help! If anyone can go on Prodigy's Twitter, and instagram and ask them to patch this chrome extension from allowing them to change their files it would be great! (https://chrome.google.com/webstore/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd?hl=en)
-## Disclaimer
-
 
 ## Usage
 
