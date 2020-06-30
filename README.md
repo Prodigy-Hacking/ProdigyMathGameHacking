@@ -13,8 +13,7 @@ Redirector Instructions:
 - Redirector JSON: **[Redirector JSON](https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/redirect/Redirector.json)**
 
 ## Disclaimers
-- **_THESE HACKS MAY DAMAGE YOUR ACCOUNT. DO NOT USE ANY OF THESE HACKS ON YOUR PRIMARY ACCOUNT, AS YOU RISK YOUR ACCOUNT BECOMING IRREPERABLY DAMAGED, 
-   PREVENTING YOU FROM ACCESSING PRODIGY MATH GAME IN THAT ACCOUNT. DO NOT USE THESE HACKS FOR FINACIAL BENEFITS._** You have been warned.
+- All hacks, exploits, or other files hosted here may damage your account. Do not use *any* of these hacks on your primary account, as you risk your account becoming damaged beyond repair, preventing you from accessing Prodigy Math Game in that account. You have been warned.
    
 - We are not liable for any damages of any kind, as our license states:
 > 7. Limitation of Liability
