@@ -1,7 +1,7 @@
 # Timeline of PMGH
 
 -   **PIXI Ages**: `9/21/19 - 3/25/20`
--   -   During these times, `PIXI.game` was a thing. However, prodigy hacks were not well known.
+-   -   During these times, `PIXI.game` was a thing. However, Prodigy hacks were not well known.
 -   **Phaser Day**: `3/25/20 - 3/26/20`
 -   -   On this day, we used `Phaser.GAMES[0]`, only for it to be patched the day after.
 -   **Login.gameObj** Day: `3/26/20 - 3/27/20`
