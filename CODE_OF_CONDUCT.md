@@ -8,7 +8,7 @@ We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy
 
 ### Under NO circumstances should ANYBODY be using these hacks to cicumvent privacy of other users, use explicits within the game, phish, gain access to other accounts without autorization from the original account user, or go against our goals.
 
-#### You MUST NOT USE **ANY** OF THE HACKS TO ACHIEVE PERSONAL BENEFIT, INCLUDING BUT NOT LIMITED TO
+#### You must not use **any** of the hacks to achieve personal benefit, including but not limited to:
 
 - Money
 - Currencies
@@ -18,5 +18,3 @@ We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy
 **If you are going to make a video on these hacks, please give credit in the form provided here [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/videocredit.md).**
 
 #### FAILING TO FOLLOW OUR TERMS WILL RESULT IN LEGAL ACTION
-
-## Thank you for honoring our wishes!
