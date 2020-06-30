@@ -35,6 +35,7 @@ Redirector Instructions:
 -   [TNThacker2015 (will)](https://github.com/TNThacker2015)
 -   [MikeTheSkid](https://github.com/MikeTheSkid)
 -   [YamaHacks](https://github.com/YamaHacks)
+-   [DaChickenKing](https://github.com/DaChickenKing)
 
 ### We are NOT trying to ruin Prodigy Math Game.
 
