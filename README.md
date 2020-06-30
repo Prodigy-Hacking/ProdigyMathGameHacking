@@ -12,16 +12,13 @@ Redirector Instructions:
 - **[Locally Host Redirector](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/redirect/README.md)** (Advanced)
 - Redirector JSON: **[Redirector JSON](https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/redirect/Redirector.json)**
 
-## Disclaimer  
+## Disclaimers
 - **_THESE HACKS MAY DAMAGE YOUR ACCOUNT. DO NOT USE ANY OF THESE HACKS ON YOUR PRIMARY ACCOUNT, AS YOU RISK YOUR ACCOUNT BECOMING IRREPERABLY DAMAGED, 
    PREVENTING YOU FROM ACCESSING PRODIGY MATH GAME IN THAT ACCOUNT. DO NOT USE THESE HACKS FOR FINACIAL BENEFITS._** You have been warned.
    
 - We are not liable for any damages of any kind, as our license states:
-
 > 7. Limitation of Liability
 >    Under no circumstances and under no legal theory, whether tort (including negligence), contract, or otherwise, shall any Contributor, or anyone who distributes Covered Software as permitted above, be liable to You for any direct, indirect, special, incidental, or consequential damages of any character including, without limitation, damages for lost profits, loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses, even if such party shall have been informed of the possibility of such damages. This limitation of liability shall not apply to liability for death or personal injury resulting from such party’s negligence to the extent applicable law prohibits such limitation. Some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so this exclusion and limitation may not apply to You.
-
--   Mozilla Public License v2
    
 ## Links
 
