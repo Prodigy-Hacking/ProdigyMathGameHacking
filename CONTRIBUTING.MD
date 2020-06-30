@@ -60,3 +60,6 @@ If you see someone who is making an extra effort to ensure our community is welc
 
 ### Your contributions are licensed under the MPL 2.0 software license
 When you submit anything here, your contributions will be licensesd under [the MPL 2.0 license](https://www.mozilla.org/en-US/MPL/2.0/). Contact a collaborator if this is an issue to you.
+
+### We Develop with GitHub
+We use GitHub to host code, to track issues and feature requests, and provide you with this work.
