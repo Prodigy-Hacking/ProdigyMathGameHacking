@@ -14,7 +14,7 @@ div.setAttributeNode(id);
 id = document.createAttribute("class");
 id.value = 'hide';
 div.setAttributeNode(id);
-document.body.insertBefore(div,document.getElementById('game-wrapper'));
+document.body.insertBefore(div, document.getElementById('game-wrapper'));
 
 var div1 = document.createElement('div');
 var id = document.createAttribute("id");
@@ -24,7 +24,7 @@ div1.setAttributeNode(id);
 id = document.createAttribute("style");
 id.value = 'display: none; position: absolute; left: 12.7%; z-index: 10; background-color: blue;';
 div1.setAttributeNode(id);
-document.body.insertBefore(div1,document.getElementById('game-wrapper'));
+document.body.insertBefore(div1, document.getElementById('game-wrapper'));
 
 id = document.createElement("p");
 id.innerHTML = 'Avoid Monsters';
