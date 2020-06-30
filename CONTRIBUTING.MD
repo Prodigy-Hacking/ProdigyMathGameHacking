@@ -56,3 +56,7 @@ If you see someone who is making an extra effort to ensure our community is welc
 
 ## Thank you for honoring our wishes!
 </details>
+
+
+### Your contributions are licensed under the MPL 2.0 software license
+When you submit anything here, your contributions will be licensesd under [the MPL 2.0 license](https://www.mozilla.org/en-US/MPL/2.0/). Contact a collaborator if this is an issue to you.
