@@ -57,6 +57,8 @@ If you see someone who is making an extra effort to ensure our community is welc
 ## Thank you for honoring our wishes!
 </details>
 
+### Goal
+We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy has ignored *all* of our security reports, and has gone as far as to block a user from their Zendesk support center, simply because they reported hacks. We have come to a conclusion that to make Prodigy fix the issues with their game, we have to practically throw it into their face. Please don't make contributions attempting to create hacks that will harm the game, or otherwise not follow our goals/code of conduct.
 
 ### Your contributions are licensed under the MPL 2.0 software license
 When you submit anything here, your contributions will be licensesd under [the MPL 2.0 license](https://www.mozilla.org/en-US/MPL/2.0/). Contact a collaborator if this is an issue to you.
