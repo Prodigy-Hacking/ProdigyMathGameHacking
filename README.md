@@ -10,10 +10,18 @@
 Redirector Instructions:
 - **[Redirector](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)** (Recommended)
 - **[Locally Host Redirector](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/redirect/README.md)** (Advanced)
-  - Redirector JSON: **[Redirector JSON](https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/redirect/Redirector.json)**
-## WARNING  
-   **_THESE HACKS MAY OR MAY NOT BREAK YOUR ACCOUNT. DO NOT USE ANY OF THESE HACKS ON YOUR MAIN ACCOUNT, OR YOU MAY RISK YOUR ACCOUNT BECOMING IRREPERABLY BUGGED OUT, 
-   PREVENTING YOU FROM PLAYING THE GAME USING THAT ACCOUNT. DO NOT USE THESE HACKS FOR FINACIAL BENEFITS.You have been warned._**
+- Redirector JSON: **[Redirector JSON](https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/redirect/Redirector.json)**
+
+## Disclaimer  
+- **_THESE HACKS MAY DAMAGE YOUR ACCOUNT. DO NOT USE ANY OF THESE HACKS ON YOUR PRIMARY ACCOUNT, AS YOU RISK YOUR ACCOUNT BECOMING IRREPERABLY DAMAGED, 
+   PREVENTING YOU FROM ACCESSING PRODIGY MATH GAME IN THAT ACCOUNT. DO NOT USE THESE HACKS FOR FINACIAL BENEFITS._** You have been warned.
+   
+- We are not liable for any damages of any kind, as our license states:
+
+> 7. Limitation of Liability
+>    Under no circumstances and under no legal theory, whether tort (including negligence), contract, or otherwise, shall any Contributor, or anyone who distributes Covered Software as permitted above, be liable to You for any direct, indirect, special, incidental, or consequential damages of any character including, without limitation, damages for lost profits, loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses, even if such party shall have been informed of the possibility of such damages. This limitation of liability shall not apply to liability for death or personal injury resulting from such party’s negligence to the extent applicable law prohibits such limitation. Some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so this exclusion and limitation may not apply to You.
+
+-   Mozilla Public License v2
    
 ## Links
 
@@ -46,12 +54,3 @@ This may look like we're trying to ruin the game, but we're helping make it bett
 We're making this repository to try to get the developers to change how Prodigy handles player game data. Instead of handling everything server side, a lot of the heavy lifting is done on the player side. The server just manages multiplayer battles, and hosts data, messages, and events.
 
 Since we've hacked prodigy, there have been many anti-cheat updates. Go, devs!
-
-## All code in this repository is licensed under MPL 2.0
-
-We are **NOT** liable for **_any_** damages.
-
-> 7. Limitation of Liability
->    Under no circumstances and under no legal theory, whether tort (including negligence), contract, or otherwise, shall any Contributor, or anyone who distributes Covered Software as permitted above, be liable to You for any direct, indirect, special, incidental, or consequential damages of any character including, without limitation, damages for lost profits, loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses, even if such party shall have been informed of the possibility of such damages. This limitation of liability shall not apply to liability for death or personal injury resulting from such party’s negligence to the extent applicable law prohibits such limitation. Some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so this exclusion and limitation may not apply to You.
-
--   Mozilla Public License v2
