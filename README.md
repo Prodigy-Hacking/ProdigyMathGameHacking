@@ -52,7 +52,7 @@ Currently, this has not been fixed. There have been many patches hiding the prod
 
 Basically any changes you make to the player object will save. Be warned, if you mess up the data TOO much, the server gets really confused, and your account is broken forever! Don't do this on your main account.
 
-## All Hacks In This Github Repository Is Licensed With Mozilla Public License v2
+## All code in this repository is licensed under MPL 2.0
 
 We are **NOT** liable for **_any_** damages.
 
