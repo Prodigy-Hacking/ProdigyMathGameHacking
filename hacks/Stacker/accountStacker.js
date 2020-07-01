@@ -1,4 +1,5 @@
-// Gives your account everything.
+//> Account stacker
+//>> Gives your account everything.
 (() => {
 	const { instance } = hack;
 	const { game, prodigy } = instance;
