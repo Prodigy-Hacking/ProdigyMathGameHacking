@@ -1,2 +1,3 @@
-// Custom name (Client side only). (Put text in text here.)
+//> Custom name hack
+//>> Gives you a custom name. Client-side only.
 hack.player.getName = () => "TEXT HERE";
