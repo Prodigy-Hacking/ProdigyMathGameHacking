@@ -1,2 +1,3 @@
-// Finds out how much bounty points you have 
+//>Bounty score hack
+//>> Finds out how much bounty points you have 
 hack.player.data.bountyScore
