@@ -34,7 +34,7 @@ This may look like we're trying to ruin the game, but we're helping make it bett
 -   **[Youtube Channel](https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A)**
 -   **[Patreon (non profit)](https://www.patreon.com/PMGHacking)**
 -   **[Official Twitter](https://twitter.com/ProdigyCheats)**
--   **[How to use Javascript Hacks](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-use-Javascript-Hacks)**
+-   **[How to use JavaScript hacks](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-use-Javascript-Hacks)**
 
 ## Collaborators
 
