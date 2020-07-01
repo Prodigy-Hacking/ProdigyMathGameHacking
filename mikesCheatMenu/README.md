@@ -1,7 +1,9 @@
-How to use my cheat menu: 
+# Mike's Cheat Menu
+
+## How to Use
 
 1.) Follow the instructions of our redirect hack
 2.) Open the DevTools console (The keyboard shortcut is usally Ctrl+Shift+I, but if that doesn't work, just Google for the keystroke)
 3.) Paste in the hack script!
 
-NOTE: At the moment, the script is unfinished and will not work.
+**NOTE: At the moment, the script is unfinished and will not work.**
