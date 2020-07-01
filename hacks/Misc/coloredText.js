@@ -1,3 +1,5 @@
+//> Colored text script
+//>> Change text color
 hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
 hack.instance.prodigy.user.chatText.FillColor = "#FFFFFF";
 
