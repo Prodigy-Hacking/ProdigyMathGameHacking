@@ -1,2 +1,3 @@
-// If your too lazy to find what world ur in go to settings to find your world execute this
+//> World finding hack
+//>> This hack shows you what your current world is, if you're too lazy to check
 hack.player.world
