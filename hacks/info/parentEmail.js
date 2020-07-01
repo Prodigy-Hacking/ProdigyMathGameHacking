@@ -1,2 +1,3 @@
-// Finds out your parent email if you ever forget 
+//> Parent email hack
+//>> Finds out your parent email, incase you ever forget 
 hack.player.parentEmail
