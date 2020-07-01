@@ -1,7 +1,5 @@
 # ProdigyMathGameHacking
 
-### Check out our [YouTube Channel!](https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A)
-
 ### To make a video on our hacks, please give credit in the form provided [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/videocredit.md). See [our code of conduct](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/CODE_OF_CONDUCT.md) for more info.
 
 ## Redirector Instructions
@@ -10,6 +8,8 @@
 - **[Locally Host Redirector](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/redirect/README.md)** (Advanced)
 
 ## Announcements
+- Thank you for everyone that has supported us by using our exploits/hacks. However, our goal isn't to ruin Prodigy, it's to patch these hacks, and we need your help! If you can go on Prodigy's Twitter and Instagram and ask them to patch this Chrome extension that allows us to change their files it would be great! (https://chrome.google.com/webstore/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd?hl=en)
+- Check out our [YouTube Channel!](https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A)
 - Another extension is now required to use the hacks. Download [here](https://chrome.google.com/webstore/detail/always-disable-content-se/ffelghdomoehpceihalcnbmnodohkibj/). If that extension doesn't work for you, try [this one](https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe?hl=en-US)
 
 ## Disclaimers
