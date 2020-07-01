@@ -1,2 +1,3 @@
-// Makes you invisible (Client side only)
+//> Invisible hack
+//>> Makes you invisible (Client side only)
 hack.instance.prodigy.user.alpha = 0
