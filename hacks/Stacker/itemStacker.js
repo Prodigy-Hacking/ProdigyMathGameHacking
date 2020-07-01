@@ -1,4 +1,5 @@
-// Gives all armor, hats, boots, currencies, etc.
+//>Item stacker hack
+//>> Gives all armor, hats, boots, currencies, etc.
 (() => {
     // FMI: every time prodigy patches, update scopeObj.
     const scopeObj = hack.instance;
