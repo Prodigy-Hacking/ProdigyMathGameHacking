@@ -1,3 +1,4 @@
-//Nonpermanent membership. This script doesn't do anything because our redirector hack already does this automatically.
+//> Membership
+//>> This script will give you non-permanent membership. It doesn't do anything as our redirector hack already gives you this automatically.
 
 hack.instance.prodigy.game.P = true;
