@@ -13,7 +13,7 @@
 - Another extension is now required to use the hacks. Download [here](https://chrome.google.com/webstore/detail/always-disable-content-se/ffelghdomoehpceihalcnbmnodohkibj/). If that extension doesn't work for you, try [this one](https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe?hl=en-US)
 
 ## Disclaimers
-- All hacks, exploits, or other files hosted here may damage your account. Do not use *any* of these hacks on your primary account, as you risk your account becoming damaged beyond repair, preventing you from accessing Prodigy Math Game in that account. You have been warned.
+- All hacks, exploits, or other files hosted here may damage your account if used improperly or excessively. Do not use *any* of these hacks on your primary account, as you risk your account becoming damaged beyond repair, preventing you from accessing Prodigy Math Game in that account. You have been warned.
    
 - We are not liable for any damages of any kind, as our license states:
 > 7. Limitation of Liability
