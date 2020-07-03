@@ -52,7 +52,9 @@ new Hack(category.location, "Teleport To Map (interactive)").setClick(
 		prodigy.world.O(`${zone.value}-${area.value}`);
 		await Toast.fire("Teleported", "You have been teleported!", "success");
 	}
-);/*
+);
+
+/*
 new Hack(category.location, "Teleport To Dark Tower Floor").setClick(
 	async () => {
 		const floor = await NumberInput.fire(
