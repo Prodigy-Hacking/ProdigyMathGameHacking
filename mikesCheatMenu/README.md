@@ -1,10 +1,9 @@
 # Mike's Cheat Menu
 
 ## How to Use
-
-1.) Follow the instructions of our redirect hack
-2.) Open the DevTools console (The keyboard shortcut is usally Ctrl+Shift+I, but if that doesn't work, just Google for the keystroke)
-3.) Paste in the hack script!
+- Follow the instructions of our redirect hack
+- Open the DevTools console (The keyboard shortcut is usally Ctrl+Shift+I, but if that doesn't work, just Google for the keystroke)
+- Paste in the hack script!
 
 ----
 
