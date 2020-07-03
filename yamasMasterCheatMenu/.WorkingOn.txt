@@ -1,5 +1,0 @@
-Working On:
-
-Making background black,
-Fixing Bookmarklet,
-Adding more hacks.
