@@ -1,5 +1,5 @@
 # Usability status
-Usable; all hacks work
+Unusable, menu is fukin broken
 
 ## Unusbale hacks
 - None
