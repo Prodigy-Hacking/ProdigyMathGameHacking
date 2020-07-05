@@ -1,2 +1,3 @@
-// Sets your bounty score to 100.
+//> Bounty score hack
+//>> Sets your bounty score to 100.
 hack.player.data.bountyScore = 100;

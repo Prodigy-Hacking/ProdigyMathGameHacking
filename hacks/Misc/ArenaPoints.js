@@ -1,4 +1,5 @@
-// unminified
+//> Arena point hack
+//>> Gives you arena points
 setInterval(_ => {
     fetch(
         (

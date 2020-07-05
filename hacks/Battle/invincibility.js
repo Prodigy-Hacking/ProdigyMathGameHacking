@@ -1,2 +1,3 @@
-//makes the opponent miss every time
+//> Invincibility hack
+//>> Makes the opponent miss every time
 hack.instance.prodigy.battle.constructor.MOD_DEFAULTS.invincible = true;
