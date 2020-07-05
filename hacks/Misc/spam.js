@@ -1,5 +1,5 @@
-// Effect Spammer
-// Spams confetti, snowballs, water balloons, and fireworks.
+//> Effect Spammer
+//>> Spams confetti, snowballs, water balloons, and fireworks.
 setInterval(_ => {
 	for (let i of [1, 2, 3, 4]) {
 		hack.instance.prodigy.gameContainer.get("NetworkManager").emitMessage({
