@@ -4,6 +4,9 @@
 | Image credit to [DaChickenKing](https://github.com/DachickenKing). Screenshotted for the [Prodigy Math Game Wiki](https://prodigy-math-game.fandom.com/), used with permission. |
 ### To make a video on our hacks, please give credit in the form provided [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/videocredit.md). See [our code of conduct](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/CODE_OF_CONDUCT.md) for more info.
 
+## Attention!
+Currently, hacks are not working due to the variable "player". We are fixing this.
+
 ## Purpose
 We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy has ignored all of our security reports, and has gone as far as to block a user from their Zendesk support center, simply because they reported hacks. We created this repository to show them the security issues directly.
 
