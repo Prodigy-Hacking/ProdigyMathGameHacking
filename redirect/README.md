@@ -8,7 +8,8 @@ In an effort to make hacking easier, and harder to patch, Will made the redirect
 To put it simply, it modifies the game files to make it easier to hack. A little bit of voodoo cheat menus are included, and it's done!
 There are some occasional patches/fixes that require you to re-import the redirector json, but it's much better than the old `{Boot}` and `{sprintf}` methods.
 
-Here's a [simple guide](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack) on doing it.
+## Using Redirector in the cloud (Recommended)
+You can find the instructions for the cloud redirector [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)
 
 ## Using Redirector Locally (Advanced)
 

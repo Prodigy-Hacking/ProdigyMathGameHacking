@@ -1,4 +1,5 @@
-// Sets your nickname.
+//> Nickname script
+//>> Sets your nickname.
 hack.player.name.data.nickname = 7; 
 
 /* Put a number one through 55.  The associations are as follows:
