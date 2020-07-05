@@ -1,3 +1,8 @@
+Scratch that, made it like it was before, however you may see some orange as it varies based on screen size.
+
+
+
+
 Fixed menu, kinda, as its now linear!
 
 
