@@ -1,5 +1,5 @@
-// Snowball Spammer
-// Spams your surroundings with snowballs.
+//> Snowball Spammer
+//>> Spams your surroundings with snowballs.
 for (let i = 0; i < 10000; i++) {
 	setInterval(() =>
 		hack.instance.prodigy.gameContainer.get("NetworkManager").emitMessage({

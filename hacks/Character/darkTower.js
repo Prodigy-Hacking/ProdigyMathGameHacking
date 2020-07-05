@@ -1,2 +1,3 @@
-// makes your Dark Tower Level to 100 
+//> Dark Tower hack
+//>> Makes your Dark Tower floor to 100 
 hack.player.data.tower = 100;
