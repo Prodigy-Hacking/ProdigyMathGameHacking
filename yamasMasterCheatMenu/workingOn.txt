@@ -1,2 +1,3 @@
-Currently working on
-Addiong hacks
+Currently working on:
+Adding hacks,
+Making no orange visible
