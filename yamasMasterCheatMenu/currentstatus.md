@@ -1,8 +1,8 @@
 Usability status:
-Unusable, menu is fukin broken
+USEABLE
 
 Unusbale hacks:
-None
+NONE
 
 Errors:
-Entire menu broken
+BOOKMARKLET BROKEN 
