@@ -1,6 +1,5 @@
 // Creates menu
 var prodigydiv = document.createElement("div");
-prodigydiv.style.width = "1200px";
 prodigydiv.style.height = "200px";
 prodigydiv.style.background = "black";
 prodigydiv.style.color = "green";
