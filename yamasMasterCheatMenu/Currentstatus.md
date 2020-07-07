@@ -1,9 +1,9 @@
 Usability status:
-USEABLE
+Usable
 
 Unusabale hacks:
-NONE
+None
 
 Errors:
-BOOKMARKLET BROKEN,
-CAN ONLY BE PASTED IN ONCE
+Bookmarklet broken,
+Can only be pasted in once
