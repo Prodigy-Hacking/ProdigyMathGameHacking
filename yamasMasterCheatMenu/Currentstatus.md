@@ -1,7 +1,7 @@
 Usability status:
 USEABLE
 
-Unusbale hacks:
+Unusabale hacks:
 NONE
 
 Errors:
