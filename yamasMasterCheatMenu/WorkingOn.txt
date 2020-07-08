@@ -1,3 +1,2 @@
 Currently working on:
-Adding hacks,
-Pasting in multiple times
+Adding hacks
