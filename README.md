@@ -8,6 +8,8 @@
 Hacks are fixed 😊
 Join our Discord for regular updates on hacks and more information. [Discord](https://discord.gg/XQDfbfq).
 
+Oh and we have a youtube now [youtube] (https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A).
+
 ## Purpose
 We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy has ignored all of our security reports, and has gone as far as to block a user from their Zendesk support center, simply because they reported hacks. We created this repository to show them the security issues directly.
 
