@@ -6,12 +6,14 @@ prodigydiv.style.color = "green";
 document.body.style.align = "top";
 
 // Closes wills cheat menu
-$("#cheat-menu")[0].remove();
-$("#menu-toggler")[0].remove();
+$("#cheat-menu")[0].style.display = "none";
+$("#menu-toggler")[0].style.display = "none";
 
 function closeit() {
 	// Closes menu
 	prodigydiv.remove();
+	$("#cheat-menu")[0].style.display = "block";
+	$("#menu-toggler")[0].style.display = "block";
 }
 
 setTimeout("closeit", 2000);
