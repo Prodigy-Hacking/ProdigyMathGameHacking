@@ -1,9 +1,9 @@
 Usability status:
-Usable
+Unusable
 
 Unusabale hacks:
-None
+All
 
 Errors:
 Bookmarklet broken,
-Can only be pasted in once
+No hacks work
