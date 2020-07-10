@@ -1,19 +1,23 @@
+// Closes wills cheat menu
+const cheatmenuhide1 = document.querySelector('#cheat-menu');
+cheatmenuhide1.style.display = 'none';
+const cheatmenuhide2 = document.querySelector('#menu-toggle');
+cheatmenuhide2 && (cheatmenuhide2.style.display = 'none');
+
 // Creates menu
-var prodigydiv = document.createElement("div");
+const prodigydiv = document.createElement("div");
 prodigydiv.style.height = "200px";
 prodigydiv.style.background = "black";
 prodigydiv.style.color = "green";
 document.body.style.align = "top";
 
-// Closes wills cheat menu
-$("#cheat-menu")[0].style.display = "none";
-$("#menu-toggler")[0].style.display = "none";
-
 function closeit() {
 	// Closes menu
 	prodigydiv.remove();
-	$("#cheat-menu")[0].style.display = "block";
-	$("#menu-toggler")[0].style.display = "block";
+	const cheatmenushow1 = document.querySelector('#cheat-menu');
+	cheatmenushow1.style.display = 'block';
+	const cheatmenushow2 = document.querySelector('#menu-toggle');
+    cheatmenushow2 && (cheatmenushow2.style.display = 'block');
 }
 
 setTimeout("closeit", 2000);
