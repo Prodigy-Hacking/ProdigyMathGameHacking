@@ -34,11 +34,8 @@ This may look like we're trying to ruin the game, but we're helping make it bett
 
 -   **[Discord](https://discord.gg/XQDfbfq)**
 -   **[Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki)**
--   **[Hack List](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Hack-List)**
 -   **[Official Website](https://trip7663.wixsite.com/prodigyhackingweb)**
 -   **[Youtube Channel](https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A)**
--   **[Patreon (non profit)](https://www.patreon.com/PMGHacking)**
--   **[Official Twitter](https://twitter.com/ProdigyCheats)**
 -   **[How to use JavaScript hacks](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-use-Javascript-Hacks)**
 
 ## Collaborators
@@ -48,6 +45,5 @@ This may look like we're trying to ruin the game, but we're helping make it bett
 -   [Exoticc](https://github.com/Exoticc)
 -   [RubberDuck55](https://github.com/RubberDuck55)
 -   [TNThacker2015 (will)](https://github.com/TNThacker2015)
--   [MikeTheSkid](https://github.com/MikeTheSkid)
 -   [YamaHacks](https://github.com/YamaHacks)
 -   [DaChickenKing](https://github.com/DaChickenKing)
