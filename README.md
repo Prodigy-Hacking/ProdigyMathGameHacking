@@ -1,9 +1,6 @@
 # ProdigyMathGameHacking
-| ![https://i.imgur.com/OHePG5I.png](https://i.imgur.com/OHePG5I.png) | 
-|:--:| 
-| Image credit to [DaChickenKing](https://github.com/DachickenKing). Screenshotted for the [Prodigy Math Game Wiki](https://prodigy-math-game.fandom.com/), used with permission. |
-### To make a video on our hacks, please give credit in the form provided [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/videocredit.md). See [our code of conduct](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/CODE_OF_CONDUCT.md) for more info.
-
+# IMPORTANT
+Someone has gained access to our email, and has messed up all of our socail links. Be careful.
 ## Attention!
 Hacks are fixed 😊
 Join our Discord for regular updates on hacks and more information. [Discord](https://discord.gg/XQDfbfq).
@@ -34,7 +31,6 @@ This may look like we're trying to ruin the game, but we're helping make it bett
 
 -   **[Discord](https://discord.gg/XQDfbfq)**
 -   **[Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki)**
--   **[Official Website](https://trip7663.wixsite.com/prodigyhackingweb)**
 -   **[Youtube Channel](https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A)**
 -   **[How to use JavaScript hacks](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-use-Javascript-Hacks)**
 
