@@ -1,9 +1,4 @@
 # ProdigyMathGameHacking
-# IMPORTANT
-Someone has gained access to our email, and has messed up all of our socail links. Be careful.
-## Attention!
-Hacks are fixed 😊
-Join our Discord for regular updates on hacks and more information. [Discord](https://discord.gg/XQDfbfq).
 
 ## Purpose
 We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy has ignored all of our security reports, and has gone as far as to block a user from their Zendesk support center, simply because they reported hacks. We created this repository to show them the security issues directly.
@@ -13,9 +8,10 @@ We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy
 - **[Locally Host Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/redirect/README.md)** (Advanced)
 
 ## Announcements
-- Thank you for everyone that has supported us by using our exploits/hacks. However, our goal isn't to ruin Prodigy, it's to patch these hacks, and we need your help! If you can go on Prodigy's Twitter and Instagram and ask them to patch [this Chrome extension](https://chrome.google.com/webstore/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd?hl=en) that allows us to change their files it would be great! 
-- Check out our [YouTube Channel](https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A)!
-- Another extension is now required to use the hacks. Download [here](https://chrome.google.com/webstore/detail/always-disable-content-se/ffelghdomoehpceihalcnbmnodohkibj/). If that extension doesn't work for you, try [this one](https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe?hl=en-US)
+- `7/11/2020` - We have re-gained access to our email. Thank you for the patience.
+- `7/5/2020` - Thank you for everyone that has supported us by using our exploits/hacks. However, our goal isn't to ruin Prodigy, it's to patch these hacks, and we need your help! If you can go on Prodigy's Twitter and Instagram and ask them to patch [this Chrome extension](https://chrome.google.com/webstore/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd?hl=en) that allows us to change their files it would be great! 
+- `7/1/2020` - Check out our [YouTube Channel](https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A)!
+- `6/10/2020` - Another extension is now required to use the hacks. Download [here](https://chrome.google.com/webstore/detail/always-disable-content-se/ffelghdomoehpceihalcnbmnodohkibj/). If that extension doesn't work for you, try [this one](https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe?hl=en-US)
 
 ## Disclaimers
 - All hacks, exploits, or other files hosted here may damage your account if used improperly or excessively. Do not use *any* of these hacks on your primary account, as you risk your account becoming damaged beyond repair, preventing you from accessing Prodigy Math Game in that account. You have been warned.
