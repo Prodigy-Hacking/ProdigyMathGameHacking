@@ -10,15 +10,17 @@
 -   -   This method worked for longer. However, it was also quickly patched.
 -   **Cheat Dashboard Day**: `3/30/20 - 3/30/20`
 -   -   A cheat dashboard was developed. However, it was not very good, which caused it to be unsupported the day after.
--   **Dark Ages**: `4/01 - 4/07`
+-   **Dark Ages**: `4/01/20 - 4/07/20`
 -   -   The first week of April was a sad week for prodigy hacking. All known hacking methods were patched.
--   **EnableDebug Breakthrough**: `4/07 - 4/09`
+-   **EnableDebug Breakthrough**: `4/07/20 - 4/09/20`
 -   -   A way to enable debug mode was found, and worked for two days. However, debug was removed by Prodigy quickly after.
--   **Prodigy Console Prevention**: `4/10`
+-   **Prodigy Console Prevention**: `4/10/20`
 -   -   On this day, prodigy added the devtool disabler, which would cause a 404 on devtool open.
--   **Debugger Scope Ages**: `4/12 - 4/15`
+-   **Debugger Scope Ages**: `4/12/20 - 4/15`
 -   -   On these days, multiple variables were used to obtain the prodigy's scopes, and access the `instance` objects.
--   **Redirector Ages**: `4/15 - CURRENT`
+-   **Redirector Ages**: `4/15/20 - CURRENT`
 -   -   After many days, the redirector hack was created, which would use a modified version of prodigy's game files. This would not be patched for a very long time. It is still working well.
--   **Content Security Patch**: `6/10 - CURRENT`
+-   **Content Security Patch**: `6/10/20 - CURRENT`
 -   -   On June 10th, Prodigy added content security headers. This caused the addition of another extension to help with hacks.
+- **`hack.instance.prodigy.player` Patch**: `7/5/20 - 7/5/20`
+-   -   On July 5th, Prodigy implemented a patch for `hack.instance.prodigy.player`. This was unpatched by ProdigyMathGameHacking about 3 hours later.
