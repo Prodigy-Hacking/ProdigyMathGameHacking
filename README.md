@@ -27,7 +27,7 @@ This may look like we're trying to ruin the game, but we're helping make it bett
 
 -   **[Discord](https://discord.gg/XQDfbfq)**
 -   **[Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki)**
--   **[Youtube Channel](https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A)**
+-   **[YouTube Channel](https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A)**
 -   **[How to use JavaScript hacks](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-use-Javascript-Hacks)**
 
 ## Collaborators
