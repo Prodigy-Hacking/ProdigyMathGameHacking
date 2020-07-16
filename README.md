@@ -12,7 +12,7 @@ We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy
 - **[Locally Host Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/redirect/README.md)** (Advanced)
 
 ## Announcements
-- `7/11/2020` - We have re-gained access to our email. Thank you for the patience.
+- `7/11/2020` - We have re-gained access to our email. Thank you for your patience.
 - `7/5/2020` - Thank you for everyone that has supported us by using our exploits/hacks. However, our goal isn't to ruin Prodigy, it's to patch these hacks, and we need your help! If you can go on Prodigy's Twitter and Instagram and ask them to patch [this Chrome extension](https://chrome.google.com/webstore/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd?hl=en) that allows us to change their files it would be great! 
 - `7/1/2020` - Check out our [YouTube Channel](https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A)!
 - `6/10/2020` - Another extension is now required to use the hacks. Download [here](https://chrome.google.com/webstore/detail/always-disable-content-se/ffelghdomoehpceihalcnbmnodohkibj/). If that extension doesn't work for you, try [this one](https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe?hl=en-US)
