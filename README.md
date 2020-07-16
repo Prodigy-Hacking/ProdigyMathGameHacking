@@ -3,6 +3,10 @@
 ## Purpose
 We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy has ignored all of our security reports, and has gone as far as to block a user from their Zendesk support center, simply because they reported hacks. We created this repository to show them the security issues directly.
 
+# Notice:
+### Prodigy is saying that hacks may download "viruses" or "malware" on your device. Please know our hacks are 100% safe. However, it's advisable to do these on an alt, because Prodigy reserves the right to delete your account at any time.
+#### We will never ask you for your password, if someone does, check with the Discord server admins, because they may not be legitimate. Just a reminder our hacks are located here and JUST HERE. If someone gives you hacks from a repository that isn't ours or isn't forked from ours, they may not be safe.
+
 ## Hack instructions
 - **[Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)**
 - **[Locally Host Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/redirect/README.md)** (Advanced)
