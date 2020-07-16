@@ -6,10 +6,10 @@ We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy
 
 ## Code of Conduct
 
-### Under NO circumstances should ANYBODY use these hacks to cicrumvent the privacy of other users, use explicits within the game, phish, gain access to other accounts without autorization from the original account user, or otherwise go against our purpose.
+### Under NO circumstances should ANYBODY use these hacks to circumvent the privacy of other users, use explicits within the game, phish, gain access to other accounts without autorization from the original account user, or otherwise go against our purpose.
 
 #### You must not use **any** of the hacks to achieve personal benefit, including but not limited to:
-- Currencies
+- Currencies (IRL currencies, game currencies are fine.)
 - Subscribers/Views on YouTube
 - Twitter/Facebook/Instagram followers
 
