@@ -12,4 +12,4 @@ We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy
 - Real-life currencies
 - For the sole purpose of social media followers or other statistics, including but not limited to YouTube viewers, Twitter likes/reposts, and social media followers. **You may make a YouTube video, Twitter post, or other social media post of our hacks if, and only if, you provide credit, state our purpose, link our code of conduct, and link this repository. Do *not* show these hacks without giving a clear method to obtain them. If you are making a YouTube video, follow this format: https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/videocredit.md**
 
-#### FAILING TO FOLLOW OUR TERMS WILL RESULT IN LEGAL ACTION
+#### FAILING TO FOLLOW OUR TERMS WILL RESULT IN LEGAL ACTION. BY USING ANY SOFTWARE PUBLISHED HERE, YOU UNDERSTAND THAT YOU HAVE READ AND AGREE TO BE BOUND BY THIS AGREEMENT.
