@@ -2,7 +2,7 @@
 
 ## Purpose (This doesn't have anything to do with our hacking standards)
 
-We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy has ignored *all* of our security reports, and has gone as far as to block a user from their Zendesk support center, simply because they reported hacks. Therefore, we have created this Code of Conduct.
+We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy has ignored *all* of our security reports, and has gone as far as to block a user from their Zendesk support center, simply because they reported hacks. Therefore, we have created this repository.
 
 ## Code of Conduct
 
