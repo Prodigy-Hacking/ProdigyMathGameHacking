@@ -5,7 +5,7 @@ We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy
 
 # Notice:
 ### Prodigy is saying that hacks may download "viruses" or "malware" on your device. Please know our hacks are 100% safe. However, it's advisable to do these on an alt, because Prodigy reserves the right to delete your account at any time.
-#### We will never ask you for your password, if someone does, check with the Discord server admins, because they may not be legitimate. Just a reminder our hacks are located here and JUST HERE. If someone gives you hacks from a repository that isn't ours or isn't forked from ours, they may not be safe.
+#### We will never ask you for your password, if someone does, check with the Discord server admins, because they may not be legitimate. Just a reminder our hacks are located here and JUST HERE. If someone gives you hacks from a repository that isn't ours, isn't forked from ours or isn't created by one of our collaborators, they may not be safe.
 
 ## Hack instructions
 - **[Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)**
