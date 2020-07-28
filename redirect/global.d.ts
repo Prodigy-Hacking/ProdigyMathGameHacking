@@ -14,6 +14,10 @@ export declare interface HackVariables {
 	menuTxt: { [index: string]: number; [index: number]: string };
 	menuObj: { [index: string]: { INTRO: { menu: number; ID: number } } };
 }
+export declare interface Chat {
+	_localizer: unknown;
+	J: string[];
+}
 export declare interface Hack {
 	instance: { prodigy: Prodigy; game: Game };
 	constants: unknown;
@@ -26,5 +30,6 @@ export declare interface Hack {
 	network: TODO;
 	hack: Hack;
 	player: Player;
+	chat: Chat
 	hackMainframe(): void;
 }
