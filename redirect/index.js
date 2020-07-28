@@ -94,7 +94,7 @@ app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, v
                     ["t.constants=Object", "hack.constants=t,t.constants=Object"],
                     ["window,function(t){var i={};", "window,function(t){var i={};hack.modules=i;"],
                     ["this._player=t", "this._player=hack.player=t"],
-                    ["this._networkManager=u,", "this._networkManager=hack.network=u,"],
+                    ["this._localizer=null,this.J=[]", "hack.chat=this;this._localizer=null,this.J=[]"],
                 ];
                 _b = (_a = res).send;
                 _d = (_c = replacements).reduce;
