@@ -3,6 +3,8 @@
 ## Purpose
 We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy has ignored all of our security reports, and has gone as far as to block a user from their Zendesk support center, simply because they reported hacks. We created this repository to show them the security issues directly.
 
+# We are working on a chat room that links to our cheat menu! Beta test it [here](http://prodigyhacking.ml:3000), and souce code can be found [here](https://github.com/Prodigy-Hacking/ProdigyIRC)!
+
 # Notice:
 ### We have a Discord! Join it to get updates, more hacks, win giveaways, interact with us and just chat, get support, help us bring hacks to everyone, and much much more! Join it [here!](https://discord.gg/XQDfbfq) You won't regret it!
 ### Prodigy is saying that hacks may download "viruses" or "malware" on your device. Please know our hacks are 100% safe. However, it's advisable to do these on an alt, because Prodigy reserves the right to delete your account at any time.
