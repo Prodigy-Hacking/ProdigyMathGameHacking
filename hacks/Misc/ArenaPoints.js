@@ -1,10 +1,10 @@
 //> Arena point hack
 //>> Gives you arena points
 setInterval(_ => {
-    fetch(
+   fetch(
         (
             "https://api.prodigygame.com/leaderboard-api/season/" + 
-            hack.instance.prodigy.gameContainer.get("PVPNetworkHandler").seasonID +
+            hack.instance.prodigy.gameContainer.get("70a-429f").seasonID +
             "/user/" + 
             hack.player.userID + 
             "/pvp?userID=" + 
@@ -15,7 +15,7 @@ setInterval(_ => {
             headers: {
                 "authorization": (
                     "Bearer " + 
-                    hack.instance.prodigy.gameContainer.get("NetworkManager").jwtAuthProvider.getToken()
+                    hack.network.jwtAuthProvider.getToken()
                 ),
                 "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
                 "sec-fetch-mode": "cors"
@@ -25,11 +25,12 @@ setInterval(_ => {
             referrerPolicy: "no-referrer-when-downgrade",
             body: (
                 "seasonID=" +
-                hack.instance.prodigy.gameContainer.get("PVPNetworkHandler").seasonID + 
+                hack.instance.prodigy.gameContainer.get("70a-429f").seasonID + 
                 "&action=win"
             ),
             method: "POST",
             mode: "cors"
         }
     ).then(v => console.log(v.text()))
+
 }, 60100);
