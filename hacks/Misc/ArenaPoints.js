@@ -1,5 +1,7 @@
 //> Arena point hack
 //>> Gives you arena points
+//> Arena point hack
+//>> Gives you arena points
 setInterval(_ => {
    fetch(
         (
@@ -31,6 +33,7 @@ setInterval(_ => {
             method: "POST",
             mode: "cors"
         }
-    ).then(v => console.log(v.text()))
-
-}, 60100);
+    )
+    .then(v => v.text())
+    .then(v => console.log(v))
+}, 60500);
