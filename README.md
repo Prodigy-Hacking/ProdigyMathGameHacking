@@ -3,7 +3,7 @@
 ## Purpose
 We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy has ignored all of our security reports, and has gone as far as to block a user from their Zendesk support center, simply because they reported hacks. We created this repository to show them the security issues directly.
 
-# We are working on a chat room that links to our cheat menu! Beta test it [here](http://prodigyhacking.ml:3000), and souce code can be found [here](https://github.com/Prodigy-Hacking/ProdigyIRC)!
+# We are working on a chat room that links to our cheat menu! Beta test it [here](http://prodigyhacking.ml:3000), and source code can be found [here](https://github.com/Prodigy-Hacking/ProdigyIRC)!
 
 # Notice:
 ### We have a Discord! Join it to get updates, more hacks, win giveaways, interact with us and just chat, get support, help us bring hacks to everyone, and much much more! Join it [here!](https://discord.gg/XQDfbfq) You won't regret it!
@@ -12,9 +12,10 @@ We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy
 
 ## Hack instructions
 - **[Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)**
-- **[Locally Host Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/redirect/README.md)** (Advanced)
+- **[Locally Hosted Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/redirect/README.md)** (Advanced)
 
 ## Announcements
+- `8/11/2020` - While we may have been lazy the past month or so, we are working on *many* projects, some of which are revolutionary! Stay tuned for more to come. 
 - `7/11/2020` - We have re-gained access to our email. Thank you for your patience.
 - `7/5/2020` - Thank you for everyone that has supported us by using our exploits/hacks. However, our goal isn't to ruin Prodigy, it's to patch these hacks, and we need your help! If you can go on Prodigy's Twitter and Instagram and ask them to patch [this Chrome extension](https://chrome.google.com/webstore/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd?hl=en) that allows us to change their files it would be great! 
 - `7/1/2020` - Check out our [YouTube Channel](https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A)!
@@ -28,7 +29,7 @@ We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy
 >    Under no circumstances and under no legal theory, whether tort (including negligence), contract, or otherwise, shall any Contributor, or anyone who distributes Covered Software as permitted above, be liable to You for any direct, indirect, special, incidental, or consequential damages of any character including, without limitation, damages for lost profits, loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses, even if such party shall have been informed of the possibility of such damages. This limitation of liability shall not apply to liability for death or personal injury resulting from such party’s negligence to the extent applicable law prohibits such limitation. Some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so this exclusion and limitation may not apply to You.
 
 ### We are not trying to ruin Prodigy Math Game.
-This may look like we're trying to ruin the game, but we're helping make it better. By finding exploits, we help the developers find that there is an exploit, and the developers fix it, overall helping the game. Anyone who claims that we are 'malicious' or 'ruining the game', are wrong. Please don't spread misinformation.
+This may look like we're trying to ruin the game, but we're helping make it better. By finding exploits, we help the developers find that there is an exploit, and the developers fix it, overall helping the game. Anyone who claims that we are "malicious" or "ruining the game" are wrong. Please don't spread misinformation.
    
 ## Links
 
