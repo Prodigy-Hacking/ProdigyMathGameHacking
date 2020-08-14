@@ -6,7 +6,7 @@ setInterval(_ => {
    fetch(
         (
             "https://api.prodigygame.com/leaderboard-api/season/" + 
-            hack.instance.prodigy.gameContainer.get("70a-429f").seasonID +
+            hack.instance.prodigy.gameContainer.get("a62-3d8f").seasonID +
             "/user/" + 
             hack.player.userID + 
             "/pvp?userID=" + 
@@ -27,7 +27,7 @@ setInterval(_ => {
             referrerPolicy: "no-referrer-when-downgrade",
             body: (
                 "seasonID=" +
-                hack.instance.prodigy.gameContainer.get("70a-429f").seasonID + 
+                hack.instance.prodigy.gameContainer.get("a62-3d8f").seasonID + 
                 "&action=win"
             ),
             method: "POST",
