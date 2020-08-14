@@ -15,7 +15,7 @@ setInterval(_ => {
             headers: {
                 "authorization": (
                     "Bearer " + 
-                    hack.network.jwtAuthProvider.getToken()
+hack.instance.prodigy.gameContainer.get('7fd-a29d')._jwtAuthProvider.getToken()
                 ),
                 "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
                 "sec-fetch-mode": "cors"
