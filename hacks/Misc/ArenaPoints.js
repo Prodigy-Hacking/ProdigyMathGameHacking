@@ -1,7 +1,5 @@
 //> Arena point hack
-//>> Gives you arena points
-//> Arena point hack
-//>> Gives you arena points
+//>> Gives you arena points every minute, DO NOT RUN THIS MORE THAN ONCE, IT WILL RUN ON ITS OWN.
 setInterval(_ => {
    fetch(
         (
