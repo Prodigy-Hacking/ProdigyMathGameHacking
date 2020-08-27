@@ -19,3 +19,7 @@ javascript:console.log=console.clear=console.dir=_=>{}
 ### Made by AVN1114
 
 #### Note: These hacks require you to reload after usage.
+
+----
+### Possible issues:
+### - JWT token sometimes isn't defined in `localStorage`.
