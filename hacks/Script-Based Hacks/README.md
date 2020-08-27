@@ -22,4 +22,4 @@ javascript:console.log=console.clear=console.dir=_=>{}
 
 ----
 ### Possible issues:
-### - JWT token sometimes isn't defined in `localStorage` after a while, so if ou are experiencing issues, reload the page and perform your desired hacks quickly!
+### - JWT token sometimes isn't defined in `localStorage` after a while, so if you are experiencing issues, reload the page and perform your desired hacks quickly!
