@@ -9,7 +9,7 @@ We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy
 # Notice:
 ### We have a Discord! Join it to get updates, more hacks, win giveaways, interact with us and just chat, get support, help us bring hacks to everyone, and much much more! Join it [here!](https://discord.gg/XQDfbfq) 
 
-### Prodigy is saying that hacks may download "viruses" or "malware" on your device. Please know our hacks are 100% safe. However, it's advisable to do these on an alt, because Prodigy reserves the right to delete your account at any time.
+### Prodigy is saying that hacks may download "viruses" or "malware" on your device. Please know our hacks are 100% safe. However, it's advisable to do these on an alt, because Prodigy reserves the right to delete your account at any time. If you get someone giving you an executable file (for example a .exe file) to run the hacks, it is not legit! If that does happen, do not download the file and report it to any of the admins on the Discord!
 #### We will never ask you for your password, if someone does, check with the Discord server admins, because they may not be legitimate. Just a reminder our hacks are located here and JUST HERE. If someone gives you hacks from a repository that isn't ours, isn't forked from ours or isn't created by one of our collaborators, they may not be safe.
 
 ## Hack instructions
