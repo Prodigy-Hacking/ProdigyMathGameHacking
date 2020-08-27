@@ -3,6 +3,8 @@
 ## Purpose
 We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy has ignored all of our security reports, and has gone as far as to block a user from their Zendesk support center, simply because they reported hacks. We created this repository to show them the security issues directly.
 
+# Script based hacks are back! Stay tuned for more info!
+
 # We are working on a chat room that links to our cheat menu! Beta test it [here](http://prodigyhacking.ml:3000), and source code can be found [here](https://github.com/Prodigy-Hacking/ProdigyIRC)!
 
 # Notice:
