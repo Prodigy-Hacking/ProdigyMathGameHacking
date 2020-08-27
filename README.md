@@ -49,3 +49,6 @@ This may look like we're trying to ruin the game, but we're helping make it bett
 -   [TNThacker2015 (will)](https://github.com/TNThacker2015)
 -   [YamaHacks](https://github.com/YamaHacks)
 -   [DaChickenKing](https://github.com/DaChickenKing)
+
+----
+***All hacks and software are licensed under the MPL V2.0, unless stated otherwise with a separate license.***
