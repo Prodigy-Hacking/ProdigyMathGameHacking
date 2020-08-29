@@ -93,15 +93,16 @@ app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, v
                     ["s),this._game=i}", "s),this._game=i};Object.defineProperty(hack, \"instance\", { get: () => t.instance });"],
                     ["t.constants=Object", "hack.constants=t,t.constants=Object"],
                     ["window,function(t){var i={};", "window,function(t){var i={};hack.modules=i;"],
-                    ["return t.BAM=", ";hack.variables.loc=Ar;hack.variables.menuTxt=Kr;hack.variables.menuObj=t;return t.BAM="],
+                    ["this._player=t", "this._player=hack.player=t"],
+                    ["this._localizer=null,this.J=[]", "hack.chat=this;this._localizer=null,this.J=[]"],
                 ];
                 _b = (_a = res).send;
                 _d = (_c = replacements).reduce;
                 _e = [function (l, c) { return l.split(c[0]).join(c[1]); }];
-                _f = "\n\texports = {};window.hack=Object.create(null);hack.variables=Object.create(null);\n\t\n" + gameMinJS + "\n\t" + typescript_1.transpile(fs_1.default.readFileSync(path_1.default.join(__dirname, "./revival.ts"), { encoding: "utf8" })) + "\n\tconsole.log(\"%cWill's Redirect Hack\", \"font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;\");\n\tconsole.log(\"%cVersion " + VERSION + "\", \"font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;\");\n\tconsole.log('The variable \"hack\" contains the hacked variables.');\n\t";
+                _f = "\n\texports = {};window.hack=Object.create(null);hack.variables=Object.create(null);\n\t\n" + gameMinJS + "\n\t" + typescript_1.transpile(fs_1.default.readFileSync(path_1.default.join(__dirname, "./revival.ts"), { encoding: "utf8" })) + "\n\tconsole.log(\"%cWill's Redirect Hack\", \"font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;\");\n\tconsole.log(\"%cVersion " + VERSION + "\", \"font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;\");\n\tconsole.log('The variable \"hack\" contains the hacked variables.');\n\tsetTimeout(() => {\n\t\t";
                 return [4 /*yield*/, node_fetch_1.default("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/willsCheatMenu/loader.js")];
             case 5: return [4 /*yield*/, (_h.sent()).text()];
-            case 6: return [2 /*return*/, _b.apply(_a, [_d.apply(_c, _e.concat([_f + (_h.sent()) + "\n"]))])];
+            case 6: return [2 /*return*/, _b.apply(_a, [_d.apply(_c, _e.concat([_f + (_h.sent()) + "\n\n\t}, 10000)\n"]))])];
         }
     });
 }); });
@@ -110,7 +111,10 @@ app.get("/public-game.min.js", function (req, res) { return __awaiter(void 0, vo
     var publicGame;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, node_fetch_1.default("https://play.prodigygame.com/public/js/public-game.min.js")];
+            case 0:
+                if (!req.query.hash)
+                    return [2 /*return*/, res.send("alert('OUTDATED REDIRECTOR CONFIG')")];
+                return [4 /*yield*/, node_fetch_1.default("https://code.prodigygame.com/js/public-game-" + req.query.hash + ".min.js")];
             case 1: return [4 /*yield*/, (_a.sent()).text()];
             case 2:
                 publicGame = _a.sent();

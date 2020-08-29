@@ -12,15 +12,15 @@ hack.functions = Object.create(null);
 hack.functions.completeTutorial = () => {
 	setQuest("house", 2);
 	setQuest("academy", 2);
-	hack.instance.prodigy.player.state.set("tutorial-0", 4);
-	hack.instance.prodigy.player.backpack.addKeyItem(13, 0);
-	hack.instance.prodigy.player.tutorial.setMenuValue(hack.variables.menuObj.WORLD_MAP.INTRO, 1);
-	hack.instance.prodigy.player.tutorial.setMenuValue(hack.variables.menuObj.BESTIARY.INTRO, 1);
+	hack.player.state.set("tutorial-0", 4);
+	hack.player.backpack.addKeyItem(13, 0);
+	hack.player.tutorial.setMenuValue(hack.variables.menuObj.WORLD_MAP.INTRO, 1);
+	hack.player.tutorial.setMenuValue(hack.variables.menuObj.BESTIARY.INTRO, 1);
 	hack.instance.prodigy.open.map(true, []);
-	hack.instance.prodigy.player.onTutorialComplete();
+	hack.player.onTutorialComplete();
 };
 hack.functions.getAllPets = () =>
-	hack.instance.prodigy.player.kennel.data.splice(
+	hack.player.kennel.data.splice(
 		0,
 		1e69,
 		...hack.gameData.pet.map(x => ({
@@ -36,7 +36,7 @@ hack.functions.getAllPets = () =>
 	);
 
 hack.functions.getAllItemsInCategory = category =>
-	hack.instance.prodigy.player.backpack.data[category].splice(
+	hack.player.backpack.data[category].splice(
 		0,
 		1e69,
 		...hack.gameData[category].map(x => ({ ID: x.ID, N: 1e69 }))
@@ -44,8 +44,36 @@ hack.functions.getAllItemsInCategory = category =>
 hack.functions.escapeBattle = () => {
 	const currentState = hack.instance.game.state.current;
 	if (currentState === "PVP") hack.instance.game.state.states.PVP.endPVP();
-	else if (currentState === "CoOp") hack.instance.prodigy.world.$(hack.instance.prodigy.player.data.zone);
+	else if (currentState === "CoOp") hack.instance.prodigy.world.$(hack.player.data.zone);
 	else hack.instance.game.state.callbackContext.runAwayCallback();
+};
+hack.hackMainframe = () => {
+	const parent = document.querySelector("canvas")?.parentElement;
+	document.querySelector("canvas")?.remove();
+	const canvas = document.createElement("canvas");
+	parent.prepend(canvas)
+	const ctx = canvas.getContext("2d");
+	const letters = "0123456789ABCDEF".split("");
+	canvas.width = innerWidth
+	canvas.height = innerHeight
+
+	const fontSize = 10;
+	const columns = canvas.width / fontSize;
+	const drops = [];
+	for (let i = 0; i < columns; i++) drops[i] = 1;
+	setInterval(() => {
+		ctx.fillStyle = "rgba(0, 0, 0, .1)";
+		ctx.fillRect(0, 0, canvas.width, canvas.height);
+		for (let i = 0; i < drops.length; i++) {
+			const text = letters[Math.floor(Math.random() * letters.length)];
+			ctx.fillStyle = "#0f0";
+			ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+			drops[i]++;
+			if (drops[i] * fontSize > canvas.height && Math.random() > 0.95) {
+				drops[i] = 0;
+			}
+		}
+	}, 33)
 };
 /*
 hack.functions.customChat = (text: string) => {
@@ -90,4 +118,10 @@ hack.functions.customChat = (text: string) => {
 Object.defineProperty(hack, "gameData", { get: () => hack.instance.game.state.states.Boot._gameData });
 Object.defineProperty(hack, "localizer", {
 	get: () => hack.instance.prodigy.gameContainer.get("LocalizationService"),
+});
+Object.defineProperty(hack, "network", {
+	get: () => hack.player.game.input.onDown._bindings[0].context,
+});
+Object.defineProperty(hack, "hack", {
+	get: () => hack,
 });
