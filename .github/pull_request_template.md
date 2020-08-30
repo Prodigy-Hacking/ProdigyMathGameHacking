@@ -5,5 +5,5 @@ Describe your PR here
 
 ## Screenshots
 <!--
-If this PR touches the interface of the bot, add screenshots here.
+If this PR touches the interface of anything in this repository, add screenshots here.
 -->
