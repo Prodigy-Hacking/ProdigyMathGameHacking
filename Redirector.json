@@ -67,15 +67,7 @@
             "disabled": false,
             "grouped": false,
             "appliesTo": [
-                "sub_frame",
-                "stylesheet",
-                "script",
-                "image",
-                "imageset",
-                "object",
-                "xmlhttprequest",
-                "history",
-                "other"
+                "xmlhttprequest"
             ]
         }
     ]
