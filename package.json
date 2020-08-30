@@ -12,5 +12,9 @@
 	"scripts": {
 		"start": "node index",
 		"build": "tsc"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.7",
+		"@types/node-fetch": "^2.5.7"
 	}
 }
