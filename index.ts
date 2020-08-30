@@ -73,7 +73,7 @@ app.get("/public-game.min.js", async (req, res) => {
 app.get("/download", async (req, res) => {
 	const file = await (
 		await fetch(
-			"https://raw.githubusercontent.com/PatheticMustan/ProdigyMathGameHacking/master/redirect/Redirector.json"
+			"https://rawcdn.githack.com/Prodigy-Hacking/Redirector/3f9f99d1d5513a76cedc50e5f18f2ae4178e6d6e/Redirector.json"
 		)
 	).text();
 	res.type(".json");
