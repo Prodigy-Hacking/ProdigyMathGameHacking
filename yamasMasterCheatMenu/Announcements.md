@@ -1,3 +1,8 @@
+Hey! I need help from yall. Should I continue this menu, or remake a brand new and shiny one from scratch. DM me on discord @ Yama#5154 for what you think!
+
+
+
+
 dw yall, just cus i died, i havent stopped this. and the way were going, no big changes will be happening to the hacks soon, so i dont need to rush 
 making it!
 

@@ -24,3 +24,5 @@
 -   -   On June 10th, Prodigy added content security headers. This caused the addition of another extension to help with hacks.
 - **`hack.instance.prodigy.player` Patch**: `7/5/20 - 7/5/20`
 -   -   On July 5th, Prodigy implemented a patch for `hack.instance.prodigy.player`. This was unpatched by ProdigyMathGameHacking about 3 hours later.
+-  **Script based hacks return**: `8/25/20 - CURRENT`
+-   - On August 20th, we found a way to access the Prodigy network, and make hacks without the redirector extension.

@@ -2,9 +2,9 @@ Usability status:
 Usable
 
 Unusabale hacks:
-All Text stuff, some others are also glitched
+All Text hacks, other hacks unsure
 
 Errors:
 Bookmarklet broken,
-Half hacks dont work,
+Half of the hacks dont work,
 Can only be pasted in once
