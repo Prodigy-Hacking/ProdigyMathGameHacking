@@ -33,7 +33,7 @@ The source code can be found on the [ProdigyIRC repo](https://github.com/Prodigy
 
 ## Hack instructions
 - **[Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)**
-- **[Locally Hosted Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/redirect/README.md)** (Advanced)
+- **[Locally Hosted Redirect Hack](https://github.com/Prodigy-Hacking/Redirector#using-redirector-locally-advanced)** (Advanced)
 
 ## Another Warning
 - All hacks, exploits, or other files hosted here may damage your account if used improperly or excessively. Do not use *any* of these hacks on your primary account, as you risk your account becoming damaged beyond repair, preventing you from accessing Prodigy Math Game in that account. You have been warned.
