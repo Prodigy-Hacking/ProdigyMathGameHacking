@@ -8,6 +8,7 @@ See [this](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master
 
 <details>
 <summary>Show Code of Conduct file</summary>
+  https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/CODE_OF_CONDUCT.md
 <br>
 
 # Citizen Code of Conduct
