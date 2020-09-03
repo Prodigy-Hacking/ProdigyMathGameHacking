@@ -13,4 +13,6 @@ A: Yes, we just are sometimes lazy for a few months, but we always have many pro
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Q: "Do you have script based hacks?"
-A: Yes, you can check them out right *[here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/tree/master/hacks/Script-Based%20Hacks)*
+A: Yes, you can check them out right 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/tree/master/hacks/Script-Based%20Hacks)*
