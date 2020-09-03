@@ -26,6 +26,10 @@ A: Technically yes, you can make a script to put in your menu that also removes 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Q: "Do the hacks save?"
-F: While some do, others dont. Basic things such as levels 1-100 save, while going higher than that isnt meant to happen,
+A: While some do, others dont. Basic things such as levels 1-100 save, while going higher than that isnt meant to happen,
 therefore doesnt save. Basically, it depends.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Q: "Can I be banned for this?"
+A: Technically? yes, most likely? no.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
