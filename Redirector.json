@@ -1,6 +1,6 @@
 {
     "createdBy": "Redirector v3.5.3",
-    "createdAt": "2020-08-12T14:44:46.813Z",
+    "createdAt": "2020-09-03T22:42:28.397Z",
     "redirects": [
         {
             "description": "game.min.js",
@@ -55,13 +55,13 @@
         },
         {
             "description": "Member Hack",
-            "exampleUrl": "https://api.prodigygame.com/game-cortex-server/v1/character/62557673?isMember=0&userID=62557673",
-            "exampleResult": "https://api.prodigygame.com/game-cortex-server/v1/character/62557673?isMember=1&userID=62557673",
+            "exampleUrl": "https://api.prodigygame.com/game-api/v1/character/62557673?isMember=0&userID=62557673",
+            "exampleResult": "https://api.prodigygame.com/game-api/v1/character/62557673?isMember=1&userID=62557673",
             "error": null,
-            "includePattern": "https://api.prodigygame.com/game-cortex-server/v1/character/(.+)\\?isMember=0&userID=(.+)",
+            "includePattern": "https://api.prodigygame.com/game-api/v1/character/(.+)\\?isMember=0&userID=(.+)",
             "excludePattern": "",
             "patternDesc": "",
-            "redirectUrl": "https://api.prodigygame.com/game-cortex-server/v1/character/$1?isMember=1&userID=$2",
+            "redirectUrl": "https://api.prodigygame.com/game-api/v1/character/$1?isMember=1&userID=$2",
             "patternType": "R",
             "processMatches": "noProcessing",
             "disabled": false,
