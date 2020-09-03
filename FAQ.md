@@ -31,5 +31,10 @@ therefore doesnt save. Basically, it depends.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Q: "Can I be banned for this?"
-A: Technically? yes, most likely? no.
+A: Technically? yes. most likely? no.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Q: "Why do my hacks not save, even the basic ones?"
+A: Just go into a fight and win the battle, or use the force save character hack in wills menu (or down below!)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[HERE~](https://github.com/ProdigyHacking/ProdigyMathGameHacking/blob/master/hacks/Misc/ForceSaveCharacter.js)
