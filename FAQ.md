@@ -1,4 +1,4 @@
-FREQUENTLY ASKED QUESTIONS:
+# FREQUENTLY ASKED QUESTIONS:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Q: "Are these hacks patched?"
 A: No, they currently are not patched, and probably wont be for a while.
