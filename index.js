@@ -127,7 +127,7 @@ app.get("/download", function (req, res) { return __awaiter(void 0, void 0, void
     var file;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, node_fetch_1.default("https://rawcdn.githack.com/Prodigy-Hacking/Redirector/3f9f99d1d5513a76cedc50e5f18f2ae4178e6d6e/Redirector.json")];
+            case 0: return [4 /*yield*/, node_fetch_1.default("https://raw.githubusercontent.com/Prodigy-Hacking/Redirector/master/Redirector.json")];
             case 1: return [4 /*yield*/, (_a.sent()).text()];
             case 2:
                 file = _a.sent();
@@ -141,7 +141,7 @@ app.get("/version", function (req, res) { return __awaiter(void 0, void 0, void 
     var file;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, node_fetch_1.default("https://rawcdn.githack.com/Prodigy-Hacking/Redirector/3f9f99d1d5513a76cedc50e5f18f2ae4178e6d6e/Redirector.json")];
+            case 0: return [4 /*yield*/, node_fetch_1.default("https://raw.githubusercontent.com/Prodigy-Hacking/Redirector/master/Redirector.json")];
             case 1: return [4 /*yield*/, (_a.sent()).text()];
             case 2:
                 file = _a.sent();
