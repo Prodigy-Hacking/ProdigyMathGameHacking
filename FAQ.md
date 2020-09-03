@@ -15,7 +15,7 @@ A: Yes, we just are sometimes lazy for a few months, but we always have many pro
 Q: "Do you have script based hacks?"
 A: Yes, you can check them out right below.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[Script based hacks~](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/tree/master/hacks/Script-Based%20Hacks)
+## [Script based hacks~](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/tree/master/hacks/Script-Based%20Hacks)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Q: "Can I use custom assets in redirector?"
 A: Yes, you can.
@@ -37,5 +37,5 @@ A: Technically? yes. most likely? no.
 Q: "Why do my hacks not save, even the basic ones?"
 A: Just go into a fight and win the battle, or use the force save character hack in wills menu (or down below!)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[Force save character hack~](https://github.com/ProdigyHacking/ProdigyMathGameHacking/blob/master/hacks/Misc/ForceSaveCharacter.js)
+## [Force save character hack~](https://github.com/ProdigyHacking/ProdigyMathGameHacking/blob/master/hacks/Misc/ForceSaveCharacter.js)
 #### IF YOU HAVE ANY MORE QUESTIONS DM ME ON DISCORD @ YAMA#5154 OR ASK IN #SUPPORT IN OUR SERVER [HERE~](https://discord.com/channels/683793361123016755/728777699279110214)
