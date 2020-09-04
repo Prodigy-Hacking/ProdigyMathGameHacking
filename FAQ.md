@@ -11,6 +11,7 @@ A: By finding and reporting hacks, we want to improve Prodigy's security.
 Q: "Are you still updating these hacks?"
 A: Yes. If something is broken, or not updated, just make an issue in the Github, or tell us on our official Discord!
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+## [Our Discord](https://discord.gg/XQDfbfq)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Q: "Do you have script based hacks?"
 A: Yes, you can check them out right below.
@@ -38,4 +39,4 @@ Q: "Why do my hacks not save, even the basic ones?"
 A: Just go into a fight and win the battle, or use the force save character hack in wills menu (or down below!)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ## [Force save character hack~](https://github.com/ProdigyHacking/ProdigyMathGameHacking/blob/master/hacks/Misc/ForceSaveCharacter.js)
-#### If you have any more questions, ask in our Discord server.
+#### If you have any more questions comment on this, or ask in the discord server! (Yama#5154 is also always availible for questions)
