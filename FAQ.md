@@ -11,7 +11,7 @@ A: By finding and reporting hacks, we want to improve Prodigy's security.
 Q: "Are you still updating these hacks?"
 A: Yes. If something is broken, or not updated, just make an issue in the Github, or tell us on our official Discord!
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-## [Our Discord](https://discord.gg/XQDfbfq)
+## [Our Discord~](https://discord.gg/XQDfbfq)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Q: "Do you have script based hacks?"
 A: Yes, you can check them out right below.
