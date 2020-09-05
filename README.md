@@ -8,7 +8,12 @@ Hacking games for the greater good!
 
 All of our hacks are open source, and free. No paywalls, no ads, and no Patreon. If you really want to support us, you can Nitro boost our Discord server!
 
-## Join the [Discord](https://discord.gg/XQDfbfq)!
+## Announcements
+
+### Script-based hacks are back
+Check it out [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/hacks/Script-Based%20Hacks/)!
+
+### Join the [Discord](https://discord.gg/XQDfbfq)!
 Want to hang out with a cool community? Do you have a question to ask? Just want people to talk to? Join our [Discord](https://discord.gg/XQDfbfq) today!
 
 The Discord server also gets the latest updates, sneak peeks to upcoming hacks, and occasional giveaways!
@@ -22,9 +27,6 @@ We will **never** ask you for your password. If somebody asks you for personal/s
 
 All of our hacks are *open-source, and only located under our [Github Organization](https://github.com/Prodigy-Hacking)*.
 If it's not an official repository, or a fork, it may not be safe!
-
-## Script based hacks are back
-Check it out [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/hacks/Script-Based%20Hacks/)!
 
 ## Prodigy Chat (Beta)
 We're making a chat for Prodigy hackers only! Check it out [here](http://prodigyhacking.ml:3000).
