@@ -18,6 +18,15 @@ Want to hang out with a cool community? Do you have a question to ask? Just want
 
 The Discord server also gets the latest updates, sneak peeks to upcoming hacks, and occasional giveaways!
 
+### Prodigy Chat (Beta)
+We're making a chat for Prodigy hackers only! Check it out [here](http://prodigyhacking.ml:3000).
+
+The source code can be found on the [ProdigyIRC repo](https://github.com/Prodigy-Hacking/ProdigyIRC).
+
+## Hacking Instructions
+- **[Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)**
+- **[Locally Hosted Redirect Hack](https://github.com/Prodigy-Hacking/Redirector#using-redirector-locally-advanced)** (Advanced)
+
 ## Disclaimer
 While our hacks are completely safe, ***you should only use hacks on an alternate account***.
 
@@ -28,16 +37,8 @@ We will **never** ask you for your password. If somebody asks you for personal/s
 All of our hacks are *open-source, and only located under our [Github Organization](https://github.com/Prodigy-Hacking)*.
 If it's not an official repository, or a fork, it may not be safe!
 
-## Prodigy Chat (Beta)
-We're making a chat for Prodigy hackers only! Check it out [here](http://prodigyhacking.ml:3000).
+Furthermore:
 
-The source code can be found on the [ProdigyIRC repo](https://github.com/Prodigy-Hacking/ProdigyIRC).
-
-## Hack instructions
-- **[Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)**
-- **[Locally Hosted Redirect Hack](https://github.com/Prodigy-Hacking/Redirector#using-redirector-locally-advanced)** (Advanced)
-
-## Another Warning
 - All hacks, exploits, or other files hosted here may damage your account if used improperly or excessively. Do not use *any* of these hacks on your primary account, as you risk your account becoming damaged beyond repair, preventing you from accessing Prodigy Math Game in that account. You have been warned.
    
 - We are not liable for any damages of any kind, as our license states:
