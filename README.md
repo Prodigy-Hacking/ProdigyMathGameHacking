@@ -23,7 +23,7 @@ We're making a chat for Prodigy hackers only! Check it out [here](http://prodigy
 
 The source code can be found on the [ProdigyIRC repo](https://github.com/Prodigy-Hacking/ProdigyIRC).
 
-## Instructions
+## Hacking Instructions
 - **[Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)**
 - **[Locally Hosted Redirect Hack](https://github.com/Prodigy-Hacking/Redirector#using-redirector-locally-advanced)** (Advanced)
 
