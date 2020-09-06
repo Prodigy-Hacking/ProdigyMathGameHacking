@@ -39,4 +39,4 @@ Q: "Why do my hacks not save, even the basic ones?"
 A: Just go into a fight and win the battle, or use the force save character hack in wills menu (or down below!)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ## [Force save character hack~](https://github.com/ProdigyHacking/ProdigyMathGameHacking/blob/master/hacks/Misc/ForceSaveCharacter.js)
-#### If you have any more questions comment on this, or ask in the discord server! (Our staff team are also always availible for questions)
+#### If you have any more questions put a comment on this, create a issue, or ask in the discord server! (Our staff team are also always availible for questions)
