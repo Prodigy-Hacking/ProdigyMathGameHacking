@@ -10,10 +10,10 @@ All of our hacks are open source, and free. No paywalls, no ads, and no Patreon.
 
 ## Announcements
 ### We have a website!
-While its still a WIP, you can check it out [here](http://prodigymathgamehacking.tech/).
+While its still a WIP (work in progress), you can check it out [here](http://prodigymathgamehacking.tech/).
 
 ### Script-based hacks are back
-Check it out [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/hacks/Script-Based%20Hacks/)!
+You can go check them out [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/hacks/Script-Based%20Hacks/)!
 
 ### Join the [Discord](https://discord.gg/XQDfbfq)!
 Want to hang out with a cool community? Do you have a question to ask? Just want people to talk to? Join our [Discord](https://discord.gg/XQDfbfq) today!
@@ -21,9 +21,12 @@ Want to hang out with a cool community? Do you have a question to ask? Just want
 The Discord server also gets the latest updates, sneak peeks to upcoming hacks, and occasional giveaways!
 
 ### Prodigy Chat (Beta)
-We're making a chat for Prodigy hackers only! Check it out [here](http://prodigyhacking.ml:3000).
+We're making a chat for Prodigy hackers only! Check out the chat [here](http://prodigyhacking.ml:3000).
 
 The source code can be found on the [ProdigyIRC repo](https://github.com/Prodigy-Hacking/ProdigyIRC).
+
+We also have a beta testing discord server right [here](https://discord.gg/B5wgnRK)! If you join you'll
+also get a special role when it gets released.
 
 ## Hacking Instructions
 - **[Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)**
