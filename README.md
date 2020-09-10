@@ -9,6 +9,8 @@ Hacking games for the greater good!
 All of our hacks are open source, and free. No paywalls, no ads, and no Patreon. If you really want to support us, you can Nitro boost our Discord server!
 
 ## Announcements
+### We have a website!!!
+While its still a WIP, you can check it out [here](http://prodigymathgamehacking.tech/)
 
 ### Script-based hacks are back
 Check it out [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/hacks/Script-Based%20Hacks/)!
