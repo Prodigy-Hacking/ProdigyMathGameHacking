@@ -9,8 +9,8 @@ Hacking games for the greater good!
 All of our hacks are open source, and free. No paywalls, no ads, and no Patreon. If you really want to support us, you can Nitro boost our Discord server!
 
 ## Announcements
-### We have a website!!!
-While its still a WIP, you can check it out [here](http://prodigymathgamehacking.tech/)
+### We have a website!
+While its still a WIP, you can check it out [here](http://prodigymathgamehacking.tech/).
 
 ### Script-based hacks are back
 Check it out [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/hacks/Script-Based%20Hacks/)!
@@ -32,7 +32,7 @@ The source code can be found on the [ProdigyIRC repo](https://github.com/Prodigy
 ## Disclaimer
 While our hacks are completely safe, ***you should only use hacks on an alternate account***.
 
-There's a **very small chance your account will be hacker-tagged, or banned**. Fortunately, it almost never happens.
+There's a **extremely small chance your account will be hacker-tagged, or banned**. Fortunately, it almost never happens.
 
 We will **never** ask you for your password. If somebody asks you for personal/sensitive information, report it to the [Discord server](https://discord.gg/XQDfbfq) admins. 
 
@@ -53,6 +53,7 @@ Furthermore:
 -   **[Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki)**
 -   **[YouTube Channel](https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A)**
 -   **[How to use JavaScript hacks](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-use-Javascript-Hacks)**
+-   **[Website](http://prodigymathgamehacking.tech/)**
 
 ## Collaborators
 
