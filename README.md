@@ -1,12 +1,12 @@
 # ProdigyMathGameHacking
 
 ## Motivation
-We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy has ignored all of our security reports, and has gone as far as to block a user from their Zendesk support center, simply because they reported hacks. We created this repository to show them the security issues directly.
+We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy has ignored all of our security reports. Furthermore, they have gone as far as to block a user from their Zendesk support center, simply because they reported hacks. We created this repository to show them the security issues directly.
 
-This may look like we're trying to ruin the game, but we're improving the security of the game. By constantly finding and reporting hacks, we can help Prodigy become secure!
-Hacking games for the greater good!
+This may look like we're trying to ruin the game, but we're improving the security of the game. By constantly finding and reporting hacks, we can help Prodigy
+become more secure! We're hacking the game for the greater good.
 
-All of our hacks are open source, and free. No paywalls, no ads, and no Patreon. If you really want to support us, you can Nitro boost our Discord server!
+All of our hacks are open source, and free. No paywalls, no ads, and no Patreon. If you really want to support us, you can Nitro boost our Discord server [here](https://discord.gg/XQDfbfq)!
 
 ## Announcements
 ### We have a website!
