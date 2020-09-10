@@ -1,4 +1,4 @@
 Currently working on:
 Fixing hacks,
 Making dropdown,
-New menu??
+New spicy, hot, js menu??
