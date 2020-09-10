@@ -103,5 +103,21 @@
         goldbutton.onmouseout = function () {
             goldbutton.style.background = '#292525'
         }
+        let arbutton = document.createElement('button')
+        arbutton.innerText = 'Get Arena Points'
+        arbutton.style.font = 'bold 20px Arvo'
+        arbutton.style.transition = 'all 0.3s'
+        arbutton.style.borderRadius = '10px'
+        arbutton.onclick = function () {
+           swal('Arena Points are being added',"Notes: This doesn't require a reload\nDon't run this more then once, it will go forever\nYou get arena points once every minute.",'success')
+        }
+        arbutton.style.background = "#292525"
+        div.append(arbutton)
+        arbutton.onmouseover = function () {
+            arbutton.style.background = '#CDCDCD'
+        }
+        arbutton.onmouseout = function () {
+            arbutton.style.background = '#292525'
+        }
     
     })()
