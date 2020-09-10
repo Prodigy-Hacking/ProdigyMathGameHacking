@@ -1,4 +1,3 @@
-if(document.location.href === 'https://play.prodigygame.com'){
     (async () => {
         const swal = require('sweetalert')
         const fetch = require('node-fetch')
@@ -43,7 +42,7 @@ if(document.location.href === 'https://play.prodigygame.com'){
         title2.style.font = 'bold 40px Arvo'
         div.append(title2)
         let level100button = document.createElement('button')
-        level100button.innerText = 'Level 100'
+        level100button.innerText = 'Set level'
         level100button.style.font = 'bold 20px Arvo'
         level100button.style.transition = 'all 0.3s'
         level100button.style.borderRadius = '10px'
@@ -73,6 +72,36 @@ if(document.location.href === 'https://play.prodigygame.com'){
         level100button.onmouseout = function () {
             level100button.style.background = '#292525'
         }
+        let goldbutton = document.createElement('button')
+        goldbutton.innerText = 'Set gold'
+        goldbutton.style.font = 'bold 20px Arvo'
+        goldbutton.style.transition = 'all 0.3s'
+        goldbutton.style.borderRadius = '10px'
+        goldbutton.onclick = function () {
+            swal("How much gold would you like?",'','info', {
+                content: "input",
+            })
+                .then((value) => {
+                   if(value){
+                    modifyData(`playerdata.data.gold = ${value}`)
+                    swal('Success.', 'Your gold has been added.', 'success')
+                    .then((value) => {
+                        swal("Would you like to reload?", 'If not, press Esc.', 'info')
+                        .then((value) => {
+                            if (!value) return;
+                            document.location.href = document.location.href
+                        });
+                    })
+                }
+                })
+        }
+        goldbutton.style.background = "#292525"
+        div.append(goldbutton)
+        goldbutton.onmouseover = function () {
+            goldbutton.style.background = '#CDCDCD'
+        }
+        goldbutton.onmouseout = function () {
+            goldbutton.style.background = '#292525'
+        }
     
     })()
-}
