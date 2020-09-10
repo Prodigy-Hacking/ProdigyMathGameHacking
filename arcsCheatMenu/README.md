@@ -1,3 +1,4 @@
+# Arc's cheat menu (WIP)
 ## This cheat menu is for hacks that are possible without redirector.
 ### (It surprisingly looks ok...)
 ### Don't look at the code, because it's bad, especially you, will, because you've annoyed me to death about how bad my code is.
