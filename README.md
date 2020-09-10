@@ -15,7 +15,7 @@ While its still a WIP (work in progress), you can check it out [here](http://pro
 ### Script-based hacks are back
 You can go check them out [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/hacks/Script-Based%20Hacks/)!
 
-### Join the [Discord](https://discord.gg/XQDfbfq)!
+### Join the Discord!
 Want to hang out with a cool community? Do you have a question to ask? Just want people to talk to? Join our [Discord](https://discord.gg/XQDfbfq) today!
 
 The Discord server also gets the latest updates, sneak peeks to upcoming hacks, and occasional giveaways!
