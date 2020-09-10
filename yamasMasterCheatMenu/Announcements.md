@@ -1,3 +1,5 @@
+I'm probably going to start over from scratch and not do it in HTML DOM this time! if you see a ton of commits here thats why. If you see none, im just lazy.
+
 Hey! I need help from yall. Should I continue this menu, or remake a brand new and shiny one from scratch. DM me on discord @ Yama#5154 for what you think!
 
 
