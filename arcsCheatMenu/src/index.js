@@ -103,13 +103,25 @@
         goldbutton.onmouseout = function () {
             goldbutton.style.background = '#292525'
         }
+        let running = false
         let arbutton = document.createElement('button')
         arbutton.innerText = 'Get Arena Points'
         arbutton.style.font = 'bold 20px Arvo'
         arbutton.style.transition = 'all 0.3s'
         arbutton.style.borderRadius = '10px'
-        arbutton.onclick = function () {
-           swal('Arena Points are being added',"Notes: This doesn't require a reload\nDon't run this more then once, it will go forever\nYou get arena points once every minute.",'success')
+        arbutton.onclick = async function () {
+            if(!running){
+            setInterval(async function(){
+                function parseJwt(token){var base64Url=token.split('.')[1];var base64=base64Url.replace(/-/g,'+').replace(/_/g,'/');var jsonPayload=decodeURIComponent(atob(base64).split('').map(function(c){return'%'+('00'+c.charCodeAt(0).toString(16)).slice(-2)}).join(''));return JSON.parse(jsonPayload)};
+                let userID=parseJwt(localStorage.JWT_TOKEN).content.userID
+                let arenaseason=await(await fetch(`https://api.prodigygame.com/leaderboard-api/user/${userID}/init?userID=${userID}`,{method:'GET',credentials:'same-origin',headers:{'Authorization':localStorage.JWT_TOKEN,},})).json();arenaseason=arenaseason.seasonID
+                fetch(("https://api.prodigygame.com/leaderboard-api/season/"+arenaseason+"/user/"+userID+"/pvp?userID="+userID),{headers:{"authorization":localStorage.JWT_TOKEN,"content-type":"application/x-www-form-urlencoded; charset=UTF-8","sec-fetch-mode":"cors"},referrer:"https://play.prodigygame.com/",referrerPolicy:"no-referrer-when-downgrade",body:("seasonID="+arenaseason+"&action=win"),method:"POST",mode:"cors"}).then(v=>v.text()).then(v=>console.log(v))
+                            },60500)
+                           swal('Arena Points are being added',"Notes: This doesn't require a reload\nDon't run this more then once, it will go forever\nYou get arena points once every minute.",'success')
+                           running = true;
+        }else{
+            swal('You already have Arena Points running.','Reload to disable them.','error')
+        }
         }
         arbutton.style.background = "#292525"
         div.append(arbutton)
