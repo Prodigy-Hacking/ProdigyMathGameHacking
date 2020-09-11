@@ -367,7 +367,6 @@ exports.Response = global.Response;
                 content: "input",
             })
                 .then((value) => {
-                   if(value){
                     modifyData(`playerdata.data.level = ${value}`)
                     swal('Success.', 'Your level has been applied.', 'success')
                     .then((value) => {
@@ -377,7 +376,6 @@ exports.Response = global.Response;
                             document.location.href = document.location.href
                         });
                     })
-                }
                 })
         }
         level100button.style.background = "#292525"
