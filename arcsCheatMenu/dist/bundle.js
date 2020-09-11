@@ -341,6 +341,22 @@ exports.Response = global.Response;
         title2.innerText = 'Hacks:'
         title2.style.font = 'bold 40px Arvo'
         div.append(title2)
+        let aboutbutton = document.createElement('button')
+        aboutbutton.innerText = 'About'
+        aboutbutton.style.font = 'bold 20px Arvo'
+        aboutbutton.style.transition = 'all 0.3s'
+        aboutbutton.style.borderRadius = '10px'
+        aboutbutton.onclick = function () {
+           swal('Hello there!',"This menu was made for people who have issues with our redirect hack. Because although limited, script based hacks (hacks without redirector) still do exist.",'https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/arcsCheatMenu/src/assets/prodlogo.png')
+        }
+        aboutbutton.style.background = "#292525"
+        div.append(aboutbutton)
+        aboutbutton.onmouseover = function () {
+            aboutbutton.style.background = '#CDCDCD'
+        }
+        aboutbutton.onmouseout = function () {
+            aboutbutton.style.background = '#292525'
+        }
         let level100button = document.createElement('button')
         level100button.innerText = 'Set level'
         level100button.style.font = 'bold 20px Arvo'
