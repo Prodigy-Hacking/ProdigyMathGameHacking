@@ -1,2 +1,2 @@
-GITHASH=$(git rev-parse @~1922)
+GITHASH=$(git rev-parse @~1832)
 git filter-branch  -f --commit-filter ' if [ $GIT_COMMITTER_NAME == "TNThacker2015" ]; then export GIT_COMMITTER_NAME="noot"; export GIT_COMMITTER_EMAIL="user1@mail.com"; else export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"; export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"; export GIT_COMMITTER_DATE="$GIT_AUTHOR_DATE"; git commit-tree "$@"; fi' -- $GITHASH..HEAD
