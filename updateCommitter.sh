@@ -1,2 +1,17 @@
-GITHASH=c47f3a3ee5bc159426c3d5959b2d3e1912e8472b
-git filter-branch  -f --commit-filter ' if $GIT_COMMITTER_NAME == "TNThacker2015"; then export GIT_COMMITTER_NAME="noot"; export GIT_COMMITTER_EMAIL="user1@mail.com"; else export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"; export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"; export GIT_COMMITTER_DATE="$GIT_AUTHOR_DATE"; git commit-tree "$@"; fi' -- $GITHASH..HEAD
+#!/bin/sh
+
+git filter-branch --env-filter '
+OLD_EMAIL="tnthacker2015@gmail.com"
+CORRECT_NAME="Noot"
+CORRECT_EMAIL="noot"
+if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_COMMITTER_NAME="$CORRECT_NAME"
+    export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"
+fi
+if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_AUTHOR_NAME="$CORRECT_NAME"
+    export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
+fi
+' --tag-name-filter cat -- --branches --tags
