@@ -1,3 +1,5 @@
+I'm probably going to start over from scratch and not do it in HTML DOM this time! if you see a ton of commits here thats why. If you see none, im just lazy.
+
 Hey! I need help from yall. Should I continue this menu, or remake a brand new and shiny one from scratch. DM me on discord @ Yama#5154 for what you think!
 
 
@@ -5,7 +7,6 @@ Hey! I need help from yall. Should I continue this menu, or remake a brand new a
 
 dw yall, just cus i died, i havent stopped this. and the way were going, no big changes will be happening to the hacks soon, so i dont need to rush 
 making it!
-
 
 
 
@@ -23,10 +24,7 @@ Ive made a lot of progress the last 24 hours, and im basically at the point wher
 
 
 
-
 Found out how to close wills cheat menu! Thanks DCK!
-
-
 
 
 Scratch that, made it like it was before, however you may see some orange as it varies based on screen size.
@@ -35,7 +33,6 @@ Scratch that, made it like it was before, however you may see some orange as it 
 
 
 Fixed menu, kinda, as its now linear!
-
 
 
 
