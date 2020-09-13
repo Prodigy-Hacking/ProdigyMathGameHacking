@@ -1,0 +1,16 @@
+{
+  "name": "arcscheatmenu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arcerion#6713",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^16.5.2",
+    "node-fetch": "^2.6.1",
+    "sweetalert": "^2.1.2"
+  }
+}
