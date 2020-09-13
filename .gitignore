@@ -4,3 +4,4 @@ config.json
 *.log
 .gitignore
 updateCommitter.sh
+.git-rewrite/**
