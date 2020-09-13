@@ -69,5 +69,9 @@ Furthermore:
 -   [DaChickenKing](https://github.com/DaChickenKing)
 -   [BoredFish](https://github.com/BoredFishRE)
 
+## Retired Collaborators
+
+-   [TNThacker2015 (will)](https://github.com/TNThacker2015)
+-   [Exoticc](https://github.com/Exoticc)
 ----
 ***All hacks and software are licensed under the MPL V2.0, unless stated otherwise with a separate license.***
