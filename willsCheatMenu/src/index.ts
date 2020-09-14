@@ -114,7 +114,9 @@ export const category = {
 	battle: addArea("Battle Hacks"),
 	misc: addArea("Miscellaneous Hacks"),
 };
+/*
 hack.chat.et.push(
 	"Hacker!", "Natsumi", "Unexpected Will", "Arc", "Yama", "Whimpers", "Ugh, It's Divine",
 	"Bruh moment", "Thats what she said", "Skid located.", "Bobby Fancywoman"
 )
+*/

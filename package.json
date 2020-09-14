@@ -19,7 +19,7 @@
 		"typescript": "^3.9.0-dev.20200317",
 		"url-loader": "^4.0.0",
 		"webpack": "^4.42.0",
-		"webpack-cli": "^3.3.11"
+		"webpack-cli": "^3.3.12"
 	},
 	"scripts": {
 		"start": "cd redirect && yarn && yarn start",
