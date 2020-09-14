@@ -42,7 +42,7 @@ app.get("/game.min.js", async (req, res) => {
 		["t.constants=Object", "hack.constants=t,t.constants=Object"],
 		["window,function(t){var i={};", "window,function(t){var i={};hack.modules=i;"],
 		["this._player=t", "this._player=hack.player=t"],
-		["this._localizer=null,this.et=[]", "hack.chat=this;this._localizer=null,this.et=[]"],
+		// ["this._localizer=null,this.et=[]", "hack.chat=this;this._localizer=null,this.et=[]"],
 		// ["return t.BAM=", ";hack.variables.loc=Ar;hack.variables.menuTxt=Kr;hack.variables.menuObj=t;return t.BAM="],
 	];
 	return res.send(
