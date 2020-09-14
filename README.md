@@ -62,7 +62,6 @@ Furthermore:
 
 -   [PatheticMustan](https://github.com/PatheticMustan)
 -   [Avn1114](https://github.com/Avn1114)
--   [TNThacker2015 (will)](https://github.com/TNThacker2015)
 -   [YamaHacks](https://github.com/YamaHacks)
 -   [DaChickenKing](https://github.com/DaChickenKing)
 -   [BoredFish](https://github.com/BoredFishRE)
