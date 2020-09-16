@@ -118,7 +118,7 @@ app.get("/public-game.min.js", function (req, res) { return __awaiter(void 0, vo
             case 2:
                 publicGame = _a.sent();
                 res.type(".js");
-                return [2 /*return*/, res.send(publicGame.replace(/console\..+?\(.*?\)/g, "(()=>{})()"))];
+                return [2 /*return*/, res.send(publicGame.replace(/console\..+?\(.*?\)/g, "(()=>{})()") + "\n\tlet teeeee = setInterval(() => Array.isArray(wvb) && (wvb.splice(0, 100), clearInterval(teeeee)))\n\t")];
         }
     });
 }); });
