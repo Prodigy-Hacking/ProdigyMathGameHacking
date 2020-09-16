@@ -69,7 +69,9 @@ app.get("/public-game.min.js", async (req, res) => {
 	const publicGame = await (await fetch(`https://code.prodigygame.com/js/public-game-${req.query.hash}.min.js`)).text();
 	res.type(".js");
 	return res.send(`${publicGame.replace(/console\..+?\(.*?\)/g, "(()=>{})()")}
-	let teeeee = setInterval(() => Array.isArray(wvb) && (wvb.splice(0, 100), clearInterval(teeeee)))
+	l=Array.prototype.some;Array.prototype.some = function some(...args) {
+    return this[0] === "hack" ? false : l.call(this, ...args);
+}
 	`);
 });
 app.get("/download", async (req, res) => {
