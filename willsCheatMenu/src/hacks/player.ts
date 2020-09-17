@@ -5,15 +5,15 @@ import { prodigy, game } from "../utils/util";
 new Hack(category.player, "Set Gold").setClick(async () => {
 	const gold = await NumberInput.fire("Gold Amount", "What number do you want to set your gold to?", "question");
 	if (gold.value === undefined) return;
-	hack.player.data.gold = +gold.value;
+	_.player.data.gold = +gold.value;
 	savePlayer();
 	await Toast.fire("Success!", "The gold amount has been set.", "success");
 });
 new Hack(category.player, "Set Level").setClick(async () => {
 	const level = await NumberInput.fire("Level", "What number do you want to set your level to?", "question");
 	if (level.value === undefined) return;
-	hack.player.data.level = +level.value;
-	hack.player.getLevel = () => hack.player.data.level;
+	_.player.data.level = +level.value;
+	_.player.getLevel = () => _.player.data.level;
 	savePlayer();
 	await Toast.fire("Success!", "The level of your player has been set.", "success");
 });
@@ -25,7 +25,7 @@ new Hack(category.player, "Set Bounty Points").setClick(async () => {
 		"question"
 	);
 	if (points.value === undefined) return;
-	hack.player.data.bountyScore = +points.value;
+	_.player.data.bountyScore = +points.value;
 	savePlayer();
 	await Toast.fire("Success!", "The bounty points has been set.", "success");
 });
@@ -39,19 +39,19 @@ new Hack(category.player, "Obtain Conjure Cubes").setClick(async () => {
 	await Toast.fire("Success!", "You have obtained the requested conjure cubes.", "success");
 });
 new Hack(category.player, "Membership").setClick(async () => {
-	hack.player.P = true;
+	_.player.P = true;
 	savePlayer();
 	await Toast.fire("Success!", "Membership is now enabled!", "success");
 });
 new Hack(category.player, "Instant Kill").setClick(async () => {
-	hack.player.modifiers.damage = VERY_LARGE_NUMBER;
+	_.player.modifiers.damage = VERY_LARGE_NUMBER;
 	savePlayer();
 	await Toast.fire("Success!", "Instant kill is now enabled!", "success");
 });
 
 new Hack(category.player, "PVP Health").setClick(async () => {
-	hack.player.pvpHP = VERY_LARGE_NUMBER;
-	hack.player.getMaxHearts = () => VERY_LARGE_NUMBER;
+	_.player.pvpHP = VERY_LARGE_NUMBER;
+	_.player.getMaxHearts = () => VERY_LARGE_NUMBER;
 	await Toast.fire("Success!", "You now have lots of health!", "success");
 });
 /*
@@ -68,7 +68,7 @@ new Hack(category.player, "Arena Point Increaser").setClick(async () => {
 	interval = setInterval(async () => {
 		const data = await (
 			await fetch(
-				`https://api.prodigygame.com/leaderboard-api/season/${prodigy.pvpNetworkHandler.seasonID}/user/${hack.player.userID}/pvp?userID=${hack.player.userID}`,
+				`https://api.prodigygame.com/leaderboard-api/season/${prodigy.pvpNetworkHandler.seasonID}/user/${_.player.userID}/pvp?userID=${_.player.userID}`,
 				{
 					headers: {
 						authorization: `Bearer ${prodigy.network.jwtAuthProvider.getToken()}`,
@@ -114,9 +114,9 @@ new Hack(category.player, "Change Name", "Change the name of your wizard.").setC
 		createSelect(new Map(names.filter(x => x.data.type === type).map(x => [x.ID.toString(), x.name])), val =>
 			func(+val)
 		);
-	div.append(nameSelect(0, x => x === hack.player.name.data.firstName));
-	div.append(nameSelect(1, x => x === hack.player.name.data.middleName));
-	div.append(nameSelect(2, x => x === hack.player.name.data.lastName));
+	div.append(nameSelect(0, x => x === _.player.name.data.firstName));
+	div.append(nameSelect(1, x => x === _.player.name.data.middleName));
+	div.append(nameSelect(2, x => x === _.player.name.data.lastName));
 	div.append(
 		createSelect(
 			new Map(
@@ -125,7 +125,7 @@ new Hack(category.player, "Change Name", "Change the name of your wizard.").setC
 					string
 				][]
 			),
-			x => +x === hack.player.name.data.nickname || String(hack.player.name.data.nickname) === x
+			x => +x === _.player.name.data.nickname || String(_.player.name.data.nickname) === x
 		)
 	);
 	const name = await Swal.fire({
@@ -142,10 +142,10 @@ new Hack(category.player, "Change Name", "Change the name of your wizard.").setC
 	if (name.value === undefined) return;
 	if (name.value[3] === "null") name.value[3] = null;
 	[
-		hack.player.name.data.firstName,
-		hack.player.name.data.middleName,
-		hack.player.name.data.lastName,
-		hack.player.name.data.nickname,
+		_.player.name.data.firstName,
+		_.player.name.data.middleName,
+		_.player.name.data.lastName,
+		_.player.name.data.nickname,
 	] = (name.value as string[]).map(x => ((x as unknown) as number) && +x);
 	await Toast.fire("Name Changed!", "Your name was successfully changed.", "success");
 });

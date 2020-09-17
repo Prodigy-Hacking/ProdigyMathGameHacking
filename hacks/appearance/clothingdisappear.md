@@ -1,4 +1,4 @@
-This isn't so much of a hack. It's just something silly.
+This isn't so much of a _. It's just something silly.
 1. Open inspect element and go to the network tab
 2. Right click any jpg (for this case anything that has outfits)
 3. Click block.

@@ -2,8 +2,8 @@
 //>> Gives all armor, hats, boots, currencies, etc.
 (() => {
     // FMI: every time prodigy patches, update scopeObj.
-    const scopeObj = hack.instance;
-    const playerObject = hack.player;
+    const scopeObj = _.instance;
+    const playerObject = _.player;
     
     // Do not modify.
     const bootData = scopeObj.game.state.states.Boot._gameData;
@@ -41,6 +41,6 @@
     }
     
     // Remove bounty notes (#229)
-    let bountyIndex = _ => hack.player.backpack.data.item.findIndex(v => v.ID === 84 || v.ID === 85 || v.ID === 86)
-    while (bountyIndex() > -1) hack.player.backpack.data.item.splice(bountyIndex(), 1)
+    let bountyIndex = _ => _.player.backpack.data.item.findIndex(v => v.ID === 84 || v.ID === 85 || v.ID === 86)
+    while (bountyIndex() > -1) _.player.backpack.data.item.splice(bountyIndex(), 1)
 })();

@@ -3,7 +3,7 @@
 
 const setCurrency = (id, value) => {
     let config = "currency";
-    let x = hack.player.backpack.data[config]; // shorten things
+    let x = _.player.backpack.data[config]; // shorten things
     let i = x.findIndex(v => v.ID === id); // find index if it exists
     
     if (i === -1) x.push({N: value, ID: id}) // if it doesn't, push

@@ -1,6 +1,6 @@
 //> Nickname script
 //>> Sets your nickname.
-hack.player.name.data.nickname = 7; 
+_.player.name.data.nickname = 7; 
 
 /* Put a number one through 55.  The associations are as follows:
  * 1.  Buccaneer

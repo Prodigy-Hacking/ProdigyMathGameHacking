@@ -1,3 +1,3 @@
 //> Skip enemy turn
 //>> Skips the enemy's turn. Always.
-hack.constants.constants["GameConstants.Battle.SKIP_ENEMY_TURN"] = true;
+_.constants.constants["GameConstants.Battle.SKIP_ENEMY_TURN"] = true;
