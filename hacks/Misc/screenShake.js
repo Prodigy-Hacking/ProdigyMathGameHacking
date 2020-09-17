@@ -1,3 +1,3 @@
 //> Screen shake hack
 //>> Shakes the screen VERY hard
-setInterval(_ => hack.instance.prodigy.effects.shake("", 100, 100))
+setInterval(_ => _.instance.prodigy.effects.shake("", 100, 100))

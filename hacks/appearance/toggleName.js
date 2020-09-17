@@ -1,5 +1,5 @@
 // Hides your name
-hack.instance.prodigy.user.hideName();
+_.instance.prodigy.user.hideName();
 
 // shows your name
-hack.instance.prodigy.user.showName();
+_.instance.prodigy.user.showName();

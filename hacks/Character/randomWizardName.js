@@ -1,3 +1,3 @@
 //> Random wizard name
 //>> Randomizes your name.
-hack.player.name.generateRandomName();
+_.player.name.generateRandomName();

@@ -22,7 +22,7 @@
 -   -   After many days, the redirector hack was created, which would use a modified version of prodigy's game files. This would not be patched for a very long time. It is still working well.
 -   **Content Security Patch**: `6/10/20 - CURRENT`
 -   -   On June 10th, Prodigy added content security headers. This caused the addition of another extension to help with hacks.
-- **`hack.instance.prodigy.player` Patch**: `7/5/20 - 7/5/20`
--   -   On July 5th, Prodigy implemented a patch for `hack.instance.prodigy.player`. This was unpatched by ProdigyMathGameHacking about 3 hours later.
+- **`_.instance.prodigy.player` Patch**: `7/5/20 - 7/5/20`
+-   -   On July 5th, Prodigy implemented a patch for `_.instance.prodigy.player`. This was unpatched by ProdigyMathGameHacking about 3 hours later.
 -  **Script based hacks return**: `8/25/20 - CURRENT`
 -   - On August 20th, we found a way to access the Prodigy network, and make hacks without the redirector extension.

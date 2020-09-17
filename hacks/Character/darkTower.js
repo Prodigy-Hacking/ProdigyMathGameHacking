@@ -1,3 +1,3 @@
 //> Dark Tower hack
 //>> Makes your Dark Tower floor to 100, you can add any number, just delete 100 and replace it with the number of you choice if you want!
-hack.player.data.tower = 100;
+_.player.data.tower = 100;

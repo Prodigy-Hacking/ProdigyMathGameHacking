@@ -1,3 +1,3 @@
 //> Apprentice hack
 //>> Sets your name to "Apprentice"
-hack.player.name.data.lastName = hack.player.name.data.firstName = null;
+_.player.name.data.lastName = _.player.name.data.firstName = null;

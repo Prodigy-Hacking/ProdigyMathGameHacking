@@ -7,7 +7,7 @@ new Hack(category.battle, "Escape Battle", "Escape any battle!").setClick(async 
 	const currentState = game.state.current;
 	if (currentState === "PVP") game.state.states.PVP.endPVP();
 	else if (currentState === "CoOp")
-		prodigy.world.$(hack.player.data.zone);
+		prodigy.world.$(_.player.data.zone);
 	else game.state.callbackContext.runAwayCallback();
 	await Toast.fire(
 		"Escaped!",
@@ -21,7 +21,7 @@ new Hack(category.battle, "Win Battle", "Instantly win a monster battle.").setCl
 	if (currentState === "PVP" || currentState === "CoOp")
 		return Toast.fire(
 			"Invalid State.",
-			"PVP is not supported for this hack.",
+			"PVP is not supported for this _.",
 			"error"
 		);
 	else if (currentState === "Battle") {
@@ -43,9 +43,9 @@ new Hack(category.battle, "Set Battle Hearts", "Sets your hearts in battle. Auto
 	.setClick(async() => {
 		const hp = await NumberInput.fire("Health Amount", "How much HP do you want?", "question");
 		if (hp.value === undefined) return;
-		hack.player.getMaxHearts = () => +hp.value;
-		hack.player.pvpHP = +hp.value;
-		hack.player.data.hp = +hp.value;
+		_.player.getMaxHearts = () => +hp.value;
+		_.player.pvpHP = +hp.value;
+		_.player.data.hp = +hp.value;
 		await Toast.fire("Success!", "Your hearts have been set.", "success");
 	})
 new Hack(category.battle, "Fill Battle Energy", "Fills up your battle energy.")

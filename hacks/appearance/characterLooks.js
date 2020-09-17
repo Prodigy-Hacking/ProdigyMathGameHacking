@@ -2,31 +2,31 @@
 // Equipment
 
 // Hat
-hack.player.equipment.hat = 1;
+_.player.equipment.hat = 1;
 // Outfit
-hack.player.equipment.outfit = 1;
+_.player.equipment.outfit = 1;
 // Spell Relic
-hack.player.equipment.spellRelic = 1;
+_.player.equipment.spellRelic = 1;
 //Boots
-hack.player.equipment.boots = 1;
+_.player.equipment.boots = 1;
 // Cloud mount (Only 1)
-hack.player.equipment.mount = 1
+_.player.equipment.mount = 1
 // Follow
-hack.player.equipment.follow = 1;
+_.player.equipment.follow = 1;
 
 
 
 // Appearance
 
 // Gender (only "Male"/"Female")
-hack.player.appearance = "male"
+_.player.appearance = "male"
 // Hair style
-hack.player.appearance.hairStyle = 1;
+_.player.appearance.hairStyle = 1;
 // Hair color
-hack.player.appearance.hairColor = 1;
+_.player.appearance.hairColor = 1;
 // Eye color
-hack.player.appearance.eyeColor = 1;
+_.player.appearance.eyeColor = 1;
 // Skin color
-hack.player.appearance.skinColor = 1;
+_.player.appearance.skinColor = 1;
 // Face
-hack.player.appearance.face = 1;
+_.player.appearance.face = 1;

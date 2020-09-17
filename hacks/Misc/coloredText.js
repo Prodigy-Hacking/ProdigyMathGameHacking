@@ -1,40 +1,40 @@
 //> Colored text script
 //>> Change text color
-hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
-hack.instance.prodigy.user.chatText.FillColor = "#FFFFFF";
+_.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+_.instance.prodigy.user.chatText.FillColor = "#FFFFFF";
 
 
 // Other chat colors:
 
 // Red 
-hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
-hack.instance.prodigy.user.chatText.FillColor = "#FF0000";
+_.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+_.instance.prodigy.user.chatText.FillColor = "#FF0000";
 
 // Silver 
-hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
-hack.instance.prodigy.user.chatText.FillColor = "#C0C0C0";
+_.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+_.instance.prodigy.user.chatText.FillColor = "#C0C0C0";
 
 // Gray 
-hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
-hack.instance.prodigy.user.chatText.FillColor = "#808080";
+_.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+_.instance.prodigy.user.chatText.FillColor = "#808080";
 
 // Black 
-hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
-hack.instance.prodigy.user.chatText.FillColor = "#000000";
+_.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+_.instance.prodigy.user.chatText.FillColor = "#000000";
 
 // Green 
-hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
-hack.instance.prodigy.user.chatText.FillColor = "#008000";
+_.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+_.instance.prodigy.user.chatText.FillColor = "#008000";
 
 // Brown 
-hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
-hack.instance.prodigy.user.chatText.FillColor = "#A52A2A";
+_.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+_.instance.prodigy.user.chatText.FillColor = "#A52A2A";
 
 // Blue 
-hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
-hack.instance.prodigy.user.chatText.FillColor = "#0000FF";
+_.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+_.instance.prodigy.user.chatText.FillColor = "#0000FF";
 
 // Purple
-hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
-hack.instance.prodigy.user.chatText.FillColor = "#C203F3";
+_.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+_.instance.prodigy.user.chatText.FillColor = "#C203F3";
 

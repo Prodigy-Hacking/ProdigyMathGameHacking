@@ -17,25 +17,25 @@ const toPets = (ID: number) => ({
 });
 new Hack(category.pets, "Get All Pets").setClick(async () => {
 	const pets = gameData.pet.map(x => toPets(x.ID));
-	hack.player.kennel.data.splice(-1, 0, ...pets);
+	_.player.kennel.data.splice(-1, 0, ...pets);
 	await Toast.fire("Success!", "All pets have been added!", "success");
 });
 
 new Hack(category.pets, "Get All Epics").setClick(async () => {
 	const epics = [125, 126, 127, 128, 129, 130, 131, 132, 133];
-	hack.player.kennel.data.splice(-1, 0, ...epics.map(toPets));
+	_.player.kennel.data.splice(-1, 0, ...epics.map(toPets));
 	await Toast.fire("Success!", "All epics have been added!", "success");
 });
 
 new Hack(category.pets, "Fix Battle Crash").setClick(async () => {
-	hack.player.kennel.petTeam.forEach((v: any) => {
+	_.player.kennel.petTeam.forEach((v: any) => {
 		if (v && (v as any).assignRandomSpells) (v as any).assignRandomSpells();
 	});
 	await Toast.fire("Success!", "Fixed kennel attack bug!", "success");
 });
 
 new Hack(category.pets, "Clear Pets").setClick(async () => {
-	hack.player.kennel.data.length = 0;
+	_.player.kennel.data.length = 0;
 	await Toast.fire("Success!", "Your pets have been cleared!", "success");
 });
 
@@ -47,14 +47,14 @@ new Hack(category.pets, "Add Pet", "Adds a pet from a list.").setClick(async () 
 		text: "Which pet do you want to obtain?",
 	});
 	if (pet.value === undefined) return;
-	hack.player.kennel.addPet(pet.value);
+	_.player.kennel.addPet(pet.value);
 	await Toast.fire("Success!", "Your chosen pet has been added to your pets!", "success");
 });
 const getPet = async (text: string): Promise<number | undefined> => {
 	const pet = await Swal.fire({
 		input: "select",
 		inputOptions: new Map(
-			hack.player.kennel.data.map((x: TODO, i: number) => [
+			_.player.kennel.data.map((x: TODO, i: number) => [
 				i.toString(),
 				`Level ${x.level} - ${x.nickname ?? gameData.pet.find(y => +y.ID === +x.ID)?.data.name ?? "Unknown"}`,
 			]) as [string, string][]
@@ -67,7 +67,7 @@ const getPet = async (text: string): Promise<number | undefined> => {
 new Hack(category.pets, "Edit Pet", "Edit a pet.").setClick(async () => {
 	const pet = await getPet("Choose the pet to edit.");
 	if (pet === undefined) return;
-	const selected = hack.player.kennel.data[pet];
+	const selected = _.player.kennel.data[pet];
 	const opt = await Swal.fire({
 		input: "select",
 		inputOptions: { level: "Level", attacks: "Attacks", name: "Name" },
@@ -121,6 +121,6 @@ new Hack(category.pets, "Edit Pet", "Edit a pet.").setClick(async () => {
 new Hack(category.pets, "Delete Pet", "Delete a pet.").setClick(async () => {
 	const pet = await getPet("Which pet do you wish to delete?");
 	if (pet === undefined) return;
-	hack.player.kennel.data.splice(pet, 1);
+	_.player.kennel.data.splice(pet, 1);
 	await Swal.fire("Successfully deleted!", "The selected pet was deleted successfully.", "success");
 });
