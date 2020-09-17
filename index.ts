@@ -38,23 +38,25 @@ app.get("/game.min.js", async (req, res) => {
 	).text();
 	res.type(".js");
 	const replacements = [
-		["s),this._game=i}", `s),this._game=i};Object.defineProperty(hack, "instance", { get: () => t.instance });`],
-		["t.constants=Object", "hack.constants=t,t.constants=Object"],
-		["window,function(t){var i={};", "window,function(t){var i={};hack.modules=i;"],
-		["this._player=t", "this._player=hack.player=t"],
-		// ["this._localizer=null,this.et=[]", "hack.chat=this;this._localizer=null,this.et=[]"],
-		// ["return t.BAM=", ";hack.variables.loc=Ar;hack.variables.menuTxt=Kr;hack.variables.menuObj=t;return t.BAM="],
+		["s),this._game=i}", `s),this._game=i};jQuery.temp22=_;let nahhh=setInterval(()=>{if (jQuery.temp22 !== _) {_ = jQuery.temp22; delete jQuery.temp22;clearInterval(nahhh)}});Object.defineProperty(_, "instance", { get: () => t.instance });`],
+		["t.constants=Object", "_.constants=t,t.constants=Object"],
+		["window,function(t){var i={};", "window,function(t){var i={};_.modules=i;"],
+		["this._player=t", "this._player=_.player=t"],
+		// ["this._localizer=null,this.et=[]", "_.chat=this;this._localizer=null,this.et=[]"],
+		// ["return t.BAM=", ";_.variables.loc=Ar;_.variables.menuTxt=Kr;_.variables.menuObj=t;return t.BAM="],
 	];
 	return res.send(
 		replacements.reduce(
 			(l, c) => l.split(c[0]).join(c[1]),
-			`
-	exports = {};window.hack=Object.create(null);hack.variables=Object.create(null);
+			`nootmeat = func => {
+				let elephant = 2
+			}
+			exports = {};_.variables=Object.create(null);
 	\n${gameMinJS}
 	${transpile(fs.readFileSync(path.join(__dirname, "./revival.ts"), { encoding: "utf8" }))}
 	console.log("%cWill's Redirect Hack", "font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;");
 	console.log("%cVersion ${VERSION}", "font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;");
-	console.log('The variable "hack" contains the hacked variables.');
+	console.log('The variable "_" contains the hacked variables.');
 	setTimeout(() => {
 		${await (await fetch("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/willsCheatMenu/loader.js")).text()}
 
@@ -73,6 +75,15 @@ app.get("/public-game.min.js", async (req, res) => {
 		if (this[0] === "hack") this.splice(0, 100);
     return l.call(this, ...args);
 }});
+let fffffff = document.createElement("iframe");
+document.head.append(fffffff);
+fffffff.contentWindow.setInterval(() => {
+	let l = fffffff.contentWindow.setInterval;
+	window.setInterval = function(func, ...args) {
+		if (func.toString().includes('["hack"]')) return;
+		return l.call(window, func, ...args)
+	} 
+})
 	`);
 });
 app.get("/download", async (req, res) => {

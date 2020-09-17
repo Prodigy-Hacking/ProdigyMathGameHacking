@@ -2,32 +2,32 @@ require = (() => {}) as any;
 import "../typings/pixi";
 
 const setQuest = (t: string, i: number, n?: unknown, e?: unknown) => {
-	hack.instance.prodigy.world.getZone(t).testQuest(i, n, e);
+	_.instance.prodigy.world.getZone(t).testQuest(i, n, e);
 	try {
-		hack.instance.game.state.states.TileScreen.process();
+		_.instance.game.state.states.TileScreen.process();
 	} catch {}
 };
 
-hack.functions = Object.create(null);
-hack.functions.completeTutorial = () => {
+_.functions = Object.create(null);
+_.functions.completeTutorial = () => {
 	setQuest("house", 2);
 	setQuest("academy", 2);
-	hack.player.state.set("tutorial-0", 4);
-	hack.player.backpack.addKeyItem(13, 0);
-	hack.player.tutorial.setMenuValue(hack.variables.menuObj.WORLD_MAP.INTRO, 1);
-	hack.player.tutorial.setMenuValue(hack.variables.menuObj.BESTIARY.INTRO, 1);
-	hack.instance.prodigy.open.map(true, []);
-	hack.player.onTutorialComplete();
+	_.player.state.set("tutorial-0", 4);
+	_.player.backpack.addKeyItem(13, 0);
+	_.player.tutorial.setMenuValue(_.variables.menuObj.WORLD_MAP.INTRO, 1);
+	_.player.tutorial.setMenuValue(_.variables.menuObj.BESTIARY.INTRO, 1);
+	_.instance.prodigy.open.map(true, []);
+	_.player.onTutorialComplete();
 };
-hack.functions.getAllPets = () =>
-	hack.player.kennel.data.splice(
+_.functions.getAllPets = () =>
+	_.player.kennel.data.splice(
 		0,
 		1e69,
-		...hack.gameData.pet.map(x => ({
+		..._.gameData.pet.map(x => ({
 			ID: x.ID,
 			catchDate: Date.now(),
 			foreignSpells: [0, 0].map(
-				x => hack.gameData.spell[Math.floor(Math.random() * hack.gameData.spell.length)].ID
+				x => _.gameData.spell[Math.floor(Math.random() * _.gameData.spell.length)].ID
 			) as [number, number],
 			level: 1e69,
 			levelCaught: 1,
@@ -35,19 +35,19 @@ hack.functions.getAllPets = () =>
 		}))
 	);
 
-hack.functions.getAllItemsInCategory = category =>
-	hack.player.backpack.data[category].splice(
+_.functions.getAllItemsInCategory = category =>
+	_.player.backpack.data[category].splice(
 		0,
 		1e69,
-		...hack.gameData[category].map(x => ({ ID: x.ID, N: 1e69 }))
+		..._.gameData[category].map(x => ({ ID: x.ID, N: 1e69 }))
 	);
-hack.functions.escapeBattle = () => {
-	const currentState = hack.instance.game.state.current;
-	if (currentState === "PVP") hack.instance.game.state.states.PVP.endPVP();
-	else if (currentState === "CoOp") hack.instance.prodigy.world.$(hack.player.data.zone);
-	else hack.instance.game.state.callbackContext.runAwayCallback();
+_.functions.escapeBattle = () => {
+	const currentState = _.instance.game.state.current;
+	if (currentState === "PVP") _.instance.game.state.states.PVP.endPVP();
+	else if (currentState === "CoOp") _.instance.prodigy.world.$(_.player.data.zone);
+	else _.instance.game.state.callbackContext.runAwayCallback();
 };
-hack.hackMainframe = () => {
+_.hackMainframe = () => {
 	const parent = document.querySelector("canvas")?.parentElement;
 	document.querySelector("canvas")?.remove();
 	const canvas = document.createElement("canvas");
@@ -76,8 +76,8 @@ hack.hackMainframe = () => {
 	}, 33)
 };
 /*
-hack.functions.customChat = (text: string) => {
-	const dialogue = hack.instance.prodigy.dialogue.create();
+_.functions.customChat = (text: string) => {
+	const dialogue = _.instance.prodigy.dialogue.create();
 	dialogue.setText(10);
 	const key = "noot";
 	dialogue.eventQueue[0].dialogueData = dialogue.dataProvider.getLegacy(
@@ -95,7 +95,7 @@ hack.functions.customChat = (text: string) => {
 	dialogue.eventQueue[0] = (window as any)._.pickBy(dialogue.eventQueue[0], x => x !== undefined);
 	dialogue.closeDialogue(false);
 	dialogue.onClose = () => {};
-	hack.instance.prodigy.notifications.setPaused(true);
+	_.instance.prodigy.notifications.setPaused(true);
 	const next = () => {
 		dialogue.current = dialogue.eventQueue.splice(0, dialogue.skipCounter + 1)[dialogue.skipCounter];
 		dialogue.skipCounter = 0;
@@ -104,7 +104,7 @@ hack.functions.customChat = (text: string) => {
 			if (dialogue.currentDialogue?.game) {
 				dialogue.currentDialogue.updateSchema(dialogue.current, item);
 			} else {
-				dialogue.currentDialogue = hack.instance.prodigy.open.characterDialogue(
+				dialogue.currentDialogue = _.instance.prodigy.open.characterDialogue(
 					dialogue.current,
 					next.bind(dialogue),
 					item
@@ -115,13 +115,13 @@ hack.functions.customChat = (text: string) => {
 	next();
 };
 */
-Object.defineProperty(hack, "gameData", { get: () => hack.instance.game.state.states.Boot._gameData });
-Object.defineProperty(hack, "localizer", {
-	get: () => hack.instance.prodigy.gameContainer.get("LocalizationService"),
+Object.defineProperty(_, "gameData", { get: () => _.instance.game.state.states.Boot._gameData });
+Object.defineProperty(_, "localizer", {
+	get: () => _.instance.prodigy.gameContainer.get("LocalizationService"),
 });
-Object.defineProperty(hack, "network", {
-	get: () => hack.player.game.input.onDown._bindings[0].context,
+Object.defineProperty(_, "network", {
+	get: () => _.player.game.input.onDown._bindings[0].context,
 });
-Object.defineProperty(hack, "hack", {
-	get: () => hack,
+Object.defineProperty(_, "hack", {
+	get: () => _,
 });
