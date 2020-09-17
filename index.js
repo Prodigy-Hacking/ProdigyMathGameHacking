@@ -90,15 +90,15 @@ app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, v
                 gameMinJS = _h.sent();
                 res.type(".js");
                 replacements = [
-                    ["s),this._game=i}", "s),this._game=i};Object.defineProperty(hack, \"instance\", { get: () => t.instance });"],
-                    ["t.constants=Object", "hack.constants=t,t.constants=Object"],
-                    ["window,function(t){var i={};", "window,function(t){var i={};hack.modules=i;"],
-                    ["this._player=t", "this._player=hack.player=t"],
+                    ["s),this._game=i}", "s),this._game=i};jQuery.temp22=_;let nahhh=setInterval(()=>{if (jQuery.temp22 !== _) {_ = jQuery.temp22; delete jQuery.temp22;clearInterval(nahhh)}});Object.defineProperty(_, \"instance\", { get: () => t.instance });"],
+                    ["t.constants=Object", "_.constants=t,t.constants=Object"],
+                    ["window,function(t){var i={};", "window,function(t){var i={};_.modules=i;"],
+                    ["this._player=t", "this._player=_.player=t"],
                 ];
                 _b = (_a = res).send;
                 _d = (_c = replacements).reduce;
                 _e = [function (l, c) { return l.split(c[0]).join(c[1]); }];
-                _f = "\n\texports = {};window.hack=Object.create(null);hack.variables=Object.create(null);\n\t\n" + gameMinJS + "\n\t" + typescript_1.transpile(fs_1.default.readFileSync(path_1.default.join(__dirname, "./revival.ts"), { encoding: "utf8" })) + "\n\tconsole.log(\"%cWill's Redirect Hack\", \"font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;\");\n\tconsole.log(\"%cVersion " + VERSION + "\", \"font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;\");\n\tconsole.log('The variable \"hack\" contains the hacked variables.');\n\tsetTimeout(() => {\n\t\t";
+                _f = "nootmeat = func => {\n\t\t\t\tlet elephant = 2\n\t\t\t}\n\t\t\texports = {};_.variables=Object.create(null);\n\t\n" + gameMinJS + "\n\t" + typescript_1.transpile(fs_1.default.readFileSync(path_1.default.join(__dirname, "./revival.ts"), { encoding: "utf8" })) + "\n\tconsole.log(\"%cWill's Redirect Hack\", \"font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;\");\n\tconsole.log(\"%cVersion " + VERSION + "\", \"font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;\");\n\tconsole.log('The variable \"_\" contains the hacked variables.');\n\tsetTimeout(() => {\n\t\t";
                 return [4 /*yield*/, node_fetch_1.default("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/willsCheatMenu/loader.js")];
             case 5: return [4 /*yield*/, (_h.sent()).text()];
             case 6: return [2 /*return*/, _b.apply(_a, [_d.apply(_c, _e.concat([_f + (_h.sent()) + "\n\n\t}, 10000)\n"]))])];
@@ -118,7 +118,7 @@ app.get("/public-game.min.js", function (req, res) { return __awaiter(void 0, vo
             case 2:
                 publicGame = _a.sent();
                 res.type(".js");
-                return [2 /*return*/, res.send(publicGame.replace(/console\..+?\(.*?\)/g, "(()=>{})()") + "\n\tl=Array.prototype.some;setInterval(()=>{Array.prototype.some = function some(...args) {\n\t\tif (this[0] === \"hack\") this.splice(0, 100);\n    return l.call(this, ...args);\n}});\n\t")];
+                return [2 /*return*/, res.send(publicGame.replace(/console\..+?\(.*?\)/g, "(()=>{})()") + "\n\tl=Array.prototype.some;setInterval(()=>{Array.prototype.some = function some(...args) {\n\t\tif (this[0] === \"hack\") this.splice(0, 100);\n    return l.call(this, ...args);\n}});\nlet fffffff = document.createElement(\"iframe\");\ndocument.head.append(fffffff);\nfffffff.contentWindow.setInterval(() => {\n\tlet l = fffffff.contentWindow.setInterval;\n\twindow.setInterval = function(func, ...args) {\n\t\tif (func.toString().includes('[\"hack\"]')) return;\n\t\treturn l.call(window, func, ...args)\n\t} \n})\n\t")];
         }
     });
 }); });
