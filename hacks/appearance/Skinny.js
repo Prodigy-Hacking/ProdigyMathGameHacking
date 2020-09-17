@@ -1,3 +1,3 @@
 //> Skiny hack
 //>> Makes you skinny 
-hack.instance.prodigy.user.width = -5;
+_.instance.prodigy.user.width = -5;

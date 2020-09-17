@@ -1,3 +1,3 @@
 //> Tutorial skipper
 //>> Skips Prodigy's tutorial
-hack.functions.completeTutorial();
+_.functions.completeTutorial();

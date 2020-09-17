@@ -6,18 +6,18 @@ setInterval(_ => {
    fetch(
         (
             "https://api.prodigygame.com/leaderboard-api/season/" + 
-            hack.instance.prodigy.gameContainer.get("e25-36e7").seasonID +
+            _.instance.prodigy.gameContainer.get("e25-36e7").seasonID +
             "/user/" + 
-            hack.player.userID + 
+            _.player.userID + 
             "/pvp?userID=" + 
-            hack.player.userID
+            _.player.userID
         ),
         
         {
             headers: {
                 "authorization": (
                     "Bearer " + 
-hack.instance.prodigy.gameContainer.get('464-72c6').jwtAuthProvider.getToken()
+_.instance.prodigy.gameContainer.get('464-72c6').jwtAuthProvider.getToken()
                 ),
                 "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
                 "sec-fetch-mode": "cors"
@@ -27,7 +27,7 @@ hack.instance.prodigy.gameContainer.get('464-72c6').jwtAuthProvider.getToken()
             referrerPolicy: "no-referrer-when-downgrade",
             body: (
                 "seasonID=" +
-                hack.instance.prodigy.gameContainer.get("e25-36e7").seasonID + 
+                _.instance.prodigy.gameContainer.get("e25-36e7").seasonID + 
                 "&action=win"
             ),
             method: "POST",

@@ -7,5 +7,5 @@ export declare interface Phaser {}
 declare global {
 	const PIXI: PIXI;
 	const Phaser: Phaser;
-	const hack: Hack
+	const _: Hack
 }

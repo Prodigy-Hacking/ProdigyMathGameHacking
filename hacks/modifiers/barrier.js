@@ -1,3 +1,3 @@
 //> Barrier 
 //>> Gives a blue translucent barrier around the player.
-hack.player.modifiers.barrier = true;
+_.player.modifiers.barrier = true;

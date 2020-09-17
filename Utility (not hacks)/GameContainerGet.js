@@ -1,4 +1,4 @@
-hack.instance.prodigy.gameContainer.get("NetworkManager");
+_.instance.prodigy.gameContainer.get("NetworkManager");
 
 /*
 "Game"

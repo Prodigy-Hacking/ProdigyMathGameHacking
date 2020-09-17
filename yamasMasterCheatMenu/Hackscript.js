@@ -26,88 +26,88 @@ setTimeout("closeit", 2000);
 function teleportplayer() {
 	// Teleport on mouse clicker 
 	setTimeout(() => {
-		hack.instance.prodigy.user.x = hack.instance.prodigy.game.input.mousePointer.position.x;
-		hack.instance.prodigy.user.y = hack.instance.prodigy.game.input.mousePointer.position.y;
+		_.instance.prodigy.user.x = _.instance.prodigy.game.input.mousePointer.position.x;
+		_.instance.prodigy.user.y = _.instance.prodigy.game.input.mousePointer.position.y;
 	}, 5000);
 }
 
 function lotodamage() {
 	// Instakill 
-	hack.constants.constants["GameConstants.Battle.ATTACK_DAMAGE_OVERRIDE"] = Infinity;
+	_.constants.constants["GameConstants.Battle.ATTACK_DAMAGE_OVERRIDE"] = Infinity;
 }
 
 function realspeed() {
 	// Speed hack 
-	hack.instance.prodigy.game.state.states.DinoDig.walkSpeed = 100;
-	hack.instance.prodigy.user.walkSpeed = 10;
+	_.instance.prodigy.game.state.states.DinoDig.walkSpeed = 100;
+	_.instance.prodigy.user.walkSpeed = 10;
 }
 
 function setlevel() {
 	// Sets level to 100 
-	hack.player.data.level = 100
+	_.player.data.level = 100
 }
 
 function getallpets() {
 	// Get all pets 
-	hack.hack.functions.getAllPets
+	_._.functions.getAllPets
 }
 
 function clearpets() {
 	// Clear all pets 
-	hack.player.kennel.data.length = 0;
+	_.player.kennel.data.length = 0;
 }
 
 function escapebattle() {
 	// Escape battle 
-	hack.functions.escapeBattle();
+	_.functions.escapeBattle();
 }
 
 function winbattle() {
 	// Win battle 
-	hack.instance.prodigy.game.state.states.Battle.startVictory();
+	_.instance.prodigy.game.state.states.Battle.startVictory();
 }
 
 function setbattlehp() {
 	// Get really high hp 
-	hack.player.data.hp = 1e153
+	_.player.data.hp = 1e153
 }
 
 function skipt() {
 	// Skip tutorial 
-	hack.functions.completeTutorial();
+	_.functions.completeTutorial();
 }
 
 function bobbify() {
 	// Bobbifies player 
-	hack.player.name.data.nickname = null;
-	hack.player.name.data.firstName = 44;
-	hack.player.name.data.middleName = 754;
-	hack.player.name.data.lastName = 882;
-	hack.player.data.stars = -1e22;
-	hack.player.data.level = 69;
-	hack.player.forceSaveCharacter();
-	hack.player.appearance.setGender("male");
-	hack.player.appearance.setEyeColor(1);
-	hack.player.appearance.setFace(4);
-	hack.player.appearance.setHair(19, 1);
-	hack.player.appearance.setSkinColor(1);
-	hack.player.equipment.setFollow(19);
-	hack.player.equipment.setHat(19);
-	hack.player.equipment.setBoots(19);
-	hack.player.equipment.setOutfit(19);
-	hack.player.equipment.setWeapon(19);
-	hack.player.forceSaveCharacter();
+	_.player.name.data.nickname = null;
+	_.player.name.data.firstName = 44;
+	_.player.name.data.middleName = 754;
+	_.player.name.data.lastName = 882;
+	_.player.data.stars = -1e22;
+	_.player.data.level = 69;
+	_.player.forceSaveCharacter();
+	_.player.appearance.setGender("male");
+	_.player.appearance.setEyeColor(1);
+	_.player.appearance.setFace(4);
+	_.player.appearance.setHair(19, 1);
+	_.player.appearance.setSkinColor(1);
+	_.player.equipment.setFollow(19);
+	_.player.equipment.setHat(19);
+	_.player.equipment.setBoots(19);
+	_.player.equipment.setOutfit(19);
+	_.player.equipment.setWeapon(19);
+	_.player.forceSaveCharacter();
 }
 
 function snowballcrash() {
 	// Enables snowball crasher 
 	for (let i = 0; i < 10000; i++) {
 		setInterval(() =>
-			hack.instance.prodigy.gameContainer.get("NetworkManager").emitMessage({
+			_.instance.prodigy.gameContainer.get("NetworkManager").emitMessage({
 				action: "fx",
 				data: {
 					type: 3,
-					userID: hack.player.userID,
+					userID: _.player.userID,
 					x: Math.floor(Math.random() * 1280),
 					y: Math.floor(Math.random() * 720),
 				},
@@ -118,47 +118,47 @@ function snowballcrash() {
 
 function setgold() {
 	// Get a lot of gold
-	hack.player.data.gold = 1e153
+	_.player.data.gold = 1e153
 }
 
 function setbpoints() {
 	// Get max bounty points
-	hack.player.data.bountyScore = 100
+	_.player.data.bountyScore = 100
 }
 
 function instakill() {
 	// Instant kill with player 
-	hack.player.modifiers.damage = Infinity;
+	_.player.modifiers.damage = Infinity;
 }
 
 function pvphp() {
 	// Gives a lot of Pvp Hp 
-	hack.player.modifiers.maxHearts = Infinity;
+	_.player.modifiers.maxHearts = Infinity;
 }
 
 function changebwins() {
 	// Set battle wins to 987453
-	hack.player.data.win = 987453;
+	_.player.data.win = 987453;
 }
 
 function resetacc() {
 	// Reset account 
-	hack.player.resetAccount();
+	_.player.resetAccount();
 }
 
 function changeblosses() {
 	// Change battle losses to 0
-	hack.player.data.loss = 0;
+	_.player.data.loss = 0;
 }
 
 function textsize() {
 	// Giant text size 
-	hack.instance.prodigy.user.chatText.FontSize = 100
+	_.instance.prodigy.user.chatText.FontSize = 100
 }
 
 function infinitewspins() {
 	// Unlimited wheel spins 
-	hack.constants.constants["GameConstants.Debug.UNLIMITED_WHEEL_SPINS"] = true;
+	_.constants.constants["GameConstants.Debug.UNLIMITED_WHEEL_SPINS"] = true;
 }
 
 function arenapoints() {
@@ -167,18 +167,18 @@ function arenapoints() {
 		fetch(
 			(
 				"https://api.prodigygame.com/leaderboard-api/season/" +
-				hack.instance.prodigy.gameContainer.get("PVPNetworkHandler").seasonID +
+				_.instance.prodigy.gameContainer.get("PVPNetworkHandler").seasonID +
 				"/user/" +
-				hack.player.userID +
+				_.player.userID +
 				"/pvp?userID=" +
-				hack.player.userID
+				_.player.userID
 			),
 
 			{
 				headers: {
 					"authorization": (
 						"Bearer " +
-						hack.instance.prodigy.gameContainer.get("NetworkManager").jwtAuthProvider.getToken()
+						_.instance.prodigy.gameContainer.get("NetworkManager").jwtAuthProvider.getToken()
 					),
 					"content-type": "application/x-www-form-urlencoded; charset=UTF-8",
 					"sec-fetch-mode": "cors"
@@ -188,7 +188,7 @@ function arenapoints() {
 				referrerPolicy: "no-referrer-when-downgrade",
 				body: (
 					"seasonID=" +
-					hack.instance.prodigy.gameContainer.get("PVPNetworkHandler").seasonID +
+					_.instance.prodigy.gameContainer.get("PVPNetworkHandler").seasonID +
 					"&action=win"
 				),
 				method: "POST",
@@ -200,20 +200,20 @@ function arenapoints() {
 
 function unlimitedspins() {
 	// Unlimited spins 
-	hack.constants.constants["GameConstants.Debug.UNLIMITED_WHEEL_SPINS"] = true;
+	_.constants.constants["GameConstants.Debug.UNLIMITED_WHEEL_SPINS"] = true;
 }
 
 function killme() {
 	// Makes everything go to hell 
-	setInterval(_ => hack.instance.prodigy.effects.shake("", 1000, 1000))
-	hack.instance.prodigy.effects.flashText("REEEEEEEEEEEEEEE");
+	setInterval(_ => _.instance.prodigy.effects.shake("", 1000, 1000))
+	_.instance.prodigy.effects.flashText("REEEEEEEEEEEEEEE");
 	setInterval(_ => {
 		for (let i of [1, 2, 3, 4]) {
-			hack.instance.prodigy.gameContainer.get("NetworkManager").emitMessage({
+			_.instance.prodigy.gameContainer.get("NetworkManager").emitMessage({
 				action: "fx",
 				data: {
 					type: i,
-					userID: hack.player.userID,
+					userID: _.player.userID,
 					x: Math.floor(Math.random() * 1280),
 					y: Math.floor(Math.random() * 720),
 				},
@@ -222,11 +222,11 @@ function killme() {
 	});
 	for (let i = 0; i < 10000; i++) {
 		setInterval(() =>
-			hack.instance.prodigy.gameContainer.get("NetworkManager").emitMessage({
+			_.instance.prodigy.gameContainer.get("NetworkManager").emitMessage({
 				action: "fx",
 				data: {
 					type: 3,
-					userID: hack.player.userID,
+					userID: _.player.userID,
 					x: Math.floor(Math.random() * 1280),
 					y: Math.floor(Math.random() * 720),
 				},
@@ -237,129 +237,129 @@ function killme() {
 
 function praybitch() {
 	// Sets hp to 1 
-	hack.player.data.hp = 1e153
+	_.player.data.hp = 1e153
 }
 
 function moonwalk() {
 	// Flips player backwards
-	hack.instance.prodigy.user.width *= -1;
-	hack.instance.prodigy.user.nameText.gameObject.scale = -1;
+	_.instance.prodigy.user.width *= -1;
+	_.instance.prodigy.user.nameText.gameObject.scale = -1;
 }
 
 function grade1() {
 	// Set grade to 1
-	hack.player.grade = 1;
+	_.player.grade = 1;
 }
 
 function grade2() {
 	// Set grade level to 2
-	hack.player.grade = 2;
+	_.player.grade = 2;
 }
 
 function grade3() {
 	// Set grade level to 3
-	hack.player.grade = 3;
+	_.player.grade = 3;
 }
 
 function grade4() {
 	// Set grade level to 4
-	hack.player.grade = 4;
+	_.player.grade = 4;
 }
 
 function grade5() {
 	// Set grade level to 5
-	hack.player.grade = 5;
+	_.player.grade = 5;
 }
 
 function grade6() {
 	// Set grade level to 6
-	hack.player.grade = 6;
+	_.player.grade = 6;
 }
 
 function grade7() {
 	// Set grade level to 7
-	hack.player.grade = 7;
+	_.player.grade = 7;
 }
 
 function grade8() {
 	// Set grade level to 8
-	hack.player.grade = 8;
+	_.player.grade = 8;
 }
 
 function randomnick() {
 	// Get random nickname
-	hack.player.name.generateRandomName();
+	_.player.name.generateRandomName();
 }
 
 function invislol() {
 	// Walk past monsters ez
-	hack.constants.constants["GameConstants.Debug.SCALE_ENCOUNTER_DISTANCE"] = 0;
+	_.constants.constants["GameConstants.Debug.SCALE_ENCOUNTER_DISTANCE"] = 0;
 }
 
 function colorred() {
 	// Set text color red
-	hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
-	hack.instance.prodigy.user.chatText.FillColor = "#FF0000";
+	_.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+	_.instance.prodigy.user.chatText.FillColor = "#FF0000";
 }
 
 function colorsilver() {
 	// Set text color silver
-	hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
-	hack.instance.prodigy.user.chatText.FillColor = "#C0C0C0";
+	_.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+	_.instance.prodigy.user.chatText.FillColor = "#C0C0C0";
 }
 
 function colorgray() {
 	// Set text color gray
-	hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
-	hack.instance.prodigy.user.chatText.FillColor = "#808080";
+	_.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+	_.instance.prodigy.user.chatText.FillColor = "#808080";
 }
 
 function colorblack() {
 	// Set text color black
-	hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
-	hack.instance.prodigy.user.chatText.FillColor = "#000000";
+	_.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+	_.instance.prodigy.user.chatText.FillColor = "#000000";
 }
 
 function colorgreen() {
 	// Set text color green
-	hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
-	hack.instance.prodigy.user.chatText.FillColor = "#008000";
+	_.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+	_.instance.prodigy.user.chatText.FillColor = "#008000";
 }
 
 function colorbrown() {
 	// Set text color brown
-	hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
-	hack.instance.prodigy.user.chatText.FillColor = "#A52A2A";
+	_.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+	_.instance.prodigy.user.chatText.FillColor = "#A52A2A";
 }
 
 function colorblue() {
 	// Set text color blue
-	hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
-	hack.instance.prodigy.user.chatText.FillColor = "#0000FF";
+	_.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+	_.instance.prodigy.user.chatText.FillColor = "#0000FF";
 }
 
 function colorpurple() {
 	// Set text color purple
-	hack.instance.prodigy.user.chatText.Font = "Comic Sans MS";
-	hack.instance.prodigy.user.chatText.FillColor = "#C203F3";
+	_.instance.prodigy.user.chatText.Font = "Comic Sans MS";
+	_.instance.prodigy.user.chatText.FillColor = "#C203F3";
 }
 
 function leveluppets() {
 	// Level pets up to 100
-	hack.player.kennel.data.map(x => x.level = 100);
+	_.player.kennel.data.map(x => x.level = 100);
 }
 
 function inactivitydisable() {
 	// Disable inactivity prompt
-	hack.constants.constants["GameConstants.Inactivity.LOG_OUT_TIMER_SECONDS"] = 0;
+	_.constants.constants["GameConstants.Inactivity.LOG_OUT_TIMER_SECONDS"] = 0;
 }
 
 function itemstacker() {
 	// Stack items
 	(() => {
 		// FMI: every time prodigy patches, update scopeObj.
-		const scopeObj = hack.instance;
-		const playerObject = hack.player;
+		const scopeObj = _.instance;
+		const playerObject = _.player;
 
 		// Do not modify.
 		const bootData = scopeObj.game.state.states.Boot._gameData;
@@ -408,8 +408,8 @@ function itemstacker() {
 		}
 
 		// Remove bounty notes (#229)
-		let bountyIndex = _ => hack.player.backpack.data.item.findIndex(v => v.ID === 84 || v.ID === 85 || v.ID === 86)
-		while (bountyIndex() > -1) hack.player.backpack.data.item.splice(bountyIndex(), 1)
+		let bountyIndex = _ => _.player.backpack.data.item.findIndex(v => v.ID === 84 || v.ID === 85 || v.ID === 86)
+		while (bountyIndex() > -1) _.player.backpack.data.item.splice(bountyIndex(), 1)
 	})();
 }
 
