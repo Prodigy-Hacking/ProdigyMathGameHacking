@@ -1,4 +1,4 @@
-_.instance.prodigy.gameContainer.get("NetworkManager");
+_.network
 
 /*
 "Game"
