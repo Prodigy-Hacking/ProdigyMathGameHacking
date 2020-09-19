@@ -11,7 +11,7 @@
 -   **Cheat Dashboard Day**: `3/30/20 - 3/30/20`
 -   -   A cheat dashboard was developed. However, it was not very good, which caused it to be unsupported the day after.
 -   **Dark Ages**: `4/01/20 - 4/07/20`
--   -   The first week of April was a sad week for prodigy hacking. All known hacking methods were patched.
+-   -   The first week of April was a sad week for Prodigy hacking. All known hacking methods were patched.
 -   **EnableDebug Breakthrough**: `4/07/20 - 4/09/20`
 -   -   A way to enable debug mode was found, and worked for two days. However, debug was removed by Prodigy quickly after.
 -   **Prodigy Console Prevention**: `4/10/20`
