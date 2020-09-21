@@ -63,13 +63,14 @@ Furthermore:
 -   [PatheticMustan](https://github.com/PatheticMustan)
 -   [Avn1114](https://github.com/Avn1114)
 -   [YamaHacks](https://github.com/YamaHacks)
--   [DaChickenKing](https://github.com/DaChickenKing)
 -   [BoredFish](https://github.com/BoredFishRE)
+-   [Whimpers](https://github.com/KryptoCrash)
 
 ## Retired Collaborators
 
 -   [TNThacker2015 (will)](https://github.com/TNThacker2015)
 -   [Exoticc](https://github.com/Exoticc)
 -   [Rubberduck55](https://github.com/Rubberduck55)
+-   [DaChickenKing](https://github.com/DaChickenKing)
 ----
 ***All hacks and software are licensed under the MPL V2.0, unless stated otherwise with a separate license.***
