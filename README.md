@@ -65,6 +65,7 @@ Furthermore:
 -   [YamaHacks](https://github.com/YamaHacks)
 -   [DaChickenKing](https://github.com/DaChickenKing)
 -   [BoredFish](https://github.com/BoredFishRE)
+-   [Whimpers](https://github.com/KryptoCrash)
 
 ## Retired Collaborators
 
