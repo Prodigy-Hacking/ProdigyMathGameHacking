@@ -8,3 +8,6 @@ Official Discord - https://discord.gg/XQDfbfq
 Official YouTube - https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A
 Official Website - https://prodigymathgamehacking.tech
 ```
+
+
+*If you'd like an exception, please contact us and we can discuss details.*
