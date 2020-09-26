@@ -22,6 +22,7 @@ const main = async () => {
                 headers: {
                     authorization: `Bearer ${user.token}`,
                     "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+                    'user-agent': 'CUM MACHINE / v1.12.2',
                 },
                 body: `seasonID=${seasonID}&action=win`,
                 method: "POST",
@@ -35,6 +36,7 @@ const main = async () => {
             const rank = await fetchJson(`https://api.prodigygame.com/leaderboard-api/season/${seasonID}/user/${user.userID}/rank?userID=${user.userID}`, {
                 headers: {
                     authorization: `Bearer ${user.token}`,
+                    'user-agent': 'CUM MACHINE / v1.12.2',
                 },
             });
             return `${`${winJson.points} Points (+100)`.padEnd(20)} - Rank: ${rank.rank}`;
