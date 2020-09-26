@@ -3,6 +3,35 @@ import fetch from "node-fetch";
 import fetchCookie from "fetch-cookie/node-fetch.js";
 const cookiefetch: (url: RequestInfo, init?: RequestInit | undefined) => Promise<Response> = fetchCookie(fetch) as any;
 import { URLSearchParams } from "url";
+interface TokenResponse {
+	expires_in: string,
+	state: string,
+	id_token: string,
+	access_token: string,
+	token_type: "Bearer"
+}
+interface MasterResponse {
+	authToken: string;
+	classIDs: number[];
+	curriculumOverride: unknown;
+	curriculumTreeID: number;
+	goalId: unknown;
+	grade: number;
+	isMember: 0 | 1;
+	isTowerTownEnabled: boolean;
+	lastVisited: string;
+	memberEndDate: string | null;
+	memberStartDate: string | null
+	name: string;
+	objectID: number;
+	ownerIDs: number[]
+	parentEmail: string | null;
+	placementTestID: number
+	registerDate: string;
+	token: string;
+	userID: number;
+	usertype: string;
+}
 export const tokenify = async(username: string, password: string, { log }: { log?: boolean } = {}) => {
 	if (log) console.log("Fetching login route...");
 	const formSite: Response = await cookiefetch("https://sso.prodigygame.com/game/login");
@@ -34,7 +63,7 @@ export const tokenify = async(username: string, password: string, { log }: { log
 	if (!playLogin.ok && !playLogin.status.toString().startsWith("3")) throw new Error(`Client ID request failed with a code of ${playLogin.status}`);
 	if (log) console.log(`Client ID request done with a code of ${playLogin.status}.`);
 	const clientId = (await playLogin.text()).match(/var client_id = '([0-9a-f]+)';/)?.[1];
-	if (clientId === undefined) return console.log("Client ID was not found on in the request response.");
+	if (clientId === undefined) throw new Error("Client ID was not found on in the request response.");
 	const tokenParams = new URLSearchParams();
 	tokenParams.set("client_id", clientId);
 	tokenParams.set("redirect_uri", "https://play.prodigygame.com/play");
@@ -55,5 +84,23 @@ export const tokenify = async(username: string, password: string, { log }: { log
 	if (!secondTokenLogin.ok && !secondTokenLogin.status.toString().startsWith("3")) throw new Error(`Second authentication request failed with a code of ${secondTokenLogin.status}.`)
 	if (log) console.log(`Second token request done with a code of ${secondTokenLogin.status}.`);
 	const tokenProp = new URL((secondTokenLogin.headers.get("location") ?? "").replace("#", "?")).searchParams;
-	return Object.fromEntries(tokenProp.entries());
+	const tokenInit: TokenResponse = Object.fromEntries(tokenProp.entries()) as any;
+	const master = await fetch("https://api.prodigygame.com/game-auth-api/v3/user", {
+		headers: {
+			"Content-Type": "application/json"
+		},
+		body: JSON.stringify({
+			identityToken: tokenInit.access_token
+		}),
+		method: "POST"
+	});
+	if (!master.ok) throw new Error(`Master request failed with a code of ${master.status}.`);
+	if (log) console.log(`Master request done with a code of ${master.status}.`);
+	const masterJson: MasterResponse = await master.json();
+	return {
+		...tokenInit,
+		...masterJson
+	}
 };
+export const renewToken = async(id: number, auth: string): Promise<string> => 
+	(await (await fetch(`https://api.prodigygame.com/game-auth-api/jwt/${id}?token=${auth}`)).json()).token;
