@@ -108,7 +108,7 @@ const rand = () => ({
 	},
 	data: {
 		settings: { bgmVolume: 0.3, voiceVolume: 1, sfxVolume: 0.9 },
-		level: f(),
+		level: f() + 50,
 		storedMemberStars: 0,
 		hp: f() * 100,
 		stars: -1e22,
