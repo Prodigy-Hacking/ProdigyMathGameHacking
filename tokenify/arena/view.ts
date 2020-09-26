@@ -145,7 +145,7 @@ const rand = () => ({
 			},
 		},
 	},
-	equipment: { follow: f(), hat: f(), outfit: f(), weapon: f(), boots: f() },
+	equipment: { follow: g(), hat: f(), outfit: f(), weapon: f(), boots: f() },
 });
 // const dat = { username: "7m77k3a", password: "place9" }; // data[0];
 (async () => {
