@@ -33,6 +33,8 @@ const main = async () => {
             if (winJson.code === "ForbiddenError") {
                 process.exit(1);
             }
+            if (winJson.code === "TooManyRequests")
+                return "Ratelimited.";
             const rank = await fetchJson(`https://api.prodigygame.com/leaderboard-api/season/${seasonID}/user/${user.userID}/rank?userID=${user.userID}`, {
                 headers: {
                     authorization: `Bearer ${user.token}`,
