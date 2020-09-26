@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.tokenify = void 0;
+exports.renewToken = exports.tokenify = void 0;
 const jsdom_1 = __importDefault(require("jsdom"));
 const node_fetch_1 = __importDefault(require("node-fetch"));
 const node_fetch_js_1 = __importDefault(require("fetch-cookie/node-fetch.js"));
@@ -50,7 +50,7 @@ exports.tokenify = async (username, password, { log } = {}) => {
         console.log(`Client ID request done with a code of ${playLogin.status}.`);
     const clientId = (await playLogin.text()).match(/var client_id = '([0-9a-f]+)';/)?.[1];
     if (clientId === undefined)
-        return console.log("Client ID was not found on in the request response.");
+        throw new Error("Client ID was not found on in the request response.");
     const tokenParams = new url_1.URLSearchParams();
     tokenParams.set("client_id", clientId);
     tokenParams.set("redirect_uri", "https://play.prodigygame.com/play");
@@ -75,5 +75,24 @@ exports.tokenify = async (username, password, { log } = {}) => {
     if (log)
         console.log(`Second token request done with a code of ${secondTokenLogin.status}.`);
     const tokenProp = new URL((secondTokenLogin.headers.get("location") ?? "").replace("#", "?")).searchParams;
-    return Object.fromEntries(tokenProp.entries());
+    const tokenInit = Object.fromEntries(tokenProp.entries());
+    const master = await node_fetch_1.default("https://api.prodigygame.com/game-auth-api/v3/user", {
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            identityToken: tokenInit.access_token
+        }),
+        method: "POST"
+    });
+    if (!master.ok)
+        throw new Error(`Master request failed with a code of ${master.status}.`);
+    if (log)
+        console.log(`Master request done with a code of ${master.status}.`);
+    const masterJson = await master.json();
+    return {
+        ...tokenInit,
+        ...masterJson
+    };
 };
+exports.renewToken = async (id, auth) => (await (await node_fetch_1.default(`https://api.prodigygame.com/game-auth-api/jwt/${id}?token=${auth}`)).json()).token;
