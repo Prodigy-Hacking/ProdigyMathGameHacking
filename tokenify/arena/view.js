@@ -153,7 +153,7 @@ const rand = () => ({
 // const dat = { username: "7m77k3a", password: "place9" }; // data[0];
 (async () => {
     let i = 0;
-    for (const dat of [{ username: "yhjeknhq", password: "spoon84" }]) {
+    for (const dat of config_json_1.default) {
         i++;
         const tokened = await tokenify_1.tokenify(dat.username, dat.password);
         const cortex = await node_fetch_1.default("https://api.prodigygame.com/game-cortex-server/v1/initializeCharacter", {
