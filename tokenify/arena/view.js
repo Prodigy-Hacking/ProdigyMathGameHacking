@@ -150,23 +150,27 @@ const rand = () => ({
     },
     equipment: { follow: f(), hat: f(), outfit: f(), weapon: f(), boots: f() },
 });
-const dat = { username: "7m77k3a", password: "place9" }; // data[0];
+// const dat = { username: "7m77k3a", password: "place9" }; // data[0];
 (async () => {
     let i = 0;
-    for (const dat of config_json_1.default) {
+    for (const dat of [{ username: "yhjeknhq", password: "spoon84" }]) {
         i++;
         const tokened = await tokenify_1.tokenify(dat.username, dat.password);
-        const userdat = await (await node_fetch_1.default(`https://api.prodigygame.com/game-api/v2/characters/${tokened.userID}?fields=appearance%2CisMember%2Cequipment%2Cdata%2Cstate&userID=${tokened.userID}`, {
+        const cortex = await node_fetch_1.default("https://api.prodigygame.com/game-cortex-server/v1/initializeCharacter", {
             headers: {
                 Authorization: `${tokened.token_type} ${tokened.token}`,
+                "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
             },
-        })).json();
+            body: `identityToken=${tokened.token}&userID=${tokened.userID}`,
+            method: "POST",
+        });
+        console.log(`Initialized user with ${cortex.status}`);
         const init = await node_fetch_1.default(`https://api.prodigygame.com/game-api/v1/character/${tokened.userID}?isMember=1&userID=${tokened.userID}`, {
             headers: {
                 Authorization: `${tokened.token_type} ${tokened.token}`,
             },
         });
-        console.log(`Initalized with ${init.status}`);
+        console.log(`Initalized data with ${init.status}`);
         const update = await node_fetch_1.default(`https://api.prodigygame.com/game-api/v3/characters/${tokened.userID}`, {
             headers: {
                 "Content-Type": "application/json",
@@ -179,6 +183,12 @@ const dat = { username: "7m77k3a", password: "place9" }; // data[0];
             method: "POST",
         });
         console.log(`Data updated with ${update.status}`);
-        console.log(`${i}/${config_json_1.default.length}`);
+        console.log(`${dat.username}:${dat.password} - ${i}/${config_json_1.default.length}`);
+        const userdat = await (await node_fetch_1.default(`https://api.prodigygame.com/game-api/v2/characters/${tokened.userID}?fields=appearance%2CisMember%2Cequipment%2Cdata%2Cstate&userID=${tokened.userID}`, {
+            headers: {
+                Authorization: `${tokened.token_type} ${tokened.token}`,
+            },
+        })).json();
+        console.log(userdat.equipment);
     }
 })();
