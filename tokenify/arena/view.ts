@@ -163,7 +163,7 @@ const rand = () => ({
 		});
 		console.log(`Initialized user with ${cortex.status}`)
 		const init = await fetch(
-			`https://api.prodigygame.com/game-api/v1/character/${tokened.userID}?isMember=1&userID=${tokened.userID}`,
+			`https://api.prodigygame.com/game-api/v1/character/${tokened.userID}?isMember=${Math.round(Math.random())}&userID=${tokened.userID}`,
 			{
 				headers: {
 					Authorization: `${tokened.token_type} ${tokened.token}`,
