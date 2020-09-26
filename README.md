@@ -61,7 +61,7 @@ Furthermore:
 ## Collaborators
 
 -   [PatheticMustan](https://github.com/PatheticMustan)
--   [Avn1114](https://github.com/Avn1114)
+-   [Arcerion](https://github.com/ArcerionDev)
 -   [YamaHacks](https://github.com/YamaHacks)
 -   [BoredFish](https://github.com/BoredFishRE)
 -   [Whimpers](https://github.com/KryptoCrash)
