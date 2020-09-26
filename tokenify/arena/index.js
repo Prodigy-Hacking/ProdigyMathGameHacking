@@ -35,6 +35,8 @@ const main = async () => {
             }
             if (winJson.code === "TooManyRequests")
                 return "Ratelimited.";
+            if (winJson.points === undefined)
+                return JSON.stringify(winJson);
             const rank = await fetchJson(`https://api.prodigygame.com/leaderboard-api/season/${seasonID}/user/${user.userID}/rank?userID=${user.userID}`, {
                 headers: {
                     authorization: `Bearer ${user.token}`,
