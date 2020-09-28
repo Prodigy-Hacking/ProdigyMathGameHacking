@@ -65,6 +65,7 @@ Furthermore:
 -   [YamaHacks](https://github.com/YamaHacks)
 -   [BoredFish](https://github.com/BoredFishRE)
 -   [Whimpers](https://github.com/KryptoCrash)
+-   Noot
 
 ## Retired Collaborators
 
