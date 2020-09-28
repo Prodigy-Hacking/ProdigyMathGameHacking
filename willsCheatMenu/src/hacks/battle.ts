@@ -21,7 +21,7 @@ new Hack(category.battle, "Win Battle", "Instantly win a monster battle.").setCl
 	if (currentState === "PVP" || currentState === "CoOp")
 		return Toast.fire(
 			"Invalid State.",
-			"PVP is not supported for this _.",
+			"PVP is not supported for this hack.",
 			"error"
 		);
 	else if (currentState === "Battle") {
