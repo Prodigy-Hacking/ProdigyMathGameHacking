@@ -1,6 +1,6 @@
 ---
-name: Hack Request
-about: Suggest a new hack!
+name: Request New Hack
+about: Request a new hack!
 title: "[HR]"
 labels: ''
 assignees: ''
