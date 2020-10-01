@@ -45,7 +45,7 @@ const main = async () => {
             });
             return `${`${winJson.points} Points (+100)`.padEnd(20)} - Rank: ${rank.rank}`;
         };
-        for (const account of config_json_1.default) {
+        await Promise.all(config_json_1.default.map(async (account) => {
             const login = await node_fetch_1.default("https://api.prodigygame.com/game-auth-api/v1/login", {
                 method: "POST",
                 headers: {
@@ -75,7 +75,7 @@ const main = async () => {
             const hackify = async () => console.log(`${`[${account.username}]`.padEnd(22)} ${await hack(lb.seasonID, account.username, account.password)}`);
             hackify();
             setInterval(hackify, 60500);
-        }
+        }));
     }
 };
 main();
