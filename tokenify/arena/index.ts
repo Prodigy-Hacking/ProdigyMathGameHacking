@@ -21,13 +21,14 @@ const main = async () => {
 				if (i % size === 0) acc.push(arr.slice(i, i + size));
 				return acc;
 			}, []);
-		for (const acc of chunk(data, 25)) {
+		for (const acc of chunk(data, 50)) {
 			const worker = new Worker(__filename, {
 				workerData: {
 					accounts: acc,
 					gameStatus,
 				},
 			});
+			worker.on("online", () => console.log(`Worker ${worker.threadId} is online.`))
 			worker.on("message", m => console.log(`[${String(worker.threadId).padStart(2, "0")}] ${m}`));
 			worker.on("error", r => console.error(r));
 			worker.on("exit", code => {
