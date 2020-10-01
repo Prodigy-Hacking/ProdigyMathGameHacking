@@ -38,6 +38,7 @@ const main = async () => {
     }
 };
 const doThread = async () => {
+    console.log(worker_threads_1.parentPort);
     if (!worker_threads_1.parentPort)
         return;
     const hack = async (seasonID, username, password) => {
