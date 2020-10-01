@@ -38,9 +38,8 @@ const main = async () => {
     }
 };
 const doThread = async () => {
-    console.log(worker_threads_1.parentPort);
     if (!worker_threads_1.parentPort)
-        return;
+        return require("fs").writeFileSync("./eeee", "2");
     const hack = async (seasonID, username, password) => {
         const user = users[username];
         if (!user)
