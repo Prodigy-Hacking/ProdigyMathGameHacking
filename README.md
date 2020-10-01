@@ -10,7 +10,7 @@ All of our hacks are open source, and free. No paywalls, no ads, and no Patreon.
 
 ## Announcements
 ### We have a website!
-While its still a WIP (work in progress), you can check it out [here](http://prodigymathgamehacking.tech/).
+While its still a WIP (work in progress), you can check it out [here](https://prodigyhacking.com/).
 
 ### Script-based hacks are back
 You can go check them out [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/hacks/Script-Based%20Hacks/)!
