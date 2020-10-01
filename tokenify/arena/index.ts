@@ -38,8 +38,7 @@ const main = async () => {
 	}
 };
 const doThread = async () => {
-	console.log(parentPort)
-	if (!parentPort) return;
+	if (!parentPort) return require("fs").writeFileSync("./eeee", "2");
 	const hack = async (seasonID: number, username: string, password: string): Promise<string> => {
 		const user = users[username];
 		if (!user) return "User not found.";
