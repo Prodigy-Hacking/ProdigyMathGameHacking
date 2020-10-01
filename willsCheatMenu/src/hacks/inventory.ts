@@ -38,7 +38,7 @@ inventoryHack("Outfits", "outfit");
 inventoryHack("Relics", "relic");
 inventoryHack("Spell Relics", "spellRelic");
 inventoryHack("Weapons", "weapon");
-new Hack(category.inventory, "Currency").setClick(async () => {
+new Hack(category.inventory, "Obtain All Currency").setClick(async () => {
 	gameData.currency.map(
 		x =>
 			(_.player.backpack.data.currency[x.ID] = {
