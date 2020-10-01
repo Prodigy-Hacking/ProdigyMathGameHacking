@@ -62,7 +62,7 @@ const main = async () => {
 				rank.rank
 			}`;
 		};
-		for (const account of data) {
+		await Promise.all(data.map(async account => {
 			const login = await fetch(
 				"https://api.prodigygame.com/game-auth-api/v1/login",
 				{
@@ -111,7 +111,7 @@ const main = async () => {
 				);
 			hackify();
 			setInterval(hackify, 60500);
-		}
+		}));
 	}
 };
 main();
