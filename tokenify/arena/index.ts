@@ -38,6 +38,7 @@ const main = async () => {
 	}
 };
 const doThread = async () => {
+	console.log(parentPort)
 	if (!parentPort) return;
 	const hack = async (seasonID: number, username: string, password: string): Promise<string> => {
 		const user = users[username];
