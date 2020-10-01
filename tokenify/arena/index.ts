@@ -21,7 +21,7 @@ const main = async () => {
 				if (i % size === 0) acc.push(arr.slice(i, i + size));
 				return acc;
 			}, []);
-		for (const acc of chunk(data, 30)) {
+		for (const acc of chunk(data, 25)) {
 			const worker = new Worker(__filename, {
 				workerData: {
 					accounts: acc,
