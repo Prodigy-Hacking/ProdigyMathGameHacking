@@ -8,7 +8,7 @@ import proxyAgent from "https-proxy-agent";
 import { Worker, isMainThread, parentPort, workerData, threadId } from "worker_threads";
 const fetchJson = async (url: string, opts?: RequestInit | undefined) => await (await fetch(url, opts as any)).json();
 const users: {
-	[index: string]: { token: string; userID: number };
+	[index: string]: { token: string; userID: number; authToken: string; };
 } = {};
 const main = async () => {
 	foo: for (const _ in [2]) {
@@ -59,8 +59,9 @@ const doThread = async () => {
 		).text();
 		if (win === "") return "Failed to increase.";
 		const winJson: { code: string; points: undefined } | { points: number; code: undefined } = JSON.parse(win);
-		if (winJson.code === "ForbiddenError") {
-			process.exit(1);
+		if (winJson.code === "Forbidden") {
+			user.token = await renewToken(user.userID, user.authToken);
+			return hack(seasonID, username, password);
 		}
 		if (winJson.code === "TooManyRequests") return "Ratelimited.";
 		if (winJson.points === undefined) return JSON.stringify(winJson);
@@ -92,6 +93,7 @@ const doThread = async () => {
 		const user: {
 			token: string;
 			userID: number;
+			authToken: string;
 		} = await tokenify(account.username, account.password);
 		users[account.username] = user;
 		parentPort.postMessage("Logged in.");
