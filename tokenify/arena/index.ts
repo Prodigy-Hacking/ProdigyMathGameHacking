@@ -1,10 +1,11 @@
 import fetch from "node-fetch";
 import data from "./config.json";
+import fs from "fs";
 import chalk from "chalk";
 import { tokenify, renewToken } from "../../tokenify/";
 import { RequestInit } from "node-fetch";
 import proxyAgent from "https-proxy-agent";
-import { Worker, isMainThread, parentPort, workerData } from "worker_threads";
+import { Worker, isMainThread, parentPort, workerData, threadId } from "worker_threads";
 const fetchJson = async (url: string, opts?: RequestInit | undefined) => await (await fetch(url, opts as any)).json();
 const users: {
 	[index: string]: { token: string; userID: number };
@@ -38,7 +39,8 @@ const main = async () => {
 	}
 };
 const doThread = async () => {
-	if (!parentPort) return require("fs").writeFileSync("./eeee", "2");
+	if (!parentPort) return;
+	fs.writeFileSync("./t", threadId)
 	const hack = async (seasonID: number, username: string, password: string): Promise<string> => {
 		const user = users[username];
 		if (!user) return "User not found.";
