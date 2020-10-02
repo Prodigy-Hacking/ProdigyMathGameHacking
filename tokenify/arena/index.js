@@ -56,8 +56,9 @@ const doThread = async () => {
         if (win === "")
             return "Failed to increase.";
         const winJson = JSON.parse(win);
-        if (winJson.code === "ForbiddenError") {
-            process.exit(1);
+        if (winJson.code === "Forbidden") {
+            user.token = await tokenify_1.renewToken(user.userID, user.authToken);
+            return hack(seasonID, username, password);
         }
         if (winJson.code === "TooManyRequests")
             return "Ratelimited.";
