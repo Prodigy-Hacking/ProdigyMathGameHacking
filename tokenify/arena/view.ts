@@ -4,6 +4,7 @@ import chalk from "chalk";
 import { tokenify, renewToken } from "../../tokenify/";
 import { RequestInit } from "node-fetch";
 const f = () => Math.floor(Math.random() * 100) + 2;
+import { Worker, isMainThread, parentPort, workerData, threadId } from "worker_threads";
 const g = () => Math.floor(Math.random() * 3) + 1;
 const bobby = {
 	appearance: {
@@ -148,9 +149,29 @@ const rand = () => ({
 	equipment: { follow: g(), hat: f(), outfit: f(), weapon: f(), boots: f() },
 });
 // const dat = { username: "7m77k3a", password: "place9" }; // data[0];
-(async () => {
+if (isMainThread) {
+	const chunk = <T>(arr: T[], size: number): T[][] =>
+		arr.reduce((acc: T[][], _, i) => {
+			if (i % size === 0) acc.push(arr.slice(i, i + size));
+			return acc;
+		}, []);
+	for (const acc of chunk(data, 85)) {
+		const worker = new Worker(__filename, {
+			workerData: {
+				accounts: acc,
+			},
+		});
+		worker.on("online", () => console.log(`Worker ${worker.threadId} is online.`))
+		worker.on("message", m => console.log(`[${String(worker.threadId).padStart(2, "0")}] ${m}`));
+		worker.on("error", r => console.error(r));
+		worker.on("exit", code => {
+			if (code !== 0) console.error(`Worker ${worker.threadId} stopped with exit code ${code}`);
+		});
+	}
+}
+else (async () => {
 	let i = 0;
-	for (const dat of data) {
+	for (const dat of workerData.accounts) {
 		i++;
 		const tokened = await tokenify(dat.username, dat.password);
 		const cortex = await fetch("https://api.prodigygame.com/game-cortex-server/v1/initializeCharacter", {
@@ -161,7 +182,7 @@ const rand = () => ({
 			body: `identityToken=${tokened.token}&userID=${tokened.userID}`,
 			method: "POST",
 		});
-		console.log(`Initialized user with ${cortex.status}`)
+		parentPort?.postMessage(`Initialized user with ${cortex.status}`)
 		const init = await fetch(
 			`https://api.prodigygame.com/game-api/v1/character/${tokened.userID}?isMember=${Math.round(Math.random())}&userID=${tokened.userID}`,
 			{
@@ -170,7 +191,7 @@ const rand = () => ({
 				},
 			}
 		);
-		console.log(`Initalized data with ${init.status}`);
+		parentPort?.postMessage(`Initalized data with ${init.status}`);
 		const update = await fetch(`https://api.prodigygame.com/game-api/v3/characters/${tokened.userID}`, {
 			headers: {
 				"Content-Type": "application/json",
@@ -182,8 +203,8 @@ const rand = () => ({
 			}),
 			method: "POST",
 		});
-		console.log(`Data updated with ${update.status}`);
-		console.log(`${dat.username}:${dat.password} - ${i}/${data.length}`);
+		parentPort?.postMessage(`Data updated with ${update.status}`);
+		parentPort?.postMessage(`${dat.username}:${dat.password} - ${i}/${data.length}`);
 		const userdat = await (
 			await fetch(
 				`https://api.prodigygame.com/game-api/v2/characters/${tokened.userID}?fields=appearance%2CisMember%2Cequipment%2Cdata%2Cstate&userID=${tokened.userID}`,
@@ -194,6 +215,6 @@ const rand = () => ({
 				}
 			)
 		).json();
-		console.log(userdat.equipment);
+		parentPort?.postMessage(userdat.equipment);
 	}
 })();

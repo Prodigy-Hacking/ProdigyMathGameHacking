@@ -20,7 +20,7 @@ const main = async () => {
                 acc.push(arr.slice(i, i + size));
             return acc;
         }, []);
-        for (const acc of chunk(config_json_1.default, 50)) {
+        for (const acc of chunk(config_json_1.default, 85)) {
             const worker = new worker_threads_1.Worker(__filename, {
                 workerData: {
                     accounts: acc,
