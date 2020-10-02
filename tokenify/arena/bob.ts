@@ -2,6 +2,7 @@ import fetch from "node-fetch";
 import data from "./config.json";
 import chalk from "chalk";
 import { tokenify, renewToken } from "../../tokenify/";
+import { Worker, isMainThread, parentPort, workerData, threadId } from "worker_threads";
 import { RequestInit } from "node-fetch";
 const f = () => Math.floor(Math.random() * 100) + 2;
 const g = () => Math.floor(Math.random() * 3) + 1;
@@ -148,9 +149,28 @@ const rand = () => ({
 	equipment: { follow: g(), hat: f(), outfit: f(), weapon: f(), boots: f() },
 });
 // const dat = { username: "7m77k3a", password: "place9" }; // data[0];
-(async () => {
+if (isMainThread) {
+	const chunk = <T>(arr: T[], size: number): T[][] =>
+		arr.reduce((acc: T[][], _, i) => {
+			if (i % size === 0) acc.push(arr.slice(i, i + size));
+			return acc;
+		}, []);
+	for (const acc of chunk(data, 85)) {
+		const worker = new Worker(__filename, {
+			workerData: {
+				accounts: acc,
+			},
+		});
+		worker.on("online", () => console.log(`Worker ${worker.threadId} is online.`))
+		worker.on("message", m => console.log(`[${String(worker.threadId).padStart(2, "0")}] ${m}`));
+		worker.on("error", r => console.error(r));
+		worker.on("exit", code => {
+			if (code !== 0) console.error(`Worker ${worker.threadId} stopped with exit code ${code}`);
+		});
+	}
+} else (async () => {
 	let i = 0;
-	for (const dat of data) {
+	for (const dat of workerData.accounts) {
 		i++;
 		const tokened = await tokenify(dat.username, dat.password);
 		const update = await fetch(`https://api.prodigygame.com/game-api/v3/characters/${tokened.userID}`, {
@@ -164,7 +184,7 @@ const rand = () => ({
 			}),
 			method: "POST",
 		});
-		console.log(`Data updated with ${update.status}`);
-		console.log(`${dat.username}:${dat.password} - ${i}/${data.length}`);
+		parentPort?.postMessage(`Data updated with ${update.status}`);
+		parentPort?.postMessage(`${dat.username}:${dat.password} - ${i}/${data.length}`);
 	}
 })();
