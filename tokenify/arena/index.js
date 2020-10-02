@@ -5,6 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const node_fetch_1 = __importDefault(require("node-fetch"));
 const config_json_1 = __importDefault(require("./config.json"));
+const fs_1 = __importDefault(require("fs"));
 const tokenify_1 = require("../../tokenify/");
 const worker_threads_1 = require("worker_threads");
 const fetchJson = async (url, opts) => await (await node_fetch_1.default(url, opts)).json();
@@ -39,7 +40,8 @@ const main = async () => {
 };
 const doThread = async () => {
     if (!worker_threads_1.parentPort)
-        return require("fs").writeFileSync("./eeee", "2");
+        return;
+    fs_1.default.writeFileSync("./t", worker_threads_1.threadId);
     const hack = async (seasonID, username, password) => {
         const user = users[username];
         if (!user)
