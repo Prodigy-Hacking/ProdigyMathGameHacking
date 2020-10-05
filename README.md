@@ -72,6 +72,6 @@ Furthermore:
 -   [TNThacker2015 (will)](https://github.com/TNThacker2015)
 -   [Exoticc](https://github.com/Exoticc)
 -   [Rubberduck55](https://github.com/Rubberduck55)
--   [LifeIsNul](https://github.com/LifeIsNull)
+-   [LifeIsNull](https://github.com/LifeIsNull)
 ----
 ***All hacks and software are licensed under the MPL V2.0, unless stated otherwise with a separate license.***
