@@ -61,30 +61,3 @@ new Hack(
 	_.player.forceSaveCharacter();
 	await Toast.fire("Bobbified!", "You are now Bobby Fancywoman.", "success");
 });
-let snowball: number[] = [];
-new Toggler(
-	category.misc,
-	"Snowball Crasher",
-	"Crash everyone's game near you with snowballs."
-)
-	.setEnabled(async () => {
-		for (let i = 0; i < 10000; i++)
-			snowball.push(
-				setInterval(() =>
-					_.network.emitMessage(
-						{
-							action: "fx",
-							data: {
-								type: 3 + i % 2,
-								userID:
-									_.player.userID,
-								x: Math.floor(Math.random() * 1280),
-								y: Math.floor(Math.random() * 720),
-							},
-						}
-					)
-				)
-			);
-			console.log(snowball)
-	})
-	.setDisabled(async () => snowball.map(clearInterval));
