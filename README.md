@@ -74,14 +74,14 @@ Furthermore:
 - [YamaHacks](https://github.com/YamaHacks)
 - [BoredFish](https://github.com/BoredFishRE)
 - [Whimpers](https://github.com/KryptoCrash)
-- Noot
+- Noot (Anonymous)
 
 ## Retired Collaborators
 
-- [TNThacker2015 (will)](https://github.com/TNThacker2015)
-- [Exoticc](https://github.com/Exoticc)
+- [TNThacker2015 (Will)](https://github.com/TNThacker2015)
+- [Exoticc (Magmischief)](https://github.com/Exoticc)
 - [Rubberduck55](https://github.com/Rubberduck55)
-- [LifeIsNull](https://github.com/LifeIsNull)
+- [LifeIsNull (DCK)](https://github.com/LifeIsNull)
 
 ----
 ***All hacks and software are licensed under the MPL V2.0, unless stated otherwise with a separate license.***
