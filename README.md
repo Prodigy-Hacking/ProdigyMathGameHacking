@@ -43,7 +43,7 @@ also get a special role when it gets released.
 
 While our hacks are completely safe, ***you should only use hacks on an alternate account***.
 
-There's a **extremely small chance your account will be hacker-tagged, or banned**. Fortunately, it almost never happens.
+There's an **extremely small chance your account will be hacker-tagged, or banned**. Fortunately, it almost never happens.
 
 We will **never** ask you for your password. If somebody asks you for personal/sensitive information, report it to the [Discord server](https://discord.gg/XQDfbfq) admins.
 
