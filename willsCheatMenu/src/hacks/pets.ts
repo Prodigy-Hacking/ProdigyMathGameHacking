@@ -5,8 +5,11 @@ import { TODO } from "../../../typings/util";
 import { prodigy, game } from "../utils/util";
 import { Pet } from "../../../typings/pet";
 
-const randomSpell = () =>
-	gameData.spell.filter(x => +x.ID !== 90)[Math.floor(Math.random() * gameData.spell.length)].ID;
+const randomSpell = () => {
+	const fileredSpells = gameData.spell.filter(x => +x.ID !== 90);
+	
+	return fileredSpells[Math.floor(Math.random() * fileredSpells.length)].ID;
+}
 const toPets = (ID: number) => ({
 	ID,
 	catchDate: Date.now(),
