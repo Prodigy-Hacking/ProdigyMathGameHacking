@@ -74,6 +74,7 @@ Furthermore:
 - [PatheticMustan](https://github.com/PatheticMustan)
 - [Arcerion](https://github.com/ArcerionDev)
 - [YamaHacks](https://github.com/YamaHacks)
+- [Rus (Chrome Extension)](https://github.com/UntrustableRus)
 - [BoredFish](https://github.com/BoredFishRE)
 - [Whimpers](https://github.com/KryptoCrash)
 - Noot
