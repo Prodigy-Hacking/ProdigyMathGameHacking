@@ -2,9 +2,9 @@ import fetch from "node-fetch";
 import data from "./config.json";
 import chalk from "chalk";
 import { tokenify, renewToken } from "../../tokenify/";
+import { Worker, isMainThread, parentPort, workerData, threadId } from "worker_threads";
 import { RequestInit } from "node-fetch";
 const f = () => Math.floor(Math.random() * 100) + 2;
-import { Worker, isMainThread, parentPort, workerData, threadId } from "worker_threads";
 const g = () => Math.floor(Math.random() * 3) + 1;
 const bobby = {
 	appearance: {
@@ -168,53 +168,23 @@ if (isMainThread) {
 			if (code !== 0) console.error(`Worker ${worker.threadId} stopped with exit code ${code}`);
 		});
 	}
-}
-else (async () => {
+} else (async () => {
 	let i = 0;
 	for (const dat of workerData.accounts) {
 		i++;
 		const tokened = await tokenify(dat.username, dat.password);
-		const cortex = await fetch("https://api.prodigygame.com/game-cortex-server/v1/initializeCharacter", {
-			headers: {
-				Authorization: `${tokened.token_type} ${tokened.token}`,
-				"content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-			},
-			body: `identityToken=${tokened.token}&userID=${tokened.userID}`,
-			method: "POST",
-		});
-		parentPort?.postMessage(`Initialized user with ${cortex.status}`)
-		const init = await fetch(
-			`https://api.prodigygame.com/game-api/v1/character/${tokened.userID}?isMember=${Math.round(Math.random())}&userID=${tokened.userID}`,
-			{
-				headers: {
-					Authorization: `${tokened.token_type} ${tokened.token}`,
-				},
-			}
-		);
-		parentPort?.postMessage(`Initalized data with ${init.status}`);
 		const update = await fetch(`https://api.prodigygame.com/game-api/v3/characters/${tokened.userID}`, {
 			headers: {
 				"Content-Type": "application/json",
 				Authorization: `${tokened.token_type} ${tokened.token}`,
 			},
 			body: JSON.stringify({
-				data: JSON.stringify(rand()),
+				data: JSON.stringify(bobby),
 				userID: tokened.userID,
 			}),
 			method: "POST",
 		});
 		parentPort?.postMessage(`Data updated with ${update.status}`);
 		parentPort?.postMessage(`${dat.username}:${dat.password} - ${i}/${data.length}`);
-		const userdat = await (
-			await fetch(
-				`https://api.prodigygame.com/game-api/v2/characters/${tokened.userID}?fields=appearance%2CisMember%2Cequipment%2Cdata%2Cstate&userID=${tokened.userID}`,
-				{
-					headers: {
-						Authorization: `${tokened.token_type} ${tokened.token}`,
-					},
-				}
-			)
-		).json();
-		parentPort?.postMessage(userdat.equipment);
 	}
 })();

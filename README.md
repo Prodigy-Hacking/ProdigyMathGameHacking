@@ -10,7 +10,7 @@ All of our hacks are open source, and free. No paywalls, no ads, and no Patreon.
 
 ## Announcements
 ### We have a website!
-While its still a WIP (work in progress), you can check it out [here](http://prodigymathgamehacking.tech/).
+While its still a WIP (work in progress), you can check it out [here](https://prodigyhacking.com/).
 
 ### Script-based hacks are back
 You can go check them out [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/hacks/Script-Based%20Hacks/)!
@@ -72,6 +72,6 @@ Furthermore:
 -   [TNThacker2015 (will)](https://github.com/TNThacker2015)
 -   [Exoticc](https://github.com/Exoticc)
 -   [Rubberduck55](https://github.com/Rubberduck55)
--   [DaChickenKing](https://github.com/DaChickenKing)
+-   [LifeIsNull](https://github.com/LifeIsNull)
 ----
 ***All hacks and software are licensed under the MPL V2.0, unless stated otherwise with a separate license.***

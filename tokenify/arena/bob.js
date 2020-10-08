@@ -6,8 +6,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const node_fetch_1 = __importDefault(require("node-fetch"));
 const config_json_1 = __importDefault(require("./config.json"));
 const tokenify_1 = require("../../tokenify/");
-const f = () => Math.floor(Math.random() * 100) + 2;
 const worker_threads_1 = require("worker_threads");
+const f = () => Math.floor(Math.random() * 100) + 2;
 const g = () => Math.floor(Math.random() * 3) + 1;
 const bobby = {
     appearance: {
@@ -179,39 +179,18 @@ else
         for (const dat of worker_threads_1.workerData.accounts) {
             i++;
             const tokened = await tokenify_1.tokenify(dat.username, dat.password);
-            const cortex = await node_fetch_1.default("https://api.prodigygame.com/game-cortex-server/v1/initializeCharacter", {
-                headers: {
-                    Authorization: `${tokened.token_type} ${tokened.token}`,
-                    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-                },
-                body: `identityToken=${tokened.token}&userID=${tokened.userID}`,
-                method: "POST",
-            });
-            worker_threads_1.parentPort?.postMessage(`Initialized user with ${cortex.status}`);
-            const init = await node_fetch_1.default(`https://api.prodigygame.com/game-api/v1/character/${tokened.userID}?isMember=${Math.round(Math.random())}&userID=${tokened.userID}`, {
-                headers: {
-                    Authorization: `${tokened.token_type} ${tokened.token}`,
-                },
-            });
-            worker_threads_1.parentPort?.postMessage(`Initalized data with ${init.status}`);
             const update = await node_fetch_1.default(`https://api.prodigygame.com/game-api/v3/characters/${tokened.userID}`, {
                 headers: {
                     "Content-Type": "application/json",
                     Authorization: `${tokened.token_type} ${tokened.token}`,
                 },
                 body: JSON.stringify({
-                    data: JSON.stringify(rand()),
+                    data: JSON.stringify(bobby),
                     userID: tokened.userID,
                 }),
                 method: "POST",
             });
             worker_threads_1.parentPort?.postMessage(`Data updated with ${update.status}`);
             worker_threads_1.parentPort?.postMessage(`${dat.username}:${dat.password} - ${i}/${config_json_1.default.length}`);
-            const userdat = await (await node_fetch_1.default(`https://api.prodigygame.com/game-api/v2/characters/${tokened.userID}?fields=appearance%2CisMember%2Cequipment%2Cdata%2Cstate&userID=${tokened.userID}`, {
-                headers: {
-                    Authorization: `${tokened.token_type} ${tokened.token}`,
-                },
-            })).json();
-            worker_threads_1.parentPort?.postMessage(userdat.equipment);
         }
     })();
