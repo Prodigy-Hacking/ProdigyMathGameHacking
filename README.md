@@ -34,8 +34,10 @@ The source code can be found on the [ProdigyIRC repo](https://github.com/Prodigy
 We also have a beta testing discord server right [here](https://discord.gg/B5wgnRK)! If you join you'll
 also get a special role when it gets released.
 
-## Hacking Instructions
+## Injection Methods
 
+
+- **[Extension Hack (recommended)](about:blank)**
 - **[Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)**
 - **[Locally Hosted Redirect Hack](https://github.com/Prodigy-Hacking/Redirector#using-redirector-locally-advanced)** (Advanced)
 
