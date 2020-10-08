@@ -37,7 +37,7 @@ also get a special role when it gets released.
 ## Injection Methods
 
 
-- **[Extension Hack (recommended)](about:blank)**
+- **[Extension Hack](about:blank)**
 - **[Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)**
 - **[Locally Hosted Redirect Hack](https://github.com/Prodigy-Hacking/Redirector#using-redirector-locally-advanced)** (Advanced)
 
@@ -74,7 +74,7 @@ Furthermore:
 - [PatheticMustan](https://github.com/PatheticMustan)
 - [Arcerion](https://github.com/ArcerionDev)
 - [YamaHacks](https://github.com/YamaHacks)
-- [Rus (Chrome Extension)](https://github.com/UntrustableRus)
+- [Rus](https://github.com/UntrustableRus)
 - [BoredFish](https://github.com/BoredFishRE)
 - [Whimpers](https://github.com/KryptoCrash)
 - Noot
