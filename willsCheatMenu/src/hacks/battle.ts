@@ -55,6 +55,3 @@ new Hack(category.battle, "Fill Battle Energy", "Fills up your battle energy.")
 		state.teams[0].setEnergy(99);
 		await Toast.fire("Success!", "Your battle energy has been filled.", "success");
 	})
-new Toggler(category.battle, "test", "test")
-	.setEnabled(() => console.log(1))
-	.setDisabled(() => console.log(0));
