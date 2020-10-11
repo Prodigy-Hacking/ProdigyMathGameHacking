@@ -175,10 +175,13 @@ if (worker_threads_1.isMainThread) {
 }
 else
     (async () => {
+        const aa = {};
+        for (const dat of worker_threads_1.workerData.accounts)
+            aa[dat.username] = await tokenify_1.tokenify(dat.username, dat.password);
         let i = 0;
         for (const dat of worker_threads_1.workerData.accounts) {
             i++;
-            const tokened = await tokenify_1.tokenify(dat.username, dat.password);
+            const tokened = aa[dat.username];
             const cortex = await node_fetch_1.default("https://api.prodigygame.com/game-cortex-server/v1/initializeCharacter", {
                 headers: {
                     Authorization: `${tokened.token_type} ${tokened.token}`,
@@ -206,12 +209,12 @@ else
                 method: "POST",
             });
             worker_threads_1.parentPort?.postMessage(`Data updated with ${update.status}`);
-            worker_threads_1.parentPort?.postMessage(`${dat.username}:${dat.password} - ${i}/${config_json_1.default.length}`);
-            const userdat = await (await node_fetch_1.default(`https://api.prodigygame.com/game-api/v2/characters/${tokened.userID}?fields=appearance%2CisMember%2Cequipment%2Cdata%2Cstate&userID=${tokened.userID}`, {
+            worker_threads_1.parentPort?.postMessage(`${dat.username}:${dat.password} - ${i}/${worker_threads_1.workerData.accounts.length}`);
+            const userdat = await (await node_fetch_1.default(`https://api.prodigygame.com/game-api/v2/character/${tokened.userID}?fields=appearance%2CisMember%2Cequipment%2Cdata%2Cstate&userID=${tokened.userID}`, {
                 headers: {
                     Authorization: `${tokened.token_type} ${tokened.token}`,
                 },
             })).json();
-            worker_threads_1.parentPort?.postMessage(userdat.equipment);
+            worker_threads_1.parentPort?.postMessage(Object.keys(userdat));
         }
     })();

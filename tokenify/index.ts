@@ -49,6 +49,11 @@ export const tokenify = async(username: string, password: string, { log }: { log
 	loginParams.set("unauthenticated_game_login_form[username]", username);
 	loginParams.set("unauthenticated_game_login_form[password]", password);
 	loginParams.set("button", "");
+	
+	const buf = new ArrayBuffer(16);
+	const ai = new Uint16Array(buf);
+	ai.set([15, 38, 39, 39, 4, 39, 4, 4]);
+	loginParams.set("g-recaptcha-response", ai.toLocaleString());
 	const login = await cookiefetch(formSite.url, {
 		headers: {
 			"content-type": "application/x-www-form-urlencoded",
