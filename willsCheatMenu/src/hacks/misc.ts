@@ -19,7 +19,7 @@ new Toggler(category.misc, "Clothing Vibe")
 			_.player.equipment.setOutfit(rand(gameData.outfit));
 			_.player.equipment.setBoots(rand(gameData.boots));
 			_.player.equipment.setHat(rand(gameData.hat));
-			prodigy.user.reload();
+			_.player.appearanceChanged = true;
 		}, 1000);
 	})
 	.setDisabled(() => {
