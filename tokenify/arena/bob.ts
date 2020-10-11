@@ -77,6 +77,7 @@ const bobby = {
 	},
 	equipment: { follow: 19, hat: 19, outfit: 19, weapon: 19, boots: 19 },
 };
+meow :3
 const rand = () => ({
 	appearance: {
 		name: { first: f(), middle: f(), last: f() },
