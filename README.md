@@ -65,7 +65,7 @@ Furthermore:
 - **[Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki)**
 - **[YouTube Channel](https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A)**
 - **[How to use JavaScript hacks](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-use-Javascript-Hacks)**
-- **[Website](http://prodigymathgamehacking.tech/)**
+- **[Website](http://prodigyhacking.com/)**
 
 ## Collaborators
 
