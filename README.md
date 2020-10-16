@@ -36,10 +36,10 @@ also get a special role when it gets released.
 
 ## Injection Methods
 
-- **[Extension Hack (Firefox)](/prodigy_math_game_hacking-1.0-fx.xpi?raw=true)**
-  - Select the "Open with" option once you see the popup, click browse, select firefox, click "Ok", click "Ok" again, click add.
 - **[Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)**
 - **[Locally Hosted Redirect Hack](https://github.com/Prodigy-Hacking/Redirector#using-redirector-locally-advanced)** (Advanced)
+- **[Extension Hack (Firefox)](/prodigy_math_game_hacking-1.0-fx.xpi?raw=true)**
+  - Select the "Open with" option once you see the popup, click browse, select firefox, click "Ok", click "Ok" again, click add.
 
 ## Disclaimer
 
