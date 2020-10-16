@@ -34,10 +34,12 @@ The source code can be found on the [ProdigyIRC repo](https://github.com/Prodigy
 We also have a beta testing discord server right [here](https://discord.gg/B5wgnRK)! If you join you'll
 also get a special role when it gets released.
 
-## Hacking Instructions
+## Injection Methods
 
 - **[Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)**
 - **[Locally Hosted Redirect Hack](https://github.com/Prodigy-Hacking/Redirector#using-redirector-locally-advanced)** (Advanced)
+- **[Extension Hack (Firefox)](/prodigy_math_game_hacking-1.0-fx.xpi?raw=true)**
+  - Select the "Open with" option once you see the popup, click browse, select firefox, click "Ok", click "Ok" again, click add.
 
 ## Disclaimer
 
@@ -72,6 +74,7 @@ Furthermore:
 - [PatheticMustan](https://github.com/PatheticMustan)
 - [Arcerion](https://github.com/ArcerionDev)
 - [YamaHacks](https://github.com/YamaHacks)
+- [Rus](https://github.com/UntrustableRus)
 - [BoredFish](https://github.com/BoredFishRE)
 - [Whimpers](https://github.com/KryptoCrash)
 - Noot (Anonymous)
