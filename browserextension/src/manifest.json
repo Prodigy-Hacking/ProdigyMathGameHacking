@@ -1,0 +1,20 @@
+{
+  "name": "Prodigy Math Game Hacking",
+  "version": "1.0",
+  "description": "Official extension for Prodigy Math Game Hacking. This extension enables the exploit.",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://*.prodigygame.com/*"
+  ],
+  "icons": {
+    "16": "assets/x16.png",
+    "48": "assets/x48.png",
+    "128": "assets/x128.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "manifest_version": 2
+}
