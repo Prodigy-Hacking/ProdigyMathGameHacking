@@ -3,7 +3,20 @@ import { Hack, category, Toggler } from "../index";
 import { VERY_LARGE_NUMBER, gameData, pickRandom } from "../utils/util";
 import { prodigy, game } from "../utils/util";
 new Hack(category.misc, "Skip Tutorial").setClick(async () => {
-	_.functions.completeTutorial();
+	const setQuest = (t: string, i: number, n?: unknown, e?: unknown) => {
+		_.instance.prodigy.world.getZone(t).testQuest(i, n, e);
+		try {
+			_.instance.game.state.states.TileScreen.process();
+		} catch {}
+	};
+
+	setQuest("house", 2);
+	setQuest("academy", 2);
+	_.player.state.set("tutorial-0", 4);
+	_.player.backpack.addKeyItem(13, 0);
+	_.player.tutorial.data.menus[14] = [1]
+	_.instance.prodigy.open.map(true, []);
+	_.player.onTutorialComplete();
 });
 /*
 new Hack(category.misc, "Disable Timeout Dialog").setClick(async () => {

@@ -4,22 +4,22 @@ import { gameData, VERY_LARGE_NUMBER, savePlayer } from "../utils/util";
 import { Item } from "../../../typings/item";
 import { BackpackItemType } from "../../../typings/backpack";
 import { prodigy, game } from "../utils/util";
-const itemify = (item: Item[]) =>
+const itemify = (item: Item[], amount: number) =>
 	item.map(x => ({
 		ID: x.ID,
-		N:  VERY_LARGE_NUMBER,
+		N:  amount,
 	}));
 
 const inventoryHack = (
 	name: string,
 	id: BackpackItemType,
-	lowercase: string = name.toLowerCase()
+	amount: number = 1
 ) => {
 	new Hack(category.inventory, `Obtain All ${name}`).setClick(async () => {
-		_.player.backpack.data[id] = itemify(gameData[id]);
+		_.player.backpack.data[id] = itemify(gameData[id], amount);
 		await Toast.fire(
 			`${name} Added!`,
-			`All ${lowercase} have been added to your inventory!`,
+			`All ${name.toLowerCase()} have been added to your inventory!`,
 			"success"
 		);
 		savePlayer();
@@ -27,12 +27,12 @@ const inventoryHack = (
 };
 inventoryHack("Boots", "boots");
 inventoryHack("Buddies", "follow");
-inventoryHack("Fossils", "fossil");
+inventoryHack("Fossils", "fossil", VERY_LARGE_NUMBER);
 inventoryHack("Hats", "hat");
-inventoryHack("Items", "item");
-inventoryHack("Key Items", "key");
-inventoryHack("Math Town Frames", "mathTownFrame");
-inventoryHack("Math Town Interiors", "mathTownInterior");
+inventoryHack("Items", "item", VERY_LARGE_NUMBER);
+inventoryHack("Key Items", "key", VERY_LARGE_NUMBER);
+inventoryHack("Math Town Frames", "mathTownFrame", VERY_LARGE_NUMBER);
+inventoryHack("Math Town Interiors", "mathTownInterior", VERY_LARGE_NUMBER);
 inventoryHack("Mounts", "mount");
 inventoryHack("Outfits", "outfit");
 inventoryHack("Relics", "relic");
