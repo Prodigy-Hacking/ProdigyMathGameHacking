@@ -1,45 +1,8 @@
 require = (() => {}) as any;
 import "../typings/pixi";
 
-const setQuest = (t: string, i: number, n?: unknown, e?: unknown) => {
-	_.instance.prodigy.world.getZone(t).testQuest(i, n, e);
-	try {
-		_.instance.game.state.states.TileScreen.process();
-	} catch {}
-};
-
 _.functions = Object.create(null);
-_.functions.completeTutorial = () => {
-	setQuest("house", 2);
-	setQuest("academy", 2);
-	_.player.state.set("tutorial-0", 4);
-	_.player.backpack.addKeyItem(13, 0);
-	_.player.tutorial.data.menus[14] = [1]
-	_.instance.prodigy.open.map(true, []);
-	_.player.onTutorialComplete();
-};
-_.functions.getAllPets = () =>
-	_.player.kennel.data.splice(
-		0,
-		1e69,
-		..._.gameData.pet.map(x => ({
-			ID: x.ID,
-			catchDate: Date.now(),
-			foreignSpells: [0, 0].map(
-				x => _.gameData.spell[Math.floor(Math.random() * _.gameData.spell.length)].ID
-			) as [number, number],
-			level: 1e69,
-			levelCaught: 1,
-			stars: 1e69,
-		}))
-	);
 
-_.functions.getAllItemsInCategory = category =>
-	_.player.backpack.data[category].splice(
-		0,
-		1e69,
-		..._.gameData[category].map(x => ({ ID: x.ID, N: 1e69 }))
-	);
 _.functions.escapeBattle = () => {
 	const currentState = _.instance.game.state.current;
 	if (currentState === "PVP") _.instance.game.state.states.PVP.endPVP();
