@@ -33,34 +33,24 @@ new Toggler(category.misc, "Clothing Vibe")
 			_.player.equipment.setBoots(rand(gameData.boots));
 			_.player.equipment.setHat(rand(gameData.hat));
 			_.player.appearanceChanged = true;
-		}, 1000);
+		}, 690);
 	})
 	.setDisabled(() => {
 		if (viber) clearInterval(viber);
 	});
 
-new Hack(
-	category.misc,
-	"Bobbify",
-	"Converts your account into Bobby Fancywoman."
-).setClick(async () => {
-	if (
-		!(
-			await Confirm.fire(
-				"Are you sure you want your account to be turned into Bobby Fancywoman?",
-				"This action is not reversable."
-			)
-		).value
-	)
-		return;
-	// prodigy.debugQuests.completeTutorial();
+new Hack(category.misc, "Bobbify", "Converts your account into Bobby Fancywoman.").setClick(async () => {
+	if (!(
+		await Confirm.fire("Are you sure you want your account to be turned into Bobby Fancywoman?", "This action is not reversable.")
+	).value) return;
+
 	_.player.name.data.nickname = null;
 	_.player.name.data.firstName = 44;
 	_.player.name.data.middleName = 754;
 	_.player.name.data.lastName = 882;
 	_.player.data.stars = -1e22;
 	_.player.data.level = 69;
-	_.player.forceSaveCharacter();
+
 	_.player.appearance.setGender("male");
 	_.player.appearance.setEyeColor(1);
 	_.player.appearance.setFace(4);
@@ -73,4 +63,9 @@ new Hack(
 	_.player.equipment.setWeapon(19);
 	_.player.forceSaveCharacter();
 	await Toast.fire("Bobbified!", "You are now Bobby Fancywoman.", "success");
+});
+
+new Hack(category.misc, "Reset Account","Completely resets your account.").setClick(async () => {
+	if (!(await Confirm.fire("Are you sure you want to reset your account?", "This action is not reversable.")).value) return;
+	_.player.resetAccount();
 });
