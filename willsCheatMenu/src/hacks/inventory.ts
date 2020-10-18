@@ -8,7 +8,7 @@ const itemify = (item: Item[], amount: number) =>
 	item.map(x => ({
 		ID: x.ID,
 		N:  amount,
-	}));
+	})).filter(v => v !== undefined);
 
 const inventoryHack = (
 	name: string,
