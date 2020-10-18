@@ -38,30 +38,12 @@ inventoryHack("Outfits", "outfit");
 inventoryHack("Relics", "relic");
 inventoryHack("Spell Relics", "spellRelic");
 inventoryHack("Weapons", "weapon");
-new Hack(category.inventory, "Obtain All Currency").setClick(async () => {
-	gameData.currency.map(
-		x =>
-			(_.player.backpack.data.currency[x.ID] = {
-				ID: x.ID,
-				N: VERY_LARGE_NUMBER,
-			})
-	);
-	savePlayer();
-	await Toast.fire("Currency Added!", "All currencies have been added to your inventory!", "success");
-})
-new Hack(category.inventory, `Obtain All Furniture`).setClick(async () => {
-	gameData.dorm.map(
-		x =>
-			(_.player.house.data.items[x.ID] = {
-				A: [],
-				N: VERY_LARGE_NUMBER,
-			})
-	);
-	await Toast.fire(
-		"Furniture Added!",
+inventoryHack("Currency", "weapon", VERY_LARGE_NUMBER);
 
-		"All furniture have been added to your inventory!",
-		"success"
-	);
+new Hack(category.inventory, "Obtain All Furniture").setClick(async () => {
+	gameData.dorm.forEach(x =>
+		_.player.house.data.items[x.ID] = {A: [], N: VERY_LARGE_NUMBER}
+	)
+	await Toast.fire("Furniture Added!", "All furniture have been added to your inventory!", "success");
 	savePlayer();
 });
