@@ -46,14 +46,8 @@ new Hack(category.inventory, "Obtain All Currency").setClick(async () => {
 				N: VERY_LARGE_NUMBER,
 			})
 	);
-	await Toast.fire(
-		`Currency Added!`,
-
-		
-		`All currencies have been added to your inventory!`,
-		"success"
-	);
 	savePlayer();
+	await Toast.fire("Currency Added!", "All currencies have been added to your inventory!", "success");
 })
 new Hack(category.inventory, `Obtain All Furniture`).setClick(async () => {
 	gameData.dorm.map(
@@ -64,9 +58,9 @@ new Hack(category.inventory, `Obtain All Furniture`).setClick(async () => {
 			})
 	);
 	await Toast.fire(
-		`Furniture Added!`,
+		"Furniture Added!",
 
-		`All furniture have been added to your inventory!`,
+		"All furniture have been added to your inventory!",
 		"success"
 	);
 	savePlayer();
