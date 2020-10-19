@@ -9,7 +9,7 @@ const randomSpell = () => {
 	const fileredSpells = gameData.spell.filter(x => +x.ID !== 90);
 	
 	return fileredSpells[Math.floor(Math.random() * fileredSpells.length)].ID;
-}
+};
 const toPets = (ID: number) => ({
 	ID,
 	catchDate: Date.now(),
@@ -107,13 +107,13 @@ new Hack(category.pets, "Edit Pet", "Edit a pet.").setClick(async () => {
 			html: div,
 			preConfirm: () => {
 				return Array.prototype.slice
-					.call(document.querySelectorAll(`.selectSpell`))
+					.call(document.querySelectorAll(".selectSpell"))
 					.map((x: HTMLSelectElement) => x.options[x.selectedIndex].value);
 			},
 		});
 		if (attacks.value === undefined) return;
 		(selected.foreignSpells as number[]).splice(0, 2, ...attacks.value.map((x: string) => +x));
-		await Toast.fire("Attacks updated!", `The attack list of the pet you selected has been edited.`, "success");
+		await Toast.fire("Attacks updated!", "The attack list of the pet you selected has been edited.", "success");
 	} else if (opt.value === "name") {
 		const name = await Input.fire("Input Name", "What do you want to name the pet?", "question");
 		if (name.value === undefined) return;

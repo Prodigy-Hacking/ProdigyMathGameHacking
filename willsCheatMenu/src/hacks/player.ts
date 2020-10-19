@@ -147,7 +147,7 @@ new Hack(category.player, "Change Name", "Change the name of your wizard.").setC
 		html: div,
 		preConfirm: () => {
 			return Array.prototype.slice
-				.call(document.querySelectorAll(`.selectName`))
+				.call(document.querySelectorAll(".selectName"))
 				.map((x: HTMLSelectElement) => x.options[x.selectedIndex].value);
 		},
 	});

@@ -14,7 +14,7 @@ new Hack(category.misc, "Skip Tutorial").setClick(async () => {
 	setQuest("academy", 2);
 	_.player.state.set("tutorial-0", 4);
 	_.player.backpack.addKeyItem(13, 0);
-	_.player.tutorial.data.menus[14] = [1]
+	_.player.tutorial.data.menus[14] = [1];
 	_.instance.prodigy.open.map(true, []);
 	_.player.onTutorialComplete();
 });

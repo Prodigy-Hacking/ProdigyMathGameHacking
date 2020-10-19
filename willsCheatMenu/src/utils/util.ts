@@ -12,7 +12,7 @@ export const getItem = <T extends GameItemKey>(
 	type: T,
 	id: number
 ): Item<T> | null =>
-	(gameData[type].find(x => x.ID === id) as null | Item<any>) ?? null;
+		(gameData[type].find(x => x.ID === id) as null | Item<any>) ?? null;
 export const VERY_LARGE_NUMBER = 9e9;
 export const savePlayer = () => _.player.forceSaveCharacter();
 export const assetURL =
