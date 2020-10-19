@@ -1,0 +1,26 @@
+{
+  "name": "willscheatmenu",
+  "version": "1.0.0",
+  "description": "will's cheat menu lmao",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/tree/master/willsCheatMenu"
+  },
+  "keywords": [
+    "wills",
+    "cheat",
+    "menu"
+  ],
+  "author": "Will",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "@typescript-eslint/parser": "^4.4.1",
+    "eslint": "^7.11.0"
+  }
+}
