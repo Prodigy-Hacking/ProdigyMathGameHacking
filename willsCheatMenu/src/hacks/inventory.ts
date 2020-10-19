@@ -38,7 +38,7 @@ inventoryHack("Outfits", "outfit");
 inventoryHack("Relics", "relic");
 inventoryHack("Spell Relics", "spellRelic");
 inventoryHack("Weapons", "weapon");
-inventoryHack("Currency", "weapon", VERY_LARGE_NUMBER);
+inventoryHack("Currency", "currency", VERY_LARGE_NUMBER);
 
 new Hack(category.inventory, "Obtain All Furniture").setClick(async () => {
 	gameData.dorm.forEach(x =>
