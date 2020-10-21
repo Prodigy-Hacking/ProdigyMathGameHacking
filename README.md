@@ -36,6 +36,7 @@ also get a special role when it gets released.
 
 ## Injection Methods
 
+- **[Chrome Extension](https://chrome.google.com/webstore/detail/lpkeloemedafpfkdkbaclmmaokmadced/)**
 - **[Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)**
 - **[Locally Hosted Redirect Hack](https://github.com/Prodigy-Hacking/Redirector#using-redirector-locally-advanced)** (Advanced)
 - **[Extension Hack (Firefox)](/prodigy_math_game_hacking-1.0-fx.xpi?raw=true)**
