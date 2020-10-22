@@ -24,6 +24,7 @@ You can go check them out [here](https://github.com/Prodigy-Hacking/ProdigyMathG
 Want to hang out with a cool community? Do you have a question to ask? Just want people to talk to? Join our [Discord](https://discord.gg/XQDfbfq) today!
 
 The Discord server also gets the latest updates, sneak peeks to upcoming hacks, and occasional giveaways!
+![dsc](https://discord.com/widget?id=683793361123016755&theme=dark%22+width%3D%22350%22+height%3D%22500%22+allowtransparency%3D%22true%22+frameborder%3D%220%22+sandbox%3D%22allow-popups+allow-popups-to-escape-sandbox+allow-same-origin+allow-scripts)
 
 ### Prodigy Chat (Beta)
 
