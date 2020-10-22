@@ -85,7 +85,7 @@ Furthermore:
 - [TNThacker2015 (Will)](https://github.com/TNThacker2015)
 - [Exoticc (Magmischief)](https://github.com/Exoticc)
 - [Rubberduck55](https://github.com/Rubberduck55)
-- [LifeIsNull (DCK)](https://github.com/LifeIsNull)
+- ErrorLifeIsNull (DCK)
 
 ----
 ***All hacks and software are licensed under the MPL V2.0, unless stated otherwise with a separate license.***
