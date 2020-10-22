@@ -11,8 +11,8 @@ setInterval(_ => {
 				type: i,
 				userID: _.player.userID,
 				x: Math.floor(Math.random() * 1280),
-				y: Math.floor(Math.random() * 720),
-			},
+				y: Math.floor(Math.random() * 720)
+			}
 		});
 	}
 });
