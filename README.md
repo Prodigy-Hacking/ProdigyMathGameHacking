@@ -47,14 +47,6 @@ All of our hacks are open source, and free. No paywalls, no ads, and no Patreon.
 - Script-based hacks are back!
    - You can go check them out [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/hacks/Script-Based%20Hacks/)!
 
-## Prodigy Chat (Beta)
-
-We're making a chat for Prodigy hackers only! Check out the chat [here](http://prodigyhacking.ml:3000).
-
-The source code can be found on the [ProdigyIRC repo](https://github.com/Prodigy-Hacking/ProdigyIRC).
-
-We also have a beta testing Discord server right [here](https://discord.gg/B5wgnRK)! If you join you'll also get a special role when it gets released.
-
 ## Disclaimer
 
 While our hacks are completely safe, ***you should only use hacks on an alternate account***.
