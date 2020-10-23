@@ -68,8 +68,11 @@
 			margin: 10px;
 		}
 		button {
-			border: #999 3px solid;
-			background-color: #eee;
+			border: 1px solid #eee;
+			background-color: white;
+			color: black;
+			border-radius: 5px;
+			padding: 1%;
 			transition: all 0.15s;
 			margin: 5px 5px;
 			transition-property: border-color, background-color;
