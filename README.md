@@ -9,6 +9,14 @@ become more secure! We're hacking the game for the greater good.
 
 All of our hacks are open source, and free. No paywalls, no ads, and no Patreon. If you really want to support us, you can Nitro boost our Discord server [here](https://discord.gg/XQDfbfq)!
 
+## Injection Methods
+
+- **[Chrome Extension](https://chrome.google.com/webstore/detail/lpkeloemedafpfkdkbaclmmaokmadced/)**
+- **[Firefox Extension](/browserextension/build/prodigy_math_game_hacking-1.0-fx.xpi?raw=true)**
+  - Select the "Open with" option once you see the popup, click browse, select Firefox, click "Ok", click "Ok" again, click "add".
+- **[Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)**
+- **[Locally Hosted Redirect Hack](https://github.com/Prodigy-Hacking/Redirector#using-redirector-locally-advanced)** (Advanced)
+
 ## Announcements
 
 ### Official Website
@@ -30,24 +38,15 @@ We're making a chat for Prodigy hackers only! Check out the chat [here](http://p
 
 The source code can be found on the [ProdigyIRC repo](https://github.com/Prodigy-Hacking/ProdigyIRC).
 
-We also have a beta testing discord server right [here](https://discord.gg/B5wgnRK)! If you join you'll
-also get a special role when it gets released.
-
-## Injection Methods
-
-- **[Chrome Extension](https://chrome.google.com/webstore/detail/lpkeloemedafpfkdkbaclmmaokmadced/)**
-- **[Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)**
-- **[Locally Hosted Redirect Hack](https://github.com/Prodigy-Hacking/Redirector#using-redirector-locally-advanced)** (Advanced)
-- **[Extension Hack (Firefox)](/browserextension/build/prodigy_math_game_hacking-1.0-fx.xpi?raw=true)**
-  - Select the "Open with" option once you see the popup, click browse, select firefox, click "Ok", click "Ok" again, click add.
+We also have a beta testing Discord server right [here](https://discord.gg/B5wgnRK)! If you join you'll also get a special role when it gets released.
 
 ## Disclaimer
 
 While our hacks are completely safe, ***you should only use hacks on an alternate account***.
 
-There's an **extremely small chance your account will be hacker-tagged, or banned**. Fortunately, it almost never happens.
+There's an **extremely small chance your account will be hacker-tagged, or banned**. Fortunately, it almost never happens. The only incidents ProdigyMathGameHacking knows of users being banned for hacking were contributors or staff of ProdigyMathGameHacking.
 
-We will **never** ask you for your password. If somebody asks you for personal/sensitive information, report it to the [Discord server](https://discord.gg/XQDfbfq) admins.
+We will **never** ask you for your password. If somebody asks you for personal/sensitive information, report it to the staff on our [Discord server](https://discord.gg/XQDfbfq).
 
 All of our hacks are *open-source, and only located under our [Github Organization](https://github.com/Prodigy-Hacking)*.
 If it's not an official repository, or a fork, it may not be safe!
@@ -81,10 +80,10 @@ Furthermore:
 
 ## Retired Collaborators
 
-- [TNThacker2015 (Will)](https://github.com/TNThacker2015)
-- [Exoticc (Magmischief)](https://github.com/Exoticc)
+- [TNThacker2015](https://github.com/TNThacker2015) (Will)
+- [Exoticc](https://github.com/Exoticc) (Magmischief)
 - [Rubberduck55](https://github.com/Rubberduck55)
-- [LifeIsNull (DCK)](https://github.com/LifeIsNull)
+- ErrorLifeIsNull (DCK)
 
 ----
-***All hacks and software are licensed under the MPL V2.0, unless stated otherwise with a separate license.***
+***All hacks and software are licensed under the Mozilla Public License (MPL) V2.0, unless stated otherwise with a separate license.***
