@@ -1,4 +1,29 @@
-# ProdigyMathGameHacking
+<h1 align="center">
+	<img
+		width="128"
+		alt="The Lounge"
+		src="https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/browserextension/src/assets/x128.png">
+</h1>
+<p align="center">
+	<strong>
+		<a href="https://prodigyhacking.com/">Website</a>
+		•
+		<a href="https://discord.gg/XQDfbfq">Discord</a>
+		•
+		<a href="#injection-methods">Injection Methods</a>
+		•
+		<a href="https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A">Youtube Channel</a>
+	</strong>
+</p>
+<p align="center">
+	<img
+		alt="Commit Activity"
+		src="https://img.shields.io/github/commit-activity/y/Prodigy-Hacking/ProdigyMathGameHacking">
+		<img
+		alt="Chrome Web Store Rating"
+		src="https://img.shields.io/chrome-web-store/stars/lpkeloemedafpfkdkbaclmmaokmadced">
+</p>
+
 
 ## Motivation
 
@@ -19,20 +44,10 @@ All of our hacks are open source, and free. No paywalls, no ads, and no Patreon.
 
 ## Announcements
 
-### Official Website
+- Script-based hacks are back!
+   - You can go check them out [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/hacks/Script-Based%20Hacks/)!
 
-While its still a WIP (work in progress), you can check it out [here](https://prodigyhacking.com/).
-
-### Script-based hacks are back
-
-You can go check them out [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/hacks/Script-Based%20Hacks/)!
-
-### Official Discord Server
-
-Want to hang out with a cool community? Do you have a question to ask? Just want people to talk to? Join our [Discord](https://discord.gg/XQDfbfq) today!
-
-The Discord server also gets the latest updates, sneak peeks to upcoming hacks, and occasional giveaways!
-### Prodigy Chat (Beta)
+## Prodigy Chat (Beta)
 
 We're making a chat for Prodigy hackers only! Check out the chat [here](http://prodigyhacking.ml:3000).
 
@@ -60,13 +75,6 @@ Furthermore:
 > Limitation of Liability
 > Under no circumstances and under no legal theory, whether tort (including negligence), contract, or otherwise, shall any Contributor, or anyone who distributes Covered Software as permitted above, be liable to You for any direct, indirect, special, incidental, or consequential damages of any character including, without limitation, damages for lost profits, loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses, even if such party shall have been informed of the possibility of such damages. This limitation of liability shall not apply to liability for death or personal injury resulting from such party’s negligence to the extent applicable law prohibits such limitation. Some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so this exclusion and limitation may not apply to You.
 
-## Links
-
-- **[Discord](https://discord.gg/XQDfbfq)**
-- **[Wiki](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki)**
-- **[YouTube Channel](https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A)**
-- **[How to use JavaScript hacks](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-use-Javascript-Hacks)**
-- **[Website](http://prodigyhacking.com/)**
 
 ## Collaborators
 
