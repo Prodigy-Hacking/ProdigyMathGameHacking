@@ -40,7 +40,7 @@ export const addArea = (title: string) => {
 };
 const title = document.createElement("h1");
 title.classList.add("menu-title");
-title.innerText = "Prodigy Cheat Menu";
+title.innerText = "Will's Prodigy Cheat Menu";
 menuleft.append(title);
 const chatTitle = document.createElement("h1");
 chatTitle.id = "chat-title";
