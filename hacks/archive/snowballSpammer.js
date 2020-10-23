@@ -1,5 +1,9 @@
 //> Snowball Spammer
 //>> Spams your surroundings with snowballs.
+
+
+// NOTE: This is archived and no longer works.
+
 for (let i = 0; i < 10000; i++) {
 	setInterval(() =>
 		_.instance.prodigy.gameContainer.get("NetworkManager").emitMessage({
