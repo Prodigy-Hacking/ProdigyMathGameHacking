@@ -1,5 +1,5 @@
 //> Chat Phrase Maker
-//>> A custom chat _. Only client side.
+//>> A custom chat hack. Only client side.
 
 // NOTE: This hack is archived and no longer works.
 
