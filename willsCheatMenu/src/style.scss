@@ -68,10 +68,10 @@
 			margin: 10px;
 		}
 		button {
-			border: 1px solid #eee;
-			background-color: white;
-			color: black;
+			background-color: black;
+			color: white;
 			border-radius: 5px;
+			border: 1px solid #eee;
 			padding: 1%;
 			transition: all 0.15s;
 			margin: 5px 5px;
@@ -114,14 +114,6 @@
 		font-family: "Arvo", sans-serif;
 		font-size: 35px;
 		font-weight: 900;
-		&::before {
-			content: "Will's";
-			color: #111;
-			font-size: 20px;
-			top: 13px;
-			position: absolute;
-			left: 40px;
-		}
 	}
 }
 
