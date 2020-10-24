@@ -43,11 +43,6 @@ All of our hacks are open source, and free. No paywalls, no ads, and no Patreon.
 - **[Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)**
 - **[Locally Hosted Redirect Hack](https://github.com/Prodigy-Hacking/Redirector#using-redirector-locally-advanced)** (Advanced)
 
-## Announcements
-
-- Script-based hacks are back!
-   - You can go check them out [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/hacks/Script-Based%20Hacks/)!
-
 ## Disclaimer
 
 While our hacks are completely safe, ***you should only use hacks on an alternate account***.
