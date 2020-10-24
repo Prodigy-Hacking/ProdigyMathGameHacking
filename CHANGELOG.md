@@ -29,4 +29,4 @@
 - **`_.instance.prodigy.player` Patch**: `9/17 - CURRENT`
 -   - On September 18th, Prodigy patched the `hack` variable by redirecting to a 404 page if the `hack` variable was there. To unpatch this, we made the variable `_`, which Prodigy already uses, so they can't delete it.
 -  **Chrome Extension Releases**: `10/21/20 - CURRENT`
--   - On October 21st, Chrome accepted the PMGH extension submission to the Chrome Web Store. The extension has the exact same method as the redirector hack.
+-   - On October 21st, Google accepted the ProdigyMathGameHacking extension submission to the Chrome Web Store. The extension works exacatly the same as the Redirector Hack, but is much easier.
