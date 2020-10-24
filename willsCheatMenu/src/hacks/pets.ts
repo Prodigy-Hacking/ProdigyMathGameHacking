@@ -10,6 +10,7 @@ const randomSpell = () => {
 	
 	return fileredSpells[Math.floor(Math.random() * fileredSpells.length)].ID;
 }
+
 const toPets = (ID: number) => ({
 	ID,
 	catchDate: Date.now(),
@@ -18,6 +19,7 @@ const toPets = (ID: number) => ({
 	levelCaught: 1,
 	stars: VERY_LARGE_NUMBER,
 });
+
 new Hack(category.pets, "Get All Pets").setClick(async () => {
 	const pets = gameData.pet.map(x => toPets(x.ID));
 	_.player.kennel.data.splice(-1, 0, ...pets);
@@ -53,6 +55,7 @@ new Hack(category.pets, "Add Pet", "Adds a pet from a list.").setClick(async () 
 	_.player.kennel.addPet(pet.value);
 	await Toast.fire("Success!", "Your chosen pet has been added to your pets!", "success");
 });
+
 const getPet = async (text: string): Promise<number | undefined> => {
 	const pet = await Swal.fire({
 		input: "select",
@@ -67,6 +70,7 @@ const getPet = async (text: string): Promise<number | undefined> => {
 	});
 	return pet.value;
 };
+
 new Hack(category.pets, "Edit Pet", "Edit a pet.").setClick(async () => {
 	const pet = await getPet("Choose the pet to edit.");
 	if (pet === undefined) return;
@@ -121,6 +125,7 @@ new Hack(category.pets, "Edit Pet", "Edit a pet.").setClick(async () => {
 		await Swal.fire("Successfully renamed!", "The name of the pet has been changed.", "success");
 	}
 });
+
 new Hack(category.pets, "Delete Pet", "Delete a pet.").setClick(async () => {
 	const pet = await getPet("Which pet do you wish to delete?");
 	if (pet === undefined) return;
