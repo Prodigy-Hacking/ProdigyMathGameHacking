@@ -85,7 +85,6 @@ Furthermore:
 - [TNThacker2015](https://github.com/TNThacker2015) (Will)
 - [Exoticc](https://github.com/Exoticc) (Magmischief)
 - [Rubberduck55](https://github.com/Rubberduck55)
-- ErrorLifeIsNull (DCK)
 
 ----
 ***All hacks and software are licensed under the Mozilla Public License (MPL) V2.0, unless stated otherwise with a separate license.***
