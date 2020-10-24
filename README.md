@@ -77,6 +77,7 @@ Furthermore:
 - [Rus](https://github.com/UntrustableRus)
 - [BoredFish](https://github.com/BoredFishRE)
 - [Whimpers](https://github.com/KryptoCrash)
+- [SwxtchCode](https://github.com/SwxtchCode)
 - Noot (Anonymous)
 
 ## Retired Collaborators
