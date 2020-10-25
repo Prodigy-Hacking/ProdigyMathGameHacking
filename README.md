@@ -22,7 +22,9 @@
 	<a href="https://chrome.google.com/webstore/detail/lpkeloemedafpfkdkbaclmmaokmadced/">
 		<img
 		alt="Chrome Web Store Rating"
-		     src="https://img.shields.io/chrome-web-store/stars/lpkeloemedafpfkdkbaclmmaokmadced"></a>
+		     src="https://img.shields.io/chrome-web-store/stars/lpkeloemedafpfkdkbaclmmaokmadced"><img
+		alt="Extension Downloads"
+		     src="https://img.shields.io/chrome-web-store/users/lpkeloemedafpfkdkbaclmmaokmadced"></a>
 </p>
 
 
