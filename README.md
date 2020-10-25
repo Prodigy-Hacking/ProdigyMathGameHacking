@@ -16,16 +16,14 @@
 	</strong>
 </p>
 <p align="center">
-	<img
-		alt="Commit Activity"
-		src="https://img.shields.io/github/commit-activity/y/Prodigy-Hacking/ProdigyMathGameHacking">
+	<img alt="Commit Activity" src="https://img.shields.io/github/commit-activity/y/Prodigy-Hacking/ProdigyMathGameHacking">
 	<a href="https://chrome.google.com/webstore/detail/lpkeloemedafpfkdkbaclmmaokmadced/">
-		<img
-		alt="Chrome Web Store Rating"
-		     src="https://img.shields.io/chrome-web-store/stars/lpkeloemedafpfkdkbaclmmaokmadced"></a>
-<a href="https://chrome.google.com/webstore/detail/lpkeloemedafpfkdkbaclmmaokmadced/"><img
-		alt="Extension Downloads"
-	src="https://img.shields.io/chrome-web-store/users/lpkeloemedafpfkdkbaclmmaokmadced"></a>
+		<img alt="Chrome Web Store Rating" src="https://img.shields.io/chrome-web-store/stars/lpkeloemedafpfkdkbaclmmaokmadced">
+</a>
+<a href="https://chrome.google.com/webstore/detail/lpkeloemedafpfkdkbaclmmaokmadced/">
+<img alt="Extension Downloads" src="https://img.shields.io/chrome-web-store/users/lpkeloemedafpfkdkbaclmmaokmadced?color=red&label=Extension%20Downloads">
+</a>
+	
 </p>
 
 
