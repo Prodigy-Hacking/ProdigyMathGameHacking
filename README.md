@@ -16,7 +16,6 @@
 	</strong>
 </p>
 <p align="center">
-	<img alt="Commit Activity" src="https://img.shields.io/github/commit-activity/y/Prodigy-Hacking/ProdigyMathGameHacking">
 	<a href="https://chrome.google.com/webstore/detail/lpkeloemedafpfkdkbaclmmaokmadced/">
 		<img alt="Chrome Web Store Rating" src="https://img.shields.io/chrome-web-store/stars/lpkeloemedafpfkdkbaclmmaokmadced">
 </a>
