@@ -22,7 +22,11 @@
 <a href="https://chrome.google.com/webstore/detail/lpkeloemedafpfkdkbaclmmaokmadced/">
 <img alt="Extension Downloads" src="https://img.shields.io/chrome-web-store/users/lpkeloemedafpfkdkbaclmmaokmadced?color=red&label=Extension%20Downloads">
 </a>
-	
+
+<a href="https://prodigyhacking.com">
+	<img alt="Website Status" src="https://img.shields.io/website-up-down-green-red/http/prodigyhacking.com">
+</a>
+
 </p>
 
 
