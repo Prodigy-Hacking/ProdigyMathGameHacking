@@ -133,12 +133,6 @@ export const category = {
 	misc: addArea("Miscellaneous Hacks"),
 };
 			
-/* _.chat.et.push(
-	"Hacker!", "Natsumi", "Unexpected Will", "Arc", "Yama", "Whimpers", "Ugh, It's Divine",
-	"Bruh moment", "Thats what she said", "Skid located.", "Bobby Fancywoman"
-)
-*/
-			
 setTimeout(() => {
 	if (Math.random() < 0.005) {
 		// @ts-ignore
