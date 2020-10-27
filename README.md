@@ -27,6 +27,9 @@
 	<img alt="Website Status" src="https://img.shields.io/website-up-down-green-red/http/prodigyhacking.com">
 </a>
 
+<a href="https://discord.com/invite/XQDfbfq">
+	<img src="https://img.shields.io/discord/683793361123016755.svg?color=7289da&label=Discord&logo=discord&style=flat-square">
+</a>
 </p>
 
 
