@@ -38,7 +38,7 @@ new Hack(category.battle, "Win Battle", "Instantly win a monster battle.").setCl
 			"error"
 		);
 });
-let maxHearts = game
+
 new Hack(category.battle, "Set Battle Hearts", "Sets your hearts in battle. Automatically raises max hearts.")
 	.setClick(async() => {
 		const hp = await NumberInput.fire("Health Amount", "How much HP do you want?", "question");
@@ -47,11 +47,11 @@ new Hack(category.battle, "Set Battle Hearts", "Sets your hearts in battle. Auto
 		_.player.pvpHP = +hp.value;
 		_.player.data.hp = +hp.value;
 		await Toast.fire("Success!", "Your hearts have been set.", "success");
-	})
+	});
 new Hack(category.battle, "Fill Battle Energy", "Fills up your battle energy.")
 	.setClick(async() => {
 		const state  = game.state.getCurrentState();
 		if (!("teams" in state)) return Toast.fire("Error", "You are currently not in a battle.", "error");
 		state.teams[0].setEnergy(99);
 		await Toast.fire("Success!", "Your battle energy has been filled.", "success");
-	})
+	});
