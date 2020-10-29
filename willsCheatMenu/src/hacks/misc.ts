@@ -95,6 +95,6 @@ new Hack(category.misc, "Reset Account","Completely resets your account.").setCl
 	_.player.resetAccount();
 });
 
-new Hack(category.misc, "Restore Player State", "Restores your player data to an earlier state (WCM must've been installed at the time, and the history data is local to this computer only.)").setClick(async () => {
+new Hack(category.misc, "Restore Player State", "Restores your player data to an earlier state (WCM must've been installed at the time, and the history data is local to this device only.)").setClick(async () => {
 	
 });
