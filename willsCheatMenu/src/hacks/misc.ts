@@ -2,6 +2,34 @@ import { Swal, Toast, NumberInput, Confirm } from "../utils/swal";
 import { Hack, category, Toggler } from "../index";
 import { VERY_LARGE_NUMBER, gameData, pickRandom } from "../utils/util";
 import { prodigy, game } from "../utils/util";
+
+saveState = (state) => {
+  playerStateHistory = JSON.parse(localStorage.getItem("playerStateHistory")) || [];
+  
+  if(typeof state == "object") {
+      playerStateHistory.push(state);
+      localStorage.setItem('playerStateHistory', JSON.stringify(state));
+  } else {
+    throw new TypeError(`Invalid state data. Expected object, got ${typeof state}.`);
+  }
+}
+
+loadState = (stateNum) => {
+  playerStateHistory = JSON.parse(localStorage.getItem("playerStateHistory")) || [];
+	
+	if(playerStateHistory == []) return throw new TypeError(`No state history exists.`);
+	
+	if(typeof stateNum == "number") {
+		if(playerStateHistory.length[stateNum] == "undefined") {
+			return throw new Error("State number is greater than state history length.");
+		}
+		
+		_.player = playerStateHistory[stateNum];
+	} else {
+		throw new TypeError(`Invalid state ID data. Expected number, got ${typeof stateNum}.`);
+	}
+}
+
 new Hack(category.misc, "Skip Tutorial").setClick(async () => {
 	const setQuest = (t: string, i: number, n?: unknown, e?: unknown) => {
 		_.instance.prodigy.world.getZone(t).testQuest(i, n, e);
@@ -18,12 +46,9 @@ new Hack(category.misc, "Skip Tutorial").setClick(async () => {
 	_.instance.prodigy.open.map(true, []);
 	_.player.onTutorialComplete();
 });
-/*
-new Hack(category.misc, "Disable Timeout Dialog").setClick(async () => {
-	prodigy.debugMisc.disableTimeoutDialogue();
-});
-*/
+
 let viber: number | null = null;
+
 new Toggler(category.misc, "Clothing Vibe")
 	.setEnabled(async () => {
 		viber = window.setInterval(() => {
@@ -68,4 +93,8 @@ new Hack(category.misc, "Bobbify", "Converts your account into Bobby Fancywoman.
 new Hack(category.misc, "Reset Account","Completely resets your account.").setClick(async () => {
 	if (!(await Confirm.fire("Are you sure you want to reset your account?", "This action is not reversable.")).value) return;
 	_.player.resetAccount();
+});
+
+new Hack(category.misc, "Restore Player State", "Restores your player data to an earlier state (WCM must've been installed at the time, and the history data is local to this computer only.)").setClick(async () => {
+	
 });
