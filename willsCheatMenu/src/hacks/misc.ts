@@ -37,7 +37,7 @@ new Hack(category.misc, "Skip Tutorial").setClick(async () => {
 			_.instance.game.state.states.TileScreen.process();
 		} catch {}
 	};
-
+ 
 	setQuest("house", 2);
 	setQuest("academy", 2);
 	_.player.state.set("tutorial-0", 4);
