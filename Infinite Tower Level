@@ -1,0 +1,3 @@
+//sets your tower to any number.
+//Remember, this hack does not save unless you download some extention.
+_.player.getTowerprogress = () => _.player.data.tower = "TEXT HERE";
