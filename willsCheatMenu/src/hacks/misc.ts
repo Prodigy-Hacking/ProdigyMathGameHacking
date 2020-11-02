@@ -130,8 +130,11 @@ new Hack(category.misc, "Restore Player State", "Restores your player data to an
   if (stateID) {
     loadState(Number(stateID.replace(/\D/g,'')))
   }
+  
+  await Toast.fire("Loaded!", "Character state loaded!", "success");
 });
 
 new Hack(category.misc, "Save Player State", "Saves your current state so you can restore it.").setClick(async () => {
 	saveState(_.player);
+	await Toast.fire("Saved!", "Character state saved!", "success");
 });
