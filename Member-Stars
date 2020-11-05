@@ -1,0 +1,4 @@
+//in order to use this hack, you must be a member.
+//edit the number below.
+//I suck at making hacks
+_.player.data.storedMemberStars = "edit-this-and-make-it-a-number"
