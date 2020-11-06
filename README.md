@@ -52,9 +52,9 @@ All of our hacks are open source, and free. No paywalls, no ads, and no Patreon.
 
 ## Disclaimer
 
-While our hacks are completely safe, ***you should only use hacks on an alternate account***.
+While our hacks are completely safe, ***you shouldn't use hacks on your main account***.
 
-There's an **extremely small chance your account will be hacker-tagged, or banned**. Fortunately, it almost never happens. The only incidents ProdigyMathGameHacking knows of users being banned for hacking were contributors or staff of ProdigyMathGameHacking.
+There's an **extremely small chance your account will be hacker-tagged, reset, or banned**. Fortunately, it almost never happens. The only incidents ProdigyMathGameHacking knows of users being banned for hacking were contributors or staff of ProdigyMathGameHacking.
 
 We will **never** ask you for your password. If somebody asks you for personal/sensitive information, report it to the staff on our [Discord server](https://discord.gg/XQDfbfq).
 
@@ -63,7 +63,7 @@ If it's not an official repository, or a fork, it may not be safe!
 
 Furthermore:
 
-- All hacks, exploits, or other files hosted here may damage your account if used improperly or excessively. Do not use *any* of these hacks on your primary account, as you risk your account becoming damaged beyond repair, preventing you from accessing Prodigy Math Game in that account. You have been warned.
+- All hacks, exploits, or other files hosted here may damage your account if used improperly or excessively. We can't stress enough, do not use *any* of these hacks on your primary account, as you risk your account becoming damaged beyond repair, preventing you from accessing Prodigy Math Game in that account. You have been warned.
 
 - We are not liable for any damages of any kind, as our license states:
 
@@ -80,7 +80,7 @@ Furthermore:
 - [BoredFish](https://github.com/BoredFishRE)
 - [Whimpers](https://github.com/KryptoCrash)
 - [SwxtchCode](https://github.com/SwxtchCode)
-- Noot (Anonymous)
+- Noot (Anonymous User)
 
 ## Retired Collaborators
 
