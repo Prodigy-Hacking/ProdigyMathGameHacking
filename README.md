@@ -75,10 +75,9 @@ Furthermore:
 
 - [PatheticMustan](https://github.com/PatheticMustan)
 - [Arcerion](https://github.com/ArcerionDev)
-- [YamaHacks](https://github.com/YamaHacks)
+- [Yama](https://github.com/YamaHacks)
 - [Rus](https://github.com/UntrustableRus)
 - [BoredFish](https://github.com/BoredFishRE)
-- [Whimpers](https://github.com/KryptoCrash)
 - [SwxtchCode](https://github.com/SwxtchCode)
 - Noot (Anonymous User)
 
@@ -87,6 +86,7 @@ Furthermore:
 - [TNThacker2015](https://github.com/TNThacker2015) (Will)
 - [Exoticc](https://github.com/Exoticc) (Magmischief)
 - [Rubberduck55](https://github.com/Rubberduck55)
+- [Whimpers](https://github.com/KryptoCrash)
 
 ----
 ***All hacks and software are licensed under the Mozilla Public License (MPL) V2.0, unless stated otherwise with a separate license.***
