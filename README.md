@@ -83,8 +83,8 @@ Furthermore:
 
 ## Retired Collaborators
 
-- [TNThacker2015](https://github.com/TNThacker2015) (Will)
-- [Exoticc](https://github.com/Exoticc) (Magmischief)
+- [TNThacker2015](https://github.com/TNThacker2015)
+- [Exoticc](https://github.com/Exoticc)
 - [Rubberduck55](https://github.com/Rubberduck55)
 - [Whimpers](https://github.com/KryptoCrash)
 
