@@ -1,3 +1,7 @@
+<h4 align="center">
+	We are aware you are unable to download the Chrome Extension at the moment. We are working on it.
+</h3>
+<hr>
 <h1 align="center">
 	<img
 		width="128"
