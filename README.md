@@ -44,6 +44,8 @@ We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy
 This may look like we're trying to ruin the game, but we're improving the security of the game. By constantly finding and reporting hacks, we can help Prodigy
 become more secure! We're hacking the game for the greater good.
 
+If you have any Legal problems, please email legalproblems@support.prodigyhacking.com
+
 All of our hacks are open source, and free. No paywalls, no ads, and no Patreon. If you really want to support us, you can Nitro boost our Discord server [here](https://discord.gg/XQDfbfq)!
 
 ## Injection Methods
@@ -59,8 +61,6 @@ All of our hacks are open source, and free. No paywalls, no ads, and no Patreon.
 While our hacks are completely safe, ***you shouldn't use hacks on your main account***.
 
 There's an **extremely small chance your account will be hacker-tagged, reset, or banned**. Fortunately, it almost never happens. The only incidents ProdigyMathGameHacking knows of users being banned for hacking were contributors or staff of ProdigyMathGameHacking.
-
-If you have any Legal problems, please email legalproblems@support.prodigyhacking.com
 
 We will **never** ask you for your password. If somebody asks you for personal/sensitive information, report it to the staff on our [Discord server](https://discord.gg/XQDfbfq).
 
