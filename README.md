@@ -20,12 +20,12 @@
 	</strong>
 </p>
 <p align="center">
-	<a href="https://chrome.google.com/webstore/detail/lpkeloemedafpfkdkbaclmmaokmadced/">
+<!--	<a href="https://chrome.google.com/webstore/detail/lpkeloemedafpfkdkbaclmmaokmadced/">
 		<img alt="Chrome Web Store Rating" src="https://img.shields.io/chrome-web-store/stars/lpkeloemedafpfkdkbaclmmaokmadced?label=Extension%20Rating">
 </a>
 <a href="https://chrome.google.com/webstore/detail/lpkeloemedafpfkdkbaclmmaokmadced/">
 <img alt="Extension Downloads" src="https://img.shields.io/chrome-web-store/users/lpkeloemedafpfkdkbaclmmaokmadced?color=red&label=Extension%20Downloads">
-</a>
+</a> -->
 
 <a href="https://prodigyhacking.com">
 	<img alt="Website Status" src="https://img.shields.io/website-up-down-green-red/http/prodigyhacking.com">
