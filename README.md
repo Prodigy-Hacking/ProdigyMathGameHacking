@@ -79,7 +79,7 @@ Furthermore:
 - [Rus](https://github.com/UntrustableRus)
 - [BoredFish](https://github.com/BoredFishRE)
 - [SwxtchCode](https://github.com/SwxtchCode)
-- [Whimpers](https://github.com/KryptoCrash)
+
 - Noot (Anonymous User)
 
 ## Retired Collaborators
@@ -87,6 +87,7 @@ Furthermore:
 - [TNThacker2015](https://github.com/TNThacker2015)
 - [Exoticc](https://github.com/Exoticc)
 - [Rubberduck55](https://github.com/Rubberduck55)
+- [Whimpers](https://github.com/KryptoCrash)
 
 ----
 ***All hacks and software are licensed under the Mozilla Public License (MPL) V2.0, unless stated otherwise with a separate license.***
