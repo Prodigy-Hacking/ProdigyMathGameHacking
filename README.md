@@ -48,7 +48,7 @@ All of our hacks are open source, and free. No paywalls, no ads, and no Patreon.
 
 ## Injection Methods
 
-- **[Chrome Extension](https://chrome.google.com/webstore/detail/lpkeloemedafpfkdkbaclmmaokmadced/)**
+- ~~**[Chrome Extension](https://chrome.google.com/webstore/detail/lpkeloemedafpfkdkbaclmmaokmadced/)**~~ Extension is no longer working, please use redirector instead.
 - **[Firefox Extension](/browserextension/build/prodigy_math_game_hacking-1.0-fx.xpi?raw=true)**
   - Select the "Open with" option once you see the popup, click browse, select Firefox, click "Ok", click "Ok" again, click "add".
 - **[Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)**
@@ -59,6 +59,8 @@ All of our hacks are open source, and free. No paywalls, no ads, and no Patreon.
 While our hacks are completely safe, ***you shouldn't use hacks on your main account***.
 
 There's an **extremely small chance your account will be hacker-tagged, reset, or banned**. Fortunately, it almost never happens. The only incidents ProdigyMathGameHacking knows of users being banned for hacking were contributors or staff of ProdigyMathGameHacking.
+
+If you have any Legal problems, please email legalproblems@support.prodigyhacking.com
 
 We will **never** ask you for your password. If somebody asks you for personal/sensitive information, report it to the staff on our [Discord server](https://discord.gg/XQDfbfq).
 
