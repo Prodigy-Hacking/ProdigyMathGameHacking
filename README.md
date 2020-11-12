@@ -25,10 +25,10 @@ If for some reason redirector is down, instead of relying on our hosting for mod
 
     You can also download it [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/archive/master.zip) as a zip file.
 
-3. Go into ProdigyMathGameHacking/redirect.
+3. cd into Redirector.
 
     ```bash
-    cd ProdigyMathGameHacking/redirect
+    cd Redirector
     ```
 
 4. Install the needed packages and dependencies.
