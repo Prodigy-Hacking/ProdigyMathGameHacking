@@ -20,10 +20,10 @@ If for some reason redirector is down, instead of relying on our hosting for mod
 2. Download the repository.
 
     ```bash
-    git clone https://github.com/Prodigy-Hacking/ProdigyMathGameHacking.git
+    git clone https://github.com/Prodigy-Hacking/Redirector.git
     ```
 
-    You can also download it [here](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/archive/master.zip) as a zip file.
+    You can also download it [here](https://github.com/Prodigy-Hacking/Redirector/archive/master.zip) as a zip file.
 
 3. cd into Redirector.
 
