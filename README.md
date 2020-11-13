@@ -1,5 +1,7 @@
 <h1 align="center">
-	<img
+Hacks are currently down.
+<hr>	
+<img
 		width="128"
 		alt="The Lounge"
 		src="https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/browserextension/src/assets/x128.png">
