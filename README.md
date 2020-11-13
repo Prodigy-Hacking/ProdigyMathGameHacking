@@ -45,6 +45,10 @@ Hacks are currently down.
 	<img src="https://img.shields.io/badge/License-MPL%20v2.0-yellow.svg">
 </a>
 
+<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/pulse">
+	<img src="https://img.shields.io/github/commit-activity/m/Prodigy-Hacking/ProdigyMathGameHacking.svg?style=flat">
+</a>
+
 </p>
 
 
