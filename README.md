@@ -29,9 +29,22 @@ Hacks are currently down.
 	<img alt="Website Status" src="https://img.shields.io/website-up-down-green-red/http/prodigyhacking.com">
 </a>
 
+<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/issues">
+	<img alt="Issues" src="https://img.shields.io/github/issues-raw/Prodigy-Hacking/ProdigyMathGameHacking">
+</a>
+
 <a href="https://discord.com/invite/XQDfbfq">
 	<img src="https://img.shields.io/discord/683793361123016755.svg?color=7289da&label=Discord&logo=discord&style=flat-square">
 </a>
+
+<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/graphs/contributors">
+	<img src="https://img.shields.io/github/contributors/cdnjs/cdnjs.svg?style=flat">
+</a>
+
+<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/LICENSE">
+	<img src="https://img.shields.io/badge/License-MPL%20v2.0%20(With%20Commons%20Clause)-yellow.svg">
+</a>
+
 </p>
 
 
