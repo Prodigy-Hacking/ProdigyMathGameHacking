@@ -94,4 +94,4 @@ Furthermore:
 - [Whimpers](https://github.com/KryptoCrash)
 
 ----
-***All hacks and software are licensed under the Mozilla Public License (MPL) V2.0, unless stated otherwise with a separate license. Any violation of this licence will result in a DMCA takedown.***
+***All hacks and software are licensed under the Mozilla Public License (MPL) V2.0, unless stated otherwise with a separate license. Any violation of the policy of this licence may result in a DMCA takedown.***
