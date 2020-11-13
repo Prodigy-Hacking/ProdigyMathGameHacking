@@ -38,7 +38,7 @@ Hacks are currently down.
 </a>
 
 <a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/graphs/contributors">
-	<img src="https://img.shields.io/github/contributors/cdnjs/cdnjs.svg?style=flat">
+	<img src="https://img.shields.io/github/contributors/Prodigy-Hacking/ProdigyMathGameHacking.svg?style=flat">
 </a>
 
 <a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/LICENSE">
