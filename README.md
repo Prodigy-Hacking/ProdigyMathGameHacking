@@ -32,9 +32,6 @@ Hacks are currently down.
 <a href="https://discord.com/invite/XQDfbfq">
 	<img src="https://img.shields.io/discord/683793361123016755.svg?color=7289da&label=Discord&logo=discord&style=flat-square">
 </a>
-<a>
-	[![BCH compliance](https://bettercodehub.com/edge/badge/Prodigy-Hacking/ProdigyMathGameHacking?branch=master)](https://bettercodehub.com/)
-</a>
 </p>
 
 
