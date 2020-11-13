@@ -42,7 +42,7 @@ Hacks are currently down.
 </a>
 
 <a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/LICENSE">
-	<img src="https://img.shields.io/badge/License-MPL%20v2.0%20(With%20Commons%20Clause)-yellow.svg">
+	<img src="https://img.shields.io/badge/License-MPL%20v2.0-yellow.svg">
 </a>
 
 </p>
