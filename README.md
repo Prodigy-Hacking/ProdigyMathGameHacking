@@ -59,7 +59,7 @@ We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy
 This may look like we're trying to ruin the game, but we're improving the security of the game. By constantly finding and reporting hacks, we can help Prodigy
 become more secure! We're hacking the game for the greater good.
 
-If you have any Legal problems, please email legalproblems@support.prodigyhacking.com ANY EMAILS NOT REGARDING LEAGAL ISSUES TO THIS ADDRESS WILL NOT BE RESPONDED TO!
+If you have any Legal problems, please email legalproblems@support.prodigyhacking.com ANY EMAILS NOT REGARDING LEGAL ISSUES TO THIS ADDRESS WILL NOT BE RESPONDED TO!
 
 All of our hacks are open source, and free. No paywalls, no ads, and no Patreon. If you really want to support us, you can Nitro boost our Discord server [here](https://discord.gg/XQDfbfq)!
 
