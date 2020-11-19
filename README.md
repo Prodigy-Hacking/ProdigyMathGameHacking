@@ -1,4 +1,5 @@
 <img
+align="center"
 		width="128"
 		alt="The Lounge"
 		src="https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/browserextension/src/assets/x128.png">
