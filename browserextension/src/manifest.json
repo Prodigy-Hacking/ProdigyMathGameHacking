@@ -1,6 +1,6 @@
 {
 	"name": "Prodigy Math Game Hacking",
-	"version": "1.3.1",
+	"version": "1.3.2",
 	"description": "Hacking Prodigy, the math game.",
 	"permissions": [
 		"webRequest",
