@@ -65,7 +65,7 @@ All of our hacks are open source, and free. No paywalls, no ads, and no Patreon.
 
 ## Injection Methods
 
-- ~~**[Chrome Extension](https://chrome.google.com/webstore/detail/lpkeloemedafpfkdkbaclmmaokmadced/)**~~ Extension is no longer working, please use redirector instead.
+- ~~**[Chrome Extension](https://chrome.google.com/webstore/detail/lpkeloemedafpfkdkbaclmmaokmadced/)**~~ Extension is no longer working, and not accessible (will redirect to an Error 404 page), please use redirector instead.
 - **[Firefox Extension](/browserextension/build/prodigy_math_game_hacking-1.0-fx.xpi?raw=true)**
   - Select the "Open with" option once you see the popup, click browse, select Firefox, click "Ok", click "Ok" again, click "add".
 - **[Redirect Hack](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/Redirect-Hack)**
