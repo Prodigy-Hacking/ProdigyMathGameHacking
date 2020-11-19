@@ -20,17 +20,17 @@
 -   -   On these days, multiple variables were used to obtain the Prodigy's scopes, and access the `instance` objects.
 -   **Redirector Ages**: `4/15/20 - CURRENT`
 -   -   After many days, the Redirector hack was created, which would use a modified version of prodigy's game files. This would not be patched for a very long time. It is still working well.
--   **Content Security Patch**: `6/10/20 - CURRENT`
+-   **Content Security Patch**: `6/10/20`
 -   -   On June 10th, Prodigy added content security headers. This caused the addition of another extension to help with hacks.
 - **`hack.instance.prodigy.player` Patch**: `7/5/20 - 7/5/20`
 -   -   On July 5th, Prodigy implemented a patch for `hack.instance.prodigy.player`. This was unpatched by ProdigyMathGameHacking about 3 hours later.
--  **Script based hacks return**: `8/25/20 - CURRENT`
+-  **Script based hacks return**: `8/25/20`
 -   - On August 20th, we found a way to access the Prodigy API, and use hacks without the Redirector extension.
 - **`_.instance.prodigy.player` Patch**: `9/17 - CURRENT`
 -   - On September 18th, Prodigy patched the `hack` variable by redirecting to a 404 page if the `hack` variable was detected. To unpatch this, we renamed the variable to `_`. Prodigy already uses `_`, so they can't delete it.
 -  **Chrome Extension Releases**: `10/21/20 - 11/11/20`
 -   - On October 21st, Google accepted the ProdigyMathGameHacking extension submission to the Chrome Web Store. The extension works exacatly the same as the Redirector Hack, but is much easier as you only have to install our extension without importing the JSON file into Redirector.
--  **Chrome Extension Taken down**: `11/11/20 - CURRENT`
+-  **Chrome Extension Taken down**: `11/11/20`
 -   - On November 11th, Prodigy removed the PMGH Chrome extension via DMCA takedown.
 
 -  **Added sha256 integrity checks**: `11/13/20 - 11/19/20`
