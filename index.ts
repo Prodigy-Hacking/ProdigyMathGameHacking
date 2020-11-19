@@ -4,8 +4,10 @@ import fs from "fs";
 import path from "path";
 import { transpile } from "typescript";
 import Discord from "discord.js";
+import cors from "cors";
+
 const app = express();
-const VERSION = "A-0.0.3";
+const VERSION = "A-2.0.0";
 let lastVersion = "None";
 let lastBuild: number = 0;
 const hook = new Discord.WebhookClient(
@@ -29,6 +31,9 @@ setInterval(async () => {
 		}\` to \`${(lastVersion = version)}\` GDV \`${(lastBuild = status.data!.prodigyGameFlags.gameDataVersion)}\` `
 	);
 }, 100000);
+
+app.use(cors());
+
 app.get("/game.min.js", async (req, res) => {
 	const status: GameStatus = await (await fetch("https://api.prodigygame.com/game-api/status")).json();
 	const version = status?.data?.gameClientVersion;
@@ -57,9 +62,9 @@ app.get("/game.min.js", async (req, res) => {
 	console.log("%cWill's Redirect Hack", "font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;");
 	console.log("%cVersion ${VERSION}", "font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;");
 	console.log('The variable "_" contains the hacked variables.');
+	SW.Load.onGameLoad()
 	setTimeout(() => {
 		${await (await fetch("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/willsCheatMenu/loader.js")).text()}
-
 	}, 10000)
 `
 		)

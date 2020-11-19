@@ -46,8 +46,9 @@ var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
 var typescript_1 = require("typescript");
 var discord_js_1 = __importDefault(require("discord.js"));
+var cors_1 = __importDefault(require("cors"));
 var app = express_1.default();
-var VERSION = "A-0.0.3";
+var VERSION = "A-2.0.0";
 var lastVersion = "None";
 var lastBuild = 0;
 var hook = new discord_js_1.default.WebhookClient("700774406963724328", "g3X1Kv3vV8uAeNnHBrBnRM-UzCAfsXCbJ-OzP27aqTnW9tkRc3i9tCbGFL8Of5vbRKOV");
@@ -72,6 +73,7 @@ setInterval(function () { return __awaiter(void 0, void 0, void 0, function () {
         }
     });
 }); }, 100000);
+app.use(cors_1.default());
 app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
     var status, version, gameMinJS, replacements, _a, _b, _c, _d, _e, _f;
     var _g;
@@ -98,10 +100,10 @@ app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, v
                 _b = (_a = res).send;
                 _d = (_c = replacements).reduce;
                 _e = [function (l, c) { return l.split(c[0]).join(c[1]); }];
-                _f = "nootmeat = func => {\n\t\t\t\tlet elephant = 2\n\t\t\t}\n\t\t\texports = {};_.variables=Object.create(null);\n\t\n" + gameMinJS + "\n\t" + typescript_1.transpile(fs_1.default.readFileSync(path_1.default.join(__dirname, "./revival.ts"), { encoding: "utf8" })) + "\n\tconsole.log(\"%cWill's Redirect Hack\", \"font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;\");\n\tconsole.log(\"%cVersion " + VERSION + "\", \"font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;\");\n\tconsole.log('The variable \"_\" contains the hacked variables.');\n\tsetTimeout(() => {\n\t\t";
+                _f = "nootmeat = func => {\n\t\t\t\tlet elephant = 2\n\t\t\t}\n\t\t\texports = {};_.variables=Object.create(null);\n\t\n" + gameMinJS + "\n\t" + typescript_1.transpile(fs_1.default.readFileSync(path_1.default.join(__dirname, "./revival.ts"), { encoding: "utf8" })) + "\n\tconsole.log(\"%cWill's Redirect Hack\", \"font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;\");\n\tconsole.log(\"%cVersion " + VERSION + "\", \"font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;\");\n\tconsole.log('The variable \"_\" contains the hacked variables.');\n\tSW.Load.onGameLoad()\n\tsetTimeout(() => {\n\t\t";
                 return [4 /*yield*/, node_fetch_1.default("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/willsCheatMenu/loader.js")];
             case 5: return [4 /*yield*/, (_h.sent()).text()];
-            case 6: return [2 /*return*/, _b.apply(_a, [_d.apply(_c, _e.concat([_f + (_h.sent()) + "\n\n\t}, 10000)\n"]))])];
+            case 6: return [2 /*return*/, _b.apply(_a, [_d.apply(_c, _e.concat([_f + (_h.sent()) + "\n\t}, 10000)\n"]))])];
         }
     });
 }); });
