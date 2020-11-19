@@ -9,16 +9,28 @@ chrome.webRequest.onHeadersReceived.addListener(
 );
 // Redirect Requests
 chrome.webRequest.onBeforeRequest.addListener(details => {
-	const redirectorDomain = debug? "localhost:1337" : "prodigyhacking.ml"
+	const redirectorDomain = debug? "http://localhost:1337/" : "https://prodigyhacking.ml"
 
-	if (details.url.startsWith("https://code.prodigygame.com/code/")) {
-		return { redirectUrl: `${redirectorDomain}/game.min.js` }; // game.min.js
+
+
+	if (details.url.startsWith("https://code.prodigygame.com/code/") && details.url.includes("/game.min.js") {
+		// if anybody curses my name, you might as well curse at me on twitter lol, I'm @PatheticMustan
+		// instead of redirecting
+		chrome.tabs.executeScript({
+			file: "disableIntegrity.js"
+		});
+
+		// see disableIntegrity.js, we append the new game.min to the document
+
+		// return { redirectUrl: `${redirectorDomain}/game.min.js` };
 	}
+
 	if (details.url.startsWith("https://code.prodigygame.com/js/public-game")) {
-		return { redirectUrl: (`${redirectorDomain}/public-game.min.js?hash=`) + details.url.split("public-game-")[1].split(".")[0]}; // public-game.min.js
+		return { redirectUrl: `${redirectorDomain}/public-game.min.js?hash=${details.url.split("public-game-")[1].split(".")[0]}` };
 	}
+
 	if (details.url.startsWith("https://api.prodigygame.com/game-api/v1/character/")) {
-		return { redirectUrl: "https://api.prodigygame.com/game-api/v1/character/" + details.url.substring(details.url.lastIndexOf("/") + 1, details.url.lastIndexOf("?")) + "?isMember=1&userID=" + details.url.split("&userID=")[1]}; // Member Hack
+		return { redirectUrl: "https://api.prodigygame.com/game-api/v1/character/" + details.url.substring(details.url.lastIndexOf("/") + 1, details.url.lastIndexOf("?")) + "?isMember=1&userID=" + details.url.split("&userID=")[1]};
 	}
 }, {
 	urls: [
