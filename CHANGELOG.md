@@ -32,3 +32,6 @@
 -   - On October 21st, Google accepted the ProdigyMathGameHacking extension submission to the Chrome Web Store. The extension works exacatly the same as the Redirector Hack, but is much easier as you only have to install our extension without importing the JSON file into Redirector.
 -  **Chrome Extension Taken down**: `11/11/20 - CURRENT`
 -   - On November 11th, Prodigy removed the PMGH Chrome extension via DMCA takedown.
+
+-  **Added sha256 integrity checks**: `11/13/20 - 11/19/20`
+-   - On November 13th, Prodigy added extra security via integrity checking with sha256. This was unpatched on November 19th by PatheticMustan (Natsumi)
