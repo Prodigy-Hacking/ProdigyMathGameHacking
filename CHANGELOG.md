@@ -33,5 +33,8 @@
 -  **Chrome Extension Taken down**: `11/11/20`
 -   - On November 11th, Prodigy removed the PMGH Chrome extension via DMCA takedown.
 
--  **Added sha256 integrity checks**: `11/13/20 - 11/19/20`
--   - On November 13th, Prodigy added extra security via integrity checking with sha256. This was unpatched on November 19th by PatheticMustan (Natsumi)
+-  **Prodigy adds SHA256 Integrity Checks**: `11/13/20 - CURRENT`
+-   - On November 13th, Prodigy added extra security via integrity checking with sha256. This broke the hacks.
+
+-  **SHA256 Sumchecks bypassed**: `11/13/20 - 11/19/20`
+-   - On November 19th, Natsumi bypassed the SHA256 sumcheck, which fixed the hacks.
