@@ -94,8 +94,6 @@ Furthermore:
 - [Yama](https://github.com/YamaHacks)
 - [Rus](https://github.com/UntrustableRus)
 - [BoredFish](https://github.com/BoredFishRE)
-- [SwxtchCode](https://github.com/SwxtchCode)
-
 - Noot (Anonymous User)
 
 ## Retired Collaborators
