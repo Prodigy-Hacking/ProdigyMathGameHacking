@@ -32,7 +32,7 @@
 		"@types/pixi.js": "^5.0.0",
 		"express": "^4.17.1",
 		"glob": "^7.1.6",
-		"node-fetch": "^2.6.0",
+		"node-fetch": "^2.6.1",
 		"sweetalert2": "^9.10.2"
 	}
 }
