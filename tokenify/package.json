@@ -9,7 +9,7 @@
 		"fetch-cookie": "^0.10.1",
 		"https-proxy-agent": "^5.0.0",
 		"jsdom": "^16.2.2",
-		"node-fetch": "^2.6.0",
+		"node-fetch": "^2.6.1",
 		"request": "^2.81.0",
 		"url": "^0.11.0"
 	},
