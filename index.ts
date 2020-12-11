@@ -7,7 +7,7 @@ import Discord from "discord.js";
 import cors from "cors";
 
 const app = express();
-const VERSION = "A-2.0.0";
+const VERSION = "A-2.0.5";
 let lastVersion = "None";
 let lastBuild: number = 0;
 const hook = new Discord.WebhookClient(
@@ -57,17 +57,19 @@ app.get("/game.min.js", async (req, res) => {
 				let elephant = 2
 			}
 			exports = {};_.variables=Object.create(null);
-	\n${gameMinJS}
-	${transpile(fs.readFileSync(path.join(__dirname, "./revival.ts"), { encoding: "utf8" }))}
-	console.log("%cWill's Redirect Hack", "font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;");
-	console.log("%cVersion ${VERSION}", "font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;");
-	console.log('The variable "_" contains the hacked variables.');
-	SW.Load.onGameLoad()
-	setTimeout(() => {
-		${await (await fetch("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/willsCheatMenu/loader.js")).text()}
-	}, 10000)
-`
-		)
+	
+			${gameMinJS}
+
+			${transpile(fs.readFileSync(path.join(__dirname, "./revival.ts"), { encoding: "utf8" }))}
+
+			console.log("%cWill's Redirect Hack", "font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;");
+			console.log("%cVersion ${VERSION}", "font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;");
+			console.log('The variable "_" contains the hacked variables.');
+			SW.Load.onGameLoad();
+			setTimeout(() => {
+				${await (await fetch("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/willsCheatMenu/loader.js")).text()}
+			}, 10000);
+		`)
 	);
 });
 app.get("/", (req, res) => res.redirect("/game.min.js"));
@@ -75,20 +77,28 @@ app.get("/public-game.min.js", async (req, res) => {
 	if (!req.query.hash) return res.send("alert('OUTDATED REDIRECTOR CONFIG')")
 	const publicGame = await (await fetch(`https://code.prodigygame.com/js/public-game-${req.query.hash}.min.js`)).text();
 	res.type(".js");
-	return res.send(`${publicGame.replace(/console\..+?\(.*?\)/g, "(()=>{})()")}
-	l=Array.prototype.some;setInterval(()=>{Array.prototype.some = function some(...args) {
-		if (this[0] === "hack") this.splice(0, 100);
-    return l.call(this, ...args);
-}});
-let fffffff = document.createElement("iframe");
-document.head.append(fffffff);
-fffffff.contentWindow.setInterval(() => {
-	let l = fffffff.contentWindow.setInterval;
-	window.setInterval = function(func, ...args) {
-		if (func.toString().includes('["hack"]')) return;
-		return l.call(window, func, ...args)
-	} 
-})
+	return res.send(`
+		${publicGame.replace(/console\..+?\(.*?\)/g, "(()=>{})()")}
+
+		// overwrite Array.some to patch Prodigy's anti-cheat.
+		// The Anti-Anti-Cheat
+		l=Array.prototype.some;
+		setInterval(()=>{Array.prototype.some = function some(...args) {
+			if (this[0] === "hack") this.splice(0, 100);
+			return l.call(this, ...args);
+		}});
+		
+		// Prodigy's new hack var anti-cheat overwrote setInterval, to patch this, we get a fresh new setInterval from an iFrame,
+		// then patch their patch.
+		let fffffff = document.createElement("iframe");
+		document.head.append(fffffff);
+		fffffff.contentWindow.setInterval(() => {
+			let l = fffffff.contentWindow.setInterval;
+			window.setInterval = function(func, ...args) {
+				if (func.toString().includes('["hack"]')) return;
+				return l.call(window, func, ...args);
+			}
+		});
 	`);
 });
 app.get("/download", async (req, res) => {
