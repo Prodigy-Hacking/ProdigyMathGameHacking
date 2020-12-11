@@ -48,7 +48,7 @@ var typescript_1 = require("typescript");
 var discord_js_1 = __importDefault(require("discord.js"));
 var cors_1 = __importDefault(require("cors"));
 var app = express_1.default();
-var VERSION = "A-2.0.0";
+var VERSION = "A-2.0.5";
 var lastVersion = "None";
 var lastBuild = 0;
 var hook = new discord_js_1.default.WebhookClient("700774406963724328", "g3X1Kv3vV8uAeNnHBrBnRM-UzCAfsXCbJ-OzP27aqTnW9tkRc3i9tCbGFL8Of5vbRKOV");
@@ -100,10 +100,10 @@ app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, v
                 _b = (_a = res).send;
                 _d = (_c = replacements).reduce;
                 _e = [function (l, c) { return l.split(c[0]).join(c[1]); }];
-                _f = "nootmeat = func => {\n\t\t\t\tlet elephant = 2\n\t\t\t}\n\t\t\texports = {};_.variables=Object.create(null);\n\t\n" + gameMinJS + "\n\t" + typescript_1.transpile(fs_1.default.readFileSync(path_1.default.join(__dirname, "./revival.ts"), { encoding: "utf8" })) + "\n\tconsole.log(\"%cWill's Redirect Hack\", \"font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;\");\n\tconsole.log(\"%cVersion " + VERSION + "\", \"font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;\");\n\tconsole.log('The variable \"_\" contains the hacked variables.');\n\tSW.Load.onGameLoad()\n\tsetTimeout(() => {\n\t\t";
+                _f = "nootmeat = func => {\n\t\t\t\tlet elephant = 2\n\t\t\t}\n\t\t\texports = {};_.variables=Object.create(null);\n\t\n\t\t\t" + gameMinJS + "\n\n\t\t\t" + typescript_1.transpile(fs_1.default.readFileSync(path_1.default.join(__dirname, "./revival.ts"), { encoding: "utf8" })) + "\n\n\t\t\tconsole.log(\"%cWill's Redirect Hack\", \"font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;\");\n\t\t\tconsole.log(\"%cVersion " + VERSION + "\", \"font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;\");\n\t\t\tconsole.log('The variable \"_\" contains the hacked variables.');\n\t\t\tSW.Load.onGameLoad();\n\t\t\tsetTimeout(() => {\n\t\t\t\t";
                 return [4 /*yield*/, node_fetch_1.default("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/willsCheatMenu/loader.js")];
             case 5: return [4 /*yield*/, (_h.sent()).text()];
-            case 6: return [2 /*return*/, _b.apply(_a, [_d.apply(_c, _e.concat([_f + (_h.sent()) + "\n\t}, 10000)\n"]))])];
+            case 6: return [2 /*return*/, _b.apply(_a, [_d.apply(_c, _e.concat([_f + (_h.sent()) + "\n\t\t\t}, 10000);\n\t\t"]))])];
         }
     });
 }); });
@@ -120,7 +120,7 @@ app.get("/public-game.min.js", function (req, res) { return __awaiter(void 0, vo
             case 2:
                 publicGame = _a.sent();
                 res.type(".js");
-                return [2 /*return*/, res.send(publicGame.replace(/console\..+?\(.*?\)/g, "(()=>{})()") + "\n\tl=Array.prototype.some;setInterval(()=>{Array.prototype.some = function some(...args) {\n\t\tif (this[0] === \"hack\") this.splice(0, 100);\n    return l.call(this, ...args);\n}});\nlet fffffff = document.createElement(\"iframe\");\ndocument.head.append(fffffff);\nfffffff.contentWindow.setInterval(() => {\n\tlet l = fffffff.contentWindow.setInterval;\n\twindow.setInterval = function(func, ...args) {\n\t\tif (func.toString().includes('[\"hack\"]')) return;\n\t\treturn l.call(window, func, ...args)\n\t} \n})\n\t")];
+                return [2 /*return*/, res.send("\n\t\t" + publicGame.replace(/console\..+?\(.*?\)/g, "(()=>{})()") + "\n\n\t\t// overwrite Array.some to patch Prodigy's anti-cheat.\n\t\t// The Anti-Anti-Cheat\n\t\tl=Array.prototype.some;\n\t\tsetInterval(()=>{Array.prototype.some = function some(...args) {\n\t\t\tif (this[0] === \"hack\") this.splice(0, 100);\n\t\t\treturn l.call(this, ...args);\n\t\t}});\n\t\t\n\t\t// Prodigy's new hack var anti-cheat overwrote setInterval, to patch this, we get a fresh new setInterval from an iFrame,\n\t\t// then patch their patch.\n\t\tlet fffffff = document.createElement(\"iframe\");\n\t\tdocument.head.append(fffffff);\n\t\tfffffff.contentWindow.setInterval(() => {\n\t\t\tlet l = fffffff.contentWindow.setInterval;\n\t\t\twindow.setInterval = function(func, ...args) {\n\t\t\t\tif (func.toString().includes('[\"hack\"]')) return;\n\t\t\t\treturn l.call(window, func, ...args);\n\t\t\t}\n\t\t});\n\t")];
         }
     });
 }); });
