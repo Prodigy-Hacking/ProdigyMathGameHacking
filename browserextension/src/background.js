@@ -4,7 +4,7 @@ const debug = false;
 
 // Ignore X-Frame Headers
 chrome.webRequest.onHeadersReceived.addListener(
-	(details) => ({ responseHeaders: details.responseHeaders.filter((header) => !["content-security-policy", "x-frame-options",].includes(header.name.toLowerCase())), }),
+	(details) => ({ responseHeaders: details.responseHeaders.filter((header) => !["content-security-policy", "x-frame-options",].includes(header.name.toLowerCase())) }),
 	{ urls: ["<all_urls>"] }, ["blocking", "responseHeaders"]
 );
 // Redirect Requests
