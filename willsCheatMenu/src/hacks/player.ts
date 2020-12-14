@@ -170,17 +170,7 @@ new Hack(category.player, "Change Name", "Change the name of your wizard.").setC
 
 
 new Hack(category.player, "Morph Player (DEV)", "Morph into a pet, furnishing, or follow.").setClick(async () => {
-	const possibleMorphTypes = ["pet", "dorm", "follow"];
-
-	const morphPlayer = (morphType: ["pet", "dorm", "follow"], id: Number, time: Number) => {
-		_.player.getPlayerData().playerTransformation = {
-			transformType: morphType,
-			transformID: id,
-			maxTime: time,
-			timeRemaining: time
-		};
-		_.player.appearanceChanged = true;
-	};
+	type possibleMorphTypes = ["pet", "dorm", "follow"];
 
 	const morphType = await Swal.fire({
 		title: "Which morph type?",
@@ -194,12 +184,34 @@ new Hack(category.player, "Morph Player (DEV)", "Morph into a pet, furnishing, o
 		showCancelButton: true
 	});
 	
-	// todo, ask for morph ID
+	// swal inputOptions accepts an object, the property being the value it returns, the value being what it displays
+	// kinda weird to explain, just look at how morphType does it
+	// we want it to display a pretty string, and return the petID
+	const petOptions = {};
+	// fuck you typescript, I'll do what I want
+	// @ts-ignore
+	_.gameData["pet"].forEach((pet) => petOptions[pet.ID] = `${pet.name} (${pet.ID})`);
+
+	const morphID = await Swal.fire({
+		title: "Which morph type?",
+		input: "select",
+		inputOptions: petOptions,
+		inputPlaceholder: "Morph Type",
+		showCancelButton: true
+	});
 
 	// morph for an hour
-	morphPlayer(morphType, 10, 60*60*1000);
+	// shut up typescript, I don't need you on my nuts every time I use Swal
+	// typescript makes me cry
+	_.player.getPlayerData().playerTransformation = {
+		transformType: morphType,
+		transformID: morphID,
+		maxTime: 60*60*1000,
+		timeRemaining: 60*60*1000
+	};
+	_.player.appearanceChanged = true;
 	
-	await Toast.fire("Morphed!", "You've been morphed into", "success");
+	await Toast.fire("Morphed!", "You've been morphed.", "success");
 });
 
 new Hack(category.pets, "Fix Morph Crash").setClick(async () => {
@@ -207,5 +219,5 @@ new Hack(category.pets, "Fix Morph Crash").setClick(async () => {
 	_.player.appearanceChanged = true;
 	_.player.forceSaveCharacter();
 
-	await Toast.fire("Success!", "Fixed morph crash bug!", "success");
+	await Toast.fire("Success!", "Fixed morph crash bug.", "success");
 });
