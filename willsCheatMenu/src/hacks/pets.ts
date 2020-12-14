@@ -42,6 +42,8 @@ new Hack(category.pets, "Get All Pets").setClick(async () => {
 new Hack(category.pets, "Get All Epics").setClick(async () => {
 	const epics = [125, 126, 127, 128, 129, 130, 131, 132, 133];
 	_.player.kennel.data.splice(-1, 0, ...epics.map(toPets));
+	_.player.forceSaveCharacter();
+
 	await Toast.fire("Success!", "All epics have been added!", "success");
 });
 
@@ -49,11 +51,15 @@ new Hack(category.pets, "Fix Battle Crash").setClick(async () => {
 	_.player.kennel.petTeam.forEach((v: any) => {
 		if (v && (v as any).assignRandomSpells) (v as any).assignRandomSpells();
 	});
+	_.player.forceSaveCharacter();
+	
 	await Toast.fire("Success!", "Fixed kennel attack bug!", "success");
 });
 
 new Hack(category.pets, "Clear Pets").setClick(async () => {
 	_.player.kennel.data.length = 0;
+	_.player.forceSaveCharacter();
+
 	await Toast.fire("Success!", "Your pets have been cleared!", "success");
 });
 
@@ -66,6 +72,8 @@ new Hack(category.pets, "Add Pet", "Adds a pet from a list.").setClick(async () 
 	});
 	if (pet.value === undefined) return;
 	_.player.kennel.addPet(pet.value);
+	_.player.forceSaveCharacter();
+
 	await Toast.fire("Success!", "Your chosen pet has been added to your pets!", "success");
 });
 
