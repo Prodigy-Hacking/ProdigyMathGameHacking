@@ -181,6 +181,7 @@ new Hack(category.player, "Morph Player (DEV)", "Morph into a pet, furnishing, o
 			follow: "Follow"
 		},
 		inputPlaceholder: "Morph Type",
+		inputValidator: res => res===""? "Please select a morph type." : "",
 		showCancelButton: true
 	});
 	
@@ -193,10 +194,11 @@ new Hack(category.player, "Morph Player (DEV)", "Morph into a pet, furnishing, o
 	_.gameData["pet"].forEach((pet) => petOptions[pet.ID] = `${pet.name} (${pet.ID})`);
 
 	const morphID = await Swal.fire({
-		title: "Which morph type?",
+		title: "Which morph?",
 		input: "select",
 		inputOptions: petOptions,
-		inputPlaceholder: "Morph Type",
+		inputPlaceholder: "Morph ID",
+		inputValidator: res => res===""? "Please select a morph ID." : "",
 		showCancelButton: true
 	});
 
@@ -214,7 +216,7 @@ new Hack(category.player, "Morph Player (DEV)", "Morph into a pet, furnishing, o
 	await Toast.fire("Morphed!", "You've been morphed.", "success");
 });
 
-new Hack(category.pets, "Fix Morph Crash").setClick(async () => {
+new Hack(category.player, "Fix Morph Crash").setClick(async () => {
 	_.player.getPlayerData().playerTransformation = undefined;
 	_.player.appearanceChanged = true;
 	_.player.forceSaveCharacter();
