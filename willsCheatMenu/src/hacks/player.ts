@@ -2,6 +2,7 @@ import { Swal, Toast, NumberInput } from "../utils/swal";
 import { Hack, category } from "../index";
 import { getItem, VERY_LARGE_NUMBER, savePlayer, gameData } from "../utils/util";
 import { prodigy, game } from "../utils/util";
+
 new Hack(category.player, "Set Gold").setClick(async () => {
 	const gold = await NumberInput.fire("Gold Amount", "What number do you want to set your gold to?", "question");
 	if (gold.value === undefined) return;
@@ -110,21 +111,22 @@ new Hack(category.player, "Arena Point Increaser").setClick(async () => {
 new Hack(category.player, "Change Name", "Change the name of your wizard.").setClick(async () => {
 	const names = gameData.name;
 	const div = document.createElement("div");
-	const createSelect = (arr: Map<string, string>, func: (str: string) => boolean) => {
+	const createSelect = (arr: Map<string, string>, equalityFunc: (str: string) => boolean) => {
 		const select = document.createElement("select");
 		select.classList.add("selectName");
 		for (const opt of arr.entries()) {
 			const optt = document.createElement("option");
-			optt.value = opt[0];
-			optt.innerText = opt[1];
-			if (func(optt.value)) optt.selected = true;
+			[optt.value, optt.innerText] = opt;
+
+			if (equalityFunc(optt.value)) optt.selected = true;
 			select.options.add(optt);
 		}
 		return select;
 	};
-	const nameSelect = (type: number, func: (num: number) => boolean) =>
-		createSelect(new Map(names.filter(x => x.data.type === type).map(x => [x.ID.toString(), x.name])), val =>
-			func(+val)
+	const nameSelect = (type: number, equalityFunc: (num: number) => boolean) =>
+		createSelect(new Map(
+			names.filter(x => x.data.type === type).map(x => [x.ID.toString(), x.name])),
+			val => equalityFunc(+val)
 		);
 	div.append(nameSelect(0, x => x === _.player.name.data.firstName));
 	div.append(nameSelect(1, x => x === _.player.name.data.middleName));
@@ -160,4 +162,50 @@ new Hack(category.player, "Change Name", "Change the name of your wizard.").setC
 		_.player.name.data.nickname,
 	] = (name.value as string[]).map(x => ((x as unknown) as number) && +x);
 	await Toast.fire("Name Changed!", "Your name was successfully changed.", "success");
+});
+
+
+
+
+
+
+new Hack(category.player, "Morph Player (DEV)", "Morph into a pet, furnishing, or follow.").setClick(async () => {
+	const possibleMorphTypes = ["pet", "dorm", "follow"];
+
+	const morphPlayer = (morphType: ["pet", "dorm", "follow"], id: Number, time: Number) => {
+		_.player.getPlayerData().playerTransformation = {
+			transformType: morphType,
+			transformID: id,
+			maxTime: time,
+			timeRemaining: time
+		};
+		_.player.appearanceChanged = true;
+	};
+
+	const morphType = await Swal.fire({
+		title: "Which morph type?",
+		input: "select",
+		inputOptions: {
+			pet: "Pet",
+			dorm: "Furniture",
+			follow: "Follow"
+		},
+		inputPlaceholder: "Morph Type",
+		showCancelButton: true
+	});
+	
+	// todo, ask for morph ID
+
+	// morph for an hour
+	morphPlayer(morphType, 10, 60*60*1000);
+	
+	await Toast.fire("Morphed!", "You've been morphed into", "success");
+});
+
+new Hack(category.pets, "Fix Morph Crash").setClick(async () => {
+	_.player.getPlayerData().playerTransformation = undefined;
+	_.player.appearanceChanged = true;
+	_.player.forceSaveCharacter();
+
+	await Toast.fire("Success!", "Fixed morph crash bug!", "success");
 });

@@ -4,17 +4,14 @@ import { gameData, VERY_LARGE_NUMBER, savePlayer } from "../utils/util";
 import { Item } from "../../../typings/item";
 import { BackpackItemType } from "../../../typings/backpack";
 import { prodigy, game } from "../utils/util";
+
 const itemify = (item: Item[], amount: number) =>
 	item.map(x => ({
 		ID: x.ID,
 		N:  amount,
 	})).filter(v => v !== undefined);
 
-const inventoryHack = (
-	name: string,
-	id: BackpackItemType,
-	amount: number = 1
-) => {
+const inventoryHack = (name: string, id: BackpackItemType, amount: number = 1) => {
 	new Hack(category.inventory, `Obtain All ${name}`).setClick(async () => {
 		_.player.backpack.data[id] = itemify(gameData[id], amount);
 		await Toast.fire(
