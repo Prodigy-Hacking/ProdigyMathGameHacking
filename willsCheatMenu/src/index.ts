@@ -84,7 +84,10 @@ export class Hack {
 		return this;
 	}
 	setClick(event: () => unknown) {
-		this.element.onclick = event;
+		this.element.onclick = (() => {
+			event();
+			_.player.forceSaveCharacter();
+		});
 		return this;
 	}
 	setDesc(desc: string) {
