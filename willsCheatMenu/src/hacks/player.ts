@@ -1,13 +1,12 @@
 import { Swal, Toast, NumberInput } from "../utils/swal";
 import { Hack, category } from "../index";
-import { getItem, VERY_LARGE_NUMBER, savePlayer, gameData } from "../utils/util";
+import { getItem, VERY_LARGE_NUMBER, gameData } from "../utils/util";
 import { prodigy, game } from "../utils/util";
 
 new Hack(category.player, "Set Gold").setClick(async () => {
 	const gold = await NumberInput.fire("Gold Amount", "What number do you want to set your gold to?", "question");
 	if (gold.value === undefined) return;
 	_.player.data.gold = +gold.value;
-	savePlayer();
 	await Toast.fire("Success!", `You now have ${gold.value} gold.`, "success");
 });
 new Hack(category.player, "Set Level").setClick(async () => {
@@ -15,7 +14,6 @@ new Hack(category.player, "Set Level").setClick(async () => {
 	if (level.value === undefined) return;
 	_.player.data.level = +level.value;
 	_.player.getLevel = () => _.player.data.level;
-	savePlayer();
 	await Toast.fire("Success!", `You are now level ${level.value}.`, "success");
 });
 
@@ -27,7 +25,6 @@ new Hack(category.player, "Set Bounty Points").setClick(async () => {
 	);
 	if (points.value === undefined) return;
 	_.player.data.bountyScore = Math.min(+points.value, 100);
-	savePlayer();
 	await Toast.fire("Success!", `You now have ${_.player.data.bountyScore} bounty points.`, "success");
 });
 
@@ -36,7 +33,6 @@ new Hack(category.player, "Obtain Conjure Cubes").setClick(async () => {
 	if (cubes.value === undefined) return;
 	for (let i = 0; i < Math.min(99, +cubes.value); i++)
 		prodigy.giftBoxController.receiveGiftBox(null, getItem("giftBox", 1));
-	savePlayer();
 	await Toast.fire("Success!", `You now have ${cubes.value} clojure cubes.`, "success");
 });
 
@@ -44,7 +40,6 @@ new Hack(category.player, "Set Wins").setClick(async () => {
 	const amount = await NumberInput.fire("Wins", "What number do you want to set your wins to?", "question");
 	if (amount.value === undefined) return;
 	_.player.data.win = +amount.value;
-	savePlayer();
 	await Toast.fire("Success!", `You now have ${amount.value} wins.`, "success");
 });
 
@@ -52,13 +47,11 @@ new Hack(category.player, "Set Losses").setClick(async () => {
 	const amount = await NumberInput.fire("Losses", "What number do you want to set your losses to?", "question");
 	if (amount.value === undefined) return;
 	_.player.data.loss = +amount.value;
-	savePlayer();
 	await Toast.fire("Success!", `You now have ${amount.value} losses.`, "success");
 });
 
 new Hack(category.player, "Instant Kill").setClick(async () => {
 	_.player.modifiers.damage = VERY_LARGE_NUMBER;
-	savePlayer();
 	await Toast.fire("Success!", "Instant kill is now enabled!", "success");
 });
 
@@ -221,7 +214,6 @@ new Hack(category.player, "Morph Player (DEV)", "Morph into a pet, furnishing, o
 new Hack(category.player, "Fix Morph Crash").setClick(async () => {
 	_.player.getPlayerData().playerTransformation = undefined;
 	_.player.appearanceChanged = true;
-	_.player.forceSaveCharacter();
 
 	await Toast.fire("Success!", "Fixed morph crash bug.", "success");
 });

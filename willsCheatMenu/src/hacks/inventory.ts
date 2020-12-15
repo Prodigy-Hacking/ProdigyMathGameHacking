@@ -1,6 +1,6 @@
 import { Hack, category } from "../index";
 import { Swal, Input, Toast } from "../utils/swal";
-import { gameData, VERY_LARGE_NUMBER, savePlayer } from "../utils/util";
+import { gameData, VERY_LARGE_NUMBER } from "../utils/util";
 import { Item } from "../../../typings/item";
 import { BackpackItemType } from "../../../typings/backpack";
 import { prodigy, game } from "../utils/util";
@@ -19,7 +19,6 @@ const inventoryHack = (name: string, id: BackpackItemType, amount: number = 1) =
 			`All ${name.toLowerCase()} have been added to your inventory!`,
 			"success"
 		);
-		savePlayer();
 	});
 };
 inventoryHack("Boots", "boots");
@@ -42,5 +41,4 @@ new Hack(category.inventory, "Obtain All Furniture").setClick(async () => {
 		_.player.house.data.items[x.ID] = {A: [], N: VERY_LARGE_NUMBER}
 	)
 	await Toast.fire("Furniture Added!", "All furniture have been added to your inventory!", "success");
-	savePlayer();
 });

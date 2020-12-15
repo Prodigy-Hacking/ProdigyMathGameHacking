@@ -58,14 +58,12 @@ new Hack(category.misc, "Bobbify", "Converts your account into Bobby Fancywoman.
 	_.player.equipment.setBoots(19);
 	_.player.equipment.setOutfit(19);
 	_.player.equipment.setWeapon(19);
-	_.player.forceSaveCharacter();
 	await Toast.fire("Bobbified!", "You are now Bobby Fancywoman.", "success");
 });
 
 new Hack(category.misc, "Reset Account","Completely resets your account.").setClick(async () => {
 	if (!(await Confirm.fire("Are you sure you want to reset your account?", "This action is not reversable.")).value) return;
 	_.player.resetAccount();
-	_.player.forceSaveCharacter();
 });
 
 new Hack(category.misc, "OwO","Click it and find out. It doesn't bite.").setClick(async () => {
