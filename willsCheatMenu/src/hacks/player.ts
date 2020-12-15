@@ -170,8 +170,6 @@ new Hack(category.player, "Change Name", "Change the name of your wizard.").setC
 
 
 new Hack(category.player, "Morph Player (DEV)", "Morph into a pet, furnishing, or follow.").setClick(async () => {
-	type possibleMorphTypes = ["pet", "dorm", "follow"];
-
 	const morphType = await Swal.fire({
 		title: "Which morph type?",
 		input: "select",
@@ -181,26 +179,30 @@ new Hack(category.player, "Morph Player (DEV)", "Morph into a pet, furnishing, o
 			follow: "Follow"
 		},
 		inputPlaceholder: "Morph Type",
-		inputValidator: res => res===""? "Please select a morph type." : "",
+		inputValidator: res => res? "" : "Please select a morph type.",
 		showCancelButton: true
 	});
 	
+	if (!morphType?.value) return;
+
 	// swal inputOptions accepts an object, the property being the value it returns, the value being what it displays
 	// kinda weird to explain, just look at how morphType does it
 	// we want it to display a pretty string, and return the petID
 	const petOptions = {};
 	// fuck you typescript, I'll do what I want
 	// @ts-ignore
-	_.gameData["pet"].forEach((pet) => petOptions[pet.ID] = `${pet.name} (${pet.ID})`);
+	_.gameData[morphType].forEach((pet) => petOptions[pet.ID] = `${pet.name} (${pet.ID})`);
 
 	const morphID = await Swal.fire({
 		title: "Which morph?",
 		input: "select",
 		inputOptions: petOptions,
 		inputPlaceholder: "Morph ID",
-		inputValidator: res => res===""? "Please select a morph ID." : "",
+		inputValidator: res => res? "" : "Please select a morph ID.",
 		showCancelButton: true
 	});
+
+	if (!morphID?.value) return;
 
 	// morph for an hour
 	// shut up typescript, I don't need you on my nuts every time I use Swal
