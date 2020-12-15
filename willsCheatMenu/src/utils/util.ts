@@ -11,7 +11,7 @@ export const gameData = game.state.states.Boot._gameData;
 export const getItem = <T extends GameItemKey>(type: T, id: number): Item<T> | null =>
 	(gameData[type].find(x => x.ID === id) as null | Item<any>) ?? null;
 export const VERY_LARGE_NUMBER = 9e9;
-export const savePlayer = () => _.player.forceSaveCharacter();
+
 export const assetURL = "https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/HEAD/willsCheatMenu/src/assets/";
 export const joinAsset = (asset: string) => `${assetURL}${asset}`;
 export const locations = {
