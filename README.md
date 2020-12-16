@@ -1,4 +1,4 @@
-<h1 align="center">We now have dicussions! Check them out <a href='https://github.com/ProdigyHacking/ProdigyMathGameHacking/discussions'>here</a>!</h1>
+<h1 align="center">We now have dicussions! Check them out <a href='https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/discussions'>here</a>!</h1>
 <hr>
 <h1 align="center">	<img
 <img
