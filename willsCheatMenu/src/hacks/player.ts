@@ -181,15 +181,15 @@ new Hack(category.player, "Morph Player (DEV)", "Morph into a pet, furnishing, o
 	// swal inputOptions accepts an object, the property being the value it returns, the value being what it displays
 	// kinda weird to explain, just look at how morphType does it
 	// we want it to display a pretty string, and return the petID
-	const petOptions = {};
+	const morphOptions = {};
 	// fuck you typescript, I'll do what I want
 	// @ts-ignore
-	_.gameData[morphType].forEach((pet) => petOptions[pet.ID] = `${pet.name} (${pet.ID})`);
+	_.gameData[morphType.value].forEach((morph) => morphOptions[morph.ID] = `${morph.name} (${morph.ID})`);
 
 	const morphID = await Swal.fire({
 		title: "Which morph?",
 		input: "select",
-		inputOptions: petOptions,
+		inputOptions: morphOptions,
 		inputPlaceholder: "Morph ID",
 		inputValidator: res => res? "" : "Please select a morph ID.",
 		showCancelButton: true
