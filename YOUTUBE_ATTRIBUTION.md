@@ -1,13 +1,9 @@
-# To make a public video on our hacks, please copy the format below.
+# To make a public video on our hacks, please copy the format below
 
-____________________________________________________________________
+```text
+Hacks belong to and were developed by the Prodigy-Hacking organization - https://github.com/Prodigy-Hacking/ProdigyMathGameHacking
+PMGH Discord - https://discord.gg/XQDfbfq
+PMGH Website - https://prodigyhacking.com
+```
 
-~~~~~~
-Hacks belong to and were developed by the ProdigyMathGameHacking organization - https://github.com/Prodigy-Hacking/ProdigyMathGameHacking
-Official Discord - https://discord.gg/XQDfbfq
-Official YouTube - https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A
-Official Website - https://prodigyhacking.com
-~~~~~~
-
-
-*If you'd like an exception, please contact us and we can discuss details.*
+*If you'd like an exception, please contact us [on Discord](https://discord.gg/XQDfbfq). We're friendly, I promise!*
