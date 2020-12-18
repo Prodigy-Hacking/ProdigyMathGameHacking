@@ -54,23 +54,45 @@
 
 </p>
 
+
+
+
+
 ## Motivation
+
 <details>
 <summary>We're not evil. Everything is open source, forever free, without ads.</summary>
 <br>
-We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy has ignored all of our security reports. Furthermore, they have gone as far as to block a user from their Zendesk support center, simply because they reported hacks. We created this repository to show them the security issues directly.
+We're not trying to break the game because we're super evil. We just wanted to help Prodigy become more secure, but they've ignored our emails and our requests to talk.
 
-This may look like we're trying to ruin the game, but we're improving the security of the game. By constantly finding and reporting hacks, we can help Prodigy
-become more secure! We're hacking the game for the greater good.
-
-If you have any Legal problems, please email legalproblems@support.prodigyhacking.com ANY EMAILS NOT REGARDING LEGAL ISSUES TO THIS ADDRESS WILL NOT BE RESPONDED TO! Please stop sending emails here. If you need email support, email this support@prodigyhacking.com
+So we're just publicly showing hacks! That, and it's also just fun :)
 
 All of our hacks are open source, and free. No paywalls, no ads, and no Patreon. If you really want to support us, you can Nitro boost our Discord server [here](https://discord.gg/XQDfbfq)!
 </details>
 
+
+
+<details>
+<summary>Legal</summary>
+
+If you have any Legal problems, please email legalproblems@support.prodigyhacking.com
+
+ANY EMAILS NOT REGARDING LEGAL ISSUES TO THIS ADDRESS WILL NOT BE RESPONDED TO! Please stop sending emails here.
+
+If you need email support, email support@prodigyhacking.com
+</details>
+
+
+
+
+
 ## Injection Methods
 
-[Local Chrome extension method](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks)
+[Official Browser Extension](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks)
+
+
+
+
 
 ## Disclaimer
 
@@ -87,16 +109,21 @@ All of our hacks are *open-source, and only located under our [Github Organizati
 If it's not an official repository, or a fork, it may not be safe!
 </details>
 
+
+
 <details>
-	<summary>We're not liable for damage.</summary>
-	<br>
-	- All hacks, exploits, or other files hosted here may damage your account if used improperly or excessively. We can't stress enough, do not use *any* of these hacks on your primary account, as you risk your account becoming damaged beyond repair, preventing you from accessing Prodigy Math Game in that account. You have been warned.
+<summary>We're not liable for damage to your account.</summary>
+<br>
+- All hacks, exploits, or other files hosted here may damage your account if used improperly or excessively. We can't stress enough, do not use <i>any</i> of these hacks on your primary account, as you risk your account becoming damaged beyond repair, preventing you from accessing Prodigy Math Game in that account. You have been warned.
+<br>
+- We are not liable for any damages of any kind, as our license states:
 
-	- We are not liable for any damages of any kind, as our license states:
-
-	> Limitation of Liability
-	> Under no circumstances and under no legal theory, whether tort (including negligence), contract, or otherwise, shall any Contributor, or anyone who distributes Covered Software as permitted above, be liable to You for any direct, indirect, special, incidental, or consequential damages of any character including, without limitation, damages for lost profits, loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses, even if such party shall have been informed of the possibility of such damages. This limitation of liability shall not apply to liability for death or personal injury resulting from such party’s negligence to the extent applicable law prohibits such limitation. Some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so this exclusion and limitation may not apply to You.
+> Limitation of Liability
+> Under no circumstances and under no legal theory, whether tort (including negligence), contract, or otherwise, shall any Contributor, or anyone who distributes Covered Software as permitted above, be liable to You for any direct, indirect, special, incidental, or consequential damages of any character including, without limitation, damages for lost profits, loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses, even if such party shall have been informed of the possibility of such damages. This limitation of liability shall not apply to liability for death or personal injury resulting from such party’s negligence to the extent applicable law prohibits such limitation. Some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so this exclusion and limitation may not apply to You.
 </details>
+
+
+
 
 
 ## Collaborators
@@ -107,6 +134,10 @@ If it's not an official repository, or a fork, it may not be safe!
 - [Rus](https://github.com/UntrustableRus)
 - [BoredFish](https://github.com/BoredFishRE)
 - Noot (Anonymous User)
+
+
+
+
 
 ## Retired Collaborators
 
