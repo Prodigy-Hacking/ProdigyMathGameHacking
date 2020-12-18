@@ -1,21 +1,23 @@
-<h1 align="center">We now have dicussions! Check them out <a href='https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/discussions'>here</a>!</h1>
+<h1 align="center"><a href='https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks'>Installation</a></h1>
+
 <hr>
-<h1 align="center">	<img
-<img
-		align="center"
+
+<h1 align="center">
+	<img align="center"
 		width="128"
 		alt="The Lounge"
 		src="https://raw.githubusercontent.com/Prodigy-Hacking/PHEx/master/src/assets/x128.png">
 </h1>
+
 <p align="center">
 	<strong>
 		<a href="https://prodigyhacking.com/">Website</a>
 		•
 		<a href="https://discord.gg/XQDfbfq">Discord</a>
 		•
-		<a href="#injection-methods">Injection Methods</a>
+		<a href="#injection-methods">Installation</a>
 		•
-		<a href="https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A">Youtube Channel</a>
+		<a href="https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A">Youtube</a>
 	</strong>
 </p>
 <p align="center">
@@ -27,7 +29,7 @@
 </a> -->
 
 <a href="https://prodigyhacking.com">
-	<img alt="Website Status" src="https://img.shields.io/website-up-down-green-red/http/prodigyhacking.com">
+	<img alt="Website Status" src="https://img.shields.io/website-up-down-green-red/https/prodigyhacking.com">
 </a>
 
 <a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/issues">
@@ -52,9 +54,10 @@
 
 </p>
 
-
 ## Motivation
-
+<details>
+<summary>We're not evil. Everything is open source, forever free, without ads.</summary>
+<br>
 We are not trying to ruin Prodigy Math Game; we want to fix it. However, Prodigy has ignored all of our security reports. Furthermore, they have gone as far as to block a user from their Zendesk support center, simply because they reported hacks. We created this repository to show them the security issues directly.
 
 This may look like we're trying to ruin the game, but we're improving the security of the game. By constantly finding and reporting hacks, we can help Prodigy
@@ -63,6 +66,7 @@ become more secure! We're hacking the game for the greater good.
 If you have any Legal problems, please email legalproblems@support.prodigyhacking.com ANY EMAILS NOT REGARDING LEGAL ISSUES TO THIS ADDRESS WILL NOT BE RESPONDED TO! Please stop sending emails here. If you need email support, email this support@prodigyhacking.com
 
 All of our hacks are open source, and free. No paywalls, no ads, and no Patreon. If you really want to support us, you can Nitro boost our Discord server [here](https://discord.gg/XQDfbfq)!
+</details>
 
 ## Injection Methods
 
@@ -70,6 +74,9 @@ All of our hacks are open source, and free. No paywalls, no ads, and no Patreon.
 
 ## Disclaimer
 
+<details>
+<summary>Always use an alt to be safe.</summary>
+<br>
 While our hacks are completely safe, ***you shouldn't use hacks on your main account***.
 
 There's an **extremely small chance your account will be hacker-tagged, reset, or banned**. Fortunately, it almost never happens. The only incidents ProdigyMathGameHacking knows of users being banned for hacking were contributors or staff of ProdigyMathGameHacking.
@@ -78,15 +85,18 @@ We will **never** ask you for your password. If somebody asks you for personal/s
 
 All of our hacks are *open-source, and only located under our [Github Organization](https://github.com/Prodigy-Hacking)*.
 If it's not an official repository, or a fork, it may not be safe!
+</details>
 
-Furthermore:
+<details>
+	<summary>We're not liable for damage.</summary>
+	<br>
+	- All hacks, exploits, or other files hosted here may damage your account if used improperly or excessively. We can't stress enough, do not use *any* of these hacks on your primary account, as you risk your account becoming damaged beyond repair, preventing you from accessing Prodigy Math Game in that account. You have been warned.
 
-- All hacks, exploits, or other files hosted here may damage your account if used improperly or excessively. We can't stress enough, do not use *any* of these hacks on your primary account, as you risk your account becoming damaged beyond repair, preventing you from accessing Prodigy Math Game in that account. You have been warned.
+	- We are not liable for any damages of any kind, as our license states:
 
-- We are not liable for any damages of any kind, as our license states:
-
-> Limitation of Liability
-> Under no circumstances and under no legal theory, whether tort (including negligence), contract, or otherwise, shall any Contributor, or anyone who distributes Covered Software as permitted above, be liable to You for any direct, indirect, special, incidental, or consequential damages of any character including, without limitation, damages for lost profits, loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses, even if such party shall have been informed of the possibility of such damages. This limitation of liability shall not apply to liability for death or personal injury resulting from such party’s negligence to the extent applicable law prohibits such limitation. Some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so this exclusion and limitation may not apply to You.
+	> Limitation of Liability
+	> Under no circumstances and under no legal theory, whether tort (including negligence), contract, or otherwise, shall any Contributor, or anyone who distributes Covered Software as permitted above, be liable to You for any direct, indirect, special, incidental, or consequential damages of any character including, without limitation, damages for lost profits, loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses, even if such party shall have been informed of the possibility of such damages. This limitation of liability shall not apply to liability for death or personal injury resulting from such party’s negligence to the extent applicable law prohibits such limitation. Some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so this exclusion and limitation may not apply to You.
+</details>
 
 
 ## Collaborators
