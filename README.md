@@ -5,7 +5,7 @@
 		align="center"
 		width="128"
 		alt="The Lounge"
-		src="https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/browserextension/src/assets/x128.png">
+		src="https://raw.githubusercontent.com/Prodigy-Hacking/PHEx/master/src/assets/x128.png">
 </h1>
 <p align="center">
 	<strong>
