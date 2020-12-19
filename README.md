@@ -99,11 +99,11 @@ If you need email support, email support@prodigyhacking.com
 <details>
 <summary><b>Always use an alt to be safe.</b></summary>
 <br>
-While our hacks are completely safe, ***you shouldn't use hacks on your main account***.
+While our hacks are completely safe, <strong>you shouldn't use hacks on your main account</strong>.
 
-There's an **extremely small chance your account will be hacker-tagged, reset, or banned**. Fortunately, it almost never happens. The only incidents ProdigyMathGameHacking knows of users being banned for hacking were contributors or staff of ProdigyMathGameHacking.
+There's an <b>extremely small chance your account will be hacker-tagged, reset, or banned</b>. Fortunately, it almost never happens. The only incidents ProdigyMathGameHacking knows of users being banned for hacking were contributors or staff of ProdigyMathGameHacking.
 
-We will **never** ask you for your password. If somebody asks you for personal/sensitive information, report it to the staff on our [Discord server](https://discord.gg/XQDfbfq).
+We will <b>never<b/> ask you for your password. If somebody asks you for personal/sensitive information, report it to the staff on our [Discord server](https://discord.gg/XQDfbfq).
 
 All of our hacks are *open-source, and only located under our [Github Organization](https://github.com/Prodigy-Hacking)*.
 If it's not an official repository, or a fork, it may not be safe!
