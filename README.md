@@ -61,7 +61,7 @@
 ## Motivation
 
 <details>
-<summary>We're not evil. Everything is open source, forever free, without ads.</summary>
+<summary><b>We're not evil. Everything is open source, forever free, without ads.</b></summary>
 <br>
 We're not trying to break the game because we're super evil. We just wanted to help Prodigy become more secure, but they've ignored our emails and our requests to talk.
 
@@ -73,7 +73,7 @@ All of our hacks are open source, and free. No paywalls, no ads, and no Patreon.
 
 
 <details>
-<summary>Legal</summary>
+<summary><b>Legal</b></summary>
 
 If you have any Legal problems, please email legalproblems@support.prodigyhacking.com
 
@@ -88,7 +88,7 @@ If you need email support, email support@prodigyhacking.com
 
 ## Injection Methods
 
-[Official Browser Extension](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks)
+**[Official Browser Extension](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks)**
 
 
 
@@ -97,7 +97,7 @@ If you need email support, email support@prodigyhacking.com
 ## Disclaimer
 
 <details>
-<summary>Always use an alt to be safe.</summary>
+<summary><b>Always use an alt to be safe.</b></summary>
 <br>
 While our hacks are completely safe, ***you shouldn't use hacks on your main account***.
 
@@ -112,7 +112,7 @@ If it's not an official repository, or a fork, it may not be safe!
 
 
 <details>
-<summary>We're not liable for damage to your account.</summary>
+<summary><b>We're not liable for damage to your account.</b></summary>
 <br>
 - All hacks, exploits, or other files hosted here may damage your account if used improperly or excessively. We can't stress enough, do not use <i>any</i> of these hacks on your primary account, as you risk your account becoming damaged beyond repair, preventing you from accessing Prodigy Math Game in that account. You have been warned.
 <br>
@@ -145,6 +145,23 @@ If it's not an official repository, or a fork, it may not be safe!
 - [Exoticc](https://github.com/Exoticc)
 - [Rubberduck55](https://github.com/Rubberduck55)
 - [Whimpers](https://github.com/KryptoCrash)
+
+
+
+
+## Important Repos
+
+- [ProdigyMathGameHacking](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking)
+  - Our main repo, used as an issue tracker, things we're working on, documentation, and central hub.
+- [PHEx](https://github.com/Prodigy-Hacking/PHEx)
+  - The Prodigy Hacking Extension, used to inject our modified gamefiles into Prodigy.
+- [Redirector](https://github.com/Prodigy-Hacking/Redirector)
+  - The server side! We can modify the game files to expose APIs, add cheat menus, and disable anti-cheat!
+
+
+
+
+
 
 ----
 ***All hacks and software are licensed under the Mozilla Public License (MPL) V2.0, unless stated otherwise with a separate license. Any violation of the policy of this licence may result in a DMCA takedown.***
