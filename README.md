@@ -51,7 +51,7 @@
 </a>
 
 <a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/pulse">
-	<img src="https://img.shields.io/github/commit-activity/m/Prodigy-Hacking/ProdigyMathGameHacking.svg?style=flat">
+	<img src="https://img.shields.io/github/commit-activity/m/Prodigy-Hacking/ProdigyMathGameHacking">
 </a>
 
 </p>
