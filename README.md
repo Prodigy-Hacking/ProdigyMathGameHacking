@@ -3,10 +3,12 @@
 <hr>
 
 <h1 align="center">
-	<img align="center"
-		width="128"
-		alt="The Lounge"
-		src="https://raw.githubusercontent.com/Prodigy-Hacking/PHEx/master/src/assets/x128.png">
+	<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks">
+		<img align="center"
+			width="128"
+			alt="The Lounge"
+			src="https://raw.githubusercontent.com/Prodigy-Hacking/PHEx/master/src/assets/x128.png">
+	</a>
 </h1>
 
 <p align="center">
@@ -15,7 +17,7 @@
 		•
 		<a href="https://discord.gg/XQDfbfq">Discord</a>
 		•
-		<a href="#injection-methods">Installation</a>
+		<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks">Installation</a>
 		•
 		<a href="https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A">Youtube</a>
 	</strong>
