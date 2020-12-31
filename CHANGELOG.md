@@ -18,8 +18,8 @@
   - On this day, Prodigy added the devtool disabler, which would cause a 404 on devtool open.
 - **Debugger Scope Ages**: `4/12/20 - 4/15/20`
   - On these days, multiple variables were used to obtain the Prodigy's scopes, and access the `instance` objects.
-- **Redirector Ages**: `4/15/20 - CURRENT`
-  - After many days, the Redirector hack was created, which would use a modified version of prodigy's game files. This would not be patched for a very long time. It is still working well.
+- **Redirector Ages**: `4/15/20 - around 10/21/20`
+  - After many days, the Redirector hack was created, which would use a modified version of prodigy's game files. This would not be patched for a very long time. It was suceeded by the extension
 - **Content Security Patch**: `6/10/20`
   - On June 10th, Prodigy added content security headers. This caused the addition of another extension to help with hacks.
 - **`hack.instance.prodigy.player` Patch**: `7/5/20 - 7/5/20`
