@@ -65,9 +65,9 @@
 <details>
 <summary><b>We're not evil. Everything is open source, forever free, without ads.</b></summary>
 <br>
-We're not trying to break the game because we're super evil. We just wanted to help Prodigy become more secure, but they've ignored our emails and our requests to talk.
+We're not trying to break the game because we're evil. We just wanted to help Prodigy become more secure, but they've ignored our emails and our requests to talk.
 
-So we're just publicly showing hacks! That, and it's also just fun :)
+Because of that we're just publicly showing hacks! That, and it's also just fun ;)
 
 All of our hacks are open source, and free. No paywalls, no ads, and no Patreon. If you really want to support us, you can Nitro boost our Discord server [here](https://discord.gg/XQDfbfq)!
 </details>
@@ -99,16 +99,16 @@ If you need email support, email support@prodigyhacking.com
 ## Disclaimer
 
 <details>
-<summary><b>Always use an alt to be safe.</b></summary>
+<summary><b>Always use an alt just to be safe.</b></summary>
 <br>
 While our hacks are completely safe, <strong>you shouldn't use hacks on your main account</strong>.
 
-There's an <b>extremely small chance your account will be hacker-tagged, reset, or banned</b>. Fortunately, it almost never happens. The only incidents ProdigyMathGameHacking knows of users being banned for hacking were contributors or staff of ProdigyMathGameHacking.
+There's an <b>extremely small chance your account will be hacker-tagged, reset, or banned</b>. Luckily, it almost never happens. The only incidents PMGH knows of users being banned for hacking were contributors or staff of PMGH itself.
 
-We will <b>never<b/> ask you for your password. If somebody asks you for personal/sensitive information, report it to the staff on our [Discord server](https://discord.gg/XQDfbfq).
+We will <b>never<b/> ask you for your password. If somebody asks you for personal/sensitive information, report it to the staff on our [Discord server](https://discord.gg/XQDfbfq). (There <b>is<b/> an exception with our arena point website, but still use with caution)
 
-All of our hacks are *open-source, and only located under our [Github Organization](https://github.com/Prodigy-Hacking)*.
-If it's not an official repository, or a fork, it may not be safe!
+All of our hacks are *open-source*, and only located under our [Github Organization](https://github.com/Prodigy-Hacking).
+*If it's not an official repository, or a fork, it may not be safe!*
 </details>
 
 
@@ -128,7 +128,7 @@ If it's not an official repository, or a fork, it may not be safe!
 
 
 
-## Collaborators
+## Current Collaborators
 
 - [PatheticMustan](https://github.com/PatheticMustan)
 - [Arcerion](https://github.com/ArcerionDev)
