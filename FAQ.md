@@ -18,17 +18,13 @@ A: Yes, you can check them out right below.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ## [Script based hacks~](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/tree/master/hacks/Script-Based%20Hacks)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Q: "Can I use custom assets in redirector?"
-A: Yes, you can.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Q: "Can I make my own menu?"
-A: Technically yes, you can make a script to put in your menu that also removes Will's menu and put that into console.
+A: While you *technically* can, you would need to make a script to put in your menu, that <b>also<b/> removes Will's menu, and put that into console.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Q: "Do the hacks save?"
 A: While some do, others dont. Basic things such as levels 1-100 save, while going higher than that isnt meant to happen,
-therefore doesnt save. Basically, it depends.
+therefore doesnt save. Basically; It depends.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Q: "Can I be banned for this?"
@@ -36,7 +32,7 @@ A: Technically, yes. Most likely, no.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Q: "Why do my hacks not save, even the basic ones?"
-A: Just go into a fight and win the battle, or use the force save character hack in wills menu (or down below!)
+A: Just go into a fight and win the battle, or use the force save character hack in console below.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ## [Force save character hack~](https://github.com/ProdigyHacking/ProdigyMathGameHacking/blob/master/hacks/Misc/ForceSaveCharacter.js)
 #### If you have any more questions put a comment on this, create a issue, or ask in the discord server! (Our staff team are also always availible for questions)
