@@ -19,7 +19,7 @@ A: Yes, you can check them out right below.
 ## [Script based hacks~](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/tree/master/hacks/Script-Based%20Hacks)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Q: "Can I make my own menu?"
-A: While you *technically* can, you would need to make a script to put in your menu, that <b>also<b/> removes Will's menu, and put that into console.
+A: While you technically can, you would need to make a script to put in your menu, that also removes Will's menu, and put that into console.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Q: "Do the hacks save?"
