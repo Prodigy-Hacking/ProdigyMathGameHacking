@@ -63,7 +63,7 @@
 ## Motivation
 
 <details>
-<summary><b>We're not evil. Everything is open source, forever free, without ads.</b></summary>
+<summary><b>We aren't evil. Everything is open source, forever free, without ads.</b></summary>
 <br>
 We're not trying to break the game because we're evil. We just wanted to help Prodigy become more secure, but they've ignored our emails and our requests to talk.
 
