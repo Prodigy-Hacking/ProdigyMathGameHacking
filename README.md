@@ -1,4 +1,4 @@
-<h1 align="center"><a href='https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks'>Installation</a></h1>
+<h1 align="center">We now have an Arena Points generator, look <a href="http://93.188.162.82:8080/">here</a>!</h1>
 
 <hr>
 
