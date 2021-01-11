@@ -1,5 +1,5 @@
-<h1 align="center">We now have an Arena Points generator, look <a href="http://93.188.162.82:8080/">here</a>!</h1>
-<h3 align="center">Note: is in beta and won't be online 100% of the time.</h3>
+<h1 align="center"><strike>We now have an Arena Points generator, look <a href="http://93.188.162.82:8080/">here</a>!</strike></h1>
+<h3 align="center">Offline until issues are resolved.</h3>
 
 <hr>
 
