@@ -22,24 +22,18 @@ If for some reason redirector is down, instead of relying on our hosting for mod
 
     You can also download it [here](https://github.com/Prodigy-Hacking/Redirector/archive/master.zip) as a zip file.
 
-3. cd into Redirector.
-
-    ```bash
-    cd Redirector
-    ```
-
-4. Install the needed packages and dependencies.
+3. Install the needed packages and dependencies.
 
     ```bash
     npm install
     ```
 
-5. Run `index` with Node.
+4. Run `index.js` with Node.
 
     ```bash
-    node index
+    node .
     ```
 
-6. Go to the Redirector Plugin > Edit Redirects. Disable `game.min.js`, and `public-game.min.js`. Enable `Localhost game.min.js`, and `Localhost public.game.min.js`.
+5. Go to the Redirector Plugin > Edit Redirects. Disable `game.min.js`, and `public-game.min.js`. Enable `Localhost game.min.js`, and `Localhost public.game.min.js`.
 
-7. Profit! Redirector should now be pulling files from `localhost:1337`.
+6. Profit! Redirector should now be pulling files from `localhost:1337`.
