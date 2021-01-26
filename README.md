@@ -1,5 +1,4 @@
-<h1 align="center"><strike>We now have an Arena Points generator, look <a href="http://93.188.162.82:8080/">here</a>!</strike></h1>
-<h3 align="center">Offline until issues are resolved.</h3>
+<h3 align="center">Hacks are back!</h3>
 
 <hr>
 
