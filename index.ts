@@ -7,29 +7,22 @@ import Discord from "discord.js";
 import cors from "cors";
 
 const app = express();
-const VERSION = "A-2.0.5";
+// should match https://github.com/Prodigy-Hacking/PHEx/blob/master/src/manifest.json
+const SupportPHEXVersion = "2.0.0";
 let lastVersion = "None";
-let lastBuild: number = 0;
-const hook = new Discord.WebhookClient(
-	"700774406963724328",
-	"g3X1Kv3vV8uAeNnHBrBnRM-UzCAfsXCbJ-OzP27aqTnW9tkRc3i9tCbGFL8Of5vbRKOV"
-);
 interface GameStatus {
 	status: string;
 	data?: { gameClientVersion?: string; prodigyGameFlags: { gameDataVersion: number } };
 }
 
 setInterval(async () => {
-	const status: GameStatus = await (await fetch("https://api.prodigygame.com/game-api/status")).json();
-	const version = status?.data?.gameClientVersion;
-	if (lastVersion === "None")
-		return (lastVersion = version!), (lastBuild = status.data!.prodigyGameFlags.gameDataVersion);
-	if (!version || (version === lastVersion && status.data?.prodigyGameFlags.gameDataVersion)) return;
-	await hook.send(
-		`**New Prodigy Version**: Prodigy has updated from \`${lastVersion}\` GDV \`${
-			lastBuild || "N/A"
-		}\` to \`${(lastVersion = version)}\` GDV \`${(lastBuild = status.data!.prodigyGameFlags.gameDataVersion)}\` `
-	);
+	try {
+		const status: GameStatus = await (await fetch("https://api.prodigygame.com/game-api/status")).json();
+		const version = status?.data?.gameClientVersion;
+		if (lastVersion === "None") return (lastVersion = version!);
+
+		// write modified gamefile to disk, in case there's a crash
+	} catch (e) {}
 }, 100000);
 
 app.use(cors());
@@ -47,12 +40,13 @@ app.get("/game.min.js", async (req, res) => {
 		["t.constants=Object", "_.constants=t,t.constants=Object"],
 		["window,function(t){var i={};", "window,function(t){var i={};_.modules=i;"],
 		["this._player=t", "this._player=_.player=t"],
+		["i.prototype.hasMembership=", "i.prototype.hasMembership=_=>true,i.prototype.originalHasMembership="] // membership override
 		// ["this._localizer=null,this.et=[]", "_.chat=this;this._localizer=null,this.et=[]"],
 		// ["return t.BAM=", ";_.variables.loc=Ar;_.variables.menuTxt=Kr;_.variables.menuObj=t;return t.BAM="],
 	];
 	return res.send(
 		replacements.reduce(
-			(l, c) => l.split(c[0]).join(c[1]),
+			(code, replacement) => code.split(replacement[0]).join(replacement[1]),
 			`nootmeat = func => {
 				let elephant = 2
 			}
@@ -63,7 +57,7 @@ app.get("/game.min.js", async (req, res) => {
 			${transpile(fs.readFileSync(path.join(__dirname, "./revival.ts"), { encoding: "utf8" }))}
 
 			console.log("%cWill's Redirect Hack", "font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;");
-			console.log("%cVersion ${VERSION}", "font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;");
+			console.log("%cVersion ${SupportPHEXVersion}", "font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;");
 			console.log('The variable "_" contains the hacked variables.');
 			SW.Load.onGameLoad();
 			setTimeout(() => {
@@ -102,23 +96,11 @@ app.get("/public-game.min.js", async (req, res) => {
 	`);
 });
 app.get("/download", async (req, res) => {
-	const file = await (
-		await fetch(
-			"https://raw.githubusercontent.com/Prodigy-Hacking/Redirector/master/Redirector.json"
-		)
-	).text();
-	res.type(".json");
-	res.header("Content-Disposition", 'attachment; filename="Redirector.json"');
-	return res.send(file);
+	return res.redirect("https://github.com/Prodigy-Hacking/PHEx/raw/master/build/extension.zip");
 });
 app.get("/version", async (req, res) => {
-	const file = await (
-		await fetch(
-			"https://raw.githubusercontent.com/Prodigy-Hacking/Redirector/master/Redirector.json"
-		)
-	).text();
-	res.type(".json");
-	res.header("Content-Disposition", 'attachment; filename="Redirector.json"');
-	return res.send(file);
+	return res.send(SupportPHEXVersion);
 });
-app.listen(process.env.PORT ?? 1337, () => console.log("Started!"));
+
+const port = process.env.PORT ?? 1337;
+app.listen(port, () => console.log(`The old machine hums along on port :${port}`));
