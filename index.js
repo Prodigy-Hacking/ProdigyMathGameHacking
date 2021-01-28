@@ -45,31 +45,30 @@ var node_fetch_1 = __importDefault(require("node-fetch"));
 var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
 var typescript_1 = require("typescript");
-var discord_js_1 = __importDefault(require("discord.js"));
 var cors_1 = __importDefault(require("cors"));
 var app = express_1.default();
-var VERSION = "A-2.0.5";
+// should match https://github.com/Prodigy-Hacking/PHEx/blob/master/src/manifest.json
+var SupportPHEXVersion = "2.0.0";
 var lastVersion = "None";
-var lastBuild = 0;
-var hook = new discord_js_1.default.WebhookClient("700774406963724328", "g3X1Kv3vV8uAeNnHBrBnRM-UzCAfsXCbJ-OzP27aqTnW9tkRc3i9tCbGFL8Of5vbRKOV");
 setInterval(function () { return __awaiter(void 0, void 0, void 0, function () {
-    var status, version;
-    var _a, _b;
-    return __generator(this, function (_c) {
-        switch (_c.label) {
-            case 0: return [4 /*yield*/, node_fetch_1.default("https://api.prodigygame.com/game-api/status")];
-            case 1: return [4 /*yield*/, (_c.sent()).json()];
+    var status_1, version, e_1;
+    var _a;
+    return __generator(this, function (_b) {
+        switch (_b.label) {
+            case 0:
+                _b.trys.push([0, 3, , 4]);
+                return [4 /*yield*/, node_fetch_1.default("https://api.prodigygame.com/game-api/status")];
+            case 1: return [4 /*yield*/, (_b.sent()).json()];
             case 2:
-                status = _c.sent();
-                version = (_a = status === null || status === void 0 ? void 0 : status.data) === null || _a === void 0 ? void 0 : _a.gameClientVersion;
+                status_1 = _b.sent();
+                version = (_a = status_1 === null || status_1 === void 0 ? void 0 : status_1.data) === null || _a === void 0 ? void 0 : _a.gameClientVersion;
                 if (lastVersion === "None")
-                    return [2 /*return*/, ((lastVersion = version), (lastBuild = status.data.prodigyGameFlags.gameDataVersion))];
-                if (!version || (version === lastVersion && ((_b = status.data) === null || _b === void 0 ? void 0 : _b.prodigyGameFlags.gameDataVersion)))
-                    return [2 /*return*/];
-                return [4 /*yield*/, hook.send("**New Prodigy Version**: Prodigy has updated from `" + lastVersion + "` GDV `" + (lastBuild || "N/A") + "` to `" + (lastVersion = version) + "` GDV `" + (lastBuild = status.data.prodigyGameFlags.gameDataVersion) + "` ")];
+                    return [2 /*return*/, (lastVersion = version)];
+                return [3 /*break*/, 4];
             case 3:
-                _c.sent();
-                return [2 /*return*/];
+                e_1 = _b.sent();
+                return [3 /*break*/, 4];
+            case 4: return [2 /*return*/];
         }
     });
 }); }, 100000);
@@ -96,11 +95,14 @@ app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, v
                     ["t.constants=Object", "_.constants=t,t.constants=Object"],
                     ["window,function(t){var i={};", "window,function(t){var i={};_.modules=i;"],
                     ["this._player=t", "this._player=_.player=t"],
+                    ["i.prototype.hasMembership=", "i.prototype.hasMembership=_=>true,i.prototype.originalHasMembership="] // membership override
+                    // ["this._localizer=null,this.et=[]", "_.chat=this;this._localizer=null,this.et=[]"],
+                    // ["return t.BAM=", ";_.variables.loc=Ar;_.variables.menuTxt=Kr;_.variables.menuObj=t;return t.BAM="],
                 ];
                 _b = (_a = res).send;
                 _d = (_c = replacements).reduce;
-                _e = [function (l, c) { return l.split(c[0]).join(c[1]); }];
-                _f = "nootmeat = func => {\n\t\t\t\tlet elephant = 2\n\t\t\t}\n\t\t\texports = {};_.variables=Object.create(null);\n\t\n\t\t\t" + gameMinJS + "\n\n\t\t\t" + typescript_1.transpile(fs_1.default.readFileSync(path_1.default.join(__dirname, "./revival.ts"), { encoding: "utf8" })) + "\n\n\t\t\tconsole.log(\"%cWill's Redirect Hack\", \"font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;\");\n\t\t\tconsole.log(\"%cVersion " + VERSION + "\", \"font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;\");\n\t\t\tconsole.log('The variable \"_\" contains the hacked variables.');\n\t\t\tSW.Load.onGameLoad();\n\t\t\tsetTimeout(() => {\n\t\t\t\t";
+                _e = [function (code, replacement) { return code.split(replacement[0]).join(replacement[1]); }];
+                _f = "nootmeat = func => {\n\t\t\t\tlet elephant = 2\n\t\t\t}\n\t\t\texports = {};_.variables=Object.create(null);\n\t\n\t\t\t" + gameMinJS + "\n\n\t\t\t" + typescript_1.transpile(fs_1.default.readFileSync(path_1.default.join(__dirname, "./revival.ts"), { encoding: "utf8" })) + "\n\n\t\t\tconsole.log(\"%cWill's Redirect Hack\", \"font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;\");\n\t\t\tconsole.log(\"%cVersion " + SupportPHEXVersion + "\", \"font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;\");\n\t\t\tconsole.log('The variable \"_\" contains the hacked variables.');\n\t\t\tSW.Load.onGameLoad();\n\t\t\tsetTimeout(() => {\n\t\t\t\t";
                 return [4 /*yield*/, node_fetch_1.default("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/willsCheatMenu/loader.js")];
             case 5: return [4 /*yield*/, (_h.sent()).text()];
             case 6: return [2 /*return*/, _b.apply(_a, [_d.apply(_c, _e.concat([_f + (_h.sent()) + "\n\t\t\t}, 10000);\n\t\t"]))])];
@@ -125,31 +127,14 @@ app.get("/public-game.min.js", function (req, res) { return __awaiter(void 0, vo
     });
 }); });
 app.get("/download", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
-    var file;
     return __generator(this, function (_a) {
-        switch (_a.label) {
-            case 0: return [4 /*yield*/, node_fetch_1.default("https://raw.githubusercontent.com/Prodigy-Hacking/Redirector/master/Redirector.json")];
-            case 1: return [4 /*yield*/, (_a.sent()).text()];
-            case 2:
-                file = _a.sent();
-                res.type(".json");
-                res.header("Content-Disposition", 'attachment; filename="Redirector.json"');
-                return [2 /*return*/, res.send(file)];
-        }
+        return [2 /*return*/, res.redirect("https://github.com/Prodigy-Hacking/PHEx/raw/master/build/extension.zip")];
     });
 }); });
 app.get("/version", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
-    var file;
     return __generator(this, function (_a) {
-        switch (_a.label) {
-            case 0: return [4 /*yield*/, node_fetch_1.default("https://raw.githubusercontent.com/Prodigy-Hacking/Redirector/master/Redirector.json")];
-            case 1: return [4 /*yield*/, (_a.sent()).text()];
-            case 2:
-                file = _a.sent();
-                res.type(".json");
-                res.header("Content-Disposition", 'attachment; filename="Redirector.json"');
-                return [2 /*return*/, res.send(file)];
-        }
+        return [2 /*return*/, res.send(SupportPHEXVersion)];
     });
 }); });
-app.listen((_a = process.env.PORT) !== null && _a !== void 0 ? _a : 1337, function () { return console.log("Started!"); });
+var port = (_a = process.env.PORT) !== null && _a !== void 0 ? _a : 1337;
+app.listen(port, function () { return console.log("The old machine hums along on port :" + port); });
