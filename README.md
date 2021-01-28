@@ -1,4 +1,4 @@
-<h3 align="center">Hacks are back!</h3>
+<h1 align="center">Update your Chrome extension to v2.0.0!</h1>
 
 <hr>
 
