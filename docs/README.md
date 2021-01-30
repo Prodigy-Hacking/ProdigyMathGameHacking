@@ -1,8 +1,6 @@
 # ProdigyMathGameHacking
 
 ## Collaborators
-
--   [PatheticMustan](https://github.com/PatheticMustan)
 - [PatheticMustan](https://github.com/PatheticMustan)
 - [Arcerion](https://github.com/ArcerionDev)
 - [Yama](https://github.com/YamaHacks)
