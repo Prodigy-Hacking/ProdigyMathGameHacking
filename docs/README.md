@@ -1,14 +1,12 @@
 # ProdigyMathGameHacking
 
 ## Collaborators
-
--   [PatheticMustan](https://github.com/PatheticMustan)
--   [Avn1114](https://github.com/Avn1114)
--   [Exoticc](https://github.com/Exoticc)
--   [RubberDuck55](https://github.com/RubberDuck55)
--   [TNThacker2015 (will)](https://github.com/TNThacker2015)
--   [YamaHacks](https://github.com/YamaHacks)
--   [DaChickenKing](https://github.com/DaChickenKing)
+- [PatheticMustan](https://github.com/PatheticMustan)
+- [Arcerion](https://github.com/ArcerionDev)
+- [Yama](https://github.com/YamaHacks)
+- [Rus](https://github.com/UntrustableRus)
+- [BoredFish](https://github.com/BoredFishRE)
+- Noot (Anonymous User)
 
 # Hacking Prodigy Math Game
 
