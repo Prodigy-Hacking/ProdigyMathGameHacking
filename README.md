@@ -77,11 +77,8 @@ All of our hacks are open source, and free. No paywalls, no ads, and no Patreon.
 <details>
 <summary><b>Legal</b></summary>
 
-If you have any Legal problems, please email legalproblems@support.prodigyhacking.com
+If you have any Legal problems, please email support@prodigyhacking.com
 
-ANY EMAILS NOT REGARDING LEGAL ISSUES TO THIS ADDRESS WILL NOT BE RESPONDED TO! Please stop sending emails here.
-
-If you need email support, email support@prodigyhacking.com
 </details>
 
 
