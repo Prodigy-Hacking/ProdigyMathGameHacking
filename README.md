@@ -1,4 +1,4 @@
-<h1 align="center">Update your Chrome extension to v2.0.0!</h1>
+<h1 align="center">We're looking for coders to contribute and help fix hacks! Join the Discord if you're interested!</h1>
 
 <hr>
 
