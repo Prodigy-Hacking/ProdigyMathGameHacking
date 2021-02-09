@@ -101,6 +101,10 @@ app.get("/download", async (req, res) => {
 app.get("/version", async (req, res) => {
 	return res.send(SupportPHEXVersion);
 });
+app.get("/status", async (req, res) => {
+	res.type(".json");
+	return res.sendFile(__dirname + "/status.json");
+});
 
 const port = process.env.PORT ?? 1337;
 app.listen(port, () => console.log(`The old machine hums along on port :${port}`));

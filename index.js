@@ -136,5 +136,11 @@ app.get("/version", function (req, res) { return __awaiter(void 0, void 0, void 
         return [2 /*return*/, res.send(SupportPHEXVersion)];
     });
 }); });
+app.get("/status", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+    return __generator(this, function (_a) {
+        res.type(".json");
+        return [2 /*return*/, res.sendFile(__dirname + "/status.json")];
+    });
+}); });
 var port = (_a = process.env.PORT) !== null && _a !== void 0 ? _a : 1337;
 app.listen(port, function () { return console.log("The old machine hums along on port :" + port); });
