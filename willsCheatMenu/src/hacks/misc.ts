@@ -36,6 +36,12 @@ new Toggler(category.misc, "Clothing Vibe").setEnabled(async () => {
 	if (viber) clearInterval(viber);
 });
 
+new Toggler(category.misc, "Disable Monster Encounters").setEnabled(async () => {
+	_.constants.constants["GameConstants.Debug.SCALE_ENCOUNTER_DISTANCE"] = 0;
+}).setDisabled(() => {
+	_.constants.constants["GameConstants.Debug.SCALE_ENCOUNTER_DISTANCE"] = 1;
+});
+
 new Hack(category.misc, "Bobbify", "Converts your account into Bobby Fancywoman.").setClick(async () => {
 	if (!(
 		await Confirm.fire("Are you sure you want your account to be turned into Bobby Fancywoman?", "This action is not reversable.")
