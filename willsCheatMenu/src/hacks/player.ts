@@ -43,7 +43,7 @@ new Hack(category.player, "Obtain Conjure Cubes").setClick(async () => {
 	if (cubes.value === undefined) return;
 	for (let i = 0; i < Math.min(99, +cubes.value); i++)
 		prodigy.giftBoxController.receiveGiftBox(null, getItem("giftBox", 1));
-	await Toast.fire("Success!", `You now have ${cubes.value} clojure cubes.`, "success");
+	await Toast.fire("Success!", `You now have ${cubes.value} conjure cubes.`, "success");
 });
 
 new Hack(category.player, "Set Wins").setClick(async () => {
