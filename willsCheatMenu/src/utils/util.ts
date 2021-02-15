@@ -26,9 +26,10 @@ export const locations = {
 	darktower: joinAsset("darktower.png"),
 	earthtower: joinAsset("earthtower.png"),
 	crystal_caverns: joinAsset("crystal_caverns.png"),
-	archives: joinAsset("archives.png")
-
-
-
+	archives: joinAsset("archives.png"),
+	house: joinAsset("house.png"),
+	toyzone: joinAsset("toyzone.png"),
+	tower_town: joinAsset("tower_town.png"),
+	lamplight: joinAsset("lamplight.png")
 };
 export const pickRandom = <T>(arr: T[]): T => arr[Math.floor(Math.random() * arr.length)];
