@@ -21,5 +21,6 @@ export const locations = {
 	shipwreck_shore: joinAsset("shipwreck_shore.png"),
 	shiverchill: joinAsset("shiverchill.png"),
 	skywatch: joinAsset("skywatch.png"),
+	dyno: joinAsset("dyno.png")
 };
 export const pickRandom = <T>(arr: T[]): T => arr[Math.floor(Math.random() * arr.length)];
