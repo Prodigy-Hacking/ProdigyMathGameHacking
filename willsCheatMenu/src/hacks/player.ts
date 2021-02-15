@@ -50,14 +50,14 @@ new Hack(category.player, "Set Wins").setClick(async () => {
 	const amount = await NumberInput.fire("Wins", "What number do you want to set your wins to?", "question");
 	if (amount.value === undefined) return;
 	_.player.data.win = +amount.value;
-	await Toast.fire("Success!", `You have gained ${amount.value} win${amount.value != 1 ? 's':''}.`, "success");
+	await Toast.fire("Success!", `You have set your win${amount.value != 1 ? 's':''} to ${amount.value}.`, "success");
 });
 
 new Hack(category.player, "Set Losses").setClick(async () => {
 	const amount = await NumberInput.fire("Losses", "What number do you want to set your losses to?", "question");
 	if (amount.value === undefined) return;
 	_.player.data.loss = +amount.value;
-	await Toast.fire("Success!", `You have gained ${amount.value} loss${amount.value != 1 ? 'es':''}.`, "success");
+	await Toast.fire("Success!", `You have set your loss${amount.value != 1 ? 'es':''} to ${amount.value}.`, "success");
 });
 
 new Hack(category.player, "Instant Kill").setClick(async () => {
