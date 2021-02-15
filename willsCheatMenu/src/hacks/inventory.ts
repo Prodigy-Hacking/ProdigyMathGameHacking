@@ -1,5 +1,5 @@
 import { Hack, category } from "../index";
-import { Swal, Input, Toast } from "../utils/swal";
+import { Swal, Input, Toast, Confirm } from "../utils/swal";
 import { gameData, VERY_LARGE_NUMBER } from "../utils/util";
 import { Item } from "../../../typings/item";
 import { BackpackItemType } from "../../../typings/backpack";
@@ -13,6 +13,7 @@ const itemify = (item: Item[], amount: number) =>
 
 const inventoryHack = (name: string, id: BackpackItemType, amount: number = 1) => {
 	new Hack(category.inventory, `Obtain All ${name}`).setClick(async () => {
+		if (!(await Confirm.fire(`Are you sure you want to get all ${name}?`)).value) return;
 		_.player.backpack.data[id] = itemify(gameData[id], amount);
 		await Toast.fire(
 			`${name} Added!`,
@@ -37,6 +38,7 @@ inventoryHack("Weapons", "weapon");
 inventoryHack("Currency", "currency", VERY_LARGE_NUMBER);
 
 new Hack(category.inventory, "Obtain All Furniture").setClick(async () => {
+	if (!(await Confirm.fire("Are you sure you want to get all furniture?")).value) return;
 	gameData.dorm.forEach(x =>
 		_.player.house.data.items[x.ID] = {A: [], N: VERY_LARGE_NUMBER}
 	)
