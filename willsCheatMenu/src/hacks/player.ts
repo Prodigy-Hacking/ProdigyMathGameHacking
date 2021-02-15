@@ -35,7 +35,7 @@ new Hack(category.player, "Set Bounty Points").setClick(async () => {
 	);
 	if (points.value === undefined) return;
 	_.player.data.bountyScore = Math.min(+points.value, 100);
-	await Toast.fire("Success!", `You now have ${_.player.data.bountyScore} bounty points.`, "success");
+	await Toast.fire("Success!", `You now have ${_.player.data.bountyScore} bounty point${_.player.data.bountyScore != 1 ? 's':''}.`, "success");
 });
 
 new Hack(category.player, "Obtain Conjure Cubes").setClick(async () => {
@@ -43,21 +43,21 @@ new Hack(category.player, "Obtain Conjure Cubes").setClick(async () => {
 	if (cubes.value === undefined) return;
 	for (let i = 0; i < Math.min(99, +cubes.value); i++)
 		prodigy.giftBoxController.receiveGiftBox(null, getItem("giftBox", 1));
-	await Toast.fire("Success!", `You now have ${cubes.value} conjure cubes.`, "success");
+	await Toast.fire("Success!", `You have gained ${cubes.value} conjure cube${cubes.value != 1 ? 's':''}.`, "success");
 });
 
 new Hack(category.player, "Set Wins").setClick(async () => {
 	const amount = await NumberInput.fire("Wins", "What number do you want to set your wins to?", "question");
 	if (amount.value === undefined) return;
 	_.player.data.win = +amount.value;
-	await Toast.fire("Success!", `You now have ${amount.value} wins.`, "success");
+	await Toast.fire("Success!", `You have gained ${amount.value} win${amount.value != 1 ? 's':''}.`, "success");
 });
 
 new Hack(category.player, "Set Losses").setClick(async () => {
 	const amount = await NumberInput.fire("Losses", "What number do you want to set your losses to?", "question");
 	if (amount.value === undefined) return;
 	_.player.data.loss = +amount.value;
-	await Toast.fire("Success!", `You now have ${amount.value} losses.`, "success");
+	await Toast.fire("Success!", `You have gained ${amount.value} loss${amount.value != 1 ? 'es':''}.`, "success");
 });
 
 new Hack(category.player, "Instant Kill").setClick(async () => {
