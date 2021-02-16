@@ -59,6 +59,7 @@ new Hack(category.inventory, "Selector (Advanced)",'Choose a specific object and
 		inputValidator: (res: any) => res ? "" : "Please select which you'd like to obtain.",
 		showCancelButton: true
 	}).then(async val => {
+		if(!_.gameData[ids[val.value]]) return;
 		let objs : [] = []
 		// @ts-ignore
 		_.gameData[ids[val.value]].forEach(elem => {objs.push(elem.data.name)})
@@ -72,6 +73,7 @@ new Hack(category.inventory, "Selector (Advanced)",'Choose a specific object and
 			showCancelButton: true
 		}).then(async spec => {
 			let correct = parseInt(spec.value) + 1
+			if(!correct) return;
 			let amt = await NumberInput.fire("Amount", `How many of the object would you like?`, "question");
 			if(!amt) return;
 			if (val.value === 14) {
