@@ -204,17 +204,15 @@ new Hack(category.player, "Morph Player (DEV)", "Morph into a pet, furnishing, o
 		inputValidator: res => res? "" : "Please select a morph ID.",
 		showCancelButton: true
 	});
-
+	
 	if (!morphID?.value) return;
-
-	// morph for an hour
 	// shut up typescript, I don't need you on my nuts every time I use Swal
 	// typescript makes me cry
 	_.player.getPlayerData().playerTransformation = {
 		transformType: morphType.value,
 		transformID: morphID.value,
-		maxTime: 60*60*1000,
-		timeRemaining: 60*60*1000
+		maxTime: VERY_LARGE_NUMBER*60*60*1000,
+		timeRemaining: VERY_LARGE_NUMBER*60*60*1000
 	};
 	_.player.appearanceChanged = true;
 	
