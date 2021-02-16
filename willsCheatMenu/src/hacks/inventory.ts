@@ -87,7 +87,7 @@ new Hack(category.inventory, "Selector (Advanced)",'Choose a specific object and
 					N: amt,
 					
 				})
-				await Toast.fire(`${names[val.value]} Added!`, `Your selected ${names[val.value].toLowerCase} have been added.`, "success");
+				await Toast.fire(`${names[val.value]} Added!`, `Your selected ${names[val.value].toLowerCase()} have been added.`, "success");
 				_.player.forceSaveCharacter()
 			}
 		})
