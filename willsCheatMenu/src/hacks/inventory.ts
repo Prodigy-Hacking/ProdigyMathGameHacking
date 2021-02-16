@@ -8,10 +8,47 @@ import { prodigy, game } from "../utils/util";
 const itemify = (item: Item[], amount: number) =>
 	item.map(x => ({
 		ID: x.ID,
-		N:  amount,
+		N: amount,
 	})).filter(v => v !== undefined);
 
-const inventoryHack = (name: string, id: BackpackItemType, amount: number = 1) => {
+// typescript is picky af
+
+// sorry for spamming ts-ignore
+
+new Hack(category.inventory, "Selector").setClick(async () => {
+	const names = ['Boots', 'Buddies', 'Fossils', 'Hats', 'Items', 'Key Items', 'Tower Town Frames', 'Tower Town Interiors', 'Mounts', 'Outfits', 'Relics', 'Spell Relics', 'Weapons', 'Currencies', 'Furniture']
+	const ids = ['boots', 'follow', 'fossil', 'hat', 'item', 'key', 'mathTownFrame', 'mathTownInterior', 'mount', 'outfit', 'relic', 'spellRelic', 'weapon', 'currency']
+	// @ts-ignore
+	let val = await Swal.fire({
+		title: "What would you like to obtain?",
+		input: "select",
+		inputOptions: names,
+		inputPlaceholder: "Select...",
+		inputValidator: (res: any) => res ? "" : "Please select which you'd like to obtain.",
+		showCancelButton: true
+	}).then(async val => {
+		const num = parseInt(val.value)
+		const name = names[num]
+		if (!(await Confirm.fire(`Are you sure you want to get all ${name}?`)).value) return;
+		if (num === 14) {
+			gameData.dorm.forEach(x =>
+				_.player.house.data.items[x.ID] = { A: [], N: VERY_LARGE_NUMBER }
+			)
+			await Toast.fire("Furniture Added!", "All furniture have been added to your inventory!", "success");
+		} else {
+			// @ts-ignore
+			_.player.backpack.data[id] = itemify(gameData[id], VERY_LARGE_NUMBER);
+			await Toast.fire(
+				`${name} Added!`,
+				`All ${name.toLowerCase()} have been added to your inventory!`,
+				"success"
+			);
+		}
+	})
+});
+
+/*
+	const inventoryHack = (name: string, id: BackpackItemType, amount: number = 1) => {
 	new Hack(category.inventory, `Obtain All ${name}`).setClick(async () => {
 		if (!(await Confirm.fire(`Are you sure you want to get all ${name}?`)).value) return;
 		_.player.backpack.data[id] = itemify(gameData[id], amount);
@@ -39,8 +76,10 @@ inventoryHack("Currency", "currency", VERY_LARGE_NUMBER);
 
 new Hack(category.inventory, "Obtain All Furniture").setClick(async () => {
 	if (!(await Confirm.fire("Are you sure you want to get all furniture?")).value) return;
-	gameData.dorm.forEach(x =>
-		_.player.house.data.items[x.ID] = {A: [], N: VERY_LARGE_NUMBER}
-	)
-	await Toast.fire("Furniture Added!", "All furniture have been added to your inventory!", "success");
-});
+		gameData.dorm.forEach(x =>
+			_.player.house.data.items[x.ID] = {A: [], N: VERY_LARGE_NUMBER}
+		)
+		await Toast.fire("Furniture Added!", "All furniture have been added to your inventory!", "success");
+
+	});
+*/
