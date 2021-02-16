@@ -49,7 +49,7 @@ new Hack(category.inventory, "Selector (Basic)").setClick(async () => {
 		}
 	})
 });
-new Hack(category.inventory, "Selector (Advanced)",'Choose a specific object and quantity to obtain.').setClick(async () => {
+new Hack(category.inventory, "Selector (Advanced) [IN DEVELOPMENT]",'Choose a specific object and quantity to obtain.').setClick(async () => {
 	// @ts-ignore
 	let val = await Swal.fire({
 		title: "What would you like to obtain?",
