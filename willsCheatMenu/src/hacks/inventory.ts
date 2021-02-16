@@ -1,10 +1,11 @@
 import { Hack, category } from "../index";
-import { Swal, Input, Toast, Confirm } from "../utils/swal";
+import { Swal, Input, Toast, Confirm, NumberInput } from "../utils/swal";
 import { gameData, VERY_LARGE_NUMBER } from "../utils/util";
 import { Item } from "../../../typings/item";
 import { BackpackItemType } from "../../../typings/backpack";
 import { prodigy, game } from "../utils/util";
-
+const names = ['Boots', 'Buddies', 'Fossils', 'Hats', 'Items', 'Key Items', 'Tower Town Frames', 'Tower Town Interiors', 'Mounts', 'Outfits', 'Relics', 'Spell Relics', 'Weapons', 'Currencies', 'Furniture']
+const ids = ['boots', 'follow', 'fossil', 'hat', 'item', 'key', 'mathTownFrame', 'mathTownInterior', 'mount', 'outfit', 'relic', 'spellRelic', 'weapon', 'currency','dorm']
 const itemify = (item: Item[], amount: number) =>
 	item.map(x => ({
 		ID: x.ID,
@@ -15,9 +16,7 @@ const itemify = (item: Item[], amount: number) =>
 
 // sorry for spamming ts-ignore
 
-new Hack(category.inventory, "Selector").setClick(async () => {
-	const names = ['Boots', 'Buddies', 'Fossils', 'Hats', 'Items', 'Key Items', 'Tower Town Frames', 'Tower Town Interiors', 'Mounts', 'Outfits', 'Relics', 'Spell Relics', 'Weapons', 'Currencies', 'Furniture']
-	const ids = ['boots', 'follow', 'fossil', 'hat', 'item', 'key', 'mathTownFrame', 'mathTownInterior', 'mount', 'outfit', 'relic', 'spellRelic', 'weapon', 'currency']
+new Hack(category.inventory, "Selector (Basic)").setClick(async () => {
 	// @ts-ignore
 	let val = await Swal.fire({
 		title: "What would you like to obtain?",
@@ -48,7 +47,46 @@ new Hack(category.inventory, "Selector").setClick(async () => {
 		}
 	})
 });
-
+new Hack(category.inventory, "Selector (Advanced)",'Choose a specific object and quantity to obtain.').setClick(async () => {
+	// @ts-ignore
+	let val = await Swal.fire({
+		title: "What would you like to obtain?",
+		input: "select",
+		inputOptions: names,
+		inputPlaceholder: "Select...",
+		inputValidator: (res: any) => res ? "" : "Please select which you'd like to obtain.",
+		showCancelButton: true
+	}).then(async val => {
+		let objs : [] = []
+		// @ts-ignore
+		_.gameData[ids[val.value]].forEach(elem => {objs.push(elem.data.name)})
+		// @ts-ignore
+		let spec = await Swal.fire({
+			title: `What specific object categorized as ${names[val.value].toLowerCase()} would you like to get?`,
+			input: "select",
+			inputOptions: objs,
+			inputPlaceholder: "Select...",
+			inputValidator: (res: any) => res ? "" : "Please select which you'd like to get.",
+			showCancelButton: true
+		}).then(async spec => {
+			let correct = parseInt(spec.value) + 1
+			let amt = await NumberInput.fire("Amount", `How many of the object would you like?`, "question");
+			if(!amt) return;
+			if (val.value === 14) {
+				_.player.house.data.items[correct] = { A: [], N: amt}
+				await Toast.fire("Furniture Added!", "Your selected furniture has been added.", "success");
+			}else{
+				// @ts-ignore
+				_.player.backpack.data[ids[val.value]].push({
+					ID: correct,
+					N: amt,
+					
+				})
+				await Toast.fire(`${names[val.value]} Added!`, `Your selected ${names[val.value]} has been added.", "success`);
+			}
+		})
+	})
+})
 /*
 	const inventoryHack = (name: string, id: BackpackItemType, amount: number = 1) => {
 	new Hack(category.inventory, `Obtain All ${name}`).setClick(async () => {
