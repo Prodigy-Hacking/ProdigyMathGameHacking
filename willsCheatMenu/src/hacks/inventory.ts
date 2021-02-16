@@ -1,5 +1,5 @@
 import { Hack, category } from "../index";
-import { Swal, Input, Toast, Confirm, NumberInput } from "../utils/swal";
+import { Swal, Input, Toast, Confirm } from "../utils/swal";
 import { gameData, VERY_LARGE_NUMBER } from "../utils/util";
 import { Item } from "../../../typings/item";
 import { BackpackItemType } from "../../../typings/backpack";
@@ -31,23 +31,15 @@ new Hack(category.inventory, "Selector").setClick(async () => {
 		const name = names[num]
 		const id = ids[num]
 		if(!name) return;
-		//@ts-ignore
-		let amount = await NumberInput.fire({
-		title: "Amount",
-		description: "Select the amount that you'd like of this object.",
-		inputValidator: (res: any) => res ? "" : "Please enter a value.",
-		showCancelButton: true
-		});
-		if(!amount.value) return;
 		if (!(await Confirm.fire(`Are you sure you want to get all ${name.toLowerCase()}?`)).value) return;
 		if (num === 14) {
 			gameData.dorm.forEach(x =>
-				_.player.house.data.items[x.ID] = { A: [], N: amount.value }
+				_.player.house.data.items[x.ID] = { A: [], N: VERY_LARGE_NUMBER }
 			)
 			await Toast.fire("Furniture Added!", "All furniture have been added to your inventory!", "success");
 		} else {
 			// @ts-ignore
-			_.player.backpack.data[id] = itemify(gameData[id], amount.value);
+			_.player.backpack.data[id] = itemify(gameData[id], VERY_LARGE_NUMBER);
 			await Toast.fire(
 				`${name} Added!`,
 				`All ${name.toLowerCase()} have been added to your inventory!`,
