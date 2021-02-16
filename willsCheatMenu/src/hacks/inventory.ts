@@ -36,6 +36,7 @@ new Hack(category.inventory, "Selector (Basic)").setClick(async () => {
 				_.player.house.data.items[x.ID] = { A: [], N: VERY_LARGE_NUMBER }
 			)
 			await Toast.fire("Furniture Added!", "All furniture have been added to your inventory!", "success");
+			_.player.forceSaveCharacter()
 		} else {
 			// @ts-ignore
 			_.player.backpack.data[id] = itemify(gameData[id], VERY_LARGE_NUMBER);
@@ -44,6 +45,7 @@ new Hack(category.inventory, "Selector (Basic)").setClick(async () => {
 				`All ${name.toLowerCase()} have been added to your inventory!`,
 				"success"
 			);
+			_.player.forceSaveCharacter()
 		}
 	})
 });
@@ -75,6 +77,7 @@ new Hack(category.inventory, "Selector (Advanced)",'Choose a specific object and
 			if (val.value === 14) {
 				_.player.house.data.items[correct] = { A: [], N: amt}
 				await Toast.fire("Furniture Added!", "Your selected furniture has been added.", "success");
+				_.player.forceSaveCharacter()
 			}else{
 				// @ts-ignore
 				_.player.backpack.data[ids[val.value]].push({
@@ -82,7 +85,8 @@ new Hack(category.inventory, "Selector (Advanced)",'Choose a specific object and
 					N: amt,
 					
 				})
-				await Toast.fire(`${names[val.value]} Added!`, `Your selected ${names[val.value]} has been added.", "success`);
+				await Toast.fire(`${names[val.value]} Added!`, `Your selected ${names[val.value].toLowerCase} have been added.`, "success");
+				_.player.forceSaveCharacter()
 			}
 		})
 	})
