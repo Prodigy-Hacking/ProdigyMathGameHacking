@@ -29,7 +29,9 @@ new Hack(category.inventory, "Selector").setClick(async () => {
 	}).then(async val => {
 		const num = parseInt(val.value)
 		const name = names[num]
-		if (!(await Confirm.fire(`Are you sure you want to get all ${name}?`)).value) return;
+		const id = ids[num]
+		if(!name) return;
+		if (!(await Confirm.fire(`Are you sure you want to get all ${name.toLowerCase()}?`)).value) return;
 		if (num === 14) {
 			gameData.dorm.forEach(x =>
 				_.player.house.data.items[x.ID] = { A: [], N: VERY_LARGE_NUMBER }
