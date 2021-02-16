@@ -35,6 +35,10 @@ new Hack(category.pets, "Get All Pets").setClick(async () => {
 			timesRescued: VERY_LARGE_NUMBER
 		});
 	});
+	//Fix broken pets
+	_.player.kennel.petTeam.forEach((v: any) => {
+		if (v && (v as any).assignRandomSpells) (v as any).assignRandomSpells();
+	});
 
 	await Toast.fire("Success!", "All pets have been added!", "success");
 });
@@ -42,7 +46,10 @@ new Hack(category.pets, "Get All Pets").setClick(async () => {
 new Hack(category.pets, "Get All Epics").setClick(async () => {
 	const epics = [125, 126, 127, 128, 129, 130, 131, 132, 133];
 	_.player.kennel.data.splice(-1, 0, ...epics.map(toPets));
-
+	//Fix broken pets 
+	_.player.kennel.petTeam.forEach((v: any) => {
+		if (v && (v as any).assignRandomSpells) (v as any).assignRandomSpells();
+	});
 	await Toast.fire("Success!", "All epics have been added!", "success");
 });
 
