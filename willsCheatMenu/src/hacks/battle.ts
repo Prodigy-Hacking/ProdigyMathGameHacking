@@ -8,7 +8,7 @@ new Hack(category.battle, "Escape Battle", "Escape any battle!").setClick(async 
 	const currentState = game.state.current;
 	if (currentState === "PVP") game.state.states.PVP.endPVP();
 	else if (currentState === "CoOp") prodigy.world.$(_.player.data.zone);
-	else if (currentState != "Battle" || "SecureBattle") await Toast.fire(
+	else if (!['Battle','SecureBattle'].includes(currentState)) await Toast.fire(
 		"Invalid State.",
 		"You are currently not in a battle.",
 		"error"
