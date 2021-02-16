@@ -11,8 +11,6 @@ export const NumberInput = Input.mixin({
 export const Toast = Swal.mixin({
 	toast: true,
 	position: "bottom",
-	timer: 2000,
-	timerProgressBar: true
 });
 export const Confirm = Swal.mixin({
 	icon: "warning",
