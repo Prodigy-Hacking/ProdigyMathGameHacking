@@ -78,6 +78,11 @@ new Hack(category.misc, "OwO","Click it and find out. It doesn't bite.").setClic
 	await Toast.fire("OwO", "UwU", "success");
 });
 
+new Hack(category.misc, "Arena Points","").setClick(async () => {
+	// @ts-ignore
+	window.open('https://arena.prodigyhacking.com', '_blank')
+});
+
 new Hack(category.misc, "Save Character","Helps fix bugs where not all hacks save.").setClick(async () => {
 _.player.forceSaveCharacter()
 	await Toast.fire("Success!", "Your character has been saved!", "success");
