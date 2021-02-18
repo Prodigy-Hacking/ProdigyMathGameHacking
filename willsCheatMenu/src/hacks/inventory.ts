@@ -4,8 +4,8 @@ import { gameData, VERY_LARGE_NUMBER } from "../utils/util";
 import { Item } from "../../../typings/item";
 import { BackpackItemType } from "../../../typings/backpack";
 import { prodigy, game } from "../utils/util";
-const names = ['Boots', 'Buddies', 'Fossils', 'Hats', 'Items', 'Key Items', 'Tower Town Frames', 'Tower Town Interiors', 'Mounts', 'Outfits', 'Relics', 'Spell Relics', 'Weapons', 'Currencies', 'Furniture']
-const ids = ['boots', 'follow', 'fossil', 'hat', 'item', 'key', 'mathTownFrame', 'mathTownInterior', 'mount', 'outfit', 'relic', 'spellRelic', 'weapon', 'currency','dorm']
+const names = ['Boots', 'Buddies', 'Fossils', 'Hats', 'Items', 'Key Items', 'Tower Town Frames', 'Tower Town Interiors', 'Mounts', 'Outfits', 'Relics', 'Weapons', 'Currencies', 'Furniture']
+const ids = ['boots', 'follow', 'fossil', 'hat', 'item', 'key', 'mathTownFrame', 'mathTownInterior', 'mount', 'outfit','spellRelic', 'weapon', 'currency','dorm']
 const itemify = (item: Item[], amount: number) =>
 	item.map(x => ({
 		ID: x.ID,
