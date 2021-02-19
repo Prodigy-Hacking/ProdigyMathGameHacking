@@ -16,6 +16,24 @@ const itemify = (item: Item[], amount: number) =>
 
 // sorry for spamming ts-ignore
 
+new Hack(category.inventory, "Get all runes").setClick(async () => {
+	const runeify = (item: Item[], amount: number) =>
+	item.map(x => ({
+		ID: x.ID,
+		quantity: amount,
+	})).filter(v => v !== undefined);
+	let val = await NumberInput.fire("Amount", `How many of each would you like?`, "question");
+	let mod;
+Array.from( _.instance.prodigy.gameContainer.inversifyContainer._bindingDictionary._map).forEach(e => {
+	// @ts-ignore
+try{if( _.instance.prodigy.gameContainer.get(e[0]).battleData){mod= e[0]}
+// @ts-ignore
+}catch{console.log(`Error for ${e[0]}`)}
+})
+_.instance.prodigy.gameContainer.get(mod).battleData._secureCharacterState._data.inventory.orb = runeify(_.gameData.orb, val.value)
+await Toast.fire("Runes Added!", "Your runes have been added!", "success");
+});
+
 new Hack(category.inventory, "Selector (Basic)").setClick(async () => {
 	// @ts-ignore
 	let val = await Swal.fire({
