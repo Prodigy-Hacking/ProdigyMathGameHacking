@@ -4,20 +4,12 @@ import { gameData, VERY_LARGE_NUMBER } from "../utils/util";
 import { Item } from "../../../typings/item";
 import { BackpackItemType } from "../../../typings/backpack";
 import { prodigy, game } from "../utils/util";
-const names = ['Boots', 'Buddies', 'Fossils', 'Hats', 'Items', 'Key Items', 'Tower Town Frames', 'Tower Town Interiors', 'Mounts', 'Outfits', 'Relics', 'Weapons', 'Currencies', 'Furniture', 'Runes']
+const names = ['Boots', 'Buddies', 'Fossils', 'Hats', 'Items', 'Key Items', 'Tower Town Frames', 'Tower Town Interiors', 'Mounts', 'Outfits', 'Relics', 'Weapons', 'Currencies', 'Furniture']
 const ids = ['boots', 'follow', 'fossil', 'hat', 'item', 'key', 'mathTownFrame', 'mathTownInterior', 'mount', 'outfit','spellRelic', 'weapon', 'currency','dorm']
 const itemify = (item: Item[], amount: number) =>
 	item.map(x => ({
 		ID: x.ID,
 		N: amount,
-	})).filter(v => v !== undefined);
-
-	// runes require a slightly different way
-
-	const orbify = (item: Item[], amount: number) =>
-	item.map(x => ({
-		ID: x.ID,
-		quantity: amount,
 	})).filter(v => v !== undefined);
 
 // typescript is picky af
@@ -46,21 +38,6 @@ new Hack(category.inventory, "Selector (Basic)").setClick(async () => {
 			await Toast.fire("Furniture Added!", "All furniture have been added to your inventory!", "success");
 			_.player.forceSaveCharacter()
 		} else {
-			if(val.value === 15){
-				// ...
-
-				let mod;
-						Array.from( _.instance.prodigy.gameContainer.inversifyContainer._bindingDictionary._map).forEach(e => {
-						// @ts-ignore
-							try{if( _.instance.prodigy.gameContainer.get(e[0]).battleData){mod = e[0]}
-						// @ts-ignore
-						}catch{console.log(`Error for ${e[0]}`)}
-						})
-						_.instance.prodigy.gameContainer.get(mod).battleData._secureCharacterState._data.inventory.orb = orbify(_.gameData.orb,1)
-						await Toast.fire("Runes Added!", "All runes have been added to your inventory!", "success");
-
-				// ...
-			}else{
 			// @ts-ignore
 			_.player.backpack.data[id] = itemify(gameData[id], VERY_LARGE_NUMBER);
 			await Toast.fire(
@@ -69,7 +46,7 @@ new Hack(category.inventory, "Selector (Basic)").setClick(async () => {
 				"success"
 			);
 			_.player.forceSaveCharacter()
-		}}
+		}
 	})
 });
 new Hack(category.inventory, "Selector (Advanced)",'Choose a specific object and quantity to obtain.').setClick(async () => {
@@ -104,24 +81,6 @@ new Hack(category.inventory, "Selector (Advanced)",'Choose a specific object and
 				await Toast.fire("Furniture Added!", "Your selected furniture has been added.", "success");
 				_.player.forceSaveCharacter()
 			}else{
-				if(val.value === 15){
-						// ...
-
-						let mod;
-						Array.from( _.instance.prodigy.gameContainer.inversifyContainer._bindingDictionary._map).forEach(e => {
-						// @ts-ignore
-							try{if( _.instance.prodigy.gameContainer.get(e[0]).battleData){mod = e[0]}
-						// @ts-ignore
-						}catch{console.log(`Error for ${e[0]}`)}
-						})
-						_.instance.prodigy.gameContainer.get(mod).battleData._secureCharacterState._data.inventory.orb.push({
-							ID: correct,
-							quantity: amt.value,
-							
-						})
-
-						// ...
-				}else{
 				// @ts-ignore
 				_.player.backpack.data[ids[val.value]].push({
 					ID: correct,
@@ -130,7 +89,7 @@ new Hack(category.inventory, "Selector (Advanced)",'Choose a specific object and
 				})
 				await Toast.fire(`${names[val.value]} Added!`, `Your selected ${names[val.value].toLowerCase()} have been added.`, "success");
 				_.player.forceSaveCharacter()
-			}}
+			}
 		})
 	})
 })
