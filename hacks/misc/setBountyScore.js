@@ -1,3 +1,3 @@
 //> Bounty score hack
-//>> Sets your bounty score to 100.
-_.player.data.bountyScore = 100;
+//>> Sets your bounty score to any number you want.
+_.player.data.bountyScore = numberhere;
