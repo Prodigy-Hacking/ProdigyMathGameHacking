@@ -106,6 +106,7 @@ new Hack(category.inventory, "Get all runes").setClick(async () => {
 		quantity: amount,
 	})).filter(v => v !== undefined);
 	let val = await NumberInput.fire("Amount", `How many of each would you like?`, "question");
+	if(!val.value) return;
 	let mod;
 Array.from( _.instance.prodigy.gameContainer.inversifyContainer._bindingDictionary._map).forEach(e => {
 	// @ts-ignore
