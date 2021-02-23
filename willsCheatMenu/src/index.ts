@@ -1,5 +1,6 @@
 import "./style.scss";
 import { PIXI } from "../../typings/pixi";
+import { Swal } from "./utils/swal";;
 export * from "./utils/util";
 export const menu = document.createElement("div");
 export const wrapper = document.getElementById("game-wrapper");
