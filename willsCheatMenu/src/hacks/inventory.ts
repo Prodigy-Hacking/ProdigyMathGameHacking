@@ -114,7 +114,7 @@ new Hack(category.inventory, "Obtain All Furniture").setClick(async () => {
 		gameData.dorm.forEach(x =>
 			_.player.house.data.items[x.ID] = {A: [], N: VERY_LARGE_NUMBER}
 		)
-		await Toast.fire("Furniture Added!", "All furniture have been added to your inventory!", "success");
+		await Toast.fire("Furniture Added!", "All furniture has been added to your inventory!", "success");
 
 	});
 
