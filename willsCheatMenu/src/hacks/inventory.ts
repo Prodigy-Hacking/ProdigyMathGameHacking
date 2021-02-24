@@ -74,10 +74,9 @@ new Hack(category.inventory, "Selector (Advanced)",'Choose a specific object and
 		}).then(async spec => {
 			let correct = parseInt(spec.value) + 1
 			if(!correct) return;
-			console.log(val.value)
 			let amt = await NumberInput.fire("Amount", `How many of the object would you like?`, "question");
 			if(!amt.value) return;
-			if (val.value === 14) {
+			if (val.value === 13) {
 				_.player.house.data.items[correct] = { A: [], N: amt.value}
 				await Toast.fire("Furniture Added!", "Your selected furniture has been added.", "success");
 				_.player.forceSaveCharacter()
