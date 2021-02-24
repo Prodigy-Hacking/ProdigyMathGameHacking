@@ -138,9 +138,9 @@ export class Toggler extends Hack {
 	}
 }
 // @ts-ignore
-document.getElementById("cheat-menu").style.zIndex = VERY_LARGE_NUMBER
+document.getElementById("cheat-menu").style.zIndex = Number.MAX_SAFE_INTEGER - 1
 // @ts-ignore
-document.getElementById("menu-toggler").style.zIndex = VERY_LARGE_NUMBER + 1
+document.getElementById("menu-toggler").style.zIndex = Number.MAX_SAFE_INTEGER
 
 export const category = {
 	player: addArea("Player Hacks"),
