@@ -145,6 +145,7 @@ export const category = {
 	pets: addArea("Pet Hacks"),
 	battle: addArea("Battle Hacks"),
 	misc: addArea("Miscellaneous Hacks"),
+	utility: addArea("Utility Hacks"),
 };
 			
 setTimeout(() => {
