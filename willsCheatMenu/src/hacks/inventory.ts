@@ -32,7 +32,7 @@ new Hack(category.inventory, "Selector (Basic)").setClick(async () => {
 		if(!name) return;
 		if (!(await Confirm.fire(`Are you sure you want to get all ${name.toLowerCase()}?`)).value) return;
 		if (num === 14) {
-			_.gameData.dorm.forEach((x:any) =>
+			gameData.dorm.forEach((x:any) =>
 				_.player.house.data.items[x.ID] = { A: [], N: VERY_LARGE_NUMBER }
 			)
 			await Toast.fire("Furniture Added!", "All furniture have been added to your inventory!", "success");
@@ -74,6 +74,7 @@ new Hack(category.inventory, "Selector (Advanced)",'Choose a specific object and
 		}).then(async spec => {
 			let correct = parseInt(spec.value) + 1
 			if(!correct) return;
+			console.log(correct)
 			let amt = await NumberInput.fire("Amount", `How many of the object would you like?`, "question");
 			if(!amt.value) return;
 			if (correct === 14) {
