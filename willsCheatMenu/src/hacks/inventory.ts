@@ -4,8 +4,8 @@ import { gameData, VERY_LARGE_NUMBER } from "../utils/util";
 import { Item } from "../../../typings/item";
 import { BackpackItemType } from "../../../typings/backpack";
 import { prodigy, game } from "../utils/util";
-const names = ['Boots', 'Buddies', 'Fossils', 'Hats', 'Items', 'Key Items', 'Tower Town Frames', 'Tower Town Interiors', 'Mounts', 'Outfits', 'Relics', 'Weapons', 'Currencies', 'Furniture']
-const ids = ['boots', 'follow', 'fossil', 'hat', 'item', 'key', 'mathTownFrame', 'mathTownInterior', 'mount', 'outfit','spellRelic', 'weapon', 'currency','dorm']
+const names = ['Boots', 'Buddies', 'Fossils', 'Hats', 'Items', 'Key Items', 'Tower Town Frames', 'Tower Town Interiors', 'Mounts', 'Outfits', 'Relics', 'Weapons', 'Currencies']
+const ids = ['boots', 'follow', 'fossil', 'hat', 'item', 'key', 'mathTownFrame', 'mathTownInterior', 'mount', 'outfit','spellRelic', 'weapon', 'currency']
 const itemify = (item: Item[], amount: number) =>
 	item.map(x => ({
 		ID: x.ID,
@@ -31,13 +31,6 @@ new Hack(category.inventory, "Selector (Basic)").setClick(async () => {
 		const id = ids[num]
 		if(!name) return;
 		if (!(await Confirm.fire(`Are you sure you want to get all ${name.toLowerCase()}?`)).value) return;
-		if (num === 14) {
-			gameData.dorm.forEach((x:any) =>
-				_.player.house.data.items[x.ID] = { A: [], N: VERY_LARGE_NUMBER }
-			)
-			await Toast.fire("Furniture Added!", "All furniture have been added to your inventory!", "success");
-			_.player.forceSaveCharacter()
-		} else {
 			// @ts-ignore
 			_.player.backpack.data[id] = itemify(gameData[id], VERY_LARGE_NUMBER);
 			await Toast.fire(
@@ -46,7 +39,6 @@ new Hack(category.inventory, "Selector (Basic)").setClick(async () => {
 				"success"
 			);
 			_.player.forceSaveCharacter()
-		}
 	})
 });
 new Hack(category.inventory, "Selector (Advanced)",'Choose a specific object and quantity to obtain.').setClick(async () => {
@@ -76,11 +68,6 @@ new Hack(category.inventory, "Selector (Advanced)",'Choose a specific object and
 			if(!correct) return;
 			let amt = await NumberInput.fire("Amount", `How many of the object would you like?`, "question");
 			if(!amt.value) return;
-			if (val.value === 13) {
-				_.player.house.data.items[correct] = { A: [], N: amt.value}
-				await Toast.fire("Furniture Added!", "Your selected furniture has been added.", "success");
-				_.player.forceSaveCharacter()
-			}else{
 				// @ts-ignore
 				_.player.backpack.data[ids[val.value]].push({
 					ID: correct,
@@ -89,7 +76,6 @@ new Hack(category.inventory, "Selector (Advanced)",'Choose a specific object and
 				})
 				await Toast.fire(`${names[val.value]} Added!`, `Your selected ${names[val.value].toLowerCase()} have been added.`, "success");
 				_.player.forceSaveCharacter()
-			}
 		})
 	})
 })
@@ -122,6 +108,15 @@ try{if( _.instance.prodigy.gameContainer.get(e[0]).battleData){mod= e[0]}
 _.instance.prodigy.gameContainer.get(mod).battleData._secureCharacterState._data.inventory.orb = runeify(_.gameData.orb, val.value)
 await Toast.fire("Runes Added!", "Your runes have been added!", "success");
 });
+
+new Hack(category.inventory, "Obtain All Furniture").setClick(async () => {
+	if (!(await Confirm.fire("Are you sure you want to get all furniture?")).value) return;
+		gameData.dorm.forEach(x =>
+			_.player.house.data.items[x.ID] = {A: [], N: VERY_LARGE_NUMBER}
+		)
+		await Toast.fire("Furniture Added!", "All furniture have been added to your inventory!", "success");
+
+	});
 
 /*
 	const inventoryHack = (name: string, id: BackpackItemType, amount: number = 1) => {
