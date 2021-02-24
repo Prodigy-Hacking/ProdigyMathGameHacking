@@ -4,7 +4,7 @@ import { Swal } from "./utils/swal";;
 export * from "./utils/util";
 export const menu = document.createElement("div");
 export const wrapper = document.getElementById("game-wrapper");
-import { prodigy, game } from "./utils/util";
+import { prodigy, game, VERY_LARGE_NUMBER } from "./utils/util";
 
 document.getElementById("cheat-menu")?.remove();
 document.getElementById("menu-toggler")?.remove();
@@ -137,6 +137,10 @@ export class Toggler extends Hack {
 		return this;
 	}
 }
+// @ts-ignore
+document.getElementById("cheat-menu").style.zIndex = VERY_LARGE_NUMBER
+// @ts-ignore
+document.getElementById("menu-toggler").style.zIndex = VERY_LARGE_NUMBER + 1
 
 export const category = {
 	player: addArea("Player Hacks"),
