@@ -14,7 +14,7 @@ new Hack(category.utility, "Close all popups","Closes all popups in Prodigy.").s
         document.getElementById("cheat-menu")?.remove();
         document.getElementById("menu-toggler")?.remove();
         (async() => {
-            eval(await (await fetch("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/HEAD/willsCheatMenu/dist/bundle.js")).text())
+            eval(await (await fetch(`https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/HEAD/willsCheatMenu/dist/bundle.js?updated=${Date.now()}`)).text())
         })()
         await Toast.fire("Updated!", "Cheat menu was updated.", "success");
     });
