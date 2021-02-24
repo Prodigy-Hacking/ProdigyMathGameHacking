@@ -72,11 +72,6 @@ new Hack(category.misc, "Reset Account","Completely resets your account.").setCl
 	_.player.resetAccount();
 });
 
-new Hack(category.misc, "Close all popups","Closes all popup bubbles in Prodigy.").setClick(async () => {
-	_.instance.prodigy.open.menuCloseAll();
-	await Toast.fire("Closed!", "All open popups were closed.", "success");
-});
-
 
 new Hack(category.misc, "OwO","Click it and find out. It doesn't bite.").setClick(async () => {
 	// @ts-ignore
@@ -84,12 +79,3 @@ new Hack(category.misc, "OwO","Click it and find out. It doesn't bite.").setClic
 	await Toast.fire("OwO", "UwU", "success");
 });
 
-new Hack(category.misc, "Arena Points","Just opens arena.prodigyhacking.com in a new tab lol.").setClick(async () => {
-	window.open('https://arena.prodigyhacking.com', '_blank')
-		await Toast.fire("Arena Points Generator opened!", "Arena Points generator is opened in a new tab!", "success");
-});
-
-new Hack(category.misc, "Save Character","Helps fix bugs where not all hacks save.").setClick(async () => {
-_.player.forceSaveCharacter()
-	await Toast.fire("Success!", "Your character has been saved!", "success");
-});
