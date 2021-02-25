@@ -18,3 +18,7 @@ new Hack(category.utility, "Close all popups","Closes all popups in Prodigy.").s
         })()
         await Toast.fire("Updated!", "Cheat menu was updated.", "success");
     });
+    new Hack(category.utility, "Disable inactivity kick","Keeps you from being logged out for inactivity.").setClick(async () => {
+        _.constants.constants["GameConstants.Inactivity.LOG_OUT_TIMER_SECONDS"] = 0;
+        await Toast.fire("Success!", "You now will never be logged out!", "success");
+    });
