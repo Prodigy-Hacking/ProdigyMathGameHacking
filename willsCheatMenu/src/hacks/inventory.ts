@@ -42,6 +42,12 @@ new Hack(category.inventory, "Selector (Basic)").setClick(async () => {
 	})
 });
 new Hack(category.inventory, "Selector (Advanced)",'Choose a specific object and quantity to obtain.').setClick(async () => {
+	if(!(await Confirm.fire({
+		title: 'Wait!',
+		html: 'It has come to our attention that there are some unreleased assets that appear in this selector. So if you select some of the items farther down the list, you may not get the results you were expecting. For best results, use the basic selector.<br><br>Continue?',
+		icon: "warning"
+	})).value){return}
+
 	// @ts-ignore
 	let val = await Swal.fire({
 		title: "What would you like to obtain?",
