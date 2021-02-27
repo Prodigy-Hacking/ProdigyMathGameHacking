@@ -51,6 +51,14 @@ title.classList.add("menu-title");
 title.innerText = "Will's Prodigy Cheat Menu";
 menuleft.append(title);
 
+(async () => {
+	let data = await (await fetch('https://api.github.com/repos/Prodigy-Hacking/ProdigyMathGameHacking/contents/willsCheatMenu/dist/bundle.js')).json()
+const version = document.createElement("h2");
+version.style.fontSize = "25px";
+version.innerHTML = `<strong>Current version: ${data.sha}</strong>`
+menuleft.append(version);
+})()
+
 const subtitle = document.createElement("h3");
 subtitle.style.fontSize = "20px";
 subtitle.innerHTML = `On behalf of <a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/README.md">ProdigyMathGameHacking</a>. <a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/README.md#Motivation">Learn about our mission</a>.
