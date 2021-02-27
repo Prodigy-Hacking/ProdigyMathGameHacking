@@ -55,7 +55,7 @@ menuleft.append(title);
 	version.style.fontSize = "25px";
 // @ts-ignore
 let data = await (await fetch('https://api.github.com/repos/Prodigy-Hacking/ProdigyMathGameHacking/commits?willsCheatMenu/dist/bundle.js')).json()
-	version.innerHTML = `<strong>Current version: ${data[0].sha.substring(0, 7)}</strong>`
+	version.innerHTML = `<strong>Current version: ${data[0].sha.substring(0, 7)}</strong><br>`
 	menuleft.append(version);
 })()
 const subtitle = document.createElement("h3");
