@@ -63,7 +63,7 @@
 ## Motivation
 
 <details>
-<summary><b>We aren't evil. Everything is open source, forever free, without ads.</b></summary>
+<summary><b>We aren't evil. Everything is open source, forever free, and without ads.</b></summary>
 <br>
 We're not trying to break the game because we're evil. We just wanted to help Prodigy become more secure, but they've ignored our emails and our requests to talk.
 
@@ -151,7 +151,7 @@ All of our hacks are *open-source*, and only located under our [Github Organizat
 ## Important Repos
 
 - [ProdigyMathGameHacking](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking)
-  - Our main repo, used as an issue tracker, things we're working on, documentation, and central hub.
+  - Our main repo, used as an issue tracker, things we're working on, documentation, and central hub. You're currently on it.
 - [PHEx](https://github.com/Prodigy-Hacking/PHEx)
   - The Prodigy Hacking Extension, used to inject our modified gamefiles into Prodigy.
 - [Redirector](https://github.com/Prodigy-Hacking/Redirector)
