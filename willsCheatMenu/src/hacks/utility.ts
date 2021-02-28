@@ -23,7 +23,7 @@ new Hack(category.utility, "Disable inactivity kick", "Keeps you from being logg
     await Toast.fire("Success!", "You now will never be logged out!", "success");
 });
 new Hack(category.utility, "Replace with local menu", "For devs, replace menu with a menu locally compiled without needing to push to master.").setClick(async () => {
-    if(!await Confirm.fire('Open file')) return;
+    if(!await (await Confirm.fire('Open file')).value){}else{
     document.getElementById("cheat-menu")?.remove();
     document.getElementById("menu-toggler")?.remove();
     // @ts-ignore
@@ -39,6 +39,12 @@ new Hack(category.utility, "Replace with local menu", "For devs, replace menu wi
     // @ts-ignore
     let localMenu = await (await window.file.text())
     eval(localMenu)
-    if(!document.getElementById("cheat-menu")){await Toast.fire("Error", "Incorrect file, isn't cheat menu", "error")}else{
-    await Toast.fire("Success!", "Cheat menu is replaced with locally hosted one!", "success")}
+    if(!document.getElementById("cheat-menu")){
+        // @ts-ignore
+        await Toast.fire("Error", "Incorrect file, isn't cheat menu", "error")
+    (async () => {
+        eval(await (await fetch(`https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/HEAD/willsCheatMenu/dist/bundle.js?updated=${Date.now()}`)).text()) // updated parameter is so browser ignores cached version
+    })()
+}else{
+    await Toast.fire("Success!", "Cheat menu is replaced with locally hosted one!", "success")}}
 });
