@@ -69,13 +69,12 @@ new Hack(category.inventory, "Selector (Advanced)",'Choose a specific object and
 			let amt = await NumberInput.fire("Amount", `How many of the object would you like?`, "question");
 			if(!amt.value) return;
 				// @ts-ignore
-				if(_.player.backpack.data[ids[val.value]].findIndex(e => {e.ID === _.gameData[ids[val.value]][correct].ID}) != -1){
-					_.player.backpack.data[ids[val.value]][_.player.backpack.data[ids[val.value]].findIndex((e : any) => {e.ID === _.gameData[ids[val.value]][correct].ID})].N = _.player.backpack.data[ids[val.value]][_.player.backpack.data[ids[val.value]].findIndex((e : any) => {e.ID === _.gameData[ids[val.value]][correct].ID})].N + amt.value
-				}else{
-				_.player.backpack.data[ids[val.value]].push({
+				
+				_.player.backpack.data[ids[val.value]][_.gameData[ids[val.value]][correct].ID]= {
 					ID: _.gameData[ids[val.value]][correct].ID,
 					N: amt.value,
-				})}
+				}
+				
 				await Toast.fire(`${names[val.value]} Added!`, `Your selected ${names[val.value].toLowerCase()} have been added.`, "success");
 				_.player.forceSaveCharacter()
 		})

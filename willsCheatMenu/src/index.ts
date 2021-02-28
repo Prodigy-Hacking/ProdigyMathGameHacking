@@ -49,15 +49,6 @@ export const addArea = (title: string) => {
 const title = document.createElement("h1");
 title.classList.add("menu-title");
 title.innerText = "Will's Prodigy Cheat Menu";
-menuleft.append(title);
-(async () => {
-	const version = document.createElement("h2");
-	version.style.fontSize = "25px";
-// @ts-ignore
-let data = await (await fetch('https://api.github.com/repos/Prodigy-Hacking/ProdigyMathGameHacking/commits?willsCheatMenu/dist/bundle.js')).json()
-	version.innerHTML = `<strong>Current version: ${data[0].sha.substring(0, 7)}</strong><br>`
-	menuleft.append(version);
-})()
 const subtitle = document.createElement("h3");
 subtitle.style.fontSize = "20px";
 subtitle.innerHTML = `On behalf of <a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/README.md">ProdigyMathGameHacking</a>. <a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/README.md#Motivation">Learn about our mission</a>.
