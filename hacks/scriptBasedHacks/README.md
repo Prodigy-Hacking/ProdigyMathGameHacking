@@ -7,7 +7,7 @@
 ```js
 javascript:console.log=console.clear=console.dir=_=>{}
 ```
-### So you need to:
+### You need to:
 ### 1. Make a new bookmark
 ### 2. Set the URL to the code above.
 #### It should look like this:
