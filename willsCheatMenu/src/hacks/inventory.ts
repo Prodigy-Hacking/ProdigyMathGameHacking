@@ -69,7 +69,7 @@ new Hack(category.inventory, "Selector (Advanced)",'Choose a specific object and
 			let amt = await NumberInput.fire("Amount", `How many of the object would you like?`, "question");
 			if(!amt.value) return;
 				// @ts-ignore
-				_.player.backpack.data.push({
+				_.player.backpack.data[ids[val.value]].push({
 					ID: _.gameData[ids[val.value]][correct].ID,
 					N: amt.value,
 				})
