@@ -1,6 +1,6 @@
 import { Hack, category } from "../index";
 import { Swal, Input, Toast, Confirm, NumberInput } from "../utils/swal";
-import { gameData, VERY_LARGE_NUMBER } from "../utils/util";
+import { gameData, VERY_LARGE_NUMBER, saveCharacter} from "../utils/util";
 import { Item } from "../../../typings/item";
 import { BackpackItemType } from "../../../typings/backpack";
 import { prodigy, game } from "../utils/util";
@@ -38,7 +38,7 @@ new Hack(category.inventory, "Selector (Basic)").setClick(async () => {
 				`All ${name.toLowerCase()} have been added to your inventory!`,
 				"success"
 			);
-			_.player.forceSaveCharacter()
+			saveCharacter()
 	})
 });
 new Hack(category.inventory, "Selector (Advanced)",'Choose a specific object and quantity to obtain.').setClick(async () => {
@@ -80,7 +80,7 @@ new Hack(category.inventory, "Selector (Advanced)",'Choose a specific object and
 				}
 				
 				await Toast.fire(`${names[val.value]} Added!`, `Your selected ${names[val.value].toLowerCase()} have been added.`, "success");
-				_.player.forceSaveCharacter()
+				saveCharacter()
 		})
 	})
 })
