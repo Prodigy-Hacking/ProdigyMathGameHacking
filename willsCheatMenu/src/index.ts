@@ -49,6 +49,7 @@ export const addArea = (title: string) => {
 const title = document.createElement("h1");
 title.classList.add("menu-title");
 title.innerText = "Will's Prodigy Cheat Menu";
+menuleft.append(title)
 const subtitle = document.createElement("h3");
 subtitle.style.fontSize = "20px";
 subtitle.innerHTML = `On behalf of <a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/README.md">ProdigyMathGameHacking</a>. <a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/README.md#Motivation">Learn about our mission</a>.

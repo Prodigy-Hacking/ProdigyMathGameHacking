@@ -76,7 +76,7 @@ new Hack(category.inventory, "Selector (Advanced)",'Choose a specific object and
 					N: amt.value,
 				})}else{
 					// @ts-ignore
-					_.player.backpack.data[ids[val.value]][_.player.backpack.data[ids[val.value]].findIndex(e => e.ID === _.gameData[ids[val.value]][correct].ID)].N = _.player.backpack.data[ids[val.value]][_.player.backpack.data[ids[val.value]].findIndex(e => e.ID === _.gameData[ids[val.value]][correct].ID)].N + amt.value
+					let num = _.player.backpack.data[ids[val.value]].findIndex(e => e.ID === _.gameData[ids[val.value]][correct].ID)
 				}
 				
 				await Toast.fire(`${names[val.value]} Added!`, `Your selected ${names[val.value].toLowerCase()} have been added.`, "success");
