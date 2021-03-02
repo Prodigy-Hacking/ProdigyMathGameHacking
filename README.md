@@ -1,4 +1,4 @@
-<h1 align="center">We're looking for coders to contribute and help fix hacks! Join the Discord if you're interested!</h1>
+<h1 align="center">NOTICE: CONSOLE EXPORT OR SCREENSHOT IS REQUIRED TO OPEN AN ISSUE, ISSUES WITHOUT A SCREENSHOT OF CONSOLE WILL BE CLOSED.</h1>
 
 <hr>
 
