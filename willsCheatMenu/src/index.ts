@@ -1,7 +1,7 @@
 import "./style.scss";
 import { PIXI } from "../../typings/pixi";
 import { Swal } from "./utils/swal";;
-export * from "./utils/util";
+import { saveCharacter } from "./utils/util";
 export const menu = document.createElement("div");
 export const wrapper = document.getElementById("game-wrapper");
 import { prodigy, game, VERY_LARGE_NUMBER } from "./utils/util";
@@ -93,7 +93,7 @@ export class Hack {
 	setClick(event: () => unknown) {
 		this.element.onclick = (() => {
 			event();
-			_.player.forceSaveCharacter();
+			saveCharacter();
 			console.log(`Triggered ${this.name}.`);
 		});
 		return this;
