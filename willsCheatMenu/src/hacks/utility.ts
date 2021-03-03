@@ -1,9 +1,9 @@
 import { Swal, Toast, NumberInput, Confirm } from "../utils/swal";
 import { Hack, category, Toggler } from "../index";
-import { VERY_LARGE_NUMBER, gameData, pickRandom } from "../utils/util";
+import { VERY_LARGE_NUMBER, gameData, pickRandom, saveCharacter } from "../utils/util";
 import { prodigy, game } from "../utils/util";
 new Hack(category.utility, "Save Character", "Helps fix bugs where not all hacks save.").setClick(async () => {
-    _.player.forceSaveCharacter()
+    saveCharacter()
     await Toast.fire("Success!", "Your character has been saved!", "success");
 });
 new Hack(category.utility, "Close all popups", "Closes all popups in Prodigy.").setClick(async () => {
