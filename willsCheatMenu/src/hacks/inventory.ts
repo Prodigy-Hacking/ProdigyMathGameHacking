@@ -30,9 +30,11 @@ new Hack(category.inventory, "Selector (Basic)").setClick(async () => {
 		const name = names[num]
 		const id = ids[num]
 		if(!name) return;
+		let amt = await NumberInput.fire("Amount", `How many each object would you like?`, "question");
+		if(!amt.value) return;
 		if (!(await Confirm.fire(`Are you sure you want to get all ${name.toLowerCase()}?`)).value) return;
 			// @ts-ignore
-			_.player.backpack.data[id] = itemify(_.gameData[id], VERY_LARGE_NUMBER);
+			_.player.backpack.data[id] = itemify(_.gameData[id], amt.value);
 			await Toast.fire(
 				`${name} Added!`,
 				`All ${name.toLowerCase()} have been added to your inventory!`,
