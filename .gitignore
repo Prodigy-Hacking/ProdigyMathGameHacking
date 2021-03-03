@@ -1,6 +1,7 @@
 .git
 node_modules
 config.json
+push.bat
 *.log
 .gitignore
 updateCommitter.sh
