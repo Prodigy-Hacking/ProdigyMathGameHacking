@@ -23,23 +23,18 @@ new Hack(category.misc, "Disable Timeout Dialog").setClick(async () => {
 	prodigy.debugMisc.disableTimeoutDialogue();
 });
 */
-let viber: number | null = null;
-new Toggler(category.misc, "Clothing Vibe").setEnabled(async () => {
-	viber = window.setInterval(() => {
-		const rand = <T extends { ID: number }>(arr: T[]) => pickRandom(arr).ID;
-		_.player.equipment.setOutfit(rand(gameData.outfit));
-		_.player.equipment.setBoots(rand(gameData.boots));
-		_.player.equipment.setHat(rand(gameData.hat));
-		_.player.appearanceChanged = true;
-	}, 690);
-}).setDisabled(() => {
-	if (viber) clearInterval(viber);
-});
 
 new Toggler(category.misc, "Disable Monster Encounters").setEnabled(async () => {
 	_.constants.constants["GameConstants.Debug.SCALE_ENCOUNTER_DISTANCE"] = 0;
 }).setDisabled(() => {
 	_.constants.constants["GameConstants.Debug.SCALE_ENCOUNTER_DISTANCE"] = 1;
+});
+
+new Toggler(category.misc, "Disable Monster Encounters").setEnabled(async () => {
+	_.constants.constants["GameConstants.Battle.SKIP_ENEMY_TURN"] = true;
+}).setDisabled(() => {
+	_.constants.constants["GameConstants.Battle.SKIP_ENEMY_TURN"] = false;
+
 });
 
 new Hack(category.misc, "Bobbify", "Converts your account into Bobby Fancywoman.").setClick(async () => {
