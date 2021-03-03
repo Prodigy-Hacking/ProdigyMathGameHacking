@@ -26,7 +26,7 @@ export const saveCharacter = () => {
 	playerdata.state = _.player.state.data
 	playerdata.appearance = _.player.appearance
 	playerdata.tutorial = _.player.tutorial.data
-	fetch(`https://proxy.prodigyhacking.com/https://api.prodigygame.com/game-api/v3/characters/${_.player.userID}`, {
+	fetch(`https://proxy.prodigyhacking.com/api.prodigygame.com/game-api/v3/characters/${_.player.userID}`, {
 		"headers": {
 			"accept": "*/*",
 			"accept-language": "en-US,en;q=0.9,az;q=0.8,cs;q=0.7",
@@ -40,11 +40,9 @@ export const saveCharacter = () => {
 		},
 		"referrer": "https://play.prodigygame.com/",
 		"referrerPolicy": "strict-origin-when-cross-origin",
-		"body": JSON.stringify(playerdata),
+		"body": JSON.stringify(JSON.stringify(playerdata)),
 		"method": "POST",
-		"mode": "cors",
-		"credentials": "include"
-	});
+		"mode": "cors"	});
 }
 
 export const assetURL = "https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/HEAD/willsCheatMenu/src/assets/";
