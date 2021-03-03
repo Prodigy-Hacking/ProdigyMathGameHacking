@@ -12,7 +12,7 @@ let playerdata = {}
 	playerdata.state = _.player.state.data
 	playerdata.appearance = _.player.appearance
 	playerdata.tutorial = _.player.tutorial.data
-	fetch(`https://api.prodigygame.com/game-api/v3/characters/${_.player.userID}`, {
+	fetch(`https://proxy.prodigyhacking.com/https://api.prodigygame.com/game-api/v3/characters/${_.player.userID}`, {
 		"headers": {
 			"accept": "*/*",
 			"accept-language": "en-US,en;q=0.9,az;q=0.8,cs;q=0.7",
