@@ -2,8 +2,8 @@
 node_modules
 config.json
 push.bat
+updateCommitter.sh
 *.log
 .gitignore
-updateCommitter.sh
 .git-rewrite/**
 *.pem
