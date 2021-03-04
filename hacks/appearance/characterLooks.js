@@ -6,7 +6,7 @@ _.player.equipment.hat = 1;
 // Outfit
 _.player.equipment.outfit = 1;
 // Weapon
-_.player.equipment.weapon = 1
+_.player.equipment.weapon = 1;
 // Spell Relic
 _.player.equipment.spellRelic = 1;
 //Boots
