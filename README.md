@@ -29,6 +29,10 @@
 <a href="https://chrome.google.com/webstore/detail/lpkeloemedafpfkdkbaclmmaokmadced/">
 <img alt="Extension Downloads" src="https://img.shields.io/chrome-web-store/users/lpkeloemedafpfkdkbaclmmaokmadced?color=red&label=Extension%20Downloads">
 </a> -->
+	
+## HOW TO INSTALL
+
+**[Official Browser Extension](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks)**
 
 <a href="https://prodigyhacking.com">
 	<img alt="Website Status" src="https://img.shields.io/website-up-down-green-red/https/prodigyhacking.com">
@@ -80,16 +84,6 @@ All of our hacks are open source, and free. No paywalls, no ads, and no Patreon.
 If you have any Legal problems, please email support@prodigyhacking.com
 
 </details>
-
-
-
-
-
-## Injection Methods
-
-**[Official Browser Extension](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks)**
-
-
 
 
 
