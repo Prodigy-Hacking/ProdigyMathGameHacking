@@ -1,0 +1,160 @@
+{
+    "status": "success",
+    "data": {
+      "ServerGameVersion": "1.0.0",
+      "maintenance": true,
+      "maintenanceMessage": 0,
+      "gameClientVersion": "3-18-5",
+      "gameLibPath": "https://code.prodigygame.com/lib/",
+      "gameCodePath": "https://code.prodigygame.com/code/3-18-5/",
+      "prodigyGameFlags": {
+        "sentrySampleRate": 0.01,
+        "loader-gameDataVersionOverride": 0,
+        "classCodePromptCurriculumBlacklist": [
+          7
+        ],
+        "enableMembershipVideoAd": true,
+        "disableParentAttach5": true,
+        "enableVerboseGameServer": false,
+        "loader-allowedOverrideIps": true,
+        "allOutAttackDisabled": false,
+        "disableTrialMembership": true,
+        "surveyCheckIntervalMinutes": 1,
+        "parentAttachTrial": {
+          "startDate": "March 14, 2019 00:00:00",
+          "endDate": "April 11, 2019 00:00:00",
+          "trialLengthDays": 7,
+          "exclusionLanes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        "lockoutTrial": {
+          "startDate": "July 3, 2019 00:00:00",
+          "endDate": "July 19, 2019 00:00:00",
+          "trialLengthDays": 7
+        },
+        "recordingFeatures": {
+          "archives-run": false,
+          "post-tutorial": false
+        },
+        "loader-allowedIps": [
+          "72.138"
+        ],
+        "gameDataPath": "https://cdn.prodigygame.com/game/data/production/",
+        "enableYouTubeTimeCheck": true,
+        "loader-windowVarBlacklist": [
+          "hack"
+        ],
+        "enabledEvents": {
+          "login": true,
+          "toy-event": false,
+          "PVP": true,
+          "epicAttacks": true,
+          "pvp-season-reward": true,
+          "game_complete": false,
+          "game_complete_v3": true,
+          "member-ad": true,
+          "new-member": true,
+          "survey-results": true,
+          "create-character": true,
+          "zone-event": true,
+          "item-change-event": true,
+          "conversion-funnel-event": true,
+          "battle-start-type": true,
+          "game_social": true,
+          "game_social_v3": true,
+          "game_source": true,
+          "game_source_v3": true,
+          "game_sink": true,
+          "game_sink_v3": true,
+          "game_avatar_v3": true,
+          "game_mod": true,
+          "game_battle_v3": true,
+          "anonymous_game_complete_v3": true,
+          "game_question_v3": true,
+          "game_session_start": true,
+          "game_avatar": true,
+          "game_level_up": true,
+          "game_discovery_v3": true,
+          "education_lesson_encounter_v3": true,
+          "education_question_interface_v3": true,
+          "game_session_start_v3": true,
+          "anonymous_game_discovery": true
+        },
+        "googleLoginSettings": {
+          "amazon": false,
+          "google": false
+        },
+        "setFest": 0,
+        "loader-gameCodePathOverride": "https://code.prodigygame.com/code/3-15-3/",
+        "enableVerboseAnalytics": false,
+        "autoAttackDisabled": true,
+        "videoLessonInstantWin": true,
+        "disableMembershipVideoAdDuringSchoolHours": false,
+        "gameDataVersion": 654,
+        "loader-gameClientOverride": false,
+        "loader-phaserPIXI": false,
+        "multiplayerClusterLocations": [
+          {
+            "ID": 1,
+            "url": "https://multiplayer-1.prodigygame.com/",
+            "path": "/multiplayer-api/socket.io/"
+          },
+          {
+            "ID": 2,
+            "url": "https://multiplayer-2.prodigygame.com/",
+            "path": "/multiplayer-api/socket.io/"
+          },
+          {
+            "ID": 3,
+            "url": "https://multiplayer-3.prodigygame.com/",
+            "path": "/multiplayer-api/socket.io/"
+          },
+          {
+            "ID": 4,
+            "url": "https://multiplayer-4.prodigygame.com/",
+            "path": "/multiplayer-api/socket.io/"
+          },
+          {
+            "ID": 5,
+            "url": "https://multiplayer-5.prodigygame.com/",
+            "path": "/multiplayer-api/socket.io/"
+          },
+          {
+            "ID": 6,
+            "url": "https://multiplayer-6.prodigygame.com/",
+            "path": "/multiplayer-api/socket.io/"
+          },
+          {
+            "ID": 7,
+            "url": "https://multiplayer-7.prodigygame.com/",
+            "path": "/multiplayer-api/socket.io/"
+          },
+          {
+            "ID": 8,
+            "url": "https://multiplayer-8.prodigygame.com/",
+            "path": "/multiplayer-api/socket.io/"
+          }
+        ],
+        "gameServerRollout": 0,
+        "useServerTimeForVideoLockout": true,
+        "debugPassword": "13v2HAqV9UOokid/55dedg==",
+        "coOpTitanDisabled": false,
+        "splashScreen": "singleImage-293",
+        "removeAssets": true,
+        "experimentLE3LaneC": false,
+        "enableYouTubeAd": true,
+        "experimentLE2": false,
+        "experimentLE3LaneB": true
+      }
+    }
+  }
