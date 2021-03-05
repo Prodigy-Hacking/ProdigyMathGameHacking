@@ -1,0 +1,24 @@
+{
+	"name": "Prodigy Math Game Hacking",
+	"version": "2.0.0",
+	"description": "Hacking Prodigy, the math game.",
+	"permissions": [
+		"webRequest",
+		"webRequestBlocking",
+		"*://*.prodigygame.com/*"
+	],
+	"icons": {
+		"16": "assets/x16.png",
+		"48": "assets/x48.png",
+		"128": "assets/x128.png"
+	},
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": true
+	},
+	"content_scripts": [{
+		"matches": ["https://play.prodigygame.com/*"],
+		"js": ["disableIntegrity.js"]
+	}],
+	"manifest_version": 2
+}
