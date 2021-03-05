@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { Swal, Toast, NumberInput, Confirm } from "../utils/swal";
-import { Hack, category, Toggler } from "../index";
+import { Hack, category, Toggler, dimensions } from "../index";
 import { VERY_LARGE_NUMBER, gameData, pickRandom, saveCharacter } from "../utils/util";
 import { prodigy, game } from "../utils/util";
 new Hack(category.utility, "Save Character", "Helps fix bugs where not all hacks save.").setClick(async () => {
@@ -28,6 +28,6 @@ new Toggler(category.utility, "Enable menu resize drag (bottom right corner)",'A
 	document.getElementById('cheat-menu').style.resize = "both"
 }).setDisabled(() => {
 	document.getElementById('cheat-menu').style.resize = "none"
-    document.getElementById('cheat-menu').style.height = window.dimensions.height
-		document.getElementById('cheat-menu').style.width = window.dimensions.width
+    document.getElementById('cheat-menu').style.height = dimensions.height
+		document.getElementById('cheat-menu').style.width = dimensions.width
 });
