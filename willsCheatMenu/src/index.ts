@@ -20,8 +20,6 @@ toggler.onclick = () => {
 	visible = !visible;
 
 	if (visible) {
-		document.getElementById('cheat-menu').style.height = window.dimensions.height
-		document.getElementById('cheat-menu').style.width = window.dimensions.width
 		toggler.innerText = "▼";
 		menu.style.top = "-62vh";
 	} else {
