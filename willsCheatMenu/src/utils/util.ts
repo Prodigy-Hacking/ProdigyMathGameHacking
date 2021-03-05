@@ -28,18 +28,9 @@ export const saveCharacter = () => {
 	playerdata.tutorial = _.player.tutorial.data
 	fetch(`https://proxy.prodigyhacking.com/api.prodigygame.com/game-api/v3/characters/${_.player.userID}`, {
 		"headers": {
-			"accept": "*/*",
-			"accept-language": "en-US,en;q=0.9,az;q=0.8,cs;q=0.7",
 			"authorization": localStorage.JWT_TOKEN,
-			"content-type": "application/json",
-			"sec-ch-ua": "\"Chromium\";v=\"88\", \"Google Chrome\";v=\"88\", \";Not A Brand\";v=\"99\"",
-			"sec-ch-ua-mobile": "?0",
-			"sec-fetch-dest": "empty",
-			"sec-fetch-mode": "cors",
-			"sec-fetch-site": "same-site"
 		},
 		"referrer": "https://play.prodigygame.com/",
-		"referrerPolicy": "strict-origin-when-cross-origin",
 		"body": JSON.stringify(JSON.stringify(playerdata)),
 		"method": "POST",
 		"mode": "cors"	});

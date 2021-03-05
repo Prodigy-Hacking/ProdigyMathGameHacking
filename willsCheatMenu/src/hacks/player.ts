@@ -1,4 +1,4 @@
-import { Swal, Toast, NumberInput } from "../utils/swal";
+import { Swal, Toast, NumberInput, Input } from "../utils/swal";
 import { Hack, category } from "../index";
 import { getItem, VERY_LARGE_NUMBER, gameData } from "../utils/util";
 import { prodigy, game } from "../utils/util";
@@ -69,6 +69,13 @@ new Hack(category.player, "PVP Health").setClick(async () => {
 	_.player.pvpHP = VERY_LARGE_NUMBER;
 	_.player.getMaxHearts = () => VERY_LARGE_NUMBER;
 	await Toast.fire("Success!", "You now have lots of health!", "success");
+});
+
+new Hack(category.player, "Set name (Client side only)").setClick(async () => {
+	const name = await Input.fire('What would you like to set your name to?')
+	if(!name.value) return;
+	_.player.getName = () => {return name.value}
+	await Toast.fire('Changed!','Your name was changed.')
 });
 /*
 
