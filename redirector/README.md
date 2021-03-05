@@ -14,26 +14,16 @@ If for some reason redirector is down, instead of relying on our hosting for mod
 
 1. Install Node.js, Git is optional.
 
-2. Download the repository.
+2. Install the needed packages and dependencies.
 
     ```bash
-    git clone https://github.com/Prodigy-Hacking/Redirector.git
+    npm run setup
     ```
 
-    You can also download it [here](https://github.com/Prodigy-Hacking/Redirector/archive/master.zip) as a zip file.
-
-3. Install the needed packages and dependencies.
+3. Run the start script.
 
     ```bash
-    npm install
+    npm start
     ```
 
-4. Run `index.js` with Node.
-
-    ```bash
-    node .
-    ```
-
-5. Go to the Redirector Plugin > Edit Redirects. Disable `game.min.js`, and `public-game.min.js`. Enable `Localhost game.min.js`, and `Localhost public.game.min.js`.
-
-6. Profit! Redirector should now be pulling files from `localhost:1337`.
+4. Profit! Redirector should now be pulling files from `localhost:1337`.
