@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Swal, Toast, NumberInput, Confirm } from "../utils/swal";
 import { Hack, category, Toggler } from "../index";
 import { VERY_LARGE_NUMBER, gameData, pickRandom, saveCharacter } from "../utils/util";
@@ -21,4 +22,12 @@ new Hack(category.utility, "Update menu", "Updates menu to the latest version wi
 new Hack(category.utility, "Disable inactivity kick", "Keeps you from being logged out for inactivity.").setClick(async () => {
     _.constants.constants["GameConstants.Inactivity.LOG_OUT_TIMER_SECONDS"] = 0;
     await Toast.fire("Success!", "You now will never be logged out!", "success");
+});
+
+new Toggler(category.utility, "Enable menu resize drag (bottom right corner)",'Allows you to resize the menu via dragging.').setEnabled(async () => {
+	document.getElementById('cheat-menu').style.resize = "both"
+}).setDisabled(() => {
+	document.getElementById('cheat-menu').style.resize = "none"
+    document.getElementById('cheat-menu').style.height = window.dimensions.height
+		document.getElementById('cheat-menu').style.width = window.dimensions.width
 });
