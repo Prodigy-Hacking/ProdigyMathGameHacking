@@ -21,7 +21,7 @@ toggler.onclick = () => {
 
 	if (visible) {
 		toggler.innerText = "▼";
-		menu.style.top = "-62vh";
+		menu.style.top = "-1000vh";
 	} else {
 		toggler.innerText = "▲";
 		menu.style.top = "";
@@ -33,16 +33,13 @@ const menuleft = document.createElement("DIV");
 menuleft.classList.add("menu-left");
 menu.append(menuleft);
 
-const menuright = document.createElement("DIV");
-menuright.classList.add("menu-right");
-menu.append(menuright);
-
 export const addArea = (title: string) => {
 	const area = document.createElement("div");
 	area.classList.add("menu-area");
 	menuleft.append(area);
+
 	const header = document.createElement("h1");
-	header.innerHTML = title;
+	header.innerText = title;
 	area.append(header);
 	return area;
 };
@@ -57,15 +54,6 @@ subtitle.innerHTML = `On behalf of <a href="https://github.com/Prodigy-Hacking/P
 <hr>
 This is free and open-source software. If you paid for this or accessed this behind a paywall/AdFly link, demand a refund. If you sell this software, or otherwise make a commercial advantage from it, you are violating Github conduct by not cooperating with our license.`;
 menuleft.append(subtitle);
-
-const chatTitle = document.createElement("h1");
-chatTitle.id = "chat-title";
-chatTitle.innerText = "Live Chat";
-menuright.append(chatTitle);
-
-export const chat = document.createElement("div");
-chat.id = "chat-content";
-menuright.append(chat);
 
 export class Hack {
 	public element: HTMLButtonElement;
