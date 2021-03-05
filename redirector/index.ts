@@ -16,14 +16,15 @@ interface GameStatus {
 }
 
 setInterval(async () => {
-	try {
+	//try {
 		const status: GameStatus = await (await fetch("https://api.prodigygame.com/game-api/status")).json();
+		console.log(status);
 		const version = status?.data?.gameClientVersion;
 		if (lastVersion === "None") return (lastVersion = version!);
 
 		// write modified gamefile to disk, in case there's a crash
-	} catch (e) {}
-}, 100000);
+	//} catch (e) {}
+}, 1000);
 
 app.use(cors());
 
