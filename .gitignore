@@ -1,9 +1,11 @@
 .git
-node_modules
-config.json
-push.bat
-updateCommitter.sh
-*.log
 .gitignore
-.git-rewrite/**
+
+config.json
+
+*.log
+node_modules/
+
 *.pem
+*.crx
+*.xpi

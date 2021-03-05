@@ -11,8 +11,9 @@
 		"typescript": "^3.8.3"
 	},
 	"scripts": {
-		"start": "tsc && node .",
-		"build": "tsc"
+		"start": "npm run build && node .",
+		"build": "tsc",
+		"setup": "npm install"
 	},
 	"devDependencies": {
 		"@types/cors": "^2.8.8",
