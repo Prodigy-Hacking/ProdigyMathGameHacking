@@ -1,3 +1,4 @@
+//@ts-nocheck
 import "./style.scss";
 import { PIXI } from "../../typings/pixi";
 import { Swal } from "./utils/swal";;
@@ -19,6 +20,8 @@ toggler.onclick = () => {
 	visible = !visible;
 
 	if (visible) {
+		document.getElementById('cheat-menu').style.height = window.dimensions.height
+		document.getElementById('cheat-menu').style.width = window.dimensions.width
 		toggler.innerText = "▼";
 		menu.style.top = "-62vh";
 	} else {
@@ -146,7 +149,7 @@ export const category = {
 	misc: addArea("Miscellaneous Hacks"),
 	utility: addArea("Utility Hacks"),
 };
-
+window.dimensions = document.getElementById('cheat-menu').getBoundingClientRect()
 setTimeout(() => {
 	if (Math.random() < 0.005) {
 		// @ts-ignore
