@@ -14,6 +14,9 @@ export const getItem = <T extends GameItemKey>(type: T, id: number): Item<T> | n
 export const VERY_LARGE_NUMBER = 9e9;
 
 export const saveCharacter = () => {
+	_.player.forceSaveCharacter()
+	// well fuck that
+	/*
 	let playerdata = {}
 	playerdata.equipment = _.player.equipment
 	playerdata.tutorial = _.player.tutorial
@@ -34,6 +37,7 @@ export const saveCharacter = () => {
 		"body": JSON.stringify(JSON.stringify(playerdata)),
 		"method": "POST",
 		"mode": "cors"	});
+		*/
 }
 
 export const assetURL = "https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/HEAD/willsCheatMenu/src/assets/";

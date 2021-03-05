@@ -30,7 +30,7 @@ new Toggler(category.misc, "Disable Monster Encounters").setEnabled(async () => 
 	_.constants.constants["GameConstants.Debug.SCALE_ENCOUNTER_DISTANCE"] = 1;
 });
 
-new Toggler(category.misc, "Disable Monster Encounters").setEnabled(async () => {
+new Toggler(category.misc, "Skip enemy turn").setEnabled(async () => {
 	_.constants.constants["GameConstants.Battle.SKIP_ENEMY_TURN"] = true;
 }).setDisabled(() => {
 	_.constants.constants["GameConstants.Battle.SKIP_ENEMY_TURN"] = false;
