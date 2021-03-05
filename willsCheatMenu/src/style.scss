@@ -8,44 +8,17 @@
 		position: absolute;
 		top: 0px;
 		left: 0px;
-		height: 62vh;
 		transition: top 0.35s;
 		padding: 10px;
 		border: #fffa 2px solid;
 		overflow-y: scroll;
+		resize: vertical;
+		overflow: auto;
 	}
 	.menu-left {
 		width: 70%;
 		height: 100%;
 		float: left;
-	}
-	.menu-right {
-		width: 30%;
-		height: 100%;
-		float: left;
-		display: none;
-		#chat-title {
-			font-family: "Arvo";
-			font-size: 30px;
-			font-weight: 900;
-			text-align: center;
-			margin-top: 10px;
-		}
-		#chat-content {
-			background-color: #0007;
-			height: 340px;
-			padding: 6px 9px;
-			overflow-y: scroll;
-			.chat-message {
-				color: white;
-				font-family: "Sen";
-				margin: 0;
-				.chat-name {
-					color: yellow;
-					font-weight: 700;
-				}
-			}
-		}
 	}
 	#menu-toggler {
 		z-index: 1;
