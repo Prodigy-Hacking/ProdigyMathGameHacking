@@ -1,7 +1,7 @@
 {
-	"name": "Prodigy Math Game Hacking",
+	"name": "ProdigyHacking",
 	"version": "2.0.0",
-	"description": "Hacking Prodigy, the math game.",
+	"description": "PHEx is an extension created by the Prodigy Hacking Organization to raise awareness of security issues that SMARTeacher has blatantly ignored, without giving the ability to cause any damage to another player's expierence.",
 	"permissions": [
 		"webRequest",
 		"webRequestBlocking",
