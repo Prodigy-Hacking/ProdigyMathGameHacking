@@ -46,32 +46,22 @@ var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
 var typescript_1 = require("typescript");
 var cors_1 = __importDefault(require("cors"));
+var ms_1 = __importDefault(require("ms"));
 var app = express_1.default();
 // should match https://github.com/Prodigy-Hacking/PHEx/blob/master/src/manifest.json
 var SupportPHEXVersion = "2.0.0";
 var lastVersion = "None";
-setInterval(function () { return __awaiter(void 0, void 0, void 0, function () {
-    var status_1, version, e_1;
-    var _a;
-    return __generator(this, function (_b) {
-        switch (_b.label) {
-            case 0:
-                _b.trys.push([0, 3, , 4]);
-                return [4 /*yield*/, node_fetch_1.default("https://api.prodigygame.com/game-api/status")];
-            case 1: return [4 /*yield*/, (_b.sent()).json()];
-            case 2:
-                status_1 = _b.sent();
-                version = (_a = status_1 === null || status_1 === void 0 ? void 0 : status_1.data) === null || _a === void 0 ? void 0 : _a.gameClientVersion;
-                if (lastVersion === "None")
-                    return [2 /*return*/, (lastVersion = version)];
-                return [3 /*break*/, 4];
-            case 3:
-                e_1 = _b.sent();
-                return [3 /*break*/, 4];
-            case 4: return [2 /*return*/];
-        }
-    });
-}); }, 100000);
+var startDate = Date.now();
+/*setInterval(async () => {
+    try {
+        const status: GameStatus = await (await fetch("https://api.prodigygame.com/game-api/status")).json();
+        console.log(status);
+        const version = status?.data?.gameClientVersion;
+        if (lastVersion === "None") return (lastVersion = version!);
+
+        // write modified gamefile to disk, in case there's a crash
+    } catch (e) {}
+}, 10 * 60 * 1000);*/
 app.use(cors_1.default());
 app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
     var status, version, gameMinJS, replacements, _a, _b, _c, _d, _e, _f;
@@ -138,8 +128,7 @@ app.get("/version", function (req, res) { return __awaiter(void 0, void 0, void 
 }); });
 app.get("/status", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {
-        res.type(".json");
-        return [2 /*return*/, res.sendFile(__dirname + "/status.json")];
+        return [2 /*return*/, res.send("Redirector has been online for [" + ms_1.default(Date.now() - startDate) + "]")];
     });
 }); });
 var port = (_a = process.env.PORT) !== null && _a !== void 0 ? _a : 1337;

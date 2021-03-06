@@ -5,6 +5,7 @@ import path from "path";
 import { transpile } from "typescript";
 import Discord from "discord.js";
 import cors from "cors";
+import ms from "ms";
 
 const app = express();
 // should match https://github.com/Prodigy-Hacking/PHEx/blob/master/src/manifest.json
@@ -14,17 +15,18 @@ interface GameStatus {
 	status: string;
 	data?: { gameClientVersion?: string; prodigyGameFlags: { gameDataVersion: number } };
 }
+const startDate = Date.now();
 
-setInterval(async () => {
-	//try {
+/*setInterval(async () => {
+	try {
 		const status: GameStatus = await (await fetch("https://api.prodigygame.com/game-api/status")).json();
 		console.log(status);
 		const version = status?.data?.gameClientVersion;
 		if (lastVersion === "None") return (lastVersion = version!);
 
 		// write modified gamefile to disk, in case there's a crash
-	//} catch (e) {}
-}, 1000);
+	} catch (e) {}
+}, 10 * 60 * 1000);*/
 
 app.use(cors());
 
@@ -103,8 +105,7 @@ app.get("/version", async (req, res) => {
 	return res.send(SupportPHEXVersion);
 });
 app.get("/status", async (req, res) => {
-	res.type(".json");
-	return res.sendFile(__dirname + "/status.json");
+	return res.send(`Redirector has been online for [${ms(Date.now() - startDate)}]`)
 });
 
 const port = process.env.PORT ?? 1337;
