@@ -49,7 +49,7 @@ var cors_1 = __importDefault(require("cors"));
 var ms_1 = __importDefault(require("ms"));
 var app = express_1.default();
 // should match https://github.com/Prodigy-Hacking/PHEx/blob/master/src/manifest.json
-var SupportPHEXVersion = "2.0.0";
+var SupportPHEXVersion = "2.0.1";
 var lastVersion = "None";
 var startDate = Date.now();
 /*setInterval(async () => {
