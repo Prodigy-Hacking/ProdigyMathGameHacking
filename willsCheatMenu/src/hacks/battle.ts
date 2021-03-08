@@ -44,7 +44,7 @@ new Hack(category.battle, "Win Battle", "Instantly win a monster battle.").setCl
 			"You have successfully won the battle.",
 			"success"
 		);
-	}else {
+	} else {
 		await Toast.fire(
 			"Invalid State.",
 			"You are currently not in a battle.",
