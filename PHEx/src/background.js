@@ -4,13 +4,13 @@ const browser = chrome || browser;
 const debug = false;
 
 // Ignore X-Frame Headers
-chrome.webRequest.onHeadersReceived.addListener(
+browser.webRequest.onHeadersReceived.addListener(
 	(details) => ({ responseHeaders: details.responseHeaders.filter((header) => !["content-security-policy", "x-frame-options",].includes(header.name.toLowerCase())) }),
 	{ urls: ["<all_urls>"] }, ["blocking", "responseHeaders"]
 );
 
 // Redirect Requests
-chrome.webRequest.onBeforeRequest.addListener(details => {
+browser.webRequest.onBeforeRequest.addListener(details => {
 	const redirectorDomain = debug ? "http://localhost:1337" : "https://prodigyhacking.ml"
 
 	if (details.url.startsWith("https://code.prodigygame.com/code/") && details.url.includes("/game.min.js")) {
