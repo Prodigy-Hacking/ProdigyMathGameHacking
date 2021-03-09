@@ -32,7 +32,8 @@
 	
 ## HOW TO INSTALL
 
-**[Official Browser Extension](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks)**
+- **[Chrome Web Store](https://chrome.google.com/webstore/detail/phex/jfffggdcakelbglffcdhnkhddpgnffpl?hl=en)**
+- **[Zip File](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks)**
 
 <a href="https://prodigyhacking.com">
 	<img alt="Website Status" src="https://img.shields.io/website-up-down-green-red/https/prodigyhacking.com">
