@@ -137,6 +137,7 @@ All of our hacks are *open-source*, and only located under our [Github Organizat
 - [TNThacker2015](https://github.com/TNThacker2015)
 - [Exoticc](https://github.com/Exoticc)
 - [Rubberduck55](https://github.com/Rubberduck55)
+- [Divinelemon](https://github.com/divinelemon)
 - [Whimpers](https://github.com/KryptoCrash)
 
 
