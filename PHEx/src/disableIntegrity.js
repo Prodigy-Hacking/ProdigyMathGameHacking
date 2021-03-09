@@ -4,10 +4,8 @@
 
 	const redirectorDomain = debug ? "http://localhost:1337" : "https://prodigyhacking.ml";
 
-	window.scriptIsInjected = false;
-
 	if (!window.scriptIsInjected) {
-		window.scriptisInjected = true;
+		window.scriptIsInjected = true;
 
 		const pluginVersion = chrome.runtime.getManifest().version;
 		const supportedVersion = (await (await fetch(`${redirectorDomain}/version`)).text());
