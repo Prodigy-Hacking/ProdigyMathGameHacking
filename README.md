@@ -71,7 +71,7 @@
 <br>
 We're not trying to break the game because we're evil. We just wanted to help Prodigy become more secure, but they've ignored our emails and our requests to talk.
 
-Because of that we're just publicly showing hacks! That, and it's also just fun ;)
+Because of that we're just publicly showing hacks. At first glance, the possibilites of hacks look harmless, but they're not. Not too long ago, we managed to raid the Arena Leaderboard on Prodigy with accounts containing profanity in their stats. The accounts were quickly deleted by Prodigy, but the security vulnerability was never patched. It is possible to hack membership, essentialy cheating Prodigy out of their salary. It is possible to be level 69.42069! We have started the Prodigy Hacking Organization to alert the public - and SMARTeacher (parent company of Prodigy Education) - of the serious issues with their game's security **without causing any damage to another player's expierence**.
 
 All of our hacks are open source, and free. No paywalls, no ads, and no Patreon. If you really want to support us, you can Nitro boost our Discord server [here](https://discord.gg/XQDfbfq)!
 </details>
