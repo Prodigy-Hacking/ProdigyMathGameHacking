@@ -11,7 +11,7 @@
 		const supportedVersion = (await (await fetch(`${redirectorDomain}/version`)).text());
 
 		if (pluginVersion !== supportedVersion) {
-			const res = confirm("The PMGH extension is outdated. If you expierence any errors, please update.");
+			const res = confirm("The PMGH extension is outdated. If you expierence any errors, please update. If you are on the Chrome Webstore version or any webstore, please wait. Updates take some time.");
 
 			if (res) location = "https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-Update";
 		}
