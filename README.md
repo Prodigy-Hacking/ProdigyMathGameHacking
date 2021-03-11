@@ -1,4 +1,4 @@
-<h1 align="center">NOTICE: CONSOLE EXPORT OR SCREENSHOT IS REQUIRED TO OPEN AN ISSUE, ISSUES WITHOUT A SCREENSHOT OF CONSOLE WILL BE CLOSED.</h1>
+<h1 align="center">Our extension is back on the webstore! Get it [here](https://chrome.google.com/webstore/detail/prodigyhacking/gjabpajagbgoifbkflgojeojmnlmioea)!</h1>
 
 <hr>
 
