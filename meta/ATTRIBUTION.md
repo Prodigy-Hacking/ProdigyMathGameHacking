@@ -1,4 +1,4 @@
-# To make a public video on our hacks, please copy the format below, this counts for any media.
+# To make a public blog, video, post, or any other form of public media, please use the following text:
 
 ```text
 Hacks belong to and were developed by the Prodigy-Hacking organization - https://github.com/Prodigy-Hacking/ProdigyMathGameHacking
