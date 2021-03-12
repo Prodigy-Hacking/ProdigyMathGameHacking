@@ -10,4 +10,4 @@ This isn't so much of a hack. It's just something silly.
 
 NOTE: This will work on basically anything on you. To do hats, replace outfit with hat. If you want to do pets, replace outfit with pet ect, ect.
 
-NOTE: Also if you want to play as your buddy (Hamster, Epic etc.) and everyone else, just block "image" instead of "outfit".
+NOTE: If you wish to play as your body,  (hamster, Epic, etc.), just block "image" instead of "outfit".
