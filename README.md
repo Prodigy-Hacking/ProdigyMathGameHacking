@@ -1,4 +1,4 @@
-<h1 align="center">Our extension is back on the webstore! Download <a href="https://chrome.google.com/webstore/detail/prodigyhacking/gjabpajagbgoifbkflgojeojmnlmioeaa">the Prodigy Hacking Extension (PHEx)</a> today!</h1>
+<h1 align="center">Our extension is back on the webstore! Download <a href="https://chrome.google.com/webstore/detail/prodigyhacking/gjabpajagbgoifbkflgojeojmnlmioeaa">Prodigy Hacking Extension</a> today!</h1>
 
 <hr>
 
