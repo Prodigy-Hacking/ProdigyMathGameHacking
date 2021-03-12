@@ -218,9 +218,9 @@ new Hack(category.player, "Morph Player (DEV)", "Morph into a pet, furnishing, o
 	_.player.getPlayerData().playerTransformation = {
 		transformType: morphType.value,
 		transformID: morphID.value,
-		maxTime: VERY_LARGE_NUMBER*60*60*1000,
-		timeRemaining: VERY_LARGE_NUMBER*60*60*1000
-	};
+		maxTime: VERY_LARGE_NUMBER,
+		timeRemaining: VERY_LARGE_NUMBER
+	};	
 	_.player.appearanceChanged = true;
 	
 	await Toast.fire("Morphed!", "You've been morphed.", "success");
