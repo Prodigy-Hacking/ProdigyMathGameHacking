@@ -21,7 +21,7 @@ toggler.onclick = () => {
 
 	if (visible) {
 		toggler.innerText = "▼";
-		menu.style.top = "-64vh";
+		menu.style.top = "-62vh";
 	} else {
 		toggler.innerText = "▲";
 		menu.style.top = "";
@@ -135,7 +135,6 @@ export const category = {
 	misc: addArea("Miscellaneous Hacks"),
 	utility: addArea("Utility Hacks"),
 };
-export const dimensions = document.getElementById('cheat-menu').getBoundingClientRect()
 setTimeout(() => {
 	if (Math.random() < 0.005) {
 		// @ts-ignore
