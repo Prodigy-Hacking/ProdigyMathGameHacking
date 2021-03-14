@@ -21,7 +21,7 @@ toggler.onclick = () => {
 
 	if (visible) {
 		toggler.innerText = "▼";
-		menu.style.top = "-1000vh";
+		menu.style.top = "-62vh";
 	} else {
 		toggler.innerText = "▲";
 		menu.style.top = "";
