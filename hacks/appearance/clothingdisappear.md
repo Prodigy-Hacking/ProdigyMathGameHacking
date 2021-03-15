@@ -7,4 +7,7 @@ This isn't so much of a hack. It's just something silly.
 6. A text box should appear. Type in outfit and click add.
 7. Reload the page.
 8. Your done! Now outfits won't appear! To get rid of this, just uncheck outfits under the request blocking tab then reload.
+
 NOTE: This will work on basically anything on you. To do hats, replace outfit with hat. If you want to do pets, replace outfit with pet ect, ect.
+
+NOTE: If you wish to play as your buddy (hamster, Epic, etc.), just block "image" instead of "outfit".
