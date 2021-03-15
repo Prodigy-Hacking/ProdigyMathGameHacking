@@ -11,4 +11,9 @@ Usage: Install the hacks, the dropdown should appear in the top left corner afte
 
 Build / Development: Install dependencies and run `webpack` in the command prompt to compile it.
 
+```
+npm i
+npm run build
+```
+
 We are always looking for new contributors to help maintain the hacks and menu!
