@@ -53,7 +53,10 @@ app.get("/game.min.js", async (req, res) => {
 			`nootmeat = func => {
 				let elephant = 2
 			}
-			exports = {};_.variables=Object.create(null);
+			exports = {};
+			_.variables=Object.create(null);
+
+			console.trace = _ => {};
 	
 			${gameMinJS}
 
@@ -65,7 +68,7 @@ app.get("/game.min.js", async (req, res) => {
 			SW.Load.onGameLoad();
 			setTimeout(() => {
 				${await (await fetch("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/willsCheatMenu/loader.js")).text()}
-			}, 10000);
+			}, 15000);
 		`)
 	);
 });
