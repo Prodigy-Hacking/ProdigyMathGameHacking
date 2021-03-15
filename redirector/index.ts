@@ -9,7 +9,7 @@ import ms from "ms";
 
 const app = express();
 // should match https://github.com/Prodigy-Hacking/PHEx/blob/master/src/manifest.json
-const SupportPHEXVersion = "2.0.1";
+const SupportPHEXVersion = "2.0.2";
 let lastVersion = "None";
 interface GameStatus {
 	status: string;
