@@ -92,10 +92,10 @@ app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, v
                 _b = (_a = res).send;
                 _d = (_c = replacements).reduce;
                 _e = [function (code, replacement) { return code.split(replacement[0]).join(replacement[1]); }];
-                _f = "nootmeat = func => {\n\t\t\t\tlet elephant = 2\n\t\t\t}\n\t\t\texports = {};_.variables=Object.create(null);\n\t\n\t\t\t" + gameMinJS + "\n\n\t\t\t" + typescript_1.transpile(fs_1.default.readFileSync(path_1.default.join(__dirname, "./revival.ts"), { encoding: "utf8" })) + "\n\n\t\t\tconsole.log(\"%cWill's Redirect Hack\", \"font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;\");\n\t\t\tconsole.log(\"%cVersion " + SupportPHEXVersion + "\", \"font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;\");\n\t\t\tconsole.log('The variable \"_\" contains the hacked variables.');\n\t\t\tSW.Load.onGameLoad();\n\t\t\tsetTimeout(() => {\n\t\t\t\t";
+                _f = "nootmeat = func => {\n\t\t\t\tlet elephant = 2\n\t\t\t}\n\t\t\texports = {};\n\t\t\t_.variables=Object.create(null);\n\n\t\t\tconsole.trace = _ => {};\n\t\n\t\t\t" + gameMinJS + "\n\n\t\t\t" + typescript_1.transpile(fs_1.default.readFileSync(path_1.default.join(__dirname, "./revival.ts"), { encoding: "utf8" })) + "\n\n\t\t\tconsole.log(\"%cWill's Redirect Hack\", \"font-size:40px;color:#540052;font-weight:900;font-family:sans-serif;\");\n\t\t\tconsole.log(\"%cVersion " + SupportPHEXVersion + "\", \"font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;\");\n\t\t\tconsole.log('The variable \"_\" contains the hacked variables.');\n\t\t\tSW.Load.onGameLoad();\n\t\t\tsetTimeout(() => {\n\t\t\t\t";
                 return [4 /*yield*/, node_fetch_1.default("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/willsCheatMenu/loader.js")];
             case 5: return [4 /*yield*/, (_h.sent()).text()];
-            case 6: return [2 /*return*/, _b.apply(_a, [_d.apply(_c, _e.concat([_f + (_h.sent()) + "\n\t\t\t}, 10000);\n\t\t"]))])];
+            case 6: return [2 /*return*/, _b.apply(_a, [_d.apply(_c, _e.concat([_f + (_h.sent()) + "\n\t\t\t}, 15000);\n\t\t"]))])];
         }
     });
 }); });
