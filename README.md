@@ -22,16 +22,12 @@
 	</strong>
 </p>
 <p align="center">
-<!--	<a href="https://chrome.google.com/webstore/detail/lpkeloemedafpfkdkbaclmmaokmadced/">
-		<img alt="Chrome Web Store Rating" src="https://img.shields.io/chrome-web-store/stars/lpkeloemedafpfkdkbaclmmaokmadced?label=Extension%20Rating">
+	<a href="https://chrome.google.com/webstore/detail/gjabpajagbgoifbkflgojeojmnlmioea/">
+		<img alt="Chrome Web Store Rating" src="https://img.shields.io/chrome-web-store/stars/gjabpajagbgoifbkflgojeojmnlmioea?label=Extension%20Rating">
 </a>
-<a href="https://chrome.google.com/webstore/detail/lpkeloemedafpfkdkbaclmmaokmadced/">
-<img alt="Extension Downloads" src="https://img.shields.io/chrome-web-store/users/lpkeloemedafpfkdkbaclmmaokmadced?color=red&label=Extension%20Downloads">
-</a> -->
-	
-## HOW TO INSTALL
-
-**[Official Browser Extension](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks)**
+<a href="https://chrome.google.com/webstore/detail/gjabpajagbgoifbkflgojeojmnlmioea/">
+<img alt="Extension Downloads" src="https://img.shields.io/chrome-web-store/users/gjabpajagbgoifbkflgojeojmnlmioea?color=red&label=Extension%20Downloads">
+</a>
 
 <a href="https://prodigyhacking.com">
 	<img alt="Website Status" src="https://img.shields.io/website-up-down-green-red/https/prodigyhacking.com">
@@ -62,6 +58,10 @@
 
 
 
+
+## How to install
+
+**[Official Browser Extension](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks)**
 
 ## Motivation
 
