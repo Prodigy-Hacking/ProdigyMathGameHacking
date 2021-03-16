@@ -1,6 +1,5 @@
 <h1 align="center">Our extension is back on the webstore! Download <a href="https://chrome.google.com/webstore/detail/prodigyhacking/gjabpajagbgoifbkflgojeojmnlmioea">Prodigy Hacking Extension</a> today!</h1>
 
-<hr>
 
 <h1 align="center">
 	<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks">
