@@ -9,9 +9,10 @@ Made of the Redirector extension, no-csp, and a little extra spice ;)
 ## Building
 
 ```cmd
-node build.js
+npm run build
 ```
 
 ## Credit
 
-Originally created by Rus, maintained by PatheticMustan.
+Originally created by Rus
+Still being maintained by PatheticMustan & Rus
