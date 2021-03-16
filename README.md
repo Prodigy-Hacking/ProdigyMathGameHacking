@@ -141,7 +141,7 @@ All of our hacks are *open-source*, and only located under our [Github Organizat
 
 
 
-## Important Repos
+## Important Folders
 
 - [ProdigyMathGameHacking](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking)
   - Our main repo, used as an issue tracker, things we're working on, documentation, and central hub. You're currently on it.
