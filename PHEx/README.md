@@ -15,4 +15,5 @@ npm run build
 ## Credit
 
 Originally created by Rus
-Still being maintained by PatheticMustan & Rus
+
+Maintained by the PMGH organization.
