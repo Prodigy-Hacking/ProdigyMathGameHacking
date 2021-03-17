@@ -72,7 +72,8 @@ app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, v
             case 1: return [4 /*yield*/, (_h.sent()).json()];
             case 2:
                 status = _h.sent();
-                version = (_g = status === null || status === void 0 ? void 0 : status.data) === null || _g === void 0 ? void 0 : _g.gameClientVersion;
+                const version = JSON.parse((await (await fetch('https://play.prodigygame.com/play')).text())
+                .match(/(?<=gameStatusDataStr = ').+(?=')/)[0])
                 if (status.status !== "success" || !version)
                     return [2 /*return*/, res.sendStatus(503)];
                 return [4 /*yield*/, node_fetch_1.default("https://code.prodigygame.com/code/" + version + "/game.min.js?v=" + version)];
