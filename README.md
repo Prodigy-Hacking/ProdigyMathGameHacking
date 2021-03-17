@@ -52,7 +52,8 @@
 <a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/pulse">
 	<img src="https://img.shields.io/github/commit-activity/m/Prodigy-Hacking/ProdigyMathGameHacking">
 </a>
-
+<a href="https://arenapoints.prodigyhacking.com">
+	<img alt="Arena Points Website" src="https://img.shields.io/badge/Arena%20Points%20Website-Down-red">
 </p>
 
 
