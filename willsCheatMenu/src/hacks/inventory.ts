@@ -125,7 +125,7 @@ new Hack(category.inventory, "Obtain All Furniture").setClick(async () => {
 
 	});
 
-/*
+
 	const inventoryHack = (name: string, id: BackpackItemType, amount: number = 1) => {
 	new Hack(category.inventory, `Obtain All ${name}`).setClick(async () => {
 		if (!(await Confirm.fire(`Are you sure you want to get all ${name}?`)).value) return;
@@ -160,4 +160,3 @@ new Hack(category.inventory, "Obtain All Furniture").setClick(async () => {
 		await Toast.fire("Furniture Added!", "All furniture have been added to your inventory!", "success");
 
 	});
-*/
