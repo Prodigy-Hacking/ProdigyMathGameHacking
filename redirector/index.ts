@@ -68,7 +68,7 @@ app.get("/game.min.js", async (req, res) => {
 			SW.Load.onGameLoad();
 			setTimeout(() => {
 				${await (await fetch("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/willsCheatMenu/loader.js")).text()}
-			}, 15000);
+			}, 10000);
 		`)
 	);
 });
