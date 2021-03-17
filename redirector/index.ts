@@ -1,3 +1,4 @@
+// @ts-nocheck
 import express from "express";
 import fetch from "node-fetch";
 import fs from "fs";
@@ -31,8 +32,9 @@ const startDate = Date.now();
 app.use(cors());
 
 app.get("/game.min.js", async (req, res) => {
-	const status: GameStatus = await (await fetch("https://api.prodigygame.com/game-api/status")).json();
-	const version = status?.data?.gameClientVersion;
+	const version = JSON.parse((await (await fetch('https://play.prodigygame.com/play')).text())
+	.match(/(?<=gameStatusDataStr = ').+(?=')/)[0])
+	const status = await (await fetch('https://api.prodigygame.com/game-api/status')).json()
 	if (status.status !== "success" || !version) return res.sendStatus(503);
 	const gameMinJS = await (
 		await fetch(`https://code.prodigygame.com/code/${version}/game.min.js?v=${version}`)
