@@ -66,7 +66,7 @@ app.use(cors_1.default());
 app.get("/game.min.js", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
     var status, version, gameMinJS, replacements, _a, _b, _c, _d, _e, _f;
     var _g;
-    return __generator(this, function (_h) {
+    return __generator(this, async function (_h) {
         switch (_h.label) {
             case 0: return [4 /*yield*/, node_fetch_1.default("https://api.prodigygame.com/game-api/status")];
             case 1: return [4 /*yield*/, (_h.sent()).json()];
