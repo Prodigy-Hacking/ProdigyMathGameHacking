@@ -66,11 +66,9 @@ app.get("/game.min.js", async (req, res) => {
 			console.log("%cVersion ${SupportPHEXVersion}", "font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;");
 			console.log('The variable "_" contains the hacked variables.');
 			SW.Load.onGameLoad();
-			/*
 			setTimeout(() => {
 				${await (await fetch("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/willsCheatMenu/loader.js")).text()}
 			}, 10000);
-			*/
 		`)
 	);
 });
