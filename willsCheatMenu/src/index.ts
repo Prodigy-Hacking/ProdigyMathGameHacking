@@ -54,7 +54,7 @@ subtitle.innerHTML = `On behalf of <a href="https://github.com/Prodigy-Hacking/P
 <hr>
 This is free and open-source software. If you paid for this or accessed this behind a paywall/AdFly link, demand a refund. If you sell this software, or otherwise make a commercial advantage from it, you are violating Github conduct by not cooperating with our license.
 
-<p1><b>Created and maintained by the ProdigyMathGameHacking commmunity on Gitub.</p1></b>`;
+<b>Created and maintained by the ProdigyMathGameHacking commmunity on Gitub.</b>`;
 menuleft.append(subtitle);
 
 export class Hack {
