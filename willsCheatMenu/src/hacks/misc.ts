@@ -1,12 +1,12 @@
 import { Swal, Toast, NumberInput, Confirm } from "../utils/swal";
 import { Hack, category, Toggler } from "../index";
 import { VERY_LARGE_NUMBER, gameData, pickRandom } from "../utils/util";
-import { prodigy, game,states } from "../utils/util";
+import { prodigy, game } from "../utils/util";
 new Hack(category.misc, "Skip Tutorial").setClick(async () => {
 	const setQuest = (t: string, i: number, n?: unknown, e?: unknown) => {
 		_.instance.prodigy.world.getZone(t).testQuest(i, n, e);
 		try {
-			states.TileScreen.process();
+			Object.fromEntries(_.instance.game.state.states).TileScreen.process();
 		} catch {}
 	};
 
