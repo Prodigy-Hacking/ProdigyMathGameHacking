@@ -135,7 +135,6 @@ export const category = {
 	misc: addArea("Miscellaneous Hacks"),
 	utility: addArea("Utility Hacks"),
 };
-_.player.hasMembership = () => {return true}
 setTimeout(() => {
 	if (Math.random() < 0.005) {
 		// @ts-ignore
