@@ -95,7 +95,7 @@ While our hacks are completely safe, <strong>you shouldn't use hacks on your mai
 
 There's an <b>extremely small chance your account will be hacker-tagged, reset, or banned</b>. Luckily, it almost never happens. The only incidents PMGH knows of users being banned for hacking were contributors or staff of PMGH itself.
 
-We will <b>never<b/> ask you for your password. If somebody asks you for personal/sensitive information, report it to the staff on our [Discord server](https://discord.gg/XQDfbfq). (There <b>is<b/> an exception with our arena point website, but still use with caution)
+We will <b>never<b/> ask you for your password. If somebody asks you for personal/sensitive information, report it to the staff on our [Discord server](https://discord.gg/XQDfbfq). (There <b>is<b/> an exception with our arena points website, but still use with caution)
 
 All of our hacks are *open-source*, and only located under our [Github Organization](https://github.com/Prodigy-Hacking).
 *If it's not an official repository, or a fork, it may not be safe!*
@@ -149,6 +149,9 @@ All of our hacks are *open-source*, and only located under our [Github Organizat
   - The Prodigy Hacking Extension, used to inject our modified gamefiles into Prodigy.
 - [Redirector](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/tree/master/redirector)
   - The server side! We can modify the game files to expose APIs, add cheat menus, and disable anti-cheat!
+- [willsCheatMenu](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/tree/master/willsCheatMenu")
+  -This is the main cheat menu UI for ProdigyMathGameHacking. Originally made by MelnDev, now maintained by ArcerionDev and PatheticMustan.
+
 
 
 
