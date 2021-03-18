@@ -12,7 +12,7 @@ export const gameData = _.instance.game.state.states.get('Boot')._gameData
 export const getItem = <T extends GameItemKey>(type: T, id: number): Item<T> | null =>
 	(gameData[type].find(x => x.ID === id) as null | Item<any>) ?? null;
 export const VERY_LARGE_NUMBER = 9e9;
-
+export const states = Object.fromEntries(_.instance.game.state.states)
 export const saveCharacter = () => {
 	_.player.forceSaveCharacter()
 	// well fuck that

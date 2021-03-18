@@ -2,11 +2,11 @@ import { Swal, Toast, NumberInput } from "../utils/swal";
 import { Hack, category, Toggler } from "../index";
 import { VERY_LARGE_NUMBER, gameData, pickRandom } from "../utils/util";
 import { BattleState } from "../../../typings/game";
-import { prodigy, game } from "../utils/util";
+import { prodigy, game, states } from "../utils/util";
 
 new Hack(category.battle, "Escape Battle", "Escape any battle!").setClick(async () => {
 	const currentState = game.state.current;
-	if (currentState === "PVP") game.state.states.PVP.endPVP();
+	if (currentState === "PVP") states.PVP.endPVP();
 	else if (currentState === "CoOp") prodigy.world.$(_.player.data.zone);
 	else if (!['Battle','SecureBattle'].includes(currentState)) await Toast.fire(
 		"Invalid State.",
@@ -31,14 +31,14 @@ new Hack(category.battle, "Win Battle", "Instantly win a monster battle.").setCl
 			"error"
 		);
 	} else if (currentState === "Battle") {
-		game.state.states.Battle.startVictory();
+		states.Battle.startVictory();
 		await Toast.fire(
 			"Victory!",
 			"You have successfully won the battle.",
 			"success"
 		);
 	} else if (currentState === "SecureBattle") {
-		_.instance.game.state.states.SecureBattle.battleVictory();
+		states.SecureBattle.battleVictory();
 		await Toast.fire(
 			"Victory!",
 			"You have successfully won the battle.",
