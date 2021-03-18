@@ -72,7 +72,7 @@ new Hack(category.player, "PVP Health").setClick(async () => {
 	await Toast.fire("Success!", "You now have lots of health!", "success");
 });
 
-new Toggler(category.player, 'Toggle menu').setEnabled(async () => {
+new Toggler(category.player, 'Toggle membership').setEnabled(async () => {
 	_.player.hasMembership = () => {return true}
 }).setDisabled(() => {
 	_.player.hasMembership = () => {return false}
