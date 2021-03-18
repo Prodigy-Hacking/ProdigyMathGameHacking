@@ -1,3 +1,2 @@
-//> Unlimited catch attempts
-//>> Gives you unlimited tries to catch a monster and keep it as your pet
-_.player.catchAttempt = 99999;
+import { gameData, VERY_LARGE_NUMBER, saveCharacter} from "../utils/util";
+_.player.catchAttempt = VERY_LARGE_NUMBER;
