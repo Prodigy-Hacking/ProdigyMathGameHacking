@@ -1,4 +1,4 @@
-<h1 align="center"><strong>Hacks are down.</strong></h1>
+<h1 align="center"><strong>We have a brand new hack system! Testing is appreciated!</strong></h1>
 
 
 <h1 align="center">
