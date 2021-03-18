@@ -8,7 +8,7 @@ import { Game } from "../../../typings/game";
 const base: { game: Game, prodigy: Prodigy } = _.instance;
 export const game = base.game;
 export const prodigy = base.prodigy;
-export const gameData = game.state.states.Boot._gameData;
+export const gameData = _.instance.game.state.states.get('Boot')._gameData
 export const getItem = <T extends GameItemKey>(type: T, id: number): Item<T> | null =>
 	(gameData[type].find(x => x.ID === id) as null | Item<any>) ?? null;
 export const VERY_LARGE_NUMBER = 9e9;

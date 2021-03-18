@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Swal, Toast, NumberInput, Input } from "../utils/swal";
 import { Hack, category } from "../index";
 import { VERY_LARGE_NUMBER, gameData, pickRandom } from "../utils/util";
