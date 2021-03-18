@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { Swal, Toast, NumberInput, Input } from "../utils/swal";
-import { Hack, category } from "../index";
+import { Hack, category, Toggler } from "../index";
 import { getItem, VERY_LARGE_NUMBER, gameData } from "../utils/util";
 import { prodigy, game } from "../utils/util";
 
