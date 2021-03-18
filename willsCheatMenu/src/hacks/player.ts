@@ -72,9 +72,10 @@ new Hack(category.player, "PVP Health").setClick(async () => {
 	await Toast.fire("Success!", "You now have lots of health!", "success");
 });
 
-new Hack(category.player, "Enable membership").setClick(async () => {
-	_.player.hasMembership = () => {return true};
-	await Toast.fire("Success!", "You now have lots of health!", "success");
+new Toggler(category.player, 'Toggle menu').setEnabled(async () => {
+	_.player.hasMembership = () => {return true}
+}).setDisabled(() => {
+	_.player.hasMembership = () => {return false}
 });
 
 new Hack(category.player, "Set name (Client side only)").setClick(async () => {
