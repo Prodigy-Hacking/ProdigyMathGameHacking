@@ -149,9 +149,14 @@ All of our hacks are *open-source*, and only located under our [Github Organizat
   - The Prodigy Hacking Extension, used to inject our modified gamefiles into Prodigy.
 - [Redirector](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/tree/master/redirector)
   - The server side! We can modify the game files to expose APIs, add cheat menus, and disable anti-cheat!
-
-
-
+ 
+ ## Hacking your account for you
+ We will not, in any way, ever hack your account for you.
+ Why?
+ Because we have easy to use UI, simple steps to download, and even a discord for help.
+ On top of this, sharing your username and password can give away private info such as: Name, Grade, Age, City, State, and Country.
+ So, to keep you safe, we will never hack your account for you.
+ 
 
 
 
