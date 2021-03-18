@@ -1,3 +1,4 @@
+// @ts-nocheck
 require = (() => {}) as any;
 import "../typings/pixi";
 
@@ -77,7 +78,7 @@ _.functions.customChat = (text: string) => {
 	next();
 };
 */
-Object.defineProperty(_, "gameData", { get: () => _.instance.game.state.states.Boot._gameData });
+Object.defineProperty(_, "gameData", { get: () => _.instance.game.state.states.get('Boot')._gameData });
 Object.defineProperty(_, "localizer", {
 	get: () => _.instance.prodigy.gameContainer.get("LocalizationService"),
 });

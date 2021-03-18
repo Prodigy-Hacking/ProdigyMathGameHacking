@@ -1,3 +1,4 @@
+// @ts-nocheck
 //> Item stacker hack
 //>> Gives all armor, hats, boots, currencies, etc.
 (() => {

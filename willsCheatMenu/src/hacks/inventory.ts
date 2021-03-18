@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { Hack, category } from "../index";
 import { Swal, Input, Toast, Confirm, NumberInput } from "../utils/swal";
 import { gameData, VERY_LARGE_NUMBER, saveCharacter} from "../utils/util";
