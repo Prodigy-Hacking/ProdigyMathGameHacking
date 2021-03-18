@@ -6,7 +6,7 @@ _.functions = Object.create(null);
 
 _.functions.escapeBattle = () => {
 	const currentState = _.instance.game.state.current;
-	if (currentState === "PVP") _.instance.game.state.states.PVP.endPVP();
+	if (currentState === "PVP") Object.fromEntries(_.instance.game.state.states).PVP.endPVP();
 	else if (currentState === "CoOp") _.instance.prodigy.world.$(_.player.data.zone);
 	else _.instance.game.state.callbackContext.runAwayCallback();
 };
