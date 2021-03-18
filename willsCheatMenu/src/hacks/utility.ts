@@ -18,24 +18,7 @@ new Hack(category.utility, "Save Character Locally", "Saves your character local
     playerdata.state = _.player.state.data
     playerdata.appearance = _.player.appearance
     playerdata.tutorial = _.player.tutorial.data
-    localStorage.playerdata = playerdata
-    await Toast.fire("Success!", "Note: Load Character will only work on this device.", "success");
-});
-
-new Hack(category.utility, "Save Character Locally", "Saves your character locally.").setClick(async () => {
-    let playerdata = {}
-    playerdata.equipment = _.player.equipment
-    playerdata.tutorial = _.player.tutorial
-    playerdata.pets = _.player.kennel._petData
-    playerdata.data = _.player.data
-    playerdata.encounters = _.player.encounters._data
-    playerdata.house = _.player.house.data
-    playerdata.inventory = _.player.backpack.data
-    playerdata.quests = _.player.quests.data
-    playerdata.state = _.player.state.data
-    playerdata.appearance = _.player.appearance
-    playerdata.tutorial = _.player.tutorial.data
-    localStorage.playerdata = playerdata
+    localStorage.playerdata = JSON.stringify(playerdata)
     await Toast.fire("Success!", "Note: Load Character will only work on this device.", "success");
 });
 
