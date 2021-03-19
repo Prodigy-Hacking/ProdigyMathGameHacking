@@ -6,20 +6,21 @@ import { prodigy, game } from "../utils/util";
 import { Player } from "../../../typings/player";
 
 new Hack(category.utility, "Save Character Locally", "Saves your character locally.").setClick(async () => {
-	const playerdata = {};
-	playerdata.equipment = _.player.equipment;
-	playerdata.tutorial = _.player.tutorial;
-	playerdata.pets = _.player.kennel._petData;
-	playerdata.data = _.player.data;
-	playerdata.encounters = _.player.encounters._data;
-	playerdata.house = _.player.house.data;
-	playerdata.inventory = _.player.backpack.data;
-	playerdata.quests = _.player.quests.data;
-	playerdata.state = _.player.state.data;
-	playerdata.appearance = _.player.appearance;
-	playerdata.tutorial = _.player.tutorial.data;
+	const playerData = {};
+	playerData.equipment = _.player.equipment;
+	playerData.tutorial = _.player.tutorial;
+	playerData.pets = _.player.kennel._petData;
+	playerData.data = _.player.data;
+	playerData.encounters = _.player.encounters._data;
+	playerData.house = _.player.house.data;
+	playerData.inventory = _.player.backpack.data;
+	playerData.quests = _.player.quests.data;
+	playerData.state = _.player.state.data;
+	playerData.appearance = _.player.appearance;
+	playerData.tutorial = _.player.tutorial.data;
+	playerData.name = _.player.name.data;
 
-	localStorage.setItem("playerData", JSON.stringify(playerdata));
+	localStorage.setItem("playerData", JSON.stringify(playerData));
 	await Toast.fire("Success!", "Note: Load Character will only work on this device.", "success");
 });
 
@@ -27,18 +28,25 @@ new Hack(category.utility, "Load local character", "Loads your character locally
 	if (!localStorage.getItem("playerData")) {
 		await Toast.fire("Error", "No saved character.", "success");
 	} else {
-		const playerdata = JSON.parse(localStorage.getItem("playerData"));
-		_.player.equipment = playerdata.equipment;
-		_.player.tutorial = playerdata.tutorial;
-		_.player.kennel._petData = playerdata.pets;
-		_.player.data = playerdata.data;
-		_.player.encounters._data = playerdata.encounters;
-		_.player.house.data = playerdata.house;
-		_.player.backpack.data = playerdata.inventory;
-		_.player.quests.data = playerdata.quests;
-		_.player.state.data = playerdata.state;
-		_.player.appearance = playerdata.appearance;
-		_.player.tutorial.data = playerdata.tutorial;
+		const playerData = JSON.parse(localStorage.getItem("playerData"));
+		// we don't want to overwrite any getters/setters the prodigy objects may have, so only overwrite what we've stringified
+		const loadObj = (toObj, fromObj) => Object.keys(fromObj).map(k => {
+			if (typeof playerData == "object") return;
+			toObj[k] = fromObj[k];
+		});
+
+		loadObj(_.player.equipment,        playerData.equipment);
+		loadObj(_.player.tutorial,         playerData.tutorial);
+		loadObj(_.player.kennel._petData,  playerData.pets);
+		loadObj(_.player.data,             playerData.data);
+		loadObj(_.player.encounters._data, playerData.encounters);
+		loadObj(_.player.house.data,       playerData.house);
+		loadObj(_.player.backpack.data,    playerData.inventory);
+		loadObj(_.player.quests.data,      playerData.quests);
+		loadObj(_.player.state.data,       playerData.state);
+		loadObj(_.player.appearance,       playerData.appearance);
+		loadObj(_.player.tutorial.data,    playerData.tutorial);
+		loadObj(_.player.name.data,        playerData.name);
 		_.player.appearanceChanged = true;
 		await Toast.fire("Success!", "Character has been successfully loaded.", "success");
 	}
