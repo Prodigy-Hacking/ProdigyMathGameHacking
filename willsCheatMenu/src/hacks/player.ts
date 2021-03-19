@@ -36,7 +36,7 @@ new Hack(category.player, "Set Bounty Points").setClick(async () => {
 	);
 	if (points.value === undefined) return;
 	_.player.data.bountyScore = Math.min(+points.value, 100);
-	await Toast.fire("Success!", `You now have ${_.player.data.bountyScore} bounty point${_.player.data.bountyScore != 1 ? 's':''}.`, "success");
+	await Toast.fire("Success!", `You now have ${_.player.data.bountyScore} bounty point${_.player.data.bountyScore != 1 ? "s":""}.`, "success");
 });
 
 new Hack(category.player, "Obtain Conjure Cubes").setClick(async () => {
@@ -44,21 +44,21 @@ new Hack(category.player, "Obtain Conjure Cubes").setClick(async () => {
 	if (cubes.value === undefined) return;
 	for (let i = 0; i < Math.min(99, +cubes.value); i++)
 		prodigy.giftBoxController.receiveGiftBox(null, getItem("giftBox", 1));
-	await Toast.fire("Success!", `You have gained ${cubes.value} conjure cube${cubes.value != 1 ? 's':''}.`, "success");
+	await Toast.fire("Success!", `You have gained ${cubes.value} conjure cube${cubes.value != 1 ? "s":""}.`, "success");
 });
 
 new Hack(category.player, "Set Wins").setClick(async () => {
 	const amount = await NumberInput.fire("Wins", "What number do you want to set your wins to?", "question");
 	if (amount.value === undefined) return;
 	_.player.data.win = +amount.value;
-	await Toast.fire("Success!", `You have set your win${amount.value != 1 ? 's':''} to ${amount.value}.`, "success");
+	await Toast.fire("Success!", `You have set your win${amount.value != 1 ? "s":""} to ${amount.value}.`, "success");
 });
 
 new Hack(category.player, "Set Losses").setClick(async () => {
 	const amount = await NumberInput.fire("Losses", "What number do you want to set your losses to?", "question");
 	if (amount.value === undefined) return;
 	_.player.data.loss = +amount.value;
-	await Toast.fire("Success!", `You have set your loss${amount.value != 1 ? 'es':''} to ${amount.value}.`, "success");
+	await Toast.fire("Success!", `You have set your loss${amount.value != 1 ? "es":""} to ${amount.value}.`, "success");
 });
 
 new Hack(category.player, "Instant Kill").setClick(async () => {
@@ -72,17 +72,17 @@ new Hack(category.player, "PVP Health").setClick(async () => {
 	await Toast.fire("Success!", "You now have lots of health!", "success");
 });
 
-new Toggler(category.player, 'Toggle membership').setEnabled(async () => {
+new Toggler(category.player, "Toggle membership").setEnabled(async () => {
 	_.player.hasMembership = () => {return true}
 }).setDisabled(() => {
 	_.player.hasMembership = () => {return false}
 });
 
 new Hack(category.player, "Set name (Client side only)").setClick(async () => {
-	const name = await Input.fire('What would you like to set your name to?')
+	const name = await Input.fire("What would you like to set your name to?")
 	if(!name.value) return;
 	_.player.getName = () => {return name.value}
-	await Toast.fire('Changed!','Your name was changed.')
+	await Toast.fire("Changed!","Your name was changed.")
 });
 /*
 
@@ -166,7 +166,7 @@ new Hack(category.player, "Change Name", "Change the name of your wizard.").setC
 		html: div,
 		preConfirm: () => {
 			return Array.prototype.slice
-				.call(document.querySelectorAll(`.selectName`))
+				.call(document.querySelectorAll(".selectName"))
 				.map((x: HTMLSelectElement) => x.options[x.selectedIndex].value);
 		},
 	});
