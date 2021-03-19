@@ -31,7 +31,7 @@ new Hack(category.utility, "Load local character", "Loads your character locally
 		const playerData = JSON.parse(localStorage.getItem("playerData"));
 		// we don't want to overwrite any getters/setters the prodigy objects may have, so only overwrite what we've stringified
 		const loadObj = (toObj, fromObj) => Object.keys(fromObj).map(k => {
-			if (typeof playerData == "object") return;
+			if (typeof k == "object") return;
 			toObj[k] = fromObj[k];
 		});
 
