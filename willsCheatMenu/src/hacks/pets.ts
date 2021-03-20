@@ -95,7 +95,7 @@ const getPet = async (text: string): Promise<number | undefined> => {
 	});
 	return pet.value;
 };
-
+/*
 new Hack(category.pets, "Edit Pet", "Edit a pet.").setClick(async () => {
 	const pet = await getPet("Choose the pet to edit.");
 	if (pet === undefined) return;
@@ -150,7 +150,7 @@ new Hack(category.pets, "Edit Pet", "Edit a pet.").setClick(async () => {
 		await Swal.fire("Successfully renamed!", "The name of the pet has been changed.", "success");
 	}
 });
-
+*/
 new Hack(category.pets, "Delete Pet", "Delete a pet.").setClick(async () => {
 	const pet = await getPet("Which pet do you wish to delete?");
 	if (pet === undefined) return;
