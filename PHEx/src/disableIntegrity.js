@@ -19,7 +19,7 @@
 			.then(function(response) {
 				console.log("Connection to server was Successful!");
 			}).catch(function(error) {
-				const res = confirm("Oh No! Something went wrong while trying to connect to the server! Try reloading this page. If this error continues to appear, join our discord for support, or create an issue in the GitHub.");
+				const res = confirm(`Oh No! Something went wrong while trying to connect to the server! Try reloading this page. If this error continues to appear, join our discord for support, or create an issue in the GitHub. More info ${error}`);
 
 				if (res) location = "https://discord.gg/XQDfbfq";
 			});
