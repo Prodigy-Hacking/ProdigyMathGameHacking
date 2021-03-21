@@ -1,15 +1,32 @@
+
 (async () => {
 	// Debug will use localhost CDN instead of ProdigyHacking CDN if enabled.
 	const debug = false;
 
 	const redirectorDomain = debug ? "http://localhost:1337" : "https://prodigyhacking.ml";
-
+	
 	if (!window.scriptIsInjected) {
 		window.scriptIsInjected = true;
+		function handleErrors(response) {
+			if (!response.ok) {
+				throw Error(response.statusText);
+			}
+			return response;
+		}
+		
+		fetch(`${redirectorDomain}/game.min.js`)
+			.then(setTimeout(handleErrors, 5000))
+			.then(function(response) {
+				console.log("Connection to server was Successful!");
+			}).catch(function(error) {
+				const res = confirm("Oh No! Something went wrong while trying to connect to the server! Try reloading this page. If this error continues to appear, join our discord for support, or create an issue in the GitHub.");
 
+				if (res) location = "https://discord.gg/XQDfbfq";
+			});
+			
 		const pluginVersion = chrome.runtime.getManifest().version;
 		const supportedVersion = (await (await fetch(`${redirectorDomain}/version`)).text());
-
+		
 		if (pluginVersion !== supportedVersion) {
 			const res = confirm("The PMGH extension is outdated. If you expierence any errors, please update. If you are on the Chrome Webstore version or any webstore, please wait. Updates take some time.");
 
