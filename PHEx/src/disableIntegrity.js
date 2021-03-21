@@ -8,17 +8,22 @@
 	if (!window.scriptIsInjected) {
 		window.scriptIsInjected = true;
 		function handleErrors(response) {
+			//Error handler thingy
 			if (!response.ok) {
 				throw Error(response.statusText);
 			}
 			return response;
 		}
-		
+		//Fetches https://prodigyhacking.ml/game.min.js
 		fetch(`${redirectorDomain}/game.min.js`)
+			//Error handler in action. 5 second delay to give time for webpage to load.
 			.then(setTimeout(handleErrors, 5000))
+			//If can fetch, carry on normally.
 			.then(function(response) {
 				console.log("Connection to server was Successful!");
-			}).catch(function(error) {
+			})
+			//If fetch spits out error, trigger dialog box
+			.catch(function(error) {
 				const res = confirm(`Oh No! Something went wrong while trying to connect to the server! Try reloading this page. If this error continues to appear, join our discord for support, or create an issue in the GitHub. More info ${error}`);
 
 				if (res) location = "https://discord.gg/XQDfbfq";
@@ -26,7 +31,7 @@
 			
 		const pluginVersion = chrome.runtime.getManifest().version;
 		const supportedVersion = (await (await fetch(`${redirectorDomain}/version`)).text());
-		
+		//Checks for plugin version. If outdated, triggers dialog box.
 		if (pluginVersion !== supportedVersion) {
 			const res = confirm("The PMGH extension is outdated. If you expierence any errors, please update. If you are on the Chrome Webstore version or any webstore, please wait. Updates take some time.");
 
