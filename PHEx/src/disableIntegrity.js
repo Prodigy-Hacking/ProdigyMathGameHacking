@@ -7,6 +7,7 @@
 	
 	if (!window.scriptIsInjected) {
 		window.scriptIsInjected = true;
+		/*
 		function handleErrors(response) {
 			//Error handler thingy
 			if (!response.ok) {
@@ -15,7 +16,7 @@
 			return response;
 		}
 		//Fetches https://prodigyhacking.ml/game.min.js
-		fetch(`${redirectorDomain}/game.min.js`)
+		await fetch(`${redirectorDomain}/game.min.js`)
 			//Error handler in action. 5 second delay to give time for webpage to load.
 			.then(setTimeout(handleErrors, 5000))
 			//If can fetch, carry on normally.
@@ -28,7 +29,7 @@
 
 				if (res) location = "https://discord.gg/XQDfbfq";
 			});
-			
+		*/
 		const pluginVersion = chrome.runtime.getManifest().version;
 		const supportedVersion = (await (await fetch(`${redirectorDomain}/version`)).text());
 		//Checks for plugin version. If outdated, triggers dialog box.
