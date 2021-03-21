@@ -28,7 +28,7 @@
 				})
 				//If fetch spits out error, trigger dialog box
 				.catch(function(error) {
-					const res = confirm(`Oh no! Something went wrong while trying to connect to the server! Try reloading this page. If this error continues to appear, join our Discord for support, or create an issue on the GitHub. More information: ${error}`);
+					const res = confirm(`Oh No! Something went wrong while trying to connect to the server! Try reloading this page. If this error continues to appear, join our Discord for support, or create an issue on the GitHub. More info ${error}`);
 
 					if (res) location = "https://discord.gg/XQDfbfq";
 				});
