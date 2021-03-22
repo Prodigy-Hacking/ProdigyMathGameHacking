@@ -6,7 +6,7 @@
 		<img align="center"
 			width="128"
 			alt="The Lounge"
-			src="https://user-images.githubusercontent.com/61985513/112065268-9d0d2c80-8b21-11eb-9e25-401e1dd1551a.png">
+			src="https://user-images.githubusercontent.com/61985513/112065411-d2b21580-8b21-11eb-9beb-ac267876f31e.png">
 	</a>
 </h1>
 
