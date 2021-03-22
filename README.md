@@ -6,7 +6,7 @@
 		<img align="center"
 			width="128"
 			alt="The Lounge"
-			src="https://raw.githubusercontent.com/Prodigy-Hacking/PHEx/master/src/assets/x128.png">
+			src="https://user-images.githubusercontent.com/61985513/112065165-6b946100-8b21-11eb-8535-09465282c47d.png">
 	</a>
 </h1>
 
