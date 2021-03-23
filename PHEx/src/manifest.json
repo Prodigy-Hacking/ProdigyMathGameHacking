@@ -1,6 +1,6 @@
 {
 	"name": "Prodigy Hacking Extension (PHEx)",
-	"version": "2.0.2",
+	"version": "2.0.3",
 	"description": "PHEx is an extension made to raise awareness of security issues for Prodigy",
 	"permissions": [
 		"webRequest",

@@ -23,7 +23,7 @@ browser.webRequest.onBeforeRequest.addListener(details => {
 		// return { redirectUrl: `${redirectorDomain}/game.min.js` };
 		return { cancel: true };
 	} else if (details.url.startsWith("https://code.prodigygame.com/js/public-game")) {
-		return { redirectUrl: `${redirectorDomain}/public-game.min.js?hash=${details.url.split("public-game-")[1].split(".")[0]}` };
+		return { redirectUrl: `${redirectorDomain}/public-game.min.js?hash=${details.url.split("public-game-")[1].split(".")[0]}&updated=${Date.now()}` };
 	} else if (details.url.startsWith("https://api.prodigygame.com/game-api/v1/character/")) {
 		return { redirectUrl: "https://api.prodigygame.com/game-api/v1/character/" + details.url.substring(details.url.lastIndexOf("/") + 1, details.url.lastIndexOf("?")) + "?isMember=1&userID=" + details.url.split("&userID=")[1] };
 	}
