@@ -182,7 +182,12 @@ new Hack(category.player, "Change Name", "Change the name of your wizard.").setC
 });
 
 
-
+new Hack(category.player, "Uncap player level (client side only, doesn't save on reload)").setClick(async () => {
+	const level = await NumberInput.fire('Level','What would you like to set your level to? (Can be 100+)','question')
+	if(!level.value) return;
+	eval(`_.player.getLevel = () => {return ${level.value}}`)
+	await Toast.fire('Updated!','Your level has been successfully updated','success')
+})
 
 
 
