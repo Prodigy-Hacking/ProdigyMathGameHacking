@@ -13,7 +13,7 @@ new Hack(category.battle, "Escape Battle", "Escape any battle!").setClick(async 
 		"You are currently not in a battle.",
 		"error"
 	);
-	else {game.state.callbackContext.runAwayCallback();
+	else {Object.fromEntries(_.instance.game.state.states)[currentState].runAwayCallback()
 	await Toast.fire(
 		"Escaped!",
 		"You have successfully escaped from the battle.",
