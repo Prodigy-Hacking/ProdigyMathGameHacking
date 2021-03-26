@@ -126,6 +126,13 @@ new Hack(category.inventory, "Obtain All Furniture").setClick(async () => {
 
 	});
 
+new Hack(category.inventory, "Obtain All Items").setClick(async () => {
+	let amt = await NumberInput.fire("Amount", `How many of each object would you like?`, "question");
+	if (!amt.value) return
+	ids.forEach(id => {
+		_.player.backpack.data[id] = itemify(gameData[id], +amt.value)
+	});
+});
 /*
 	const inventoryHack = (name: string, id: BackpackItemType, amount: number = 1) => {
 	new Hack(category.inventory, `Obtain All ${name}`).setClick(async () => {
