@@ -132,6 +132,10 @@ new Hack(category.inventory, "Obtain All Items").setClick(async () => {
 	ids.forEach(id => {
 		_.player.backpack.data[id] = itemify(gameData[id], +amt.value)
 	});
+	gameData.dorm.forEach(x =>
+		_.player.house.data.items[x.ID] = {A: [], N: +amt.value}
+	)
+	await Toast.fire("Obtained All Items!", `You have obtained ${amt.value} of all items!`, "success")
 });
 /*
 	const inventoryHack = (name: string, id: BackpackItemType, amount: number = 1) => {
