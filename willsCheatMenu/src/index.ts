@@ -140,6 +140,13 @@ if (localStorage.getItem("level")) {
 	eval(`_.player.getLevel = () => {return ${localStorage.getItem("level")}}`)
 }
 
+if (localStorage.getItem("pets")) {
+	let pets = JSON.parse(localStorage.getItem("pets"))
+	pets.forEach(element => {
+		eval(`_.player.kennel.petTeam[${element[0]+1}].getLevel = () => {return ${element[1]}}`)
+	});
+}
+
 setTimeout(() => {
 	_.player.kennel.petTeam.forEach(v => {
 		if (v && v.assignRandomSpells) {
