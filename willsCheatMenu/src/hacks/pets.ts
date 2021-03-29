@@ -112,7 +112,13 @@ new Hack(category.pets, "Uncap pet level (client side only)", "Change your pet's
 		pets = "[]"
 	}
 	pets = JSON.parse(pets)
-	pets.push([parseInt(val.value), amt.value])
+	var name;
+	petTeam.forEach(element => {
+		if (element.getName() == names[val.value]) {
+			name = element
+		}
+	});
+	pets.push([name.getID(), amt.value])
 	localStorage.setItem("pets", JSON.stringify(pets))
 	eval(`_.player.kennel.petTeam[parseInt(val.value)+1].getLevel = () => {return ${num}}`)
 	await Toast.fire('Updated!','The level of your pet was successfully updated.','success')
