@@ -143,7 +143,11 @@ if (localStorage.getItem("level")) {
 if (localStorage.getItem("pets")) {
 	let pets = JSON.parse(localStorage.getItem("pets"))
 	pets.forEach(element => {
-		eval(`_.player.kennel.data[${element[0]+1}].getLevel = () => {return ${element[1]}}`)
+		_.player.kennel.petTeam.forEach(pet => {
+			if (pet.getID() == element[0]) {
+				eval(`_.player.kennel.petTeam[${element[0]+1}].getLevel = () => {return ${element[1]}}`)
+			}
+		});
 	});
 }
 
