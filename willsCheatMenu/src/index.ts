@@ -135,6 +135,11 @@ export const category = {
 	misc: addArea("Miscellaneous Hacks"),
 	utility: addArea("Utility Hacks"),
 };
+
+if (localStorage.getItem("level")) {
+	eval(`_.player.getLevel = () => {return ${localStorage.getItem("level")}}`)
+}
+
 setTimeout(() => {
 	_.player.kennel.petTeam.forEach(v => {
 		if (v && v.assignRandomSpells) {
