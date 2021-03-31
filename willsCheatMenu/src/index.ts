@@ -110,7 +110,10 @@ export class Toggler extends Hack {
 				localStorage.setItem(name, "true")
 				await this.enabled?.();
 			}
-			else await this.disabled?.();
+			else {
+				localStorage.setItem(name, "false")
+				await this.disabled?.();
+			}
 		});
 	}
 	get status() {
