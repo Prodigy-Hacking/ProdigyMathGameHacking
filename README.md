@@ -124,7 +124,6 @@ All of our hacks are *open-source*, and only located under our [Github Organizat
 - [Yama](https://github.com/YamaHacks)
 - [Rus](https://github.com/UntrustableRus)
 - [BoredFish](https://github.com/BoredFishRE)
-- [ChickenOYT](https://github.com/ChickenOnYT)
 - Noot (Anonymous User)
 
 
