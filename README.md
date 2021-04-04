@@ -119,7 +119,7 @@ All of our hacks are *open-source*, and only located under our [Github Organizat
 
 
 ## Current Collaborators
-
+- [ChickenOYT](https://github.com/ChickenOnYT) - a god that simps for https://digitalteal.com
 - [PatheticMustan](https://github.com/PatheticMustan)
 - [Arcerion](https://github.com/ArcerionDev)
 - [Yama](https://github.com/YamaHacks)
