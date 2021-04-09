@@ -1,5 +1,5 @@
-<h1 align="center"><strong><a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/raw/master/PHEx/build/extension.zip">PHEx v2.1.0 is released.</a></strong></h1>
-
+<!-- <h1 align="center"><strong><a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/raw/master/PHEx/build/extension.zip">PHEx v2.1.0 is released.</a></strong></h1>
+-->
 
 <h1 align="center">
 	<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks">
