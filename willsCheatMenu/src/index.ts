@@ -115,9 +115,6 @@ export class Toggler extends Hack {
 				await this.disabled?.();
 			}
 		});
-		if (localStorage.getItem(this.name) === "true") {
-			this.element.click();
-		}
 	}
 	get status() {
 		return JSON.parse(this.element.getAttribute("status")!) as boolean;
@@ -127,6 +124,9 @@ export class Toggler extends Hack {
 	}
 	setEnabled(event: () => unknown) {
 		this.enabled = event;
+		if (localStorage.getItem(this.name) === "true") {
+			this.element.click()
+		}
 		return this;
 	}
 	setDisabled(event: () => unknown) {
