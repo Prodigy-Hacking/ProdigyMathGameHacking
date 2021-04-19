@@ -131,7 +131,7 @@ All of our hacks are *open-source*, and only located under our [Github Organizat
 
 ## Retired Collaborators
 
-- [MelnDev](https://github.com/MelnDev)
+- [MelnCat](https://github.com/MelnCat)
 - [Exoticc](https://github.com/Exoticc)
 - [Rubberduck55](https://github.com/Rubberduck55)
 - [Whimpers](https://github.com/KryptoCrash)
