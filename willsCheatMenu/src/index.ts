@@ -57,7 +57,7 @@ menuleft.append(subtitle);
 
 export class Hack {
 	public element: HTMLButtonElement;
-	private name: String;
+	public name: String;
 	private description: String;
 
 	constructor(
@@ -106,8 +106,14 @@ export class Toggler extends Hack {
 		this.element.setAttribute("status", "false");
 		this.setClick(async () => {
 			this.status = !this.status;
-			if (this.status) await this.enabled?.();
-			else await this.disabled?.();
+			if (this.status) {
+				localStorage.setItem(this.name, "true")
+				await this.enabled?.();
+			}
+			else {
+				localStorage.setItem(this.name, "false")
+				await this.disabled?.();
+			}
 		});
 	}
 	get status() {
@@ -118,6 +124,9 @@ export class Toggler extends Hack {
 	}
 	setEnabled(event: () => unknown) {
 		this.enabled = event;
+		if (localStorage.getItem(this.name) === "true") {
+			this.element.click()
+		}
 		return this;
 	}
 	setDisabled(event: () => unknown) {
