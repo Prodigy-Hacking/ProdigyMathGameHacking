@@ -118,25 +118,16 @@ await Toast.fire("Runes Added!", "Your runes have been added!", "success");
 });
 
 new Hack(category.inventory, "Obtain All Furniture").setClick(async () => {
+	let amt = await NumberInput.fire("Amount", `How many of each piece of furniture would you like?`, "question");
+	if(!amt.value) return;
 	if (!(await Confirm.fire("Are you sure you want to get all furniture?")).value) return;
 		gameData.dorm.forEach(x =>
-			_.player.house.data.items[x.ID] = {A: [], N: VERY_LARGE_NUMBER}
+			_.player.house.data.items[x.ID] = {A: [], N: amt}
 		)
 		await Toast.fire("Furniture Added!", "All furniture has been added to your inventory!", "success");
 
 	});
 
-new Hack(category.inventory, "Obtain All Items").setClick(async () => {
-	let amt = await NumberInput.fire("Amount", `How many of each object would you like?`, "question");
-	if (!amt.value) return
-	ids.forEach(id => {
-		_.player.backpack.data[id] = itemify(gameData[id], +amt.value)
-	});
-	gameData.dorm.forEach(x =>
-		_.player.house.data.items[x.ID] = {A: [], N: +amt.value}
-	)
-	await Toast.fire("Obtained All Items!", `You have obtained ${amt.value} of all items!`, "success")
-});
 /*
 	const inventoryHack = (name: string, id: BackpackItemType, amount: number = 1) => {
 	new Hack(category.inventory, `Obtain All ${name}`).setClick(async () => {
