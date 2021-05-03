@@ -48,6 +48,10 @@ const title = document.createElement("h1");
 title.classList.add("menu-title");
 title.innerText = "Will's Prodigy Cheat Menu";
 menuleft.append(title)
+const disc = document.createElement("h2");
+disc.style.fontSize = "30px";
+disc.innerHTML = `Join our Discord for giveaways, access to new hacks, and notices of hack outages! <a href='https://discord.gg/XQDfbfq'>https://discord.gg/XQDfbfq</a>`
+menuleft.append(disc);
 const subtitle = document.createElement("h3");
 subtitle.style.fontSize = "20px";
 subtitle.innerHTML = `On behalf of <a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/README.md">ProdigyMathGameHacking</a>. <a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/README.md#Motivation">Learn about our mission</a>.
