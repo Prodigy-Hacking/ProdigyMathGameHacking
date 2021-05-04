@@ -74,13 +74,34 @@ Because of that we're just publicly showing hacks! That, and it's also just fun 
 All of our hacks are open source, and free. No paywalls, no ads, and no Patreon. If you really want to support us, you can Nitro boost our Discord server [here](https://discord.gg/XQDfbfq)!
 </details>
 
+<details>
+<summary><b>"Can you hack for me?"</b></summary>
 
+No. See [#170](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/discussions/170).
+
+</details>
+
+<details>
+<summary><b>How do I know you won't steal my account?</b></summary>
+Of course, with trusting any hacks, comes the risk that we're actually bad actors that will steal all your info.
+It's impossible to prove with absolute certainty to anyone reading this that we aren't bad faith, but we can open source our things, and try to be transparent.
+
+- We do not want your account.
+
+Not only do we want your account, but we will actively ban you from our organization if you share your credentials online. It's bad security, and we really can't be bothered.
+
+- But what if you steal my personal info?
+
+We do not want your personal info. Please do not share it. Even if we wanted to, there's not much we could do with it. "Wow, John Doe is in 5th grade and has mastered fractions!"
+
+- How do I know what code is running in the hacks?
+
+Again, our code is open source, and you're always free to read any of it. If you have trouble understanding what a certain thing does, feel free to ask any of the administrators on our official Discord.
+</details>
 
 <details>
 <summary><b>Legal</b></summary>
-
 If you have any legal problems, please email support@prodigyhacking.com
-
 </details>
 
 
