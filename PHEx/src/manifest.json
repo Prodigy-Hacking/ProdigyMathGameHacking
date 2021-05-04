@@ -5,7 +5,9 @@
 	"permissions": [
 		"webRequest",
 		"webRequestBlocking",
-		"*://*.prodigygame.com/*"
+		"*://*.prodigygame.com/*",
+		"https://raw.githubusercontent.com/*",
+		"notifications"
 	],
 	"icons": {
 		"16": "assets/x16.png",
