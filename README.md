@@ -115,7 +115,7 @@ While our hacks are completely safe, <strong>you should never use hacks on your 
 
 There's an <b>extremely small</b> chance your account will be hacker-tagged, reset, or <b>banned</b>. Luckily, it almost never happens. The only incidents PMGH knows of users being banned for hacking were contributors or staff of PMGH itself.
 
-We will <b>never<b/> ask you for your password. If somebody asks you for personal/sensitive information, report it to the staff on our [Discord server](https://discord.gg/XQDfbfq). (There <b>is<b/> an exception with our arena point website, but you should still use with caution.)
+We will <b>never<b/> ask you for your password. If somebody asks you for personal/sensitive information, report it to the staff on our [Discord server](https://discord.gg/XQDfbfq).
 
 All of our hacks are *open-source*, and only located under our [Github Organization](https://github.com/Prodigy-Hacking).
 *If it's not an official repository or a fork, it may not be safe!*
