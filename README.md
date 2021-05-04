@@ -1,3 +1,6 @@
+<h2 align="center">We are aware hacks may be down for some.</h1>
+<hr>
+
 <h1 align="center">Prodigy Hacking</h1>
 
 <h1 align="center">
