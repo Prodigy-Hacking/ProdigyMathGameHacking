@@ -19,7 +19,7 @@
 			}
 		
 			//Fetches https://prodigyhacking.ml/game.min.js
-			fetch(`${redirectorDomain}/game.min.js?updated=${Date.now()}`)
+			fetch(`${redirectorDomain}/game.min.js`)
 				//Error handler in action. 5 second delay to give time for webpage to load.
 				.then(setTimeout(handleErrors, 5000))
 				//If can fetch, carry on normally.
