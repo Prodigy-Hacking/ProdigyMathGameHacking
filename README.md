@@ -1,4 +1,4 @@
-<h2 align="center">We are aware hacks may be down for some.</h1>
+<h2 align="center">We're looking for new collaborators!</h1>
 <hr>
 
 <h1 align="center">Prodigy Hacking</h1>
