@@ -147,6 +147,7 @@ All of our hacks are *open-source*, and only located under our [Github Organizat
 - [Yama](https://github.com/YamaHacks)
 - [Rus](https://github.com/UntrustableRus)
 - [BoredFish](https://github.com/BoredFishRE)
+- [hostedposted](https://github.com/hostedposted)
 - Noot (Anonymous User)
 
 
