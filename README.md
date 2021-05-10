@@ -91,7 +91,7 @@ It's impossible to prove with absolute certainty to anyone reading this that we 
 
 - We do not want your account.
 
-Not only do we want your account, but we will actively ban you from our organization if you share your credentials online. It's bad security, and we really can't be bothered.
+Not only do we not want your account, but we will actively ban you from our organization if you share your credentials online. It's bad security, and we really can't be bothered.
 
 - But what if you steal my personal info?
 
