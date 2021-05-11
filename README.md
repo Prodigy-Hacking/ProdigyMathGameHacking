@@ -23,6 +23,9 @@
 		<a href="https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A">Youtube</a>
 	</strong>
 </p>
+
+<!--
+
 <p align="center">
 	<a href="https://chrome.google.com/webstore/detail/gjabpajagbgoifbkflgojeojmnlmioea/">
 		<img alt="Chrome Web Store Rating" src="https://img.shields.io/chrome-web-store/stars/gjabpajagbgoifbkflgojeojmnlmioea?label=Extension%20Rating">
@@ -57,7 +60,7 @@
 
 </p>
 
-
+-->
 
 
 
