@@ -164,3 +164,34 @@ new Hack(category.inventory, "Obtain All Furniture").setClick(async () => {
 
 	});
 */
+
+new Hack(category.inventory, "Remove item").setClick(async () => {
+	let category = await Swal.fire({
+		title: "What category would you like to remove an item from?",
+		input: "select",
+		inputOptions: names,
+		inputPlaceholder: "Select...",
+		inputValidator: (res: any) => res ? "" : "Please select which you'd like to obtain.",
+		showCancelButton: true
+	});
+	if(!_.gameData[ids[val.value]]) return;
+	const objs = _.gameData[ids[category.value]].map(elem => elem.data.name);
+	let item = await Swal.fire({
+		title: `What specific object categorized as ${names[val.value].toLowerCase()} would you like to remove?`,
+		input: "select",
+		inputOptions: objs,
+		inputPlaceholder: "Select...",
+		inputValidator: (res: any) => res ? "" : "Please select which you'd like to get.",
+		showCancelButton: true
+	});
+	item = parseInt(item.value);
+	if(!_.gameData[ids[category.value]][item]) return;
+	const amt = await NumberInput.fire("Amount", "How many of the object would you like to remove?", "question");
+	if(!amt.value) return;
+	if (_.player.backpack.data[ids[category.value]].findIndex(e => e.ID === _.gameData[ids[category.value]][item].ID) === -1) {
+		_.player.backpack.data[ids[category.value]][item].N = amt;
+	}
+
+	await Toast.fire("Removed!", `Successfully removed ${amt} ${_.gameData[ids[category.value]][item].name}!`, "success");
+	saveCharacter();
+})
