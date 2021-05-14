@@ -1,4 +1,3 @@
 {
-  "offline": true,
-  "message": "Offline"
+  "offline": false
 }
