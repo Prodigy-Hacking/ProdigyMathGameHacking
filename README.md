@@ -1,3 +1,6 @@
+<h2 align="center">We're looking for new collaborators!</h1>
+<hr>
+
 <h1 align="center">Prodigy Hacking</h1>
 
 <h1 align="center">
@@ -88,7 +91,7 @@ It's impossible to prove with absolute certainty to anyone reading this that we 
 
 - We do not want your account.
 
-Not only do we want your account, but we will actively ban you from our organization if you share your credentials online. It's bad security, and we really can't be bothered.
+Not only do we not want your account, but we will actively ban you from our organization if you share your credentials online. It's bad security, and we really can't be bothered.
 
 - But what if you steal my personal info?
 
@@ -144,6 +147,7 @@ All of our hacks are *open-source*, and only located under our [Github Organizat
 - [Yama](https://github.com/YamaHacks)
 - [Rus](https://github.com/UntrustableRus)
 - [BoredFish](https://github.com/BoredFishRE)
+- [hostedposted](https://github.com/hostedposted)
 - Noot (Anonymous User)
 
 
