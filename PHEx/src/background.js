@@ -22,7 +22,7 @@ browser.webRequest.onBeforeRequest.addListener(details => {
 		if (data.offline == true) {
 			chrome.notifications.create({
  			 "type": "basic",
- 			 "title": "Hacks are down,
+ 			 "title": "Hacks are down",
  			 "message": "Our hacks are currently having some issues, and we're working on it."
 			});
 		}
