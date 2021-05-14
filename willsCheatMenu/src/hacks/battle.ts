@@ -67,3 +67,22 @@ new Hack(category.battle, "Fill Battle Energy", "Fills up your battle energy.").
 	state.teams[0].setEnergy(99);
 	await Toast.fire("Success!", "Your battle energy has been filled.", "success");
 });
+
+new Hack(category.battle, "Heal Team").setClick(async () => {
+	const currentState = game.state.current;
+	if (["Battle", "SecureBattle"].includes(currentState)) {
+		_.player.heal();
+		await Toast.fire(
+			"Success!",
+			"Your team has been healed successfully!",
+			"success"
+		);
+	}
+	else {
+		await Toast.fire(
+			"Invalid State.",
+			"Your are currently not in a battle.",
+			"error"
+		);
+	}
+});
