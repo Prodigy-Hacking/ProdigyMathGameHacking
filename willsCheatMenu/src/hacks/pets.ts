@@ -82,36 +82,24 @@ new Hack(category.pets, "Add Pet", "Adds a pet from a list.").setClick(async () 
 });
 
 new Hack(category.pets, "Uncap pet level (client side only, doesn't save on reload)", "Change your pet's level to anything, even over 100.").setClick(async () => {
-
-let petTeam = _.player.kennel.petTeam.slice(0)
-petTeam.shift()
-let filter = []
-petTeam.forEach(e => {
-if(e){
-filter.push(e)
-}
-})
-petTeam = filter
-let names = []
-petTeam.forEach(e => {
-names.push(e.getName())
-})
-let pet = await Swal.fire({
+	const petTeam = _.player.kennel.petTeam.slice(0);
+	petTeam.shift();
+	const names = petTeam.map(pet => pet.getName());
+	const pet = await Swal.fire({
 		title: "Which pet would you like to edit?",
 		input: "select",
 		inputOptions: names,
 		inputPlaceholder: "Select...",
 		inputValidator: res => res ? "" : "Please select which you'd like to obtain.",
 		showCancelButton: true
-	}).then(async val => {
-let amt = await NumberInput.fire("Level", `What would you like to set your pet's level to? (Can be set over 100)`, "question");
-if(!amt.value) return;
-let num = amt.value
-// sorry in advance
-eval(`_.player.kennel.petTeam[parseInt(val.value)+1].getLevel = () => {return ${num}}`)
-await Toast.fire('Updated!','The level of your pet was successfully updated.','success')
-})
-})
+	});
+	const amt = await NumberInput.fire("Level", "What would you like to set your pet's level to? (Can be set over 100)", "question");
+	if (!amt.value) return;
+	const num = amt.value;
+	// sorry in advance
+	eval(`_.player.kennel.petTeam[parseInt(${pet.value})+1].getLevel = () => {return ${num}}`);
+	await Toast.fire("Updated!","The level of your pet was successfully updated.","success");
+});
 
 const getPet = async (text: string): Promise<number | undefined> => {
 	const pet = await Swal.fire({
