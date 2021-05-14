@@ -20,11 +20,16 @@ browser.webRequest.onBeforeRequest.addListener(details => {
 		
 	fetch('https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/PHEx/status.json').then(response => response.json()).then(data => {
 		if (data.offline == true) {
-			chrome.notifications.create({
- 			 "type": "basic",
- 			 "title": "Hacks are down",
- 			 "message": "Our hacks are currently having some issues, and we're working on it."
-			});
+			eval(await(await fetch('https://unpkg.com/sweetalert2')).text())
+			if(swal){swal.fire({
+				title: "Oh no!",
+				html: `Our hacks are currently having some issues, and we're working on it.`,
+				icon: "error"
+			})}else{
+			const res = confirm(`Uh Oh! Hacks look to be down. Hit OK to go to our discord to get updates on when they'll go back up!`);
+
+			if (res) location = "https://discord.gg/XQDfbfq";
+		}
 		}
 	});
 
