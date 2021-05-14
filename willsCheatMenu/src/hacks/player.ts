@@ -191,6 +191,21 @@ new Hack(category.player, "Uncap player level (client side only)").setClick(asyn
 })
 
 
+new Hack(category.player, "Get all achievements").setClick(async () => {
+	let data = _.instance.prodigy.achievements.getData();
+let achmt = [];
+data.forEach(e => {
+e.data.forEach(h => {
+let indivdata = [h.ID,h.data.ranks.length]
+achmt.push(indivdata)
+})
+})
+achmt.forEach(x => {
+_.player.achievements.data.progress[x[0]] = x[1]
+})
+
+	await Toast.fire("Success!", "Obtained all achievements!", "success");
+});
 
 new Hack(category.player, "Morph Player (DEV)", "Morph into a pet, furnishing, or follow.").setClick(async () => {
 	const morphType = await Swal.fire({
@@ -238,6 +253,7 @@ new Hack(category.player, "Morph Player (DEV)", "Morph into a pet, furnishing, o
 	
 	await Toast.fire("Morphed!", "You've been morphed.", "success");
 });
+
 
 new Hack(category.player, "Fix Morph Crash").setClick(async () => {
 	_.player.getPlayerData().playerTransformation = undefined;
