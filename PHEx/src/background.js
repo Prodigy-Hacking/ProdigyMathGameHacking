@@ -4,10 +4,21 @@ const browser = chrome || browser;
 const debug = false;
 
 // Ignore X-Frame Headers
-browser.webRequest.onHeadersReceived.addListener(
-	(details) => ({ responseHeaders: details.responseHeaders.filter((header) => !["content-security-policy", "x-frame-options",].includes(header.name.toLowerCase())) }),
-	{ urls: ["<all_urls>"] }, ["blocking", "responseHeaders"]
-);
+const HEADERS_TO_STRIP_LOWERCASE = [
+	'content-security-policy',
+	'x-frame-options',
+  ];
+  
+  chrome.webRequest.onHeadersReceived.addListener(
+	details => ({
+	  responseHeaders: details.responseHeaders.filter(header =>
+		  !HEADERS_TO_STRIP_LOWERCASE.includes(header.name.toLowerCase()))
+	}),
+	{
+	  urls: ['<all_urls>']
+	},
+	['blocking', 'responseHeaders', 'extraHeaders']);
+  
 
 // Redirect Requests
 browser.webRequest.onBeforeRequest.addListener(details => {
@@ -18,7 +29,7 @@ browser.webRequest.onBeforeRequest.addListener(details => {
 			file: "disableIntegrity.js"
 		});
 		
-	fetch('https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/PHEx/status.json').then(response => response.json()).then(data => {
+	fetch('https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/PHEx/status.json').then(response => response.json()).then(async data => {
 		if (data.offline == true) {
 			eval(await(await fetch('https://unpkg.com/sweetalert2')).text())
 			if(swal){swal.fire({
@@ -32,6 +43,18 @@ browser.webRequest.onBeforeRequest.addListener(details => {
 		}
 		}
 	});
+
+	// Blocking gamemin
+
+	chrome.webRequest.onBeforeRequest.addListener(
+		function() {
+			return {cancel: true};
+		},
+		{
+			urls: ["*://code.prodigygame.com/code/*"]
+		},
+		["blocking"]
+	);
 
 		// see disableIntegrity.js, we append the new game.min to the document
 
