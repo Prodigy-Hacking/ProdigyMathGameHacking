@@ -150,7 +150,7 @@ export const category = {
 };
 
 if (localStorage.getItem("level")) {
-	eval(`_.player.getLevel = () => {return ${localStorage.getItem("level")}}`)
+	_.player.getLevel = () => localStorage.getItem("level");
 }
 
 setTimeout(() => {
