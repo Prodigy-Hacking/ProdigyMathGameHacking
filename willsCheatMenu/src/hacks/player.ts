@@ -261,3 +261,13 @@ new Hack(category.player, "Fix Morph Crash").setClick(async () => {
 
 	await Toast.fire("Success!", "Fixed morph crash bug.", "success");
 });
+
+new Hack(category.player, "Permanent Morph", "Makes Your Current Morph Last Forever.").setClick(async () => {
+	if (!_.player.data.playerTransformation) {
+		await Swal.fire("No Morph Active", "Please use a Morph Marble and try again.", "error");
+		return;
+	}
+	_.player.data.playerTransformation.maxTime = Infinity;
+	_.player.data.playerTransformation.timeRemaining = Infinity;
+	await Toast.fire("Success!", "You're morph will last forever!", "success");
+});
