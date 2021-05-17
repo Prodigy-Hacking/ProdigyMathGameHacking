@@ -143,9 +143,9 @@ All of our hacks are *open-source*, and only located under our [Github Organizat
 
 ## Current Collaborators
 - [PatheticMustan](https://github.com/PatheticMustan)
+- [Léo Badeaux](https://github.com/LeoBadeaux)
 - [Arcerion](https://github.com/ArcerionDev)
 - [Yama](https://github.com/YamaHacks)
-- [Rus](https://github.com/UntrustableRus)
 - [BoredFish](https://github.com/BoredFishRE)
 - [hostedposted](https://github.com/hostedposted)
 - Noot (Anonymous User)
@@ -158,6 +158,7 @@ All of our hacks are *open-source*, and only located under our [Github Organizat
 
 - [MelnCat](https://github.com/MelnCat)
 - [Exoticc](https://github.com/Exoticc)
+- [Rus](https://github.com/UntrustableRus)
 - [Rubberduck55](https://github.com/Rubberduck55)
 - [Whimpers](https://github.com/KryptoCrash)
 
