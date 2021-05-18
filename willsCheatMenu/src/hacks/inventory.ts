@@ -177,7 +177,7 @@ new Hack(category.inventory, "Remove item").setClick(async () => {
 	if(!_.gameData[ids[category.value]]) return;
 	const objs = _.gameData[ids[category.value]].map(elem => elem.data.name);
 	let item = await Swal.fire({
-		title: `What specific object categorized as ${names[val.value].toLowerCase()} would you like to remove?`,
+		title: `What specific object categorized as ${names[category.value].toLowerCase()} would you like to remove?`,
 		input: "select",
 		inputOptions: objs,
 		inputPlaceholder: "Select...",
