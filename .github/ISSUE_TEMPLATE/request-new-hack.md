@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-**Describe the hack in 5 words or less:**
+**Describe your hack:**
 <!-- Example: Membership Hack-->
 
 **(Optional) Additional information**
