@@ -166,7 +166,7 @@ new Hack(category.inventory, "Obtain All Furniture").setClick(async () => {
 */
 
 new Hack(category.inventory, "Remove item").setClick(async () => {
-	let category = await Swal.fire({
+	const category = await Swal.fire({
 		title: "What category would you like to remove an item from?",
 		input: "select",
 		inputOptions: names,
@@ -174,7 +174,7 @@ new Hack(category.inventory, "Remove item").setClick(async () => {
 		inputValidator: (res: any) => res ? "" : "Please select which you'd like to obtain.",
 		showCancelButton: true
 	});
-	if(!_.gameData[ids[val.value]]) return;
+	if(!_.gameData[ids[category.value]]) return;
 	const objs = _.gameData[ids[category.value]].map(elem => elem.data.name);
 	let item = await Swal.fire({
 		title: `What specific object categorized as ${names[val.value].toLowerCase()} would you like to remove?`,
