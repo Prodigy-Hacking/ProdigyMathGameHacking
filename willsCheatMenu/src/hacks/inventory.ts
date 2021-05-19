@@ -192,8 +192,12 @@ new Hack(category.inventory, "Remove item").setClick(async () => {
 		await Swal.fire("Item Does Not Exist", `You do not have any ${_.gameData[ids[category.value]][item].name}.`, "error");
 		return;
 	}
-	
-	_.player.backpack.data[ids[category.value]][item].N -= amt.value;
+
+	const num = _.player.backpack.data[ids[category.value]].findIndex(e => e.ID === _.gameData[ids[category.value]][item].ID);
+	_.player.backpack.data[ids[category.value]][num].N -= parseInt(amt.value);
+	if (_.player.backpack.data[ids[category.value]][num].N <= 0) {
+		_.player.backpack.data[ids[category.value]].splice(num, 1); // if the amount is 0 or below then the item should not exist
+	}
 
 	await Toast.fire("Removed!", `Successfully removed ${amt.value} ${_.gameData[ids[category.value]][item].name}!`, "success");
 	saveCharacter();
