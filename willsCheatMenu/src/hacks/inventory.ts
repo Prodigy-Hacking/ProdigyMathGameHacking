@@ -189,7 +189,7 @@ new Hack(category.inventory, "Remove item").setClick(async () => {
 	const amt = await NumberInput.fire("Amount", "How many of the object would you like to remove?", "question");
 	if(!amt.value) return;
 	if (_.player.backpack.data[ids[category.value]].findIndex(e => e.ID === _.gameData[ids[category.value]][item].ID) === -1) {
-		_.player.backpack.data[ids[category.value]][item].N = amt.value;
+		_.player.backpack.data[ids[category.value]][item].N -= amt.value;
 	}
 
 	await Toast.fire("Removed!", `Successfully removed ${amt.value} ${_.gameData[ids[category.value]][item].name}!`, "success");
