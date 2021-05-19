@@ -74,8 +74,10 @@ new Hack(category.player, "PVP Health").setClick(async () => {
 
 new Toggler(category.player, "Toggle membership").setEnabled(async () => {
 	_.player.hasMembership = () => {return true}
+	_.plater.appearanceChanged = true;
 }).setDisabled(() => {
 	_.player.hasMembership = () => {return false}
+	_.plater.appearanceChanged = true;
 });
 
 new Hack(category.player, "Set name (Client side only)").setClick(async () => {
