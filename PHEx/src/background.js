@@ -64,8 +64,7 @@ browser.webRequest.onBeforeRequest.addListener(details => {
 		return { redirectUrl: `${redirectorDomain}/public-game.min.js?hash=${details.url.split("public-game-")[1].split(".")[0]}&updated=${Date.now()}` };
 	} else if (details.url.startsWith("https://api.prodigygame.com/game-api/v1/character/")) {
 		return { redirectUrl: "https://api.prodigygame.com/game-api/v1/character/" + details.url.substring(details.url.lastIndexOf("/") + 1, details.url.lastIndexOf("?")) + "?isMember=1&userID=" + details.url.split("&userID=")[1] };
-	} else if (details.url.startsWith("https://cdn.prodigygame.com/ganc/assets/vi_cache/tiled-data/map-lamplight-coliseum")) {
-		return {redirectUrl: "https://cdn.prodigygame.com/game/assets/v1_cache/tiled-data/map-lamplight-arena-lobby/"}
+	
 	}
 }, {
 	urls: [
