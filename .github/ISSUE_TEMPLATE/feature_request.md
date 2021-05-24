@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: **We are currently not taking feature requests** - Suggest an idea for this project
+about: We are currently not taking feature requests - Suggest an idea for this project
 title: 'Feature Request'
 labels: 'Enhancement'
 assignees: ''
