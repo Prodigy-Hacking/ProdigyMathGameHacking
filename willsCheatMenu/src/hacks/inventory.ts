@@ -5,8 +5,8 @@ import { gameData, VERY_LARGE_NUMBER, saveCharacter} from "../utils/util";
 import { Item } from "../../../typings/item";
 import { BackpackItemType } from "../../../typings/backpack";
 import { prodigy, game } from "../utils/util";
-const names = ['Boots', 'Buddies', 'Fossils', 'Hats', 'Items', 'Key Items', 'Tower Town Frames', 'Tower Town Interiors', 'Mounts', 'Outfits', 'Relics', 'Weapons', 'Currencies', "Mounts"]
-const ids = ['boots', 'follow', 'fossil', 'hat', 'item', 'key', 'mathTownFrame', 'mathTownInterior', 'mount', 'outfit','spellRelic', 'weapon', 'currency', "mount"]
+const names = ['Boots', 'Buddies', 'Fossils', 'Hats', 'Items', 'Key Items', 'Tower Town Frames', 'Tower Town Interiors', 'Mounts', 'Outfits', 'Relics', 'Weapons', 'Currencies']
+const ids = ['boots', 'follow', 'fossil', 'hat', 'item', 'key', 'mathTownFrame', 'mathTownInterior', 'mount', 'outfit','spellRelic', 'weapon', 'currency']
 const itemify = (item: Item[], amount: number) =>
 	item.map(x => ({
 		ID: x.ID,
@@ -151,6 +151,11 @@ new Hack(category.inventory, "Obtain All Furniture").setClick(async () => {
 		await Toast.fire("Furniture Added!", "All furniture has been added to your inventory!", "success");
 
 	});
+
+new Hack(category.inventory, "Obtain All Mounts", "This gives you the Fluffy Cloud and the Rainbow Cloud.").setClick(async() => {
+	_.player.backpack.data.mount = itemify(_.gameData.mount, 1);
+	await Toast.fire("Mounts Added!", "All mounts have been added to your inventory!");
+});
 
 /*
 	const inventoryHack = (name: string, id: BackpackItemType, amount: number = 1) => {
