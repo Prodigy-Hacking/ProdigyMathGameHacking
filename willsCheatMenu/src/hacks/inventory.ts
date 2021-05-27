@@ -17,23 +17,23 @@ const itemify = (item: Item[], amount: number) =>
 
 // sorry for spamming ts-ignore
 new Hack(category.inventory, "Item stacker").setClick(async () => {
-const num = await NumberInput.fire('Amount',`How many of every item would you like?`,'question')
-if(!num.value) return
-if (!(await Confirm.fire(`Are you sure you want to get all items in the game?`))) return;
-let gameData = _.instance.game.state.states.get('Boot')._gameData
-let ids = ['boots', 'follow', 'fossil', 'hat', 'item', 'key', 'mathTownFrame', 'mathTownInterior', 'mount', 'outfit','spellRelic', 'weapon', 'currency']
+	const num = await NumberInput.fire('Amount',`How many of every item would you like?`,'question')
+	if(!num.value) return
+	if (!(await Confirm.fire(`Are you sure you want to get all items in the game?`))) return;
 
-ids.forEach(id => {
-    _.player.backpack.data[id] = itemify(gameData[id], num.value)
-});
-gameData.dorm.forEach(x =>
-    _.player.house.data.items[x.ID] = {A: [], N: num.value}
-)
+	ids.forEach(id => {
+		_.player.backpack.data[id] = itemify(gameData[id], num.value)
+	});
+	gameData.dorm.forEach(x =>
+		_.player.house.data.items[x.ID] = {A: [], N: num.value}
+	)
+	_.player.backpack.data.mount = itemify(_.gameData.mount, 1);
 
-// Remove bounty notes (#229)
-let bountyIndex = () => _.player.backpack.data.item.findIndex(v => v.ID === 84 || v.ID === 85 || v.ID === 86)
-while (bountyIndex() > -1) _.player.backpack.data.item.splice(bountyIndex(), 1)
-await Toast.fire('Success!','All items added!','success')
+
+	// Remove bounty notes (#229)
+	let bountyIndex = () => _.player.backpack.data.item.findIndex(v => v.ID === 84 || v.ID === 85 || v.ID === 86)
+	while (bountyIndex() > -1) _.player.backpack.data.item.splice(bountyIndex(), 1)
+	await Toast.fire('Success!','All items added!','success')
 })
 
 new Hack(category.inventory, "Selector (Basic)").setClick(async () => {
