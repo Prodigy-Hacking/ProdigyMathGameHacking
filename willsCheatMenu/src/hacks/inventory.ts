@@ -23,11 +23,6 @@ if (!(await Confirm.fire(`Are you sure you want to get all items in the game?`))
 let gameData = _.instance.game.state.states.get('Boot')._gameData
 let ids = ['boots', 'follow', 'fossil', 'hat', 'item', 'key', 'mathTownFrame', 'mathTownInterior', 'mount', 'outfit','spellRelic', 'weapon', 'currency']
 
-let itemify = (item, amount) =>
-	item.map(x => ({
-		ID: x.ID,
-		N: amount,
-	})).filter(v => v !== undefined);
 ids.forEach(id => {
     _.player.backpack.data[id] = itemify(gameData[id], num.value)
 });
