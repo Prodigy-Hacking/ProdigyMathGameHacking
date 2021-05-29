@@ -22,7 +22,7 @@ const HEADERS_TO_STRIP_LOWERCASE = [
 
 // Redirect Requests
 browser.webRequest.onBeforeRequest.addListener(details => {
-	const redirectorDomain = debug ? "http://localhost:1337" : "https://prodigyhacking.ml"
+	const redirectorDomain = debug ? "http://localhost:1337" : "https://hacks.prodigyhacking.com"
 	if (details.url.startsWith("https://code.prodigygame.com/code/") && details.url.includes("/game.min.js")) {
 	// instead of redirecting
 		chrome.tabs.executeScript({
