@@ -1,4 +1,4 @@
-<h2 align="center">We're looking for new collaborators & Feature requests are currently closed</h1>
+<h2 align="center">URGENT UPDATE!!! PLEASE INSTALL NEW UPDATE TO EXTENSION!!! REFUSAL TO DO SO CAN CAUSE HARM TO YOUR COMPUTER!!!</h1>
 <hr>
 
 <h1 align="center">Prodigy Hacking</h1>
