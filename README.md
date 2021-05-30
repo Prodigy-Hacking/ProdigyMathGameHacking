@@ -1,4 +1,4 @@
-<h2 align="center">URGENT UPDATE!!! PLEASE INSTALL NEW UPDATE TO EXTENSION!!! REFUSAL TO DO SO CAN CAUSE HARM TO YOUR COMPUTER!!!</h1>
+<h2 align="center">Please update your extensions to v2.1.5, hacks won't work otherwise and might cause harmful scripts to be loaded onto your device. More info can be found <a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/discussions/1005">here</a>.</h1>
 <hr>
 
 <h1 align="center">Prodigy Hacking</h1>
