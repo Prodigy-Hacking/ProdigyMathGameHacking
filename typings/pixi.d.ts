@@ -1,7 +1,7 @@
 import { Game } from "./game";
 import { Prodigy } from "./prodigy";
 import { Hack } from "../redirect/global";
-import { GameData } from "./gameData";
+import { gameData } from "./gameData";
 export declare interface PIXI {}
 export declare interface Phaser {}
 declare global {

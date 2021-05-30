@@ -128,7 +128,7 @@ new Hack(category.player, "Arena Point Increaser").setClick(async () => {
 });
 */
 new Hack(category.player, "Change Name", "Change the name of your wizard.").setClick(async () => {
-	const names = gameData.name;
+	const names = _.gameData.name;
 	const div = document.createElement("div");
 	const createSelect = (arr: Map<string, string>, equalityFunc: (str: string) => boolean) => {
 		const select = document.createElement("select");
@@ -153,7 +153,7 @@ new Hack(category.player, "Change Name", "Change the name of your wizard.").setC
 	div.append(
 		createSelect(
 			new Map(
-				[["null", "[none]"]].concat(gameData.nickname.map(x => [x.ID.toString(), x.name])) as [
+				[["null", "[none]"]].concat(_.gameData.nickname.map(x => [x.ID.toString(), x.name])) as [
 					string,
 					string
 				][]

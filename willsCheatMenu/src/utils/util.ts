@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { GameItemKey } from "../../../typings/gameData";
+import { GameItemKey } from "../../../typings/_.gameData";
 import { Item } from "../../../typings/item";
 import { Player } from "../../../typings/player";
 import { TODO } from "../../../typings/util";
@@ -8,9 +8,9 @@ import { Game } from "../../../typings/game";
 const base: { game: Game, prodigy: Prodigy } = _.instance;
 export const game = base.game;
 export const prodigy = base.prodigy;
-export const gameData = _.instance.game.state.states.get('Boot')._gameData
+export const gameData = _.instance.game.state.states.get('Boot').__.gameData
 export const getItem = <T extends GameItemKey>(type: T, id: number): Item<T> | null =>
-	(gameData[type].find(x => x.ID === id) as null | Item<any>) ?? null;
+	(_.gameData[type].find(x => x.ID === id) as null | Item<any>) ?? null;
 export const VERY_LARGE_NUMBER = 9e9;
 export const states = Object.fromEntries(_.instance.game.state.states)
 export const saveCharacter = () => {

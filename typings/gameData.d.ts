@@ -1,6 +1,6 @@
 import { Item } from "./item";
 
-export declare type GameData = {
+export declare type gameData = {
 	[key in GameItemKey]: Item[];
 }
 export declare type GameItemKey =
