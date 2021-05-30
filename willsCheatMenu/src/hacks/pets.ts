@@ -7,7 +7,7 @@ import { prodigy, game } from "../utils/util";
 import { Pet } from "../../../typings/pet";
 
 const randomSpell = () => {
-	const fileredSpells = gameData.spell.filter(x => +x.ID !== 90);
+	const fileredSpells = _.gameData.spell.filter(x => +x.ID !== 90);
 	
 	return fileredSpells[Math.floor(Math.random() * fileredSpells.length)].ID;
 };
@@ -23,7 +23,7 @@ const toPets = (ID: number) => ({
 
 new Hack(category.pets, "Get All Pets").setClick(async () => {
 	// add pets
-	const pets = gameData.pet.map(x => toPets(x.ID));
+	const pets = _.gameData.pet.map(x => toPets(x.ID));
 	_.player.kennel.data.splice(-1, 0, ...pets);
 
 	// add encounter info
@@ -71,7 +71,7 @@ new Hack(category.pets, "Clear Pets").setClick(async () => {
 new Hack(category.pets, "Add Pet", "Adds a pet from a list.").setClick(async () => {
 	const pet = await Swal.fire({
 		input: "select",
-		inputOptions: new Map(gameData.pet.map(x => [x.ID.toString(), `${x.ID}: ${x.data.name}`])),
+		inputOptions: new Map(_.gameData.pet.map(x => [x.ID.toString(), `${x.ID}: ${x.data.name}`])),
 		title: "Choose Pet",
 		text: "Which pet do you want to obtain?",
 	});
@@ -107,7 +107,7 @@ const getPet = async (text: string): Promise<number | undefined> => {
 		inputOptions: new Map(
 			_.player.kennel.data.map((x: TODO, i: number) => [
 				i.toString(),
-				`Level ${x.level} - ${x.nickname ?? gameData.pet.find(y => +y.ID === +x.ID)?.data.name ?? "Unknown"}`,
+				`Level ${x.level} - ${x.nickname ?? _.gameData.pet.find(y => +y.ID === +x.ID)?.data.name ?? "Unknown"}`,
 			]) as [string, string][]
 		),
 		title: "Choose Pet",
@@ -137,7 +137,7 @@ new Hack(category.pets, "Edit Pet", "Edit a pet.").setClick(async () => {
 		selected.level = +level.value;
 		await Toast.fire("Success!", "The pet's level has been set.", "success");
 	} else if (opt.value === "attacks") {
-		const attackList = gameData.spell;
+		const attackList = _.gameData.spell;
 		const div = document.createElement("div");
 		const select = document.createElement("select");
 		select.classList.add("selectSpell");
