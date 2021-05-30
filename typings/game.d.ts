@@ -1,6 +1,6 @@
 import { Prodigy } from "./prodigy";
 import { TODO } from "./util";
-import { GameData } from "./gameData";
+import { gameData } from "./gameData";
 
 export declare interface Game {
 	id: number; // Not sure what this does. Seems to be 0.
@@ -41,7 +41,7 @@ export declare interface GameStatesState {
 }
 export declare interface BootState extends GameStatesState {
 	key: "Boot";
-	_gameData: GameData;
+	_gameData: gameData;
 	_metricsManager: TODO;
 }
 export declare interface PVPState extends GameStatesState {
