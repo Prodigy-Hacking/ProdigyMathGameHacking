@@ -1,6 +1,6 @@
 //> Item stacker hack
 //>> Gives all armor, hats, boots, currencies, etc.
-const _.gameData = _.instance.game.state.states.get('Boot').__.gameData
+const _.gameData = _.instance.game.state.states.get('Boot').gameData
 const ids = ['boots', 'follow', 'fossil', 'hat', 'item', 'key', 'mathTownFrame', 'mathTownInterior', 'mount', 'outfit','spellRelic', 'weapon', 'currency']
 
 const itemify = (item, amount) =>
