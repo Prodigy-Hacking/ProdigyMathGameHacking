@@ -15,6 +15,7 @@ ids.forEach(id => {
 _.gameData.dorm.forEach(x =>
     _.player.house.data.items[x.ID] = {A: [], N: 999}
 )
+_.player.backpack.data.mount = itemify(gameData.mount, 1);
 
 // Remove bounty notes (#229)
 let bountyIndex = _ => _.player.backpack.data.item.findIndex(v => v.ID === 84 || v.ID === 85 || v.ID === 86)
