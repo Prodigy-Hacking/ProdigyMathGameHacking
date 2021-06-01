@@ -78,7 +78,7 @@ All of our hacks are open source, and free. No paywalls, no ads, and no Patreon.
 </details>
 
 <details>
-<summary><b>"Can you hack for me?"</b></summary>
+<summary><b>Can you hack for me?</b></summary>
 
 No. See [#170](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/discussions/170).
 
