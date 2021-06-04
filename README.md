@@ -147,7 +147,7 @@ All of our hacks are *open-source*, and only located under our [Github Organizat
 - [Arcerion](https://github.com/ArcerionDev)
 - [Yama](https://github.com/YamaHacks)
 - [BoredFish](https://github.com/BoredFishRE)
-- [hostedposted](https://github.com/hostedposted)
+- [Hostedposted](https://github.com/hostedposted)
 - Noot (Anonymous User)
 
 
