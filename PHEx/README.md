@@ -14,6 +14,6 @@ npm run build
 
 ## Credit
 
-Originally created by [Rus](github.com/UntrustableRus/)
+Originally created by [Rus](https://github.com/UntrustableRus/)
 
 Maintained by the PMGH organization.
