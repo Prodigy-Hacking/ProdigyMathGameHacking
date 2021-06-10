@@ -273,3 +273,24 @@ new Hack(category.player, "Permanent Morph", "Makes Your Current Morph Last Fore
 	_.player.data.playerTransformation.timeRemaining = Infinity;
 	await Toast.fire("Success!", "You're morph will last forever!", "success");
 });
+
+new Hack(category.player, "Complete Current Task In Quest", "Completes current task in quest. (Use this button a lot to complete a quest.)").setClick(async() => {
+	const zones = {};
+	Object.keys(_.instance.prodigy.world.zones).forEach(element => {
+		zones[element] = _.instance.prodigy.world.zones[element].name;
+	});
+	const questName = (await Input.fire({
+		title: "What Quest Do You Want To Complete?",
+		input: "select",
+		inputOptions: zones
+	})).value;
+	if (!questName) return;
+	const questID = _.instance.prodigy.world.zones[questName].getCurrentQuestID();
+	if (_.instance.prodigy.world.zones[questName].completeQuest(questID)) {
+		_.instance.prodigy.world.goToZoneHub(questName);
+		await Toast.fire("Success!", `Completed current task in the ${_.instance.prodigy.world.zones[questName].name} quest successfully!`, "success");
+	} else {
+		await Toast.fire("Could Not Complete Current Task In Quest.", "There was an error completing the quest. Did you already complete it?", "error");
+	}
+});
+
