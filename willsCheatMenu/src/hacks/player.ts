@@ -294,3 +294,13 @@ new Hack(category.player, "Complete Current Task In Quest", "Completes current t
 	}
 });
 
+new Hack(category.player, "Set Dark Tower Floor").setClick(async() => {
+	const floor = await NumberInput.fire({
+		title: "What floor do you want to be on, in the dark tower.",
+		icon: "question",
+		inputValidator: (res) => (res > 100 || res < 1) ? `You can only be on floors from 1-100 not ${res}`: false
+	});
+	if (!floor.value) return;
+	_.player.data.tower = parseInt(floor.value);
+	await Toast.fire("Success!", `Successfully set dark tower floor to ${floor}!`, "success");
+});
