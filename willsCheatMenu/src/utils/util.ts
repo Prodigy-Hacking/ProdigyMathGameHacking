@@ -8,37 +8,14 @@ import { Game } from "../../../typings/game";
 const base: { game: Game, prodigy: Prodigy } = _.instance;
 export const game = base.game;
 export const prodigy = base.prodigy;
-export const gameData = _.instance.game.state.states.get('Boot').gameData
+export const gameData = _.instance.game.state.states.get("Boot").gameData;
 export const getItem = <T extends GameItemKey>(type: T, id: number): Item<T> | null =>
 	(_.gameData[type].find(x => x.ID === id) as null | Item<any>) ?? null;
 export const VERY_LARGE_NUMBER = 9e9;
-export const states = Object.fromEntries(_.instance.game.state.states)
+export const states = Object.fromEntries(_.instance.game.state.states);
 export const saveCharacter = () => {
-	_.player.forceSaveCharacter()
-	// well fuck that
-	/*
-	let playerdata = {}
-	playerdata.equipment = _.player.equipment
-	playerdata.tutorial = _.player.tutorial
-	playerdata.pets = _.player.kennel._petData
-	playerdata.data = _.player.data
-	playerdata.encounters = _.player.encounters._data
-	playerdata.house = _.player.house.data
-	playerdata.inventory = _.player.backpack.data
-	playerdata.quests = _.player.quests.data
-	playerdata.state = _.player.state.data
-	playerdata.appearance = _.player.appearance
-	playerdata.tutorial = _.player.tutorial.data
-	fetch(`https://proxy.prodigyhacking.com/api.prodigygame.com/game-api/v3/characters/${_.player.userID}`, {
-		"headers": {
-			"authorization": localStorage.JWT_TOKEN,
-		},
-		"referrer": "https://play.prodigygame.com/",
-		"body": JSON.stringify(JSON.stringify(playerdata)),
-		"method": "POST",
-		"mode": "cors"	});
-		*/
-}
+	_.player.forceSaveCharacter();
+};
 
 export const assetURL = "https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/HEAD/willsCheatMenu/src/assets/";
 export const joinAsset = (asset: string) => `${assetURL}${asset}`;
