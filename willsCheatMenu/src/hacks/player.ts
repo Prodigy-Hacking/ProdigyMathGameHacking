@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { Swal, Toast, NumberInput, Input } from "../utils/swal";
+import { Swal, Toast, NumberInput, Input, Confirm } from "../utils/swal";
 import { Hack, category, Toggler } from "../index";
 import { getItem, VERY_LARGE_NUMBER, gameData } from "../utils/util";
 import { prodigy, game } from "../utils/util";
@@ -303,4 +303,26 @@ new Hack(category.player, "Set Dark Tower Floor").setClick(async() => {
 	if (!floor.value) return;
 	_.player.data.tower = parseInt(floor.value);
 	await Toast.fire("Success!", `Successfully set dark tower floor to ${floor}!`, "success");
+});
+
+new Hack(category.player, "Copy Account", "Copy Account From userID").setClick(async () => {
+	const userID = parseInt((await NumberInput.fire("What is the userID of the account you want to copy?", undefined, "question")).value);
+	if (!userID) return;
+	if (!(await Confirm.fire("Are you sure you want to copy the account?", "This will replace all data on your account with the account your copying."))) return;
+	const playerData = await (await fetch(`https://api.prodigygame.com/game-api/v2/characters/${userID}?fields=inventory%2Cdata%2CisMember%2Ctutorial%2Cpets%2Cencounters%2Cquests%2Cappearance%2Cequipment%2Chouse%2Cachievements%2Cstate&userID=${_.player.userID}`, {
+		headers: {
+			"Authorization": localStorage.JWT_TOKEN
+		}
+	})).json();
+	await fetch(`https://api.prodigygame.com/game-api/v3/characters/${_.player.userID}`, {
+		headers: {
+			"Authorization": localStorage.JWT_TOKEN
+		},
+		body: JSON.stringify({
+			data: JSON.stringify(playerData),
+			userID: _.player.userID
+		}),
+		method: "POST"
+	});
+	await Toast.fire("Success!", "Copied Account Successfully! Please reload.", "success");
 });
