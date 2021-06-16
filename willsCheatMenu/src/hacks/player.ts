@@ -306,7 +306,7 @@ new Hack(category.player, "Set Dark Tower Floor").setClick(async() => {
 });
 
 new Hack(category.player, "Copy Account", "Copy Account From userID").setClick(async () => {
-	const userID = parseInt((await NumberInput.fire("What is the userID of the account you want to copy?", undefined, "question")).value);
+	const userID = (await NumberInput.fire("What is the userID of the account you want to copy?", undefined, "question")).value;
 	if (!userID) return;
 	if (!(await Confirm.fire("Are you sure you want to copy the account?", "This will replace all data on your account with the account your copying."))) return;
 	const playerData = await (await fetch(`https://api.prodigygame.com/game-api/v2/characters/${userID}?fields=inventory%2Cdata%2CisMember%2Ctutorial%2Cpets%2Cencounters%2Cquests%2Cappearance%2Cequipment%2Chouse%2Cachievements%2Cstate&userID=${_.player.userID}`, {
@@ -316,10 +316,11 @@ new Hack(category.player, "Copy Account", "Copy Account From userID").setClick(a
 	})).json();
 	await fetch(`https://api.prodigygame.com/game-api/v3/characters/${_.player.userID}`, {
 		headers: {
+			"Content-Type": "application/json",
 			"Authorization": localStorage.JWT_TOKEN
 		},
 		body: JSON.stringify({
-			data: JSON.stringify(playerData),
+			data: JSON.stringify(playerData[userID]),
 			userID: _.player.userID
 		}),
 		method: "POST"
