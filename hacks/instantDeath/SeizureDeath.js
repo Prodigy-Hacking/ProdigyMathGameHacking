@@ -22,7 +22,7 @@ if (button == true) {
 } else {
     setTimeout(() => {  console.log("Hack Complete!"); }, 3000);
     setTimeout(function () {
-        var txt="Flop Like A Fish Bitch"
+        const txt="Flop Like A Fish Bitch"
         document.write("" + txt.fontcolor ("green") + "</p>");
    }, 3000);
 }
