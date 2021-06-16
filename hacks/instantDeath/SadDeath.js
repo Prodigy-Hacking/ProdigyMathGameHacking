@@ -22,7 +22,7 @@ if (button == true) {
 } else {
     setTimeout(() => {  console.log("Hack Complete!"); }, 3000);
     setTimeout(function () {
-        var txt="Click me for SAD DEATH!!!"
+        const txt="Click me for SAD DEATH!!!"
         document.write("" + txt.link("https://rb.gy/qs1taj") + "</p>");
    }, 3000);
 }
