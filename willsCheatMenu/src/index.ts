@@ -50,7 +50,7 @@ title.innerText = "Will's Prodigy Cheat Menu";
 menuleft.append(title);
 const disc = document.createElement("h2");
 disc.style.fontSize = "30px";
-disc.innerHTML = "Join our Discord for giveaways, access to new hacks, and notices of hack outages! <a href='https://discord.gg/XQDfbfq'>https://discord.gg/XQDfbfq</a>";
+disc.innerHTML = "Join our Discord for giveaways, access to new hacks, and notices of hack outages! <a href='https://discord.gg/pmgh'>https://discord.gg/pmgh</a>";
 menuleft.append(disc);
 const subtitle = document.createElement("h3");
 subtitle.style.fontSize = "20px";
