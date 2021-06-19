@@ -305,6 +305,14 @@ new Hack(category.player, "Set Dark Tower Floor").setClick(async() => {
 	await Toast.fire("Success!", `Successfully set dark tower floor to ${floor}!`, "success");
 });
 
+new Hack(category.player, "Get UserID").setClick(async () => {
+	Swal.fire({
+		title: "User ID",
+		html: `Here is your User ID: <br> <code> ${_.player.userID} </code> <br> You can use this for copying your account.`,
+		icon: "info"
+	})
+});
+
 new Hack(category.player, "Copy Account", "Copy Account From userID").setClick(async () => {
 	const userID = (await NumberInput.fire("What is the userID of the account you want to copy?", undefined, "question")).value;
 	if (!userID) return;
