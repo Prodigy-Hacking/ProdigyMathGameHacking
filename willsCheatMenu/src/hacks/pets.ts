@@ -115,8 +115,13 @@ const getPet = async (text: string): Promise<number | undefined> => {
 	});
 	return pet.value;
 };
-/*
-new Hack(category.pets, "Edit Pet", "Edit a pet.").setClick(async () => {
+
+new Hack(category.pets, "Edit Pet (BETA)", "Edit a pet.").setClick(async () => {
+	if(!(await Confirm.fire({
+		title: 'Hang on!',
+		html: 'This feature is in <strong>beta</strong>. Using this could break your account in a specific way. This should be used for experimentation <strong>only</strong>.<br><br>Proceed?',
+		icon: "warning"
+	})).value){return}
 	const pet = await getPet("Choose the pet to edit.");
 	if (pet === undefined) return;
 	const selected = _.player.kennel.data[pet];
@@ -170,7 +175,7 @@ new Hack(category.pets, "Edit Pet", "Edit a pet.").setClick(async () => {
 		await Swal.fire("Successfully renamed!", "The name of the pet has been changed.", "success");
 	}
 });
-*/
+
 new Hack(category.pets, "Delete Pet", "Delete a pet.").setClick(async () => {
 	const pet = await getPet("Which pet do you wish to delete?");
 	if (pet === undefined) return;
