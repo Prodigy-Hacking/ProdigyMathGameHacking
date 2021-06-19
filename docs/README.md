@@ -24,6 +24,6 @@ Basically any changes you make to your user data via the API or via JS code - we
 For set-up information, see [this](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks) page.
 
 
-Any questions? Join our [Discord](https://discord.gg/XQDfbfq)!
+Any questions? Join our [Discord](https://discord.gg/pmgh)!
 
 Documentation: [Docs](./docs/interfaces/_pixi_d_.pixi.md)
