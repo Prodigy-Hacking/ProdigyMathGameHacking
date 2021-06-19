@@ -2,7 +2,7 @@
 
 Hacking Prodigy used to be as easy as `PIXI.game.prodigy.player.gold=999`, but now we need a whole team!
 
-If you'd like to join as an official collaborator, you can message us on [our official Discord server](https://discord.gg/XQDfbfq)!
+If you'd like to join as an official collaborator, you can message us on [our official Discord server](https://discord.gg/pmgh)!
 
 Additionally, read our ([Code of Conduct](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/CODE_OF_CONDUCT.md)) before continuing.
 
@@ -38,7 +38,7 @@ Requirements:
 - basic understanding of what an API is (the bar is super low huh)
 - reading skills
 
-Anybody can do this! If you want to help with any of these, you can post your findings in [Discussions](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/discussions), or [our official Discord](https://discord.gg/XQDfbfq).
+Anybody can do this! If you want to help with any of these, you can post your findings in [Discussions](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/discussions), or [our official Discord](https://discord.gg/pmgh).
 
 ### Typings
 

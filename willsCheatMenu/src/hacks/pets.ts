@@ -16,9 +16,9 @@ const toPets = (ID: number) => ({
 	ID,
 	catchDate: Date.now(),
 	foreignSpells: [randomSpell(), randomSpell()] as [number, number],
-	level: VERY_LARGE_NUMBER,
+	level: 100,
 	levelCaught: 1,
-	stars: VERY_LARGE_NUMBER,
+	stars: 26376,
 });
 
 new Hack(category.pets, "Get All Pets").setClick(async () => {

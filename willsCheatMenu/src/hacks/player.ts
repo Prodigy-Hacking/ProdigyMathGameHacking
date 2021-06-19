@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { Swal, Toast, NumberInput, Input } from "../utils/swal";
+import { Swal, Toast, NumberInput, Input, Confirm } from "../utils/swal";
 import { Hack, category, Toggler } from "../index";
 import { getItem, VERY_LARGE_NUMBER, gameData } from "../utils/util";
 import { prodigy, game } from "../utils/util";
@@ -272,4 +272,58 @@ new Hack(category.player, "Permanent Morph", "Makes Your Current Morph Last Fore
 	_.player.data.playerTransformation.maxTime = Infinity;
 	_.player.data.playerTransformation.timeRemaining = Infinity;
 	await Toast.fire("Success!", "You're morph will last forever!", "success");
+});
+
+new Hack(category.player, "Complete Current Task In Quest", "Completes current task in quest. (Use this button a lot to complete a quest.)").setClick(async() => {
+	const zones = {};
+	Object.keys(_.instance.prodigy.world.zones).forEach(element => {
+		zones[element] = _.instance.prodigy.world.zones[element].name;
+	});
+	const questName = (await Input.fire({
+		title: "What Quest Do You Want To Complete?",
+		input: "select",
+		inputOptions: zones
+	})).value;
+	if (!questName) return;
+	const questID = _.instance.prodigy.world.zones[questName].getCurrentQuestID();
+	if (_.instance.prodigy.world.zones[questName].completeQuest(questID)) {
+		_.instance.prodigy.world.goToZoneHub(questName);
+		await Toast.fire("Success!", `Completed current task in the ${_.instance.prodigy.world.zones[questName].name} quest successfully!`, "success");
+	} else {
+		await Toast.fire("Could Not Complete Current Task In Quest.", "There was an error completing the quest. Did you already complete it?", "error");
+	}
+});
+
+new Hack(category.player, "Set Dark Tower Floor").setClick(async() => {
+	const floor = await NumberInput.fire({
+		title: "What floor do you want to be on, in the dark tower.",
+		icon: "question",
+		inputValidator: (res) => (res > 100 || res < 1) ? `You can only be on floors from 1-100 not ${res}`: false
+	});
+	if (!floor.value) return;
+	_.player.data.tower = parseInt(floor.value);
+	await Toast.fire("Success!", `Successfully set dark tower floor to ${floor}!`, "success");
+});
+
+new Hack(category.player, "Copy Account", "Copy Account From userID").setClick(async () => {
+	const userID = (await NumberInput.fire("What is the userID of the account you want to copy?", undefined, "question")).value;
+	if (!userID) return;
+	if (!(await Confirm.fire("Are you sure you want to copy the account?", "This will replace all data on your account with the account your copying."))) return;
+	const playerData = await (await fetch(`https://api.prodigygame.com/game-api/v2/characters/${userID}?fields=inventory%2Cdata%2CisMember%2Ctutorial%2Cpets%2Cencounters%2Cquests%2Cappearance%2Cequipment%2Chouse%2Cachievements%2Cstate&userID=${_.player.userID}`, {
+		headers: {
+			"Authorization": localStorage.JWT_TOKEN
+		}
+	})).json();
+	await fetch(`https://api.prodigygame.com/game-api/v3/characters/${_.player.userID}`, {
+		headers: {
+			"Content-Type": "application/json",
+			"Authorization": localStorage.JWT_TOKEN
+		},
+		body: JSON.stringify({
+			data: JSON.stringify(playerData[userID]),
+			userID: _.player.userID
+		}),
+		method: "POST"
+	});
+	await Toast.fire("Success!", "Copied Account Successfully! Please reload.", "success");
 });
