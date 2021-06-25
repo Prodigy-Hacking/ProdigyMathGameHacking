@@ -80,3 +80,11 @@ new Toggler(category.utility, "Enable menu resize drag (bottom right corner)", "
 	document.getElementById("cheat-menu").style.height = dimensions.height;
 	document.getElementById("cheat-menu").style.width = dimensions.width;
 });
+
+new Toggler(category.utility, "Toggle Click Teleporting").setEnabled(async() => {
+	_.player._playerContainer.walkSpeed = 500;
+	await Toast.fire("Success!", "Successfully enabled teleport click.", "success");
+}).setDisabled(async() => {
+	_.player._playerContainer.walkSpeed = 1.5;
+	await Toast.fire("Success!", "Successfully disabled teleport click.", "success");
+});
