@@ -28,6 +28,13 @@ new Hack(category.player, "Set Level").setClick(async () => {
 	await Toast.fire("Success!", `You are now level ${level.value}.`, "success");
 });
 
+new Hack(category.player, "Get member stars").setClick(async () => {
+    const amount = await NumberInput.fire("Stars", "How many member stars do you ", "question");
+    if (amount.value === undefined) return;
+    _.player.data.storedMemberStars = amount.value;
+    await Toast.fire("Success!", `You have set your member stars${amount.value != 1 ? "s":""} to ${amount.value}.`, "success");
+});
+
 new Hack(category.player, "Set Bounty Points").setClick(async () => {
 	const points = await NumberInput.fire(
 		"Bounty Points",
@@ -85,6 +92,13 @@ new Hack(category.player, "Set name (Client side only)").setClick(async () => {
 	if(!name.value) return;
 	_.player.getName = () => {return name.value}
 	await Toast.fire("Changed!","Your name was changed.")
+});
+
+new Hack(category.player, "Set walkspeed").setClick(async () => {
+	const speed = await NumberInput.fire("Speed Amount", "How much speed do you want?(Default is 1.5)", "question");
+	if (speed.value === undefined) return;
+	_.player._playerContainer.walkSpeed = speed
+	await Toast.fire("Success!", `You now have ${speed.value} speed.`, "success");
 });
 /*
 
