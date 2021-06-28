@@ -93,6 +93,13 @@ new Hack(category.player, "Set name (Client side only)").setClick(async () => {
 	_.player.getName = () => {return name.value}
 	await Toast.fire("Changed!","Your name was changed.")
 });
+
+new Hack(category.player, "Set walkspeed").setClick(async () => {
+	const speed = await NumberInput.fire("Speed Amount", "How much speed do you want?(Default is 1.5)", "question");
+	if (speed.value === undefined) return;
+	_.player._playerContainer.walkSpeed = speed
+	await Toast.fire("Success!", `You now have ${speed.value} speed.`, "success");
+});
 /*
 
 let interval: unknown | null = null;
