@@ -28,6 +28,13 @@ new Hack(category.player, "Set Level").setClick(async () => {
 	await Toast.fire("Success!", `You are now level ${level.value}.`, "success");
 });
 
+new Hack(category.player, "Get member stars").setClick(async () => {
+    const amount = await NumberInput.fire("Stars", "How many member stars do you ", "question");
+    if (amount.value === undefined) return;
+    _.player.data.storedMemberStars = amount.value;
+    await Toast.fire("Success!", `You have set your member stars${amount.value != 1 ? "s":""} to ${amount.value}.`, "success");
+});
+
 new Hack(category.player, "Set Bounty Points").setClick(async () => {
 	const points = await NumberInput.fire(
 		"Bounty Points",
