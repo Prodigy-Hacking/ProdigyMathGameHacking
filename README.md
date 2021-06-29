@@ -8,7 +8,7 @@
 		<img align="center"
 			width="128"
 			alt="The Lounge"
-			src="https://user-images.githubusercontent.com/61985513/112065411-d2b21580-8b21-11eb-9beb-ac267876f31e.png">
+			src="https://raw.githubusercontent.com/BoredFishRE/justsomeiconstuffdontmindme/6d213c7a5ff42fd4ac60d3c08827145f5ae435c9/pmghnewlogo500px.png">
 	</a>
 </h1>
 
