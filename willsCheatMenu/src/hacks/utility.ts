@@ -6,49 +6,37 @@ import { prodigy, game } from "../utils/util";
 import { Player } from "../../../typings/player";
 
 new Hack(category.utility, "Save Character Locally", "Saves your character locally.").setClick(async () => {
-	const playerData = {};
-	playerData.equipment = _.player.equipment;
-	playerData.tutorial = _.player.tutorial;
-	playerData.pets = _.player.kennel._petData;
-	playerData.data = _.player.data;
-	playerData.encounters = _.player.encounters._data;
-	playerData.house = _.player.house.data;
-	playerData.inventory = _.player.backpack.data;
-	playerData.quests = _.player.quests.data;
-	playerData.state = _.player.state.data;
-	playerData.appearance = _.player.appearance;
-	playerData.tutorial = _.player.tutorial.data;
-	playerData.name = _.player.name.data;
-
-	localStorage.setItem("playerData", JSON.stringify(playerData));
+	localStorage.setItem("playerData", JSON.stringify(_.player.getUpdatedData(true)));
 	await Toast.fire("Success!", "Note: Load Character will only work on this device.", "success");
 });
 
 new Hack(category.utility, "Load local character", "Loads your character locally.").setClick(async () => {
 	if (!localStorage.getItem("playerData")) {
-		await Toast.fire("Error", "No saved character.", "success");
+		await Toast.fire("Error", "No saved character.", "error");
 	} else {
-		const playerData = JSON.parse(localStorage.getItem("playerData"));
-		// we don't want to overwrite any getters/setters the prodigy objects may have, so only overwrite what we've stringified
-		const loadObj = (toObj, fromObj) => Object.keys(fromObj).map(k => {
-			if (typeof k == "object") return;
-			toObj[k] = fromObj[k];
+		const playerData = localStorage.getItem("playerData");
+		fetch(`https://api.prodigygame.com/game-api/v3/characters/${_.player.userID}`, {
+			"headers": {
+				"accept": "*/*",
+				"accept-language": "en-US,en;q=0.9",
+				"authorization": localStorage.JWT_TOKEN,
+				"content-type": "application/json",
+				"sec-ch-ua": "\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"91\", \"Chromium\";v=\"91\"",
+				"sec-ch-ua-mobile": "?0",
+				"sec-fetch-dest": "empty",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-site": "same-site"
+			},
+			"referrer": "https://play.prodigygame.com/",
+			"referrerPolicy": "strict-origin-when-cross-origin",
+			"body": JSON.stringify({
+				data: playerData,
+				userID: _.player.userID
+			}),
+			"method": "POST",
+			"mode": "cors"
 		});
-
-		loadObj(_.player.equipment,        playerData.equipment);
-		loadObj(_.player.tutorial,         playerData.tutorial);
-		loadObj(_.player.kennel._petData,  playerData.pets);
-		loadObj(_.player.data,             playerData.data);
-		loadObj(_.player.encounters._data, playerData.encounters);
-		loadObj(_.player.house.data,       playerData.house);
-		loadObj(_.player.backpack.data,    playerData.inventory);
-		loadObj(_.player.quests.data,      playerData.quests);
-		loadObj(_.player.state.data,       playerData.state);
-		loadObj(_.player.appearance,       playerData.appearance);
-		loadObj(_.player.tutorial.data,    playerData.tutorial);
-		loadObj(_.player.name.data,        playerData.name);
-		_.player.appearanceChanged = true;
-		await Toast.fire("Success!", "Character has been successfully loaded.", "success");
+		await Toast.fire("Success!", "Character has been successfully loaded. Reload for the changes to take effect.", "success");
 	}
 });
 
