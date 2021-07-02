@@ -343,3 +343,10 @@ new Hack(category.player, "Copy Account", "Copy Account From userID").setClick(a
 	});
 	await Toast.fire("Success!", "Copied Account Successfully! Please reload.", "success");
 });
+
+new Hack(category.player, "Set Grade").setClick(async () => {
+	const grade = await NumberInput.fire("What number do you want to set your grade to?");
+	if (!grade.value) return;
+	_.player.grade = parseInt(grade.value);
+	await Toast.fire("Success", `Successfully changed grade to ${grade}!`, "success");
+});
