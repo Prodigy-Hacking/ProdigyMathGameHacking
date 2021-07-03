@@ -84,7 +84,6 @@ new Toggler(category.utility, "Toggle Click Teleporting").setEnabled(async() => 
 	await Toast.fire("Success!", "Successfully disabled teleport click.", "success");
 });
 
-// I sort of copied this code because I don't get it.
 new Toggler(category.utility, "Pause Game").setEnabled(async() => {
 	_.network.game._paused=true
 	await Toast.fire("Success!", "Successfully paused Prodigy.", "success);
@@ -92,4 +91,3 @@ new Toggler(category.utility, "Pause Game").setEnabled(async() => {
 	_.network.game._paused=false
 	await Toast.fire("Success!", "Successfully resumed Prodigy.", "success");
 });
-// Make corrections please.
