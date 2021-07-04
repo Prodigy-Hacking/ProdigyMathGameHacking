@@ -85,9 +85,9 @@ new Toggler(category.utility, "Toggle Click Teleporting").setEnabled(async() => 
 });
 
 new Toggler(category.utility, "Pause Game").setEnabled(async() => {
-	_.network.game._paused=true
+	_.network.game._paused = true;
 	await Toast.fire("Success!", "Successfully paused Prodigy.", "success");
 }).setDisabled(async() => {
-	_.network.game._paused=false
+	_.network.game._paused = false;
 	await Toast.fire("Success!", "Successfully resumed Prodigy.", "success");
 });

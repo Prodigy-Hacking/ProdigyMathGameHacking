@@ -21,7 +21,8 @@ chrome.webRequest.onHeadersReceived.addListener(
 
 // Redirect Requests
 browser.webRequest.onBeforeRequest.addListener(details => {
-	const redirectorDomain = debug ? "http://localhost:1337" : "https://hacks.prodigyhacking.com"
+	const redirectorDomain = debug ? "http://localhost:1337" : "https://hacks.prodigyhacking.com";
+
 	if (details.url.startsWith("https://code.prodigygame.com/code/") && details.url.includes("/game.min.js")) {
 		// instead of redirecting
 		chrome.tabs.executeScript({
@@ -58,8 +59,6 @@ browser.webRequest.onBeforeRequest.addListener(details => {
 		);
 
 		// see disableIntegrity.js, we append the new game.min to the document
-
-		// return { redirectUrl: `${redirectorDomain}/game.min.js` };
 		return {
 			cancel: true
 		};
