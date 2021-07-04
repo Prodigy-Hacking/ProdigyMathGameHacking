@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PHEx</title>
+
+        <style>
+            .content {
+                width: 20em;
+                height: 40em;
+            }
+            .check {
+                -webkit-appearance: none; /*hides the default checkbox*/
+                height: 40px;
+                width: 40px;
+                transition: 0.10s;
+                background-color: #FE0006;
+                border-radius: 3px;
+                outline: none;
+            }
+            .check:checked {
+                background-color: #0E9700;
+            }
+            .check:hover {
+                cursor: pointer; 
+                opacity: 0.8;
+            }
+        </style>
+
+        <script>
+            location.href = "javascript: alert('yeah')";
+        </script>
+    </head>
+
+    <body>
+        <div class="content">
+            <h1>PHEx</h1>
+
+            <h3>Custom PNP URL</h3>
+            <input type="text">
+
+            <h3>Use Custom URL</h3>
+            <input type="checkbox" name="switch" class="check">
+
+            
+        </div>
+    </body>
+</html>
