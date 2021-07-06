@@ -18,15 +18,22 @@ chrome.webRequest.onHeadersReceived.addListener(
 	},
 	['blocking', 'responseHeaders', 'extraHeaders']);
 
+function get(key) {
+	return new Promise(resolve => {
+		chrome.storage.sync.get([key], result => {
+			resolve(result[key])
+		})
+	})
+};
 
 // Redirect Requests
-browser.webRequest.onBeforeRequest.addListener(details => {
-	const redirectorDomain = debug ? "http://localhost:1337" : "https://hacks.prodigyhacking.com";
-
+browser.webRequest.onBeforeRequest.addListener(async details => {
+	const redirectorDomain = await get("url") && await get("checked") ? await get("url") : "https://hacks.prodigyhacking.com";
 	if (details.url.startsWith("https://code.prodigygame.com/code/") && details.url.includes("/game.min.js")) {
-		// instead of redirecting
+		const data = await (await fetch(chrome.extension.getURL("disableIntegrity.js"))).text();
+		const index = data.indexOf("{") + 1;
 		chrome.tabs.executeScript({
-			file: "disableIntegrity.js"
+			code: [data.slice(0, index), `\nconst redirectorDomain = "${redirectorDomain}";\n`, data.slice(index)].join("")
 		});
 
 		fetch('https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/PHEx/status.json').then(response => response.json()).then(async data => {
