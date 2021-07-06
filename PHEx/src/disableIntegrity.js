@@ -1,10 +1,5 @@
 
 (async () => {
-	// Debug will use localhost CDN instead of ProdigyHacking CDN if enabled.
-	const debug = false;
-
-	const redirectorDomain = debug ? "http://localhost:1337" : "https://hacks.prodigyhacking.com";
-
 	window.console.log = () => {};
 
 	if (!window.scriptIsInjected) {
