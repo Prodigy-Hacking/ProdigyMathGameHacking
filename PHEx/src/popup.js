@@ -1,51 +1,46 @@
 (async() => {
     function set(key, value) {
-        chrome.storage.local.set({ [key]: value })
-    };
+        chrome.storage.local.set({ [key]: value });
+    }
     function get(key) {
         return new Promise(resolve => {
             chrome.storage.local.get([key], result => {
-                resolve(result[key])
-            })
-        })
-    };
-    function validURL(str) {
-        return true;
-        var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
-            '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
-            '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
-            '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
-            '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
-            '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
-        return !!pattern.test(str);
+                resolve(result[key]);
+            });
+        });
     }
     
-    const checkbox = document.querySelector(".check")
-    const input = document.querySelector("input")
+    const urlTextbox = document.querySelector("#url");
+    const checkbox = document.querySelector("#check");
+    const passwordTextbox = document.querySelector("#gatekeeper");
+    const submitButton = document.querySelector("#submit");
+    const resultText = document.querySelector("#result");
 
-    input.value = await get("url") || "";
+    urlTextbox.value = await get("url") || "http://localhost:1337/";
     checkbox.checked = await get("checked") || false;
+    passwordTextbox.value = "";
 
-    input.onchange = () => {
-        document.querySelector("p").innerHTML = ""
-    }
+    passwordTextbox.addEventListener("keyup", (event) => {
+        console.log(event);
 
-    checkbox.addEventListener("click", async (event) => {
-        if (await get("checked")) {
-            // if already checked, no need to run checks
-            // set checked to new value, which should be false
-            set("checked", checkbox.checked);
-        } else {
-            // if we're turning on checked, we need to run a few checks
-            if (validURL(input.value)) {
-                // if the URL is valid, update url and checked to their latest values.
-                set("url", input.value);
-                set("checked", checkbox.checked);
-            } else {
-                // if the URL is invalid, scream at them until they burst into tears
-                document.querySelector("p").innerHTML = "Invalid URL";
-                checkbox.checked = false;
-            }
+        passwordTextbox.style.backgroundColor = (event.target.value === "nootnoot")? "aquamarine" : "pink";
+
+        // 13 is Enter
+        if (event.keyCode === 13) {
+            submitButton.click();
         }
-    })
+    });
+
+    submitButton.addEventListener("click", async () => {
+        if (passwordTextbox.value !== "nootnoot") {
+            resultText.textContent = "The password was typed incorrectly!";
+        } else {
+            resultText.textContent = `Saved ${new Date().toISOString()}. I hope you know what you're doing.`;
+
+            chrome.storage.local.set({
+                url: urlTextbox.value,
+                checked: checkbox.checked
+            });
+        }
+    });
 })()

@@ -1,25 +1,13 @@
-
 (async () => {
-	window.console.log = () => {};
-
 	if (!window.scriptIsInjected) {
 		window.scriptIsInjected = true;
-		function redirectorCheck() {
-			function handleErrors(response) {
-				//Error handler thingy
-				/*
-				if (!response.ok) {
-					throw Error(response.statusText);
-				}
-				*/
-				return response;
-			}
 
-			//Fetches https://hacks.prodigyhacking.com/game.min.js
+		function redirectorCheck() {
 			fetch(`${redirectorDomain}/game.min.js?updated=${Date.now()}`)
 				.then(res => res.text())
 				.then(response => {
 					console.log("Connection to server was Successful!");
+
 					// <script src="https://code.prodigygame.com/code/3-13-0/game.min.js?v=3-13-0" onload="SW.Load.onGameLoad();" crossorigin="anonymous"></script>
 					// we cancel the real game.min, and just append ours
 					// a messy solution for sure, but this should only be a bandaid on a bulletwound
@@ -28,9 +16,9 @@
 
 					document.body.append(injectedScript);
 				})
-				//If fetch spits out error, trigger dialog box
-				.catch(async function (error) {
-					eval(await(await fetch('https://unpkg.com/sweetalert2')).text())
+				.catch(async (error) => {
+					// If fetch spits out error, trigger dialog box
+					eval(await (await fetch('https://unpkg.com/sweetalert2')).text());
 					if (swal) {
 						swal.fire({
 							title: "Oh no!",
@@ -43,10 +31,11 @@
 					}
 				});
 		}
-		setTimeout(redirectorCheck, 1000)
+		setTimeout(redirectorCheck, 1000);
+
 		const pluginVersion = chrome.runtime.getManifest().version;
 		const supportedVersion = (await (await fetch(`${redirectorDomain}/version`)).text());
-		//Checks for plugin version. If outdated, triggers dialog box.
+		// Checks for plugin version. If outdated, triggers dialog box.
 		if (pluginVersion !== supportedVersion) {
 			const res = confirm("The PMGH extension is outdated. If you expierence any errors, please update. If you are on the Chrome Webstore version or any webstore, please wait. Updates take some time.");
 
@@ -60,12 +49,5 @@
 				v.removeAttribute("integrity");
 			}
 		});
-
-		// <link rel="preload" href="https://code.prodigygame.com/code/3-13-0/game.min.js?v=3-13-0" as="script" crossorigin="anonymous"></link>
-		/*
-		const prelly = document.createElement("link");
-		prelly.rel = "preload";
-		prelly.href = `${redirectorDomain}/game.min.js`;
-		*/
 	}
 })();
