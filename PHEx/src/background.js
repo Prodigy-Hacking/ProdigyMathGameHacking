@@ -1,44 +1,37 @@
 const browser = chrome || browser;
 
-// If debug is enabled, the extension will use localhost instead of the Prodigy Hacking Organization CDN.
-const debug = false;
-
 // Ignore X-Frame Headers
 const HEADERS_TO_STRIP_LOWERCASE = [
-	'content-security-policy',
-	'x-frame-options',
+	"content-security-policy",
+	"x-frame-options",
 ];
 
 chrome.webRequest.onHeadersReceived.addListener(
 	details => ({
-		responseHeaders: details.responseHeaders.filter(header =>
-			!HEADERS_TO_STRIP_LOWERCASE.includes(header.name.toLowerCase()))
-	}), {
-		urls: ['<all_urls>']
-	},
-	['blocking', 'responseHeaders', 'extraHeaders']);
+		responseHeaders: details.responseHeaders.filter(header => !HEADERS_TO_STRIP_LOWERCASE.includes(header.name.toLowerCase()))
+	}),
+	{ urls: ["<all_urls>"] },
+	["blocking", "responseHeaders", "extraHeaders"]
+);
 
 function get(key) {
 	return new Promise(resolve => {
-		chrome.storage.sync.get([key], result => {
-			resolve(result[key])
-		})
-	})
+		chrome.storage.local.get([key], result => {
+			resolve(result[key]);
+		});
+	});
 };
 
 // Redirect Requests
 browser.webRequest.onBeforeRequest.addListener(async details => {
-	const redirectorDomain = await get("url") && await get("checked") ? await get("url") : "https://hacks.prodigyhacking.com";
-	if (details.url.startsWith("https://code.prodigygame.com/code/") && details.url.includes("/game.min.js")) {
-		const data = await (await fetch(chrome.extension.getURL("disableIntegrity.js"))).text();
-		const index = data.indexOf("{") + 1;
-		chrome.tabs.executeScript({
-			code: [data.slice(0, index), `\nconst redirectorDomain = "${redirectorDomain}";\n`, data.slice(index)].join("")
-		});
+	// get options from local
+	const [ url, checked ] = ["url", "checked"].map(v => await get(v));
+	const redirectorDomain = (url && checked) ? url : "https://hacks.prodigyhacking.com";
 
-		fetch('https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/PHEx/status.json').then(response => response.json()).then(async data => {
+	if (details.url.startsWith("https://code.prodigygame.com/code/") && details.url.includes("/game.min.js")) {
+		fetch("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/PHEx/status.json").then(response => response.json()).then(async data => {
 			if (data.offline == true) {
-				eval(await (await fetch('https://unpkg.com/sweetalert2')).text())
+				eval(await (await fetch("https://unpkg.com/sweetalert2")).text())
 				if (swal) {
 					swal.fire({
 						title: "Oh no!",
@@ -55,20 +48,13 @@ browser.webRequest.onBeforeRequest.addListener(async details => {
 
 		// Blocking gamemin
 		chrome.webRequest.onBeforeRequest.addListener(
-			function () {
-				return {
-					cancel: true
-				};
-			}, {
-				urls: ["*://code.prodigygame.com/code/*"]
-			},
+			_ => ({ cancel: true }),
+			{ urls: ["*://code.prodigygame.com/code/*"] },
 			["blocking"]
 		);
 
 		// see disableIntegrity.js, we append the new game.min to the document
-		return {
-			cancel: true
-		};
+		return { cancel: true };
 	} else if (details.url.startsWith("https://code.prodigygame.com/js/public-game")) {
 		return {
 			redirectUrl: `${redirectorDomain}/public-game.min.js?hash=${details.url.split("public-game-")[1].split(".")[0]}&updated=${Date.now()}`
