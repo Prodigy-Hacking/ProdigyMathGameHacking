@@ -1,5 +1,18 @@
 (async () => {
+	function get(key) {
+		return new Promise(resolve => {
+			chrome.storage.local.get([key], result => {
+				resolve(result[key]);
+			});
+		});
+	}
+
 	if (!window.scriptIsInjected) {
+		// get options from local
+		const url = await get("url");
+		const checked = await get("checked");
+		const redirectorDomain = (url && checked) ? url : "https://hacks.prodigyhacking.com";
+		
 		window.scriptIsInjected = true;
 
 		function redirectorCheck() {
@@ -43,11 +56,13 @@
 		}
 
 		// Disable integrity
+		console.groupCollapsed("integrity patches");
 		[...document.getElementsByTagName("script"), ...document.getElementsByTagName("link")].forEach(v => {
 			if (v.integrity) {
 				console.log(v.integrity);
 				v.removeAttribute("integrity");
 			}
 		});
+		console.groupEnd("integrity patches");
 	}
 })();

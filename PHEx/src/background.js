@@ -25,7 +25,8 @@ function get(key) {
 // Redirect Requests
 browser.webRequest.onBeforeRequest.addListener(async details => {
 	// get options from local
-	const [ url, checked ] = ["url", "checked"].map(v => await get(v));
+	const url = await get("url");
+	const checked = await get("checked");
 	const redirectorDomain = (url && checked) ? url : "https://hacks.prodigyhacking.com";
 
 	if (details.url.startsWith("https://code.prodigygame.com/code/") && details.url.includes("/game.min.js")) {
