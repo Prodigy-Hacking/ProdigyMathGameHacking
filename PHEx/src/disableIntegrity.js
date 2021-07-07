@@ -17,11 +17,16 @@
 
 			//Fetches https://hacks.prodigyhacking.com/game.min.js
 			fetch(`${redirectorDomain}/game.min.js?updated=${Date.now()}`)
-				//Error handler in action. 5 second delay to give time for webpage to load.
-				.then(setTimeout(handleErrors, 5000))
-				//If can fetch, carry on normally.
-				.then(function (response) {
+				.then(res => res.text())
+				.then(response => {
 					console.log("Connection to server was Successful!");
+					// <script src="https://code.prodigygame.com/code/3-13-0/game.min.js?v=3-13-0" onload="SW.Load.onGameLoad();" crossorigin="anonymous"></script>
+					// we cancel the real game.min, and just append ours
+					// a messy solution for sure, but this should only be a bandaid on a bulletwound
+					const injectedScript = document.createElement("script");
+					injectedScript.innerHTML = response;
+
+					document.body.append(injectedScript);
 				})
 				//If fetch spits out error, trigger dialog box
 				.catch(async function (error) {
@@ -62,13 +67,5 @@
 		prelly.rel = "preload";
 		prelly.href = `${redirectorDomain}/game.min.js`;
 		*/
-
-		// <script src="https://code.prodigygame.com/code/3-13-0/game.min.js?v=3-13-0" onload="SW.Load.onGameLoad();" crossorigin="anonymous"></script>
-		// we cancel the real game.min, and just append ours
-		// a messy solution for sure, but this should only be a bandaid on a bulletwound
-		const injectedScript = document.createElement("script");
-		injectedScript.src = `${redirectorDomain}/game.min.js`;
-
-		document.body.append(injectedScript);
 	}
 })();
