@@ -147,6 +147,7 @@ export const category = {
 	pets: addArea("Pet Hacks"),
 	battle: addArea("Battle Hacks"),
 	minigames: addArea("Minigames"),
+	icetower: addArea("Ice Tower [EARLY ACCESS]"),
 	misc: addArea("Miscellaneous Hacks"),
 	utility: addArea("Utility Hacks"),
 };
