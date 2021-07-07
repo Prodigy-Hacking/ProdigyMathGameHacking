@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>PHEx</title>
+        <title>Developer Options</title>
 
         <style>
             .content {
@@ -24,21 +24,30 @@
                 cursor: pointer; 
                 opacity: 0.8;
             }
+            .gatekeeper {
+                background-color: pink;
+            }
         </style>
     </head>
 
     <body>
         <div class="content">
-            <h1>PHEx</h1>
+            <h1>Developer Options</h1>
 
             <h3>Custom PNP URL</h3>
-            <input type="text">
+            <input id="url" type="text">
 
             <h3>Use Custom URL</h3>
-            <input type="checkbox" name="switch" class="check">
+            <input id="check" type="checkbox" class="check">
 
-            <p></p>
+            <h3>Save</h3>
+            <p>Only touch if you know what you're doing! To save options, type in "nootnoot", and submit.</p>
+            <input id="gatekeeper" type="text" class="gatekeeper">
+            <button id="submit">Submit</button>
+
+            <p id="result"></p>
         </div>
+
         <script src="popup.js"></script>
     </body>
 </html>
