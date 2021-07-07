@@ -140,6 +140,7 @@ export class Toggler extends Hack {
 }
 
 export const category = {
+	icetower: addArea("Ice Tower [EARLY ACCESS]"),
 	player: addArea("Player Hacks"),
 	inventory: addArea("Inventory Hacks"),
 	location: addArea("Location Hacks"),
