@@ -28,6 +28,13 @@ new Hack(category.player, "Set Level").setClick(async () => {
 	await Toast.fire("Success!", `You are now level ${level.value}.`, "success");
 });
 
+new Hack(category.player, "Get member stars").setClick(async () => {
+    const amount = await NumberInput.fire("Stars", "How many member stars do you ", "question");
+    if (amount.value === undefined) return;
+    _.player.data.storedMemberStars = amount.value;
+    await Toast.fire("Success!", `You have set your member stars to ${amount.value}.`, "success");
+});
+
 new Hack(category.player, "Set Bounty Points").setClick(async () => {
 	const points = await NumberInput.fire(
 		"Bounty Points",
@@ -86,6 +93,7 @@ new Hack(category.player, "Set name (Client side only)").setClick(async () => {
 	_.player.getName = () => {return name.value}
 	await Toast.fire("Changed!","Your name was changed.")
 });
+
 /*
 
 let interval: unknown | null = null;
@@ -334,4 +342,11 @@ new Hack(category.player, "Copy Account", "Copy Account From userID").setClick(a
 		method: "POST"
 	});
 	await Toast.fire("Success!", "Copied Account Successfully! Please reload.", "success");
+});
+
+new Hack(category.player, "Set Grade").setClick(async () => {
+	const grade = await NumberInput.fire("What number do you want to set your grade to?");
+	if (!grade.value) return;
+	_.player.grade = parseInt(grade.value);
+	await Toast.fire("Success", `Successfully changed grade to ${grade}!`, "success");
 });
