@@ -12,11 +12,12 @@
 		const url = await get("url");
 		const checked = await get("checked");
 		const redirectorDomain = (url && checked) ? url : "https://hacks.prodigyhacking.com";
+		const gameFileVersion = await get("version");
 		
 		window.scriptIsInjected = true;
 
 		function redirectorCheck() {
-			fetch(`${redirectorDomain}/game.min.js?updated=${Date.now()}`)
+			fetch(`${redirectorDomain}/game.min.js?version=${gameFileVersion}&updated=${Date.now()}`)
 				.then(res => res.text())
 				.then(response => {
 					console.log("Connection to server was Successful!");
