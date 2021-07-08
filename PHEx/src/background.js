@@ -22,10 +22,6 @@ function get(key) {
 	});
 };
 
-function set(key, value) {
-	chrome.storage.local.set({ [key]: value })
-};
-
 // Redirect Requests
 browser.webRequest.onBeforeRequest.addListener(async details => {
 	// get options from local
@@ -34,7 +30,6 @@ browser.webRequest.onBeforeRequest.addListener(async details => {
 	const redirectorDomain = (url && checked) ? url : "https://hacks.prodigyhacking.com";
 
 	if (details.url.startsWith("https://code.prodigygame.com/code/") && details.url.includes("/game.min.js")) {
-		set("version", new URL(details.url).searchParams.get("v"));
 		fetch("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/PHEx/status.json").then(response => response.json()).then(async data => {
 			if (data.offline == true) {
 				eval(await (await fetch("https://unpkg.com/sweetalert2")).text())
