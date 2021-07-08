@@ -29,12 +29,6 @@ browser.webRequest.onBeforeRequest.addListener(async details => {
 	const checked = await get("checked");
 	const redirectorDomain = (url && checked) ? url : "https://hacks.prodigyhacking.com";
 
-	const data = await (await fetch(chrome.extension.getURL("disableIntegrity.js"))).text();
-	const index = data.indexOf("{") + 1;
-	chrome.tabs.executeScript({
-		code: [data.slice(0, index), `\nconst redirectorDomain = "${redirectorDomain}";\n`, data.slice(index)].join("")
-	});
-
 	if (details.url.startsWith("https://code.prodigygame.com/code/") && details.url.includes("/game.min.js")) {
 		fetch("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/PHEx/status.json").then(response => response.json()).then(async data => {
 			if (data.offline == true) {
