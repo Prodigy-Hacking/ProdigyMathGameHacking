@@ -140,15 +140,15 @@ export class Toggler extends Hack {
 }
 
 export const category = {
+	icetower: addArea("Ice Tower [EARLY ACCESS]"),
 	player: addArea("Player Hacks"),
 	inventory: addArea("Inventory Hacks"),
 	location: addArea("Location Hacks"),
 	pets: addArea("Pet Hacks"),
 	battle: addArea("Battle Hacks"),
 	minigames: addArea("Minigames"),
-	icetower: addArea("Ice Tower [EARLY ACCESS]"),
 	misc: addArea("Miscellaneous Hacks"),
-	utility: addArea("Utility Hacks"),
+	utility: addArea("Utility Hacks")
 };
 
 if (localStorage.getItem("level")) {
