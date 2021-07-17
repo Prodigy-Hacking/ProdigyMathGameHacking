@@ -80,11 +80,11 @@ new Hack(category.player, "PVP Health").setClick(async () => {
 });
 
 new Toggler(category.player, "Toggle membership").setEnabled(async () => {
-function getMemberModule(){let e;return Array.from(_.instance.prodigy.gameContainer._inversifyContainer._bindingDictionary._map).forEach(n=>{try{_.instance.prodigy.gameContainer.get(`${n[0]}`).data&&_.instance.prodigy.gameContainer.get(`${n[0]}`).data.membership&&(e=n[0])}catch{}}),e}
+function getMemberModule(){return _.player.hasMembership.toString().split('"')[1]}
 		_.instance.prodigy.gameContainer.get(getMemberModule()).data.membership.active = true		
 	_.player.appearanceChanged = true;
 }).setDisabled(() => {
-	function getMemberModule(){let e;return Array.from(_.instance.prodigy.gameContainer._inversifyContainer._bindingDictionary._map).forEach(n=>{try{_.instance.prodigy.gameContainer.get(`${n[0]}`).data&&_.instance.prodigy.gameContainer.get(`${n[0]}`).data.membership&&(e=n[0])}catch{}}),e}
+	function getMemberModule(){return _.player.hasMembership.toString().split('"')[1]}
 	_.instance.prodigy.gameContainer.get(getMemberModule()).data.membership.active = false																		
 	_.player.appearanceChanged = true
 });
