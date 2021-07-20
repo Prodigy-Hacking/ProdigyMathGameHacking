@@ -29,7 +29,7 @@ new Hack(category.player, "Set Level").setClick(async () => {
 });
 
 new Hack(category.player, "Get member stars").setClick(async () => {
-    const amount = await NumberInput.fire("Stars", "How many member stars do you ", "question");
+    const amount = await NumberInput.fire("Stars", "How many member stars do you want?", "question");
     if (amount.value === undefined) return;
     _.player.data.storedMemberStars = amount.value;
     await Toast.fire("Success!", `You have set your member stars to ${amount.value}.`, "success");
