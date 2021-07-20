@@ -72,15 +72,15 @@ new Toggler(category.utility, "Enable menu resize drag (bottom right corner)", "
 new Hack(category.utility, "Edit walkspeed").setClick(async() => {
 	const walkSpeed = await Input.fire("What do you want to set your walk speed to?");
 	if (!walkSpeed.value) return;
-	_.player._playerContainer.walkSpeed = parseFloat(walkSpeed.value) || 1.5;
+	_.player.playerContainer.walkSpeed = parseFloat(walkSpeed.value) || 1.5;
 	await Toast.fire("Success!", `Successfully made walk speed ${parseFloat(walkSpeed.value) || 1.5}!`, "success");
 });
 
 new Toggler(category.utility, "Toggle Click Teleporting").setEnabled(async() => {
-	_.player._playerContainer.walkSpeed = 500;
+	_.player.playerContainer.walkSpeed = 500;
 	await Toast.fire("Success!", "Successfully enabled teleport click.", "success");
 }).setDisabled(async() => {
-	_.player._playerContainer.walkSpeed = 1.5;
+	_.player.playerContainer.walkSpeed = 1.5;
 	await Toast.fire("Success!", "Successfully disabled teleport click.", "success");
 });
 
