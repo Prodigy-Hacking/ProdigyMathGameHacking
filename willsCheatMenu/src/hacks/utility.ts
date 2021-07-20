@@ -77,7 +77,7 @@ new Hack(category.utility, "Edit walkspeed").setClick(async() => {
 });
 
 new Toggler(category.utility, "Toggle Click Teleporting").setEnabled(async() => {
-	_.player.playerContainer.walkSpeed = 500;
+	_.player.playerContainer.walkSpeed = Infinity;
 	await Toast.fire("Success!", "Successfully enabled teleport click.", "success");
 }).setDisabled(async() => {
 	_.player.playerContainer.walkSpeed = 1.5;
