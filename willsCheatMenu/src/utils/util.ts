@@ -1,25 +1,24 @@
 // @ts-nocheck
 import { GameItemKey } from "../../../typings/_.gameData";
-import { gameData } from "../../../typings/gameData";
+import { gameData as GameData } from "../../../typings/gameData";
 import { Item } from "../../../typings/item";
-import { Player } from "../../../typings/player";
-import { TODO } from "../../../typings/util";
 import { Prodigy } from "../../../typings/prodigy";
 import { Game } from "../../../typings/game";
+export declare const _;
 const base: { game: Game, prodigy: Prodigy } = _.instance;
 export const game = base.game;
 export const prodigy = base.prodigy;
-export const gameData: gameData = _.instance.game.state.states.get("Boot").gameData;
+export const gameData: GameData = _.instance.game.state.states.get("Boot").gameData;
 export const getItem = <T extends GameItemKey>(type: T, id: number): Item<T> | null =>
 	(_.gameData[type].find(x => x.ID === id) as null | Item<any>) ?? null;
 export const VERY_LARGE_NUMBER = 9e9;
 export const states = Object.fromEntries(_.instance.game.state.states);
 export const saveCharacter = () => {
 	fetch(`https://api.prodigygame.com/game-api/v3/characters/${_.player.userID}`, {
-		"headers": {
-			"accept": "*/*",
+		headers: {
+			accept: "*/*",
 			"accept-language": "en-US,en;q=0.9",
-			"authorization": localStorage.JWT_TOKEN,
+			authorization: localStorage.JWT_TOKEN,
 			"content-type": "application/json",
 			"sec-ch-ua": "\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"91\", \"Chromium\";v=\"91\"",
 			"sec-ch-ua-mobile": "?0",
@@ -27,14 +26,14 @@ export const saveCharacter = () => {
 			"sec-fetch-mode": "cors",
 			"sec-fetch-site": "same-site"
 		},
-		"referrer": "https://play.prodigygame.com/",
-		"referrerPolicy": "strict-origin-when-cross-origin",
-		"body": JSON.stringify({
+		referrer: "https://play.prodigygame.com/",
+		referrerPolicy: "strict-origin-when-cross-origin",
+		body: JSON.stringify({
 			data: JSON.stringify(_.player.getUpdatedData(true)),
 			userID: _.player.userID
 		}),
-		"method": "POST",
-		"mode": "cors"
+		method: "POST",
+		mode: "cors"
 	});
 };
 
