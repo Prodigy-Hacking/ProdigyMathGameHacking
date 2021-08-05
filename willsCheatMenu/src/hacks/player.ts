@@ -23,16 +23,16 @@ new Hack(category.player, "Set Level").setClick(async () => {
 	const xpConstant = 1.042;
 	_.player.data.stars = Math.round((1 - Math.pow(xpConstant, i)) / (1 - xpConstant) * 20 + 10);
 	_.player.data.level = +level.value;
-	_.player.getLevel = () => {return _.player.data.level}
+	_.player.getLevel = () => {return _.player.data.level;};
 
 	await Toast.fire("Success!", `You are now level ${level.value}.`, "success");
 });
 
 new Hack(category.player, "Get member stars").setClick(async () => {
-    const amount = await NumberInput.fire("Stars", "How many member stars do you want?", "question");
-    if (amount.value === undefined) return;
-    _.player.data.storedMemberStars = amount.value;
-    await Toast.fire("Success!", `You have set your member stars to ${amount.value}.`, "success");
+	const amount = await NumberInput.fire("Stars", "How many member stars do you want?", "question");
+	if (amount.value === undefined) return;
+	_.player.data.storedMemberStars = amount.value;
+	await Toast.fire("Success!", `You have set your member stars to ${amount.value}.`, "success");
 });
 
 new Hack(category.player, "Set Bounty Points").setClick(async () => {
@@ -80,20 +80,20 @@ new Hack(category.player, "PVP Health").setClick(async () => {
 });
 
 new Toggler(category.player, "Toggle membership").setEnabled(async () => {
-function getMemberModule(){return _.player.hasMembership.toString().split('"')[1]}
-		_.instance.prodigy.gameContainer.get(getMemberModule()).data.membership.active = true		
+	function getMemberModule(){return _.player.hasMembership.toString().split("\"")[1];}
+	_.instance.prodigy.gameContainer.get(getMemberModule()).data.membership.active = true;		
 	_.player.appearanceChanged = true;
 }).setDisabled(() => {
-	function getMemberModule(){return _.player.hasMembership.toString().split('"')[1]}
-	_.instance.prodigy.gameContainer.get(getMemberModule()).data.membership.active = false																		
-	_.player.appearanceChanged = true
+	function getMemberModule(){return _.player.hasMembership.toString().split("\"")[1];}
+	_.instance.prodigy.gameContainer.get(getMemberModule()).data.membership.active = false;																		
+	_.player.appearanceChanged = true;
 });
 
 new Hack(category.player, "Set name (Client side only)").setClick(async () => {
-	const name = await Input.fire("What would you like to set your name to?")
+	const name = await Input.fire("What would you like to set your name to?");
 	if(!name.value) return;
-	_.player.getName = () => {return name.value}
-	await Toast.fire("Changed!","Your name was changed.")
+	_.player.getName = () => {return name.value;};
+	await Toast.fire("Changed!","Your name was changed.");
 });
 
 /*
@@ -155,7 +155,7 @@ new Hack(category.player, "Change Name", "Change the name of your wizard.").setC
 	const nameSelect = (type: number, equalityFunc: (num: number) => boolean) =>
 		createSelect(new Map(
 			names.filter(x => x.data.type === type).map(x => [x.ID.toString(), x.name])),
-			val => equalityFunc(+val)
+		val => equalityFunc(+val)
 		);
 	div.append(nameSelect(0, x => x === _.player.name.data.firstName));
 	div.append(nameSelect(1, x => x === _.player.name.data.middleName));
@@ -195,26 +195,26 @@ new Hack(category.player, "Change Name", "Change the name of your wizard.").setC
 
 
 new Hack(category.player, "Uncap player level (client side only)").setClick(async () => {
-	const level = await NumberInput.fire('Level','What would you like to set your level to? (Can be 100+)','question')
+	const level = await NumberInput.fire("Level","What would you like to set your level to? (Can be 100+)","question");
 	if(!level.value) return;
-	localStorage.setItem("level", level.value)
-	eval(`_.player.getLevel = () => {return ${level.value}}`)
-	await Toast.fire('Updated!','Your level has been successfully updated','success')
-})
+	localStorage.setItem("level", level.value);
+	eval(`_.player.getLevel = () => {return ${level.value}}`);
+	await Toast.fire("Updated!","Your level has been successfully updated","success");
+});
 
 
 new Hack(category.player, "Get all achievements").setClick(async () => {
-	let data = _.instance.prodigy.achievements.getData();
-let achmt = [];
-data.forEach(e => {
-e.data.forEach(h => {
-let indivdata = [h.ID,h.data.ranks.length]
-achmt.push(indivdata)
-})
-})
-achmt.forEach(x => {
-_.player.achievements.data.progress[x[0]] = x[1]
-})
+	const data = _.instance.prodigy.achievements.getData();
+	const achmt = [];
+	data.forEach(e => {
+		e.data.forEach(h => {
+			const indivdata = [h.ID,h.data.ranks.length];
+			achmt.push(indivdata);
+		});
+	});
+	achmt.forEach(x => {
+		_.player.achievements.data.progress[x[0]] = x[1];
+	});
 
 	await Toast.fire("Success!", "Obtained all achievements!", "success");
 });
@@ -320,7 +320,7 @@ new Hack(category.player, "Get UserID").setClick(async () => {
 		title: "User ID",
 		html: `Here is your User ID: <br> <code> ${_.player.userID} </code> <br> You can use this for copying your account.`,
 		icon: "info"
-	})
+	});
 });
 
 new Hack(category.player, "Copy Account", "Copy Account From userID").setClick(async () => {

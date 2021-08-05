@@ -118,10 +118,10 @@ const getPet = async (text: string): Promise<number | undefined> => {
 
 new Hack(category.pets, "Edit Pet (BETA)", "Edit a pet.").setClick(async () => {
 	if(!(await Confirm.fire({
-		title: 'Hang on!',
-		html: 'This feature is in <strong>beta</strong>. Using this could break your account in a specific way. This should be used for experimentation <strong>only</strong>.<br><br>Proceed?',
+		title: "Hang on!",
+		html: "This feature is in <strong>beta</strong>. Using this could break your account in a specific way. This should be used for experimentation <strong>only</strong>.<br><br>Proceed?",
 		icon: "warning"
-	})).value){return}
+	})).value){return;}
 	const pet = await getPet("Choose the pet to edit.");
 	if (pet === undefined) return;
 	const selected = _.player.kennel.data[pet];
