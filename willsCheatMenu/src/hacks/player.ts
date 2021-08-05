@@ -1,8 +1,7 @@
 // @ts-nocheck
 import { Swal, Toast, NumberInput, Input, Confirm } from "../utils/swal";
 import { Hack, category, Toggler } from "../index";
-import { getItem, VERY_LARGE_NUMBER, gameData } from "../utils/util";
-import { prodigy, game } from "../utils/util";
+import { _, getItem, VERY_LARGE_NUMBER, prodigy } from "../utils/util";
 
 new Hack(category.player, "Set Gold").setClick(async () => {
 	const gold = await NumberInput.fire("Gold Amount", "What number do you want to set your gold to?", "question");
@@ -23,7 +22,7 @@ new Hack(category.player, "Set Level").setClick(async () => {
 	const xpConstant = 1.042;
 	_.player.data.stars = Math.round((1 - Math.pow(xpConstant, i)) / (1 - xpConstant) * 20 + 10);
 	_.player.data.level = +level.value;
-	_.player.getLevel = () => {return _.player.data.level;};
+	_.player.getLevel = () => { return _.player.data.level; };
 
 	await Toast.fire("Success!", `You are now level ${level.value}.`, "success");
 });
@@ -43,29 +42,28 @@ new Hack(category.player, "Set Bounty Points").setClick(async () => {
 	);
 	if (points.value === undefined) return;
 	_.player.data.bountyScore = Math.min(+points.value, 100);
-	await Toast.fire("Success!", `You now have ${_.player.data.bountyScore} bounty point${_.player.data.bountyScore != 1 ? "s":""}.`, "success");
+	await Toast.fire("Success!", `You now have ${_.player.data.bountyScore} bounty point${_.player.data.bountyScore != 1 ? "s" : ""}.`, "success");
 });
 
 new Hack(category.player, "Obtain Conjure Cubes").setClick(async () => {
 	const cubes = await NumberInput.fire("Conjure Cubes", "How many conjure cubes do you want to get?", "question");
 	if (cubes.value === undefined) return;
-	for (let i = 0; i < Math.min(99, +cubes.value); i++)
-		prodigy.giftBoxController.receiveGiftBox(null, getItem("giftBox", 1));
-	await Toast.fire("Success!", `You have gained ${cubes.value} conjure cube${cubes.value != 1 ? "s":""}.`, "success");
+	for (let i = 0; i < Math.min(99, +cubes.value); i++) { prodigy.giftBoxController.receiveGiftBox(null, getItem("giftBox", 1)); }
+	await Toast.fire("Success!", `You have gained ${cubes.value} conjure cube${cubes.value != 1 ? "s" : ""}.`, "success");
 });
 
 new Hack(category.player, "Set Wins").setClick(async () => {
 	const amount = await NumberInput.fire("Wins", "What number do you want to set your wins to?", "question");
 	if (amount.value === undefined) return;
 	_.player.data.win = +amount.value;
-	await Toast.fire("Success!", `You have set your win${amount.value != 1 ? "s":""} to ${amount.value}.`, "success");
+	await Toast.fire("Success!", `You have set your win${amount.value != 1 ? "s" : ""} to ${amount.value}.`, "success");
 });
 
 new Hack(category.player, "Set Losses").setClick(async () => {
 	const amount = await NumberInput.fire("Losses", "What number do you want to set your losses to?", "question");
 	if (amount.value === undefined) return;
 	_.player.data.loss = +amount.value;
-	await Toast.fire("Success!", `You have set your loss${amount.value != 1 ? "es":""} to ${amount.value}.`, "success");
+	await Toast.fire("Success!", `You have set your loss${amount.value != 1 ? "es" : ""} to ${amount.value}.`, "success");
 });
 
 new Hack(category.player, "Instant Kill").setClick(async () => {
@@ -80,20 +78,20 @@ new Hack(category.player, "PVP Health").setClick(async () => {
 });
 
 new Toggler(category.player, "Toggle membership").setEnabled(async () => {
-	function getMemberModule(){return _.player.hasMembership.toString().split("\"")[1];}
-	_.instance.prodigy.gameContainer.get(getMemberModule()).data.membership.active = true;		
+	function getMemberModule () { return _.player.hasMembership.toString().split("\"")[1]; }
+	_.instance.prodigy.gameContainer.get(getMemberModule()).data.membership.active = true;
 	_.player.appearanceChanged = true;
 }).setDisabled(() => {
-	function getMemberModule(){return _.player.hasMembership.toString().split("\"")[1];}
-	_.instance.prodigy.gameContainer.get(getMemberModule()).data.membership.active = false;																		
+	function getMemberModule () { return _.player.hasMembership.toString().split("\"")[1]; }
+	_.instance.prodigy.gameContainer.get(getMemberModule()).data.membership.active = false;
 	_.player.appearanceChanged = true;
 });
 
 new Hack(category.player, "Set name (Client side only)").setClick(async () => {
 	const name = await Input.fire("What would you like to set your name to?");
-	if(!name.value) return;
-	_.player.getName = () => {return name.value;};
-	await Toast.fire("Changed!","Your name was changed.");
+	if (!name.value) return;
+	_.player.getName = () => { return name.value; };
+	await Toast.fire("Changed!", "Your name was changed.");
 });
 
 /*
@@ -180,7 +178,7 @@ new Hack(category.player, "Change Name", "Change the name of your wizard.").setC
 			return Array.prototype.slice
 				.call(document.querySelectorAll(".selectName"))
 				.map((x: HTMLSelectElement) => x.options[x.selectedIndex].value);
-		},
+		}
 	});
 	if (name.value === undefined) return;
 	if (name.value[3] === "null") name.value[3] = null;
@@ -188,27 +186,25 @@ new Hack(category.player, "Change Name", "Change the name of your wizard.").setC
 		_.player.name.data.firstName,
 		_.player.name.data.middleName,
 		_.player.name.data.lastName,
-		_.player.name.data.nickname,
+		_.player.name.data.nickname
 	] = (name.value as string[]).map(x => ((x as unknown) as number) && +x);
 	await Toast.fire("Name Changed!", "Your name was successfully changed.", "success");
 });
 
-
 new Hack(category.player, "Uncap player level (client side only)").setClick(async () => {
-	const level = await NumberInput.fire("Level","What would you like to set your level to? (Can be 100+)","question");
-	if(!level.value) return;
+	const level = await NumberInput.fire("Level", "What would you like to set your level to? (Can be 100+)", "question");
+	if (!level.value) return;
 	localStorage.setItem("level", level.value);
 	eval(`_.player.getLevel = () => {return ${level.value}}`);
-	await Toast.fire("Updated!","Your level has been successfully updated","success");
+	await Toast.fire("Updated!", "Your level has been successfully updated", "success");
 });
-
 
 new Hack(category.player, "Get all achievements").setClick(async () => {
 	const data = _.instance.prodigy.achievements.getData();
 	const achmt = [];
 	data.forEach(e => {
 		e.data.forEach(h => {
-			const indivdata = [h.ID,h.data.ranks.length];
+			const indivdata = [h.ID, h.data.ranks.length];
 			achmt.push(indivdata);
 		});
 	});
@@ -229,10 +225,10 @@ new Hack(category.player, "Morph Player (DEV)", "Morph into a pet, furnishing, o
 			follow: "Follow"
 		},
 		inputPlaceholder: "Morph Type",
-		inputValidator: res => res? "" : "Please select a morph type.",
+		inputValidator: res => res ? "" : "Please select a morph type.",
 		showCancelButton: true
 	});
-	
+
 	if (!morphType?.value) return;
 
 	// swal inputOptions accepts an object, the property being the value it returns, the value being what it displays
@@ -248,24 +244,23 @@ new Hack(category.player, "Morph Player (DEV)", "Morph into a pet, furnishing, o
 		input: "select",
 		inputOptions: morphOptions,
 		inputPlaceholder: "Morph ID",
-		inputValidator: res => res? "" : "Please select a morph ID.",
+		inputValidator: res => res ? "" : "Please select a morph ID.",
 		showCancelButton: true
 	});
-	
+
 	if (!morphID?.value) return;
 	// shut up typescript, I don't need you on my nuts every time I use Swal
 	// typescript makes me cry
 	_.player.getPlayerData().playerTransformation = {
 		transformType: morphType.value,
 		transformID: morphID.value,
-		maxTime: 60*60*1000,
-		timeRemaining: 60*60*1000
+		maxTime: 60 * 60 * 1000,
+		timeRemaining: 60 * 60 * 1000
 	};
 	_.player.appearanceChanged = true;
-	
+
 	await Toast.fire("Morphed!", "You've been morphed.", "success");
 });
-
 
 new Hack(category.player, "Fix Morph Crash").setClick(async () => {
 	_.player.getPlayerData().playerTransformation = undefined;
@@ -284,7 +279,7 @@ new Hack(category.player, "Permanent Morph", "Makes Your Current Morph Last Fore
 	await Toast.fire("Success!", "You're morph will last forever!", "success");
 });
 
-new Hack(category.player, "Complete Current Task In Quest", "Completes current task in quest. (Use this button a lot to complete a quest.)").setClick(async() => {
+new Hack(category.player, "Complete Current Task In Quest", "Completes current task in quest. (Use this button a lot to complete a quest.)").setClick(async () => {
 	const zones = {};
 	Object.keys(_.instance.prodigy.world.zones).forEach(element => {
 		zones[element] = _.instance.prodigy.world.zones[element].name;
@@ -304,11 +299,11 @@ new Hack(category.player, "Complete Current Task In Quest", "Completes current t
 	}
 });
 
-new Hack(category.player, "Set Dark Tower Floor").setClick(async() => {
+new Hack(category.player, "Set Dark Tower Floor").setClick(async () => {
 	const floor = await NumberInput.fire({
 		title: "What floor do you want to be on, in the dark tower.",
 		icon: "question",
-		inputValidator: (res) => (res > 100 || res < 1) ? `You can only be on floors from 1-100 not ${res}`: false
+		inputValidator: (res) => (res > 100 || res < 1) ? `You can only be on floors from 1-100 not ${res}` : false
 	});
 	if (!floor.value) return;
 	_.player.data.tower = parseInt(floor.value);
@@ -329,13 +324,13 @@ new Hack(category.player, "Copy Account", "Copy Account From userID").setClick(a
 	if (!(await Confirm.fire("Are you sure you want to copy the account?", "This will replace all data on your account with the account your copying."))) return;
 	const playerData = await (await fetch(`https://api.prodigygame.com/game-api/v2/characters/${userID}?fields=inventory%2Cdata%2CisMember%2Ctutorial%2Cpets%2Cencounters%2Cquests%2Cappearance%2Cequipment%2Chouse%2Cachievements%2Cstate&userID=${_.player.userID}`, {
 		headers: {
-			"Authorization": localStorage.JWT_TOKEN
+			Authorization: localStorage.JWT_TOKEN
 		}
 	})).json();
 	await fetch(`https://api.prodigygame.com/game-api/v3/characters/${_.player.userID}`, {
 		headers: {
 			"Content-Type": "application/json",
-			"Authorization": localStorage.JWT_TOKEN
+			Authorization: localStorage.JWT_TOKEN
 		},
 		body: JSON.stringify({
 			data: JSON.stringify(playerData[userID]),
