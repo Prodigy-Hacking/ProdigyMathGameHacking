@@ -1,7 +1,7 @@
 import { Hack, category } from "../index";
-import { Swal, Input, Toast, NumberInput } from "../utils/swal";
-import { gameData, locations } from "../utils/util";
-import { prodigy, game } from "../utils/util";
+import { Swal, Toast } from "../utils/swal";
+import { locations, prodigy } from "../utils/util";
+
 new Hack(category.location, "Teleport To Map (interactive)").setClick(
 	async () => {
 		const radioPopup = Swal.mixin({
@@ -11,7 +11,7 @@ new Hack(category.location, "Teleport To Map (interactive)").setClick(
 				return document
 					.querySelector(".radioDiv[checked]")
 					?.getAttribute("zone");
-			},
+			}
 		});
 		const container = document.createElement("div");
 		container.classList.add("radioContainer");
@@ -20,9 +20,7 @@ new Hack(category.location, "Teleport To Map (interactive)").setClick(
 			radio.classList.add("radioDiv");
 			radio.setAttribute("zone", zone);
 			const locationURL = locations[zone as keyof typeof locations];
-			if (locationURL)
-				radio.style.backgroundImage = `url(${locationURL})`;
-			else radio.innerText = zone;
+			if (locationURL) { radio.style.backgroundImage = `url(${locationURL})`; } else radio.innerText = zone;
 			radio.onclick = () => {
 				document
 					.querySelectorAll(".radioDiv[checked]")
@@ -35,8 +33,8 @@ new Hack(category.location, "Teleport To Map (interactive)").setClick(
 			title: "Teleport Zone",
 			html: container,
 			customClass: {
-				popup: "radioSwal",
-			},
+				popup: "radioSwal"
+			}
 		});
 		if (!zone.value) return;
 		const mapList = Object.keys(
@@ -46,7 +44,7 @@ new Hack(category.location, "Teleport To Map (interactive)").setClick(
 			input: "select",
 			inputOptions: new Map(mapList.map(x => [x, x])),
 			title: "Map",
-			text: "Which map in the zone do you want to teleport to?",
+			text: "Which map in the zone do you want to teleport to?"
 		});
 		if (!area.value) return;
 		prodigy.world.zones[zone.value].teleport(area.value);

@@ -1,14 +1,12 @@
 // @ts-nocheck
 import { Swal, Toast, NumberInput, Input, Confirm } from "../utils/swal";
 import { Hack, category } from "../index";
-import { VERY_LARGE_NUMBER, gameData, pickRandom } from "../utils/util";
+import { _, VERY_LARGE_NUMBER } from "../utils/util";
 import { TODO } from "../../../typings/util";
-import { prodigy, game } from "../utils/util";
-import { Pet } from "../../../typings/pet";
 
 const randomSpell = () => {
 	const fileredSpells = _.gameData.spell.filter(x => +x.ID !== 90);
-	
+
 	return fileredSpells[Math.floor(Math.random() * fileredSpells.length)].ID;
 };
 
@@ -18,7 +16,7 @@ const toPets = (ID: number) => ({
 	foreignSpells: [randomSpell(), randomSpell()] as [number, number],
 	level: 100,
 	levelCaught: 1,
-	stars: 26376,
+	stars: 26376
 });
 
 new Hack(category.pets, "Get All Pets").setClick(async () => {
@@ -28,7 +26,7 @@ new Hack(category.pets, "Get All Pets").setClick(async () => {
 
 	// add encounter info
 	_.player.kennel._encounterInfo._data.pets = [];
-	_.gameData.pet.map((pet: {ID: number}) => {    
+	_.gameData.pet.map((pet: {ID: number}) => {
 		_.player.kennel._encounterInfo._data.pets.push({
 			firstSeenDate: Date.now(),
 			ID: pet.ID,
@@ -36,7 +34,7 @@ new Hack(category.pets, "Get All Pets").setClick(async () => {
 			timesRescued: VERY_LARGE_NUMBER
 		});
 	});
-	//Fix broken pets
+	// Fix broken pets
 	_.player.kennel.petTeam.forEach((v: any) => {
 		if (v && (v as any).assignRandomSpells) (v as any).assignRandomSpells();
 	});
@@ -47,7 +45,7 @@ new Hack(category.pets, "Get All Pets").setClick(async () => {
 new Hack(category.pets, "Get All Epics").setClick(async () => {
 	const epics = [125, 126, 127, 128, 129, 130, 131, 132, 133];
 	_.player.kennel.data.splice(-1, 0, ...epics.map(toPets));
-	//Fix broken pets 
+	// Fix broken pets
 	_.player.kennel.petTeam.forEach((v: any) => {
 		if (v && (v as any).assignRandomSpells) (v as any).assignRandomSpells();
 	});
@@ -58,7 +56,7 @@ new Hack(category.pets, "Fix Battle Crash").setClick(async () => {
 	_.player.kennel.petTeam.forEach((v: any) => {
 		if (v && (v as any).assignRandomSpells) (v as any).assignRandomSpells();
 	});
-	
+
 	await Toast.fire("Success!", "Fixed kennel attack bug!", "success");
 });
 
@@ -73,7 +71,7 @@ new Hack(category.pets, "Add Pet", "Adds a pet from a list.").setClick(async () 
 		input: "select",
 		inputOptions: new Map(_.gameData.pet.map(x => [x.ID.toString(), `${x.ID}: ${x.data.name}`])),
 		title: "Choose Pet",
-		text: "Which pet do you want to obtain?",
+		text: "Which pet do you want to obtain?"
 	});
 	if (pet.value === undefined) return;
 	_.player.kennel.addPet(pet.value);
@@ -98,7 +96,7 @@ new Hack(category.pets, "Uncap pet level (client side only, doesn't save on relo
 	const num = amt.value;
 	// sorry in advance
 	eval(`_.player.kennel.petTeam[parseInt(${pet.value})+1].getLevel = () => {return ${num}}`);
-	await Toast.fire("Updated!","The level of your pet was successfully updated.","success");
+	await Toast.fire("Updated!", "The level of your pet was successfully updated.", "success");
 });
 
 const getPet = async (text: string): Promise<number | undefined> => {
@@ -107,21 +105,21 @@ const getPet = async (text: string): Promise<number | undefined> => {
 		inputOptions: new Map(
 			_.player.kennel.data.map((x: TODO, i: number) => [
 				i.toString(),
-				`Level ${x.level} - ${x.nickname ?? _.gameData.pet.find(y => +y.ID === +x.ID)?.data.name ?? "Unknown"}`,
+				`Level ${x.level} - ${x.nickname ?? _.gameData.pet.find(y => +y.ID === +x.ID)?.data.name ?? "Unknown"}`
 			]) as [string, string][]
 		),
 		title: "Choose Pet",
-		text: text,
+		text: text
 	});
 	return pet.value;
 };
 
 new Hack(category.pets, "Edit Pet (BETA)", "Edit a pet.").setClick(async () => {
-	if(!(await Confirm.fire({
+	if (!(await Confirm.fire({
 		title: "Hang on!",
 		html: "This feature is in <strong>beta</strong>. Using this could break your account in a specific way. This should be used for experimentation <strong>only</strong>.<br><br>Proceed?",
 		icon: "warning"
-	})).value){return;}
+	})).value) { return; }
 	const pet = await getPet("Choose the pet to edit.");
 	if (pet === undefined) return;
 	const selected = _.player.kennel.data[pet];
@@ -129,7 +127,7 @@ new Hack(category.pets, "Edit Pet (BETA)", "Edit a pet.").setClick(async () => {
 		input: "select",
 		inputOptions: { level: "Level", attacks: "Attacks", name: "Name" },
 		title: "Edit Property",
-		text: "What do you want to edit?",
+		text: "What do you want to edit?"
 	});
 	if (opt.value === undefined) return;
 	if (opt.value === "level") {
@@ -163,7 +161,7 @@ new Hack(category.pets, "Edit Pet (BETA)", "Edit a pet.").setClick(async () => {
 				return Array.prototype.slice
 					.call(document.querySelectorAll(".selectSpell"))
 					.map((x: HTMLSelectElement) => x.options[x.selectedIndex].value);
-			},
+			}
 		});
 		if (attacks.value === undefined) return;
 		(selected.foreignSpells as number[]).splice(0, 2, ...attacks.value.map((x: string) => +x));
