@@ -1,4 +1,5 @@
 //@ts-nocheck
+import { io } from "socket.io-client";
 import "./style.scss";
 import { PIXI } from "../../typings/pixi";
 import { Swal } from "./utils/swal";
@@ -153,6 +154,20 @@ export const category = {
 
 if (localStorage.getItem("level")) {
 	_.player.getLevel = () => localStorage.getItem("level");
+}
+
+if (process.env.NODE_ENV === "development") {
+	const socket = io("http://localhost:3001");
+	let used = false;
+	socket.on("update", data => {
+		if (used) return;
+		used = true;
+		socket.disconnect();
+		document.getElementById("cheat-menu")?.remove();
+		document.getElementById("menu-toggler")?.remove();
+		eval(data);
+	});
+
 }
 
 setTimeout(() => {
