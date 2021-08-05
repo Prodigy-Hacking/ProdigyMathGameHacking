@@ -8,19 +8,19 @@ new Hack(category.battle, "Escape Battle", "Escape any battle!").setClick(async 
 	const currentState = game.state.current;
 	if (currentState === "PVP") Object.fromEntries(_.instance.game.state.states).PVP.endPVP();
 	else if (currentState === "CoOp") prodigy.world.$(_.player.data.zone);
-	else if (!['Battle','SecureBattle'].includes(currentState)) await Toast.fire(
+	else if (!["Battle","SecureBattle"].includes(currentState)) await Toast.fire(
 		"Invalid State.",
 		"You are currently not in a battle.",
 		"error"
 	);
-	else {Object.fromEntries(_.instance.game.state.states)[currentState].runAwayCallback()
-	await Toast.fire(
-		"Escaped!",
-		"You have successfully escaped from the battle.",
-		"success"
-	);
+	else {Object.fromEntries(_.instance.game.state.states)[currentState].runAwayCallback();
+		await Toast.fire(
+			"Escaped!",
+			"You have successfully escaped from the battle.",
+			"success"
+		);
 
-}});
+	}});
 
 new Hack(category.battle, "Win Battle", "Instantly win a monster battle.").setClick(async () => {
 	const currentState = game.state.current;
