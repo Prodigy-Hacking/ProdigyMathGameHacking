@@ -9,7 +9,7 @@ new Hack(category.location, "Teleport To Map (interactive)").setClick(
 			showCancelButton: true,
 			preConfirm: () => {
 				return document
-					.querySelector(`.radioDiv[checked]`)
+					.querySelector(".radioDiv[checked]")
 					?.getAttribute("zone");
 			},
 		});
@@ -25,7 +25,7 @@ new Hack(category.location, "Teleport To Map (interactive)").setClick(
 			else radio.innerText = zone;
 			radio.onclick = () => {
 				document
-					.querySelectorAll(`.radioDiv[checked]`)
+					.querySelectorAll(".radioDiv[checked]")
 					.forEach(x => x.removeAttribute("checked"));
 				radio.setAttribute("checked", "");
 			};
