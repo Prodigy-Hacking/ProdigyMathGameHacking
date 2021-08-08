@@ -1,6 +1,12 @@
 import { Toast, NumberInput } from "../utils/swal";
-import { Hack, category } from "../index";
+import { Hack, category, Toggler } from "../index";
 import { _, prodigy, game } from "../utils/util";
+
+new Toggler(category.battle, "Easy mode").setEnabled(async () => {
+	_.constants.constants["GameConstants.Debug.EDUCATION_ENABLED"] = false;
+}).setDisabled(async () => {
+	_.constants.constants["GameConstants.Debug.EDUCATION_ENABLED"] = true;
+});
 
 new Hack(category.battle, "Escape Battle", "Escape any battle!").setClick(async () => {
 	const currentState = game.state.current;
