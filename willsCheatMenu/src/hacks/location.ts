@@ -1,6 +1,6 @@
 import { Hack, category } from "../index";
-import { Swal, Toast } from "../utils/swal";
-import { locations, prodigy } from "../utils/util";
+import { NumberInput, Swal, Toast } from "../utils/swal";
+import { _, locations, prodigy } from "../utils/util";
 
 new Hack(category.location, "Teleport To Map (interactive)").setClick(
 	async () => {
@@ -51,6 +51,47 @@ new Hack(category.location, "Teleport To Map (interactive)").setClick(
 		await Toast.fire("Teleported", "You have been teleported!", "success");
 	}
 );
+
+function toHouse (userID: number) {
+	if (_.player.userID !== userID) {
+		const friendCount = _.instance.prodigy.friendsListNetworkHandler.friendsList.length;
+		const classMates = _.instance.prodigy.friendsListNetworkHandler.classList.length;
+
+		_.instance.prodigy.gameContainer.get("2e1-e659")
+			.create("house-visit", "click", "hub", friendCount, classMates, null, null, userID)
+			.broadcast();
+	}
+	const zone = _.instance.prodigy.world.getZone(_.instance.prodigy.world.getCurrentZone());
+	if (!zone) return Swal.fire({ title: "Error", text: "You are not in a zone!", icon: "error" });
+	zone.handleLeaving(2, () => teleportToHouse(userID));
+}
+
+function teleportToHouse (userID: number) {
+	_.instance.prodigy.loading(true);
+
+	const responseCallback = (data: any) => {
+		const playerData = data !== null && data !== undefined ? data[userID] : null;
+
+		if (playerData !== null && playerData.house !== undefined && playerData.house !== null) {
+			_.instance.prodigy.loading(false);
+			const house = _.cloneDeep(_.player.house);
+			house.setItems(playerData.house);
+			if (!(playerData.data.allowsHouseVisitors !== undefined && playerData.data.allowsHouseVisitors !== null ? playerData.data.allowsHouseVisitors : false)) {
+				return Swal.fire(`Teleporting to ${userID} is not allowed.`, "Try another user.", "error");
+			}
+			_.instance.prodigy.world._("house", null, null, { house, getAllowsHouseVisitors: () => playerData.data.allowsHouseVisitors !== undefined && playerData.data.allowsHouseVisitors !== null ? playerData.data.allowsHouseVisitors : false, setAllowsHouseVisitors: (v: boolean) => { playerData.data.allowsHouseVisitors = v; } });
+		}
+	};
+
+	_.network.getCharData(userID.toString(), ["house", "data"], responseCallback, responseCallback);
+}
+
+new Hack(category.location, "Teleport to house by userID").setClick(async () => {
+	const userID = (await NumberInput.fire("Please enter the userID.")).value;
+	if (!userID) return;
+	toHouse(userID);
+	await Toast.fire("Teleported!", "You have been teleported!", "success");
+});
 
 /*
 new Hack(category.location, "Teleport To Dark Tower Floor").setClick(
