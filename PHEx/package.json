@@ -20,6 +20,6 @@
   "dependencies": {
     "dir-archiver": "^1.1.2",
     "simple-archiver": "^1.0.1",
-    "zip-dir": "^1.0.2"
+    "zip-dir": "^2.0.0"
   }
 }
