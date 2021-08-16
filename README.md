@@ -188,7 +188,8 @@ All of our hacks are *open-source*, and only located under our [Github Organizat
   - The Prodigy Hacking Extension, used to inject our modified gamefiles into Prodigy.
 
 <br/>
+	<h1 align="center">
 <img src="https://readme-jokes.vercel.app/api" alt="Jokes Card" />
-
+	</h1>
 ----
 ***All hacks and software are licensed under the Mozilla Public License (MPL) V2.0, unless stated otherwise with a separate license. Any violation of the policy of this licence may result in a DMCA takedown.***
