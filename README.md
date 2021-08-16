@@ -187,11 +187,8 @@ All of our hacks are *open-source*, and only located under our [Github Organizat
 - [PHEx](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/tree/master/PHEx)
   - The Prodigy Hacking Extension, used to inject our modified gamefiles into Prodigy.
 
-
-
-
-
-
+<br/>
+<img src="https://readme-jokes.vercel.app/api" alt="Jokes Card" />
 
 ----
 ***All hacks and software are licensed under the Mozilla Public License (MPL) V2.0, unless stated otherwise with a separate license. Any violation of the policy of this licence may result in a DMCA takedown.***
