@@ -12,6 +12,8 @@
 	</a>
 </h1>
 
+  
+		
 <p align="center">
 	<strong>
 		<a href="https://prodigyhacking.com/">Website</a>
@@ -27,6 +29,11 @@
 	<a href="https://chrome.google.com/webstore/detail/gjabpajagbgoifbkflgojeojmnlmioea/">
 		<img alt="Chrome Web Store Rating" src="https://img.shields.io/chrome-web-store/stars/gjabpajagbgoifbkflgojeojmnlmioea?label=Extension%20Rating">
 </a>
+	
+<a>
+<img alt="Extension Downloads" src="https://visitor-badge.glitch.me/badge?page_id=page.id">
+</a>
+	
 <a href="https://chrome.google.com/webstore/detail/gjabpajagbgoifbkflgojeojmnlmioea/">
 <img alt="Extension Downloads" src="https://img.shields.io/chrome-web-store/users/gjabpajagbgoifbkflgojeojmnlmioea?color=red&label=Extension%20Downloads">
 </a>
