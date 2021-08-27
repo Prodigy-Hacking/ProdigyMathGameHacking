@@ -26,7 +26,7 @@
     checkbox.checked = await get("checked") || false;
 
     input.onchange = () => {
-        document.querySelector("p").innerHTML = ""
+        document.querySelector("#result").innerHTML = ""
     }
 
     checkbox.addEventListener("click", async (event) => {
@@ -35,6 +35,8 @@
             // set checked to new value, which should be false
             set("checked", checkbox.checked);
         } else {
+            if (document.querySelector("#gatekeeper").value !== "nootnoot") {
+                document.querySelector("#result").innerHTML = "Gatekeeper is not <code>nootnoot</code>"
             // if we're turning on checked, we need to run a few checks
             if (validURL(input.value)) {
                 // if the URL is valid, update url and checked to their latest values.
@@ -42,7 +44,7 @@
                 set("checked", checkbox.checked);
             } else {
                 // if the URL is invalid, scream at them until they burst into tears
-                document.querySelector("p").innerHTML = "Invalid URL";
+                document.querySelector("#result").innerHTML = "Invalid URL";
                 checkbox.checked = false;
             }
         }
