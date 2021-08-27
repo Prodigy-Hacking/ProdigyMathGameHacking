@@ -3,7 +3,7 @@
 _.player.name.data.nickname = 7; 
 
 /* Put a number one through 55.  The associations are as follows:
- * 1.  Buccaneer
+ * 1.  Shit hole
  * 2.  Captain
  * 3.  First-Mate
  * 4.  Beard the Pirate
