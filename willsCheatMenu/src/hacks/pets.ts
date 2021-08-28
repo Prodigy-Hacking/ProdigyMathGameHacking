@@ -4,25 +4,11 @@ import { Hack, category } from "../index";
 import { _, VERY_LARGE_NUMBER } from "../utils/util";
 import { TODO } from "../../../typings/util";
 
-const randomSpell = () => {
-	const fileredSpells = _.gameData.spell.filter(x => +x.ID !== 90);
-
-	return fileredSpells[Math.floor(Math.random() * fileredSpells.length)].ID;
-};
-
-const toPets = (ID: number) => ({
-	ID,
-	catchDate: Date.now(),
-	foreignSpells: [randomSpell(), randomSpell()] as [number, number],
-	level: 100,
-	levelCaught: 1,
-	stars: 26376
-});
-
 new Hack(category.pets, "Get All Pets").setClick(async () => {
 	// add pets
-	const pets = _.gameData.pet.map(x => toPets(x.ID));
-	_.player.kennel.data.splice(-1, 0, ...pets);
+	_.gameData.pet.forEach(x => {
+		_.player.kennel.addPet(x.ID, VERY_LARGE_NUMBER, 26376, 100);
+	});
 
 	// add encounter info
 	_.player.kennel._encounterInfo._data.pets = [];
@@ -43,8 +29,10 @@ new Hack(category.pets, "Get All Pets").setClick(async () => {
 });
 
 new Hack(category.pets, "Get All Epics").setClick(async () => {
-	const epics = [125, 126, 127, 128, 129, 130, 131, 132, 133];
-	_.player.kennel.data.splice(-1, 0, ...epics.map(toPets));
+	const epics = _.gameData.pet.filter(x => [125, 126, 127, 128, 129, 130, 131, 132, 133].includes(x.ID));
+	epics.forEach(x => {
+		_.player.kennel.addPet(x.ID, VERY_LARGE_NUMBER, 26376, 100);
+	});
 	// Fix broken pets
 	_.player.kennel.petTeam.forEach((v: any) => {
 		if (v && (v as any).assignRandomSpells) (v as any).assignRandomSpells();
