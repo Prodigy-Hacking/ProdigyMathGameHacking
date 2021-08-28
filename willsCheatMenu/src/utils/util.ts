@@ -14,27 +14,8 @@ export const getItem = <T extends GameItemKey>(type: T, id: number): Item<T> | n
 export const VERY_LARGE_NUMBER = 9e9;
 export const states = Object.fromEntries(_.instance.game.state.states);
 export const saveCharacter = () => {
-	fetch(`https://api.prodigygame.com/game-api/v3/characters/${_.player.userID}`, {
-		headers: {
-			accept: "*/*",
-			"accept-language": "en-US,en;q=0.9",
-			authorization: localStorage.JWT_TOKEN,
-			"content-type": "application/json",
-			"sec-ch-ua": "\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"91\", \"Chromium\";v=\"91\"",
-			"sec-ch-ua-mobile": "?0",
-			"sec-fetch-dest": "empty",
-			"sec-fetch-mode": "cors",
-			"sec-fetch-site": "same-site"
-		},
-		referrer: "https://play.prodigygame.com/",
-		referrerPolicy: "strict-origin-when-cross-origin",
-		body: JSON.stringify({
-			data: JSON.stringify(_.player.getUpdatedData(true)),
-			userID: _.player.userID
-		}),
-		method: "POST",
-		mode: "cors"
-	});
+	_.network.processPlayer = true;
+	_.player.forceSaveCharacter();
 };
 
 export const assetURL = "https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/HEAD/willsCheatMenu/src/assets/";
