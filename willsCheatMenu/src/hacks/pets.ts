@@ -38,7 +38,6 @@ new Hack(category.pets, "Get All Pets").setClick(async () => {
 	_.player.kennel.petTeam.forEach((v: any) => {
 		if (v && (v as any).assignRandomSpells) (v as any).assignRandomSpells();
 	});
-	_.player.kennel._petData = _.player.kennel.data.filter(i => i.ID !== 160);
 
 	await Toast.fire("Success!", "All pets have been added!", "success");
 });
