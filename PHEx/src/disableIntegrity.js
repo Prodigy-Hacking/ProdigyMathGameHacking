@@ -16,7 +16,7 @@
 		window.scriptIsInjected = true;
 
 		function redirectorCheck() {
-			fetch(`${redirectorDomain}/game.min.js?updated=${Date.now()}`, { mode: "no-cors" })
+			fetch(`${redirectorDomain}/game.min.js?updated=${Date.now()}`)
 				.then(res => res.text())
 				.then(response => {
 					console.log("Connection to server was Successful!");
@@ -47,7 +47,7 @@
 		setTimeout(redirectorCheck, 1000);
 
 		const pluginVersion = chrome.runtime.getManifest().version;
-		const supportedVersion = (await (await fetch(`${redirectorDomain}/version`, { mode: "no-cors" })).text());
+		const supportedVersion = (await (await fetch(`${redirectorDomain}/version`)).text());
 		// Checks for plugin version. If outdated, triggers dialog box.
 		if (pluginVersion !== supportedVersion) {
 			const res = confirm("The PMGH extension is outdated. If you expierence any errors, please update. If you are on the Chrome Webstore version or any webstore, please wait. Updates take some time.");
