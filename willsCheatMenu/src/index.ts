@@ -86,8 +86,7 @@ export class Hack {
 
 	setClick (event: () => unknown) {
 		this.element.onclick = async () => {
-			event();
-			await new Promise(resolve => setTimeout(resolve, 1000));
+			await event();
 			saveCharacter();
 			console.log(`Triggered ${this.name}.`);
 		};
