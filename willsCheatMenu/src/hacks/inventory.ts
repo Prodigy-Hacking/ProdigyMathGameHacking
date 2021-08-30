@@ -109,29 +109,34 @@ new Hack(category.inventory, "Get all runes").setClick(async () => {
 		title: "Hang on!",
 		html: "This feature is in <strong>beta</strong>. Using this could break your account in a specific way. This should be used for experimentation <strong>only</strong>.<br><br>Proceed?",
 		icon: "warning"
-	})).value) { return; }
+	})).value) return;
 
-	const runeify = (item: Item[], amount: number) =>
-		item.map(x => ({
-			ID: x.ID,
-			quantity: amount
-		})).filter(v => v !== undefined);
-	const val = await NumberInput.fire({
+	const amount = parseInt((await NumberInput.fire({
 		title: "Amount",
 		text: "How many of each would you like?",
 		icon: "question",
 		inputValidator: (res: any) => res ? "" : "Please select which you'd like to get."
-	});
-	if (typeof val.value !== "number") return;
+	})).value);
+	if (isNaN(amount)) return;
 	let mod;
-	Array.from(_.instance.prodigy.gameContainer.inversifyContainer._bindingDictionary._map).forEach(e => {
-	// @ts-ignore
+
+	Array.from(_.instance.prodigy.gameContainer._inversifyContainer._bindingDictionary._map).forEach(e => {
 		try {
-			if (_.instance.prodigy.gameContainer.get(e[0]).battleData) { mod = e[0]; }
-			// @ts-ignore
-		} catch { console.log(`Error for ${e[0]}`); }
+			if (_.instance.prodigy.gameContainer.get(e[0]).battleData) {
+				mod = e[0];
+			}
+		} catch {
+			console.log(`Error for ${e[0]}`);
+		}
 	});
-	_.instance.prodigy.gameContainer.get(mod).battleData._secureCharacterState._data.inventory.orb = runeify(_.gameData.orb, val.value);
+
+	const runeify = (item, amount) =>
+		item.map(x => ({
+			ID: x.ID,
+			quantity: amount
+		})).filter(v => v !== undefined);
+
+	_.instance.prodigy.gameContainer.get(mod).battleData._secureCharacterState._data.inventory.orb = runeify(_.gameData.orb, amount);
 	await Toast.fire("Runes Added!", "Your runes have been added!", "success");
 });
 
