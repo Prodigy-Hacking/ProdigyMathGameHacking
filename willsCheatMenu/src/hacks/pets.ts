@@ -7,7 +7,7 @@ import { TODO } from "../../../typings/util";
 new Hack(category.pets, "Get All Pets").setClick(async () => {
 	// add pets
 	_.gameData.pet.forEach(x => {
-		_.player.kennel.addPet(x.ID, VERY_LARGE_NUMBER, 26376, 100);
+		_.player.kennel.addPet(x.ID.toString(), VERY_LARGE_NUMBER, 26376, 100);
 	});
 
 	// add encounter info
@@ -31,7 +31,7 @@ new Hack(category.pets, "Get All Pets").setClick(async () => {
 new Hack(category.pets, "Get All Epics").setClick(async () => {
 	const epics = _.gameData.pet.filter(x => [125, 126, 127, 128, 129, 130, 131, 132, 133].includes(x.ID));
 	epics.forEach(x => {
-		_.player.kennel.addPet(x.ID, VERY_LARGE_NUMBER, 26376, 100);
+		_.player.kennel.addPet(x.ID.toString(), VERY_LARGE_NUMBER, 26376, 100);
 	});
 	// Fix broken pets
 	_.player.kennel.petTeam.forEach((v: any) => {
