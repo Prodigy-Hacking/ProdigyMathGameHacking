@@ -21,5 +21,5 @@ new Hack(category.icetower, "Fix Fire Keystone").setClick(async () => {
 new Hack(category.icetower, "Fix Water Keystone").setClick(async () => {
 	_.instance.prodigy.world.zones.watertower._towerData.enabled = true;
 	_.instance.prodigy.world.zones.watertower.update();
-	await Toast.fire("Success!", "Ice Keystone has been fixed.", "success");
+	await Toast.fire("Success!", "Water Keystone has been fixed.", "success");
 });
