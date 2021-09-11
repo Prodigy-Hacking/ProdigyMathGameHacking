@@ -16,8 +16,8 @@ new Hack(category.pets, "Get All Pets").setClick(async () => {
 		_.player.kennel._encounterInfo._data.pets.push({
 			firstSeenDate: Date.now(),
 			ID: pet.ID,
-			timesBattled: VERY_LARGE_NUMBER,
-			timesRescued: VERY_LARGE_NUMBER
+			timesBattled: 1,
+			timesRescued: 1
 		});
 	});
 	// Fix broken pets
@@ -63,6 +63,13 @@ new Hack(category.pets, "Add Pet", "Adds a pet from a list.").setClick(async () 
 	});
 	if (pet.value === undefined) return;
 	_.player.kennel.addPet(pet.value);
+	// add encounter data
+	_.player.kennel._encounterInfo._data.pets.push({
+		firstSeenDate: Date.now(),
+		ID: pet.value,
+		timesBattled: 1,
+		timesRescued: 1
+	});
 
 	await Toast.fire("Success!", "Your chosen pet has been added to your pets!", "success");
 });
