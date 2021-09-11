@@ -1,3 +1,5 @@
-export makeDiv: _ => document.createElement("div"),
-export makeButton: _ => document.createElement("button"),
-export make: name => document.createElement(name)
+module.exports = {
+    makeDiv: _ => document.createElement("div"),
+    makeButton: _ => document.createElement("button"),
+    make: name => document.createElement(name)
+}

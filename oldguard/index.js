@@ -1,15 +1,50 @@
 const readline = require("readline");
+const esbuild = require("esbuild");
+
+
 readline.emitKeypressEvents(process.stdin);
 process.stdin.setRawMode(true);
+
+
+const header = () => {
+    console.clear();
+    console.log(
+`Oldguard Dashboard!
+    [ctrl c] - quit
+    [b] - rebuild
+`
+    );
+}
+header();
+
+
 process.stdin.on("keypress", (str, key) => {
-    if (key.ctrl && key.name === "c") {
-        process.exit();
-    } else {
-        console.clear();
-        console.log(`You pressed the "${str}" key`);
-        console.log();
+    // lmao i just wanted to use break so I stuck it in a while true loop
+    // idc about good practice anymore, I just wanna fish
+    while (true) {
+        const { name, ctrl } = key;
+        header();
+
+        if (name === "c" && ctrl) {
+            process.exit();
+        }
+
+        if (name === "b") {
+            esbuild.build({
+                entryPoints: ["src/index.js"],
+                bundle: true,
+                minifyWhitespace: true,
+                outfile: "dist/bundle.js",
+            }).catch(() => process.exit(1));
+
+            break;
+        }
+
+
+        console.log(`You pressed the "${str}" key\n`);
         console.log(key);
-        console.log();
+
+
+        break;
     }
 });
-console.log("Press any key...");
