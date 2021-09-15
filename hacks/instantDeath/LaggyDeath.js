@@ -1,8 +1,8 @@
-// Copy and paste this whole thing into krunker console, then wait 3 seconds and BOOM infinite ammo!!!
+// Copy and paste this whole thing into prodigy console, then wait 3 seconds and BOOM laggy death!!!
 
 // Load the hack in
-Load_Ammo = false;
-if (Load_Ammo == true) {
+Load_Lag = false;
+if (Load_Lag == true) {
     // Load Ammo Inactive
 } else { 
     // Start loading process
@@ -18,7 +18,7 @@ if (Loading == true) {
 // Make button appear
 button = false;
 if (button == true) {
-  // Ammo hack false
+  // Lag hack false
 } else { 
     setTimeout(() => {  while (true) { console.log("Hack Complete!");} }, 3000);
 }
