@@ -16,8 +16,8 @@ new Hack(category.pets, "Get All Pets").setClick(async () => {
 		_.player.kennel._encounterInfo._data.pets.push({
 			firstSeenDate: Date.now(),
 			ID: pet.ID,
-			timesBattled: 1,
-			timesRescued: 1
+			timesBattled: timesBattled + 1,
+			timesRescued: timesRescued + 1
 		});
 	});
 	// Fix broken pets
@@ -67,8 +67,8 @@ new Hack(category.pets, "Add Pet", "Adds a pet from a list.").setClick(async () 
 	_.player.kennel._encounterInfo._data.pets.push({
 		firstSeenDate: Date.now(),
 		ID: pet.value,
-		timesBattled: 1,
-		timesRescued: 1
+		timesBattled: timesBattled + 1,
+		timesRescued: timesRescued + 1
 	});
 
 	await Toast.fire("Success!", "Your chosen pet has been added to your pets!", "success");
