@@ -14,7 +14,7 @@ new Hack(category.pets, "Get All Pets").setClick(async () => {
 	_.player.kennel._encounterInfo._data.pets = [];
 	_.gameData.pet.map((pet: {ID: number}) => {
 		_.player.kennel._encounterInfo._data.pets.push({
-			firstSeenDate: Date.now(),
+			firstSeenDate: Date.now() - (Math.random() * 6048e5),
 			ID: pet.ID,
 			timesBattled: 1,
 			timesRescued: 1
@@ -65,7 +65,7 @@ new Hack(category.pets, "Add Pet", "Adds a pet from a list.").setClick(async () 
 	_.player.kennel.addPet(pet.value);
 	// add encounter data
 	_.player.kennel._encounterInfo._data.pets.push({
-		firstSeenDate: Date.now(),
+		firstSeenDate: Date.now() - (Math.random() * 6048e5),
 		ID: pet.value,
 		timesBattled: 1,
 		timesRescued: 1
