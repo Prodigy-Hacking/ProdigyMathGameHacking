@@ -1,14 +1,14 @@
 (async() => {
     function set(key, value) {
-        chrome.storage.local.set({ [key]: value })
-    };
+        chrome.storage.local.set({ [key]: value });
+    }
     function get(key) {
         return new Promise(resolve => {
             chrome.storage.local.get([key], result => {
-                resolve(result[key])
-            })
-        })
-    };
+                resolve(result[key]);
+            });
+        });
+    }
     function validURL(str) {
         var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
             '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
@@ -19,15 +19,15 @@
         return !!pattern.test(str) || new URL(str).hostname === "localhost";
     }
     
-    const checkbox = document.querySelector(".check")
-    const input = document.querySelector("input")
+    const checkbox = document.querySelector(".check");
+    const input = document.querySelector("input");
 
     input.value = await get("url") || "";
     checkbox.checked = await get("checked") || false;
 
     input.onchange = () => {
-        document.querySelector("p").innerHTML = ""
-    }
+        document.querySelector("p").innerHTML = "";
+    };
 
     checkbox.addEventListener("click", async (event) => {
         if (await get("checked")) {
@@ -46,5 +46,5 @@
                 checkbox.checked = false;
             }
         }
-    })
-})()
+    });
+})();
