@@ -20,7 +20,7 @@ function get(key) {
 			resolve(result[key]);
 		});
 	});
-};
+}
 
 // Redirect Requests
 browser.webRequest.onBeforeRequest.addListener(async details => {
@@ -32,13 +32,13 @@ browser.webRequest.onBeforeRequest.addListener(async details => {
 	if (details.url.startsWith("https://code.prodigygame.com/code/") && details.url.includes("/game.min.js")) {
 		fetch("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/PHEx/status.json").then(response => response.json()).then(async data => {
 			if (data.offline == true) {
-				eval(await (await fetch("https://unpkg.com/sweetalert2")).text())
+				eval(await (await fetch("https://unpkg.com/sweetalert2")).text());
 				if (swal) {
 					swal.fire({
 						title: "Oh no!",
 						html: `Our hacks are currently having some issues, and we're working on it.`,
 						icon: "error"
-					})
+					});
 				} else {
 					const res = confirm(`Uh Oh! Hacks look to be down. Hit OK to go to our discord to get updates on when they'll go back up!`);
 
