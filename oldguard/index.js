@@ -31,12 +31,13 @@ process.stdin.on("keypress", (str, key) => {
 
         if (name === "b") {
             esbuild.build({
-                entryPoints: ["src/index.js"],
+                entryPoints: ["./src/index.js"],
                 bundle: true,
                 minifyWhitespace: true,
                 outfile: "dist/bundle.js",
-            }).catch(() => process.exit(1));
+            }).catch(err => console.error(err));
 
+            console.log(`Built at ${Date.now()} (${Date()})`)
             break;
         }
 

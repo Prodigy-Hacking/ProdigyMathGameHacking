@@ -1,7 +1,6 @@
-import make from "./util/dom"
+const make = require("./util/dom");
 
-if (globalThis.oldg === undefined) {
-    globalThis.oldg = {};
+const div = make`div`;
+div.innerText = "test";
 
-    document.body.append(make("button"));
-}
+document.body.append(div);
