@@ -1,7 +1,7 @@
 <!-- <h2 align="center"></h2>
 <hr> -->
 
-<h1 align="center">Hacks are down until we get them fixed.</h1>
+<h1 align="center">Hacks are up, but many are broken.</h1>
 
 <h1 align="center">
 	<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks">
