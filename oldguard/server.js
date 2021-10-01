@@ -5,7 +5,7 @@ app.use(express.static("dist"));
 
 app.get("/", (req, res) => {
     res.redirect("bundle.js");
-}); 
+});
 
 
 const port = 1005;

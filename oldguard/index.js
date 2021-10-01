@@ -29,11 +29,14 @@ process.stdin.on("keypress", (str, key) => {
             process.exit();
         }
 
+        
+
         if (name === "b") {
             esbuild.build({
                 entryPoints: ["./src/index.js"],
                 bundle: true,
                 minifyWhitespace: true,
+                target: "chrome90",
                 outfile: "dist/bundle.js",
             }).catch(err => console.error(err));
 
