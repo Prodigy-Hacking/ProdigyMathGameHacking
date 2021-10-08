@@ -31,7 +31,7 @@ browser.webRequest.onBeforeRequest.addListener(async details => {
 
 	if (details.url.startsWith("https://code.prodigygame.com/code/") && details.url.includes("/game.min.js")) {
 		fetch("https://raw.githubusercontent.com/Prodigy-Hacking/ProdigyMathGameHacking/master/PHEx/status.json").then(response => response.json()).then(async data => {
-			if (data.offline == true) {
+			if (data.offline) {
 				eval(await (await fetch("https://unpkg.com/sweetalert2")).text())
 				if (swal) {
 					swal.fire({
