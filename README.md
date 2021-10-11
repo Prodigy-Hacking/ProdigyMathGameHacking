@@ -96,7 +96,10 @@ All of our hacks are open source, and free. No paywalls, no ads, and no Patreon.
 <summary><b>Can you hack for me?</b></summary>
 
 No. See [#170](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/discussions/170).
-
+If you are on mobile, use [prodigy dashboard](https://prodigy-dashboard.hostedposted.com/).
+Steps:
+Sign in to your prodigy account (Again, we won't steal your account!)
+Use the hack dashboard on the next webpage.
 </details>
 
 <details>
