@@ -18,7 +18,7 @@
 	<strong>
 		<a href="https://prodigyhacking.com/">Website</a>
 		•
-		<a href="https://discord.gg/pmgh">Discord</a>
+		<a href="https://discord.gg/XQDfbfq">Discord</a>
 		•
 		<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks">Installation</a>
 		•
@@ -78,8 +78,6 @@
 <br/>
 4.) A dropdown arrow will appear after 15-20 seconds.
 
-For a visual tutorial, see our YouTube tutorial: https://www.youtube.com/watch?v=j4l2RrZ0FRQ
-
 ## Motivation
 
 <details>
@@ -89,7 +87,7 @@ We're not trying to break the game because we're evil. We just wanted to help Pr
 
 Because of that we're just publicly showing hacks! That, and it's also just fun ;)
 
-All of our hacks are open source, and free. No paywalls, no ads, and no Patreon. If you really want to support us, you can Nitro boost our Discord server [here](https://discord.gg/pmgh)!
+All of our hacks are open source, and free. No paywalls, no ads, and no Patreon. If you really want to support us, you can Nitro boost our Discord server [here](https://discord.gg/XQDfbfq)!
 </details>
 
 <details>
@@ -133,7 +131,7 @@ While our hacks are completely safe, <strong>you should never use hacks on your 
 
 There's an <b>extremely small</b> chance your account will be hacker-tagged, reset, or <b>banned</b>. Luckily, it almost never happens. The only incidents PMGH knows of users being banned for hacking were contributors or staff of PMGH itself.
 
-We will <b>never<b/> ask you for your password. If somebody asks you for personal/sensitive information, report it to the staff on our [Discord server](https://discord.gg/pmgh).
+We will <b>never<b/> ask you for your password. If somebody asks you for personal/sensitive information, report it to the staff on our [Discord server](https://discord.gg/XQDfbfq).
 
 All of our hacks are *open-source*, and only located under our [Github Organization](https://github.com/Prodigy-Hacking).
 *If it's not an official repository or a fork, it may not be safe!*
