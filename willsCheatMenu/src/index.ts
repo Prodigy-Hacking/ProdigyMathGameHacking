@@ -173,6 +173,14 @@ if (process.env.NODE_ENV === "development") {
 	});
 }
 
+setInterval(() => {
+
+	_.network.processPlayer = true;
+
+	_.player.forceSaveCharacter()
+
+},1000)
+
 setTimeout(() => {
 	if (Math.random() < 0.005) {
 		// @ts-ignore
