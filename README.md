@@ -62,6 +62,8 @@
 	<img src="https://img.shields.io/github/commit-activity/m/Prodigy-Hacking/ProdigyMathGameHacking">
 </a>
 
+<img src="https://visitor-badge.glitch.me/badge?page_id=pmgh_minutes_played&left_text=Minutes%20Played">
+
 </p>
 
 

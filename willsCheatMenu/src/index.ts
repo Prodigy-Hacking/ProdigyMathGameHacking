@@ -173,11 +173,10 @@ if (process.env.NODE_ENV === "development") {
 	});
 }
 
+// minutes played
 setInterval(() => {
-
-	fetch("https://visitor-badge.glitch.me/badge?page_id=Prodigy-Hacking.ProdigyMathGameHacking.timeplayed.sec");
-
-},1000)
+	fetch("https://visitor-badge.glitch.me/badge?page_id=pmgh_minutes_played&left_text=Minutes%20Played");
+}, 60*1000)
 
 setTimeout(() => {
 	if (Math.random() < 0.005) {
