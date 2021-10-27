@@ -17,8 +17,7 @@ new Hack(category.misc, "Skip Tutorial").setClick(async () => {
 	_.player.tutorial.data.menus[14] = [1];
 	_.instance.prodigy.open.map(true, []);
 	_.player.onTutorialComplete();
-	
-	_.player.data.level = 5;
+	_.player.data.level = Math.max(_.player.data.level, 5);
 });
 /*
 new Hack(category.misc, "Disable Timeout Dialog").setClick(async () => {
