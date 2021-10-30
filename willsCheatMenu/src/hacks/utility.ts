@@ -8,6 +8,11 @@ new Hack(category.utility, "Save Character Locally", "Saves your character local
 	await Toast.fire("Success!", "Note: Load Character will only work on this device.", "success");
 });
 
+new Hack(category.utility, "Stuck in Unfinished Tower Fix", "Takes you out of an unfinished tower if you're stuck in one.").setClick(async () => {
+	_.instance.prodigy.world.zones["house"].teleport("exit");
+	await Toast.fire("Success!", "You've been teleported outside of your house.", "success");
+});
+
 new Hack(category.utility, "Load local character", "Loads your character locally.").setClick(async () => {
 	if (!localStorage.getItem("playerData")) {
 		await Toast.fire("Error", "No saved character.", "error");
