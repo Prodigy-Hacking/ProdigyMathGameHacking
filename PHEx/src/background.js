@@ -42,7 +42,7 @@ browser.webRequest.onBeforeRequest.addListener(async details => {
 				} else {
 					const res = confirm(`Uh Oh! Hacks look to be down. Hit OK to go to our discord to get updates on when they'll go back up!`);
 
-					if (res) location = "https://discord.gg/pmgh";
+					if (res) location = "https://discord.gg/XQDfbfq";
 				}
 			}
 		});
