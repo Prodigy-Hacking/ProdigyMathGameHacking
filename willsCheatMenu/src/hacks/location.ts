@@ -47,7 +47,10 @@ new Hack(category.location, "Teleport To Map (interactive)").setClick(
 			text: "Which map in the zone do you want to teleport to?"
 		});
 		if (!area.value) return;
-		prodigy.world.zones[zone.value].teleport(area.value);
+		const x = (await NumberInput.fire("Please enter the x to teleport to. (Try 500?)")).value || 500;
+		const y = (await NumberInput.fire("Please enter the y to teleport to. (Try 500?)")).value || 500;
+
+		prodigy.world.zones[zone.value].teleport(area.value, x, y, {}, {})
 		await Toast.fire("Teleported", "You have been teleported!", "success");
 	}
 );
