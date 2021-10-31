@@ -1,2 +1,1 @@
-
-import { } from "../../typings/pixi";
+import {} from "../../typings/pixi";
