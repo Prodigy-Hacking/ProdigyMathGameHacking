@@ -87,8 +87,10 @@ new Hack(category.utility, "Edit walkspeed").setClick(async () => {
 	await Toast.fire("Success!", `Successfully made walk speed ${parseFloat(walkSpeed.value) || 1.5}!`, "success");
 });
 
+let teleportingInterval = -1;
+
 new Toggler(category.utility, "Toggle Click Teleporting").setEnabled(async () => {
-	window.teleportingInterval = setInterval(() => {
+	teleportingInterval = setInterval(() => {
 		try {
 			_.player._playerContainer.walkSpeed = 500;
 		} catch (e) { 
@@ -97,7 +99,7 @@ new Toggler(category.utility, "Toggle Click Teleporting").setEnabled(async () =>
 	});
 	await Toast.fire("Success!", "Successfully enabled teleport click.", "success");
 }).setDisabled(async () => {
-	clearInterval(window.teleportingInterval);
+	clearInterval(teleportingInterval);
 	_.player._playerContainer.walkSpeed = 1.5;
 	await Toast.fire("Success!", "Successfully disabled teleport click.", "success");
 });
