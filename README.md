@@ -83,9 +83,9 @@
 <details>
 <summary><b>We aren't evil. Everything is open source, forever free, and without ads.</b></summary>
 <br>
-We're not trying to break the game because we're evil. We just wanted to help Prodigy become more secure, but they've ignored our emails and our requests to talk.
+We're not trying to break the game because we're evil. We wanted to help Prodigy become more secure, but they've ignored our emails and our requests to talk.
 
-Because of that we're just publicly showing hacks! That, and it's also just fun ;)
+Because of that, we're publicly showing hacks! That, and it's also just fun :)
 
 All of our hacks are open source, and free. No paywalls, no ads, and no Patreon. If you really want to support us, you can Nitro boost our Discord server [here](https://discord.gg/XQDfbfq)!
 </details>
