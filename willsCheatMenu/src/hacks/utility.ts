@@ -94,7 +94,7 @@ new Toggler(category.utility, "Toggle Click Teleporting").setEnabled(async () =>
 		try {
 			_.player._playerContainer.walkSpeed = 500;
 		} catch (e) { 
-			Toast.fire("An error occurred.", `An error occurred while toggling click teleporting. Error: ${e}`, "error").catch(console.error);
+			Toast.fire("An error occurred.", `An error occurred while toggling click teleporting. Error: ${e}`, "error");
 			clearInterval(teleportingInterval);
 		}
 	});
