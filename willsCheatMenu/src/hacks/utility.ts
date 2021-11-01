@@ -18,7 +18,7 @@ new Hack(category.utility, "Load local character", "Loads your character locally
 		await Toast.fire("Error", "No saved character.", "error");
 	} else {
 		const playerData = localStorage.getItem("playerData");
-		fetch(`https://api.prodigygame.com/game-api/v3/characters/${_.player.userID}`, {
+		const req = await fetch(`https://api.prodigygame.com/game-api/v3/characters/${_.player.userID}`, {
 			headers: {
 				accept: "*/*",
 				"accept-language": "en-US,en;q=0.9",
@@ -39,6 +39,7 @@ new Hack(category.utility, "Load local character", "Loads your character locally
 			method: "POST",
 			mode: "cors"
 		});
+		if (!req.ok) return Toast.fire("Request failed.", `An error occurred while loading the character. Error code: ${req.status}`, "error");
 		await Toast.fire("Success!", "Character has been successfully loaded. Reload for the changes to take effect.", "success");
 	}
 });
@@ -86,15 +87,19 @@ new Hack(category.utility, "Edit walkspeed").setClick(async () => {
 	await Toast.fire("Success!", `Successfully made walk speed ${parseFloat(walkSpeed.value) || 1.5}!`, "success");
 });
 
+let teleportingInterval = -1;
+
 new Toggler(category.utility, "Toggle Click Teleporting").setEnabled(async () => {
-	window.teleportingInterval = setInterval(() => {
+	teleportingInterval = setInterval(() => {
 		try {
 			_.player._playerContainer.walkSpeed = 500;
-		} catch (e) {}
+		} catch (e) { 
+			// "when switching between scenes, there's a brief moment when _.player._playerContainer.walkSpeed is inaccessible" - Mustan
+		}
 	});
 	await Toast.fire("Success!", "Successfully enabled teleport click.", "success");
 }).setDisabled(async () => {
-	clearInterval(window.teleportingInterval);
+	clearInterval(teleportingInterval);
 	_.player._playerContainer.walkSpeed = 1.5;
 	await Toast.fire("Success!", "Successfully disabled teleport click.", "success");
 });
