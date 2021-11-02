@@ -18,9 +18,7 @@ new Hack(category.player, "Set Level").setClick(async () => {
 	// from 3-16-1.js:8382
 	if (level.value === 1) return 0;
 	const i = level.value - 2;
-	// xpConstant from 3-16-1.js:8528
-	const xpConstant = 1.042;
-	_.player.data.stars = Math.round((1 - Math.pow(xpConstant, i)) / (1 - xpConstant) * 20 + 10);
+	_.player.data.stars = Math.round((1 - Math.pow(1.042, i)) / -0.042 * 20 + 10);
 	_.player.data.level = +level.value;
 	_.player.getLevel = () => { return _.player.data.level; };
 
