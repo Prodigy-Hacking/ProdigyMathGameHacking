@@ -21,6 +21,7 @@ new Hack(category.inventory, "Item stacker").setClick(async () => {
 	if (!(await Confirm.fire("Are you sure you want to get all items in the game?"))) return;
 
 	ids.forEach(id => {
+		if(id === "follow") return;
 		_.player.backpack.data[id] = itemify(_.gameData[id], num.value);
 	});
 	_.gameData.dorm.forEach(x =>
@@ -30,6 +31,7 @@ new Hack(category.inventory, "Item stacker").setClick(async () => {
 	// Remove bounty notes (#229)
 	const bountyIndex = () => _.player.backpack.data.item.findIndex(v => v.ID === 84 || v.ID === 85 || v.ID === 86);
 	while (bountyIndex() > -1) _.player.backpack.data.item.splice(bountyIndex(), 1);
+	await Swal.fire('Note',"We're having some issues with adding buddies at the moment; So they've been excluded from the stacker. Adding them could result in your game crashing and potentially losing data.",'info')
 	await Toast.fire("Success!", "All items added!", "success");
 });
 
