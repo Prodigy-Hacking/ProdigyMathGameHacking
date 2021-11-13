@@ -7,8 +7,8 @@ new Hack(category.player, "Set Gold").setClick(async () => {
 	const gold = await NumberInput.fire("Gold Amount", "What number do you want to set your gold to?", "question");
 	if (gold.value === undefined) return;
 	if (gold.value > 10000000) return await Toast.fire("Error", "Cannot have more than 10,000,000 gold.", "error");
-	_.player.data.gold = +gold.value;
-	await Toast.fire("Success!", `You now have ${gold.value} gold.`, "success");
+	_.player.data.gold = Math.min(+gold.value,1e7);
+	await Toast.fire("Success!", `You now have ${_.player.data.gold} gold.`, "success");
 });
 new Hack(category.player, "Set Level").setClick(async () => {
 	const level = await NumberInput.fire("Level", "What number do you want to set your level to?", "question");
