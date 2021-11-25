@@ -6,7 +6,7 @@ import { _, getItem, VERY_LARGE_NUMBER, prodigy } from "../utils/util";
 new Hack(category.player, "Set Gold").setClick(async () => {
 	const gold = await NumberInput.fire("Gold Amount", "What number do you want to set your gold to?", "question");
 	if (gold.value === undefined) return;
-	if (gold.value > 10000000) return await Toast.fire("Error", "Cannot have more than 10,000,000 gold.", "error");
+	if (gold.value > 1000000000000) return await Toast.fire("Error", "Cannot have more than 1 trillion gold.", "error");
 	_.player.data.gold = +gold.value;
 	await Toast.fire("Success!", `You now have ${gold.value} gold.`, "success");
 });
