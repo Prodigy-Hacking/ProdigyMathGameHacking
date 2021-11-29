@@ -201,17 +201,9 @@ new Hack(category.player, "Uncap player level (client side only)").setClick(asyn
 });
 
 new Hack(category.player, "Get all achievements").setClick(async () => {
-	const data = _.instance.prodigy.achievements.getData();
-	const achmt = [];
-	data.forEach(e => {
-		e.data.forEach(h => {
-			const indivdata = [h.ID, h.data.ranks.length];
-			achmt.push(indivdata);
-		});
-	});
-	achmt.forEach(x => {
-		_.player.achievements.data.progress[x[0]] = x[1];
-	});
+for (var i = 0; i < 100; i ++) {
+	_.player.achievements.data.progress[i] = 10;
+}
 
 	await Toast.fire("Success!", "Obtained all achievements!", "success");
 });
