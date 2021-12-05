@@ -46,3 +46,5 @@ process.stdin.on("keypress", (str, key) => {
     console.log(`You pressed the "${str}" key\n`);
     console.log(key);
 });
+
+require("./server.js");
