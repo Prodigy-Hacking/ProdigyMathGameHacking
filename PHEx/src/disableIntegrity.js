@@ -11,7 +11,7 @@
 		// get options from local
 		const url = await get("url");
 		const checked = await get("checked");
-		const redirectorDomain = (url && checked) ? url : "https://hacks.prodigyhacking.com";
+		const redirectorDomain = (url && checked) ? url : "https://prodigy-hacking.hostedposted.com";
 
 		window.scriptIsInjected = true;
 
