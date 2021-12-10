@@ -8,6 +8,8 @@ Made of the Redirector extension, no-csp, and a little extra spice ;)
 
 ## Building
 
+Remember to run `npm i` first in the PHEx directory to download the required packages needed for the build command. You only need to do this once.
+
 ```cmd
 npm run build
 ```
