@@ -1,7 +1,7 @@
 <!-- <h2 align="center"></h2>
 <hr> -->
 
-<h1 align="center">Hacks are down.</h1>
+<h1 align="center">Hacks are UP!</h1>
 
 <h1 align="center">
 	<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks">
@@ -66,7 +66,9 @@
 
 
 
+## Apologies
 
+Us at PMGH would like to apoligize for how long the hacks were out, they are back up and working now, and we have a new, more reliable VPS to boot.
 
 ## How to install
 
