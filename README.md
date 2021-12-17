@@ -22,7 +22,7 @@
 		•
 		<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks">Installation</a>
 		•
-		<a href="https://www.youtube.com/channel/UChIRMY6SdQrcADVscWTVv9A">Youtube</a>
+		<a href="https://www.youtube.com/channel/UCr6WNMDW-bytEVGL1Vna7Lw">Youtube</a>
 	</strong>
 </p>
 <p align="center">
