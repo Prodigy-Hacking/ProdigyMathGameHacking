@@ -6,7 +6,7 @@ const HEADERS_TO_STRIP_LOWERCASE = [
 	"x-frame-options",
 ];
 
-chrome.webRequest.onHeadersReceived.addListener(
+browser.webRequest.onHeadersReceived.addListener(
 	details => ({
 		responseHeaders: details.responseHeaders.filter(header => !HEADERS_TO_STRIP_LOWERCASE.includes(header.name.toLowerCase()))
 	}),
@@ -16,7 +16,7 @@ chrome.webRequest.onHeadersReceived.addListener(
 
 function get(key) {
 	return new Promise(resolve => {
-		chrome.storage.local.get([key], result => {
+		browser.storage.local.get([key], result => {
 			resolve(result[key]);
 		});
 	});
@@ -48,7 +48,7 @@ browser.webRequest.onBeforeRequest.addListener(async details => {
 		});
 
 		// Blocking gamemin
-		chrome.webRequest.onBeforeRequest.addListener(
+		browser.webRequest.onBeforeRequest.addListener(
 			_ => ({ cancel: true }),
 			{ urls: ["*://code.prodigygame.com/code/*"] },
 			["blocking"]
