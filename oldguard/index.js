@@ -1,8 +1,10 @@
 const readline = require("readline");
+
 const esbuild = require("esbuild");
+const cssModulesPlugin = require('esbuild-css-modules-plugin');
+
 const express = require("express");
 const app = express();
-
 const port = 1005;
 
 app.use(express.static("dist"));
@@ -16,7 +18,7 @@ app.listen(port, () => {
 
     console.log(
 `
-The old machine hums along... listen on :${port}
+The old machine hums along... listen to the vibrations of the ancient one on :${port}
 
 Oldguard Dashboard!
     [b] - rebuild
@@ -41,6 +43,7 @@ process.stdin.on("keypress", (str, key) => {
             minifyWhitespace: true,
             target: "chrome90",
             outfile: "dist/bundle.js",
+            plugins: [cssModulesPlugin({inject: true})]
         }).catch(err => console.error(err)); // lol error handling
 
         console.log(`Built at ${Date.now()} (${Date()})`);
