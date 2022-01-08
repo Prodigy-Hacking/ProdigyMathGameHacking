@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Developer Options</title>
+        <title>PHEX</title>
 
         <style>
+          
+
             .content {
                 width: 20em;
                 height: 40em;
@@ -28,24 +30,53 @@
                 background-color: pink;
             }
         </style>
+
+
     </head>
 
     <body>
         <div class="content">
-            <h1>Developer Options</h1>
 
-            <h3>Custom PNP URL</h3>
-            <input id="url" type="text">
+            <h1>PHEX</h1>
 
-            <h3>Use Custom URL</h3>
-            <input id="check" type="checkbox" class="check">
+            <form action="https://play.prodigygame.com/" method="get" target="_blank">
+                <button type="submit">Go to Prodigy</button>
+            </form>
 
-            <h3>Save</h3>
-            <p>Only touch if you know what you're doing! To save options, type in "nootnoot", and submit.</p>
-            <input id="gatekeeper" type="text" class="gatekeeper">
-            <button id="submit">Submit</button>
+            <p></p> <!--- Paragraph bc <br> is too much spacing!------>
 
-            <p id="result"></p>
+            <form action="https://discord.gg/XQDfbfq" method="get" target="_blank">
+                <button type="submit">PMGH Discord server</button>
+            </form>
+
+
+            <br><br>
+
+            <details>
+                <summary>Developer Options</summary>
+
+                <h2>Developer Options</h2>
+
+                <p>Only touch if you know what you're doing! To use the hack, just go to prodigy. If you need help, go to our discord server</p>
+
+                <h3>Custom PNP URL</h3>
+                <input id="url" type="text">
+
+                <h3>Use Custom URL</h3>
+                <input id="check" type="checkbox" class="check">
+
+                <h3>Save</h3>
+                <p>Only touch if you know what you're doing! To save options, type in "nootnoot", and submit.</p>
+                <input id="gatekeeper" type="text" class="gatekeeper">
+                <button id="submit">Submit</button>
+
+                <p id="result"></p>
+
+
+            </details>
+
+
+
         </div>
 
         <script src="popup.js"></script>
