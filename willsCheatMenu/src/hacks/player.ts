@@ -67,10 +67,13 @@ new Hack(category.player, "Set Losses").setClick(async () => {
 	await Toast.fire("Success!", `You have set your loss${amount.value != 1 ? "es" : ""} to ${amount.value}.`, "success");
 });
 
-new Hack(category.player, "Instant Kill").setClick(async () => {
+
+new Toggler(category.player, "Instant Kill").setEnabled(async () => {
 	_.player.modifiers.damage = VERY_LARGE_NUMBER;
-	await Toast.fire("Success!", "Instant kill is now enabled!", "success");
+}).setDisabled(() => {
+	_.player.modifiers.damage = 2534;
 });
+
 
 new Hack(category.player, "PVP Health").setClick(async () => {
 	_.player.pvpHP = VERY_LARGE_NUMBER;
