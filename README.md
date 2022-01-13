@@ -66,10 +66,6 @@
 
 
 
-## Apologies
-
-Us at PMGH would like to apoligize for how long the hacks were out, they are back up and working now, and we have a new, more reliable VPS to boot.
-
 ## How to install
 
 1.) Install the [extension](https://chrome.google.com/webstore/detail/prodigyhacking/gjabpajagbgoifbkflgojeojmnlmioea) (also known as PHEx) from the Chrome Web Store.
