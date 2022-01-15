@@ -21,8 +21,7 @@ new Hack(category.inventory, "Item stacker").setClick(async () => {
 	if (!(await Confirm.fire("Are you sure you want to get all items in the game?"))) return;
 
 	ids.forEach(id => {
-		if(id === "follow") return;
-		_.player.backpack.data[id] = itemify(_.gameData[id], num.value);
+		_.player.backpack.data[id] = itemify(_.gameData[id].filter(l => id === "follow" ? ![125, 126, 127, 128, 129, 130, 131, 132, 133].includes(l.ID) : l), num.value);
 	});
 	_.gameData.dorm.forEach(x =>
 		_.player.house.data.items[x.ID] = { A: [], N: num.value }
@@ -31,7 +30,6 @@ new Hack(category.inventory, "Item stacker").setClick(async () => {
 	// Remove bounty notes (#229)
 	const bountyIndex = () => _.player.backpack.data.item.findIndex(v => v.ID === 84 || v.ID === 85 || v.ID === 86);
 	while (bountyIndex() > -1) _.player.backpack.data.item.splice(bountyIndex(), 1);
-	await Swal.fire('Note',"We're having some issues with adding buddies at the moment; So they've been excluded from the stacker. Adding them could result in your game crashing and potentially losing data.",'info')
 	await Toast.fire("Success!", "All items added!", "success");
 });
 
@@ -53,7 +51,7 @@ new Hack(category.inventory, "Selector (Basic)").setClick(async () => {
 		if (!amt.value) return;
 		if (!(await Confirm.fire(`Are you sure you want to get all ${name.toLowerCase()}?`)).value) return;
 		// @ts-ignore
-		_.player.backpack.data[id] = itemify(_.gameData[id], amt.value);
+		_.player.backpack.data[id] = itemify(_.gameData[id].filter(a => {return id === 'follow' ? ![125, 126, 127, 128, 129, 130, 131, 132, 133].includes(a.ID) : a}), amt.value);
 		await Toast.fire(
 			`${name} Added!`,
 			`All ${name.toLowerCase()} have been added to your inventory!`,
