@@ -8,3 +8,6 @@ node_modules/
 
 *.pem
 PHEx/src/web-ext-artifacts/prodigy_hacking_extension_phex_-2.0.1.zip
+
+# macOS
+**/.DS_Store
