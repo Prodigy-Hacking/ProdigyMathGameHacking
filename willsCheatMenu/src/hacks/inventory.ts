@@ -18,7 +18,7 @@ const itemify = (item: Item[], amount: number) =>
 new Hack(category.inventory, "Item stacker").setClick(async () => {
 	const num = await NumberInput.fire("Amount", "How many of every item would you like?", "question");
 	if (!num.value) return;
-	if (!(await Confirm.fire("Are you sure you want to get all items in the game?"))) return;
+	if (!(await Confirm.fire("Are you sure you want to get all items in the game?")).value) return;
 
 	ids.forEach(id => {
 		_.player.backpack.data[id] = itemify(_.gameData[id].filter(l => id === "follow" ? ![125,126,127,128,129,134,135,136,137].includes(l.ID) : l), num.value);
@@ -30,7 +30,7 @@ new Hack(category.inventory, "Item stacker").setClick(async () => {
 	// Remove bounty notes (#229)
 	const bountyIndex = () => _.player.backpack.data.item.findIndex(v => v.ID === 84 || v.ID === 85 || v.ID === 86);
 	while (bountyIndex() > -1) _.player.backpack.data.item.splice(bountyIndex(), 1);
-	await Toast.fire("Success!", "All items added!", "success");
+	Toast.fire("Success!", "All items added!", "success");
 });
 
 new Hack(category.inventory, "Selector (Basic)").setClick(async () => {
@@ -52,7 +52,7 @@ new Hack(category.inventory, "Selector (Basic)").setClick(async () => {
 		if (!(await Confirm.fire(`Are you sure you want to get all ${name.toLowerCase()}?`)).value) return;
 		// @ts-ignore
 		_.player.backpack.data[id] = itemify(_.gameData[id].filter(a => {return id === 'follow' ? ![125,126,127,128,129,134,135,136,137].includes(a.ID) : a}), amt.value);
-		await Toast.fire(
+		Toast.fire(
 			`${name} Added!`,
 			`All ${name.toLowerCase()} have been added to your inventory!`,
 			"success"
@@ -99,7 +99,7 @@ new Hack(category.inventory, "Selector (Advanced)", "Choose a specific object an
 				const num = _.player.backpack.data[ids[val.value]].findIndex(e => e.ID === _.gameData[ids[val.value]][correct].ID);
 			}
 
-			await Toast.fire(`${names[val.value]} Added!`, `Your selected ${names[val.value].toLowerCase()} have been added.`, "success");
+			Toast.fire(`${names[val.value]} Added!`, `Your selected ${names[val.value].toLowerCase()} have been added.`, "success");
 			saveCharacter();
 		});
 	});
@@ -137,7 +137,7 @@ new Hack(category.inventory, "Get all runes").setClick(async () => {
 		})).filter(v => v !== undefined);
 
 	_.instance.prodigy.gameContainer.get(mod).battleData._secureCharacterState._data.inventory.orb = runeify(_.gameData.orb, amount);
-	await Toast.fire("Runes Added!", "Your runes have been added!", "success");
+	Toast.fire("Runes Added!", "Your runes have been added!", "success");
 });
 
 new Hack(category.inventory, "Obtain All Furniture").setClick(async () => {
@@ -147,12 +147,12 @@ new Hack(category.inventory, "Obtain All Furniture").setClick(async () => {
 	_.gameData.dorm.forEach(x =>
 		_.player.house.data.items[x.ID] = { A: [], N: amt.value }
 	);
-	await Toast.fire("Furniture Added!", "All furniture has been added to your inventory!", "success");
+	Toast.fire("Furniture Added!", "All furniture has been added to your inventory!", "success");
 });
 
 new Hack(category.inventory, "Obtain All Mounts", "This gives you the Fluffy Cloud and the Rainbow Cloud.").setClick(async () => {
 	_.player.backpack.data.mount = itemify(_.gameData.mount, 1);
-	await Toast.fire("Mounts Added!", "All mounts have been added to your inventory!");
+	Toast.fire("Mounts Added!", "All mounts have been added to your inventory!");
 });
 
 /*
@@ -160,7 +160,7 @@ new Hack(category.inventory, "Obtain All Mounts", "This gives you the Fluffy Clo
 	new Hack(category.inventory, `Obtain All ${name}`).setClick(async () => {
 		if (!(await Confirm.fire(`Are you sure you want to get all ${name}?`)).value) return;
 		_.player.backpack.data[id] = itemify(_.gameData[id], amount);
-		await Toast.fire(
+		Toast.fire(
 			`${name} Added!`,
 			`All ${name.toLowerCase()} have been added to your inventory!`,
 			"success"
@@ -187,7 +187,7 @@ new Hack(category.inventory, "Obtain All Furniture").setClick(async () => {
 		_.gameData.dorm.forEach(x =>
 			_.player.house.data.items[x.ID] = {A: [], N: VERY_LARGE_NUMBER}
 		)
-		await Toast.fire("Furniture Added!", "All furniture have been added to your inventory!", "success");
+		Toast.fire("Furniture Added!", "All furniture have been added to your inventory!", "success");
 
 	});
 */
@@ -226,6 +226,6 @@ new Hack(category.inventory, "Remove item").setClick(async () => {
 		_.player.backpack.data[ids[category.value]].splice(num, 1); // if the amount is 0 or below then the item should not exist
 	}
 
-	await Toast.fire("Removed!", `Successfully removed ${amt.value} ${_.gameData[ids[category.value]][item].name}!`, "success");
+	Toast.fire("Removed!", `Successfully removed ${amt.value} ${_.gameData[ids[category.value]][item].name}!`, "success");
 	saveCharacter();
 });
