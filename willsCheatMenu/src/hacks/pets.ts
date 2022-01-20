@@ -25,7 +25,7 @@ new Hack(category.pets, "Get All Pets").setClick(async () => {
 		if (v && (v as any).assignRandomSpells) (v as any).assignRandomSpells();
 	});
 
-	await Toast.fire("Success!", "All pets have been added!", "success");
+	Toast.fire("Success!", "All pets have been added!", "success");
 });
 
 new Hack(category.pets, "Get All Epics").setClick(async () => {
@@ -37,7 +37,7 @@ new Hack(category.pets, "Get All Epics").setClick(async () => {
 	_.player.kennel.petTeam.forEach((v: any) => {
 		if (v && (v as any).assignRandomSpells) (v as any).assignRandomSpells();
 	});
-	await Toast.fire("Success!", "All epics have been added!", "success");
+	Toast.fire("Success!", "All epics have been added!", "success");
 });
 
 new Hack(category.pets, "Fix Battle Crash").setClick(async () => {
@@ -45,13 +45,13 @@ new Hack(category.pets, "Fix Battle Crash").setClick(async () => {
 		if (v && (v as any).assignRandomSpells) (v as any).assignRandomSpells();
 	});
 
-	await Toast.fire("Success!", "Fixed kennel attack bug!", "success");
+	Toast.fire("Success!", "Fixed kennel attack bug!", "success");
 });
 
 new Hack(category.pets, "Clear Pets").setClick(async () => {
 	_.player.kennel.data.length = 0;
 
-	await Toast.fire("Success!", "Your pets have been cleared!", "success");
+	Toast.fire("Success!", "Your pets have been cleared!", "success");
 });
 
 new Hack(category.pets, "Add Pet", "Adds a pet from a list.").setClick(async () => {
@@ -71,7 +71,7 @@ new Hack(category.pets, "Add Pet", "Adds a pet from a list.").setClick(async () 
 		timesRescued: 1
 	});
 
-	await Toast.fire("Success!", "Your chosen pet has been added to your pets!", "success");
+	Toast.fire("Success!", "Your chosen pet has been added to your pets!", "success");
 });
 
 new Hack(category.pets, "Uncap pet level (client side only, doesn't save on reload)", "Change your pet's level to anything, even over 100.").setClick(async () => {
@@ -91,7 +91,7 @@ new Hack(category.pets, "Uncap pet level (client side only, doesn't save on relo
 	const num = amt.value;
 	// sorry in advance
 	eval(`_.player.kennel.petTeam[parseInt(${pet.value})+1].getLevel = () => {return ${num}}`);
-	await Toast.fire("Updated!", "The level of your pet was successfully updated.", "success");
+	Toast.fire("Updated!", "The level of your pet was successfully updated.", "success");
 });
 
 const getPet = async (text: string): Promise<number | undefined> => {
@@ -133,7 +133,7 @@ new Hack(category.pets, "Edit Pet (BETA)", "Edit a pet.").setClick(async () => {
 		);
 		if (level.value === undefined) return;
 		selected.level = +level.value;
-		await Toast.fire("Success!", "The pet's level has been set.", "success");
+		Toast.fire("Success!", "The pet's level has been set.", "success");
 	} else if (opt.value === "attacks") {
 		const attackList = _.gameData.spell;
 		const div = document.createElement("div");
@@ -160,7 +160,7 @@ new Hack(category.pets, "Edit Pet (BETA)", "Edit a pet.").setClick(async () => {
 		});
 		if (attacks.value === undefined) return;
 		(selected.foreignSpells as number[]).splice(0, 2, ...attacks.value.map((x: string) => +x));
-		await Toast.fire("Attacks updated!", "The attack list of the pet you selected has been edited.", "success");
+		Toast.fire("Attacks updated!", "The attack list of the pet you selected has been edited.", "success");
 	} else if (opt.value === "name") {
 		const name = await Input.fire("Input Name", "What do you want to name the pet?", "question");
 		if (name.value === undefined) return;

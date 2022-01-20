@@ -53,7 +53,7 @@ new Hack(category.location, "Teleport To Map (interactive)").setClick(
 		const y = (await NumberInput.fire("Please enter the y to teleport to. (Try 500?)")).value || 500;
 
 		prodigy.world.zones[zone.value].teleport(area.value, x, y, {}, {})
-		await Toast.fire("Teleported", "You have been teleported!", "success");
+		Toast.fire("Teleported", "You have been teleported!", "success");
 	}
 );
 
@@ -95,7 +95,7 @@ new Hack(category.location, "Teleport to house by userID").setClick(async () => 
 	const userID = (await NumberInput.fire("Please enter the userID.")).value;
 	if (!userID) return;
 	toHouse(userID);
-	await Toast.fire("Teleported!", "You have been teleported!", "success");
+	Toast.fire("Teleported!", "You have been teleported!", "success");
 });
 
 /*
@@ -108,7 +108,7 @@ new Hack(category.location, "Teleport To Dark Tower Floor").setClick(
 		);
 		if (floor.value === undefined) return;
 		prodigy.debugMisc.tpTowerFloor(+floor.value);
-		await Toast.fire(
+		Toast.fire(
 			"Success!",
 			"You have been teleport to the requested floor."
 		);
@@ -121,6 +121,6 @@ new Hack(
 	"Unlocks all the zones that are locked in school."
 ).setClick(async () => {
 	prodigy.classModeController.lockedZones = 0;
-	await Toast.fire("Success!", "All zones are now unlocked that were locked in school.", "success")
+	Toast.fire("Success!", "All zones are now unlocked that were locked in school.", "success")
 });
 */
