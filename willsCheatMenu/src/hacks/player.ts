@@ -341,3 +341,11 @@ new Hack(category.player, "Set Grade").setClick(async () => {
 	_.player.grade = parseInt(grade.value);
 	Toast.fire("Success", `Successfully changed grade to ${grade}!`, "success");
 });
+
+new Hack(category.player, "Get Map Location").setClick(async () => {
+	Swal.fire({
+		title: "Map Location",
+		html: `You are at <br> <code> ${_.player.data.zone} </code>. <br> You can save this to get to the same zone.`,
+		icon: "info"
+	});
+});
