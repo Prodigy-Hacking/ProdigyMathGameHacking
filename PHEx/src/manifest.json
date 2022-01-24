@@ -19,7 +19,7 @@
 		"persistent": true
 	},
 	"content_scripts": [{
-		"matches": ["https://play.prodigygame.com/*"],
+		"matches": ["https://math.prodigygame.com/*"],
 		"js": ["disableIntegrity.js"]
 	}],
 	"browser_action": {
