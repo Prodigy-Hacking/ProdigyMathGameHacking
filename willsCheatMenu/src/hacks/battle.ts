@@ -2,7 +2,7 @@ import { Toast, NumberInput } from "../utils/swal";
 import { Hack, category, Toggler } from "../index";
 import { _, prodigy, game } from "../utils/util";
 
-new Toggler(category.battle, "Easy mode").setEnabled(async () => {
+new Toggler(category.battle, "Disable math").setEnabled(async () => {
 	_.constants.constants["GameConstants.Debug.EDUCATION_ENABLED"] = false;
 }).setDisabled(async () => {
 	_.constants.constants["GameConstants.Debug.EDUCATION_ENABLED"] = true;
