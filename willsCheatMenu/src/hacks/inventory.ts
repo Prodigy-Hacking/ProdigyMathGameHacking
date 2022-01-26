@@ -32,6 +32,11 @@ new Hack(category.inventory, "Item stacker").setClick(async () => {
 	while (bountyIndex() > -1) _.player.backpack.data.item.splice(bountyIndex(), 1);
 	Toast.fire("Success!", "All items added!", "success");
 });
+new Hack(category.inventory, "Clear inventory").setClick(async () => {
+if (!(await Confirm.fire("Are you sure you want to clear your inventory?")).value) return;
+for (d in _.player.backpack.data){_.player.backpack.data[d] = [{}]}
+Toast.fire("Success!", "Inventory cleared.", "success");
+})
 
 new Hack(category.inventory, "Selector (Basic)").setClick(async () => {
 	// @ts-ignore
