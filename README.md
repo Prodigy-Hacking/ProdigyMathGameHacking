@@ -83,7 +83,7 @@
 <details>
 <summary><b>We aren't evil. Everything is open source, forever free, and without ads.</b></summary>
 <br>
-We're not trying to break the game because we're evil. We wanted to help Prodigy become more secure, but they've ignored our emails and our requests to talk.
+We're not trying to break the game because we're evil. We wanted to help Prodigy become more secure, but they've ignored our emails and our requests to talk. They've even gone as far as to ban a user from their official Zendesk.
 
 Because of that, we're publicly showing hacks! That, and it's also just fun :)
 
