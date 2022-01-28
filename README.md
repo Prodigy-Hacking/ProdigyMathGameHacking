@@ -20,7 +20,7 @@
 	<strong>
 		<a href="https://prodigyhacking.com/">Website</a>
 		•
-		<a href="https://discord.gg/pmgh">Discord</a>
+		<a href="https://discord.gg/XQDfbfq">Discord</a>
 		•
 		<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks">Installation</a>
 		•
@@ -48,7 +48,7 @@
 	<img alt="Issues" src="https://img.shields.io/github/issues-raw/Prodigy-Hacking/ProdigyMathGameHacking">
 </a>
 
-<a href="https://discord.com/invite/pmgh">
+<a href="https://discord.gg/XQDfbfq">
 	<img src="https://img.shields.io/discord/683793361123016755.svg?color=7289da&label=Discord&logo=discord&style=flat-square">
 </a>
 
@@ -87,7 +87,7 @@ We're not trying to break the game because we're evil. We wanted to help Prodigy
 
 Because of that, we're publicly showing hacks! That, and it's also just fun :)
 
-All of our hacks are open source, and free. No paywalls, no ads, and no Patreon. If you really want to support us, you can Nitro boost our Discord server [here](https://discord.gg/pmgh)!
+All of our hacks are open source, and free. No paywalls, no ads, and no Patreon. If you really want to support us, you can Nitro boost our Discord server [here](https://discord.gg/XQDfbfq)!
 </details>
 
 <details>
