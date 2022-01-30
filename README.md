@@ -1,8 +1,6 @@
 <!-- <h2 align="center"></h2>
 <hr> -->
 
-<h1 align="center">Hacks are UP!</h1>
-
 <h1 align="center">
 	<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks">
 		<img align="center"
