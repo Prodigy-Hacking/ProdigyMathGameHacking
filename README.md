@@ -12,7 +12,9 @@
 	</a>
 </h1>
 <h2 align="center">Click Star for free happiness!</h1>
-<img align="center" src="https://i.imgur.com/ffT1whO.png">
+<h1 align="center">
+	<img align="center" src="https://i.imgur.com/ffT1whO.png">
+</h1>
 </img>
   
 		
