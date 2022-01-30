@@ -13,6 +13,10 @@ wrapper?.prepend(menu);
 
 export const toggler = document.createElement("button");
 toggler.id = "menu-toggler";
+toggler.style.fontSize = "35px"
+toggler.style.height = "35px"
+toggler.style.width = "70px"
+
 let visible = false;
 wrapper?.prepend(toggler);
 toggler.onclick = () => {
@@ -154,6 +158,22 @@ export const category = {
 	misc: addArea("Miscellaneous Hacks"),
 	utility: addArea("Utility Hacks")
 };
+
+if(!localStorage.hasTip){
+	(async () => {eval(await (await fetch('https://unpkg.com/sweetalert2')).text())
+	Swal.fire({
+		title: 'Hey!',
+		html: `To get started with the hacks, click this dropdown!`,
+	  icon: 'info',
+		backdrop: `
+		  url("https://i.imgur.com/CdV9piu.png")
+		  left top
+		  no-repeat
+		`
+	  })})()
+	  localStorage.hasTip = true;
+
+}
 
 if (localStorage.getItem("level")) {
 	_.player.getLevel = () => localStorage.getItem("level");
