@@ -1,8 +1,6 @@
 <!-- <h2 align="center"></h2>
 <hr> -->
 
-<h1 align="center">Hacks are UP!</h1>
-
 <h1 align="center">
 	<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks">
 		<img align="center"
@@ -11,8 +9,10 @@
 			src="https://raw.githubusercontent.com/BoredFishRE/justsomeiconstuffdontmindme/6d213c7a5ff42fd4ac60d3c08827145f5ae435c9/pmghnewlogo500px.png">
 	</a>
 </h1>
-<h2>Click Star for free happiness!</h1>
-<img align="center" src="https://i.imgur.com/ffT1whO.png">
+<h2 align="center">Click Star for free happiness!</h1>
+<h1 align="center">
+	<img align="center" src="https://i.imgur.com/ffT1whO.png">
+</h1>
 </img>
   
 		
