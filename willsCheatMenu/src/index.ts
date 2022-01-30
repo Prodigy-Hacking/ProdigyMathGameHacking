@@ -160,7 +160,7 @@ export const category = {
 };
 
 if(!localStorage.hasTip){
-	(async () => {eval(await (await fetch('https://unpkg.com/sweetalert2')).text())
+	(async () => {await eval(await (await fetch('https://unpkg.com/sweetalert2')).text())
 	Swal.fire({
 		title: 'Hey!',
 		html: `To get started with the hacks, click this dropdown!`,
