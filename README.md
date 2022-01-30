@@ -11,7 +11,7 @@
 			src="https://raw.githubusercontent.com/BoredFishRE/justsomeiconstuffdontmindme/6d213c7a5ff42fd4ac60d3c08827145f5ae435c9/pmghnewlogo500px.png">
 	</a>
 </h1>
-<h2>Click Star for free happiness!</h1>
+<h2 align="center">Click Star for free happiness!</h1>
 <img align="center" src="https://i.imgur.com/ffT1whO.png">
 </img>
   
