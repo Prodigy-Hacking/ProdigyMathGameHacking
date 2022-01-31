@@ -2,28 +2,28 @@
 	"name": "Prodigy Hacking Extension (PHEx)",
 	"version": "2.1.8",
 	"description": "PHEx is an extension made to raise awareness of security issues for Prodigy",
-	"permissions": [
-		"webRequest",
-		"webRequestBlocking",
+
+	"permissions": ["declarativeNetRequest", "storage"],
+	"declarative_net_request": {
+		"rule_resources": [{
+			"id": "core_ruleset",
+			"enabled": true,
+			"path": "rulesets/no_csp_rules.json"
+		}]
+	},
+	"host_permissions": [
 		"*://*.prodigygame.com/*",
-		"https://raw.githubusercontent.com/*",
-		"storage"
+		"https://raw.githubusercontent.com/*"
 	],
-	"icons": {
-		"16": "assets/x16.png",
-		"48": "assets/x48.png",
-		"128": "assets/x128.png"
-	},
-	"background": {
-		"scripts": ["background.js"],
-		"persistent": true
-	},
+
+	"background": { "service_worker": "background.js" },
 	"content_scripts": [{
 		"matches": ["https://math.prodigygame.com/*"],
 		"js": ["disableIntegrity.js"]
 	}],
-	"browser_action": {
-		"default_popup": "popup.html"
-	},
-	"manifest_version": 2
+
+	"action": { "default_popup": "popup.html" },
+	"icons": { "16": "assets/x16.png", "48": "assets/x48.png", "128": "assets/x128.png" },
+
+	"manifest_version": 3
 }

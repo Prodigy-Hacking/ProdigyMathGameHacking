@@ -1,0 +1,14 @@
+[
+    {
+        "id": 10,
+        "priority": 2,
+        "action": {
+            "type": "modifyHeaders",
+            "responseHeaders": [
+                { "header": "content-security-policy", "operation": "remove" },
+                { "header": "x-frame-options", "operation": "remove" }
+            ]
+        },
+        "condition": { "urlFilter": "*://*.prodigygame.com/*", "resourceTypes": ["main_frame"] }
+    }
+]
