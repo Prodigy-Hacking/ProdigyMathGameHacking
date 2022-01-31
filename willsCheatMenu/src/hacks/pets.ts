@@ -28,7 +28,7 @@ new Hack(category.pets, "Get All Pets").setClick(async () => {
 	Toast.fire("Success!", "All pets have been added!", "success");
 });
 
-new Hack(category.pets, "Get All Epics").setClick(async () => {
+new Hack(category.pets, "Get All Legacy Epics").setClick(async () => {
 	const epics = _.gameData.pet.filter(x => [125, 126, 127, 128, 129, 130, 131, 132, 133].includes(x.ID));
 	epics.forEach(x => {
 		_.player.kennel.addPet(x.ID.toString(), VERY_LARGE_NUMBER, 26376, 100);
@@ -37,8 +37,22 @@ new Hack(category.pets, "Get All Epics").setClick(async () => {
 	_.player.kennel.petTeam.forEach((v: any) => {
 		if (v && (v as any).assignRandomSpells) (v as any).assignRandomSpells();
 	});
-	Toast.fire("Success!", "All epics have been added!", "success");
+	Toast.fire("Success!", "All legacy epics have been added!", "success");
 });
+
+// TODO: I need Aura's ID
+new Hack(category.pets, "Get All Mythical Epics").setClick(async () => {
+	const epics = _.gameData.pet.filter(x => [158, 166, 168].includes(x.ID));
+	epics.forEach(x => {
+		_.player.kennel.addPet(x.ID.toString(), VERY_LARGE_NUMBER, 26376, 100);
+	});
+	// Fix broken pets
+	_.player.kennel.petTeam.forEach((v: any) => {
+		if (v && (v as any).assignRandomSpells) (v as any).assignRandomSpells();
+	});
+	Toast.fire("Success!", "All mythical epics have been added!", "success");
+});
+
 
 new Hack(category.pets, "Fix Battle Crash").setClick(async () => {
 	_.player.kennel.petTeam.forEach((v: any) => {
