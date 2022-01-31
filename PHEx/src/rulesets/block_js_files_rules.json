@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": { "urlFilter": "https://code.prodigygame.com/code/*/game.min.js?v=*" }
+    },
+    {
+        "id": 2,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": { "urlFilter": "https://code.prodigygame.com/js/public-game-*.min.js" }
+    }
+]

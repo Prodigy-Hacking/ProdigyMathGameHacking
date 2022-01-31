@@ -5,18 +5,22 @@
 
 	"permissions": ["declarativeNetRequest", "storage"],
 	"declarative_net_request": {
-		"rule_resources": [{
-			"id": "core_ruleset",
-			"enabled": true,
-			"path": "rulesets/no_csp_rules.json"
-		}]
+		"rule_resources": [
+			{
+				"id": "anti_csp",
+				"enabled": true,
+				"path": "rulesets/no_csp_rules.json"
+			}, {
+				"id": "block_js",
+				"enabled": true,
+				"path": "rulesets/block_js_files_rules.json"
+			}
+		]
 	},
 	"host_permissions": [
 		"*://*.prodigygame.com/*",
 		"https://raw.githubusercontent.com/*"
 	],
-
-	"background": { "service_worker": "background.js" },
 	"content_scripts": [{
 		"matches": ["https://math.prodigygame.com/*"],
 		"js": ["disableIntegrity.js"]
