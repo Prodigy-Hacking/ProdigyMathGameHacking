@@ -2,7 +2,7 @@
 import { io } from "socket.io-client";
 import "./style.scss";
 import { saveCharacter, _ } from "./utils/util";
-
+import Swal from 'sweetalert2'
 export const menu = document.createElement("div");
 export const wrapper = document.getElementById("game-wrapper");
 
@@ -161,8 +161,7 @@ export const category = {
 
 if(!localStorage.hasTip){
 	(async () => {
-	window.Swal = eval(await (await fetch('https://unpkg.com/sweetalert2')).text())
-	window.Swal.fire({
+	Swal.fire({
 		title: 'Hey!',
 		html: `To get started with the hacks, click this dropdown!`,
 	  icon: 'info',
