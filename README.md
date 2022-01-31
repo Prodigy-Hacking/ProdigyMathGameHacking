@@ -1,6 +1,4 @@
-<!-- <h2 align="center"></h2>
-<hr> -->
-
+<h1 align = "center">ProdigyMathGameHacking</h1>
 <h1 align="center">
 	<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks">
 		<img align="center"
@@ -9,11 +7,8 @@
 			src="https://raw.githubusercontent.com/BoredFishRE/justsomeiconstuffdontmindme/6d213c7a5ff42fd4ac60d3c08827145f5ae435c9/pmghnewlogo500px.png">
 	</a>
 </h1>
-<h2 align="center">Click Star for free happiness!</h1>
-<h1 align="center">
-	<img align="center" src="https://i.imgur.com/ffT1whO.png">
-</h1>
-</img>
+
+
   
 		
 <p align="center">
@@ -184,10 +179,13 @@ All of our hacks are *open-source*, and only located under our [Github Organizat
   - Our main repo, used as an issue tracker, things we're working on, documentation, and central hub. You're currently on it.
 - [PHEx](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/tree/master/PHEx)
   - The Prodigy Hacking Extension, used to inject our modified gamefiles into Prodigy.
-
+  
 <br/>
-	<h1 align="center">
+
+<h1 align="center">
 <img src="https://readme-jokes.vercel.app/api" alt="Jokes Card" />
 	</h1>
+
+
 ----
 ***All hacks and software are licensed under the Mozilla Public License (MPL) V2.0, unless stated otherwise with a separate license. Any violation of the policy of this licence may result in a DMCA takedown.***
