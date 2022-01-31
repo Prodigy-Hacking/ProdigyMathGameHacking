@@ -162,7 +162,7 @@ export const category = {
 if(!localStorage.hasTip){
 	(async () => {
 	window.Swal = eval(await (await fetch('https://unpkg.com/sweetalert2')).text())
-	Swal.fire({
+	window.Swal.fire({
 		title: 'Hey!',
 		html: `To get started with the hacks, click this dropdown!`,
 	  icon: 'info',
