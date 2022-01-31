@@ -66,6 +66,9 @@ new Hack(category.misc, "Reset Account", "Completely resets your account.").setC
 	if (!(await Confirm.fire("Are you sure you want to reset your account?", "This action is not reversable.")).value) return;
 	_.player.resetAccount();
 });
+
+
+
 /* we'll miss you
 new Hack(category.misc, "OwO", "Click it and find out. It doesn't bite.").setClick(async () => {
 	// @ts-ignore
