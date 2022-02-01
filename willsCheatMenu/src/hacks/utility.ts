@@ -111,3 +111,13 @@ new Toggler(category.utility, "Pause Game").setEnabled(async () => {
 	_.network.game._paused = false;
 	Toast.fire("Success!", "Successfully resumed Prodigy.", "success");
 });
+
+new Hack(category.utility, "Change Drop-Down Arrow Dimensions").setClick(async () => {
+	const height = await NumberInput.fire("Height", "What number do you want to set the arrow height to?", "question");
+	if (height.value === undefined) return;
+	const width = await NumberInput.fire("Width", "What number do you want to set the arrow width to?", "question");
+	if (width.value === undefined) return;
+	localStorage.menuheight = height.value + "px";
+	localStorage.menuwidth = width.value + "px";
+	Toast.fire("Success!", `You have set your drop-down arrow dimensions!`, "success");
+});
