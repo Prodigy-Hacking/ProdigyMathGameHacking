@@ -2,9 +2,9 @@
 <h1 align="center">
 	<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks">
 		<img align="center"
-			width="128"
+			width="175"
 			alt="Installation"
-			src="https://raw.githubusercontent.com/BoredFishRE/justsomeiconstuffdontmindme/6d213c7a5ff42fd4ac60d3c08827145f5ae435c9/pmghnewlogo500px.png">
+			src="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/.github/plainlogo.png?raw=true">
 	</a>
 </h1>
 
