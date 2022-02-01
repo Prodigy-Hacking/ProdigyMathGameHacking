@@ -1,4 +1,4 @@
-<h1 align = "center">ProdigyMathGameHacking</h1>
+<!-- <h1 align = "center">Notice goes here</h1> -->
 <h1 align="center">
 	<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks">
 		<img align="center"
