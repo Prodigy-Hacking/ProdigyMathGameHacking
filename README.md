@@ -1,10 +1,10 @@
-<h1 align = "center">ProdigyMathGameHacking</h1>
+<!-- <h1 align = "center">Notice goes here</h1> -->
 <h1 align="center">
 	<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks">
 		<img align="center"
-			width="128"
+			width="175"
 			alt="Installation"
-			src="https://raw.githubusercontent.com/BoredFishRE/justsomeiconstuffdontmindme/6d213c7a5ff42fd4ac60d3c08827145f5ae435c9/pmghnewlogo500px.png">
+			src="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/.github/fixedlogo.png?raw=true">
 	</a>
 </h1>
 
@@ -135,9 +135,8 @@ All of our hacks are *open-source*, and only located under our [Github Organizat
 
 ## Current Collaborators
 - [PatheticMustan](https://github.com/PatheticMustan)
-- [Léo Badeaux](https://github.com/LeoBadeaux)
 - [Arcerion](https://github.com/ArcerionDev)
-- [Yama](https://github.com/YamaHacks)
+- [Yama](https://github.com/vibinyama)
 - [BoredFish](https://github.com/BoredFishRE)
 - [Hostedposted](https://github.com/hostedposted)
 - Noot (Anonymous User)
