@@ -179,6 +179,20 @@ if (localStorage.getItem("level")) {
 	_.player.getLevel = () => localStorage.getItem("level");
 }
 
+document.addEventListener("keypress", function (event) {
+	if (event.keyCode == 16) {
+		if (document.getElementById("cheat-menu").style.display == "block" && document.getElementById("menu-toggler").style.display == "block") {
+			// Cheats are shown, so let's hide them.
+			document.getElementById("cheat-menu").style.display = "none";
+			document.getElementById("menu-toggler").style.display = "none";
+		} else {
+			// Cheats are hidden, so let's show them.
+			document.getElementById("cheat-menu").style.display = "block";
+			document.getElementById("menu-toggler").style.display = "block";
+		}
+	}
+});
+
 if (process.env.NODE_ENV === "development") {
 	const socket = io("http://localhost:3001");
 	let used = false;
