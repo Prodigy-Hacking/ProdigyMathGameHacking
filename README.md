@@ -4,7 +4,7 @@
 		<img align="center"
 			width="175"
 			alt="Installation"
-			src="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/.github/plainlogo.png?raw=true">
+			src="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/.github/fixedlogo.png?raw=true">
 	</a>
 </h1>
 
