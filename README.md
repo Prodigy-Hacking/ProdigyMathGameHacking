@@ -1,19 +1,14 @@
-<!-- <h2 align="center"></h2>
-<hr> -->
-
+<!-- <h1 align = "center">Notice goes here</h1> -->
 <h1 align="center">
 	<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks">
 		<img align="center"
-			width="128"
+			width="175"
 			alt="Installation"
-			src="https://raw.githubusercontent.com/BoredFishRE/justsomeiconstuffdontmindme/6d213c7a5ff42fd4ac60d3c08827145f5ae435c9/pmghnewlogo500px.png">
+			src="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/.github/fixedlogo.png?raw=true">
 	</a>
 </h1>
-<h2 align="center">Click Star for free happiness!</h1>
-<h1 align="center">
-	<img align="center" src="https://i.imgur.com/ffT1whO.png">
-</h1>
-</img>
+
+
   
 		
 <p align="center">
@@ -40,24 +35,8 @@
 <img alt="Extension Downloads" src="https://img.shields.io/chrome-web-store/users/gjabpajagbgoifbkflgojeojmnlmioea?color=red&label=Extension%20Downloads">
 </a>
 
-<a href="https://prodigyhacking.com">
-	<img alt="Website Status" src="https://img.shields.io/website-up-down-green-red/https/prodigyhacking.com">
-</a>
-
-<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/issues">
-	<img alt="Issues" src="https://img.shields.io/github/issues-raw/Prodigy-Hacking/ProdigyMathGameHacking">
-</a>
-
 <a href="https://discord.gg/XQDfbfq">
 	<img src="https://img.shields.io/discord/683793361123016755.svg?color=7289da&label=Discord&logo=discord&style=flat-square">
-</a>
-
-<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/graphs/contributors">
-	<img src="https://img.shields.io/github/contributors/Prodigy-Hacking/ProdigyMathGameHacking.svg?style=flat">
-</a>
-
-<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/LICENSE">
-	<img src="https://img.shields.io/badge/License-MPL%20v2.0-yellow.svg">
 </a>
 
 <a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/pulse">
@@ -184,10 +163,13 @@ All of our hacks are *open-source*, and only located under our [Github Organizat
   - Our main repo, used as an issue tracker, things we're working on, documentation, and central hub. You're currently on it.
 - [PHEx](https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/tree/master/PHEx)
   - The Prodigy Hacking Extension, used to inject our modified gamefiles into Prodigy.
-
+  
 <br/>
-	<h1 align="center">
+
+<h1 align="center">
 <img src="https://readme-jokes.vercel.app/api" alt="Jokes Card" />
 	</h1>
+
+
 ----
 ***All hacks and software are licensed under the Mozilla Public License (MPL) V2.0, unless stated otherwise with a separate license. Any violation of the policy of this licence may result in a DMCA takedown.***
