@@ -179,8 +179,8 @@ if (localStorage.getItem("level")) {
 	_.player.getLevel = () => localStorage.getItem("level");
 }
 
-document.addEventListener("keypress", function (event) {
-	if (event.key == 16) {
+document.addEventListener("keydown", function (event) {
+	if (event.key == "Shift") {
 		if (document.getElementById("cheat-menu").style.display == "block" && document.getElementById("menu-toggler").style.display == "block") {
 			// Cheats are shown, so let's hide them.
 			document.getElementById("cheat-menu").style.display = "none";
