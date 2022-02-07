@@ -98,7 +98,7 @@ new Hack(category.location, "Teleport to house by userID").setClick(async () => 
 	Toast.fire("Teleported!", "You have been teleported!", "success");
 });
 
-new Hack(category.player, "Get Map Location").setClick(async () => {
+new Hack(category.location, "Get Map Location").setClick(async () => {
 	Swal.fire({
 		title: "Map Location",
 		html: `You are at <br> <code> ${_.player.data.zone} </code>. <br> You can save this to get to the same zone.`,
@@ -106,7 +106,7 @@ new Hack(category.player, "Get Map Location").setClick(async () => {
 	});
 });
 
-new Hack(category.player, "WASD Movement").setClick(async() => {
+new Hack(category.location, "WASD Movement").setClick(async() => {
     document.addEventListener("keydown", function (event) {
         switch (event.key) {
             case "w":
