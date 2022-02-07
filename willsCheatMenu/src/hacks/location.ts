@@ -106,6 +106,25 @@ new Hack(category.player, "Get Map Location").setClick(async () => {
 	});
 });
 
+new Hack(category.player, "WASD Movement").setClick(async() => {
+    document.addEventListener("keydown", function (event) {
+        switch (event.key) {
+            case "w":
+                _.player._playerContainer.y -= 10;
+                break;
+            case "s":
+                _.player._playerContainer.y += 10;
+                break;
+            case "a":
+                _.player._playerContainer.x -= 10;
+                break;
+            case "d":
+                _.player._playerContainer.x += 10;
+                break;
+        }
+    });
+});
+
 /*
 new Hack(category.location, "Teleport To Dark Tower Floor").setClick(
 	async () => {
