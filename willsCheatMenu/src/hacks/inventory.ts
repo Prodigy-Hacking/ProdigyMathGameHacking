@@ -34,7 +34,7 @@ new Hack(category.inventory, "Item stacker").setClick(async () => {
 });
 new Hack(category.inventory, "Clear inventory").setClick(async () => {
 if (!(await Confirm.fire("Are you sure you want to clear your inventory?")).value) return;
-for (d in _.player.backpack.data){_.player.backpack.data[d] = [{}]}
+Object.keys(_.player.backpack.data).forEach(d => _.player.backpack.data[d] = [])
 Toast.fire("Success!", "Inventory cleared.", "success");
 })
 
