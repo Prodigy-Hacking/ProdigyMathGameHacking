@@ -135,9 +135,8 @@ All of our hacks are *open-source*, and only located under our [Github Organizat
 
 ## Current Collaborators
 - [PatheticMustan](https://github.com/PatheticMustan)
-- [Léo Badeaux](https://github.com/LeoBadeaux)
 - [Arcerion](https://github.com/ArcerionDev)
-- [Yama](https://github.com/YamaHacks)
+- [Yama](https://github.com/vibinyama)
 - [BoredFish](https://github.com/BoredFishRE)
 - [Hostedposted](https://github.com/hostedposted)
 - Noot (Anonymous User)
