@@ -2,81 +2,53 @@
 <html>
     <head>
         <title>PHEX</title>
-
-        <style>
-          
-
-            .content {
-                width: 20em;
-                height: 40em;
-            }
-            .check {
-                -webkit-appearance: none; /*hides the default checkbox*/
-                height: 40px;
-                width: 40px;
-                transition: 0.10s;
-                background-color: #FE0006;
-                border-radius: 3px;
-                outline: none;
-            }
-            .check:checked {
-                background-color: #0E9700;
-            }
-            .check:hover {
-                cursor: pointer; 
-                opacity: 0.8;
-            }
-            .gatekeeper {
-                background-color: pink;
-            }
-        </style>
-
-
+        <link href="/index.css" rel="stylesheet">
     </head>
-
     <body>
-        <div class="content">
-
-            <h1>PHEX</h1>
-
-            <form action="https://play.prodigygame.com/" method="get" target="_blank">
-                <button type="submit">Go to Prodigy</button>
+        <div class="w-72 h-48">
+            <h1 class="text-3xl text-center">PHEX</h1>
+            <form action="https://play.prodigygame.com/" method="get" target="_blank" class="mt-3 flex justify-center">
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                    Go to Prodigy
+                </button>
+            </form>
+            <form action="https://discord.gg/XQDfbfq" method="get" target="_blank" class="mt-3 flex justify-center">
+                <button type="submit" class="bg-pink-400 hover:bg-pink-300 text-white font-bold py-2 px-4 rounded-full">
+                    PMGH Discord Server
+                </button>
             </form>
 
-            <p></p> <!--- Paragraph bc <br> is too much spacing!------>
+            <div class="flex justify-center">
+                <button class="mt-3 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" id="reveal-button">
+                    Reveal developer options
+                </button>
+            </div>
 
-            <form action="https://discord.gg/XQDfbfq" method="get" target="_blank">
-                <button type="submit">PMGH Discord server</button>
+            <form id="dev" class="hidden">
+                <h1 class="text-3xl text-center">Developer Options</h1>
+
+                <p class="mx-3">Only use if you know what you're doing. If you need help go to our <a href="https://discord.gg/XQDfbfq" target="_blank" class="text-blue-600">discord server.</a></p>
+                
+                <div class="flex justify-center">
+                    <input type="text" id="pnp-url" class="mt-3 input w-48 mb-5" placeholder="P-NP Url">
+                </div>
+
+                <label class="relative flex justify-between items-center group p-2 text-xl">
+                    Toggle Custom URL
+                    <input type="checkbox" class="absolute left-1/2 -translate-x-1/2 w-full h-full peer appearance-none rounded-md" id="checkbox" />
+                    <span class="w-16 h-10 flex items-center flex-shrink-0 ml-4 p-1 bg-gray-300 rounded-full duration-300 ease-in-out peer-checked:bg-green-400 after:w-8 after:h-8 after:bg-white after:rounded-full after:shadow-md after:duration-300 peer-checked:after:translate-x-6"></span>
+                </label>
+
+                <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 mx-3 rounded relative hidden" role="alert" id="alert">
+                    <strong class="font-bold">Invalid P-NP URL!</strong>
+                    <span class="block sm:inline">Are you sure that's the correct url?</span>
+                    <span class="absolute top-0 bottom-0 right-0 px-4 py-3" id="close-button">
+                        <svg class="fill-current h-6 w-6 text-red-500" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
+                    </span>
+                </div>
+
+                <br/>
             </form>
-
-
-            <br><br>
-
-            <details>
-                <summary>Developer Options</summary>
-
-                <h2>Developer Options</h2>
-
-                <p>Only touch if you know what you're doing! To use the hack, just go to prodigy. If you need help, go to our discord server</p>
-
-                <h3>Custom PNP URL</h3>
-                <input id="url" type="text">
-
-                <h3>Use Custom URL</h3>
-                <input id="check" type="checkbox" class="check">
-
-                <h3>Save</h3>
-                <p>Only touch if you know what you're doing! To save options, type in "nootnoot", and submit.</p>
-                <input id="gatekeeper" type="text" class="gatekeeper">
-                <button id="submit">Submit</button>
-
-                <p id="result"></p>
-
-
-            </details>
-
-
-
         </div>
 
         <script src="popup.js"></script>
