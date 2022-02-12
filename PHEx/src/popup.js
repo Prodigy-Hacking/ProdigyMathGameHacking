@@ -1,6 +1,6 @@
 function set(key, value) {
     chrome.storage.local.set({ [key]: value })
-};
+}
 
 function get(key) {
     return new Promise(resolve => {
@@ -8,7 +8,7 @@ function get(key) {
             resolve(result[key])
         })
     })
-};
+}
 
 function validURL(str) {
     try {
@@ -17,8 +17,8 @@ function validURL(str) {
             '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
             '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
             '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
-            '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
-        return !!pattern.test(str) || new URL(str).hostname === "localhost";
+            '(\\#[-a-z\\d_]*)?$','i') // fragment locator
+        return !!pattern.test(str) || new URL(str).hostname === "localhost"
     } catch {
         return false
     }
@@ -37,7 +37,7 @@ revealButton.addEventListener("click", () => {
     } else {
         developerForm.classList.add("hidden")
     }
-});
+})
 
 checkbox.addEventListener("change", () => {
     if (!validURL(pnpUrl.value)) {
