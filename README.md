@@ -1,5 +1,5 @@
-<!-- <h1 align = "center">Notice goes here</h1> -->
-<h1 align="center">
+<h1 align = "center">Please Read https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/announcement.md</h1>
+<h1 align="center">l
 	<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks">
 		<img align="center"
 			width="175"
