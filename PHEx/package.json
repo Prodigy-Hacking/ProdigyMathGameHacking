@@ -4,11 +4,13 @@
   "description": "",
   "main": "build.js",
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js",
+    "watch_css": "tailwindcss -i ./input.css -o ./src/index.css --watch",
+    "build_css": "tailwindcss -i ./input.css -o ./src/index.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/UntrustableRus/PMGH-ext.git"
+    "url": "https://github.com/Prodigy-Hacking/ProdigyMathGameHacking"
   },
   "keywords": [],
   "author": "",
@@ -21,5 +23,8 @@
     "dir-archiver": "^1.1.2",
     "simple-archiver": "^1.0.1",
     "zip-dir": "^2.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.22"
   }
 }

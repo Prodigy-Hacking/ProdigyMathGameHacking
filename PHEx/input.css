@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .input {
+        @apply border-0 px-3 py-3 placeholder-gray-500 text-gray-700 bg-white rounded text-sm shadow-lg focus:outline-none focus:ring w-full ease-linear transition-all duration-150;
+    }
+
+    .toggler {
+        @apply right-0 border-green-400 absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer
+    }
+}
