@@ -1,4 +1,4 @@
-<h1 align = "center"><a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/announcement.md">We are shutting down hacks April 10th</a></h1>
+<h1 align = "center"><a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/blob/master/announcement.md">Hacks are being shut down. Thanks for everything.</a></h1>
 <h1 align="center">l
 	<a href="https://github.com/Prodigy-Hacking/ProdigyMathGameHacking/wiki/How-to-install-hacks">
 		<img align="center"
